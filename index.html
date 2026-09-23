@@ -212,6 +212,16 @@ tbody th { font-weight: 600; white-space: nowrap; }
 .kv dd { margin: 0; color: var(--ink-2); }
 .boss { display: grid; gap: 10px; }
 .boss-name { font: 700 1.2rem var(--display); }
+.guides { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 14px 0 28px; }
+.guide-card { display: flex; gap: 14px; align-items: flex-start; padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.guide-card h4 { margin: 0 0 4px; }
+.guide-card p { margin: 0 0 4px; }
+.guide-grid { display: grid; grid-template-columns: repeat(3, 26px); grid-auto-rows: 26px; gap: 3px; padding: 5px; background: #8b8b8b; border-radius: 4px; flex: none; }
+.gslot { background: #6f6f6f; box-shadow: inset 2px 2px 0 #373737, inset -2px -2px 0 #a9a9a9; display: grid; place-items: center; font: 400 .6rem/1 "Press Start 2P", monospace; color: #fff; text-shadow: 1px 1px 0 #3f3f3f; }
+.gslot.core { background: #b58f5a; }
+.gslot.r-wind { background: #b9c7e6; color: #26324d; text-shadow: none; }
+.gslot.r-brick { background: #5a2a2e; }
+.gslot.r-emerald { background: #2fae57; }
 .boss-stats { display: flex; flex-wrap: wrap; gap: 6px; align-items: flex-start; align-content: flex-start; }
 .pill { font: 600 .74rem/1 var(--body); padding: 5px 8px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .attacks { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
@@ -319,7 +329,7 @@ footer { margin-top: 64px; padding-top: 18px; border-top: 1px solid var(--line);
         <li><h4>Найдите первый клинок</h4><p>Погибель и Резак лежат в сундуках древнего города, Арахнид — в вагонетках заброшенных шахт, Сумрачная секира — в крепостях Незера.</p></li>
         <li><h4>Добудьте Душу демона</h4><p>Она всегда лежит в сокровищнице бастиона. Клинок плюс Душа на верстаке — и он становится адским. А Иссушитель, убитый клинком из набора, иногда роняет свою душу — из неё и Бедствия выходит Воля Демона.</p></li>
         <li><h4>Растите мастерство</h4><p>Клинок учится от каждого удара. Мастерство открывает эволюцию, заточку и пробуждение.</p></li>
-        <li><h4>Найдите святилище</h4><p>Они стоят далеко от спавна: кузня — в Незере, храмы — в верхнем мире. Пройдите зал, одолейте стража — и алтарь откроется.</p></li>
+        <li><h4>Найдите святилище</h4><p>Они стоят далеко от спавна: кузня — в Незере, храмы — в верхнем мире. Дорогу покажут Компас воздуха, Карта кузни и Карта джунглей. Пройдите зал, одолейте стража — и алтарь откроется.</p></li>
         <li><h4>Куйте последнюю форму</h4><p>Все-Чёрный и Люцифер рождаются только в Незеритовой кузне, из Сердца кузни.</p></li>
       </ol>
     </section>
@@ -419,6 +429,23 @@ footer { margin-top: 64px; padding-top: 18px; border-top: 1px solid var(--line);
         <div class="step"><b>Арена</b><span>страж святилища, один раз</span></div><span class="to" aria-hidden="true">→</span>
         <div class="step"><b>Решётка</b><span>падает со смертью стража</span></div><span class="to" aria-hidden="true">→</span>
         <div class="step"><b>Алтарь</b><span>эволюция, заточка, рейды</span></div>
+      </div>
+
+      <h3>Как найти святилище</h3>
+      <p>Каждое святилище ищется своим предметом. Его крафтят на верстаке: нужный предмет в центр, четыре ингредиента крестом вокруг. Предмет всегда ведёт туда, где святилище стоит сейчас.</p>
+      <div class="guides">
+        <div class="guide-card">
+          <div class="guide-grid" aria-hidden="true"><span class="gslot"></span><span class="gslot ring r-wind">В</span><span class="gslot"></span><span class="gslot ring r-wind">В</span><span class="gslot core">К</span><span class="gslot ring r-wind">В</span><span class="gslot"></span><span class="gslot ring r-wind">В</span><span class="gslot"></span></div>
+          <div><h4>Компас воздуха</h4><p class="small"><b>В</b> — заряд ветра, <b>К</b> — компас.</p><p class="small muted">Стрелка указывает на Небесный храм. Работает в верхнем мире.</p></div>
+        </div>
+        <div class="guide-card">
+          <div class="guide-grid" aria-hidden="true"><span class="gslot"></span><span class="gslot ring r-brick">Н</span><span class="gslot"></span><span class="gslot ring r-brick">Н</span><span class="gslot core">К</span><span class="gslot ring r-brick">Н</span><span class="gslot"></span><span class="gslot ring r-brick">Н</span><span class="gslot"></span></div>
+          <div><h4>Карта кузни</h4><p class="small"><b>Н</b> — незерский кирпич, <b>К</b> — пустая карта.</p><p class="small muted">Карта Незера, на ней крестом отмечена Незеритовая кузня. Земля прорисовывается, пока вы идёте с картой в руке.</p></div>
+        </div>
+        <div class="guide-card">
+          <div class="guide-grid" aria-hidden="true"><span class="gslot"></span><span class="gslot ring r-emerald">И</span><span class="gslot"></span><span class="gslot ring r-emerald">И</span><span class="gslot core">К</span><span class="gslot ring r-emerald">И</span><span class="gslot"></span><span class="gslot ring r-emerald">И</span><span class="gslot"></span></div>
+          <div><h4>Карта джунглей</h4><p class="small"><b>И</b> — изумруд, <b>К</b> — пустая карта.</p><p class="small muted">Отмечает Храм джунглей. Все карты одного святилища — одна и та же карта: что разведал один, видят все.</p></div>
+        </div>
       </div>
 
       <article class="sanctum" id="forge">
