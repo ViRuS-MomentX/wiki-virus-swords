@@ -1,0 +1,3 @@
+# The wiki is one built page: shown as generated, kept out of diffs and language stats.
+index.html linguist-generated=true -diff
+assets/** binary
