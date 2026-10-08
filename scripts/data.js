@@ -108,6 +108,8 @@ const rarities = [
     used: [
       "Бедствие",
       "Воля Демона",
+      "Убийца демонов",
+      "Рассекатель могил",
       "Секира берсерка",
       "Душа демона",
       "Осколок души"
@@ -125,6 +127,7 @@ const rarities = [
     period: 60,
     motion: "переливается, проход 3 с",
     used: [
+      "Люцифер",
       "Душа Иссушителя",
       "Адская сущность",
       "Королевские часы"
@@ -226,9 +229,6 @@ const rarities = [
     period: 35,
     motion: "переливается, проход 1.75 с",
     used: [
-      "Убийца демонов",
-      "Рассекатель могил",
-      "Люцифер",
       "Сердце хранителя"
     ]
   },
@@ -459,8 +459,8 @@ const items = [
     kind: "weapon",
     id: "demon_slayer",
     name: "Убийца демонов",
-    rarity: "BLOODY",
-    rarityLabel: "Кровавая",
+    rarity: "HELLISH",
+    rarityLabel: "Адская",
     line: "blood",
     lore: [
       '<span style="color:#555555"><em>Паучья сталь напилась и больше не отпускает.</em></span>',
@@ -481,18 +481,25 @@ const items = [
     kind: "weapon",
     id: "grave_splitter",
     name: "Рассекатель могил",
-    rarity: "BLOODY",
-    rarityLabel: "Кровавая",
+    rarity: "HELLISH",
+    rarityLabel: "Адская",
     line: "blood",
     lore: [
       '<span style="color:#555555"><em>Пять тысяч раз он пил. На пять тысяч первый</em></span>',
-      '<span style="color:#555555"><em>научился не глотать, а выдыхать.</em></span>',
+      '<span style="color:#555555"><em>научился поднимать тех, кого выпил.</em></span>',
       "",
-      '<span style="color:#FF5555">✦ Смертный туман</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Там, куда вы смотрите, стелется красный туман</span>',
-      '<span style="color:#AAAAAA">радиусом 10 блоков. Все, кроме союзников, теряют</span>',
-      '<span style="color:#AAAAAA">в нём 8 здоровья в секунду и слабеют, пока он не рассеется.</span>',
-      '<span style="color:#555555">Держится 5 секунд. Перезарядка 20 секунд.</span>'
+      '<span style="color:#FF5555">✦ Жажда</span>',
+      '<span style="color:#AAAAAA">Каждый третий удар возвращает вам половину</span>',
+      '<span style="color:#AAAAAA">того, что вы нанесли.</span>',
+      "",
+      '<span style="color:#FF5555">✦ Добыча</span>',
+      '<span style="color:#AAAAAA">Убийство возвращает пятую часть здоровья цели.</span>',
+      "",
+      '<span style="color:#FF5555">✦ Свита могил</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
+      '<span style="color:#AAAAAA">Рядом встают три скелета-иссушителя и бьются</span>',
+      '<span style="color:#AAAAAA">за вас: по вашей цели, по тому, кто ударил вас,</span>',
+      '<span style="color:#AAAAAA">иначе по ближайшему врагу.</span>',
+      '<span style="color:#555555">Стоят 30 секунд. Перезарядка 60 секунд.</span>'
     ],
     stats: "Урон 11 · Скорость 1.6",
     icon: "images/other/ca0b2d0595.png",
@@ -502,8 +509,8 @@ const items = [
     kind: "weapon",
     id: "lucifer",
     name: "Люцифер",
-    rarity: "BLOODY",
-    rarityLabel: "Кровавая",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
     line: "blood",
     lore: [
       '<span style="color:#555555"><em>Самый яркий из них упал первым.</em></span>',
@@ -2028,6 +2035,12 @@ const blood = [
         id: "demon_slayer",
         name: "Убийца демонов",
         icon: "images/other/8f2915c708.png",
+        form: 1
+      },
+      {
+        id: "grave_splitter",
+        name: "Рассекатель могил",
+        icon: "images/other/ca0b2d0595.png",
         form: 2
       },
       {
