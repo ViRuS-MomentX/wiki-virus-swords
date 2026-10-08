@@ -1,3 +1,4 @@
-# The wiki is one built page: shown as generated, kept out of diffs and language stats.
-index.html linguist-generated=true -diff
+# Vue itself: not part of the wiki, kept out of the language stats.
+scripts/vue.js linguist-vendored=true
 assets/** binary
+images/** binary
