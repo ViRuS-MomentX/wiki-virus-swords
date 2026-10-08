@@ -1628,14 +1628,14 @@ const achievements = [
         description: "Он не умер. Его переложили — в то, что ты теперь носишь.",
         frame: "goal",
         frameLabel: "Цель",
-        condition: "Получить Душу Иссушителя",
+        condition: "Забрать Душу Иссушителя",
         icon: "images/other/55344aa5c9.png",
         caption: "Душа Иссушителя"
       },
       {
         key: "insight",
         title: "Прозрение",
-        description: "Смотри. Всё, что дышит вокруг, уже знает, что ты смотришь.",
+        description: "Всё, что дышит вокруг, уже знает, что ты смотришь.",
         frame: "task",
         frameLabel: "Задача",
         condition: "Подсветить Прозрением 20 существ разом",
@@ -1644,11 +1644,11 @@ const achievements = [
       },
       {
         key: "genocide",
-        title: "Но никто не пришёл",
-        description: "Получите геноцидальное оружие",
+        title: "Геноцид",
+        description: "Но никто не пришёл",
         frame: "challenge",
         frameLabel: "Испытание",
-        condition: "Выковать Все-Чёрный или Люцифера",
+        condition: "Получить геноцидальное оружие",
         gem: "#3a3a3a",
         caption: "Череп скелета-иссушителя"
       },
@@ -1658,14 +1658,14 @@ const achievements = [
         description: "Она приходила. Ты был занят.",
         frame: "task",
         frameLabel: "Задача",
-        condition: "Пережить смертельный удар своей жертвы с Все-Чёрным в руке",
+        condition: "Пережить смертельный удар используя Все-Чёрный",
         gem: "#e8c24a",
         caption: "Тотем бессмертия"
       },
       {
         key: "he_returned",
         title: "Он вернулся",
-        description: "Ты умер. Он — нет. Он просто подождал и пришёл сам.",
+        description: "Он всегда возвращается",
         frame: "task",
         frameLabel: "Задача",
         condition: "Подобрать привязанный клинок после своей смерти",
@@ -1685,7 +1685,7 @@ const achievements = [
       {
         key: "harmless_pet",
         title: "Безобидная зверюшка",
-        description: "Слепое, глухое, безупречное. И всё-таки кончилось.",
+        description: "Слепое, сильное, безупречное. И всё-таки кончилось.",
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Убить Вардена Все-Чёрным",
@@ -1710,7 +1710,7 @@ const achievements = [
       {
         key: "butcher",
         title: "Инструмент мясника",
-        description: "Кто-то унёс его под землю и не вернулся. Ты вернулся. Пока что.",
+        description: "Кто-то унёс его под землю и не вернулся. Ты вернулся.",
         frame: "task",
         frameLabel: "Задача",
         condition: "Получить Резак",
@@ -1785,7 +1785,7 @@ const achievements = [
       {
         key: "night_let_in",
         title: "Ночь впущена",
-        description: "Ты сломал печать, и небо рухнуло. Ему не было жаль. Тебе — тоже.",
+        description: "Ты сломал печать, и небо рухнуло.",
         frame: "goal",
         frameLabel: "Цель",
         condition: "Сломать Печать ночи",
@@ -1795,7 +1795,7 @@ const achievements = [
       {
         key: "starfall",
         title: "Звездопад",
-        description: "Звёзды упали. Одна — тебе в руку. Остальные ещё ищут, куда.",
+        description: "Звёзды упали. Загадывай желания.",
         frame: "goal",
         frameLabel: "Цель",
         condition: "Выковать Звёздную грань",
@@ -1805,7 +1805,7 @@ const achievements = [
       {
         key: "ninth_circle",
         title: "Девятое небо",
-        description: "Туда не поднимаются дважды. Коса поднялась за тебя.",
+        description: "Туда не поднимаются дважды.",
         frame: "goal",
         frameLabel: "Цель",
         condition: "Получить Реквием девятого неба",
@@ -1830,7 +1830,7 @@ const achievements = [
       {
         key: "one_of_them",
         title: "Свой среди чужих",
-        description: "Восьминогие узнали в тебе своего. Это не комплимент.",
+        description: "Восьминогие узнали в тебе своего.",
         frame: "task",
         frameLabel: "Задача",
         condition: "Получить Арахнид",
@@ -1850,7 +1850,7 @@ const achievements = [
       {
         key: "made_in_nether",
         title: "Made in Nether",
-        description: "Тридцать блоков, где правишь ты. Всё, что снаружи, — чужая земля.",
+        description: "Тридцать блоков, где правишь ты.",
         frame: "goal",
         frameLabel: "Цель",
         condition: "Поднять купол Люцифера",
@@ -1865,7 +1865,7 @@ const achievements = [
       {
         key: "forge_cold",
         title: "Горн остыл",
-        description: "Он ковал дольше, чем ты живёшь. Ты оборвал это за одну ночь.",
+        description: "Он ковал дольше, чем ты живёшь. Ты оборвал это за один миг.",
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Победить Горнило",
@@ -1885,7 +1885,7 @@ const achievements = [
       {
         key: "roots_let_go",
         title: "Корни разжали хватку",
-        description: "Лес держал его так долго, что забыл, зачем. Ты напомнил.",
+        description: "Лес держал его так долго, что забыл, зачем.",
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Победить Древнего стража",
@@ -1895,7 +1895,7 @@ const achievements = [
       {
         key: "machines_fell_silent",
         title: "Машины замолчали",
-        description: "Он ждал, когда его снова включат. Ты его выключил. Надолго ли?",
+        description: "Что-то замолчало, а что-то проснулось.",
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Победить Предвестника",
@@ -1930,7 +1930,7 @@ const achievements = [
       {
         key: "fifth_star",
         title: "Пятая звезда",
-        description: "Сталь приняла всё, что ты мог ей дать. Остальное ей дашь ты сам.",
+        description: "Сталь приняла всё, что ты мог ей дать.",
         frame: "goal",
         frameLabel: "Цель",
         condition: "Заточить клинок до ★5",
@@ -1939,7 +1939,7 @@ const achievements = [
       },
       {
         key: "eyes_open",
-        title: "Открыл глаза",
+        title: "Пробуждение",
         description: "Он проснулся. Надеюсь, ты не пожалеешь о том, что увидел.",
         frame: "goal",
         frameLabel: "Цель",
@@ -1950,7 +1950,7 @@ const achievements = [
       {
         key: "blood_remembers",
         title: "Кровь помнит всё",
-        description: "Одна, против того, кто не умирает, твоя кровь вспомнила имя. Не спрашивай чьё.",
+        description: "Одна, против того, кто не умирает, твоя кровь вспомнила всё.",
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Пройти Испытание крови",
@@ -1965,7 +1965,7 @@ const achievements = [
       {
         key: "gaze",
         title: "Взгляд",
-        description: "Ещё один скиталец поднял то, что лежало не для него. Я запомню.",
+        description: "Ещё один скиталец поднял то, что лежало не для него.",
         frame: "task",
         frameLabel: "Задача",
         condition: "Взять в руки любой клинок набора",
@@ -1975,7 +1975,7 @@ const achievements = [
       {
         key: "distance",
         title: "Расстояние",
-        description: "Оно больше ничего не значит. Тебе будет скучно.",
+        description: "Оно больше ничего не значит.",
         frame: "task",
         frameLabel: "Задача",
         condition: "Первый раз совершить Странствие с Hyperion",
@@ -1988,7 +1988,7 @@ const achievements = [
         description: "Десять раз. Для полубога — десять неудобств.",
         frame: "goal",
         frameLabel: "Цель",
-        condition: "Умереть 10 раз с клинком набора",
+        condition: "Умереть 10 раз",
         gem: "#d6d6d6",
         caption: "Череп скелета"
       }
