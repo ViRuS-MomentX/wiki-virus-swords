@@ -36,6 +36,12 @@ const icons = {
   wanderer_cube_gray: "images/icons/wanderer_cube_gray.png"
 };
 const guideIcons = {
+  diamond: "images/guide/diamond.png",
+  emerald_block: "images/guide/emerald_block.png",
+  crying_obsidian: "images/guide/crying_obsidian.png",
+  air_compass: "images/guide/air_compass.png",
+  forge_map: "images/guide/forge_map.png",
+  jungle_map: "images/guide/jungle_map.png",
   wind_charge: "images/guide/wind_charge.png",
   nether_brick: "images/guide/nether_brick.png",
   emerald: "images/guide/emerald.png",
@@ -271,7 +277,10 @@ const items = [
     ],
     stats: "Урон 7 · Скорость 1.6",
     icon: "images/other/72806b35de.png",
-    obtain: "Сундуки древнего города"
+    obtain: "Сундуки древнего города",
+    method: "loot",
+    methodLabel: "Находка",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -290,7 +299,10 @@ const items = [
     ],
     stats: "Урон 9 · Скорость 1.6",
     icon: "images/other/a4a3c2e4f9.png",
-    obtain: "Крафт: Погибель + Душа демона"
+    obtain: "Крафт: Погибель + Душа демона",
+    method: "craft",
+    methodLabel: "Верстак",
+    recipe: true
   },
   {
     kind: "weapon",
@@ -312,7 +324,10 @@ const items = [
     ],
     stats: "Урон 10 · Скорость 1.6",
     icon: "images/other/5ffe2fbc10.png",
-    obtain: "Крафт из Бедствия или эволюция в Незеритовой кузне"
+    obtain: "Крафт из Бедствия или эволюция в Незеритовой кузне",
+    method: "craft",
+    methodLabel: "Верстак",
+    recipe: true
   },
   {
     kind: "weapon",
@@ -352,7 +367,10 @@ const items = [
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/63ca5f7c3f.png",
-    obtain: "Эволюция Воли Демона в Незеритовой кузне"
+    obtain: "Эволюция Воли Демона в Незеритовой кузне",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -378,7 +396,10 @@ const items = [
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/f29e190984.png",
-    obtain: "Ковка в Незеритовой кузне: Воля Демона, Адская сущность, Сердце кузни, 64 осколка души"
+    obtain: "Ковка в Незеритовой кузне: Воля Демона, Адская сущность, Сердце кузни, 64 осколка души",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -395,7 +416,10 @@ const items = [
     ],
     stats: "Урон 5 · Скорость 1",
     icon: "images/other/9adf817a26.png",
-    obtain: "Сундуки древнего города"
+    obtain: "Сундуки древнего города",
+    method: "loot",
+    methodLabel: "Находка",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -412,7 +436,10 @@ const items = [
     ],
     stats: "Урон 7 · Скорость 1",
     icon: "images/other/9499d8c8aa.png",
-    obtain: "Крафт: Резак + Душа демона"
+    obtain: "Крафт: Резак + Душа демона",
+    method: "craft",
+    methodLabel: "Верстак",
+    recipe: true
   },
   {
     kind: "weapon",
@@ -432,7 +459,10 @@ const items = [
     ],
     stats: "Урон 8 · Скорость 1",
     icon: "images/other/2808503131.png",
-    obtain: "Крафт из Демонического резака и терра-слитков"
+    obtain: "Крафт из Демонического резака и терра-слитков",
+    method: "craft",
+    methodLabel: "Верстак",
+    recipe: true
   },
   {
     kind: "weapon",
@@ -453,7 +483,10 @@ const items = [
     ],
     stats: "Урон 8 · Скорость 1.6",
     icon: "images/other/8572c066ae.png",
-    obtain: "Сундуки заброшенной шахты"
+    obtain: "Сундуки заброшенной шахты",
+    method: "loot",
+    methodLabel: "Находка",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -475,7 +508,10 @@ const items = [
     ],
     stats: "Урон 10 · Скорость 1.6",
     icon: "images/other/8f2915c708.png",
-    obtain: "Крафт: Арахнид + Душа демона"
+    obtain: "Крафт: Арахнид + Душа демона",
+    method: "craft",
+    methodLabel: "Верстак",
+    recipe: true
   },
   {
     kind: "weapon",
@@ -503,7 +539,10 @@ const items = [
     ],
     stats: "Урон 11 · Скорость 1.6",
     icon: "images/other/ca0b2d0595.png",
-    obtain: "Эволюция Убийцы демонов в Незеритовой кузне"
+    obtain: "Эволюция Убийцы демонов в Незеритовой кузне",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -532,7 +571,10 @@ const items = [
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/1f90250f5b.png",
-    obtain: "Эволюция Рассекателя могил в Незеритовой кузне"
+    obtain: "Эволюция Рассекателя могил в Незеритовой кузне",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -556,7 +598,10 @@ const items = [
     ],
     stats: "Урон 9 · Скорость 0.9",
     icon: "images/other/5e7c8e6aba.png",
-    obtain: "Сундуки крепости Незера"
+    obtain: "Сундуки крепости Незера",
+    method: "loot",
+    methodLabel: "Находка",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -580,7 +625,10 @@ const items = [
     ],
     stats: "Урон 12 · Скорость 0.9",
     icon: "images/other/66344d5ef9.png",
-    obtain: "Сумрачная секира меняется сама в испытании Незеритовой кузни"
+    obtain: "Сумрачная секира меняется сама в испытании Незеритовой кузни",
+    method: "grows",
+    methodLabel: "Растёт сам",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -604,7 +652,10 @@ const items = [
     ],
     stats: "Урон 12 · Скорость 0.9",
     icon: "images/other/c02c9c9337.png",
-    obtain: "Сумрачная секира меняется сама в испытании Небесного храма"
+    obtain: "Сумрачная секира меняется сама в испытании Небесного храма",
+    method: "grows",
+    methodLabel: "Растёт сам",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -628,7 +679,10 @@ const items = [
     ],
     stats: "Урон 13 · Скорость 1.6",
     icon: "images/other/1a4474ed65.png",
-    obtain: "Ковка в Небесном храме, днём"
+    obtain: "Ковка в Небесном храме, днём",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -654,7 +708,10 @@ const items = [
     ],
     stats: "Урон 13 · Скорость 1.6",
     icon: "images/other/6d22f8cf26.png",
-    obtain: "Ковка в Тёмном храме или эволюция Солнцестояния"
+    obtain: "Ковка в Тёмном храме или эволюция Солнцестояния",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -678,7 +735,10 @@ const items = [
     ],
     stats: "Урон 12 · Скорость 1.6",
     icon: "images/other/28b6759ee6.png",
-    obtain: "Сокровищница Проклятого замка"
+    obtain: "Сокровищница Проклятого замка",
+    method: "loot",
+    methodLabel: "Находка",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -702,7 +762,10 @@ const items = [
     ],
     stats: "Урон 13 · Скорость 1.6",
     icon: "images/other/eadcf5b768.png",
-    obtain: "Ковка в Тёмном храме, в полнолуние"
+    obtain: "Ковка в Тёмном храме, в полнолуние",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -727,7 +790,10 @@ const items = [
     ],
     stats: "Урон 15 · Скорость 1.2",
     icon: "images/other/f8ef121ebd.png",
-    obtain: "Эволюция Ночной фурии в Тёмном храме"
+    obtain: "Эволюция Ночной фурии в Тёмном храме",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -749,7 +815,10 @@ const items = [
     ],
     stats: "Урон 12 · Скорость 1.6",
     icon: "images/other/a911f57db9.png",
-    obtain: "Ковка в Небесном храме, днём"
+    obtain: "Ковка в Небесном храме, днём",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -777,7 +846,10 @@ const items = [
     ],
     stats: "Урон 16 · Скорость 1.6",
     icon: "images/other/e470fbf77d.png",
-    obtain: "Ковка в Тёмном храме"
+    obtain: "Ковка в Тёмном храме",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -802,7 +874,10 @@ const items = [
     ],
     stats: "Урон 12 · Скорость 1.6",
     icon: "images/other/bb4efe2f62.png",
-    obtain: "Ковка в Храме джунглей"
+    obtain: "Ковка в Храме джунглей",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -828,7 +903,10 @@ const items = [
     ],
     stats: "Урон 11 · Скорость 1.6",
     icon: "images/icons/ancient.png",
-    obtain: "Бочки Терра-подземелья"
+    obtain: "Бочки Терра-подземелья",
+    method: "loot",
+    methodLabel: "Находка",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -858,7 +936,10 @@ const items = [
     ],
     stats: "Урон 13 · Скорость 1.6",
     icon: "images/other/fd4a3c08f5.png",
-    obtain: "Ковка в Храме джунглей"
+    obtain: "Ковка в Храме джунглей",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -887,7 +968,10 @@ const items = [
     ],
     stats: "Урон 15 · Скорость 1.6",
     icon: "images/other/97fc9f3d00.png",
-    obtain: "Эволюция Энигмы в Храме джунглей, 4-я форма крови предков"
+    obtain: "Эволюция Энигмы в Храме джунглей, 4-я форма крови предков",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -915,7 +999,10 @@ const items = [
     ],
     stats: "Урон 10 · Скорость 1.6",
     icon: "images/other/431234757a.png",
-    obtain: "Дар Древней фабрики вместе с техноорганической кровью"
+    obtain: "Дар Древней фабрики вместе с техноорганической кровью",
+    method: "gift",
+    methodLabel: "Дар святилища",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -941,7 +1028,10 @@ const items = [
     ],
     stats: "Урон 12 · Скорость 1.6",
     icon: "images/other/9e6ab2b7b7.png",
-    obtain: "Сам вырастает из Энцефало-меча"
+    obtain: "Сам вырастает из Энцефало-меча",
+    method: "grows",
+    methodLabel: "Растёт сам",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -975,7 +1065,10 @@ const items = [
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/e48e7744f6.png",
-    obtain: "Сам вырастает из Энцефало-клинка"
+    obtain: "Сам вырастает из Энцефало-клинка",
+    method: "grows",
+    methodLabel: "Растёт сам",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -995,7 +1088,10 @@ const items = [
     ],
     stats: "Урон 12 · Скорость 1.6",
     icon: "images/other/efaf7051a3.png",
-    obtain: "Ковка в Небесном храме"
+    obtain: "Ковка в Небесном храме",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
   },
   {
     kind: "material",
@@ -1013,7 +1109,10 @@ const items = [
     ],
     stats: "",
     obtain: "Сокровищница бастиона",
-    icon: "images/icons/demon_soul.png"
+    icon: "images/icons/demon_soul.png",
+    method: "loot",
+    methodLabel: "Находка",
+    recipe: false
   },
   {
     kind: "material",
@@ -1029,7 +1128,10 @@ const items = [
     ],
     stats: "",
     obtain: "Крафт из алмаза и изумрудных блоков",
-    icon: "images/icons/terra_ingot.png"
+    icon: "images/icons/terra_ingot.png",
+    method: "craft",
+    methodLabel: "Верстак",
+    recipe: true
   },
   {
     kind: "material",
@@ -1045,7 +1147,10 @@ const items = [
     ],
     stats: "",
     obtain: "Иногда падает с Иссушителя",
-    icon: "images/other/55344aa5c9.png"
+    icon: "images/other/55344aa5c9.png",
+    method: "drop",
+    methodLabel: "Добыча",
+    recipe: false
   },
   {
     kind: "material",
@@ -1061,7 +1166,10 @@ const items = [
     ],
     stats: "",
     obtain: "Незеритовая кузня",
-    icon: "images/icons/soul_shard.png"
+    icon: "images/icons/soul_shard.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
   },
   {
     kind: "material",
@@ -1077,7 +1185,10 @@ const items = [
     ],
     stats: "",
     obtain: "Небесный и Тёмный храмы",
-    icon: "images/icons/celestial_shard.png"
+    icon: "images/icons/celestial_shard.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
   },
   {
     kind: "material",
@@ -1093,7 +1204,10 @@ const items = [
     ],
     stats: "",
     obtain: "Храм джунглей",
-    icon: "images/icons/jungle_shard.png"
+    icon: "images/icons/jungle_shard.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
   },
   {
     kind: "material",
@@ -1110,7 +1224,10 @@ const items = [
     ],
     stats: "",
     obtain: "Иногда падает с Хранителя",
-    icon: "images/other/ab92445b9c.png"
+    icon: "images/other/ab92445b9c.png",
+    method: "drop",
+    methodLabel: "Добыча",
+    recipe: false
   },
   {
     kind: "material",
@@ -1126,7 +1243,10 @@ const items = [
     ],
     stats: "",
     obtain: "Испытания Незеритовой кузни",
-    icon: "images/icons/forge_heart.png"
+    icon: "images/icons/forge_heart.png",
+    method: "trial",
+    methodLabel: "Испытание",
+    recipe: false
   },
   {
     kind: "material",
@@ -1142,7 +1262,10 @@ const items = [
     ],
     stats: "",
     obtain: "Испытания Небесного храма",
-    icon: "images/icons/seraph_feather.png"
+    icon: "images/icons/seraph_feather.png",
+    method: "trial",
+    methodLabel: "Испытание",
+    recipe: false
   },
   {
     kind: "material",
@@ -1161,7 +1284,10 @@ const items = [
     ],
     stats: "",
     obtain: "Пустотный Серафим Тёмного храма",
-    icon: "images/icons/night_eye.png"
+    icon: "images/icons/night_eye.png",
+    method: "drop",
+    methodLabel: "Добыча",
+    recipe: false
   },
   {
     kind: "material",
@@ -1177,7 +1303,10 @@ const items = [
     ],
     stats: "",
     obtain: "Испытания Храма джунглей",
-    icon: "images/icons/jungle_heart.png"
+    icon: "images/icons/jungle_heart.png",
+    method: "trial",
+    methodLabel: "Испытание",
+    recipe: false
   },
   {
     kind: "material",
@@ -1193,7 +1322,10 @@ const items = [
     ],
     stats: "",
     obtain: "Древняя фабрика",
-    icon: "images/icons/ancient_part.png"
+    icon: "images/icons/ancient_part.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
   },
   {
     kind: "material",
@@ -1211,7 +1343,10 @@ const items = [
     ],
     stats: "",
     obtain: "Третье испытание Небесного храма",
-    icon: "images/icons/night_seal.png"
+    icon: "images/icons/night_seal.png",
+    method: "trial",
+    methodLabel: "Испытание",
+    recipe: false
   },
   {
     kind: "material",
@@ -1228,7 +1363,10 @@ const items = [
     ],
     stats: "",
     obtain: "Рамка над троном Проклятого замка",
-    icon: "images/icons/black_substance.png"
+    icon: "images/icons/black_substance.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
   },
   {
     kind: "material",
@@ -1249,7 +1387,10 @@ const items = [
     ],
     stats: "",
     obtain: "Большой зал Терра-подземелья, после Джунглевого голема",
-    icon: "images/icons/terra_essence.png"
+    icon: "images/icons/terra_essence.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
   },
   {
     kind: "material",
@@ -1271,7 +1412,10 @@ const items = [
     ],
     stats: "",
     obtain: "Часовая башня Проклятого замка",
-    icon: "images/icons/hell_essence.png"
+    icon: "images/icons/hell_essence.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
   },
   {
     kind: "material",
@@ -1289,7 +1433,10 @@ const items = [
     ],
     stats: "",
     obtain: "Сборка кровью предков у алтаря Храма джунглей",
-    icon: "images/icons/terra_compass.png"
+    icon: "images/icons/terra_compass.png",
+    method: "assemble",
+    methodLabel: "Сборка у алтаря",
+    recipe: false
   },
   {
     kind: "material",
@@ -1307,7 +1454,10 @@ const items = [
     ],
     stats: "",
     obtain: "Проклятый король",
-    icon: "images/icons/royal_clock.png"
+    icon: "images/icons/royal_clock.png",
+    method: "drop",
+    methodLabel: "Добыча",
+    recipe: false
   },
   {
     kind: "material",
@@ -1323,7 +1473,10 @@ const items = [
     ],
     stats: "",
     obtain: "Предвестник Древней фабрики",
-    icon: "images/icons/harbinger_core.png"
+    icon: "images/icons/harbinger_core.png",
+    method: "drop",
+    methodLabel: "Добыча",
+    recipe: false
   },
   {
     kind: "material",
@@ -1340,7 +1493,10 @@ const items = [
     ],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
-    icon: "images/other/6f71e94f18.png"
+    icon: "images/other/6f71e94f18.png",
+    method: "assemble",
+    methodLabel: "Сборка у алтаря",
+    recipe: false
   },
   {
     kind: "material",
@@ -1357,7 +1513,10 @@ const items = [
     ],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
-    icon: "images/other/897fc1caae.png"
+    icon: "images/other/897fc1caae.png",
+    method: "assemble",
+    methodLabel: "Сборка у алтаря",
+    recipe: false
   },
   {
     kind: "material",
@@ -1376,7 +1535,10 @@ const items = [
     ],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
-    icon: "images/other/23434c7088.png"
+    icon: "images/other/23434c7088.png",
+    method: "assemble",
+    methodLabel: "Сборка у алтаря",
+    recipe: false
   },
   {
     kind: "material",
@@ -1400,7 +1562,10 @@ const items = [
     ],
     stats: "",
     obtain: "Крафт: Терра-сущность, звезда Незера, Адская сущность, 6 плачущих обсидианов",
-    icon: "images/icons/wanderer_cube.png"
+    icon: "images/icons/wanderer_cube.png",
+    method: "craft",
+    methodLabel: "Верстак",
+    recipe: true
   }
 ];
 const chains = [
@@ -2312,6 +2477,195 @@ const mastery = [
     note: "предел"
   }
 ];
+const recipes = [
+  {
+    result: "terra_ingot",
+    grid: [
+      "v:emerald_block",
+      "v:emerald_block",
+      "v:emerald_block",
+      "v:emerald_block",
+      "v:diamond",
+      "v:emerald_block",
+      "v:emerald_block",
+      "v:emerald_block",
+      "v:emerald_block"
+    ],
+    note: "Алмаз в центре, восемь изумрудных блоков вокруг."
+  },
+  {
+    result: "calamity",
+    grid: [
+      "doom",
+      "demon_soul",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    shapeless: true,
+    note: "Погибель и Душа демона в любых клетках."
+  },
+  {
+    result: "demonic_cutter",
+    grid: [
+      "cutter",
+      "demon_soul",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    shapeless: true,
+    note: "Резак и Душа демона в любых клетках."
+  },
+  {
+    result: "demon_slayer",
+    grid: [
+      "arachnid",
+      "demon_soul",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    shapeless: true,
+    note: "Арахнид и Душа демона в любых клетках."
+  },
+  {
+    result: "demon_will",
+    grid: [
+      "calamity",
+      "wither_soul",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    shapeless: true,
+    note: "Бедствие и Душа Иссушителя в любых клетках."
+  },
+  {
+    result: "terra_cutter",
+    grid: [
+      "terra_ingot",
+      "terra_ingot",
+      "terra_ingot",
+      "terra_ingot",
+      "demonic_cutter",
+      "terra_ingot",
+      "terra_ingot",
+      "terra_ingot",
+      "terra_ingot"
+    ],
+    note: "Демонический резак в центре, восемь терра-слитков вокруг."
+  },
+  {
+    result: "wanderer_cube",
+    grid: [
+      "v:crying_obsidian",
+      "v:crying_obsidian",
+      "v:crying_obsidian",
+      "terra_essence",
+      "v:nether_star",
+      "hell_essence",
+      "v:crying_obsidian",
+      "v:crying_obsidian",
+      "v:crying_obsidian"
+    ],
+    note: "Средний ряд: Терра-сущность, звезда Незера, Адская сущность (можно и зеркально); сверху и снизу — плачущий обсидиан."
+  },
+  {
+    result: "g:air_compass",
+    grid: [
+      null,
+      "v:wind_charge",
+      null,
+      "v:wind_charge",
+      "v:compass",
+      "v:wind_charge",
+      null,
+      "v:wind_charge",
+      null
+    ],
+    note: "Компас в центре, четыре заряда ветра крестом."
+  },
+  {
+    result: "g:forge_map",
+    grid: [
+      null,
+      "v:nether_brick",
+      null,
+      "v:nether_brick",
+      "v:map",
+      "v:nether_brick",
+      null,
+      "v:nether_brick",
+      null
+    ],
+    note: "Пустая карта в центре, четыре незерских кирпича крестом."
+  },
+  {
+    result: "g:jungle_map",
+    grid: [
+      null,
+      "v:emerald",
+      null,
+      "v:emerald",
+      "v:map",
+      "v:emerald",
+      null,
+      "v:emerald",
+      null
+    ],
+    note: "Пустая карта в центре, четыре изумруда крестом."
+  },
+  {
+    result: "g:night_compass",
+    grid: [
+      "g:air_compass",
+      "v:nether_star",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    shapeless: true,
+    note: "Компас воздуха и звезда Незера в любых клетках."
+  }
+];
+const vanillaNames = {
+  emerald_block: "Изумрудный блок",
+  diamond: "Алмаз",
+  crying_obsidian: "Плачущий обсидиан",
+  nether_star: "Звезда Незера",
+  compass: "Компас",
+  wind_charge: "Заряд ветра",
+  map: "Пустая карта",
+  nether_brick: "Незерский кирпич",
+  emerald: "Изумруд"
+};
+const guideNames = {
+  air_compass: "Компас воздуха",
+  forge_map: "Карта кузни",
+  jungle_map: "Карта джунглей",
+  night_compass: "Ночной компас"
+};
 const data = {
   counts,
   words,
@@ -2324,7 +2678,10 @@ const data = {
   hotbar,
   achievements,
   blood,
-  mastery
+  mastery,
+  recipes,
+  vanillaNames,
+  guideNames
 };
 export {
   data as d
