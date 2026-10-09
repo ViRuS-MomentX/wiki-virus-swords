@@ -322,7 +322,7 @@ const items = [
       '<span style="color:#AAAAAA">Удар по подсвеченному проходит сквозь треть его брони.</span>',
       '<span style="color:#AAAAAA">Убийство подсвеченного даёт регенерацию II на 5 секунд.</span>'
     ],
-    stats: "Урон 10 · Скорость 1.6",
+    stats: "Урон 11 · Скорость 1.6",
     icon: "images/other/5ffe2fbc10.png",
     obtain: "Крафт из Бедствия или эволюция в Незеритовой кузне",
     method: "craft",
@@ -457,7 +457,7 @@ const items = [
       '<span style="color:#55FF55">✦ Жила</span>',
       '<span style="color:#AAAAAA">С каждого убитого падает изумруд. Шанс — треть.</span>'
     ],
-    stats: "Урон 8 · Скорость 1",
+    stats: "Урон 10 · Скорость 1",
     icon: "images/other/2808503131.png",
     obtain: "Крафт из Демонического резака и терра-слитков",
     method: "craft",
@@ -596,7 +596,7 @@ const items = [
       '<span style="color:#AAAAAA">Горнило — и она станет Секирой берсерка,</span>',
       '<span style="color:#AAAAAA">Серафим — и она станет Золотым фениксом.</span>'
     ],
-    stats: "Урон 9 · Скорость 0.9",
+    stats: "Урон 10 · Скорость 1",
     icon: "images/other/5e7c8e6aba.png",
     obtain: "Сундуки крепости Незера",
     method: "loot",
@@ -623,7 +623,7 @@ const items = [
       '<span style="color:#AAAAAA">Волна рёва отбрасывает врагов в 5 блоках и замедляет.</span>',
       '<span style="color:#555555">Перезарядка 60 секунд.</span>'
     ],
-    stats: "Урон 12 · Скорость 0.9",
+    stats: "Урон 13 · Скорость 1",
     icon: "images/other/66344d5ef9.png",
     obtain: "Сумрачная секира меняется сама в испытании Незеритовой кузни",
     method: "grows",
@@ -650,7 +650,7 @@ const items = [
       '<span style="color:#AAAAAA">союзников не задевает.</span>',
       '<span style="color:#555555">Перезарядка 15 секунд.</span>'
     ],
-    stats: "Урон 12 · Скорость 0.9",
+    stats: "Урон 14 · Скорость 1",
     icon: "images/other/c02c9c9337.png",
     obtain: "Сумрачная секира меняется сама в испытании Небесного храма",
     method: "grows",
@@ -758,7 +758,7 @@ const items = [
       '<span style="color:#5555FF">✦ Звездопад</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
       '<span style="color:#AAAAAA">Туда, куда вы смотрите, падают 5 звёзд:</span>',
       '<span style="color:#AAAAAA">каждая — 4,5 урона в 2 блоках и подброс.</span>',
-      '<span style="color:#AAAAAA">Ночью звёзд вдвое больше. Без перезарядки.</span>'
+      '<span style="color:#AAAAAA">Ночью звёзд вдвое больше. Раз в секунду.</span>'
     ],
     stats: "Урон 13 · Скорость 1.6",
     icon: "images/other/eadcf5b768.png",
@@ -864,7 +864,7 @@ const items = [
       "",
       '<span style="color:#55FF55">✦ Терра-лучи</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">удерживать правый клик</span>',
       '<span style="color:#AAAAAA">Пока кнопка зажата, клинок строчит зелёными лучами:</span>',
-      '<span style="color:#AAAAAA">2 урона и отравление первому, кого луч заденет.</span>',
+      '<span style="color:#AAAAAA">1 урон и отравление первому, кого луч заденет.</span>',
       '<span style="color:#555555">Десять лучей в секунду, до 24 блоков.</span>',
       '<span style="color:#555555">Союзников лучи проходят насквозь.</span>',
       "",
@@ -1086,7 +1086,7 @@ const items = [
       '<span style="color:#AAAAAA">складывается с уже набранной скоростью.</span>',
       '<span style="color:#AAAAAA">Падение после этого не ранит.</span>'
     ],
-    stats: "Урон 12 · Скорость 1.6",
+    stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/efaf7051a3.png",
     obtain: "Ковка в Небесном храме",
     method: "forge",

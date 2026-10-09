@@ -42,7 +42,7 @@
 |---|---|---|---|---|
 | <img src="assets/icons/doom.png" width="40" height="40" alt=""> | **Погибель** | 7 | Обычная | Сундуки древнего города |
 | <img src="assets/icons/calamity.png" width="40" height="40" alt=""> | **Бедствие** | 9 | Адская | Крафт: Погибель + Душа демона |
-| <img src="assets/icons/demon_will.png" width="40" height="40" alt=""> | **Воля Демона** | 10 | Адская | Крафт из Бедствия или эволюция в Незеритовой кузне |
+| <img src="assets/icons/demon_will.png" width="40" height="40" alt=""> | **Воля Демона** | 11 | Адская | Крафт из Бедствия или эволюция в Незеритовой кузне |
 | <img src="assets/icons/all_black.png" width="40" height="40" alt=""> | **Все-Чёрный** | 14 | Ультра-адская | Эволюция Воли Демона в Незеритовой кузне |
 | <img src="assets/icons/imperium.png" width="40" height="40" alt=""> | **Империум** | 14 | Ультра-адская | Ковка в Незеритовой кузне: Воля Демона, Адская сущность, Сердце кузни, 64 осколка души |
 
@@ -52,7 +52,7 @@
 |---|---|---|---|---|
 | <img src="assets/icons/cutter.png" width="40" height="40" alt=""> | **Резак** | 5 | Обычная | Сундуки древнего города |
 | <img src="assets/icons/demonic_cutter.png" width="40" height="40" alt=""> | **Демонический резак** | 7 | Эпическая | Крафт: Резак + Душа демона |
-| <img src="assets/icons/terra_cutter.png" width="40" height="40" alt=""> | **Терра-резак** | 8 | Терра | Крафт из Демонического резака и терра-слитков |
+| <img src="assets/icons/terra_cutter.png" width="40" height="40" alt=""> | **Терра-резак** | 10 | Терра | Крафт из Демонического резака и терра-слитков |
 
 ### Кровавая линия
 
@@ -67,15 +67,15 @@
 
 | | Клинок | Урон | Редкость | Где взять |
 |---|---|---|---|---|
-| <img src="assets/icons/gloomsteel_axe.png" width="40" height="40" alt=""> | **Сумрачная секира** | 9 | Необычная | Сундуки крепости Незера |
-| <img src="assets/icons/berserker_axe.png" width="40" height="40" alt=""> | **Секира берсерка** | 12 | Адская | Сумрачная секира меняется сама в испытании Незеритовой кузни |
-| <img src="assets/icons/phoenix_axe.png" width="40" height="40" alt=""> | **Золотой феникс** | 12 | Небесная | Сумрачная секира меняется сама в испытании Небесного храма |
+| <img src="assets/icons/gloomsteel_axe.png" width="40" height="40" alt=""> | **Сумрачная секира** | 10 | Необычная | Сундуки крепости Незера |
+| <img src="assets/icons/berserker_axe.png" width="40" height="40" alt=""> | **Секира берсерка** | 13 | Адская | Сумрачная секира меняется сама в испытании Незеритовой кузни |
+| <img src="assets/icons/phoenix_axe.png" width="40" height="40" alt=""> | **Золотой феникс** | 14 | Небесная | Сумрачная секира меняется сама в испытании Небесного храма |
 
 ### Небесные клинки
 
 | | Клинок | Урон | Редкость | Где взять |
 |---|---|---|---|---|
-| <img src="assets/icons/hyperion.png" width="40" height="40" alt=""> | **Hyperion** | 12 | Небесная | Ковка в Небесном храме |
+| <img src="assets/icons/hyperion.png" width="40" height="40" alt=""> | **Hyperion** | 14 | Небесная | Ковка в Небесном храме |
 | <img src="assets/icons/solstice.png" width="40" height="40" alt=""> | **Солнцестояние** | 13 | Небесная | Ковка в Небесном храме, днём |
 | <img src="assets/icons/phantomguard.png" width="40" height="40" alt=""> | **Призрачный страж** | 12 | Небесная | Сокровищница Проклятого замка |
 | <img src="assets/icons/excalibur.png" width="40" height="40" alt=""> | **Экскалибур** | 12 | Небесная | Ковка в Небесном храме, днём |
