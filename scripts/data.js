@@ -1333,8 +1333,7 @@ const items = [
     lore: [
       '<span style="color:#555555"><em>Она не отражает свет. Она его ест.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Висит в рамке над троном Проклятого замка;</span>',
-      '<span style="color:#AAAAAA">её оставляет и страж третьего испытания кузни.</span>',
+      '<span style="color:#AAAAAA">Висит в рамке над троном Проклятого замка.</span>',
       '<span style="color:#AAAAAA">Корона крови у алтаря своего храма и она</span>',
       '<span style="color:#AAAAAA">становятся Все-Чёрным. Техноорганическая</span>',
       '<span style="color:#AAAAAA">кровь отдаёт её Клоду — за четвёртую форму.</span>'
