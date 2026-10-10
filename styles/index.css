@@ -1,17 +1,18 @@
+/* One theme: the dark one, as the game itself is played at night more often than not. */
 :root {
-  --bg: #eeedf1;
-  --surface: #ffffff;
-  --surface-2: #f6f5f8;
-  --ink: #1b1820;
-  --ink-2: #3a3542;
-  --muted: #6a6473;
-  --line: #d9d5de;
-  --accent: #b4401a;
-  --accent-soft: #f6e2d8;
-  --link: #9a3413;
-  --code-bg: #e9e7ee;
-  --focus: #6d3cff;
-  /* In-game UI: the same in both themes, as it is in the game. */
+  --bg: #131116;
+  --surface: #1b1920;
+  --surface-2: #211e27;
+  --ink: #ebe7f0;
+  --ink-2: #cfc9d6;
+  --muted: #9a93a3;
+  --line: #2e2a35;
+  --accent: #ff7a3d;
+  --accent-soft: #3a2218;
+  --link: #ff9a66;
+  --code-bg: #25222b;
+  --focus: #a98bff;
+  /* In-game UI, as it is in the game. */
   --tip-bg: rgba(16, 0, 16, 0.95);
   --tip-b1: #5000ff;
   --tip-b2: #28007f;
@@ -24,20 +25,9 @@
   --body: "Golos Text", "Segoe UI", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
   --pixel: "Press Start 2P", ui-monospace, monospace;
-  color-scheme: light;
+  color-scheme: dark;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #131116; --surface: #1b1920; --surface-2: #211e27; --ink: #ebe7f0; --ink-2: #cfc9d6;
-    --muted: #9a93a3; --line: #2e2a35; --accent: #ff7a3d; --accent-soft: #3a2218; --link: #ff9a66;
-    --code-bg: #25222b; --focus: #a98bff; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #131116; --surface: #1b1920; --surface-2: #211e27; --ink: #ebe7f0; --ink-2: #cfc9d6;
-  --muted: #9a93a3; --line: #2e2a35; --accent: #ff7a3d; --accent-soft: #3a2218; --link: #ff9a66;
-  --code-bg: #25222b; --focus: #a98bff; color-scheme: dark;
-}
+html { background: var(--bg); }
 
 * { box-sizing: border-box; }
 /* The filters hide cards with the hidden attribute; a card's own display must not win over it. */
@@ -248,14 +238,8 @@ figure.rooms figcaption { padding: 8px 14px; font-size: .78rem; color: #a59eb0; 
 .adv h4 { font: 700 1.08rem var(--display); }
 .ftag { font: 600 .66rem/1 var(--body); letter-spacing: .08em; text-transform: uppercase; padding: 4px 6px; border-radius: 4px; }
 .t-task { background: var(--surface-2); color: var(--muted); }
-.t-goal { background: #f7ecc9; color: #7a5a06; }
-.t-challenge { background: #e8dcfb; color: #5a2da0; }
-:root[data-theme="dark"] .t-goal { background: #3a3014; color: #f0cf6a; }
-:root[data-theme="dark"] .t-challenge { background: #2e2046; color: #c9a8ff; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .t-goal { background: #3a3014; color: #f0cf6a; }
-  :root:not([data-theme="light"]) .t-challenge { background: #2e2046; color: #c9a8ff; }
-}
+.t-goal { background: #3a3014; color: #f0cf6a; }
+.t-challenge { background: #2e2046; color: #c9a8ff; }
 .quote { font-style: italic; color: var(--ink-2); font-size: .92rem; margin-top: 4px; }
 .cond { font-size: .82rem; color: var(--muted); margin-top: 4px; }
 
@@ -336,3 +320,17 @@ a.cslot:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
   .cslot img { width: 24px; height: 24px; }
   .crafts, .methods { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* --- abilities: one card each, its colour in the head strip ----------------------------- */
+.abilities { display: grid; gap: 8px; }
+.ability { background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.ability header { display: flex; align-items: center; justify-content: space-between; gap: 8px 10px; flex-wrap: wrap; padding: 8px 12px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--c) 20%, transparent), transparent 75%); border-bottom: 1px solid var(--line); }
+.ability h4 { font: 700 1.08rem/1.2 var(--display); color: var(--c); letter-spacing: .01em; }
+.ability p { padding: 9px 12px 11px; color: var(--ink-2); font-size: .88rem; line-height: 1.55; }
+.ability p span[style] { filter: brightness(1.05); }
+.ability .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.ability .chip { display: inline-flex; align-items: center; gap: 5px; font: 600 .72rem/1 var(--body); padding: 5px 8px; border-radius: 999px;
+  background: var(--surface); color: var(--ink-2); border: 1px solid var(--line); white-space: nowrap; }
+.ability .chip svg { width: 13px; height: 13px; flex: none; }
+.ability .chip.rest { color: #f0cf6a; }

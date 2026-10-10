@@ -272,6 +272,7 @@ const items = [
       '<span style="color:#AAAAAA">Ни чар, ни хитростей. Только сталь,</span>',
       '<span style="color:#AAAAAA">которая пережила всех, кто её боялся.</span>'
     ],
+    abilities: [],
     stats: "Урон 7 · Скорость 1.6",
     icon: "images/other/72806b35de.png",
     obtain: "Сундуки древнего города",
@@ -287,12 +288,17 @@ const items = [
     rarityLabel: "Адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>В сталь вплавили то, что моргало. Теперь моргает сталь.</em></span>',
-      "",
-      '<span style="color:#FFAA00">✦ Пекло</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">На минуту — скорость, сила и огнестойкость.</span>',
-      '<span style="color:#AAAAAA">Из вас хлещет пламя, и это видно всем.</span>',
-      '<span style="color:#555555">Перезарядка 5 минут с конца действия.</span>'
+      '<span style="color:#555555"><em>В сталь вплавили то, что моргало. Теперь моргает сталь.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Пекло",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "5 мин с конца действия",
+        text: "<span>На минуту — скорость, сила и огнестойкость.</span> <span>Из вас хлещет пламя, и это видно всем.</span>"
+      }
     ],
     stats: "Урон 9 · Скорость 1.6",
     icon: "images/other/a4a3c2e4f9.png",
@@ -309,15 +315,25 @@ const items = [
     rarityLabel: "Адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Иссушитель умер. То, что внутри клинка, — нет.</em></span>',
-      "",
-      '<span style="color:#FFAA00">✦ Пекло</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Минута скорости, силы и огнестойкости —</span>',
-      '<span style="color:#AAAAAA">и всё живое в 35 блоках вспыхивает на 10 секунд.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Прозрение</span>',
-      '<span style="color:#AAAAAA">Удар по подсвеченному проходит сквозь треть его брони.</span>',
-      '<span style="color:#AAAAAA">Убийство подсвеченного даёт регенерацию II на 5 секунд.</span>'
+      '<span style="color:#555555"><em>Иссушитель умер. То, что внутри клинка, — нет.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Пекло",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: null,
+        text: "<span>Минута скорости, силы и огнестойкости —</span> <span>и всё живое в 35 блоках вспыхивает на 10 секунд.</span>"
+      },
+      {
+        name: "Прозрение",
+        colour: "#FF5555",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Удар по подсвеченному проходит сквозь треть его брони.</span> <span>Убийство подсвеченного даёт регенерацию II на 5 секунд.</span>"
+      }
     ],
     stats: "Урон 11 · Скорость 1.6",
     icon: "images/other/5ffe2fbc10.png",
@@ -341,26 +357,33 @@ const items = [
       '<span style="color:#555555"><em>не желает устанавливать какой-либо контакт за пределами</em></span>',
       '<span style="color:#555555"><em>ментального, это остаётся загадкой.</em></span>',
       "",
-      '<span style="color:#AAAAAA"><em>Чтобы презирать богов, надо их знать.</em></span>',
-      "",
-      '<span style="color:#AA0000">✦ Ужас</span>',
-      '<span style="color:#AAAAAA">Мирные и стрелки идут к вам вплотную,</span>',
-      '<span style="color:#AAAAAA">бойцы ближнего боя отлетают в чёрном дыму.</span>',
-      "",
-      '<span style="color:#AA0000">✦ Жертва</span>',
-      '<span style="color:#AAAAAA">Первый, кого вы ударите, становится жертвой.</span>',
-      '<span style="color:#AAAAAA">От руки жертвы вы не умрёте: смертельный удар,</span>',
-      '<span style="color:#AAAAAA">стрела, зелье или падение после её удара</span>',
-      '<span style="color:#AAAAAA">просто не случатся. Других это не касается.</span>',
-      '<span style="color:#AAAAAA">Жертва одна; её отпускает смерть или 30 секунд</span>',
-      '<span style="color:#AAAAAA">без ваших ударов — тогда можно выбрать новую.</span>',
-      "",
-      '<span style="color:#AA0000">✦ Тёмная территория</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Тёмный купол радиусом 12 блоков на 30 секунд.</span>',
-      '<span style="color:#AAAAAA">В нём сами собой раскрываются чёрные разрезы:</span>',
-      '<span style="color:#AAAAAA">все, кроме своих, получают 4 урона в секунду.</span>',
-      '<span style="color:#AAAAAA">Пока вы внутри, вас нельзя убить.</span>',
-      '<span style="color:#555555">Перезарядка 5 минут.</span>'
+      '<span style="color:#AAAAAA"><em>Чтобы презирать богов, надо их знать.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Ужас",
+        colour: "#FF5A5A",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Мирные и стрелки идут к вам вплотную,</span> <span>бойцы ближнего боя отлетают в чёрном дыму.</span>"
+      },
+      {
+        name: "Жертва",
+        colour: "#FF5A5A",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Первый, кого вы ударите, становится жертвой.</span> <span>От руки жертвы вы не умрёте: смертельный удар,</span> <span>стрела, зелье или падение после её удара</span> <span>просто не случатся. Других это не касается.</span> <span>Жертва одна; её отпускает смерть или 30 секунд</span> <span>без ваших ударов — тогда можно выбрать новую.</span>"
+      },
+      {
+        name: "Тёмная территория",
+        colour: "#FF5A5A",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "5 мин",
+        text: "<span>Тёмный купол радиусом 12 блоков на 30 секунд.</span> <span>В нём сами собой раскрываются чёрные разрезы:</span> <span>все, кроме своих, получают 4 урона в секунду.</span> <span>Пока вы внутри, вас нельзя убить.</span>"
+      }
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/63ca5f7c3f.png",
@@ -377,19 +400,41 @@ const items = [
     rarityLabel: "Ультра-адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Корона пекла, выкованная из его же сердца.</em></span>',
-      "",
-      '<span style="color:#FFAA00">✦ Дыхание пекла</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">держать правую кнопку</span>',
-      '<span style="color:#AAAAAA">Огонь на 8 блоков вперёд, как дыхание дракона:</span>',
-      '<span style="color:#AAAAAA">4 урона и поджог каждому врагу в нём. Без перезарядки.</span>',
-      "",
-      '<span style="color:#FFAA00">✦ Горнило</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Призывает кузнеца Преисподней на минуту:</span>',
-      '<span style="color:#AAAAAA">он бьётся за вас, но здоровья у него куда меньше.</span>',
-      '<span style="color:#555555">Перезарядка 5 минут.</span>',
-      "",
-      '<span style="color:#FFAA00">✦ Дом</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">В Незере удары и способности — вдвое сильнее.</span>'
+      '<span style="color:#555555"><em>Клинок пекла, выкованный из его же сердца.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Огненный эдикт",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "5 мин",
+        text: "<span>Поле радиусом 30 блоков на 15 секунд: каждый враг</span> <span>в нём горит — даже неуязвимый к огню — по 8 урона</span> <span>в секунду. Края — оранжевые, из земли рвётся пламя.</span>"
+      },
+      {
+        name: "Дыхание пекла",
+        colour: "#FFAA00",
+        trigger: "Зажать ПКМ",
+        kind: "hold",
+        rest: null,
+        text: "<span>Огонь на 8 блоков вперёд, как дыхание дракона:</span> <span>4 урона и поджог каждому врагу в нём. Без перезарядки.</span>"
+      },
+      {
+        name: "Душа пекла",
+        colour: "#55FFFF",
+        trigger: "Под «Пламенем за спиной»",
+        kind: "other",
+        rest: null,
+        text: "<span>Пока пепельная кровь пробуждена, Империум горит</span> <span>огнём душ: эдикт синий, 12 урона и замедление,</span> <span>дыхание — на 12 блоков по 7 урона.</span>"
+      },
+      {
+        name: "Дом",
+        colour: "#FFAA00",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>В Незере удары и способности — вдвое сильнее.</span>"
+      }
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/f29e190984.png",
@@ -406,10 +451,17 @@ const items = [
     rarityLabel: "Обычная",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Кто-то унёс его под землю и не вернулся.</em></span>',
-      "",
-      '<span style="color:#AAAAAA">✦ Разделка</span>',
-      '<span style="color:#AAAAAA">Удар достаёт врагов в области 3×3×3 вокруг цели.</span>'
+      '<span style="color:#555555"><em>Кто-то унёс его под землю и не вернулся.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Разделка",
+        colour: "#CFC9D6",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Удар достаёт врагов в области 3×3×3 вокруг цели.</span>"
+      }
     ],
     stats: "Урон 5 · Скорость 1",
     icon: "images/other/9adf817a26.png",
@@ -426,10 +478,17 @@ const items = [
     rarityLabel: "Эпическая",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Лезвие потемнело и стало брать шире.</em></span>',
-      "",
-      '<span style="color:#FF55FF">✦ Разделка</span>',
-      '<span style="color:#AAAAAA">Удар достаёт врагов в области 4×4×4 вокруг цели.</span>'
+      '<span style="color:#555555"><em>Лезвие потемнело и стало брать шире.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Разделка",
+        colour: "#FF55FF",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Удар достаёт врагов в области 4×4×4 вокруг цели.</span>"
+      }
     ],
     stats: "Урон 7 · Скорость 1",
     icon: "images/other/9499d8c8aa.png",
@@ -446,13 +505,25 @@ const items = [
     rarityLabel: "Терра",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Зелёный металл не тупится и не прощает.</em></span>',
-      "",
-      '<span style="color:#55FF55">✦ Разделка</span>',
-      '<span style="color:#AAAAAA">Удар достаёт врагов в области 5×5×5 вокруг цели.</span>',
-      "",
-      '<span style="color:#55FF55">✦ Жила</span>',
-      '<span style="color:#AAAAAA">С каждого убитого падает изумруд. Шанс — треть.</span>'
+      '<span style="color:#555555"><em>Зелёный металл не тупится и не прощает.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Разделка",
+        colour: "#55FF55",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Удар достаёт врагов в области 5×5×5 вокруг цели.</span>"
+      },
+      {
+        name: "Жила",
+        colour: "#55FF55",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>С каждого убитого падает изумруд. Шанс — треть.</span>"
+      }
     ],
     stats: "Урон 10 · Скорость 1",
     icon: "images/other/2808503131.png",
@@ -469,14 +540,25 @@ const items = [
     rarityLabel: "Необычная",
     line: "blood",
     lore: [
-      '<span style="color:#555555"><em>Тот, кто его ковал, держал пауков не для яда.</em></span>',
-      "",
-      '<span style="color:#AA00AA">✦ Свой среди чужих</span>',
-      '<span style="color:#AAAAAA">По паукам бьёт вдвое сильнее.</span>',
-      "",
-      '<span style="color:#FF55FF">✦ Свора</span>',
-      '<span style="color:#AAAAAA">Удар зовёт паука на ту же цель. Он ваш и вас не тронет,</span>',
-      '<span style="color:#AAAAAA">но уходит, простояв без дела полминуты.</span>'
+      '<span style="color:#555555"><em>Тот, кто его ковал, держал пауков не для яда.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Свой среди чужих",
+        colour: "#C86BFF",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>По паукам бьёт вдвое сильнее.</span>"
+      },
+      {
+        name: "Свора",
+        colour: "#FF55FF",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Удар зовёт паука на ту же цель. Он ваш и вас не тронет,</span> <span>но уходит, простояв без дела полминуты.</span>"
+      }
     ],
     stats: "Урон 8 · Скорость 1.6",
     icon: "images/other/8572c066ae.png",
@@ -493,15 +575,25 @@ const items = [
     rarityLabel: "Адская",
     line: "blood",
     lore: [
-      '<span style="color:#555555"><em>Паучья сталь напилась и больше не отпускает.</em></span>',
-      "",
-      '<span style="color:#FF5555">✦ Жажда</span>',
-      '<span style="color:#AAAAAA">Удар с шансом в треть возвращает вам половину</span>',
-      '<span style="color:#AAAAAA">того, что вы нанесли.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Добыча</span>',
-      '<span style="color:#AAAAAA">Убийство возвращает пятую часть здоровья цели —</span>',
-      '<span style="color:#AAAAAA">чем крупнее добыча, тем больше достаётся вам.</span>'
+      '<span style="color:#555555"><em>Паучья сталь напилась и больше не отпускает.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Жажда",
+        colour: "#FF5555",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Удар с шансом в треть возвращает вам половину</span> <span>того, что вы нанесли.</span>"
+      },
+      {
+        name: "Добыча",
+        colour: "#FF5555",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Убийство возвращает пятую часть здоровья цели —</span> <span>чем крупнее добыча, тем больше достаётся вам.</span>"
+      }
     ],
     stats: "Урон 10 · Скорость 1.6",
     icon: "images/other/8f2915c708.png",
@@ -519,20 +611,33 @@ const items = [
     line: "blood",
     lore: [
       '<span style="color:#555555"><em>Пять тысяч раз он пил. На пять тысяч первый</em></span>',
-      '<span style="color:#555555"><em>научился поднимать тех, кого выпил.</em></span>',
-      "",
-      '<span style="color:#FF5555">✦ Жажда</span>',
-      '<span style="color:#AAAAAA">Удар с шансом в треть возвращает вам половину</span>',
-      '<span style="color:#AAAAAA">того, что вы нанесли.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Добыча</span>',
-      '<span style="color:#AAAAAA">Убийство возвращает пятую часть здоровья цели.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Свита могил</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Рядом встают три скелета-иссушителя и бьются</span>',
-      '<span style="color:#AAAAAA">за вас: по вашей цели, по тому, кто ударил вас,</span>',
-      '<span style="color:#AAAAAA">иначе по ближайшему врагу.</span>',
-      '<span style="color:#555555">Стоят 30 секунд. Перезарядка 60 секунд.</span>'
+      '<span style="color:#555555"><em>научился поднимать тех, кого выпил.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Жажда",
+        colour: "#FF5555",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Удар с шансом в треть возвращает вам половину</span> <span>того, что вы нанесли.</span>"
+      },
+      {
+        name: "Добыча",
+        colour: "#FF5555",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Убийство возвращает пятую часть здоровья цели.</span>"
+      },
+      {
+        name: "Свита могил",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "60 с",
+        text: "<span>Рядом встают три скелета-иссушителя и бьются</span> <span>за вас: по вашей цели, по тому, кто ударил вас,</span> <span>иначе по ближайшему врагу.</span> Стоят 30 секунд."
+      }
     ],
     stats: "Урон 11 · Скорость 1.6",
     icon: "images/other/ca0b2d0595.png",
@@ -550,21 +655,25 @@ const items = [
     line: "blood",
     lore: [
       '<span style="color:#555555"><em>Самый яркий из них упал первым.</em></span>',
-      '<span style="color:#555555"><em>С тех пор его свет греет только своих.</em></span>',
-      "",
-      '<span style="color:#FF5555">✦ Дары незера</span>',
-      '<span style="color:#AAAAAA">Каждого, кого вы ударили, с вами связывает</span>',
-      '<span style="color:#AAAAAA">красный луч — до 10 целей, до 20 блоков.</span>',
-      '<span style="color:#AAAAAA">Связанные теряют 2 здоровья в секунду,</span>',
-      '<span style="color:#AAAAAA">и всё отнятое лучами лечит вас.</span>',
-      '<span style="color:#AAAAAA">Отойдут дальше — луч рвётся.</span>',
-      "",
-      '<span style="color:#FFAA00">✦ Сделка с дьяволом</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Поднимает купол радиусом 30 блоков на 30 секунд.</span>',
-      '<span style="color:#AAAAAA">Свои под ним исцеляются, бьют сильнее и держат удар.</span>',
-      '<span style="color:#AAAAAA">Чужие под ним горят и не могут залечить ран,</span>',
-      '<span style="color:#AAAAAA">а всё, что отнял у них огонь, лечит вас.</span>',
-      '<span style="color:#555555">Перезарядка 90 секунд.</span>'
+      '<span style="color:#555555"><em>С тех пор его свет греет только своих.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Дары незера",
+        colour: "#FF5555",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Каждого, кого вы ударили, с вами связывает</span> <span>красный луч — до 10 целей, до 20 блоков.</span> <span>Связанные теряют 2 здоровья в секунду,</span> <span>и всё отнятое лучами лечит вас.</span> <span>Отойдут дальше — луч рвётся.</span>"
+      },
+      {
+        name: "Сделка с дьяволом",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "90 с",
+        text: "<span>Поднимает купол радиусом 30 блоков на 30 секунд.</span> <span>Свои под ним исцеляются, бьют сильнее и держат удар.</span> <span>Чужие под ним горят и не могут залечить ран,</span> <span>а всё, что отнял у них огонь, лечит вас.</span>"
+      }
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/1f90250f5b.png",
@@ -582,16 +691,25 @@ const items = [
     line: "axe",
     lore: [
       '<span style="color:#555555"><em>Её ковали там, где не бывает рассвета.</em></span>',
-      '<span style="color:#555555"><em>Она и не ждёт его.</em></span>',
-      "",
-      '<span style="color:#AAAAAA">✦ Тяжесть</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Критический удар в прыжке замедляет цель</span>',
-      '<span style="color:#AAAAAA">на 2 секунды.</span>',
-      "",
-      '<span style="color:#AA00AA">✦ Иной облик</span>',
-      '<span style="color:#AAAAAA">Будь при вас, когда падёт страж святилища:</span>',
-      '<span style="color:#AAAAAA">Горнило — и она станет Секирой берсерка,</span>',
-      '<span style="color:#AAAAAA">Серафим — и она станет Золотым фениксом.</span>'
+      '<span style="color:#555555"><em>Она и не ждёт его.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Тяжесть",
+        colour: "#CFC9D6",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Критический удар в прыжке замедляет цель</span> <span>на 2 секунды.</span>"
+      },
+      {
+        name: "Иной облик",
+        colour: "#C86BFF",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Будь при вас, когда падёт страж святилища:</span> <span>Горнило — и она станет Секирой берсерка,</span> <span>Серафим — и она станет Золотым фениксом.</span>"
+      }
     ],
     stats: "Урон 10 · Скорость 1",
     icon: "images/other/5e7c8e6aba.png",
@@ -609,16 +727,25 @@ const items = [
     line: "axe",
     lore: [
       '<span style="color:#555555"><em>Она видела, как остыл горн. Жар Горнила ушёл в неё —</em></span>',
-      '<span style="color:#555555"><em>и каждая рана делает её тяжелее.</em></span>',
-      "",
-      '<span style="color:#FF5555">✦ Ярость</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">+5% урона за каждое потерянное сердце, до +50%.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Боевой клич</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">10 секунд силы II, скорости и стойкости</span>',
-      '<span style="color:#AAAAAA">к отбрасыванию. Пока клич звучит, раны не заживают.</span>',
-      '<span style="color:#AAAAAA">Волна рёва отбрасывает врагов в 5 блоках и замедляет.</span>',
-      '<span style="color:#555555">Перезарядка 60 секунд.</span>'
+      '<span style="color:#555555"><em>и каждая рана делает её тяжелее.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Ярость",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>+5% урона за каждое потерянное сердце, до +50%.</span>"
+      },
+      {
+        name: "Боевой клич",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "60 с",
+        text: "<span>10 секунд силы II, скорости и стойкости</span> <span>к отбрасыванию. Пока клич звучит, раны не заживают.</span> <span>Волна рёва отбрасывает врагов в 5 блоках и замедляет.</span>"
+      }
     ],
     stats: "Урон 13 · Скорость 1",
     icon: "images/other/66344d5ef9.png",
@@ -636,16 +763,25 @@ const items = [
     line: "axe",
     lore: [
       '<span style="color:#555555"><em>Серафим упал, и его свет искал, где остаться.</em></span>',
-      '<span style="color:#555555"><em>Сумрачная сталь впервые увидела рассвет.</em></span>',
-      "",
-      '<span style="color:#FFAA00">✦ Из пепла</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Раз в 10 минут смертельный удар не убивает:</span>',
-      '<span style="color:#AAAAAA">4 сердца, огнестойкость и пламя вокруг.</span>',
-      "",
-      '<span style="color:#FFAA00">✦ Крыло</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Огненная дуга на 8 блоков перед собой —</span>',
-      '<span style="color:#AAAAAA">союзников не задевает.</span>',
-      '<span style="color:#555555">Перезарядка 15 секунд.</span>'
+      '<span style="color:#555555"><em>Сумрачная сталь впервые увидела рассвет.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Из пепла",
+        colour: "#FFAA00",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Раз в 10 минут смертельный удар не убивает:</span> <span>4 сердца, огнестойкость и пламя вокруг.</span>"
+      },
+      {
+        name: "Крыло",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "15 с",
+        text: "<span>Огненная дуга на 8 блоков перед собой —</span> <span>союзников не задевает.</span>"
+      }
     ],
     stats: "Урон 14 · Скорость 1",
     icon: "images/other/c02c9c9337.png",
@@ -663,16 +799,25 @@ const items = [
     line: "sky",
     lore: [
       '<span style="color:#555555"><em>Самый длинный день в году.</em></span>',
-      '<span style="color:#555555"><em>Для кого-то — последний.</em></span>',
-      "",
-      '<span style="color:#FFFF55">✦ Зенит</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Днём +2 урона.</span>',
-      "",
-      '<span style="color:#FFFF55">✦ Полдень</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">удерживать правый клик</span>',
-      '<span style="color:#AAAAAA">Пока кнопка зажата, клинок вспыхивает каждую</span>',
-      '<span style="color:#AAAAAA">секунду: 2 урона всему враждебному в 12 блоках,</span>',
-      '<span style="color:#AAAAAA">нежить загорается.</span>',
-      '<span style="color:#555555">Без перезарядки.</span>'
+      '<span style="color:#555555"><em>Для кого-то — последний.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Зенит",
+        colour: "#FFFF55",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Днём +2 урона.</span>"
+      },
+      {
+        name: "Полдень",
+        colour: "#FFFF55",
+        trigger: "Зажать ПКМ",
+        kind: "hold",
+        rest: null,
+        text: '<span>Пока кнопка зажата, клинок вспыхивает каждую</span> <span>секунду: 2 урона всему враждебному в 12 блоках,</span> <span>нежить загорается.</span> <br><span style="color:#555555">Без перезарядки.</span>'
+      }
     ],
     stats: "Урон 13 · Скорость 1.6",
     icon: "images/other/1a4474ed65.png",
@@ -692,16 +837,28 @@ const items = [
       '<span style="color:#555555"><em>Музыка, которую играют только для тех, кто не спит.</em></span>',
       '<span style="color:#555555"><em>И не проснётся.</em></span>',
       "",
-      '<span style="color:#5555FF">✦ Полночь</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Ночью +2 урона. В руке — ночное зрение.</span>',
       "",
-      '<span style="color:#5555FF">✦ Ночной разрез</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Синий серп летит на 10 блоков вперёд и</span>',
-      '<span style="color:#AAAAAA">пронзает врагов на пути: 10 урона каждому.</span>',
-      '<span style="color:#555555">Перезарядка 6 секунд.</span>',
       "",
       '<span style="color:#555555">Солнцестояние в одной руке и Ночная фурия в другой</span>',
       '<span style="color:#555555">не знают ни дня, ни ночи.</span>'
+    ],
+    abilities: [
+      {
+        name: "Полночь",
+        colour: "#7F8BFF",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Ночью +2 урона. В руке — ночное зрение.</span>"
+      },
+      {
+        name: "Ночной разрез",
+        colour: "#7F8BFF",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "6 с",
+        text: "<span>Синий серп летит на 10 блоков вперёд и</span> <span>пронзает врагов на пути: 10 урона каждому.</span>"
+      }
     ],
     stats: "Урон 13 · Скорость 1.6",
     icon: "images/other/6d22f8cf26.png",
@@ -719,16 +876,25 @@ const items = [
     line: "sky",
     lore: [
       '<span style="color:#555555"><em>Он стоит на посту так давно, что забыл,</em></span>',
-      '<span style="color:#555555"><em>что именно охраняет. Тебя — пока что.</em></span>',
-      "",
-      '<span style="color:#55FFFF">✦ Бесплотность</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Каждый четвёртый удар проходит насквозь.</span>',
-      '<span style="color:#AAAAAA">Фантомы не трогают владельца.</span>',
-      "",
-      '<span style="color:#55FFFF">✦ Призрачная стая</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Пять фантомов кружат вокруг вас, и круг</span>',
-      '<span style="color:#AAAAAA">всё шире. Задетый враг получает 6 урона.</span>',
-      '<span style="color:#555555">Стая держится 5 секунд. Перезарядка 12 секунд.</span>'
+      '<span style="color:#555555"><em>что именно охраняет. Тебя — пока что.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Бесплотность",
+        colour: "#55FFFF",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Каждый четвёртый удар проходит насквозь.</span> <span>Фантомы не трогают владельца.</span>"
+      },
+      {
+        name: "Призрачная стая",
+        colour: "#55FFFF",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "12 с",
+        text: "<span>Пять фантомов кружат вокруг вас, и круг</span> <span>всё шире. Задетый враг получает 6 урона.</span> Стая держится 5 секунд."
+      }
     ],
     stats: "Урон 12 · Скорость 1.6",
     icon: "images/other/28b6759ee6.png",
@@ -746,16 +912,25 @@ const items = [
     line: "night",
     lore: [
       '<span style="color:#555555"><em>Её выковали из того, что падает с неба</em></span>',
-      '<span style="color:#555555"><em>в ночь, когда луна полна.</em></span>',
-      "",
-      '<span style="color:#5555FF">✦ Созвездие</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Каждый удар зажигает над целью звезду.</span>',
-      '<span style="color:#AAAAAA">Пятая складывает созвездие: +8 урона и слепота.</span>',
-      "",
-      '<span style="color:#5555FF">✦ Звездопад</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Туда, куда вы смотрите, падают 5 звёзд:</span>',
-      '<span style="color:#AAAAAA">каждая — 4,5 урона в 2 блоках и подброс.</span>',
-      '<span style="color:#AAAAAA">Ночью звёзд вдвое больше. Раз в секунду.</span>'
+      '<span style="color:#555555"><em>в ночь, когда луна полна.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Созвездие",
+        colour: "#7F8BFF",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Каждый удар зажигает над целью звезду.</span> <span>Пятая складывает созвездие: +8 урона и слепота.</span>"
+      },
+      {
+        name: "Звездопад",
+        colour: "#7F8BFF",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: null,
+        text: "<span>Туда, куда вы смотрите, падают 5 звёзд:</span> <span>каждая — 4,5 урона в 2 блоках и подброс.</span> <span>Ночью звёзд вдвое больше. Раз в секунду.</span>"
+      }
     ],
     stats: "Урон 13 · Скорость 1.6",
     icon: "images/other/eadcf5b768.png",
@@ -773,17 +948,25 @@ const items = [
     line: "night",
     lore: [
       '<span style="color:#555555"><em>Ночная фурия поднялась на девятое небо</em></span>',
-      '<span style="color:#555555"><em>и вернулась оттуда косой.</em></span>',
-      "",
-      '<span style="color:#5555FF">✦ Ночная песнь</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Ночью +2 урона.</span>',
-      "",
-      '<span style="color:#5555FF">✦ Синяя туча</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">На 10 секунд вы становитесь синей тучей:</span>',
-      '<span style="color:#AAAAAA">летаете, не получаете физического урона</span>',
-      '<span style="color:#AAAAAA">и бьёте на 4 каждого врага, сквозь</span>',
-      '<span style="color:#AAAAAA">которого пролетели.</span>',
-      '<span style="color:#555555">Перезарядка 45 секунд.</span>'
+      '<span style="color:#555555"><em>и вернулась оттуда косой.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Ночная песнь",
+        colour: "#7F8BFF",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Ночью +2 урона.</span>"
+      },
+      {
+        name: "Синяя туча",
+        colour: "#7F8BFF",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "45 с",
+        text: "<span>На 10 секунд вы становитесь синей тучей:</span> <span>летаете, не получаете физического урона</span> <span>и бьёте на 4 каждого врага, сквозь</span> <span>которого пролетели.</span>"
+      }
     ],
     stats: "Урон 15 · Скорость 1.2",
     icon: "images/other/f8ef121ebd.png",
@@ -801,14 +984,25 @@ const items = [
     line: "sky",
     lore: [
       '<span style="color:#555555"><em>Его вынули из камня. Говорят, это был не камень,</em></span>',
-      '<span style="color:#555555"><em>а ножны — и в них спало ещё что-то.</em></span>',
-      "",
-      '<span style="color:#FFAA00">✦ Благословение</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">По нежити +2 урона.</span>',
-      "",
-      '<span style="color:#FFAA00">✦ Клятва рыцаря</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">8 секунд силы I и сопротивления I.</span>',
-      '<span style="color:#555555">Перезарядка 30 секунд.</span>'
+      '<span style="color:#555555"><em>а ножны — и в них спало ещё что-то.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Благословение",
+        colour: "#FFAA00",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>По нежити +2 урона.</span>"
+      },
+      {
+        name: "Клятва рыцаря",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "30 с",
+        text: "<span>8 секунд силы I и сопротивления I.</span>"
+      }
     ],
     stats: "Урон 12 · Скорость 1.6",
     icon: "images/other/a911f57db9.png",
@@ -826,20 +1020,33 @@ const items = [
     line: "night",
     lore: [
       '<span style="color:#555555"><em>Камень был лишь ножнами. Это — то,</em></span>',
-      '<span style="color:#555555"><em>что в них спало, пока не пришёл достойный.</em></span>',
-      "",
-      '<span style="color:#FFAA00">✦ Свет святого</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Каждый удар лечит вас на полсердца,</span>',
-      '<span style="color:#AAAAAA">по нежити — ещё +3 урона.</span>',
-      "",
-      '<span style="color:#FFAA00">✦ Ножны</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Пока клинок в руке — сопротивление I.</span>',
-      "",
-      '<span style="color:#FFAA00">✦ Королевский суд</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Золотая волна на 16 блоков вперёд: 14 урона</span>',
-      '<span style="color:#AAAAAA">врагам на пути, нежить вспыхивает. Вам — сила II</span>',
-      '<span style="color:#AAAAAA">на 5 секунд.</span>',
-      '<span style="color:#555555">Перезарядка 8 секунд.</span>'
+      '<span style="color:#555555"><em>что в них спало, пока не пришёл достойный.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Свет святого",
+        colour: "#FFAA00",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Каждый удар лечит вас на полсердца,</span> <span>по нежити — ещё +3 урона.</span>"
+      },
+      {
+        name: "Ножны",
+        colour: "#FFAA00",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Пока клинок в руке — сопротивление I.</span>"
+      },
+      {
+        name: "Королевский суд",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "8 с",
+        text: "<span>Золотая волна на 16 блоков вперёд: 14 урона</span> <span>врагам на пути, нежить вспыхивает. Вам — сила II</span> <span>на 5 секунд.</span>"
+      }
     ],
     stats: "Урон 16 · Скорость 1.6",
     icon: "images/other/e470fbf77d.png",
@@ -857,17 +1064,25 @@ const items = [
     line: "jungle",
     lore: [
       '<span style="color:#555555"><em>Лес вырастил его сам — из корней, света</em></span>',
-      '<span style="color:#555555"><em>и всего, что в нём когда-то умерло.</em></span>',
-      "",
-      '<span style="color:#55FF55">✦ Терра-лучи</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">удерживать правый клик</span>',
-      '<span style="color:#AAAAAA">Пока кнопка зажата, клинок строчит зелёными лучами:</span>',
-      '<span style="color:#AAAAAA">1 урон и отравление первому, кого луч заденет.</span>',
-      '<span style="color:#555555">Десять лучей в секунду, до 24 блоков.</span>',
-      '<span style="color:#555555">Союзников лучи проходят насквозь.</span>',
-      "",
-      '<span style="color:#55FF55">✦ Щит жизни</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Пока клинок в руке, вас окружает зелёный щит:</span>',
-      '<span style="color:#AAAAAA">любое исцеление вдвое сильнее.</span>'
+      '<span style="color:#555555"><em>и всего, что в нём когда-то умерло.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Терра-лучи",
+        colour: "#55FF55",
+        trigger: "Зажать ПКМ",
+        kind: "hold",
+        rest: null,
+        text: '<span>Пока кнопка зажата, клинок строчит зелёными лучами:</span> <span>1 урон и отравление первому, кого луч заденет.</span> <br><span style="color:#555555">Десять лучей в секунду, до 24 блоков.</span> <br><span style="color:#555555">Союзников лучи проходят насквозь.</span>'
+      },
+      {
+        name: "Щит жизни",
+        colour: "#55FF55",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Пока клинок в руке, вас окружает зелёный щит:</span> <span>любое исцеление вдвое сильнее.</span>"
+      }
     ],
     stats: "Урон 12 · Скорость 1.6",
     icon: "images/other/bb4efe2f62.png",
@@ -885,18 +1100,25 @@ const items = [
     line: "terra",
     lore: [
       '<span style="color:#555555"><em>Его ковали, когда мир ещё был камнем,</em></span>',
-      '<span style="color:#555555"><em>и камень помнит каждый его удар.</em></span>',
-      "",
-      '<span style="color:#55FF55">✦ Гнев предков</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">По разбойникам и ведьмам +4 урона.</span>',
-      '<span style="color:#AAAAAA">Каждый удар оплетает цель корнями:</span>',
-      '<span style="color:#AAAAAA">замедление II на 1,5 секунды.</span>',
-      "",
-      '<span style="color:#55FF55">✦ Разлом</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Удар оземь: разлом бежит на 6 блоков вокруг —</span>',
-      '<span style="color:#AAAAAA">8 урона, подброс и корни на 3 секунды.</span>',
-      '<span style="color:#AAAAAA">Вам — поглощение II на 8 секунд.</span>',
-      '<span style="color:#555555">Перезарядка 20 секунд.</span>'
+      '<span style="color:#555555"><em>и камень помнит каждый его удар.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Гнев предков",
+        colour: "#55FF55",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>По разбойникам и ведьмам +4 урона.</span> <span>Каждый удар оплетает цель корнями:</span> <span>замедление II на 1,5 секунды.</span>"
+      },
+      {
+        name: "Разлом",
+        colour: "#55FF55",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "20 с",
+        text: "<span>Удар оземь: разлом бежит на 6 блоков вокруг —</span> <span>8 урона, подброс и корни на 3 секунды.</span> <span>Вам — поглощение II на 8 секунд.</span>"
+      }
     ],
     stats: "Урон 11 · Скорость 1.6",
     icon: "images/icons/ancient.png",
@@ -914,22 +1136,33 @@ const items = [
     line: "jungle",
     lore: [
       '<span style="color:#555555"><em>Предки не оставили ответа. Они оставили вопрос —</em></span>',
-      '<span style="color:#555555"><em>и того, кто сможет его вынести.</em></span>',
-      "",
-      '<span style="color:#55FF55">✦ Круг предков</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">У ваших ног пульсирует круг от 3 до 8 блоков.</span>',
-      '<span style="color:#AAAAAA">Свои в нём получают регенерацию III и сопротивление,</span>',
-      '<span style="color:#AAAAAA">вы — ещё и скорость. Враги в нём — отравление III.</span>',
-      '<span style="color:#555555">Держится 10 секунд. Перезарядка 30 секунд.</span>',
-      "",
-      '<span style="color:#FFAA00">✦ Печать загадки</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Третий удар подряд по одной цели ломает печать:</span>',
-      '<span style="color:#AAAAAA">+6 урона и слабость на 5 секунд.</span>',
-      "",
-      '<span style="color:#FFAA00">✦ Завет предков</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Когда здоровья меньше трети, предки заслоняют вас:</span>',
-      '<span style="color:#AAAAAA">поглощение II на 10 секунд, а союзникам рядом —</span>',
-      '<span style="color:#AAAAAA">сопротивление. Раз в минуту.</span>'
+      '<span style="color:#555555"><em>и того, кто сможет его вынести.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Круг предков",
+        colour: "#55FF55",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "30 с",
+        text: "<span>У ваших ног пульсирует круг от 3 до 8 блоков.</span> <span>Свои в нём получают регенерацию III и сопротивление,</span> <span>вы — ещё и скорость. Враги в нём — отравление III.</span> Держится 10 секунд."
+      },
+      {
+        name: "Печать загадки",
+        colour: "#FFAA00",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Третий удар подряд по одной цели ломает печать:</span> <span>+6 урона и слабость на 5 секунд.</span>"
+      },
+      {
+        name: "Завет предков",
+        colour: "#FFAA00",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Когда здоровья меньше трети, предки заслоняют вас:</span> <span>поглощение II на 10 секунд, а союзникам рядом —</span> <span>сопротивление. Раз в минуту.</span>"
+      }
     ],
     stats: "Урон 13 · Скорость 1.6",
     icon: "images/other/fd4a3c08f5.png",
@@ -946,22 +1179,41 @@ const items = [
     rarityLabel: "Терра",
     line: "jungle",
     lore: [
-      '<span style="color:#555555"><em>Вопрос, на который предки наконец ответили.</em></span>',
-      "",
-      '<span style="color:#55FF55">✦ Благодать</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Любое исцеление в 2,5 раза сильнее.</span>',
-      "",
-      '<span style="color:#55FF55">✦ Метка неба</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">при ударе</span>',
-      '<span style="color:#AAAAAA">Цель светится зелёным 10 секунд: не исцеляется,</span>',
-      '<span style="color:#AAAAAA">получает в 1,5 раза больше урона, а ваш урон</span>',
-      '<span style="color:#AAAAAA">по ней возвращается вам здоровьем (четверть).</span>',
-      "",
-      '<span style="color:#55FF55">✦ Спираль</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Поле радиусом 15 блоков на 15 секунд, идёт за вами.</span>',
-      '<span style="color:#AAAAAA">Враги в нём отравлены и подброшены на 6 блоков —</span>',
-      '<span style="color:#AAAAAA">и снова, едва упадут, пока не выйдут.</span>',
-      '<span style="color:#AAAAAA">Свои — регенерация, вы — сопротивление II.</span>',
-      '<span style="color:#555555">Перезарядка 90 секунд.</span>'
+      '<span style="color:#555555"><em>Вопрос, на который предки наконец ответили.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Благодать",
+        colour: "#55FF55",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Любое исцеление в 2,5 раза сильнее.</span>"
+      },
+      {
+        name: "Метка неба",
+        colour: "#55FF55",
+        trigger: "При ударе",
+        kind: "hit",
+        rest: null,
+        text: "<span>Цель светится зелёным 10 секунд: не исцеляется,</span> <span>получает в 1,5 раза больше урона, а ваш урон</span> <span>по ней возвращается вам здоровьем (четверть).</span>"
+      },
+      {
+        name: "Разлом тверди",
+        colour: "#55FF55",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "40 с",
+        text: "<span>Земля в 15 блоках вокруг встаёт волной. Враги</span> <span>в ней оглушены на 4 секунды: не ходят, не прыгают,</span> <span>не бьют и не стреляют.</span>"
+      },
+      {
+        name: "Гнев небосвода",
+        colour: "#55FF55",
+        trigger: "Зажать ПКМ",
+        kind: "hold",
+        rest: "8 мин",
+        text: "<span>7 секунд копится зелёная шкала, вокруг встают</span> <span>зелёные столпы. Полна — молнии бьют каждого врага</span> <span>в 35 блоках по нескольку раз: 40 урона каждому.</span>"
+      }
     ],
     stats: "Урон 15 · Скорость 1.6",
     icon: "images/other/97fc9f3d00.png",
@@ -979,20 +1231,33 @@ const items = [
     line: "techno",
     lore: [
       '<span style="color:#555555"><em>Сталь, провод и красный свет. Фабрика дарит его</em></span>',
-      '<span style="color:#555555"><em>каждому, кто впустил её в кровь.</em></span>',
-      "",
-      '<span style="color:#FF5555">✦ Проводник</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Каждый пятый удар бьёт молнией ещё двух</span>',
-      '<span style="color:#AAAAAA">ближайших врагов в 5 блоках: по 4 урона.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Медный голем</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Голем на 60 секунд бьёт тех, кого бьёте вы.</span>',
-      '<span style="color:#555555">Снова — через 30 секунд после его гибели.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Отталкивающий луч</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">удерживать правый клик</span>',
-      '<span style="color:#AAAAAA">Луч до самой стены: 0,5 урона и сильный отброс</span>',
-      '<span style="color:#AAAAAA">всех на пути; кто в нём остался, того несёт дальше.</span>',
-      '<span style="color:#555555">Без перезарядки.</span>'
+      '<span style="color:#555555"><em>каждому, кто впустил её в кровь.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Проводник",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Каждый пятый удар бьёт молнией ещё двух</span> <span>ближайших врагов в 5 блоках: по 4 урона.</span>"
+      },
+      {
+        name: "Медный голем",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: null,
+        text: '<span>Голем на 60 секунд бьёт тех, кого бьёте вы.</span> <br><span style="color:#555555">Снова — через 30 секунд после его гибели.</span>'
+      },
+      {
+        name: "Отталкивающий луч",
+        colour: "#FF5555",
+        trigger: "Зажать ПКМ",
+        kind: "hold",
+        rest: null,
+        text: '<span>Луч до самой стены: 0,5 урона и сильный отброс</span> <span>всех на пути; кто в нём остался, того несёт дальше.</span> <br><span style="color:#555555">Без перезарядки.</span>'
+      }
     ],
     stats: "Урон 10 · Скорость 1.6",
     icon: "images/other/431234757a.png",
@@ -1010,18 +1275,33 @@ const items = [
     line: "techno",
     lore: [
       '<span style="color:#555555"><em>Второе поколение. Тоньше, быстрее,</em></span>',
-      '<span style="color:#555555"><em>и в нём уже почти нет ошибок.</em></span>',
-      "",
-      '<span style="color:#FF5555">✦ Проводник</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Каждый четвёртый удар бьёт молнией ещё трёх</span>',
-      '<span style="color:#AAAAAA">ближайших врагов в 5 блоках: по 5 урона.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Медные големы</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Три голема на 60 секунд бьют тех, кого бьёте вы.</span>',
-      '<span style="color:#555555">Снова — через 30 секунд после гибели последнего.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Лазеры</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">удерживать правый клик</span>',
-      '<span style="color:#AAAAAA">Поток лазеров, по 1 урона. Без перезарядки.</span>'
+      '<span style="color:#555555"><em>и в нём уже почти нет ошибок.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Проводник",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Каждый четвёртый удар бьёт молнией ещё трёх</span> <span>ближайших врагов в 5 блоках: по 5 урона.</span>"
+      },
+      {
+        name: "Медные големы",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: null,
+        text: '<span>Три голема на 60 секунд бьют тех, кого бьёте вы.</span> <br><span style="color:#555555">Снова — через 30 секунд после гибели последнего.</span>'
+      },
+      {
+        name: "Лазеры",
+        colour: "#FF5555",
+        trigger: "Зажать ПКМ",
+        kind: "hold",
+        rest: null,
+        text: "<span>Поток лазеров, по 1 урона. Без перезарядки.</span>"
+      }
     ],
     stats: "Урон 12 · Скорость 1.6",
     icon: "images/other/9e6ab2b7b7.png",
@@ -1039,26 +1319,49 @@ const items = [
     line: "techno",
     lore: [
       '<span style="color:#555555"><em>На нём нет нитей. Его ковали, чтобы</em></span>',
-      '<span style="color:#555555"><em>мир наконец заработал как следует.</em></span>',
-      "",
-      '<span style="color:#FF5555">✦ Проводник</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Каждый третий удар бьёт молнией ещё четырёх</span>',
-      '<span style="color:#AAAAAA">ближайших врагов в 5 блоках: по 6 урона.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Нет предела совершенству</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">пассивно</span>',
-      '<span style="color:#AAAAAA">Каждый разряд даёт +1 урона на 10 секунд,</span>',
-      '<span style="color:#AAAAAA">до +5 подряд.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Механический фантом</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">при ударе</span>',
-      '<span style="color:#AAAAAA">Удар посылает фантома на цель; нет его — зовёт.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Малые Предвестники</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Двое на 30 секунд: луч смерти, ракеты, разряды.</span>',
-      '<span style="color:#555555">Перезарядка 60 секунд.</span>',
-      "",
-      '<span style="color:#FF5555">✦ Лазерный луч</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">удерживать правый клик</span>',
-      '<span style="color:#AAAAAA">Луч до стены, до 48 блоков: 3 урона всем</span>',
-      '<span style="color:#AAAAAA">на линии дважды в секунду. Без перезарядки.</span>'
+      '<span style="color:#555555"><em>мир наконец заработал как следует.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Проводник",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Каждый третий удар бьёт молнией ещё четырёх</span> <span>ближайших врагов в 5 блоках: по 6 урона.</span>"
+      },
+      {
+        name: "Нет предела совершенству",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Каждый разряд даёт +1 урона на 10 секунд,</span> <span>до +5 подряд.</span>"
+      },
+      {
+        name: "Механический фантом",
+        colour: "#FF5555",
+        trigger: "При ударе",
+        kind: "hit",
+        rest: null,
+        text: "<span>Удар посылает фантома на цель; нет его — зовёт.</span>"
+      },
+      {
+        name: "Малые Предвестники",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "60 с",
+        text: "<span>Двое на 30 секунд: луч смерти, ракеты, разряды.</span>"
+      },
+      {
+        name: "Лазерный луч",
+        colour: "#FF5555",
+        trigger: "Зажать ПКМ",
+        kind: "hold",
+        rest: null,
+        text: "<span>Луч до стены, до 48 блоков: 3 урона всем</span> <span>на линии дважды в секунду. Без перезарядки.</span>"
+      }
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/e48e7744f6.png",
@@ -1075,13 +1378,17 @@ const items = [
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>С ним расстояние перестаёт быть препятствием.</em></span>',
-      "",
-      '<span style="color:#55FFFF">✦ Странствие</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">правый клик</span>',
-      '<span style="color:#AAAAAA">Подъём и толчок по направлению взгляда.</span>',
-      '<span style="color:#AAAAAA">Цельтесь выше и жмите снова — каждый рывок</span>',
-      '<span style="color:#AAAAAA">складывается с уже набранной скоростью.</span>',
-      '<span style="color:#AAAAAA">Падение после этого не ранит.</span>'
+      '<span style="color:#555555"><em>С ним расстояние перестаёт быть препятствием.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Странствие",
+        colour: "#55FFFF",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: null,
+        text: "<span>Подъём и толчок по направлению взгляда.</span> <span>Цельтесь выше и жмите снова — каждый рывок</span> <span>складывается с уже набранной скоростью.</span> <span>Падение после этого не ранит.</span>"
+      }
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/efaf7051a3.png",
@@ -1104,6 +1411,7 @@ const items = [
       '<span style="color:#AAAAAA">ПКМ на бедроке крыши Незера (кровь 3-й формы</span>',
       '<span style="color:#AAAAAA">и выше): летит к Проклятому замку и бьётся.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Сокровищница бастиона",
     icon: "images/icons/demon_soul.png",
@@ -1123,6 +1431,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Металл, который не тупится.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Крафт из алмаза и изумрудных блоков",
     icon: "images/icons/terra_ingot.png",
@@ -1142,6 +1451,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Вплавляется в Бедствие и делает его Волей Демона.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Иногда падает с Иссушителя",
     icon: "images/other/55344aa5c9.png",
@@ -1161,6 +1471,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Незеритовая кузня принимает его в уплату.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Незеритовая кузня",
     icon: "images/icons/soul_shard.png",
@@ -1180,6 +1491,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Небесный и Тёмный храмы принимают его в уплату.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Небесный и Тёмный храмы",
     icon: "images/icons/celestial_shard.png",
@@ -1199,6 +1511,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Храм джунглей принимает его в уплату.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Храм джунглей",
     icon: "images/icons/jungle_shard.png",
@@ -1219,6 +1532,7 @@ const items = [
       '<span style="color:#AAAAAA">Вырвано у Хранителя клинком из набора.</span>',
       '<span style="color:#AAAAAA">Им питается Реквием девятого неба.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Иногда падает с Хранителя",
     icon: "images/other/ab92445b9c.png",
@@ -1238,6 +1552,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Нужно, чтобы перековать клинок в последнюю форму.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Испытания Незеритовой кузни",
     icon: "images/icons/forge_heart.png",
@@ -1257,6 +1572,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Небесный храм ценит его выше золота.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Испытания Небесного храма",
     icon: "images/icons/seraph_feather.png",
@@ -1276,6 +1592,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Храм джунглей куёт из него Терра-блейд и Энигму.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Испытания Храма джунглей",
     icon: "images/icons/jungle_heart.png",
@@ -1295,6 +1612,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Терминал Древней фабрики принимает её в уплату.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Древняя фабрика",
     icon: "images/icons/ancient_part.png",
@@ -1316,6 +1634,7 @@ const items = [
       '<span style="color:#AAAAAA">Правый клик: небесная кровь третьей формы</span>',
       '<span style="color:#AAAAAA">станет ночной, а Небесный храм рухнет.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Третье испытание Небесного храма",
     icon: "images/icons/night_seal.png",
@@ -1338,6 +1657,7 @@ const items = [
       '<span style="color:#AAAAAA">становятся Все-Чёрным. Техноорганическая</span>',
       '<span style="color:#AAAAAA">кровь отдаёт её Клоду — за четвёртую форму.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Рамка над троном Проклятого замка",
     icon: "images/icons/black_substance.png",
@@ -1364,6 +1684,7 @@ const items = [
       '<span style="color:#00AA00">Отравляет того, кто её носит, — кроме</span>',
       '<span style="color:#00AA00">техноорганической крови и крови предков.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Большой зал Терра-подземелья, после Джунглевого голема",
     icon: "images/icons/terra_essence.png",
@@ -1391,6 +1712,7 @@ const items = [
       '<span style="color:#FF5555">Жжёт того, кто её носит, — какой бы ни была</span>',
       '<span style="color:#FF5555">его кровь. Огненную спасает родство с пламенем.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Часовая башня Проклятого замка",
     icon: "images/icons/hell_essence.png",
@@ -1412,6 +1734,7 @@ const items = [
       '<span style="color:#AAAAAA">где хранится Терра-сущность.</span>',
       '<span style="color:#555555">Собирает кровь предков у алтаря Храма джунглей.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Сборка кровью предков у алтаря Храма джунглей",
     icon: "images/icons/terra_compass.png",
@@ -1433,6 +1756,7 @@ const items = [
       '<span style="color:#AAAAAA">и на 5 секунд останавливают время вокруг.</span>',
       '<span style="color:#AAAAAA">Падают с Проклятого короля.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Проклятый король",
     icon: "images/icons/royal_clock.png",
@@ -1452,6 +1776,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Всё, что осталось от Предвестника.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Предвестник Древней фабрики",
     icon: "images/icons/harbinger_core.png",
@@ -1472,6 +1797,7 @@ const items = [
       '<span style="color:#AAAAAA">Правый клик: медный голем на 60 секунд,</span>',
       '<span style="color:#AAAAAA">как у Энцефало-меча. Предмет тратится.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
     icon: "images/other/6f71e94f18.png",
@@ -1492,6 +1818,7 @@ const items = [
       '<span style="color:#AAAAAA">Правый клик: малый Предвестник на 60 секунд,</span>',
       '<span style="color:#AAAAAA">как у Энцефало-истребителя. Предмет тратится.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
     icon: "images/other/897fc1caae.png",
@@ -1514,6 +1841,7 @@ const items = [
       '<span style="color:#AAAAAA">в 3 секунды: бьют врагов. Предмет не тратится.</span>',
       '<span style="color:#555555">Перезарядка 2 минуты.</span>'
     ],
+    abilities: [],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
     icon: "images/other/23434c7088.png",
@@ -1529,17 +1857,17 @@ const items = [
     rarityLabel: "Ультра-адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Земля и пекло, запертые в одной грани.</em></span>',
-      "",
-      '<span style="color:#FFAA00">✦ Правый клик</span>  <span style="color:#555555">·</span>  <span style="color:#AAAAAA">кем угодно; цвет тессеракта — что он сделает</span>',
-      '<span style="color:#FF5555">Красный</span><span style="color:#AAAAAA"> — в чужом куполе: ломает его.</span>',
-      '<span style="color:#55FF55">Зелёный</span><span style="color:#AAAAAA"> — не всё здоровье: +50% вам и своим рядом.</span>',
-      '<span style="color:#55FFFF">Голубой</span><span style="color:#AAAAAA"> — в мире: к случайному храму.</span>',
-      '<span style="color:#FFAA00">Оранжевый</span><span style="color:#AAAAAA"> — в Незере: к Незеритовой кузне.</span>',
-      '<span style="color:#FF55FF">Фиолетовый</span><span style="color:#AAAAAA"> — в Энде: к точке возрождения.</span>',
-      '<span style="color:#AAAAAA">Переносит всех в круге 3 блоков; круг горит</span>',
-      '<span style="color:#AAAAAA">ещё 5 секунд и забирает вошедших.</span>',
-      '<span style="color:#555555">Серый — перезарядка: 10 минут, лечение — 5.</span>'
+      '<span style="color:#555555"><em>Земля и пекло, запертые в одной грани.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Правый клик",
+        colour: "#FFAA00",
+        trigger: "Кем угодно; цвет тессеракта — что он сделает",
+        kind: "other",
+        rest: null,
+        text: '<span style="color:#FF5555">Красный</span><span> — в чужом куполе: ломает его.</span> <br><span style="color:#55FF55">Зелёный</span><span> — не всё здоровье: +50% вам и своим рядом.</span> <br><span style="color:#55FFFF">Голубой</span><span> — в мире: к случайному храму.</span> <br><span style="color:#FFAA00">Оранжевый</span><span> — в Незере: к Незеритовой кузне.</span> <br><span style="color:#FF55FF">Фиолетовый</span><span> — в Энде: к точке возрождения.</span> <span>Переносит всех в круге 3 блоков; круг горит</span> <span>ещё 5 секунд и забирает вошедших.</span> <br><span style="color:#555555">Серый — перезарядка: 10 минут, лечение — 5.</span>'
+      }
     ],
     stats: "",
     obtain: "Крафт: Терра-сущность, звезда Незера, Адская сущность, 6 плачущих обсидианов",
