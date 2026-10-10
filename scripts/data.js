@@ -1,6 +1,6 @@
 const counts = {
   weapons: 30,
-  materials: 23,
+  materials: 22,
   trophies: 37
 };
 const words = {
@@ -19,7 +19,6 @@ const icons = {
   black_substance: "images/icons/black_substance.png",
   ancient_part: "images/icons/ancient_part.png",
   harbinger_core: "images/icons/harbinger_core.png",
-  night_eye: "images/icons/night_eye.png",
   terra_essence: "images/icons/terra_essence.png",
   royal_clock: "images/icons/royal_clock.png",
   terra_compass: "images/icons/terra_compass.png",
@@ -57,7 +56,6 @@ const images = {
   jungle: "images/places/jungle.webp",
   factory: "images/places/factory.webp",
   night: "images/places/night.webp",
-  rooms: "images/places/rooms.webp",
   castle: "images/places/castle.webp"
 };
 const rarities = [
@@ -219,7 +217,6 @@ const rarities = [
       "Звёздная грань",
       "Реквием девятого неба",
       "Истинный Экскалибур",
-      "Око ночи",
       "Печать ночи"
     ]
   },
@@ -335,7 +332,7 @@ const items = [
     name: "Все-Чёрный",
     rarity: "ULTRA_HELLISH",
     rarityLabel: "Ультра-адская",
-    line: "hell",
+    line: "abyss",
     lore: [
       '<span style="color:#555555"><em>Тот, кто использует его для наблюдения за вами</em></span>',
       '<span style="color:#555555"><em>и окружающим миром, кажется не в состоянии физически</em></span>',
@@ -367,7 +364,7 @@ const items = [
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/63ca5f7c3f.png",
-    obtain: "Эволюция Воли Демона в Незеритовой кузне",
+    obtain: "Эволюция короны крови с Чёрной субстанцией у алтаря своего храма",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -396,7 +393,7 @@ const items = [
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/f29e190984.png",
-    obtain: "Ковка в Незеритовой кузне: Воля Демона, Адская сущность, Сердце кузни, 64 осколка души",
+    obtain: "Ковка в Незеритовой кузне: Воля Демона, Сердце кузни, 64 осколка души",
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -846,7 +843,7 @@ const items = [
     ],
     stats: "Урон 16 · Скорость 1.6",
     icon: "images/other/e470fbf77d.png",
-    obtain: "Ковка в Тёмном храме",
+    obtain: "Ковка в Тёмном храме: Экскалибур и Звёздная грань",
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -1269,28 +1266,6 @@ const items = [
   },
   {
     kind: "material",
-    id: "night_eye",
-    name: "Око ночи",
-    rarity: "CELESTIAL_NIGHT",
-    rarityLabel: "Небесная",
-    line: "material",
-    lore: [
-      '<span style="color:#555555"><em>Оно смотрело на тебя из пустоты.</em></span>',
-      '<span style="color:#555555"><em>Теперь смотрит из твоей ладони.</em></span>',
-      "",
-      '<span style="color:#AAAAAA">Падает с Пустотного Серафима Тёмного храма.</span>',
-      '<span style="color:#AAAAAA">Из него, Экскалибура и Звёздной грани</span>',
-      '<span style="color:#AAAAAA">куют Истинный Экскалибур.</span>'
-    ],
-    stats: "",
-    obtain: "Пустотный Серафим Тёмного храма",
-    icon: "images/icons/night_eye.png",
-    method: "drop",
-    methodLabel: "Добыча",
-    recipe: false
-  },
-  {
-    kind: "material",
     id: "jungle_heart",
     name: "Сердце джунглей",
     rarity: "TERRA",
@@ -1358,8 +1333,11 @@ const items = [
     lore: [
       '<span style="color:#555555"><em>Она не отражает свет. Она его ест.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Висит в рамке над троном Проклятого замка.</span>',
-      '<span style="color:#AAAAAA">Без неё Воля Демона не станет Все-Чёрным.</span>'
+      '<span style="color:#AAAAAA">Висит в рамке над троном Проклятого замка;</span>',
+      '<span style="color:#AAAAAA">её оставляет и страж третьего испытания кузни.</span>',
+      '<span style="color:#AAAAAA">Корона крови у алтаря своего храма и она</span>',
+      '<span style="color:#AAAAAA">становятся Все-Чёрным. Техноорганическая</span>',
+      '<span style="color:#AAAAAA">кровь отдаёт её Клоду — за четвёртую форму.</span>'
     ],
     stats: "",
     obtain: "Рамка над троном Проклятого замка",
@@ -1380,7 +1358,9 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Висит в большом зале Терра-подземелья,</span>',
       '<span style="color:#AAAAAA">пока жив Джунглевый голем.</span>',
-      '<span style="color:#AAAAAA">Без неё Энигму не выковать.</span>',
+      '<span style="color:#AAAAAA">Кровь предков третьей формы несёт её к алтарю</span>',
+      '<span style="color:#AAAAAA">Храма джунглей — за четвёртую форму.</span>',
+      '<span style="color:#AAAAAA">Из неё и Адской сущности собирают Тессеракт.</span>',
       "",
       '<span style="color:#00AA00">Отравляет того, кто её носит, — кроме</span>',
       '<span style="color:#00AA00">техноорганической крови и крови предков.</span>'
@@ -1405,6 +1385,8 @@ const items = [
       '<span style="color:#AAAAAA">Висит в сердце часовой башни Проклятого замка,</span>',
       '<span style="color:#AAAAAA">в поле красной энергии, пока жива её стража.</span>',
       '<span style="color:#AAAAAA">Кто подойдёт к ней — загорится; пиглины — нет.</span>',
+      '<span style="color:#AAAAAA">Пепельная кровь третьей формы несёт её к алтарю</span>',
+      '<span style="color:#AAAAAA">Незеритовой кузни — за четвёртую форму.</span>',
       '<span style="color:#AAAAAA">Из неё и Терра-сущности собирают Тессеракт.</span>',
       "",
       '<span style="color:#FF5555">Жжёт того, кто её носит, — какой бы ни была</span>',
@@ -1586,12 +1568,8 @@ const chains = [
         sep: "→"
       },
       {
-        id: "all_black",
-        sep: "→"
-      },
-      {
         id: "imperium",
-        sep: "или"
+        sep: "→"
       }
     ]
   },
@@ -1747,6 +1725,32 @@ const chains = [
       },
       {
         id: "creation_splitter",
+        sep: "→"
+      }
+    ]
+  },
+  {
+    key: "abyss",
+    title: "Бездна: корона своей крови + Чёрная субстанция",
+    entries: [
+      {
+        id: "lucifer",
+        sep: ""
+      },
+      {
+        id: "celestial",
+        sep: "или"
+      },
+      {
+        id: "true_excalibur",
+        sep: "или"
+      },
+      {
+        id: "creation_splitter",
+        sep: "или"
+      },
+      {
+        id: "all_black",
         sep: "→"
       }
     ]
@@ -2125,10 +2129,10 @@ const achievements = [
       {
         key: "blood_remembers",
         title: "Кровь помнит всё",
-        description: "Одна, против того, кто не умирает, твоя кровь вспомнила всё.",
+        description: "Сущность у алтаря, субстанция в руках машины, Серафим у твоих ног — и твоя кровь вспомнила всё.",
         frame: "challenge",
         frameLabel: "Испытание",
-        condition: "Пройти Испытание крови",
+        condition: "Поднять кровь до четвёртой формы",
         gem: "#c0302a",
         caption: "Красный краситель"
       }
@@ -2178,9 +2182,9 @@ const blood = [
     motto: "Кровь горнов Преисподней. Огонь ей родня, Незер — дом.",
     perks: [
       "Огнестойкость: огонь, лава и магма не ранят.",
-      "В Незере удары сильнее на 10%.",
-      "Каждый удар поджигает цель на 2 секунды.",
-      "Пробуждение: неуязвимость к огню, сила и вспышка пламени от каждого удара."
+      "Ходит по лаве, как по камню (Shift — нырнуть); в Незере удары сильнее на 10%.",
+      "Удар поджигает цель; кто ударит вас, загорится сам.",
+      "Ниже 30% здоровья: сопротивление на 15 с и огненный шар во врага каждую секунду. Раз в 10 минут."
     ],
     formless: false,
     sanctum: "Незеритовая кузня",
@@ -2227,7 +2231,7 @@ const blood = [
     perks: [
       "Падения ранят вдвое слабее.",
       "Двойной прыжок: ещё раз в воздухе, падение после него не ранит.",
-      "Днём под открытым небом — скорость."
+      "Голубые крылья: прыжок в воздухе и удержание — полёт. Пять зарядов, заряд в секунду, пока не летите."
     ],
     formless: false,
     sanctum: "Небесный храм",
@@ -2274,8 +2278,8 @@ const blood = [
     perks: [
       "Падения ранят вдвое слабее.",
       "Двойной прыжок: ещё раз в воздухе, падение после него не ранит.",
-      "Под открытым небом — скорость; ночью ещё и ночное зрение.",
-      "Пробуждение: плавное падение, скорость II и звездопад от каждого удара."
+      "Синие крылья: полёт, как у небесной крови; ночью — ночное зрение.",
+      "Смертельный удар не убивает: 30 с полёта без счёта, регенерация и три падших серафима. Раз в 10 минут."
     ],
     formless: false,
     sanctum: "Тёмный храм",
@@ -2314,10 +2318,8 @@ const blood = [
     colour: "#7A4AD0",
     motto: "Кровь, что видит в темноте. Ночь ей мать, тень — укрытие.",
     perks: [
-      "Ночью раны затягиваются сами.",
-      "5% нанесённого урона возвращается здоровьем.",
-      "Ночью удары сильнее на 12%.",
-      "Пробуждение: четверть урона возвращается, удары насылают Тьму и слабость."
+      "Удерживать ПКМ 3 с (с Все-Чёрным, мечом или топором): тень на 10 с — невидимость, неуязвимость и иссушение II всем в чёрном облаке под вами.",
+      "Смертельный удар не убивает: регенерация, а все, кого коснулась бездна Все-Чёрного, становятся жертвами — 6 урона в секунду и взрыв на 20. Раз в 10 минут."
     ],
     formless: true,
     sanctum: "Незеритовая кузня",
@@ -2345,7 +2347,7 @@ const blood = [
     perks: [
       "Не отбрасывается; яд и иссушение не действуют.",
       "+6 к броне; полсердца каждые 10 секунд.",
-      "Двойной прыжок без урона от падения; удар в прыжке тянет врагов в 5 блоках.",
+      "Двойной прыжок без урона от падения; удар в прыжке стягивает врагов в 5 блоках к цели.",
       "Ниже половины здоровья — щит на 20 ударов, раз в 10 минут."
     ],
     formless: false,
