@@ -1,6 +1,6 @@
 const counts = {
   weapons: 30,
-  materials: 25,
+  materials: 28,
   trophies: 37
 };
 const words = {
@@ -201,7 +201,10 @@ const rarities = [
       "Hyperion",
       "Небесный осколок",
       "Перо серафима",
-      "Ангельская шкатулка"
+      "Ангельская шкатулка",
+      "V — Иерофант",
+      "VIII — Правосудие",
+      "XVIII — Луна"
     ]
   },
   {
@@ -1906,6 +1909,87 @@ const items = [
     stats: "",
     obtain: "Ковка у алтаря Незеритовой кузни: 128 осколков души, пепельная кровь",
     icon: "images/other/be49e055b5.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "tarot_hierophant",
+    name: "V — Иерофант",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Ангел трубит — и стрелы не долетают.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Аура воздуха",
+        colour: "#FFFFFF",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "2 мин",
+        text: "<span>Скорость I на 15 секунд. Стрелы, снежки, яйца,</span> <span>огненные шары и любые снаряды отскакивают от вас;</span> <span>меч и всё прочее бьёт как обычно. Карта тратится.</span> <span>Небесная и ночная кровь, со второй формы.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка у алтаря Небесного или Тёмного храма: 32 небесных осколка, 8 бумаги, 2 голубых красителя; небесная или ночная кровь со 2-й формы",
+    icon: "images/other/bdde4e2356.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "tarot_justice",
+    name: "VIII — Правосудие",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Весы не видят, чья рана. Они делят.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Общая чаша",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "2 мин (общая с Иерофантом)",
+        text: "<span>На 15 секунд связывает вас с союзниками в 10 блоках:</span> <span>урон по любому из вас делится поровну на всех.</span> <span>Вдвоём удар в 10 — по 5 каждому. Карта тратится.</span> <span>Небесная и ночная кровь, со второй формы.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка у алтаря Небесного или Тёмного храма: 32 небесных осколка, 8 бумаги, 2 голубых красителя; небесная или ночная кровь со 2-й формы",
+    icon: "images/other/d7be5a344a.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "tarot_moon",
+    name: "XVIII — Луна",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Чёрная луна течёт на землю. Все глаза — на тебя.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Чёрная луна",
+        colour: "#00AAAA",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "10 мин",
+        text: "<span>Наступает ночь (счёт дней не сбрасывается). 15 секунд:</span> <span>нет отбрасывания, сопротивление I, 20 жёлтых сердец,</span> <span>регенерация — и все враждебные мобы рядом идут на вас.</span> <span>Карта тратится. Ночная кровь, с третьей формы.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка у алтаря Тёмного храма: 64 небесных осколка, 12 чёрных красителей, 16 кварца, тотем бессмертия; ночная кровь с 3-й формы",
+    icon: "images/other/725891b28f.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
