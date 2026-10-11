@@ -1,6 +1,6 @@
 const counts = {
   weapons: 30,
-  materials: 28,
+  materials: 29,
   trophies: 37
 };
 const words = {
@@ -179,6 +179,7 @@ const rarities = [
       "Сердце джунглей",
       "Терра-сущность",
       "Терра-компас",
+      "Терра-магнит",
       "Джунглевая коробка"
     ]
   },
@@ -1830,6 +1831,33 @@ const items = [
     icon: "images/other/897fc1caae.png",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "terra_magnet",
+    name: "Терра-магнит",
+    rarity: "TERRA",
+    rarityLabel: "Терра",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Зелёный металл помнит, где лежит всё живое.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Притяжение",
+        colour: "#55FF55",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "1 с",
+        text: "<span>По существу или лежащему предмету в 24 блоках:</span> <span>тянет его к вам, пока магнит в руке. Повторный</span> <span>клик или убранный магнит отпускают.</span> <span>Кровь предков, с третьей формы.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка у алтаря Храма джунглей: 16 терра-слитков, 64 реликтовых осколка; кровь предков с 3-й формы",
+    icon: "images/other/aad712b223.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
     recipe: false
   },
   {
