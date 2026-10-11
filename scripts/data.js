@@ -1,11 +1,11 @@
 const counts = {
   weapons: 30,
-  materials: 22,
+  materials: 25,
   trophies: 37
 };
 const words = {
   weapons: "клинков",
-  materials: "материала",
+  materials: "материалов",
   trophies: "достижений"
 };
 const icons = {
@@ -134,7 +134,8 @@ const rarities = [
       "Люцифер",
       "Душа Иссушителя",
       "Адская сущность",
-      "Королевские часы"
+      "Королевские часы",
+      "Тайник пепла"
     ]
   },
   {
@@ -177,7 +178,8 @@ const rarities = [
       "Реликтовый осколок",
       "Сердце джунглей",
       "Терра-сущность",
-      "Терра-компас"
+      "Терра-компас",
+      "Джунглевая коробка"
     ]
   },
   {
@@ -198,7 +200,8 @@ const rarities = [
       "Экскалибур",
       "Hyperion",
       "Небесный осколок",
-      "Перо серафима"
+      "Перо серафима",
+      "Ангельская шкатулка"
     ]
   },
   {
@@ -1824,6 +1827,87 @@ const items = [
     icon: "images/other/897fc1caae.png",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "jungle_box",
+    name: "Джунглевая коробка",
+    rarity: "TERRA",
+    rarityLabel: "Терра",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Из щелей пахнет болотом. Кто-то внутри шуршит.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Болотная свита",
+        colour: "#55FF55",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "4 мин",
+        text: "<span>Три болотника на минуту бьются за вас, а ведьма</span> <span>держится рядом и бросает в вас зелья исцеления,</span> <span>когда вы ранены. Только кровь предков.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка у алтаря Храма джунглей: 128 реликтовых осколков, кровь предков",
+    icon: "images/other/96e6dd50fd.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "angel_box",
+    name: "Ангельская шкатулка",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Её открывают тихо: внутри поют.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Небесный хор",
+        colour: "#55FFFF",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "4 мин",
+        text: "<span>Пять ангелов-вредин на минуту бьются за вас.</span> <span>Небесная и ночная небесная кровь.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка у алтаря Небесного или Тёмного храма: 128 небесных осколков, небесная или ночная кровь",
+    icon: "images/other/5e62065f22.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "ash_box",
+    name: "Тайник пепла",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Обугленный сундучок. Тёплый, даже зимой.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Стража пекла",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "4 мин",
+        text: "<span>Брут и два скелета-иссушителя на минуту</span> <span>бьются за вас. Только пепельная кровь.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка у алтаря Незеритовой кузни: 128 осколков души, пепельная кровь",
+    icon: "images/other/be49e055b5.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
     recipe: false
   },
   {
