@@ -110,7 +110,7 @@
 |---|---|---|---|---|
 | <img src="assets/icons/cyber_blade.png" width="40" height="40" alt=""> | **Энцефало-меч** | 10 | Техно | Дар Древней фабрики вместе с техноорганической кровью |
 | <img src="assets/icons/cyber_katana.png" width="40" height="40" alt=""> | **Энцефало-клинок** | 12 | Техно | Сам вырастает из Энцефало-меча |
-| <img src="assets/icons/creation_splitter.png" width="40" height="40" alt=""> | **Энцефало-истребитель** | 14 | Техно | Сам вырастает из Энцефало-клинка |
+| <img src="assets/icons/creation_splitter.png" width="40" height="40" alt=""> | **Антихрист** | 14 | Техно | Сам вырастает из Энцефало-клинка |
 
 ### Бездна: корона своей крови + Чёрная субстанция
 
@@ -119,7 +119,7 @@
 | <img src="assets/icons/lucifer.png" width="40" height="40" alt=""> | **Люцифер** | 14 | Супер-адская | Эволюция Рассекателя могил в Незеритовой кузне |
 | <img src="assets/icons/celestial.png" width="40" height="40" alt=""> | **Селестиал** | 15 | Терра | Эволюция Энигмы в Храме джунглей, 4-я форма крови предков |
 | <img src="assets/icons/true_excalibur.png" width="40" height="40" alt=""> | **Истинный Экскалибур** | 16 | Небесная | Ковка в Тёмном храме: Экскалибур и Звёздная грань |
-| <img src="assets/icons/creation_splitter.png" width="40" height="40" alt=""> | **Энцефало-истребитель** | 14 | Техно | Сам вырастает из Энцефало-клинка |
+| <img src="assets/icons/creation_splitter.png" width="40" height="40" alt=""> | **Антихрист** | 14 | Техно | Сам вырастает из Энцефало-клинка |
 | <img src="assets/icons/all_black.png" width="40" height="40" alt=""> | **Все-Чёрный** | 14 | Ультра-адская | Эволюция короны крови с Чёрной субстанцией у алтаря своего храма |
 
 ## Родословные
