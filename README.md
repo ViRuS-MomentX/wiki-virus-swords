@@ -75,7 +75,7 @@
 | | Клинок | Урон | Редкость | Где взять |
 |---|---|---|---|---|
 | <img src="assets/icons/hyperion.png" width="40" height="40" alt=""> | **Hyperion** | 14 | Небесная | Ковка в Небесном храме |
-| <img src="assets/icons/solstice.png" width="40" height="40" alt=""> | **Солнцестояние** | 13 | Небесная | Ковка в Небесном храме, днём |
+| <img src="assets/icons/solstice.png" width="40" height="40" alt=""> | **Солнцестояние** | 13 | Небесная | Сокровищница бастиона, редко |
 | <img src="assets/icons/phantomguard.png" width="40" height="40" alt=""> | **Призрачный страж** | 12 | Небесная | Сокровищница Проклятого замка |
 | <img src="assets/icons/excalibur.png" width="40" height="40" alt=""> | **Экскалибур** | 12 | Небесная | Ковка в Небесном храме, днём |
 
@@ -84,7 +84,7 @@
 | | Клинок | Урон | Редкость | Где взять |
 |---|---|---|---|---|
 | <img src="assets/icons/stars_edge.png" width="40" height="40" alt=""> | **Звёздная грань** | 13 | Небесная | Ковка в Тёмном храме, в полнолуние |
-| <img src="assets/icons/solstice.png" width="40" height="40" alt=""> | **Солнцестояние** | 13 | Небесная | Ковка в Небесном храме, днём |
+| <img src="assets/icons/solstice.png" width="40" height="40" alt=""> | **Солнцестояние** | 13 | Небесная | Сокровищница бастиона, редко |
 | <img src="assets/icons/nocturne.png" width="40" height="40" alt=""> | **Ночная фурия** | 13 | Небесная | Ковка в Тёмном храме или эволюция Солнцестояния |
 | <img src="assets/icons/requiem.png" width="40" height="40" alt=""> | **Реквием девятого неба** | 15 | Небесная | Эволюция Ночной фурии в Тёмном храме |
 | <img src="assets/icons/excalibur.png" width="40" height="40" alt=""> | **Экскалибур** | 12 | Небесная | Ковка в Небесном храме, днём |

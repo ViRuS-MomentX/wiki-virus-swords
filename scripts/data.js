@@ -36,19 +36,32 @@ const icons = {
 };
 const guideIcons = {
   diamond: "images/guide/diamond.png",
+  emerald: "images/guide/emerald.png",
   emerald_block: "images/guide/emerald_block.png",
   crying_obsidian: "images/guide/crying_obsidian.png",
-  air_compass: "images/guide/air_compass.png",
-  forge_map: "images/guide/forge_map.png",
-  jungle_map: "images/guide/jungle_map.png",
+  nether_star: "images/guide/nether_star.png",
   wind_charge: "images/guide/wind_charge.png",
   nether_brick: "images/guide/nether_brick.png",
-  emerald: "images/guide/emerald.png",
   compass: "images/guide/compass.png",
   map: "images/guide/map.png",
-  nether_star: "images/guide/nether_star.png",
-  night_compass: "images/guide/night_compass.png",
-  unknown_compass: "images/guide/unknown_compass.png"
+  air_compass: "images/guide/compass.png",
+  night_compass: "images/guide/compass.png",
+  unknown_compass: "images/guide/compass.png",
+  forge_map: "images/guide/forge_map.png",
+  jungle_map: "images/guide/jungle_map.png",
+  "minecraft:spyglass": "images/guide/minecraft:spyglass.png",
+  "minecraft:wither_skeleton_skull": "images/guide/minecraft:wither_skeleton_skull.png",
+  "minecraft:totem_of_undying": "images/guide/minecraft:totem_of_undying.png",
+  "minecraft:zombie_head": "images/guide/minecraft:zombie_head.png",
+  "minecraft:sculk_shrieker": "images/guide/minecraft:sculk_shrieker.png",
+  "minecraft:ender_eye": "images/guide/minecraft:ender_eye.png",
+  "minecraft:iron_sword": "images/guide/minecraft:iron_sword.png",
+  "minecraft:emerald": "images/guide/emerald.png",
+  "minecraft:skeleton_skull": "images/guide/minecraft:skeleton_skull.png",
+  "minecraft:crossbow": "images/guide/minecraft:crossbow.png",
+  "minecraft:experience_bottle": "images/guide/minecraft:experience_bottle.png",
+  "minecraft:nether_star": "images/guide/nether_star.png",
+  "minecraft:red_dye": "images/guide/minecraft:red_dye.png"
 };
 const images = {
   forge: "images/places/forge.webp",
@@ -824,9 +837,9 @@ const items = [
     ],
     stats: "Урон 13 · Скорость 1.6",
     icon: "images/other/1a4474ed65.png",
-    obtain: "Ковка в Небесном храме, днём",
-    method: "forge",
-    methodLabel: "Ковка у алтаря",
+    obtain: "Сокровищница бастиона, редко",
+    method: "loot",
+    methodLabel: "Находка",
     recipe: false
   },
   {
@@ -1996,8 +2009,8 @@ const items = [
         colour: "#00AAAA",
         trigger: "ПКМ",
         kind: "rmb",
-        rest: "10 мин",
-        text: "<span>Наступает ночь. На 15 секунд вы стоите твёрдо:</span> <span>сопротивление, 20 жёлтых сердец, регенерация —</span> <span>и все враждебные мобы рядом идут на вас.</span> <span>Карта тратится. Ночная кровь, с третьей формы.</span>"
+        rest: "10 мин — одна на весь сервер",
+        text: "<span>На 15 секунд наступает ночь, и вы стоите твёрдо:</span> <span>сопротивление, 20 жёлтых сердец, регенерация —</span> <span>и все враждебные мобы рядом идут на вас.</span> <span>Карта тратится. Ночная кровь, с третьей формы.</span>"
       }
     ],
     stats: "",
@@ -2046,7 +2059,7 @@ const items = [
         trigger: "Цвет подсказывает, что будет",
         kind: "other",
         rest: null,
-        text: '<span style="color:#FF5555">Красный</span><span> — в чужом куполе: ломает его.</span> <br><span style="color:#55FF55">Зелёный</span><span> — не всё здоровье: +50% вам и своим рядом.</span> <br><span style="color:#55FFFF">Голубой</span><span> — в мире: к случайному храму.</span> <br><span style="color:#FFAA00">Оранжевый</span><span> — в Незере: к Незеритовой кузне.</span> <br><span style="color:#FF55FF">Фиолетовый</span><span> — в Энде: к точке возрождения.</span> <span>Переносит всех в круге рядом; круг горит</span> <span>ещё немного и забирает вошедших.</span> <br><span style="color:#555555">Серый — перезарядка: 10 минут, лечение — 5.</span>'
+        text: '<span style="color:#FF5555">Красный</span><span> — в чужом куполе, эдикте или под</span> <span>чужой Луной: развеивает их.</span> <br><span style="color:#55FF55">Зелёный</span><span> — не всё здоровье: +50% вам и своим рядом.</span> <br><span style="color:#55FFFF">Голубой</span><span> — в мире: к случайному храму.</span> <br><span style="color:#FFAA00">Оранжевый</span><span> — в Незере: к Незеритовой кузне.</span> <br><span style="color:#FF55FF">Фиолетовый</span><span> — в Энде: к точке возрождения.</span> <span>Переносит всех в круге рядом; круг горит</span> <span>ещё немного и забирает вошедших.</span> <br><span style="color:#555555">Серый — перезарядка: 10 минут, лечение — 5.</span>'
       }
     ],
     stats: "",
@@ -2325,7 +2338,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Подсветить Прозрением 20 существ разом",
-        gem: "#c68a4b",
+        icon: "images/guide/minecraft:spyglass.png",
         caption: "Подзорная труба"
       },
       {
@@ -2335,7 +2348,7 @@ const achievements = [
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Выковать Все-Чёрный",
-        gem: "#3a3a3a",
+        icon: "images/guide/minecraft:wither_skeleton_skull.png",
         caption: "Череп скелета-иссушителя"
       },
       {
@@ -2345,7 +2358,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Пережить смертельный удар, держа Все-Чёрный",
-        gem: "#e8c24a",
+        icon: "images/guide/minecraft:totem_of_undying.png",
         caption: "Тотем бессмертия"
       },
       {
@@ -2365,7 +2378,7 @@ const achievements = [
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Собрать на себе 30 существ разом",
-        gem: "#4e8a3a",
+        icon: "images/guide/minecraft:zombie_head.png",
         caption: "Голова зомби"
       },
       {
@@ -2375,7 +2388,7 @@ const achievements = [
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Убить Вардена Все-Чёрным",
-        gem: "#1d5563",
+        icon: "images/guide/minecraft:sculk_shrieker.png",
         caption: "Скалк-крикун"
       },
       {
@@ -2385,7 +2398,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Побывать с Все-Чёрным во всех трёх измерениях",
-        gem: "#3fa37a",
+        icon: "images/guide/minecraft:ender_eye.png",
         caption: "Око Края"
       }
     ]
@@ -2440,7 +2453,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Выбить Терра-резаком 100 изумрудов",
-        gem: "#2fbf5a",
+        icon: "images/guide/emerald.png",
         caption: "Изумруд"
       },
       {
@@ -2595,7 +2608,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Пройти испытание святилища или рейд фабрики",
-        gem: "#8a6a44",
+        icon: "images/guide/minecraft:crossbow.png",
         caption: "Арбалет"
       }
     ]
@@ -2610,7 +2623,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Довести мастерство клинка до 100",
-        gem: "#7fd67a",
+        icon: "images/guide/minecraft:experience_bottle.png",
         caption: "Пузырёк опыта"
       },
       {
@@ -2620,7 +2633,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Заточить клинок до ★5",
-        gem: "#f1f1ff",
+        icon: "images/guide/nether_star.png",
         caption: "Звезда Незера"
       },
       {
@@ -2630,7 +2643,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Пробудить клинок",
-        gem: "#3fa37a",
+        icon: "images/guide/minecraft:ender_eye.png",
         caption: "Око Края"
       },
       {
@@ -2640,7 +2653,7 @@ const achievements = [
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Поднять кровь до четвёртой формы",
-        gem: "#c0302a",
+        icon: "images/guide/minecraft:red_dye.png",
         caption: "Красный краситель"
       }
     ]
@@ -2675,7 +2688,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Умереть 10 раз",
-        gem: "#d6d6d6",
+        icon: "images/guide/minecraft:skeleton_skull.png",
         caption: "Череп скелета"
       }
     ]
@@ -2999,8 +3012,7 @@ const recipes = [
       "v:emerald_block",
       "v:emerald_block",
       "v:emerald_block"
-    ],
-    note: "Алмаз в центре, восемь изумрудных блоков вокруг."
+    ]
   },
   {
     result: "calamity",
@@ -3015,8 +3027,7 @@ const recipes = [
       null,
       null
     ],
-    shapeless: true,
-    note: "Погибель и Душа демона в любых клетках."
+    shapeless: true
   },
   {
     result: "demonic_cutter",
@@ -3031,8 +3042,7 @@ const recipes = [
       null,
       null
     ],
-    shapeless: true,
-    note: "Резак и Душа демона в любых клетках."
+    shapeless: true
   },
   {
     result: "demon_slayer",
@@ -3047,8 +3057,7 @@ const recipes = [
       null,
       null
     ],
-    shapeless: true,
-    note: "Арахнид и Душа демона в любых клетках."
+    shapeless: true
   },
   {
     result: "demon_will",
@@ -3063,8 +3072,7 @@ const recipes = [
       null,
       null
     ],
-    shapeless: true,
-    note: "Бедствие и Душа Иссушителя в любых клетках."
+    shapeless: true
   },
   {
     result: "terra_cutter",
@@ -3078,8 +3086,7 @@ const recipes = [
       "terra_ingot",
       "terra_ingot",
       "terra_ingot"
-    ],
-    note: "Демонический резак в центре, восемь терра-слитков вокруг."
+    ]
   },
   {
     result: "wanderer_cube",
@@ -3094,7 +3101,7 @@ const recipes = [
       "v:crying_obsidian",
       "v:crying_obsidian"
     ],
-    note: "Средний ряд: Терра-сущность, звезда Незера, Адская сущность (можно и зеркально); сверху и снизу — плачущий обсидиан."
+    note: "Сущности можно поменять местами."
   },
   {
     result: "g:air_compass",
@@ -3108,8 +3115,7 @@ const recipes = [
       null,
       "v:wind_charge",
       null
-    ],
-    note: "Компас в центре, четыре заряда ветра крестом."
+    ]
   },
   {
     result: "g:forge_map",
@@ -3123,8 +3129,7 @@ const recipes = [
       null,
       "v:nether_brick",
       null
-    ],
-    note: "Пустая карта в центре, четыре незерских кирпича крестом."
+    ]
   },
   {
     result: "g:jungle_map",
@@ -3138,8 +3143,7 @@ const recipes = [
       null,
       "v:emerald",
       null
-    ],
-    note: "Пустая карта в центре, четыре изумруда крестом."
+    ]
   },
   {
     result: "g:night_compass",
@@ -3154,8 +3158,7 @@ const recipes = [
       null,
       null
     ],
-    shapeless: true,
-    note: "Компас воздуха и звезда Незера в любых клетках."
+    shapeless: true
   }
 ];
 const vanillaNames = {
