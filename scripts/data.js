@@ -2059,7 +2059,7 @@ const items = [
         trigger: "Цвет подсказывает, что будет",
         kind: "other",
         rest: null,
-        text: '<span style="color:#FF5555">Красный</span><span> — в чужом куполе, эдикте или под</span> <span>чужой Луной: развеивает их.</span> <br><span style="color:#55FF55">Зелёный</span><span> — не всё здоровье: +50% вам и своим рядом.</span> <br><span style="color:#55FFFF">Голубой</span><span> — в мире: к случайному храму.</span> <br><span style="color:#FFAA00">Оранжевый</span><span> — в Незере: к Незеритовой кузне.</span> <br><span style="color:#FF55FF">Фиолетовый</span><span> — в Энде: к точке возрождения.</span> <span>Переносит всех в круге рядом; круг горит</span> <span>ещё немного и забирает вошедших.</span> <br><span style="color:#555555">Серый — перезарядка: 10 минут, лечение — 5.</span>'
+        text: '<span style="color:#FF5555">Красный</span><span> — в чужом куполе, поле, эдикте или</span> <span>под чужой Луной: развеивает их.</span> <br><span style="color:#55FF55">Зелёный</span><span> — не всё здоровье: +50% вам и своим рядом.</span> <br><span style="color:#55FFFF">Голубой</span><span> — в мире: к случайному храму.</span> <br><span style="color:#FFAA00">Оранжевый</span><span> — в Незере: к Незеритовой кузне.</span> <br><span style="color:#FF55FF">Фиолетовый</span><span> — в Энде: к точке возрождения.</span> <span>Переносит всех в круге рядом; круг горит</span> <span>ещё немного и забирает вошедших.</span> <br><span style="color:#555555">Серый — перезарядка: 10 минут, лечение — 5.</span>'
       }
     ],
     stats: "",
