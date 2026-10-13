@@ -1,11 +1,11 @@
 const counts = {
   weapons: 30,
-  materials: 33,
+  materials: 50,
   trophies: 37
 };
 const words = {
   weapons: "клинков",
-  materials: "материала",
+  materials: "материалов",
   trophies: "достижений"
 };
 const icons = {
@@ -152,7 +152,12 @@ const rarities = [
       "Демонический шлем",
       "Демонический нагрудник",
       "Демонические поножи",
-      "Демонические сапоги"
+      "Демонические сапоги",
+      "Душа лорда",
+      "Расплавленный шлем",
+      "Расплавленный нагрудник",
+      "Расплавленные поножи",
+      "Расплавленные сапоги"
     ]
   },
   {
@@ -197,7 +202,11 @@ const rarities = [
       "Терра-сущность",
       "Терра-компас",
       "Терра-магнит",
-      "Джунглевая коробка"
+      "Джунглевая коробка",
+      "Терра-шлем",
+      "Терра-нагрудник",
+      "Терра-поножи",
+      "Терра-ботинки"
     ]
   },
   {
@@ -222,7 +231,11 @@ const rarities = [
       "Ангельская шкатулка",
       "V — Иерофант",
       "VIII — Правосудие",
-      "XVIII — Луна"
+      "XVIII — Луна",
+      "Шлем паладина",
+      "Нагрудник паладина",
+      "Поножи паладина",
+      "Сапоги паладина"
     ]
   },
   {
@@ -241,7 +254,11 @@ const rarities = [
       "Звёздная грань",
       "Реквием девятого неба",
       "Истинный Экскалибур",
-      "Печать ночи"
+      "Печать ночи",
+      "Шлем Короля ночи",
+      "Нагрудник Короля ночи",
+      "Поножи Короля ночи",
+      "Сапоги Короля ночи"
     ]
   },
   {
@@ -2197,6 +2214,509 @@ const items = [
     icon: "images/other/8b57e35655.png",
     method: "place",
     methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "lord_soul",
+    name: "Душа лорда",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Горнило не умирает. Оно отдаёт то, что в нём горело.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Остаётся там, где пало Горнило</span>',
+      '<span style="color:#AAAAAA">третьего испытания Незеритовой кузни.</span>',
+      '<span style="color:#AAAAAA">Из неё, незеритовой брони и 64 осколков души</span>',
+      '<span style="color:#AAAAAA">кузня отливает Расплавленный доспех.</span>'
+    ],
+    abilities: [],
+    stats: "",
+    obtain: "Горнило третьего испытания Незеритовой кузни",
+    icon: "images/other/dbd14ce280.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "molten_helmet",
+    name: "Расплавленный шлем",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Под забралом не лицо — жар горна.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Отлит в Незеритовой кузне из незерита</span>',
+      '<span style="color:#AAAAAA">и Души лорда третьего испытания.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Двойной прыжок.</span> <span>Погибель, Бедствие, Воля Демона и Империум</span> <span>бьют на 25% сильнее.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Незеритовой кузне после её третьего испытания",
+    icon: "images/other/d42c92131a.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "molten_chestplate",
+    name: "Расплавленный нагрудник",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Металл так и не остыл с тех пор, как его отлили.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Отлит в Незеритовой кузне из незерита</span>',
+      '<span style="color:#AAAAAA">и Души лорда третьего испытания.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Двойной прыжок.</span> <span>Погибель, Бедствие, Воля Демона и Империум</span> <span>бьют на 25% сильнее.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Незеритовой кузне после её третьего испытания",
+    icon: "images/other/fda2588d31.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "molten_leggings",
+    name: "Расплавленные поножи",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Шов за швом — застывшая лава.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Отлит в Незеритовой кузне из незерита</span>',
+      '<span style="color:#AAAAAA">и Души лорда третьего испытания.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Двойной прыжок.</span> <span>Погибель, Бедствие, Воля Демона и Империум</span> <span>бьют на 25% сильнее.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Незеритовой кузне после её третьего испытания",
+    icon: "images/other/dcbceaa895.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "molten_boots",
+    name: "Расплавленные сапоги",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Камень под ними темнеет и трескается.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Отлит в Незеритовой кузне из незерита</span>',
+      '<span style="color:#AAAAAA">и Души лорда третьего испытания.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Двойной прыжок.</span> <span>Погибель, Бедствие, Воля Демона и Империум</span> <span>бьют на 25% сильнее.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Незеритовой кузне после её третьего испытания",
+    icon: "images/other/4244a02e5d.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "paladin_helmet",
+    name: "Шлем паладина",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Белый, как первый свет над облаками.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Небесная кровь с третьей формы,</span>',
+      '<span style="color:#AAAAAA">у алтаря своего храма.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>15 секунд без урона — регенерация.</span> <span>Падение не ранит.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Небесном или Тёмном храме, кровь третьей формы",
+    icon: "images/other/d7db7d66f7.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "paladin_chestplate",
+    name: "Нагрудник паладина",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>На груди — солнце, которое не заходит.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Небесная кровь с третьей формы,</span>',
+      '<span style="color:#AAAAAA">у алтаря своего храма.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>15 секунд без урона — регенерация.</span> <span>Падение не ранит.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Небесном или Тёмном храме, кровь третьей формы",
+    icon: "images/other/2032089515.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "paladin_leggings",
+    name: "Поножи паладина",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Чуть крепче железа — и куда легче на подъём.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Небесная кровь с третьей формы,</span>',
+      '<span style="color:#AAAAAA">у алтаря своего храма.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>15 секунд без урона — регенерация.</span> <span>Падение не ранит.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Небесном или Тёмном храме, кровь третьей формы",
+    icon: "images/other/cfa2962e2d.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "paladin_boots",
+    name: "Сапоги паладина",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Тот, кто ходит по облакам, не боится падать.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Небесная кровь с третьей формы,</span>',
+      '<span style="color:#AAAAAA">у алтаря своего храма.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>15 секунд без урона — регенерация.</span> <span>Падение не ранит.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Небесном или Тёмном храме, кровь третьей формы",
+    icon: "images/other/72778b3084.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "night_king_helmet",
+    name: "Шлем Короля ночи",
+    rarity: "CELESTIAL_NIGHT",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Паладин, который остался, когда погас свет.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Доспех паладина, перекованный у алтаря</span>',
+      '<span style="color:#AAAAAA">Тёмного храма победившим Пустотного Серафима.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Всё, что даёт доспех паладина.</span> <span>Ночью, в Незере и в Крае — сила и скорость.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Перековка доспеха паладина в Тёмном храме после Пустотного Серафима",
+    icon: "images/other/2fabb021b7.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "night_king_chestplate",
+    name: "Нагрудник Короля ночи",
+    rarity: "CELESTIAL_NIGHT",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Лазурь легла поверх серебра, как ночь на снег.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Доспех паладина, перекованный у алтаря</span>',
+      '<span style="color:#AAAAAA">Тёмного храма победившим Пустотного Серафима.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Всё, что даёт доспех паладина.</span> <span>Ночью, в Незере и в Крае — сила и скорость.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Перековка доспеха паладина в Тёмном храме после Пустотного Серафима",
+    icon: "images/other/2ada6ba14c.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "night_king_leggings",
+    name: "Поножи Короля ночи",
+    rarity: "CELESTIAL_NIGHT",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Звёзды на них не меркнут и днём.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Доспех паладина, перекованный у алтаря</span>',
+      '<span style="color:#AAAAAA">Тёмного храма победившим Пустотного Серафима.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Всё, что даёт доспех паладина.</span> <span>Ночью, в Незере и в Крае — сила и скорость.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Перековка доспеха паладина в Тёмном храме после Пустотного Серафима",
+    icon: "images/other/a11e59d277.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "night_king_boots",
+    name: "Сапоги Короля ночи",
+    rarity: "CELESTIAL_NIGHT",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Шаги в них не слышит даже луна.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Доспех паладина, перекованный у алтаря</span>',
+      '<span style="color:#AAAAAA">Тёмного храма победившим Пустотного Серафима.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Всё, что даёт доспех паладина.</span> <span>Ночью, в Незере и в Крае — сила и скорость.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Перековка доспеха паладина в Тёмном храме после Пустотного Серафима",
+    icon: "images/other/948fbdde0b.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "terra_helmet",
+    name: "Терра-шлем",
+    rarity: "TERRA",
+    rarityLabel: "Терра",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Нефрит, выросший вокруг корня.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Храм джунглей — тому, кто принёс</span>',
+      '<span style="color:#AAAAAA">ему Терра-сущность.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>+4 сердца, вас не отбросить.</span> <span>Ударивший вблизи получает пятую часть удара.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Храме джунглей после Терра-сущности",
+    icon: "images/other/6c7826296d.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "terra_chestplate",
+    name: "Терра-нагрудник",
+    rarity: "TERRA",
+    rarityLabel: "Терра",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Сердце в нём бьётся медленно, как у камня.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Храм джунглей — тому, кто принёс</span>',
+      '<span style="color:#AAAAAA">ему Терра-сущность.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>+4 сердца, вас не отбросить.</span> <span>Ударивший вблизи получает пятую часть удара.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Храме джунглей после Терра-сущности",
+    icon: "images/other/37a2521f37.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "terra_leggings",
+    name: "Терра-поножи",
+    rarity: "TERRA",
+    rarityLabel: "Терра",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Ни шагу назад — земля держит.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Храм джунглей — тому, кто принёс</span>',
+      '<span style="color:#AAAAAA">ему Терра-сущность.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>+4 сердца, вас не отбросить.</span> <span>Ударивший вблизи получает пятую часть удара.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Храме джунглей после Терра-сущности",
+    icon: "images/other/d636eea140.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "terra_boots",
+    name: "Терра-ботинки",
+    rarity: "TERRA",
+    rarityLabel: "Терра",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Под ними прорастает мох.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Храм джунглей — тому, кто принёс</span>',
+      '<span style="color:#AAAAAA">ему Терра-сущность.</span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>+4 сердца, вас не отбросить.</span> <span>Ударивший вблизи получает пятую часть удара.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка в Храме джунглей после Терра-сущности",
+    icon: "images/other/22bb414a96.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
     recipe: false
   }
 ];
