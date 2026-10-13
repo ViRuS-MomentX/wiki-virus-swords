@@ -1,11 +1,11 @@
 const counts = {
   weapons: 30,
-  materials: 29,
+  materials: 33,
   trophies: 37
 };
 const words = {
   weapons: "клинков",
-  materials: "материалов",
+  materials: "материала",
   trophies: "достижений"
 };
 const icons = {
@@ -126,7 +126,7 @@ const rarities = [
       "Бедствие",
       "Воля Демона",
       "Убийца демонов",
-      "Рассекатель могил",
+      "Сборщик душ",
       "Секира берсерка",
       "Душа демона",
       "Осколок души"
@@ -148,7 +148,11 @@ const rarities = [
       "Душа Иссушителя",
       "Адская сущность",
       "Королевские часы",
-      "Тайник пепла"
+      "Тайник пепла",
+      "Демонический шлем",
+      "Демонический нагрудник",
+      "Демонические поножи",
+      "Демонические сапоги"
     ]
   },
   {
@@ -621,13 +625,19 @@ const items = [
   {
     kind: "weapon",
     id: "grave_splitter",
-    name: "Рассекатель могил",
+    name: "Сборщик душ",
     rarity: "HELLISH",
     rarityLabel: "Адская",
     line: "blood",
     lore: [
       '<span style="color:#555555"><em>Пять тысяч раз он пил. На пять тысяч первый</em></span>',
-      '<span style="color:#555555"><em>научился поднимать тех, кого выпил.</em></span>'
+      '<span style="color:#555555"><em>научился поднимать тех, кого выпил.</em></span>',
+      "",
+      "",
+      "",
+      "",
+      '<span style="color:#AA00AA">Он помнит лицо Проклятого короля —</span>',
+      '<span style="color:#AA00AA">настоящее, не пиглинье.</span>'
     ],
     abilities: [
       {
@@ -693,9 +703,9 @@ const items = [
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/1f90250f5b.png",
-    obtain: "Эволюция Рассекателя могил в Незеритовой кузне",
-    method: "evolve",
-    methodLabel: "Эволюция у алтаря",
+    obtain: "Сборщик душ в сделке с Мефисто: Адская сущность в рамке над троном Проклятого замка, Мефисто повержен",
+    method: "place",
+    methodLabel: "Святилище",
     recipe: false
   },
   {
@@ -2068,6 +2078,126 @@ const items = [
     method: "craft",
     methodLabel: "Верстак",
     recipe: true
+  },
+  {
+    kind: "material",
+    id: "demon_helmet",
+    name: "Демонический шлем",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Рога, которых не было у короля.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Доспех Мефисто — награда тому, кто начал</span>',
+      '<span style="color:#AAAAAA">его призыв и выстоял до конца.</span>'
+    ],
+    abilities: [
+      {
+        name: "Комплект из четырёх частей",
+        colour: "#FF5555",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Огонь, лава и иссушение вам не вредят.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Мефисто — тому, кто начал его призыв",
+    icon: "images/other/1c4253d770.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "demon_chestplate",
+    name: "Демонический нагрудник",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Под ним бьётся не сердце, а пламя.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Доспех Мефисто — награда тому, кто начал</span>',
+      '<span style="color:#AAAAAA">его призыв и выстоял до конца.</span>'
+    ],
+    abilities: [
+      {
+        name: "Комплект из четырёх частей",
+        colour: "#FF5555",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Огонь, лава и иссушение вам не вредят.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Мефисто — тому, кто начал его призыв",
+    icon: "images/other/31774c2fbd.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "demon_leggings",
+    name: "Демонические поножи",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Пепел не оседает на них — он к ним липнет.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Доспех Мефисто — награда тому, кто начал</span>',
+      '<span style="color:#AAAAAA">его призыв и выстоял до конца.</span>'
+    ],
+    abilities: [
+      {
+        name: "Комплект из четырёх частей",
+        colour: "#FF5555",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Огонь, лава и иссушение вам не вредят.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Мефисто — тому, кто начал его призыв",
+    icon: "images/other/7142d4f470.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "demon_boots",
+    name: "Демонические сапоги",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Каждый шаг оставляет в камне тёплый след.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Доспех Мефисто — награда тому, кто начал</span>',
+      '<span style="color:#AAAAAA">его призыв и выстоял до конца.</span>'
+    ],
+    abilities: [
+      {
+        name: "Комплект из четырёх частей",
+        colour: "#FF5555",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Огонь, лава и иссушение вам не вредят.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Мефисто — тому, кто начал его призыв",
+    icon: "images/other/8b57e35655.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
   }
 ];
 const chains = [
@@ -2731,7 +2861,7 @@ const blood = [
       },
       {
         id: "grave_splitter",
-        name: "Рассекатель могил",
+        name: "Сборщик душ",
         icon: "images/other/ca0b2d0595.png",
         form: 2
       },
