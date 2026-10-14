@@ -2111,12 +2111,12 @@ const items = [
     ],
     abilities: [
       {
-        name: "Комплект из четырёх частей",
+        name: "Dominus",
         colour: "#FF5555",
-        trigger: null,
-        kind: null,
+        trigger: "От двух частей",
+        kind: "other",
         rest: null,
-        text: "<span>Огонь, лава и иссушение вам не вредят.</span>"
+        text: "<span>Удары вблизи копят до 10 стаков Dominus:</span> <span>раз в 1,5 / 1 / 0,5 с при 2 / 3 / 4 частях.</span> <span>Без нового стака через 4 / 7 / 10 с — минус один.</span> <span>Каждый стак: +0,1 блока досягаемости,</span> <span>+2% шанса на повторный удар, +10% урона.</span> <span>На 10 стаках каждый удар ещё и рассекает</span> <span>всех врагов на линии в случайную сторону.</span>"
       }
     ],
     stats: "",
@@ -2141,12 +2141,12 @@ const items = [
     ],
     abilities: [
       {
-        name: "Комплект из четырёх частей",
+        name: "Dominus",
         colour: "#FF5555",
-        trigger: null,
-        kind: null,
+        trigger: "От двух частей",
+        kind: "other",
         rest: null,
-        text: "<span>Огонь, лава и иссушение вам не вредят.</span>"
+        text: "<span>Удары вблизи копят до 10 стаков Dominus:</span> <span>раз в 1,5 / 1 / 0,5 с при 2 / 3 / 4 частях.</span> <span>Без нового стака через 4 / 7 / 10 с — минус один.</span> <span>Каждый стак: +0,1 блока досягаемости,</span> <span>+2% шанса на повторный удар, +10% урона.</span> <span>На 10 стаках каждый удар ещё и рассекает</span> <span>всех врагов на линии в случайную сторону.</span>"
       }
     ],
     stats: "",
@@ -2171,12 +2171,12 @@ const items = [
     ],
     abilities: [
       {
-        name: "Комплект из четырёх частей",
+        name: "Dominus",
         colour: "#FF5555",
-        trigger: null,
-        kind: null,
+        trigger: "От двух частей",
+        kind: "other",
         rest: null,
-        text: "<span>Огонь, лава и иссушение вам не вредят.</span>"
+        text: "<span>Удары вблизи копят до 10 стаков Dominus:</span> <span>раз в 1,5 / 1 / 0,5 с при 2 / 3 / 4 частях.</span> <span>Без нового стака через 4 / 7 / 10 с — минус один.</span> <span>Каждый стак: +0,1 блока досягаемости,</span> <span>+2% шанса на повторный удар, +10% урона.</span> <span>На 10 стаках каждый удар ещё и рассекает</span> <span>всех врагов на линии в случайную сторону.</span>"
       }
     ],
     stats: "",
@@ -2201,12 +2201,12 @@ const items = [
     ],
     abilities: [
       {
-        name: "Комплект из четырёх частей",
+        name: "Dominus",
         colour: "#FF5555",
-        trigger: null,
-        kind: null,
+        trigger: "От двух частей",
+        kind: "other",
         rest: null,
-        text: "<span>Огонь, лава и иссушение вам не вредят.</span>"
+        text: "<span>Удары вблизи копят до 10 стаков Dominus:</span> <span>раз в 1,5 / 1 / 0,5 с при 2 / 3 / 4 частях.</span> <span>Без нового стака через 4 / 7 / 10 с — минус один.</span> <span>Каждый стак: +0,1 блока досягаемости,</span> <span>+2% шанса на повторный удар, +10% урона.</span> <span>На 10 стаках каждый удар ещё и рассекает</span> <span>всех врагов на линии в случайную сторону.</span>"
       }
     ],
     stats: "",
@@ -2369,8 +2369,8 @@ const items = [
     lore: [
       '<span style="color:#555555"><em>Белый, как первый свет над облаками.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Небесная кровь с третьей формы,</span>',
-      '<span style="color:#AAAAAA">у алтаря своего храма.</span>'
+      '<span style="color:#AAAAAA">Небесная или ночная кровь с третьей формы,</span>',
+      '<span style="color:#AAAAAA">у алтаря Небесного храма.</span>'
     ],
     abilities: [
       {
@@ -2399,8 +2399,8 @@ const items = [
     lore: [
       '<span style="color:#555555"><em>На груди — солнце, которое не заходит.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Небесная кровь с третьей формы,</span>',
-      '<span style="color:#AAAAAA">у алтаря своего храма.</span>'
+      '<span style="color:#AAAAAA">Небесная или ночная кровь с третьей формы,</span>',
+      '<span style="color:#AAAAAA">у алтаря Небесного храма.</span>'
     ],
     abilities: [
       {
@@ -2429,8 +2429,8 @@ const items = [
     lore: [
       '<span style="color:#555555"><em>Чуть крепче железа — и куда легче на подъём.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Небесная кровь с третьей формы,</span>',
-      '<span style="color:#AAAAAA">у алтаря своего храма.</span>'
+      '<span style="color:#AAAAAA">Небесная или ночная кровь с третьей формы,</span>',
+      '<span style="color:#AAAAAA">у алтаря Небесного храма.</span>'
     ],
     abilities: [
       {
@@ -2459,8 +2459,8 @@ const items = [
     lore: [
       '<span style="color:#555555"><em>Тот, кто ходит по облакам, не боится падать.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Небесная кровь с третьей формы,</span>',
-      '<span style="color:#AAAAAA">у алтаря своего храма.</span>'
+      '<span style="color:#AAAAAA">Небесная или ночная кровь с третьей формы,</span>',
+      '<span style="color:#AAAAAA">у алтаря Небесного храма.</span>'
     ],
     abilities: [
       {
@@ -2619,7 +2619,7 @@ const items = [
         trigger: null,
         kind: null,
         rest: null,
-        text: "<span>+4 сердца, вас не отбросить.</span> <span>Ударивший вблизи получает пятую часть удара.</span>"
+        text: "<span>+4 сердца.</span> <span>Никакие негативные эффекты на вас не действуют.</span>"
       }
     ],
     stats: "",
@@ -2649,7 +2649,7 @@ const items = [
         trigger: null,
         kind: null,
         rest: null,
-        text: "<span>+4 сердца, вас не отбросить.</span> <span>Ударивший вблизи получает пятую часть удара.</span>"
+        text: "<span>+4 сердца.</span> <span>Никакие негативные эффекты на вас не действуют.</span>"
       }
     ],
     stats: "",
@@ -2679,7 +2679,7 @@ const items = [
         trigger: null,
         kind: null,
         rest: null,
-        text: "<span>+4 сердца, вас не отбросить.</span> <span>Ударивший вблизи получает пятую часть удара.</span>"
+        text: "<span>+4 сердца.</span> <span>Никакие негативные эффекты на вас не действуют.</span>"
       }
     ],
     stats: "",
@@ -2709,7 +2709,7 @@ const items = [
         trigger: null,
         kind: null,
         rest: null,
-        text: "<span>+4 сердца, вас не отбросить.</span> <span>Ударивший вблизи получает пятую часть удара.</span>"
+        text: "<span>+4 сердца.</span> <span>Никакие негативные эффекты на вас не действуют.</span>"
       }
     ],
     stats: "",
