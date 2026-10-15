@@ -41,9 +41,9 @@
 | | Клинок | Урон | Редкость | Где взять |
 |---|---|---|---|---|
 | <img src="assets/icons/doom.png" width="40" height="40" alt=""> | **Погибель** | 7 | Обычная | Сундуки древнего города |
-| <img src="assets/icons/calamity.png" width="40" height="40" alt=""> | **Бедствие** | 9 | Адская | Крафт: Погибель + Душа демона |
-| <img src="assets/icons/demon_will.png" width="40" height="40" alt=""> | **Воля Демона** | 11 | Адская | Крафт из Бедствия или эволюция в Незеритовой кузне |
-| <img src="assets/icons/imperium.png" width="40" height="40" alt=""> | **Империум** | 14 | Ультра-адская | Ковка в Незеритовой кузне: Воля Демона, Сердце кузни, 64 осколка души |
+| <img src="assets/icons/calamity.png" width="40" height="40" alt=""> | **Бедствие** | 9 | Адская | Эволюция Погибели в Незеритовой кузне |
+| <img src="assets/icons/demon_will.png" width="40" height="40" alt=""> | **Воля Демона** | 11 | Адская | Эволюция Бедствия в Незеритовой кузне |
+| <img src="assets/icons/imperium.png" width="40" height="40" alt=""> | **Империум** | 14 | Ультра-адская | Эволюция Воли Демона в Незеритовой кузне |
 
 ### Резаки
 

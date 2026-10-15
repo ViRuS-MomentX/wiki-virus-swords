@@ -343,10 +343,10 @@ const items = [
     ],
     stats: "Урон 9 · Скорость 1.6",
     icon: "images/other/a4a3c2e4f9.png",
-    obtain: "Крафт: Погибель + Душа демона",
-    method: "craft",
-    methodLabel: "Верстак",
-    recipe: true
+    obtain: "Эволюция Погибели в Незеритовой кузне",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -378,10 +378,10 @@ const items = [
     ],
     stats: "Урон 11 · Скорость 1.6",
     icon: "images/other/5ffe2fbc10.png",
-    obtain: "Крафт из Бедствия или эволюция в Незеритовой кузне",
-    method: "craft",
-    methodLabel: "Верстак",
-    recipe: true
+    obtain: "Эволюция Бедствия в Незеритовой кузне",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -475,9 +475,9 @@ const items = [
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/f29e190984.png",
-    obtain: "Ковка в Незеритовой кузне: Воля Демона, Сердце кузни, 64 осколка души",
-    method: "forge",
-    methodLabel: "Ковка у алтаря",
+    obtain: "Эволюция Воли Демона в Незеритовой кузне",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
     recipe: false
   },
   {
@@ -1450,7 +1450,8 @@ const items = [
     lore: [
       '<span style="color:#555555"><em>Оно моргает. Это не отражение.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Вплавляется в клинок и меняет его природу.</span>',
+      '<span style="color:#AAAAAA">Вплавляется в клинок и меняет его природу —</span>',
+      '<span style="color:#AAAAAA">на верстаке или у алтаря Незеритовой кузни.</span>',
       '<span style="color:#AAAAAA">Брошенная на крыше Незера, показывает путь</span>',
       '<span style="color:#AAAAAA">к Проклятому замку. Кровь с третьей формы.</span>'
     ],
@@ -1492,7 +1493,8 @@ const items = [
     lore: [
       '<span style="color:#555555"><em>Три головы — и ни одной мысли, кроме голода.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Вплавляется в Бедствие и делает его Волей Демона.</span>'
+      '<span style="color:#AAAAAA">Её отдают алтарю Незеритовой кузни вместе с Бедствием —</span>',
+      '<span style="color:#AAAAAA">и оно становится Волей Демона.</span>'
     ],
     abilities: [],
     stats: "",
@@ -3665,21 +3667,6 @@ const recipes = [
     ]
   },
   {
-    result: "calamity",
-    grid: [
-      "doom",
-      "demon_soul",
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    shapeless: true
-  },
-  {
     result: "demonic_cutter",
     grid: [
       "cutter",
@@ -3699,21 +3686,6 @@ const recipes = [
     grid: [
       "arachnid",
       "demon_soul",
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    shapeless: true
-  },
-  {
-    result: "demon_will",
-    grid: [
-      "calamity",
-      "wither_soul",
       null,
       null,
       null,
