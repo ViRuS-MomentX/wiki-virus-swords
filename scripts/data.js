@@ -705,7 +705,7 @@ const items = [
     ],
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/1f90250f5b.png",
-    obtain: "Сборщик душ после победы над Мефисто: Адская сущность в руке у головы Проклятого короля",
+    obtain: "???",
     method: "place",
     methodLabel: "Святилище",
     recipe: false
