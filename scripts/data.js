@@ -294,10 +294,11 @@ const items = [
     rarityLabel: "Обычная",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Он ждал в темноте дольше, чем стоит город над ним.</em></span>',
+      '<span style="color:#555555"><em>Задолго до первого камня он ждал в темноте.</em></span>',
+      '<span style="color:#555555"><em>Город вырос над ним — и стал лишь отсрочкой.</em></span>',
       "",
       '<span style="color:#AAAAAA">Ни чар, ни хитростей. Только сталь,</span>',
-      '<span style="color:#AAAAAA">которая пережила всех, кто её боялся.</span>'
+      '<span style="color:#AAAAAA">пережившая всех, кто её страшился.</span>'
     ],
     abilities: [],
     stats: "Урон 7 · Скорость 1.6",
@@ -315,7 +316,8 @@ const items = [
     rarityLabel: "Адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>В сталь вплавили то, что моргало. Теперь моргает сталь.</em></span>'
+      '<span style="color:#555555"><em>Когда небо раскололось, пламя ушло в сталь.</em></span>',
+      '<span style="color:#555555"><em>Теперь оно ждёт, когда мир снова дрогнет.</em></span>'
     ],
     abilities: [
       {
@@ -342,7 +344,8 @@ const items = [
     rarityLabel: "Адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Иссушитель умер. То, что внутри клинка, — нет.</em></span>'
+      '<span style="color:#555555"><em>Иссушитель пал. Его воля — нет.</em></span>',
+      '<span style="color:#555555"><em>Она вошла в сталь и сама выбирает, кому служить.</em></span>'
     ],
     abilities: [
       {
@@ -378,9 +381,9 @@ const items = [
     line: "abyss",
     lore: [
       '<span style="color:#555555"><em>Из его тьмы на вас кто-то смотрит.</em></span>',
-      '<span style="color:#555555"><em>Дотянуться он может. Просто не хочет.</em></span>',
+      '<span style="color:#555555"><em>Дотянуться он может. Просто ещё не время.</em></span>',
       "",
-      '<span style="color:#AAAAAA"><em>Чтобы презирать богов, надо их знать.</em></span>'
+      '<span style="color:#AAAAAA"><em>Чтобы презирать богов, сначала надо увидеть их лица.</em></span>'
     ],
     abilities: [
       {
@@ -423,7 +426,8 @@ const items = [
     rarityLabel: "Ультра-адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Клинок пекла, выкованный из его же сердца.</em></span>'
+      '<span style="color:#555555"><em>Выкованный из сердца самого Пекла,</em></span>',
+      '<span style="color:#555555"><em>он правит всеми клинками, что были до него.</em></span>'
     ],
     abilities: [
       {
@@ -474,7 +478,8 @@ const items = [
     rarityLabel: "Обычная",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Кто-то унёс его под землю и не вернулся.</em></span>'
+      '<span style="color:#555555"><em>Его унесли под землю — туда, где не слышно зова.</em></span>',
+      '<span style="color:#555555"><em>Тот, кто спустился за ним, не вернулся к свету.</em></span>'
     ],
     abilities: [
       {
@@ -501,7 +506,8 @@ const items = [
     rarityLabel: "Эпическая",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Лезвие потемнело и стало брать шире.</em></span>'
+      '<span style="color:#555555"><em>Лезвие почернело, впитав демонскую кровь.</em></span>',
+      '<span style="color:#555555"><em>И с каждым ударом берёт всё больше, не насыщаясь.</em></span>'
     ],
     abilities: [
       {
@@ -528,7 +534,8 @@ const items = [
     rarityLabel: "Терра",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Зелёный металл не тупится и не прощает.</em></span>'
+      '<span style="color:#555555"><em>Зелёный металл, рождённый в глубинах Терры,</em></span>',
+      '<span style="color:#555555"><em>не тупится никогда и никогда не прощает.</em></span>'
     ],
     abilities: [
       {
@@ -563,7 +570,8 @@ const items = [
     rarityLabel: "Необычная",
     line: "blood",
     lore: [
-      '<span style="color:#555555"><em>Тот, кто его ковал, держал пауков не для яда.</em></span>'
+      '<span style="color:#555555"><em>Говорят, кузнец растил пауков не ради яда,</em></span>',
+      '<span style="color:#555555"><em>а ради нитей, на которых подвешивают судьбы.</em></span>'
     ],
     abilities: [
       {
@@ -598,7 +606,8 @@ const items = [
     rarityLabel: "Адская",
     line: "blood",
     lore: [
-      '<span style="color:#555555"><em>Паучья сталь напилась и больше не отпускает.</em></span>'
+      '<span style="color:#555555"><em>Паучья сталь напилась демонской крови</em></span>',
+      '<span style="color:#555555"><em>и с тех пор не знает пощады.</em></span>'
     ],
     abilities: [
       {
@@ -718,8 +727,8 @@ const items = [
     rarityLabel: "Необычная",
     line: "axe",
     lore: [
-      '<span style="color:#555555"><em>Её ковали там, где не бывает рассвета.</em></span>',
-      '<span style="color:#555555"><em>Она и не ждёт его.</em></span>'
+      '<span style="color:#555555"><em>Её ковали там, где рассвет не знает дороги.</em></span>',
+      '<span style="color:#555555"><em>Она и не ждёт его — ей довольно тьмы.</em></span>'
     ],
     abilities: [
       {
@@ -754,8 +763,8 @@ const items = [
     rarityLabel: "Адская",
     line: "axe",
     lore: [
-      '<span style="color:#555555"><em>Она видела, как остыл горн. Жар Горнила ушёл в неё —</em></span>',
-      '<span style="color:#555555"><em>и каждая рана делает её тяжелее.</em></span>'
+      '<span style="color:#555555"><em>Она видела, как погас последний горн Горнила.</em></span>',
+      '<span style="color:#555555"><em>Его жар ушёл в неё, и каждая рана делает её тяжелее.</em></span>'
     ],
     abilities: [
       {
@@ -790,8 +799,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "axe",
     lore: [
-      '<span style="color:#555555"><em>Серафим упал, и его свет искал, где остаться.</em></span>',
-      '<span style="color:#555555"><em>Сумрачная сталь впервые увидела рассвет.</em></span>'
+      '<span style="color:#555555"><em>Серафим пал, и последний луч его света искал, где остаться.</em></span>',
+      '<span style="color:#555555"><em>Сумрачная сталь впервые увидела рассвет — и возродилась золотой.</em></span>'
     ],
     abilities: [
       {
@@ -826,8 +835,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>Самый длинный день в году.</em></span>',
-      '<span style="color:#555555"><em>Для кого-то — последний.</em></span>'
+      '<span style="color:#555555"><em>Самый долгий день в году, когда солнце не спешит садиться.</em></span>',
+      '<span style="color:#555555"><em>Для кого-то он стал последним.</em></span>'
     ],
     abilities: [
       {
@@ -862,8 +871,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "night",
     lore: [
-      '<span style="color:#555555"><em>Музыка, которую играют только для тех, кто не спит.</em></span>',
-      '<span style="color:#555555"><em>И не проснётся.</em></span>',
+      '<span style="color:#555555"><em>Мелодия, которую играют лишь для тех, кто не спит.</em></span>',
+      '<span style="color:#555555"><em>Тех, кто её услышал, уже не разбудит рассвет.</em></span>',
       "",
       "",
       "",
@@ -903,8 +912,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>Он стоит на посту так давно, что забыл,</em></span>',
-      '<span style="color:#555555"><em>что именно охраняет. Тебя — пока что.</em></span>'
+      '<span style="color:#555555"><em>Он стоит на страже так давно, что позабыл,</em></span>',
+      '<span style="color:#555555"><em>кого охраняет. Тебя — пока что.</em></span>'
     ],
     abilities: [
       {
@@ -939,8 +948,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "night",
     lore: [
-      '<span style="color:#555555"><em>Её выковали из того, что падает с неба</em></span>',
-      '<span style="color:#555555"><em>в ночь, когда луна полна.</em></span>'
+      '<span style="color:#555555"><em>Её выковали из звёздного камня, что падает с небес</em></span>',
+      '<span style="color:#555555"><em>в ночь, когда полная луна открывает врата.</em></span>'
     ],
     abilities: [
       {
@@ -976,7 +985,7 @@ const items = [
     line: "night",
     lore: [
       '<span style="color:#555555"><em>Ночная фурия поднялась на девятое небо</em></span>',
-      '<span style="color:#555555"><em>и вернулась оттуда косой.</em></span>'
+      '<span style="color:#555555"><em>и вернулась оттуда жнецом, несущим вечный покой.</em></span>'
     ],
     abilities: [
       {
@@ -1011,8 +1020,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>Его вынули из камня. Говорят, это был не камень,</em></span>',
-      '<span style="color:#555555"><em>а ножны — и в них спало ещё что-то.</em></span>'
+      '<span style="color:#555555"><em>Его извлекли из камня. Говорят, камень был лишь ножнами —</em></span>',
+      '<span style="color:#555555"><em>и в них спало нечто куда древнее самого меча.</em></span>'
     ],
     abilities: [
       {
@@ -1047,8 +1056,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "night",
     lore: [
-      '<span style="color:#555555"><em>Камень был лишь ножнами. Это — то,</em></span>',
-      '<span style="color:#555555"><em>что в них спало, пока не пришёл достойный.</em></span>'
+      '<span style="color:#555555"><em>Камень был лишь ножнами. Истинный клинок —</em></span>',
+      '<span style="color:#555555"><em>то, что в них спало, пока не явился достойный.</em></span>'
     ],
     abilities: [
       {
@@ -1092,7 +1101,7 @@ const items = [
     line: "jungle",
     lore: [
       '<span style="color:#555555"><em>Лес вырастил его сам — из корней, света</em></span>',
-      '<span style="color:#555555"><em>и всего, что в нём когда-то умерло.</em></span>'
+      '<span style="color:#555555"><em>и всего, что в нём когда-то умерло и проросло вновь.</em></span>'
     ],
     abilities: [
       {
@@ -1127,7 +1136,7 @@ const items = [
     rarityLabel: "Терра",
     line: "terra",
     lore: [
-      '<span style="color:#555555"><em>Его ковали, когда мир ещё был камнем,</em></span>',
+      '<span style="color:#555555"><em>Его ковали, когда мир ещё был каменным сном,</em></span>',
       '<span style="color:#555555"><em>и камень помнит каждый его удар.</em></span>'
     ],
     abilities: [
@@ -1164,7 +1173,7 @@ const items = [
     line: "jungle",
     lore: [
       '<span style="color:#555555"><em>Предки не оставили ответа. Они оставили вопрос —</em></span>',
-      '<span style="color:#555555"><em>и того, кто сможет его вынести.</em></span>'
+      '<span style="color:#555555"><em>и тому, кто сумеет его вынести, суждено стать легендой.</em></span>'
     ],
     abilities: [
       {
@@ -1207,7 +1216,7 @@ const items = [
     rarityLabel: "Терра",
     line: "jungle",
     lore: [
-      '<span style="color:#555555"><em>Вопрос, на который предки наконец ответили.</em></span>'
+      '<span style="color:#555555"><em>Ответ на вопрос предков — тот, которого никто не ждал.</em></span>'
     ],
     abilities: [
       {
@@ -1258,8 +1267,8 @@ const items = [
     rarityLabel: "Техно",
     line: "techno",
     lore: [
-      '<span style="color:#555555"><em>Сталь, провод и красный свет. Фабрика дарит его</em></span>',
-      '<span style="color:#555555"><em>каждому, кто впустил её в кровь.</em></span>'
+      '<span style="color:#555555"><em>Сталь, провод и багряный свет. Фабрика дарит его</em></span>',
+      '<span style="color:#555555"><em>каждому, кто впустил её в свою кровь.</em></span>'
     ],
     abilities: [
       {
@@ -1303,7 +1312,7 @@ const items = [
     line: "techno",
     lore: [
       '<span style="color:#555555"><em>Второе поколение. Тоньше, быстрее,</em></span>',
-      '<span style="color:#555555"><em>и в нём уже почти нет ошибок.</em></span>'
+      '<span style="color:#555555"><em>и в нём не осталось ни одного изъяна.</em></span>'
     ],
     abilities: [
       {
@@ -1346,8 +1355,8 @@ const items = [
     rarityLabel: "Техно",
     line: "techno",
     lore: [
-      '<span style="color:#555555"><em>На нём нет нитей. Его ковали, чтобы</em></span>',
-      '<span style="color:#555555"><em>мир наконец заработал как следует.</em></span>'
+      '<span style="color:#555555"><em>На нём нет ни одной нити, ведущей к небесам.</em></span>',
+      '<span style="color:#555555"><em>Его выковали, чтобы перекроить мир по новому чертежу.</em></span>'
     ],
     abilities: [
       {
@@ -1406,7 +1415,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>С ним расстояние перестаёт быть препятствием.</em></span>'
+      '<span style="color:#555555"><em>Титан света, чьё имя носит этот клинок,</em></span>',
+      '<span style="color:#555555"><em>для которого расстояние перестаёт быть преградой.</em></span>'
     ],
     abilities: [
       {
