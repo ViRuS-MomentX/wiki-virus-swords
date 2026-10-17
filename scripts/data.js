@@ -706,8 +706,8 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     icon: "images/other/1f90250f5b.png",
     obtain: "???",
-    method: "place",
-    methodLabel: "Святилище",
+    method: "secret",
+    methodLabel: "Секрет",
     recipe: false
   },
   {
