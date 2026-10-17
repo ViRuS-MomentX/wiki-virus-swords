@@ -316,6 +316,8 @@ const items = [
     ],
     abilities: [],
     stats: "Урон 7 · Скорость 1.6",
+    damage: 7,
+    speed: 1.6,
     icon: "images/other/72806b35de.png",
     obtain: "Сундуки древнего города",
     method: "loot",
@@ -343,6 +345,8 @@ const items = [
       }
     ],
     stats: "Урон 9 · Скорость 1.6",
+    damage: 9,
+    speed: 1.6,
     icon: "images/other/a4a3c2e4f9.png",
     obtain: "Эволюция Погибели в Незеритовой кузне",
     method: "evolve",
@@ -378,6 +382,8 @@ const items = [
       }
     ],
     stats: "Урон 11 · Скорость 1.6",
+    damage: 11,
+    speed: 1.6,
     icon: "images/other/5ffe2fbc10.png",
     obtain: "Эволюция Бедствия в Незеритовой кузне",
     method: "evolve",
@@ -424,6 +430,8 @@ const items = [
       }
     ],
     stats: "Урон 14 · Скорость 1.6",
+    damage: 14,
+    speed: 1.6,
     icon: "images/other/63ca5f7c3f.png",
     obtain: "Эволюция короны крови с Чёрной субстанцией у алтаря своего храма",
     method: "evolve",
@@ -475,6 +483,8 @@ const items = [
       }
     ],
     stats: "Урон 14 · Скорость 1.6",
+    damage: 14,
+    speed: 1.6,
     icon: "images/other/f29e190984.png",
     obtain: "Эволюция Воли Демона в Незеритовой кузне",
     method: "evolve",
@@ -502,6 +512,8 @@ const items = [
       }
     ],
     stats: "Урон 5 · Скорость 1",
+    damage: 5,
+    speed: 1,
     icon: "images/other/9adf817a26.png",
     obtain: "Сундуки древнего города",
     method: "loot",
@@ -529,6 +541,8 @@ const items = [
       }
     ],
     stats: "Урон 7 · Скорость 1",
+    damage: 7,
+    speed: 1,
     icon: "images/other/9499d8c8aa.png",
     obtain: "Крафт: Резак + Душа демона",
     method: "craft",
@@ -564,6 +578,8 @@ const items = [
       }
     ],
     stats: "Урон 10 · Скорость 1",
+    damage: 10,
+    speed: 1,
     icon: "images/other/2808503131.png",
     obtain: "Крафт из Демонического резака и терра-слитков",
     method: "craft",
@@ -599,6 +615,8 @@ const items = [
       }
     ],
     stats: "Урон 8 · Скорость 1.6",
+    damage: 8,
+    speed: 1.6,
     icon: "images/other/8572c066ae.png",
     obtain: "Сундуки заброшенной шахты",
     method: "loot",
@@ -634,6 +652,8 @@ const items = [
       }
     ],
     stats: "Урон 10 · Скорость 1.6",
+    damage: 10,
+    speed: 1.6,
     icon: "images/other/8f2915c708.png",
     obtain: "Крафт: Арахнид + Душа демона",
     method: "craft",
@@ -682,6 +702,8 @@ const items = [
       }
     ],
     stats: "Урон 11 · Скорость 1.6",
+    damage: 11,
+    speed: 1.6,
     icon: "images/other/ca0b2d0595.png",
     obtain: "Эволюция Убийцы демонов в Незеритовой кузне",
     method: "evolve",
@@ -719,6 +741,8 @@ const items = [
       }
     ],
     stats: "Урон 14 · Скорость 1.6",
+    damage: 14,
+    speed: 1.6,
     icon: "images/other/1f90250f5b.png",
     obtain: "???",
     method: "secret",
@@ -755,6 +779,8 @@ const items = [
       }
     ],
     stats: "Урон 10 · Скорость 1",
+    damage: 10,
+    speed: 1,
     icon: "images/other/5e7c8e6aba.png",
     obtain: "Сундуки крепости Незера",
     method: "loot",
@@ -791,6 +817,8 @@ const items = [
       }
     ],
     stats: "Урон 13 · Скорость 1",
+    damage: 13,
+    speed: 1,
     icon: "images/other/66344d5ef9.png",
     obtain: "Сумрачная секира меняется сама в испытании Незеритовой кузни",
     method: "grows",
@@ -827,6 +855,8 @@ const items = [
       }
     ],
     stats: "Урон 14 · Скорость 1",
+    damage: 14,
+    speed: 1,
     icon: "images/other/c02c9c9337.png",
     obtain: "Сумрачная секира меняется сама в испытании Небесного храма",
     method: "grows",
@@ -863,6 +893,8 @@ const items = [
       }
     ],
     stats: "Урон 13 · Скорость 1.6",
+    damage: 13,
+    speed: 1.6,
     icon: "images/other/1a4474ed65.png",
     obtain: "Сокровищница бастиона, редко",
     method: "loot",
@@ -904,6 +936,8 @@ const items = [
       }
     ],
     stats: "Урон 13 · Скорость 1.6",
+    damage: 13,
+    speed: 1.6,
     icon: "images/other/6d22f8cf26.png",
     obtain: "Ковка в Тёмном храме или эволюция Солнцестояния",
     method: "forge",
@@ -940,6 +974,8 @@ const items = [
       }
     ],
     stats: "Урон 12 · Скорость 1.6",
+    damage: 12,
+    speed: 1.6,
     icon: "images/other/28b6759ee6.png",
     obtain: "Сокровищница Проклятого замка",
     method: "loot",
@@ -976,6 +1012,8 @@ const items = [
       }
     ],
     stats: "Урон 13 · Скорость 1.6",
+    damage: 13,
+    speed: 1.6,
     icon: "images/other/eadcf5b768.png",
     obtain: "Ковка в Тёмном храме, в полнолуние",
     method: "forge",
@@ -1012,6 +1050,8 @@ const items = [
       }
     ],
     stats: "Урон 15 · Скорость 1.2",
+    damage: 15,
+    speed: 1.2,
     icon: "images/other/f8ef121ebd.png",
     obtain: "Эволюция Ночной фурии в Тёмном храме",
     method: "evolve",
@@ -1048,6 +1088,8 @@ const items = [
       }
     ],
     stats: "Урон 12 · Скорость 1.6",
+    damage: 12,
+    speed: 1.6,
     icon: "images/other/a911f57db9.png",
     obtain: "Ковка в Небесном храме, днём",
     method: "forge",
@@ -1092,6 +1134,8 @@ const items = [
       }
     ],
     stats: "Урон 16 · Скорость 1.6",
+    damage: 16,
+    speed: 1.6,
     icon: "images/other/e470fbf77d.png",
     obtain: "Ковка в Тёмном храме: Экскалибур и Звёздная грань",
     method: "forge",
@@ -1128,6 +1172,8 @@ const items = [
       }
     ],
     stats: "Урон 12 · Скорость 1.6",
+    damage: 12,
+    speed: 1.6,
     icon: "images/other/bb4efe2f62.png",
     obtain: "Ковка в Храме джунглей",
     method: "forge",
@@ -1164,6 +1210,8 @@ const items = [
       }
     ],
     stats: "Урон 11 · Скорость 1.6",
+    damage: 11,
+    speed: 1.6,
     icon: "images/icons/ancient.png",
     obtain: "Бочки Терра-подземелья",
     method: "loot",
@@ -1208,6 +1256,8 @@ const items = [
       }
     ],
     stats: "Урон 13 · Скорость 1.6",
+    damage: 13,
+    speed: 1.6,
     icon: "images/other/fd4a3c08f5.png",
     obtain: "Ковка в Храме джунглей",
     method: "forge",
@@ -1259,6 +1309,8 @@ const items = [
       }
     ],
     stats: "Урон 15 · Скорость 1.6",
+    damage: 15,
+    speed: 1.6,
     icon: "images/other/97fc9f3d00.png",
     obtain: "Эволюция Энигмы в Храме джунглей, 4-я форма крови предков",
     method: "evolve",
@@ -1303,6 +1355,8 @@ const items = [
       }
     ],
     stats: "Урон 10 · Скорость 1.6",
+    damage: 10,
+    speed: 1.6,
     icon: "images/other/431234757a.png",
     obtain: "Дар Древней фабрики вместе с техноорганической кровью",
     method: "gift",
@@ -1347,6 +1401,8 @@ const items = [
       }
     ],
     stats: "Урон 12 · Скорость 1.6",
+    damage: 12,
+    speed: 1.6,
     icon: "images/other/9e6ab2b7b7.png",
     obtain: "Сам вырастает из Энцефало-меча",
     method: "grows",
@@ -1407,6 +1463,8 @@ const items = [
       }
     ],
     stats: "Урон 14 · Скорость 1.6",
+    damage: 14,
+    speed: 1.6,
     icon: "images/other/e48e7744f6.png",
     obtain: "Сам вырастает из Энцефало-клинка",
     method: "grows",
@@ -1434,6 +1492,8 @@ const items = [
       }
     ],
     stats: "Урон 14 · Скорость 1.6",
+    damage: 14,
+    speed: 1.6,
     icon: "images/other/efaf7051a3.png",
     obtain: "Ковка в Небесном храме",
     method: "forge",

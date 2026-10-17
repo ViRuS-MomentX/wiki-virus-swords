@@ -194,7 +194,10 @@ section > h3 { margin-top: 18px; }
 .chain-row { align-items: center; }
 .arrow { color: var(--soul); font-size: .9rem; padding: 0 4px; margin-top: 34px; }
 .chain-row .arrow { margin-top: 0; }
-.inventory { display: grid; grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)); gap: 6px 4px; justify-items: center; padding: 18px 14px; background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--r-box); }
+.inventory { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 14px; align-items: start; }
+.inv-group { display: grid; gap: 8px; align-content: start; padding: 14px 14px 10px; background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--r-box); }
+.inv-title { font: 600 .9rem/1.3 var(--body); color: var(--ink-2); }
+.inv-row { display: flex; flex-wrap: wrap; gap: 2px; }
 .empty { color: var(--muted); padding: 12px 0; }
 
 /* --- the inspector: one item, beside the page ---------------------------------------------- */
@@ -426,7 +429,8 @@ a.mbadge:hover { border-color: var(--muted); }
   .islot.named { width: 86px; }
   .islot-name { font-size: .76rem; }
   .islot.named .islot-cell { width: 58px; height: 58px; }
-  .inventory { grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); padding: 12px 6px; }
+  .inventory { grid-template-columns: minmax(0, 1fr); }
+  .inv-group { padding: 12px 8px 8px; }
   .arrow { padding: 0 1px; }
   .inspect { top: auto; width: 100%; max-height: 88dvh; border-left: 0; border-top: 1px solid var(--line); border-radius: 16px 16px 0 0; padding: 22px 16px 32px; }
   .inspect-enter-from .inspect, .inspect-leave-to .inspect { transform: translateY(60px); }
@@ -512,3 +516,18 @@ a.pslot:hover { background: #a3a3a3; }
 .price-title a:hover { color: var(--soul); }
 .price-owner { font-size: .84rem; color: var(--ink-2); }
 @media (max-width: 640px) { .prices { grid-template-columns: minmax(0, 1fr); } }
+
+/* --- weapons: the bar over them, and the table view ---------------------------------------- */
+.weapon-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px; }
+.seg { display: inline-flex; padding: 3px; border: 1px solid var(--line); border-radius: 999px; }
+.seg button { font: 500 .84rem var(--body); padding: 5px 13px; border: 0; border-radius: 999px; background: transparent; color: var(--ink-2); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--soul-soft); color: var(--ink); box-shadow: inset 0 0 0 1px var(--soul-line); }
+.wtable td, .wtable th { vertical-align: middle; }
+.wtable thead th { padding: 0; }
+.sort { font: inherit; color: inherit; background: none; border: 0; padding: 10px 14px; width: 100%; text-align: inherit; cursor: pointer; white-space: nowrap; }
+th.num .sort { text-align: right; }
+.sort:hover { color: var(--ink); }
+.wname { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 500; }
+.wname:hover { color: var(--soul); }
+.islot-cell.sm { width: 34px; height: 34px; padding: 3px; flex: none; }
+.rname.sm { font-size: 8px; padding: 6px 8px 5px; white-space: nowrap; }

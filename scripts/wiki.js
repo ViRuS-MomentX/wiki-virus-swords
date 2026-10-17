@@ -43,8 +43,8 @@ const _hoisted_2$g = {
   href: "#top"
 };
 const _hoisted_3$g = ["src"];
-const _hoisted_4$f = ["aria-expanded", "aria-activedescendant"];
-const _hoisted_5$e = {
+const _hoisted_4$g = ["aria-expanded", "aria-activedescendant"];
+const _hoisted_5$f = {
   key: 0,
   class: "found-box"
 };
@@ -57,19 +57,19 @@ const _hoisted_6$e = {
 };
 const _hoisted_7$e = ["id", "aria-selected"];
 const _hoisted_8$c = ["href", "onMouseenter"];
-const _hoisted_9$9 = ["src"];
-const _hoisted_10$8 = ["title"];
-const _hoisted_11$7 = { class: "found-kind" };
-const _hoisted_12$7 = {
+const _hoisted_9$a = ["src"];
+const _hoisted_10$9 = ["title"];
+const _hoisted_11$8 = { class: "found-kind" };
+const _hoisted_12$8 = {
   class: "search-hint",
   "aria-live": "polite"
 };
-const _hoisted_13$7 = {
+const _hoisted_13$8 = {
   key: 1,
   class: "search-hint"
 };
-const _hoisted_14$5 = ["href", "aria-current"];
-const _hoisted_15$4 = {
+const _hoisted_14$6 = ["href", "aria-current"];
+const _hoisted_15$5 = {
   key: 0,
   class: "count"
 };
@@ -219,14 +219,14 @@ const _sfc_main$m = {
             onInput: onSearch,
             onFocus: _cache[1] || (_cache[1] = ($event) => listOpen.value = true),
             onKeydown: onSearchKey
-          }, null, 40, _hoisted_4$f), [
+          }, null, 40, _hoisted_4$g), [
             [vModelText, search.value]
           ]),
           _cache[5] || (_cache[5] = createBaseVNode("kbd", {
             class: "search-key",
             "aria-hidden": "true"
           }, "/", -1)),
-          listOpen.value && unref(filters).query ? (openBlock(), createElementBlock("div", _hoisted_5$e, [
+          listOpen.value && unref(filters).query ? (openBlock(), createElementBlock("div", _hoisted_5$f, [
             unref(found).length ? (openBlock(), createElementBlock("ul", _hoisted_6$e, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(unref(found).slice(0, SHOWN), (i, k) => {
                 return openBlock(), createElementBlock("li", {
@@ -245,23 +245,23 @@ const _sfc_main$m = {
                     createBaseVNode("img", {
                       src: i.icon,
                       alt: ""
-                    }, null, 8, _hoisted_9$9),
+                    }, null, 8, _hoisted_9$a),
                     createBaseVNode("span", {
                       class: "found-name",
                       title: i.name
-                    }, toDisplayString(i.name), 9, _hoisted_10$8),
-                    createBaseVNode("span", _hoisted_11$7, toDisplayString(i.kind === "weapon" ? "клинок" : "материал"), 1)
+                    }, toDisplayString(i.name), 9, _hoisted_10$9),
+                    createBaseVNode("span", _hoisted_11$8, toDisplayString(i.kind === "weapon" ? "клинок" : "материал"), 1)
                   ], 42, _hoisted_8$c)
                 ], 8, _hoisted_7$e);
               }), 128))
             ])) : createCommentVNode("", true),
-            createBaseVNode("p", _hoisted_12$7, [
+            createBaseVNode("p", _hoisted_12$8, [
               createTextVNode(toDisplayString(unref(hint)), 1),
               unref(found).length > SHOWN ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
                 createTextVNode(". В списке первые " + toDisplayString(SHOWN) + ", остальные подсвечены на странице")
               ], 64)) : createCommentVNode("", true)
             ])
-          ])) : unref(filters).query ? (openBlock(), createElementBlock("p", _hoisted_13$7, [
+          ])) : unref(filters).query ? (openBlock(), createElementBlock("p", _hoisted_13$8, [
             createTextVNode(toDisplayString(unref(hint)) + ". ", 1),
             createBaseVNode("button", {
               type: "button",
@@ -284,8 +284,8 @@ const _sfc_main$m = {
               "aria-current": current.value === id ? "location" : void 0
             }, [
               createBaseVNode("span", null, toDisplayString(title), 1),
-              count ? (openBlock(), createElementBlock("span", _hoisted_15$4, toDisplayString(count), 1)) : createCommentVNode("", true)
-            ], 10, _hoisted_14$5);
+              count ? (openBlock(), createElementBlock("span", _hoisted_15$5, toDisplayString(count), 1)) : createCommentVNode("", true)
+            ], 10, _hoisted_14$6);
           }), 64))
         ], 512),
         _cache[6] || (_cache[6] = createBaseVNode("p", { class: "side-foot" }, "Плагин для Paper 1.21.11. Модели — ресурспаки Fantasy Weapons (nongkos) и Blades of Majestica.", -1))
@@ -323,11 +323,11 @@ const _sfc_main$l = {
 const _hoisted_1$j = { class: "tip" };
 const _hoisted_2$f = ["innerHTML"];
 const _hoisted_3$f = { class: "tlore" };
-const _hoisted_4$e = {
+const _hoisted_4$f = {
   key: 0,
   class: "gap"
 };
-const _hoisted_5$d = ["innerHTML"];
+const _hoisted_5$e = ["innerHTML"];
 const _hoisted_6$d = {
   key: 0,
   class: "tstats"
@@ -350,10 +350,10 @@ const _sfc_main$k = {
         createBaseVNode("div", _hoisted_3$f, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(__props.item.lore, (line, i) => {
             return openBlock(), createElementBlock(Fragment, { key: i }, [
-              line === "" ? (openBlock(), createElementBlock("div", _hoisted_4$e)) : (openBlock(), createElementBlock("div", {
+              line === "" ? (openBlock(), createElementBlock("div", _hoisted_4$f)) : (openBlock(), createElementBlock("div", {
                 key: 1,
                 innerHTML: line
-              }, null, 8, _hoisted_5$d))
+              }, null, 8, _hoisted_5$e))
             ], 64);
           }), 128))
         ]),
@@ -387,24 +387,24 @@ const _hoisted_1$i = {
 };
 const _hoisted_2$e = { class: "hero-text" };
 const _hoisted_3$e = { class: "facts" };
-const _hoisted_4$d = { href: "#weapons" };
-const _hoisted_5$c = { href: "#materials" };
+const _hoisted_4$e = { href: "#weapons" };
+const _hoisted_5$d = { href: "#materials" };
 const _hoisted_6$c = { href: "#blood" };
 const _hoisted_7$c = { href: "#trophies" };
 const _hoisted_8$a = { class: "stage" };
-const _hoisted_9$8 = {
+const _hoisted_9$9 = {
   class: "held",
   "aria-hidden": "true"
 };
-const _hoisted_10$7 = ["src"];
-const _hoisted_11$6 = {
+const _hoisted_10$8 = ["src"];
+const _hoisted_11$7 = {
   class: "stage-tip",
   "aria-live": "polite"
 };
-const _hoisted_12$6 = { class: "hotbar-wrap" };
-const _hoisted_13$6 = ["aria-label", "aria-pressed", "onClick"];
-const _hoisted_14$4 = ["src"];
-const _hoisted_15$3 = {
+const _hoisted_12$7 = { class: "hotbar-wrap" };
+const _hoisted_13$7 = ["aria-label", "aria-pressed", "onClick"];
+const _hoisted_14$5 = ["src"];
+const _hoisted_15$4 = {
   class: "hkey",
   "aria-hidden": "true"
 };
@@ -436,13 +436,13 @@ const _sfc_main$j = {
           _cache[4] || (_cache[4] = createBaseVNode("p", { class: "lead" }, "Клинки находят в мире, куют из душ и доводят до последней формы у алтарей святилищ. Здесь — что умеет каждый клинок, откуда он берётся, как растёт и кто стережёт святилища.", -1)),
           createBaseVNode("ul", _hoisted_3$e, [
             createBaseVNode("li", null, [
-              createBaseVNode("a", _hoisted_4$d, [
+              createBaseVNode("a", _hoisted_4$e, [
                 createBaseVNode("b", null, toDisplayString(unref(data).counts.weapons), 1),
                 createTextVNode(toDisplayString(unref(data).words.weapons), 1)
               ])
             ]),
             createBaseVNode("li", null, [
-              createBaseVNode("a", _hoisted_5$c, [
+              createBaseVNode("a", _hoisted_5$d, [
                 createBaseVNode("b", null, toDisplayString(unref(data).counts.materials), 1),
                 createTextVNode(toDisplayString(unref(data).words.materials), 1)
               ])
@@ -468,14 +468,14 @@ const _sfc_main$j = {
           ])
         ]),
         createBaseVNode("div", _hoisted_8$a, [
-          createBaseVNode("div", _hoisted_9$8, [
+          createBaseVNode("div", _hoisted_9$9, [
             (openBlock(), createElementBlock("img", {
               key: held.value.id,
               src: held.value.icon,
               alt: ""
-            }, null, 8, _hoisted_10$7))
+            }, null, 8, _hoisted_10$8))
           ]),
-          createBaseVNode("div", _hoisted_11$6, [
+          createBaseVNode("div", _hoisted_11$7, [
             createVNode(_sfc_main$k, { item: held.value }, null, 8, ["item"]),
             createBaseVNode("button", {
               type: "button",
@@ -484,7 +484,7 @@ const _sfc_main$j = {
             }, "Открыть карточку клинка")
           ])
         ]),
-        createBaseVNode("div", _hoisted_12$6, [
+        createBaseVNode("div", _hoisted_12$7, [
           createBaseVNode("div", {
             class: "hotbar",
             role: "toolbar",
@@ -503,9 +503,9 @@ const _sfc_main$j = {
                 createBaseVNode("img", {
                   src: slot.icon,
                   alt: ""
-                }, null, 8, _hoisted_14$4),
-                createBaseVNode("span", _hoisted_15$3, toDisplayString(i + 1), 1)
-              ], 10, _hoisted_13$6);
+                }, null, 8, _hoisted_14$5),
+                createBaseVNode("span", _hoisted_15$4, toDisplayString(i + 1), 1)
+              ], 10, _hoisted_13$7);
             }), 128))
           ], 32),
           _cache[5] || (_cache[5] = createBaseVNode("p", { class: "hotbar-note" }, "Клавиши 1–9 или колесо мыши выбирают клинок, повторный клик открывает его карточку.", -1))
@@ -517,19 +517,19 @@ const _sfc_main$j = {
 const _hoisted_1$h = ["aria-label"];
 const _hoisted_2$d = { class: "craft-table" };
 const _hoisted_3$d = { class: "craft-grid" };
-const _hoisted_4$c = ["href", "title"];
-const _hoisted_5$b = ["src", "alt"];
+const _hoisted_4$d = ["href", "title"];
+const _hoisted_5$c = ["src", "alt"];
 const _hoisted_6$b = ["title"];
 const _hoisted_7$b = ["src", "alt"];
 const _hoisted_8$9 = {
   key: 2,
   class: "cslot"
 };
-const _hoisted_9$7 = ["title"];
-const _hoisted_10$6 = ["src", "alt"];
-const _hoisted_11$5 = { key: 0 };
-const _hoisted_12$5 = ["href"];
-const _hoisted_13$5 = {
+const _hoisted_9$8 = ["title"];
+const _hoisted_10$7 = ["src", "alt"];
+const _hoisted_11$6 = { key: 0 };
+const _hoisted_12$6 = ["href"];
+const _hoisted_13$6 = {
   key: 0,
   class: "note"
 };
@@ -569,8 +569,8 @@ const _sfc_main$i = {
                   createBaseVNode("img", {
                     src: c.icon,
                     alt: c.name
-                  }, null, 8, _hoisted_5$b)
-                ], 10, _hoisted_4$c)) : c ? (openBlock(), createElementBlock("span", {
+                  }, null, 8, _hoisted_5$c)
+                ], 10, _hoisted_4$d)) : c ? (openBlock(), createElementBlock("span", {
                   key: 1,
                   class: "cslot",
                   title: c.name
@@ -594,19 +594,19 @@ const _sfc_main$i = {
             createBaseVNode("img", {
               src: (_c = result.value) == null ? void 0 : _c.icon,
               alt: (_d = result.value) == null ? void 0 : _d.name
-            }, null, 8, _hoisted_10$6)
-          ], 8, _hoisted_9$7)
+            }, null, 8, _hoisted_10$7)
+          ], 8, _hoisted_9$8)
         ]),
-        !__props.small ? (openBlock(), createElementBlock("figcaption", _hoisted_11$5, [
+        !__props.small ? (openBlock(), createElementBlock("figcaption", _hoisted_11$6, [
           createBaseVNode("b", null, [
             ((_e = result.value) == null ? void 0 : _e.ours) ? (openBlock(), createElementBlock("a", {
               key: 0,
               href: result.value.href
-            }, toDisplayString(result.value.name), 9, _hoisted_12$5)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
+            }, toDisplayString(result.value.name), 9, _hoisted_12$6)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
               createTextVNode(toDisplayString((_f = result.value) == null ? void 0 : _f.name), 1)
             ], 64))
           ]),
-          __props.recipe.note ? (openBlock(), createElementBlock("span", _hoisted_13$5, toDisplayString(__props.recipe.note), 1)) : createCommentVNode("", true)
+          __props.recipe.note ? (openBlock(), createElementBlock("span", _hoisted_13$6, toDisplayString(__props.recipe.note), 1)) : createCommentVNode("", true)
         ])) : createCommentVNode("", true)
       ], 10, _hoisted_1$h);
     };
@@ -618,11 +618,11 @@ const _hoisted_3$c = {
   key: 0,
   class: "chip"
 };
-const _hoisted_4$b = {
+const _hoisted_4$c = {
   viewBox: "0 0 16 16",
   "aria-hidden": "true"
 };
-const _hoisted_5$a = {
+const _hoisted_5$b = {
   key: 0,
   x: "3.5",
   y: "1.5",
@@ -663,8 +663,8 @@ const _sfc_main$h = {
               createBaseVNode("h4", null, toDisplayString(a.name), 1),
               createBaseVNode("div", _hoisted_2$c, [
                 a.trigger ? (openBlock(), createElementBlock("span", _hoisted_3$c, [
-                  (openBlock(), createElementBlock("svg", _hoisted_4$b, [
-                    mouse(a.kind) ? (openBlock(), createElementBlock("rect", _hoisted_5$a)) : createCommentVNode("", true),
+                  (openBlock(), createElementBlock("svg", _hoisted_4$c, [
+                    mouse(a.kind) ? (openBlock(), createElementBlock("rect", _hoisted_5$b)) : createCommentVNode("", true),
                     createBaseVNode("path", {
                       d: ICONS[a.kind],
                       fill: a.kind === "hit" || a.kind === "other" ? "none" : "currentColor",
@@ -713,7 +713,7 @@ const _sfc_main$h = {
 const _hoisted_1$f = ["id", "href", "title", "aria-label"];
 const _hoisted_2$b = { class: "islot-cell" };
 const _hoisted_3$b = ["src"];
-const _hoisted_4$a = {
+const _hoisted_4$b = {
   key: 0,
   class: "islot-name"
 };
@@ -742,7 +742,7 @@ const _sfc_main$g = {
             loading: "lazy"
           }, null, 8, _hoisted_3$b)
         ]),
-        __props.named ? (openBlock(), createElementBlock("span", _hoisted_4$a, toDisplayString(__props.item.name), 1)) : createCommentVNode("", true)
+        __props.named ? (openBlock(), createElementBlock("span", _hoisted_4$b, toDisplayString(__props.item.name), 1)) : createCommentVNode("", true)
       ], 10, _hoisted_1$f);
     };
   }
@@ -753,23 +753,23 @@ const _hoisted_2$a = {
   class: "price-title"
 };
 const _hoisted_3$a = ["href"];
-const _hoisted_4$9 = { class: "price-head" };
-const _hoisted_5$9 = { class: "price-when" };
+const _hoisted_4$a = { class: "price-head" };
+const _hoisted_5$a = { class: "price-when" };
 const _hoisted_6$9 = {
   class: "price-row",
   "aria-hidden": "true"
 };
 const _hoisted_7$9 = ["href", "title"];
 const _hoisted_8$7 = ["src"];
-const _hoisted_9$6 = ["src"];
-const _hoisted_10$5 = {
+const _hoisted_9$7 = ["src"];
+const _hoisted_10$6 = {
   key: 0,
   class: "pcount"
 };
-const _hoisted_11$4 = ["title"];
-const _hoisted_12$4 = ["src"];
-const _hoisted_13$4 = { class: "price-words" };
-const _hoisted_14$3 = {
+const _hoisted_11$5 = ["title"];
+const _hoisted_12$5 = ["src"];
+const _hoisted_13$5 = { class: "price-words" };
+const _hoisted_14$4 = {
   key: 1,
   class: "price-owner"
 };
@@ -816,12 +816,12 @@ const _sfc_main$f = {
             href: result.value.href
           }, toDisplayString(result.value.name), 9, _hoisted_3$a)
         ])) : createCommentVNode("", true),
-        createBaseVNode("p", _hoisted_4$9, [
+        createBaseVNode("p", _hoisted_4$a, [
           createBaseVNode("b", null, toDisplayString(verb.value), 1),
           createTextVNode(" — " + toDisplayString(__props.entry.at), 1),
           when.value ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
             _cache[0] || (_cache[0] = createTextVNode(". ", -1)),
-            createBaseVNode("span", _hoisted_5$9, toDisplayString(when.value), 1)
+            createBaseVNode("span", _hoisted_5$a, toDisplayString(when.value), 1)
           ], 64)) : createCommentVNode("", true)
         ]),
         createBaseVNode("div", _hoisted_6$9, [
@@ -851,8 +851,8 @@ const _sfc_main$f = {
                 createBaseVNode("img", {
                   src: c.icon,
                   alt: ""
-                }, null, 8, _hoisted_9$6),
-                c.n > 1 ? (openBlock(), createElementBlock("span", _hoisted_10$5, toDisplayString(c.n), 1)) : createCommentVNode("", true)
+                }, null, 8, _hoisted_9$7),
+                c.n > 1 ? (openBlock(), createElementBlock("span", _hoisted_10$6, toDisplayString(c.n), 1)) : createCommentVNode("", true)
               ]),
               _: 2
             }, 1032, ["href", "title"]);
@@ -865,11 +865,11 @@ const _sfc_main$f = {
             createBaseVNode("img", {
               src: result.value.icon,
               alt: ""
-            }, null, 8, _hoisted_12$4)
-          ], 8, _hoisted_11$4)
+            }, null, 8, _hoisted_12$5)
+          ], 8, _hoisted_11$5)
         ]),
-        createBaseVNode("p", _hoisted_13$4, toDisplayString(spoken.value), 1),
-        __props.boxed && owner.value ? (openBlock(), createElementBlock("p", _hoisted_14$3, "Признаёт: " + toDisplayString(owner.value), 1)) : createCommentVNode("", true)
+        createBaseVNode("p", _hoisted_13$5, toDisplayString(spoken.value), 1),
+        __props.boxed && owner.value ? (openBlock(), createElementBlock("p", _hoisted_14$4, "Признаёт: " + toDisplayString(owner.value), 1)) : createCommentVNode("", true)
       ], 10, _hoisted_1$e);
     };
   }
@@ -877,19 +877,19 @@ const _sfc_main$f = {
 const _hoisted_1$d = { class: "card" };
 const _hoisted_2$9 = { class: "card-top" };
 const _hoisted_3$9 = { class: "slot" };
-const _hoisted_4$8 = ["src"];
-const _hoisted_5$8 = { class: "obtain" };
+const _hoisted_4$9 = ["src"];
+const _hoisted_5$9 = { class: "obtain" };
 const _hoisted_6$8 = { class: "obtain-head" };
 const _hoisted_7$8 = ["href"];
 const _hoisted_8$6 = ["innerHTML"];
-const _hoisted_9$5 = ["innerHTML"];
-const _hoisted_10$4 = {
+const _hoisted_9$6 = ["innerHTML"];
+const _hoisted_10$5 = {
   key: 1,
   class: "card-chain"
 };
-const _hoisted_11$3 = { class: "chain-row" };
-const _hoisted_12$3 = { class: "chain-row" };
-const _hoisted_13$3 = {
+const _hoisted_11$4 = { class: "chain-row" };
+const _hoisted_12$4 = { class: "chain-row" };
+const _hoisted_13$4 = {
   key: 0,
   class: "arrow",
   "aria-hidden": "true"
@@ -915,7 +915,7 @@ const _sfc_main$e = {
             createBaseVNode("img", {
               src: __props.item.icon,
               alt: ""
-            }, null, 8, _hoisted_4$8)
+            }, null, 8, _hoisted_4$9)
           ]),
           createVNode(_sfc_main$k, { item: __props.item }, null, 8, ["item"])
         ]),
@@ -923,7 +923,7 @@ const _sfc_main$e = {
           key: 0,
           abilities: __props.item.abilities
         }, null, 8, ["abilities"])) : createCommentVNode("", true),
-        createBaseVNode("div", _hoisted_5$8, [
+        createBaseVNode("div", _hoisted_5$9, [
           createBaseVNode("div", _hoisted_6$8, [
             _cache[0] || (_cache[0] = createBaseVNode("h3", null, "Как получить", -1)),
             createBaseVNode("a", {
@@ -950,11 +950,11 @@ const _sfc_main$e = {
             key: 1,
             class: "obtain-text muted",
             innerHTML: __props.item.obtain
-          }, null, 8, _hoisted_9$5)) : createCommentVNode("", true)
+          }, null, 8, _hoisted_9$6)) : createCommentVNode("", true)
         ]),
-        usedIn.value.length ? (openBlock(), createElementBlock("div", _hoisted_10$4, [
+        usedIn.value.length ? (openBlock(), createElementBlock("div", _hoisted_10$5, [
           _cache[1] || (_cache[1] = createBaseVNode("h3", null, "Нужен для", -1)),
-          createBaseVNode("div", _hoisted_11$3, [
+          createBaseVNode("div", _hoisted_11$4, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(usedIn.value, (u) => {
               return openBlock(), createBlock(_sfc_main$g, {
                 key: u.id,
@@ -969,10 +969,10 @@ const _sfc_main$e = {
             class: "card-chain"
           }, [
             createBaseVNode("h3", null, toDisplayString(c.title), 1),
-            createBaseVNode("div", _hoisted_12$3, [
+            createBaseVNode("div", _hoisted_12$4, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(c.entries, (e, i) => {
                 return openBlock(), createElementBlock(Fragment, { key: i }, [
-                  e.sep ? (openBlock(), createElementBlock("span", _hoisted_13$3, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
+                  e.sep ? (openBlock(), createElementBlock("span", _hoisted_13$4, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
                   createVNode(_sfc_main$g, {
                     item: unref(item)(e.id)
                   }, null, 8, ["item"])
@@ -994,8 +994,8 @@ const _hoisted_3$8 = {
   class: "inspect-steps",
   "aria-label": "Соседние предметы"
 };
-const _hoisted_4$7 = { class: "step-name" };
-const _hoisted_5$7 = ["src"];
+const _hoisted_4$8 = { class: "step-name" };
+const _hoisted_5$8 = ["src"];
 const _hoisted_6$7 = { class: "step-name" };
 const _hoisted_7$7 = ["src"];
 const _sfc_main$d = {
@@ -1104,11 +1104,11 @@ const _sfc_main$d = {
                   onClick: _cache[2] || (_cache[2] = ($event) => unref(openItem)(prev.value.id))
                 }, [
                   _cache[5] || (_cache[5] = createBaseVNode("span", { class: "step-dir" }, "← Предыдущий", -1)),
-                  createBaseVNode("span", _hoisted_4$7, [
+                  createBaseVNode("span", _hoisted_4$8, [
                     createBaseVNode("img", {
                       src: prev.value.icon,
                       alt: ""
-                    }, null, 8, _hoisted_5$7),
+                    }, null, 8, _hoisted_5$8),
                     createTextVNode(toDisplayString(prev.value.name), 1)
                   ])
                 ])) : createCommentVNode("", true),
@@ -1151,11 +1151,11 @@ const _sfc_main$c = {
 const _hoisted_1$a = { id: "rarity" };
 const _hoisted_2$7 = { class: "rarities" };
 const _hoisted_3$7 = { class: "rname" };
-const _hoisted_4$6 = {
+const _hoisted_4$7 = {
   class: "swatches",
   "aria-hidden": "true"
 };
-const _hoisted_5$6 = { class: "rmotion" };
+const _hoisted_5$7 = { class: "rmotion" };
 const _hoisted_6$6 = { class: "rused" };
 const _hoisted_7$6 = {
   key: 1,
@@ -1186,7 +1186,7 @@ const _sfc_main$b = {
                   _: 2
                 }, 1032, ["rarity"])
               ]),
-              createBaseVNode("span", _hoisted_4$6, [
+              createBaseVNode("span", _hoisted_4$7, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(r.palette, (c) => {
                   return openBlock(), createElementBlock("span", {
                     key: c,
@@ -1195,7 +1195,7 @@ const _sfc_main$b = {
                   }, null, 4);
                 }), 128))
               ]),
-              createBaseVNode("span", _hoisted_5$6, toDisplayString(r.motion), 1),
+              createBaseVNode("span", _hoisted_5$7, toDisplayString(r.motion), 1),
               createBaseVNode("span", _hoisted_6$6, [
                 r.used.length ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
                   createTextVNode(toDisplayString(r.used.join(", ")), 1)
@@ -1209,24 +1209,55 @@ const _sfc_main$b = {
   }
 };
 const _hoisted_1$9 = { id: "weapons" };
-const _hoisted_2$6 = {
+const _hoisted_2$6 = { class: "weapon-bar" };
+const _hoisted_3$6 = {
   class: "filters",
   role: "group",
   "aria-label": "Фильтр по линии"
 };
-const _hoisted_3$6 = ["aria-pressed", "onClick"];
-const _hoisted_4$5 = { class: "lines" };
-const _hoisted_5$5 = { class: "line-title" };
-const _hoisted_6$5 = { class: "line-row" };
-const _hoisted_7$5 = {
+const _hoisted_4$6 = ["aria-pressed", "onClick"];
+const _hoisted_5$6 = {
+  class: "seg",
+  role: "group",
+  "aria-label": "Вид"
+};
+const _hoisted_6$5 = ["aria-pressed"];
+const _hoisted_7$5 = ["aria-pressed"];
+const _hoisted_8$5 = {
+  key: 0,
+  class: "tbl wtable"
+};
+const _hoisted_9$5 = ["aria-sort"];
+const _hoisted_10$4 = { "aria-hidden": "true" };
+const _hoisted_11$3 = ["aria-sort"];
+const _hoisted_12$3 = { "aria-hidden": "true" };
+const _hoisted_13$3 = ["aria-sort"];
+const _hoisted_14$3 = { "aria-hidden": "true" };
+const _hoisted_15$3 = ["aria-sort"];
+const _hoisted_16$2 = { "aria-hidden": "true" };
+const _hoisted_17$2 = { scope: "row" };
+const _hoisted_18$2 = ["href"];
+const _hoisted_19$2 = { class: "islot-cell sm" };
+const _hoisted_20$2 = ["src"];
+const _hoisted_21$2 = { class: "num" };
+const _hoisted_22$2 = { class: "num" };
+const _hoisted_23$2 = { class: "rname sm" };
+const _hoisted_24$2 = {
+  key: 1,
+  class: "lines"
+};
+const _hoisted_25$2 = { class: "line-title" };
+const _hoisted_26$2 = { class: "line-row" };
+const _hoisted_27$1 = {
   key: 0,
   class: "arrow",
   "aria-hidden": "true"
 };
-const _hoisted_8$5 = {
-  key: 0,
+const _hoisted_28$1 = {
+  key: 2,
   class: "empty"
 };
+const VIEW_KEY = "codex-weapons-view";
 const _sfc_main$a = {
   __name: "WeaponsSection",
   setup(__props) {
@@ -1246,36 +1277,175 @@ const _sfc_main$a = {
       ...chain,
       entries: chain.entries.map((e) => ({ ...e, item: item(e.id), anchor: !seen.has(e.id) && seen.add(e.id) }))
     }));
+    let saved = "lines";
+    try {
+      saved = localStorage.getItem(VIEW_KEY) || "lines";
+    } catch (e) {
+    }
+    const view = ref(saved === "table" ? "table" : "lines");
+    const setView = (v) => {
+      view.value = v;
+      try {
+        localStorage.setItem(VIEW_KEY, v);
+      } catch (e) {
+      }
+    };
+    const rank = Object.fromEntries(data.rarities.map((r, i) => [r.const, i]));
+    const sort = ref({ key: "damage", dir: -1 });
+    const sortBy = (key) => {
+      sort.value = sort.value.key === key ? { key, dir: -sort.value.dir } : { key, dir: key === "name" ? 1 : -1 };
+    };
+    const value = (w, key) => key === "rarity" ? rank[w.rarity] : key === "name" ? w.name : w[key];
+    const sorted = computed(() => [...weapons.value].sort((a, b) => {
+      const x = value(a, sort.value.key), y = value(b, sort.value.key);
+      const d = typeof x === "string" ? x.localeCompare(y, "ru") : x - y;
+      return d * sort.value.dir || a.name.localeCompare(b.name, "ru");
+    }));
+    const ariaSort = (key) => sort.value.key === key ? sort.value.dir > 0 ? "ascending" : "descending" : "none";
+    const mark = (key) => sort.value.key === key ? sort.value.dir > 0 ? "↑" : "↓" : "";
     const inLine = (chain) => filters.line === "all" || chain.key === filters.line || filters.line === "jungle" && chain.key === "terra";
     const visible = computed(() => chains.filter((c) => inLine(c) && c.entries.some((e) => shownIds.value.has(e.id))));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("section", _hoisted_1$9, [
-        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "sec-head" }, [
+        _cache[11] || (_cache[11] = createBaseVNode("div", { class: "sec-head" }, [
           createBaseVNode("h2", null, "Оружие"),
           createBaseVNode("p", { class: "lead" }, "Клинки выстроены в линии — от находки в мире до неломаемого оружия. Стрелка — эволюция у алтаря, «или» — развилка. Нажмите на клинок, чтобы открыть карточку.")
         ], -1)),
         createBaseVNode("div", _hoisted_2$6, [
-          (openBlock(), createElementBlock(Fragment, null, renderList(lines, ([key, title]) => {
-            return createBaseVNode("button", {
-              key,
+          createBaseVNode("div", _hoisted_3$6, [
+            (openBlock(), createElementBlock(Fragment, null, renderList(lines, ([key, title]) => {
+              return createBaseVNode("button", {
+                key,
+                type: "button",
+                class: "chip",
+                "aria-pressed": String(unref(filters).line === key),
+                onClick: ($event) => unref(filters).line = key
+              }, toDisplayString(title), 9, _hoisted_4$6);
+            }), 64))
+          ]),
+          createBaseVNode("div", _hoisted_5$6, [
+            createBaseVNode("button", {
               type: "button",
-              class: "chip",
-              "aria-pressed": String(unref(filters).line === key),
-              onClick: ($event) => unref(filters).line = key
-            }, toDisplayString(title), 9, _hoisted_3$6);
-          }), 64))
+              "aria-pressed": String(view.value === "lines"),
+              onClick: _cache[0] || (_cache[0] = ($event) => setView("lines"))
+            }, "Линии", 8, _hoisted_6$5),
+            createBaseVNode("button", {
+              type: "button",
+              "aria-pressed": String(view.value === "table"),
+              onClick: _cache[1] || (_cache[1] = ($event) => setView("table"))
+            }, "Таблица", 8, _hoisted_7$5)
+          ])
         ]),
-        createBaseVNode("div", _hoisted_4$5, [
+        view.value === "table" ? (openBlock(), createElementBlock("div", _hoisted_8$5, [
+          createBaseVNode("table", null, [
+            createBaseVNode("thead", null, [
+              createBaseVNode("tr", null, [
+                createBaseVNode("th", {
+                  "aria-sort": ariaSort("name")
+                }, [
+                  createBaseVNode("button", {
+                    type: "button",
+                    class: "sort",
+                    onClick: _cache[2] || (_cache[2] = ($event) => sortBy("name"))
+                  }, [
+                    _cache[6] || (_cache[6] = createTextVNode("Клинок ", -1)),
+                    createBaseVNode("span", _hoisted_10$4, toDisplayString(mark("name")), 1)
+                  ])
+                ], 8, _hoisted_9$5),
+                createBaseVNode("th", {
+                  class: "num",
+                  "aria-sort": ariaSort("damage")
+                }, [
+                  createBaseVNode("button", {
+                    type: "button",
+                    class: "sort",
+                    onClick: _cache[3] || (_cache[3] = ($event) => sortBy("damage"))
+                  }, [
+                    _cache[7] || (_cache[7] = createTextVNode("Урон ", -1)),
+                    createBaseVNode("span", _hoisted_12$3, toDisplayString(mark("damage")), 1)
+                  ])
+                ], 8, _hoisted_11$3),
+                createBaseVNode("th", {
+                  class: "num",
+                  "aria-sort": ariaSort("speed")
+                }, [
+                  createBaseVNode("button", {
+                    type: "button",
+                    class: "sort",
+                    onClick: _cache[4] || (_cache[4] = ($event) => sortBy("speed"))
+                  }, [
+                    _cache[8] || (_cache[8] = createTextVNode("Скорость ", -1)),
+                    createBaseVNode("span", _hoisted_14$3, toDisplayString(mark("speed")), 1)
+                  ])
+                ], 8, _hoisted_13$3),
+                createBaseVNode("th", {
+                  "aria-sort": ariaSort("rarity")
+                }, [
+                  createBaseVNode("button", {
+                    type: "button",
+                    class: "sort",
+                    onClick: _cache[5] || (_cache[5] = ($event) => sortBy("rarity"))
+                  }, [
+                    _cache[9] || (_cache[9] = createTextVNode("Редкость ", -1)),
+                    createBaseVNode("span", _hoisted_16$2, toDisplayString(mark("rarity")), 1)
+                  ])
+                ], 8, _hoisted_15$3),
+                _cache[10] || (_cache[10] = createBaseVNode("th", null, "Как получить", -1))
+              ])
+            ]),
+            createBaseVNode("tbody", null, [
+              (openBlock(true), createElementBlock(Fragment, null, renderList(sorted.value, (w) => {
+                return openBlock(), createElementBlock("tr", {
+                  key: w.id
+                }, [
+                  createBaseVNode("th", _hoisted_17$2, [
+                    createBaseVNode("a", {
+                      class: "wname",
+                      href: `#w-${w.id}`
+                    }, [
+                      createBaseVNode("span", _hoisted_19$2, [
+                        createBaseVNode("img", {
+                          src: w.icon,
+                          alt: ""
+                        }, null, 8, _hoisted_20$2)
+                      ]),
+                      createTextVNode(toDisplayString(w.name), 1)
+                    ], 8, _hoisted_18$2)
+                  ]),
+                  createBaseVNode("td", _hoisted_21$2, toDisplayString(w.damage), 1),
+                  createBaseVNode("td", _hoisted_22$2, toDisplayString(w.speed), 1),
+                  createBaseVNode("td", null, [
+                    createBaseVNode("span", _hoisted_23$2, [
+                      createVNode(_sfc_main$l, {
+                        rarity: w.rarity
+                      }, {
+                        default: withCtx(() => [
+                          createTextVNode(toDisplayString(w.rarityLabel), 1)
+                        ]),
+                        _: 2
+                      }, 1032, ["rarity"])
+                    ])
+                  ]),
+                  createBaseVNode("td", null, [
+                    createBaseVNode("span", {
+                      class: normalizeClass(["mbadge", `m-${w.method}`])
+                    }, toDisplayString(w.methodLabel), 3)
+                  ])
+                ]);
+              }), 128))
+            ])
+          ])
+        ])) : (openBlock(), createElementBlock("div", _hoisted_24$2, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(visible.value, (chain) => {
             return openBlock(), createElementBlock("div", {
               key: chain.key,
               class: "line"
             }, [
-              createBaseVNode("h3", _hoisted_5$5, toDisplayString(chain.title), 1),
-              createBaseVNode("div", _hoisted_6$5, [
+              createBaseVNode("h3", _hoisted_25$2, toDisplayString(chain.title), 1),
+              createBaseVNode("div", _hoisted_26$2, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(chain.entries, (e, i) => {
                   return openBlock(), createElementBlock(Fragment, { key: i }, [
-                    e.sep ? (openBlock(), createElementBlock("span", _hoisted_7$5, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
+                    e.sep ? (openBlock(), createElementBlock("span", _hoisted_27$1, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
                     createVNode(_sfc_main$g, {
                       item: e.item,
                       anchor: e.anchor,
@@ -1287,21 +1457,38 @@ const _sfc_main$a = {
               ])
             ]);
           }), 128))
-        ]),
-        !visible.value.length ? (openBlock(), createElementBlock("p", _hoisted_8$5, "Ни одного клинка — попробуйте другое слово или линию «Все».")) : createCommentVNode("", true)
+        ])),
+        (view.value === "table" ? !sorted.value.length : !visible.value.length) ? (openBlock(), createElementBlock("p", _hoisted_28$1, "Ни одного клинка — попробуйте другое слово или линию «Все».")) : createCommentVNode("", true)
       ]);
     };
   }
 };
 const _hoisted_1$8 = { id: "materials" };
 const _hoisted_2$5 = { class: "inventory" };
-const _hoisted_3$5 = {
+const _hoisted_3$5 = { class: "inv-title" };
+const _hoisted_4$5 = { class: "inv-row" };
+const _hoisted_5$5 = {
   key: 0,
   class: "empty"
 };
 const _sfc_main$9 = {
   __name: "MaterialsSection",
   setup(__props) {
+    const GROUPS = [
+      ["Для крафта и эволюций", ["demon_soul", "wither_soul", "terra_ingot", "lord_soul"]],
+      ["Валюта святилищ", ["soul_shard", "celestial_shard", "jungle_shard", "ancient_part"]],
+      ["Реликвии стражей", ["forge_heart", "seraph_feather", "jungle_heart", "warden_heart", "harbinger_core", "royal_clock", "night_seal"]],
+      ["Сущности", ["hell_essence", "terra_essence", "black_substance"]],
+      ["Снаряжение крови", ["ash_box", "angel_box", "jungle_box", "tarot_hierophant", "tarot_justice", "tarot_moon", "terra_compass", "terra_magnet", "wanderer_cube"]],
+      ["Машины фабрики", ["copper_automaton", "mini_harbinger", "assembly_dome"]]
+    ];
+    const placed = new Set(GROUPS.flatMap(([, ids]) => ids));
+    const groups = computed(() => {
+      const shown = new Map(materials.value.map((m) => [m.id, m]));
+      const out = GROUPS.map(([title, ids]) => ({ title, items: ids.map((id) => shown.get(id)).filter(Boolean) }));
+      out.push({ title: "Прочее", items: materials.value.filter((m) => !placed.has(m.id)) });
+      return out.filter((g) => g.items.length);
+    });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("section", _hoisted_1$8, [
         _cache[0] || (_cache[0] = createBaseVNode("div", { class: "sec-head" }, [
@@ -1309,16 +1496,26 @@ const _sfc_main$9 = {
           createBaseVNode("p", { class: "lead" }, "Душа демона и терра-слиток — для крафта. Осколки и детали — валюта святилищ, сердца, перо и ядро — реликвии их стражей. В обычные рецепты и торговлю материалы не уходят.")
         ], -1)),
         createBaseVNode("div", _hoisted_2$5, [
-          (openBlock(true), createElementBlock(Fragment, null, renderList(unref(materials), (m) => {
-            return openBlock(), createBlock(_sfc_main$g, {
-              key: m.id,
-              item: m,
-              anchor: "",
-              named: ""
-            }, null, 8, ["item"]);
+          (openBlock(true), createElementBlock(Fragment, null, renderList(groups.value, (g) => {
+            return openBlock(), createElementBlock("div", {
+              key: g.title,
+              class: "inv-group"
+            }, [
+              createBaseVNode("h3", _hoisted_3$5, toDisplayString(g.title), 1),
+              createBaseVNode("div", _hoisted_4$5, [
+                (openBlock(true), createElementBlock(Fragment, null, renderList(g.items, (m) => {
+                  return openBlock(), createBlock(_sfc_main$g, {
+                    key: m.id,
+                    item: m,
+                    anchor: "",
+                    named: ""
+                  }, null, 8, ["item"]);
+                }), 128))
+              ])
+            ]);
           }), 128))
         ]),
-        !unref(materials).length ? (openBlock(), createElementBlock("p", _hoisted_3$5, "Ни одного материала по этому слову.")) : createCommentVNode("", true)
+        !unref(materials).length ? (openBlock(), createElementBlock("p", _hoisted_5$5, "Ни одного материала по этому слову.")) : createCommentVNode("", true)
       ]);
     };
   }
