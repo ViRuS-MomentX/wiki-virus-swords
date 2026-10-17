@@ -531,3 +531,8 @@ th.num .sort { text-align: right; }
 .wname:hover { color: var(--soul); }
 .islot-cell.sm { width: 34px; height: 34px; padding: 3px; flex: none; }
 .rname.sm { font-size: 8px; padding: 6px 8px 5px; white-space: nowrap; }
+
+/* --- the card: whose blade it is, and a link to it --------------------------------------------- */
+.card-owner { font-size: .9rem; color: var(--ink-2); margin-top: -8px; }
+.inspect-foot { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-top: 18px; }
+.copied { font-size: .8rem; color: var(--soul); word-break: break-all; }
