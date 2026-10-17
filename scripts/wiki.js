@@ -37,13 +37,13 @@ const closeItem = () => {
   inspector.id = null;
   history.replaceState(null, "", location.pathname + location.search);
 };
-const _hoisted_1$k = { class: "side" };
-const _hoisted_2$g = {
+const _hoisted_1$n = { class: "side" };
+const _hoisted_2$i = {
   class: "brand",
   href: "#top"
 };
-const _hoisted_3$g = ["src"];
-const _hoisted_4$g = ["aria-expanded", "aria-activedescendant"];
+const _hoisted_3$i = ["src"];
+const _hoisted_4$h = ["aria-expanded", "aria-activedescendant"];
 const _hoisted_5$f = {
   key: 0,
   class: "found-box"
@@ -56,11 +56,11 @@ const _hoisted_6$e = {
   "aria-label": "Найденные предметы"
 };
 const _hoisted_7$e = ["id", "aria-selected"];
-const _hoisted_8$d = ["href", "onMouseenter"];
-const _hoisted_9$b = ["src"];
+const _hoisted_8$e = ["href", "onMouseenter"];
+const _hoisted_9$c = ["src"];
 const _hoisted_10$a = ["title"];
 const _hoisted_11$9 = { class: "found-kind" };
-const _hoisted_12$8 = {
+const _hoisted_12$9 = {
   class: "search-hint",
   "aria-live": "polite"
 };
@@ -69,12 +69,12 @@ const _hoisted_13$8 = {
   class: "search-hint"
 };
 const _hoisted_14$7 = ["href", "aria-current"];
-const _hoisted_15$5 = {
+const _hoisted_15$6 = {
   key: 0,
   class: "count"
 };
 const SHOWN = 8;
-const _sfc_main$m = {
+const _sfc_main$q = {
   __name: "SideNav",
   setup(__props) {
     const sections = [
@@ -165,13 +165,13 @@ const _sfc_main$m = {
       document.removeEventListener("keydown", onKey);
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("aside", _hoisted_1$k, [
-        createBaseVNode("a", _hoisted_2$g, [
+      return openBlock(), createElementBlock("aside", _hoisted_1$n, [
+        createBaseVNode("a", _hoisted_2$i, [
           createBaseVNode("img", {
             class: "brand-mark",
             src: unref(data).icons.forge_heart,
             alt: ""
-          }, null, 8, _hoisted_3$g),
+          }, null, 8, _hoisted_3$i),
           _cache[2] || (_cache[2] = createBaseVNode("span", { class: "brand-name" }, "Кодекс", -1))
         ]),
         createBaseVNode("div", {
@@ -219,7 +219,7 @@ const _sfc_main$m = {
             onInput: onSearch,
             onFocus: _cache[1] || (_cache[1] = ($event) => listOpen.value = true),
             onKeydown: onSearchKey
-          }, null, 40, _hoisted_4$g), [
+          }, null, 40, _hoisted_4$h), [
             [vModelText, search.value]
           ]),
           _cache[5] || (_cache[5] = createBaseVNode("kbd", {
@@ -245,17 +245,17 @@ const _sfc_main$m = {
                     createBaseVNode("img", {
                       src: i.icon,
                       alt: ""
-                    }, null, 8, _hoisted_9$b),
+                    }, null, 8, _hoisted_9$c),
                     createBaseVNode("span", {
                       class: "found-name",
                       title: i.name
                     }, toDisplayString(i.name), 9, _hoisted_10$a),
                     createBaseVNode("span", _hoisted_11$9, toDisplayString(i.kind === "weapon" ? "клинок" : "материал"), 1)
-                  ], 42, _hoisted_8$d)
+                  ], 42, _hoisted_8$e)
                 ], 8, _hoisted_7$e);
               }), 128))
             ])) : createCommentVNode("", true),
-            createBaseVNode("p", _hoisted_12$8, [
+            createBaseVNode("p", _hoisted_12$9, [
               createTextVNode(toDisplayString(unref(hint)), 1),
               unref(found).length > SHOWN ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
                 createTextVNode(". В списке первые " + toDisplayString(SHOWN) + ", остальные подсвечены на странице")
@@ -284,7 +284,7 @@ const _sfc_main$m = {
               "aria-current": current.value === id ? "location" : void 0
             }, [
               createBaseVNode("span", null, toDisplayString(title), 1),
-              count ? (openBlock(), createElementBlock("span", _hoisted_15$5, toDisplayString(count), 1)) : createCommentVNode("", true)
+              count ? (openBlock(), createElementBlock("span", _hoisted_15$6, toDisplayString(count), 1)) : createCommentVNode("", true)
             ], 10, _hoisted_14$7);
           }), 64))
         ], 512),
@@ -306,7 +306,7 @@ function rarityStyle(key) {
     animation: `shimmer ${(r.period / 20).toFixed(2)}s linear infinite`
   };
 }
-const _sfc_main$l = {
+const _sfc_main$p = {
   __name: "Paint",
   props: { rarity: { type: String, required: true } },
   setup(__props) {
@@ -320,10 +320,10 @@ const _sfc_main$l = {
     };
   }
 };
-const _hoisted_1$j = { class: "tip" };
-const _hoisted_2$f = ["innerHTML"];
-const _hoisted_3$f = { class: "tlore" };
-const _hoisted_4$f = {
+const _hoisted_1$m = { class: "tip" };
+const _hoisted_2$h = ["innerHTML"];
+const _hoisted_3$h = { class: "tlore" };
+const _hoisted_4$g = {
   key: 0,
   class: "gap"
 };
@@ -333,24 +333,24 @@ const _hoisted_6$d = {
   class: "tstats"
 };
 const _hoisted_7$d = { key: 0 };
-const _hoisted_8$c = { class: "trar" };
-const _sfc_main$k = {
+const _hoisted_8$d = { class: "trar" };
+const _sfc_main$o = {
   __name: "ItemTooltip",
   props: { item: { type: Object, required: true } },
   setup(__props) {
     const props = __props;
     const stats = computed(() => props.item.stats.split(/(\d+(?:\.\d+)?)/));
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$j, [
+      return openBlock(), createElementBlock("div", _hoisted_1$m, [
         createBaseVNode("div", {
           class: "tname paint",
           style: normalizeStyle(unref(rarityStyle)(__props.item.rarity)),
           innerHTML: __props.item.name
-        }, null, 12, _hoisted_2$f),
-        createBaseVNode("div", _hoisted_3$f, [
+        }, null, 12, _hoisted_2$h),
+        createBaseVNode("div", _hoisted_3$h, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(__props.item.lore, (line, i) => {
             return openBlock(), createElementBlock(Fragment, { key: i }, [
-              line === "" ? (openBlock(), createElementBlock("div", _hoisted_4$f)) : (openBlock(), createElementBlock("div", {
+              line === "" ? (openBlock(), createElementBlock("div", _hoisted_4$g)) : (openBlock(), createElementBlock("div", {
                 key: 1,
                 innerHTML: line
               }, null, 8, _hoisted_5$e))
@@ -366,9 +366,9 @@ const _sfc_main$k = {
             ], 64);
           }), 128))
         ])) : createCommentVNode("", true),
-        createBaseVNode("div", _hoisted_8$c, [
+        createBaseVNode("div", _hoisted_8$d, [
           _cache[0] || (_cache[0] = createTextVNode("Редкость: ", -1)),
-          createVNode(_sfc_main$l, {
+          createVNode(_sfc_main$p, {
             rarity: __props.item.rarity
           }, {
             default: withCtx(() => [
@@ -381,39 +381,71 @@ const _sfc_main$k = {
     };
   }
 };
-const _hoisted_1$i = {
-  id: "top",
-  class: "hero"
-};
-const _hoisted_2$e = { class: "hero-text" };
-const _hoisted_3$e = { class: "facts" };
-const _hoisted_4$e = { href: "#weapons" };
-const _hoisted_5$d = { href: "#materials" };
-const _hoisted_6$c = { href: "#blood" };
-const _hoisted_7$c = { href: "#trophies" };
-const _hoisted_8$b = { class: "stage" };
-const _hoisted_9$a = {
+const RUNES = [
+  ["#...#", "##.##", "#.#.#", "#...#", "#...#", "#...#", "#...#"],
+  [".###.", "#...#", "....#", "..##.", "....#", "#...#", ".###."],
+  ["#####", "..#..", "..#..", ".###.", "..#..", "..#..", "#####"],
+  ["#....", "#....", "#.##.", "##..#", "#...#", "#...#", "#...#"],
+  ["..#..", ".#.#.", "#...#", ".#.#.", "..#..", "..#..", "..#.."],
+  ["#.#.#", "#.#.#", "#.#.#", ".###.", "..#..", "..#..", "..#.."],
+  ["####.", "#...#", "#...#", "####.", "#.#..", "#..#.", "#...#"],
+  [".....", "#...#", ".#.#.", "..#..", ".#.#.", "#...#", "....."],
+  ["..#..", "..#..", "#####", "..#..", ".#.#.", "#...#", "#...#"],
+  ["#...#", "#...#", ".###.", "..#..", ".###.", "#...#", "#...#"],
+  ["##...", "#.#..", "#..#.", "#...#", "#..#.", "#.#..", "##..."],
+  [".###.", "#....", "#....", ".###.", "....#", "....#", ".###."]
+];
+const cells = (rune) => rune.flatMap((row, y) => [...row].map((c, x) => c === "#" ? [x, y] : null).filter(Boolean));
+const _hoisted_1$l = { class: "hero-text" };
+const _hoisted_2$g = { class: "facts" };
+const _hoisted_3$g = { href: "#weapons" };
+const _hoisted_4$f = { href: "#materials" };
+const _hoisted_5$d = { href: "#blood" };
+const _hoisted_6$c = { href: "#trophies" };
+const _hoisted_7$c = { class: "stage" };
+const _hoisted_8$c = {
   class: "held",
   "aria-hidden": "true"
 };
-const _hoisted_10$9 = ["src"];
-const _hoisted_11$8 = {
+const _hoisted_9$b = {
+  class: "circle",
+  viewBox: "-130 -130 260 260"
+};
+const _hoisted_10$9 = { class: "circle-spin" };
+const _hoisted_11$8 = ["y2", "transform"];
+const _hoisted_12$8 = ["transform"];
+const _hoisted_13$7 = ["x", "y"];
+const _hoisted_14$6 = ["src"];
+const _hoisted_15$5 = {
   class: "stage-tip",
   "aria-live": "polite"
 };
-const _hoisted_12$7 = { class: "hotbar-wrap" };
-const _hoisted_13$7 = ["aria-label", "aria-pressed", "onClick"];
-const _hoisted_14$6 = ["src"];
-const _hoisted_15$4 = {
+const _hoisted_16$3 = { class: "hotbar-wrap" };
+const _hoisted_17$3 = ["aria-label", "aria-pressed", "onClick"];
+const _hoisted_18$3 = ["src"];
+const _hoisted_19$3 = {
   class: "hkey",
   "aria-hidden": "true"
 };
-const _sfc_main$j = {
+const SIZE = 320;
+const _sfc_main$n = {
   __name: "HeroBanner",
   setup(__props) {
     const slots = data.hotbar.map(item);
     const selected = ref(0);
     const held = computed(() => slots[selected.value]);
+    const palettes = Object.fromEntries(data.rarities.map((r) => [r.const, r.palette]));
+    const light = (hex) => {
+      const n = parseInt(hex.slice(1), 16);
+      return 0.299 * (n >> 16) + 0.587 * (n >> 8 & 255) + 0.114 * (n & 255);
+    };
+    const aura = computed(() => {
+      const pal = [...palettes[held.value.rarity] || ["#8a5cff", "#6fe4dc"]].sort((a, b) => light(b) - light(a));
+      return { "--h1": pal[0], "--h2": pal[Math.min(1, pal.length - 1)], "--h3": pal[Math.min(1, pal.length - 1)] };
+    });
+    const RUNE_CELLS = RUNES.map(cells);
+    const circleRunes = RUNE_CELLS.map((c, i) => ({ angle: i * 30, cells: c }));
+    const ticks = Array.from({ length: 72 }, (_, i) => i * 5);
     function onKey(e) {
       if (e.target.matches("input, textarea") || e.ctrlKey || e.metaKey || e.altKey) return;
       const n = Number(e.key);
@@ -427,22 +459,100 @@ const _sfc_main$j = {
       if (selected.value === i) openItem(slots[i].id);
       else selected.value = i;
     };
-    onMounted(() => document.addEventListener("keydown", onKey));
-    onBeforeUnmount(() => document.removeEventListener("keydown", onKey));
+    const sparks = ref(null);
+    let raf = 0, ctx, motes = [], colours = ["#8a5cff", "#6fe4dc"];
+    function spawn(burst) {
+      const a = Math.random() * Math.PI * 2;
+      const r = burst ? 40 + Math.random() * 30 : 120 + Math.random() * 40;
+      return {
+        a,
+        r,
+        speed: burst ? -1.6 - Math.random() : 0.45 + Math.random() * 0.5,
+        spin: (Math.random() - 0.5) * 0.012,
+        rune: Math.random() < 0.55 ? RUNE_CELLS[Math.floor(Math.random() * RUNE_CELLS.length)] : null,
+        tone: Math.random() < 0.5 ? 0 : 1,
+        life: 0,
+        burst
+      };
+    }
+    function frame() {
+      raf = requestAnimationFrame(frame);
+      ctx.clearRect(0, 0, SIZE, SIZE);
+      const c = SIZE / 2;
+      for (let i = 0; i < motes.length; i++) {
+        const m = motes[i];
+        m.life++;
+        m.r -= m.speed;
+        m.a += m.spin + (m.burst ? 0 : 4e-3);
+        const done = m.burst ? m.r > 150 || m.life > 70 : m.r < 18;
+        if (done) {
+          if (m.burst) {
+            motes.splice(i, 1);
+            i--;
+          } else motes[i] = spawn(false);
+          continue;
+        }
+        const x = c + Math.cos(m.a) * m.r, y = c + Math.sin(m.a) * m.r * 0.92;
+        const alpha = m.burst ? Math.max(0, 1 - m.life / 70) : Math.min(1, m.life / 40) * Math.min(1, (m.r - 18) / 50);
+        ctx.globalAlpha = alpha * 0.85;
+        ctx.fillStyle = colours[m.tone];
+        if (m.rune) for (const [cx, cy] of m.rune) ctx.fillRect(Math.round(x + cx * 1.5 - 4), Math.round(y + cy * 1.5 - 5), 1.5, 1.5);
+        else {
+          ctx.beginPath();
+          ctx.arc(x, y, 1.4, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      ctx.globalAlpha = 1;
+    }
+    watch(held, () => {
+      colours = [aura.value["--h1"], aura.value["--h3"]];
+      if (ctx) for (let i = 0; i < 18; i++) motes.push(spawn(true));
+    });
+    onMounted(() => {
+      document.addEventListener("keydown", onKey);
+      colours = [aura.value["--h1"], aura.value["--h3"]];
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      const canvas = sparks.value;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = SIZE * dpr;
+      canvas.height = SIZE * dpr;
+      ctx = canvas.getContext("2d");
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      motes = Array.from({ length: 34 }, () => {
+        const m = spawn(false);
+        m.r = 20 + Math.random() * 140;
+        return m;
+      });
+      raf = requestAnimationFrame(frame);
+    });
+    onBeforeUnmount(() => {
+      document.removeEventListener("keydown", onKey);
+      cancelAnimationFrame(raf);
+    });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("header", _hoisted_1$i, [
-        createBaseVNode("div", _hoisted_2$e, [
-          _cache[3] || (_cache[3] = createBaseVNode("h1", null, "Кодекс VirusSwords", -1)),
-          _cache[4] || (_cache[4] = createBaseVNode("p", { class: "lead" }, "Клинки находят в мире, куют из душ и доводят до последней формы у алтарей святилищ. Здесь — что умеет каждый клинок, откуда он берётся, как растёт и кто стережёт святилища.", -1)),
-          createBaseVNode("ul", _hoisted_3$e, [
+      return openBlock(), createElementBlock("header", {
+        id: "top",
+        class: "hero",
+        style: normalizeStyle(aura.value)
+      }, [
+        createBaseVNode("div", _hoisted_1$l, [
+          _cache[3] || (_cache[3] = createBaseVNode("p", { class: "hero-kicker" }, "Вики плагина VirusSwords для Paper 1.21.11", -1)),
+          _cache[4] || (_cache[4] = createBaseVNode("h1", null, [
+            createBaseVNode("span", { class: "h1-line" }, "Кодекс"),
+            createTextVNode(),
+            createBaseVNode("span", { class: "h1-line" }, "VirusSwords")
+          ], -1)),
+          _cache[5] || (_cache[5] = createBaseVNode("p", { class: "lead" }, "Клинки находят в мире, куют из душ и доводят до последней формы у алтарей святилищ. Здесь — что умеет каждый клинок, откуда он берётся, как растёт и кто стережёт святилища.", -1)),
+          createBaseVNode("ul", _hoisted_2$g, [
             createBaseVNode("li", null, [
-              createBaseVNode("a", _hoisted_4$e, [
+              createBaseVNode("a", _hoisted_3$g, [
                 createBaseVNode("b", null, toDisplayString(unref(data).counts.weapons), 1),
                 createTextVNode(toDisplayString(unref(data).words.weapons), 1)
               ])
             ]),
             createBaseVNode("li", null, [
-              createBaseVNode("a", _hoisted_5$d, [
+              createBaseVNode("a", _hoisted_4$f, [
                 createBaseVNode("b", null, toDisplayString(unref(data).counts.materials), 1),
                 createTextVNode(toDisplayString(unref(data).words.materials), 1)
               ])
@@ -454,29 +564,92 @@ const _sfc_main$j = {
               ])
             ], -1)),
             createBaseVNode("li", null, [
-              createBaseVNode("a", _hoisted_6$c, [
+              createBaseVNode("a", _hoisted_5$d, [
                 createBaseVNode("b", null, toDisplayString(unref(data).blood.length), 1),
                 _cache[1] || (_cache[1] = createTextVNode("родословных", -1))
               ])
             ]),
             createBaseVNode("li", null, [
-              createBaseVNode("a", _hoisted_7$c, [
+              createBaseVNode("a", _hoisted_6$c, [
                 createBaseVNode("b", null, toDisplayString(unref(data).counts.trophies), 1),
                 createTextVNode(toDisplayString(unref(data).words.trophies), 1)
               ])
             ])
           ])
         ]),
-        createBaseVNode("div", _hoisted_8$b, [
-          createBaseVNode("div", _hoisted_9$a, [
-            (openBlock(), createElementBlock("img", {
+        createBaseVNode("div", _hoisted_7$c, [
+          createBaseVNode("div", _hoisted_8$c, [
+            _cache[11] || (_cache[11] = createBaseVNode("span", { class: "beam" }, null, -1)),
+            (openBlock(), createElementBlock("svg", _hoisted_9$b, [
+              createBaseVNode("g", _hoisted_10$9, [
+                _cache[6] || (_cache[6] = createBaseVNode("circle", {
+                  r: "124",
+                  class: "ring"
+                }, null, -1)),
+                _cache[7] || (_cache[7] = createBaseVNode("circle", {
+                  r: "116",
+                  class: "ring thin"
+                }, null, -1)),
+                _cache[8] || (_cache[8] = createBaseVNode("circle", {
+                  r: "90",
+                  class: "ring"
+                }, null, -1)),
+                _cache[9] || (_cache[9] = createBaseVNode("circle", {
+                  r: "62",
+                  class: "ring thin dashed"
+                }, null, -1)),
+                (openBlock(true), createElementBlock(Fragment, null, renderList(unref(ticks), (t) => {
+                  return openBlock(), createElementBlock("line", {
+                    key: t,
+                    class: "tick",
+                    x1: "0",
+                    y1: "-124",
+                    x2: "0",
+                    y2: t % 30 === 0 ? -130 : -127,
+                    transform: `rotate(${t})`
+                  }, null, 8, _hoisted_11$8);
+                }), 128)),
+                (openBlock(true), createElementBlock(Fragment, null, renderList(unref(circleRunes), (r) => {
+                  return openBlock(), createElementBlock("g", {
+                    key: r.angle,
+                    transform: `rotate(${r.angle}) translate(0 -103)`
+                  }, [
+                    (openBlock(true), createElementBlock(Fragment, null, renderList(r.cells, ([x, y], k) => {
+                      return openBlock(), createElementBlock("rect", {
+                        key: k,
+                        class: "rune",
+                        x: x * 3 - 7.5,
+                        y: y * 3 - 10.5,
+                        width: "3",
+                        height: "3"
+                      }, null, 8, _hoisted_13$7);
+                    }), 128))
+                  ], 8, _hoisted_12$8);
+                }), 128)),
+                _cache[10] || (_cache[10] = createBaseVNode("path", {
+                  class: "star",
+                  d: "M0 -88 L22 -22 L88 0 L22 22 L0 88 L-22 22 L-88 0 L-22 -22 Z"
+                }, null, -1))
+              ])
+            ])),
+            createBaseVNode("canvas", {
+              ref_key: "sparks",
+              ref: sparks,
+              class: "sparks"
+            }, null, 512),
+            (openBlock(), createElementBlock("span", {
               key: held.value.id,
-              src: held.value.icon,
-              alt: ""
-            }, null, 8, _hoisted_10$9))
+              class: "held-item glint",
+              style: normalizeStyle({ "--mask": `url(${held.value.icon})` })
+            }, [
+              createBaseVNode("img", {
+                src: held.value.icon,
+                alt: ""
+              }, null, 8, _hoisted_14$6)
+            ], 4))
           ]),
-          createBaseVNode("div", _hoisted_11$8, [
-            createVNode(_sfc_main$k, { item: held.value }, null, 8, ["item"]),
+          createBaseVNode("div", _hoisted_15$5, [
+            createVNode(_sfc_main$o, { item: held.value }, null, 8, ["item"]),
             createBaseVNode("button", {
               type: "button",
               class: "text-btn",
@@ -484,7 +657,7 @@ const _sfc_main$j = {
             }, "Открыть карточку клинка")
           ])
         ]),
-        createBaseVNode("div", _hoisted_12$7, [
+        createBaseVNode("div", _hoisted_16$3, [
           createBaseVNode("div", {
             class: "hotbar",
             role: "toolbar",
@@ -503,37 +676,37 @@ const _sfc_main$j = {
                 createBaseVNode("img", {
                   src: slot.icon,
                   alt: ""
-                }, null, 8, _hoisted_14$6),
-                createBaseVNode("span", _hoisted_15$4, toDisplayString(i + 1), 1)
-              ], 10, _hoisted_13$7);
+                }, null, 8, _hoisted_18$3),
+                createBaseVNode("span", _hoisted_19$3, toDisplayString(i + 1), 1)
+              ], 10, _hoisted_17$3);
             }), 128))
           ], 32),
-          _cache[5] || (_cache[5] = createBaseVNode("p", { class: "hotbar-note" }, "Клавиши 1–9 или колесо мыши выбирают клинок, повторный клик открывает его карточку.", -1))
+          _cache[12] || (_cache[12] = createBaseVNode("p", { class: "hotbar-note" }, "Клавиши 1–9 или колесо мыши выбирают клинок, повторный клик открывает его карточку.", -1))
         ])
-      ]);
+      ], 4);
     };
   }
 };
-const _hoisted_1$h = ["aria-label"];
-const _hoisted_2$d = { class: "craft-table" };
-const _hoisted_3$d = { class: "craft-grid" };
-const _hoisted_4$d = ["href", "title"];
+const _hoisted_1$k = ["aria-label"];
+const _hoisted_2$f = { class: "craft-table" };
+const _hoisted_3$f = { class: "craft-grid" };
+const _hoisted_4$e = ["href", "title"];
 const _hoisted_5$c = ["src", "alt"];
 const _hoisted_6$b = ["title"];
 const _hoisted_7$b = ["src", "alt"];
-const _hoisted_8$a = {
+const _hoisted_8$b = {
   key: 2,
   class: "cslot"
 };
-const _hoisted_9$9 = ["title"];
+const _hoisted_9$a = ["title"];
 const _hoisted_10$8 = ["src", "alt"];
 const _hoisted_11$7 = { key: 0 };
-const _hoisted_12$6 = ["href"];
+const _hoisted_12$7 = ["href"];
 const _hoisted_13$6 = {
   key: 0,
   class: "note"
 };
-const _sfc_main$i = {
+const _sfc_main$m = {
   __name: "CraftGrid",
   props: {
     recipe: { type: Object, required: true },
@@ -548,7 +721,7 @@ const _sfc_main$i = {
       const it = item(key);
       return it ? { icon: it.icon, name: it.name, href: `#w-${key}`, ours: true } : null;
     };
-    const cells = computed(() => props.recipe.grid.map(resolve));
+    const cells2 = computed(() => props.recipe.grid.map(resolve));
     const result = computed(() => resolve(props.recipe.result));
     return (_ctx, _cache) => {
       var _a, _b, _c, _d, _e, _f;
@@ -556,9 +729,9 @@ const _sfc_main$i = {
         class: normalizeClass(["craft", { small: __props.small }]),
         "aria-label": `Рецепт: ${(_a = result.value) == null ? void 0 : _a.name}`
       }, [
-        createBaseVNode("div", _hoisted_2$d, [
-          createBaseVNode("div", _hoisted_3$d, [
-            (openBlock(true), createElementBlock(Fragment, null, renderList(cells.value, (c, i) => {
+        createBaseVNode("div", _hoisted_2$f, [
+          createBaseVNode("div", _hoisted_3$f, [
+            (openBlock(true), createElementBlock(Fragment, null, renderList(cells2.value, (c, i) => {
               return openBlock(), createElementBlock(Fragment, { key: i }, [
                 c && c.href ? (openBlock(), createElementBlock("a", {
                   key: 0,
@@ -570,7 +743,7 @@ const _sfc_main$i = {
                     src: c.icon,
                     alt: c.name
                   }, null, 8, _hoisted_5$c)
-                ], 10, _hoisted_4$d)) : c ? (openBlock(), createElementBlock("span", {
+                ], 10, _hoisted_4$e)) : c ? (openBlock(), createElementBlock("span", {
                   key: 1,
                   class: "cslot",
                   title: c.name
@@ -579,7 +752,7 @@ const _sfc_main$i = {
                     src: c.icon,
                     alt: c.name
                   }, null, 8, _hoisted_7$b)
-                ], 8, _hoisted_6$b)) : (openBlock(), createElementBlock("span", _hoisted_8$a))
+                ], 8, _hoisted_6$b)) : (openBlock(), createElementBlock("span", _hoisted_8$b))
               ], 64);
             }), 128))
           ]),
@@ -595,30 +768,30 @@ const _sfc_main$i = {
               src: (_c = result.value) == null ? void 0 : _c.icon,
               alt: (_d = result.value) == null ? void 0 : _d.name
             }, null, 8, _hoisted_10$8)
-          ], 8, _hoisted_9$9)
+          ], 8, _hoisted_9$a)
         ]),
         !__props.small ? (openBlock(), createElementBlock("figcaption", _hoisted_11$7, [
           createBaseVNode("b", null, [
             ((_e = result.value) == null ? void 0 : _e.ours) ? (openBlock(), createElementBlock("a", {
               key: 0,
               href: result.value.href
-            }, toDisplayString(result.value.name), 9, _hoisted_12$6)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
+            }, toDisplayString(result.value.name), 9, _hoisted_12$7)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
               createTextVNode(toDisplayString((_f = result.value) == null ? void 0 : _f.name), 1)
             ], 64))
           ]),
           __props.recipe.note ? (openBlock(), createElementBlock("span", _hoisted_13$6, toDisplayString(__props.recipe.note), 1)) : createCommentVNode("", true)
         ])) : createCommentVNode("", true)
-      ], 10, _hoisted_1$h);
+      ], 10, _hoisted_1$k);
     };
   }
 };
-const _hoisted_1$g = { class: "abilities" };
-const _hoisted_2$c = { class: "chips" };
-const _hoisted_3$c = {
+const _hoisted_1$j = { class: "abilities" };
+const _hoisted_2$e = { class: "chips" };
+const _hoisted_3$e = {
   key: 0,
   class: "chip"
 };
-const _hoisted_4$c = {
+const _hoisted_4$d = {
   viewBox: "0 0 16 16",
   "aria-hidden": "true"
 };
@@ -638,8 +811,8 @@ const _hoisted_7$a = {
   key: 1,
   class: "chip rest"
 };
-const _hoisted_8$9 = ["innerHTML"];
-const _sfc_main$h = {
+const _hoisted_8$a = ["innerHTML"];
+const _sfc_main$l = {
   __name: "AbilityCards",
   props: { abilities: { type: Array, required: true } },
   setup(__props) {
@@ -652,7 +825,7 @@ const _sfc_main$h = {
     };
     const mouse = (kind) => kind === "rmb" || kind === "hold";
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$g, [
+      return openBlock(), createElementBlock("div", _hoisted_1$j, [
         (openBlock(true), createElementBlock(Fragment, null, renderList(__props.abilities, (a) => {
           return openBlock(), createElementBlock("article", {
             key: a.name,
@@ -661,9 +834,9 @@ const _sfc_main$h = {
           }, [
             createBaseVNode("header", null, [
               createBaseVNode("h4", null, toDisplayString(a.name), 1),
-              createBaseVNode("div", _hoisted_2$c, [
-                a.trigger ? (openBlock(), createElementBlock("span", _hoisted_3$c, [
-                  (openBlock(), createElementBlock("svg", _hoisted_4$c, [
+              createBaseVNode("div", _hoisted_2$e, [
+                a.trigger ? (openBlock(), createElementBlock("span", _hoisted_3$e, [
+                  (openBlock(), createElementBlock("svg", _hoisted_4$d, [
                     mouse(a.kind) ? (openBlock(), createElementBlock("rect", _hoisted_5$b)) : createCommentVNode("", true),
                     createBaseVNode("path", {
                       d: ICONS[a.kind],
@@ -703,21 +876,21 @@ const _sfc_main$h = {
             a.text ? (openBlock(), createElementBlock("p", {
               key: 0,
               innerHTML: a.text
-            }, null, 8, _hoisted_8$9)) : createCommentVNode("", true)
+            }, null, 8, _hoisted_8$a)) : createCommentVNode("", true)
           ], 4);
         }), 128))
       ]);
     };
   }
 };
-const _hoisted_1$f = ["id", "href", "title", "aria-label"];
-const _hoisted_2$b = { class: "islot-cell" };
-const _hoisted_3$b = ["src"];
-const _hoisted_4$b = {
+const _hoisted_1$i = ["id", "href", "title", "aria-label"];
+const _hoisted_2$d = { class: "islot-cell" };
+const _hoisted_3$d = ["src"];
+const _hoisted_4$c = {
   key: 0,
   class: "islot-name"
 };
-const _sfc_main$g = {
+const _sfc_main$k = {
   __name: "ItemSlot",
   props: {
     item: { type: Object, required: true },
@@ -727,53 +900,63 @@ const _sfc_main$g = {
     dim: { type: Boolean, default: false }
   },
   setup(__props) {
+    const props = __props;
+    const RARITY = Object.fromEntries(data.rarities.map((r) => [r.const, r]));
+    const rarity = computed(() => RARITY[props.item.rarity]);
+    const glow = computed(() => {
+      var _a;
+      const pal = ((_a = rarity.value) == null ? void 0 : _a.palette) || ["#8a5cff"];
+      return { "--r1": pal[0], "--r2": pal[pal.length - 1] };
+    });
     return (_ctx, _cache) => {
+      var _a;
       return openBlock(), createElementBlock("a", {
         id: __props.anchor ? `w-${__props.item.id}` : void 0,
-        class: normalizeClass(["islot", { named: __props.named, dim: __props.dim, open: unref(inspector).id === __props.item.id }]),
+        class: normalizeClass(["islot", { named: __props.named, dim: __props.dim, rare: !!((_a = rarity.value) == null ? void 0 : _a.period), open: unref(inspector).id === __props.item.id }]),
         href: `#w-${__props.item.id}`,
+        style: normalizeStyle(glow.value),
         title: __props.named ? void 0 : __props.item.name,
         "aria-label": __props.item.name
       }, [
-        createBaseVNode("span", _hoisted_2$b, [
+        createBaseVNode("span", _hoisted_2$d, [
           createBaseVNode("img", {
             src: __props.item.icon,
             alt: "",
             loading: "lazy"
-          }, null, 8, _hoisted_3$b)
+          }, null, 8, _hoisted_3$d)
         ]),
-        __props.named ? (openBlock(), createElementBlock("span", _hoisted_4$b, toDisplayString(__props.item.name), 1)) : createCommentVNode("", true)
-      ], 10, _hoisted_1$f);
+        __props.named ? (openBlock(), createElementBlock("span", _hoisted_4$c, toDisplayString(__props.item.name), 1)) : createCommentVNode("", true)
+      ], 14, _hoisted_1$i);
     };
   }
 };
-const _hoisted_1$e = ["aria-label"];
-const _hoisted_2$a = {
+const _hoisted_1$h = ["aria-label"];
+const _hoisted_2$c = {
   key: 0,
   class: "price-title"
 };
-const _hoisted_3$a = ["href"];
-const _hoisted_4$a = { class: "price-head" };
+const _hoisted_3$c = ["href"];
+const _hoisted_4$b = { class: "price-head" };
 const _hoisted_5$a = { class: "price-when" };
 const _hoisted_6$9 = {
   class: "price-row",
   "aria-hidden": "true"
 };
 const _hoisted_7$9 = ["href", "title"];
-const _hoisted_8$8 = ["src"];
-const _hoisted_9$8 = ["src"];
+const _hoisted_8$9 = ["src"];
+const _hoisted_9$9 = ["src"];
 const _hoisted_10$7 = {
   key: 0,
   class: "pcount"
 };
 const _hoisted_11$6 = ["title"];
-const _hoisted_12$5 = ["src"];
+const _hoisted_12$6 = ["src"];
 const _hoisted_13$5 = { class: "price-words" };
 const _hoisted_14$5 = {
   key: 1,
   class: "price-owner"
 };
-const _sfc_main$f = {
+const _sfc_main$j = {
   __name: "AltarPrice",
   props: {
     entry: { type: Object, required: true },
@@ -811,12 +994,12 @@ const _sfc_main$f = {
         class: normalizeClass(["price", { boxed: __props.boxed }]),
         "aria-label": `${verb.value}: ${spoken.value} — ${result.value.name}`
       }, [
-        __props.boxed ? (openBlock(), createElementBlock("figcaption", _hoisted_2$a, [
+        __props.boxed ? (openBlock(), createElementBlock("figcaption", _hoisted_2$c, [
           createBaseVNode("a", {
             href: result.value.href
-          }, toDisplayString(result.value.name), 9, _hoisted_3$a)
+          }, toDisplayString(result.value.name), 9, _hoisted_3$c)
         ])) : createCommentVNode("", true),
-        createBaseVNode("p", _hoisted_4$a, [
+        createBaseVNode("p", _hoisted_4$b, [
           createBaseVNode("b", null, toDisplayString(verb.value), 1),
           createTextVNode(" — " + toDisplayString(__props.entry.at), 1),
           when.value ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
@@ -835,7 +1018,7 @@ const _sfc_main$f = {
               createBaseVNode("img", {
                 src: from.value.icon,
                 alt: ""
-              }, null, 8, _hoisted_8$8)
+              }, null, 8, _hoisted_8$9)
             ], 8, _hoisted_7$9),
             _cache[1] || (_cache[1] = createBaseVNode("span", { class: "price-plus" }, "+", -1))
           ], 64)) : createCommentVNode("", true),
@@ -851,7 +1034,7 @@ const _sfc_main$f = {
                 createBaseVNode("img", {
                   src: c.icon,
                   alt: ""
-                }, null, 8, _hoisted_9$8),
+                }, null, 8, _hoisted_9$9),
                 c.n > 1 ? (openBlock(), createElementBlock("span", _hoisted_10$7, toDisplayString(c.n), 1)) : createCommentVNode("", true)
               ]),
               _: 2
@@ -865,16 +1048,16 @@ const _sfc_main$f = {
             createBaseVNode("img", {
               src: result.value.icon,
               alt: ""
-            }, null, 8, _hoisted_12$5)
+            }, null, 8, _hoisted_12$6)
           ], 8, _hoisted_11$6)
         ]),
         createBaseVNode("p", _hoisted_13$5, toDisplayString(spoken.value), 1),
         __props.boxed && owner.value ? (openBlock(), createElementBlock("p", _hoisted_14$5, "Признаёт: " + toDisplayString(owner.value), 1)) : createCommentVNode("", true)
-      ], 10, _hoisted_1$e);
+      ], 10, _hoisted_1$h);
     };
   }
 };
-const _sfc_main$e = {
+const _sfc_main$i = {
   __name: "BloodDot",
   props: { colour: { type: String, required: true } },
   setup(__props) {
@@ -886,36 +1069,52 @@ const _sfc_main$e = {
     };
   }
 };
-const _hoisted_1$d = { class: "card" };
-const _hoisted_2$9 = { class: "card-top" };
-const _hoisted_3$9 = { class: "slot" };
-const _hoisted_4$9 = ["src"];
-const _hoisted_5$9 = {
+const _hoisted_1$g = { class: "card-top" };
+const _hoisted_2$b = { class: "card-relic" };
+const _hoisted_3$b = ["src"];
+const _hoisted_4$a = {
   key: 0,
   class: "card-owner"
 };
-const _hoisted_6$8 = { class: "obtain" };
-const _hoisted_7$8 = { class: "obtain-head" };
-const _hoisted_8$7 = ["href"];
-const _hoisted_9$7 = ["innerHTML"];
-const _hoisted_10$6 = ["innerHTML"];
-const _hoisted_11$5 = {
+const _hoisted_5$9 = { class: "obtain" };
+const _hoisted_6$8 = { class: "obtain-head" };
+const _hoisted_7$8 = ["href"];
+const _hoisted_8$8 = ["innerHTML"];
+const _hoisted_9$8 = ["innerHTML"];
+const _hoisted_10$6 = {
   key: 2,
   class: "card-chain"
 };
-const _hoisted_12$4 = { class: "chain-row" };
+const _hoisted_11$5 = { class: "chain-row" };
+const _hoisted_12$5 = ["data-key"];
 const _hoisted_13$4 = { class: "chain-row" };
 const _hoisted_14$4 = {
   key: 0,
+  class: "energy",
+  "aria-hidden": "true"
+};
+const _hoisted_15$4 = {
+  key: 1,
   class: "arrow",
   "aria-hidden": "true"
 };
-const _sfc_main$d = {
+const _sfc_main$h = {
   __name: "ItemCard",
   props: { item: { type: Object, required: true } },
   setup(__props) {
     const props = __props;
     const recipe = computed(() => props.item.recipe ? data.recipes.find((r) => r.result === props.item.id) : null);
+    const RARITY = Object.fromEntries(data.rarities.map((r) => [r.const, r]));
+    const glow = computed(() => {
+      var _a;
+      const pal = ((_a = RARITY[props.item.rarity]) == null ? void 0 : _a.palette) || ["#8a5cff"];
+      const light = (hex) => {
+        const n = parseInt(hex.slice(1), 16);
+        return 0.299 * (n >> 16) + 0.587 * (n >> 8 & 255) + 0.114 * (n & 255);
+      };
+      const bright = [...pal].sort((a, b) => light(b) - light(a));
+      return { "--r1": bright[0], "--r2": bright[Math.min(1, bright.length - 1)] };
+    });
     const owner = computed(() => {
       if (props.item.kind !== "weapon") return null;
       for (const b of data.blood) {
@@ -933,22 +1132,34 @@ const _sfc_main$d = {
     });
     const chains = computed(() => data.chains.filter((c) => c.entries.some((e) => e.id === props.item.id)));
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$d, [
-        createBaseVNode("div", _hoisted_2$9, [
-          createBaseVNode("span", _hoisted_3$9, [
-            createBaseVNode("img", {
-              src: __props.item.icon,
-              alt: ""
-            }, null, 8, _hoisted_4$9)
+      return openBlock(), createElementBlock("div", {
+        class: "card",
+        style: normalizeStyle(glow.value)
+      }, [
+        createBaseVNode("div", _hoisted_1$g, [
+          createBaseVNode("span", _hoisted_2$b, [
+            _cache[0] || (_cache[0] = createBaseVNode("span", {
+              class: "card-halo",
+              "aria-hidden": "true"
+            }, null, -1)),
+            createBaseVNode("span", {
+              class: "glint card-pic",
+              style: normalizeStyle({ "--mask": `url(${__props.item.icon})` })
+            }, [
+              createBaseVNode("img", {
+                src: __props.item.icon,
+                alt: ""
+              }, null, 8, _hoisted_3$b)
+            ], 4)
           ]),
-          createVNode(_sfc_main$k, { item: __props.item }, null, 8, ["item"])
+          createVNode(_sfc_main$o, { item: __props.item }, null, 8, ["item"])
         ]),
-        owner.value ? (openBlock(), createElementBlock("p", _hoisted_5$9, [
+        owner.value ? (openBlock(), createElementBlock("p", _hoisted_4$a, [
           owner.value.title ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
-            createVNode(_sfc_main$e, {
+            createVNode(_sfc_main$i, {
               colour: owner.value.colour
             }, null, 8, ["colour"]),
-            _cache[0] || (_cache[0] = createTextVNode("Признаёт только: ", -1)),
+            _cache[1] || (_cache[1] = createTextVNode("Признаёт только: ", -1)),
             createBaseVNode("b", null, toDisplayString(owner.value.title), 1),
             owner.value.form > 1 ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
               createTextVNode(", с " + toDisplayString(owner.value.form) + "-й формы", 1)
@@ -957,25 +1168,25 @@ const _sfc_main$d = {
             createTextVNode("Служит любой крови.")
           ], 64))
         ])) : createCommentVNode("", true),
-        __props.item.abilities && __props.item.abilities.length ? (openBlock(), createBlock(_sfc_main$h, {
+        __props.item.abilities && __props.item.abilities.length ? (openBlock(), createBlock(_sfc_main$l, {
           key: 1,
           abilities: __props.item.abilities
         }, null, 8, ["abilities"])) : createCommentVNode("", true),
-        createBaseVNode("div", _hoisted_6$8, [
-          createBaseVNode("div", _hoisted_7$8, [
-            _cache[1] || (_cache[1] = createBaseVNode("h3", null, "Как получить", -1)),
+        createBaseVNode("div", _hoisted_5$9, [
+          createBaseVNode("div", _hoisted_6$8, [
+            _cache[2] || (_cache[2] = createBaseVNode("h3", null, "Как получить", -1)),
             createBaseVNode("a", {
               class: normalizeClass(["mbadge", `m-${__props.item.method}`]),
               href: recipe.value ? "#craft" : "#craft-other"
-            }, toDisplayString(__props.item.methodLabel), 11, _hoisted_8$7)
+            }, toDisplayString(__props.item.methodLabel), 11, _hoisted_7$8)
           ]),
-          recipe.value ? (openBlock(), createBlock(_sfc_main$i, {
+          recipe.value ? (openBlock(), createBlock(_sfc_main$m, {
             key: 0,
             recipe: recipe.value,
             small: ""
           }, null, 8, ["recipe"])) : createCommentVNode("", true),
           (openBlock(true), createElementBlock(Fragment, null, renderList(altars.value, (a, i) => {
-            return openBlock(), createBlock(_sfc_main$f, {
+            return openBlock(), createBlock(_sfc_main$j, {
               key: i,
               entry: a
             }, null, 8, ["entry"]);
@@ -983,18 +1194,18 @@ const _sfc_main$d = {
           createBaseVNode("p", {
             class: normalizeClass(["obtain-text", { muted: altars.value.length }]),
             innerHTML: recipe.value ? recipe.value.note : __props.item.obtain
-          }, null, 10, _hoisted_9$7),
+          }, null, 10, _hoisted_8$8),
           recipe.value && __props.item.obtain.includes(" или ") ? (openBlock(), createElementBlock("p", {
             key: 1,
             class: "obtain-text muted",
             innerHTML: __props.item.obtain
-          }, null, 8, _hoisted_10$6)) : createCommentVNode("", true)
+          }, null, 8, _hoisted_9$8)) : createCommentVNode("", true)
         ]),
-        usedIn.value.length ? (openBlock(), createElementBlock("div", _hoisted_11$5, [
-          _cache[2] || (_cache[2] = createBaseVNode("h3", null, "Нужен для", -1)),
-          createBaseVNode("div", _hoisted_12$4, [
+        usedIn.value.length ? (openBlock(), createElementBlock("div", _hoisted_10$6, [
+          _cache[3] || (_cache[3] = createBaseVNode("h3", null, "Нужен для", -1)),
+          createBaseVNode("div", _hoisted_11$5, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(usedIn.value, (u) => {
-              return openBlock(), createBlock(_sfc_main$g, {
+              return openBlock(), createBlock(_sfc_main$k, {
                 key: u.id,
                 item: u
               }, null, 8, ["item"]);
@@ -1004,44 +1215,45 @@ const _sfc_main$d = {
         (openBlock(true), createElementBlock(Fragment, null, renderList(chains.value, (c) => {
           return openBlock(), createElementBlock("div", {
             key: c.key,
-            class: "card-chain"
+            class: "card-chain line-tint",
+            "data-key": c.key
           }, [
             createBaseVNode("h3", null, toDisplayString(c.title), 1),
             createBaseVNode("div", _hoisted_13$4, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(c.entries, (e, i) => {
                 return openBlock(), createElementBlock(Fragment, { key: i }, [
-                  e.sep ? (openBlock(), createElementBlock("span", _hoisted_14$4, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
-                  createVNode(_sfc_main$g, {
+                  e.sep === "→" ? (openBlock(), createElementBlock("span", _hoisted_14$4)) : e.sep ? (openBlock(), createElementBlock("span", _hoisted_15$4, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
+                  createVNode(_sfc_main$k, {
                     item: unref(item)(e.id)
                   }, null, 8, ["item"])
                 ], 64);
               }), 128))
             ])
-          ]);
+          ], 8, _hoisted_12$5);
         }), 128))
-      ]);
+      ], 4);
     };
   }
 };
-const _hoisted_1$c = {
+const _hoisted_1$f = {
   key: 0,
   class: "inspect-wrap"
 };
-const _hoisted_2$8 = ["aria-label"];
-const _hoisted_3$8 = {
+const _hoisted_2$a = ["aria-label"];
+const _hoisted_3$a = {
   class: "inspect-steps",
   "aria-label": "Соседние предметы"
 };
-const _hoisted_4$8 = { class: "step-name" };
+const _hoisted_4$9 = { class: "step-name" };
 const _hoisted_5$8 = ["src"];
 const _hoisted_6$7 = { class: "step-name" };
 const _hoisted_7$7 = ["src"];
-const _hoisted_8$6 = { class: "inspect-foot" };
-const _hoisted_9$6 = {
+const _hoisted_8$7 = { class: "inspect-foot" };
+const _hoisted_9$7 = {
   class: "copied",
   "aria-live": "polite"
 };
-const _sfc_main$c = {
+const _sfc_main$g = {
   __name: "Inspector",
   setup(__props) {
     const current = computed(() => inspector.id && item(inspector.id));
@@ -1116,7 +1328,7 @@ const _sfc_main$c = {
     return (_ctx, _cache) => {
       return openBlock(), createBlock(Transition, { name: "inspect" }, {
         default: withCtx(() => [
-          current.value ? (openBlock(), createElementBlock("div", _hoisted_1$c, [
+          current.value ? (openBlock(), createElementBlock("div", _hoisted_1$f, [
             createBaseVNode("div", {
               class: "inspect-veil",
               onClick: _cache[0] || (_cache[0] = (...args) => unref(closeItem) && unref(closeItem)(...args))
@@ -1148,11 +1360,11 @@ const _sfc_main$c = {
                   })
                 ], -1)
               ])]),
-              (openBlock(), createBlock(_sfc_main$d, {
+              (openBlock(), createBlock(_sfc_main$h, {
                 key: current.value.id,
                 item: current.value
               }, null, 8, ["item"])),
-              createBaseVNode("nav", _hoisted_3$8, [
+              createBaseVNode("nav", _hoisted_3$a, [
                 prev.value ? (openBlock(), createElementBlock("button", {
                   key: 0,
                   type: "button",
@@ -1160,7 +1372,7 @@ const _sfc_main$c = {
                   onClick: _cache[2] || (_cache[2] = ($event) => unref(openItem)(prev.value.id))
                 }, [
                   _cache[5] || (_cache[5] = createBaseVNode("span", { class: "step-dir" }, "← Предыдущий", -1)),
-                  createBaseVNode("span", _hoisted_4$8, [
+                  createBaseVNode("span", _hoisted_4$9, [
                     createBaseVNode("img", {
                       src: prev.value.icon,
                       alt: ""
@@ -1184,16 +1396,16 @@ const _sfc_main$c = {
                   ])
                 ])) : createCommentVNode("", true)
               ]),
-              createBaseVNode("div", _hoisted_8$6, [
+              createBaseVNode("div", _hoisted_8$7, [
                 createBaseVNode("button", {
                   type: "button",
                   class: "text-btn",
                   onClick: copyLink
                 }, "Ссылка на карточку"),
-                createBaseVNode("span", _hoisted_9$6, toDisplayString(copied.value), 1)
+                createBaseVNode("span", _hoisted_9$7, toDisplayString(copied.value), 1)
               ]),
               _cache[7] || (_cache[7] = createBaseVNode("p", { class: "inspect-keys" }, "Стрелки ← → листают карточки, Esc закрывает.", -1))
-            ], 8, _hoisted_2$8)
+            ], 8, _hoisted_2$a)
           ])) : createCommentVNode("", true)
         ]),
         _: 1
@@ -1201,56 +1413,311 @@ const _sfc_main$c = {
     };
   }
 };
-const _hoisted_1$b = { id: "start" };
-const _sfc_main$b = {
-  __name: "StartSection",
+const _sfc_main$f = {
+  __name: "Atmosphere",
   setup(__props) {
+    const WORLDS = {
+      top: "hero",
+      start: "start",
+      rarity: "rarity",
+      weapons: "weapons",
+      materials: "materials",
+      craft: "craft",
+      growth: "growth",
+      sanctums: "sanctums",
+      forge: "forge",
+      temple: "temple",
+      jungle: "jungle",
+      night: "night",
+      factory: "factory",
+      castle: "castle",
+      "wanderer-cube": "cube",
+      "terra-trial": "terra",
+      raids: "raids",
+      blood: "blood",
+      trophies: "trophies",
+      admin: "admin"
+    };
+    const canvas = ref(null);
+    let observer, raf = 0, ctx, motes = [], colours = ["#8a5cff", "#6fe4dc"], running = false;
+    const RUNE_CELLS = RUNES.map(cells);
+    const seen = /* @__PURE__ */ new Map();
+    function pickWorld() {
+      let best = null, bestHeight = Infinity;
+      for (const [id, on] of seen) {
+        if (!on) continue;
+        const el = document.getElementById(id);
+        const h = el ? el.offsetHeight : Infinity;
+        if (h < bestHeight) {
+          best = id;
+          bestHeight = h;
+        }
+      }
+      if (best) {
+        document.documentElement.dataset.world = WORLDS[best];
+        setTimeout(readColours, 600);
+      }
+    }
+    function readColours() {
+      const css = getComputedStyle(document.documentElement);
+      colours = [css.getPropertyValue("--w1").trim() || colours[0], css.getPropertyValue("--w2").trim() || colours[1]];
+    }
+    function spawn(w, h, anywhere) {
+      const rune = Math.random() < 0.38;
+      return {
+        x: Math.random() * w,
+        y: anywhere ? Math.random() * h : h + 20,
+        vy: -(0.12 + Math.random() * 0.35),
+        sway: Math.random() * Math.PI * 2,
+        swaySpeed: 4e-3 + Math.random() * 0.01,
+        size: rune ? 1.6 + Math.random() * 1.4 : 0.8 + Math.random() * 1.8,
+        rune: rune ? RUNE_CELLS[Math.floor(Math.random() * RUNE_CELLS.length)] : null,
+        tone: Math.random() < 0.6 ? 0 : 1,
+        life: 0,
+        max: 600 + Math.random() * 900
+      };
+    }
+    function resize() {
+      const c = canvas.value;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      c.width = innerWidth * dpr;
+      c.height = innerHeight * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    function frame() {
+      raf = requestAnimationFrame(frame);
+      const w = innerWidth, h = innerHeight;
+      ctx.clearRect(0, 0, w, h);
+      for (let i = 0; i < motes.length; i++) {
+        const m = motes[i];
+        m.life++;
+        m.y += m.vy;
+        m.sway += m.swaySpeed;
+        const x = m.x + Math.sin(m.sway) * 14;
+        const fade = Math.min(1, m.life / 90, (m.max - m.life) / 120);
+        if (m.life > m.max || m.y < -20) {
+          motes[i] = spawn(w, h, false);
+          continue;
+        }
+        ctx.globalAlpha = Math.max(0, fade) * (m.rune ? 0.32 : 0.55);
+        ctx.fillStyle = colours[m.tone];
+        if (m.rune) {
+          for (const [cx, cy] of m.rune) ctx.fillRect(Math.round(x + cx * m.size), Math.round(m.y + cy * m.size), Math.ceil(m.size), Math.ceil(m.size));
+        } else {
+          ctx.beginPath();
+          ctx.arc(x, m.y, m.size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      ctx.globalAlpha = 1;
+    }
+    function start() {
+      if (running || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      running = true;
+      raf = requestAnimationFrame(frame);
+    }
+    function stop() {
+      running = false;
+      cancelAnimationFrame(raf);
+    }
+    const onVisibility = () => document.hidden ? stop() : start();
+    onMounted(() => {
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((e) => seen.set(e.target.id, e.isIntersecting));
+        pickWorld();
+      }, { rootMargin: "-45% 0px -50% 0px" });
+      Object.keys(WORLDS).forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+      document.documentElement.dataset.world = "hero";
+      readColours();
+      ctx = canvas.value.getContext("2d");
+      resize();
+      const count = innerWidth < 700 ? 26 : 64;
+      motes = Array.from({ length: count }, () => spawn(innerWidth, innerHeight, true));
+      addEventListener("resize", resize);
+      document.addEventListener("visibilitychange", onVisibility);
+      start();
+    });
+    onBeforeUnmount(() => {
+      observer == null ? void 0 : observer.disconnect();
+      stop();
+      removeEventListener("resize", resize);
+      document.removeEventListener("visibilitychange", onVisibility);
+    });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("section", _hoisted_1$b, [..._cache[0] || (_cache[0] = [
-        createStaticVNode('<div class="sec-head"><h2>С чего начать</h2></div><ol class="steps"><li><h4>Выберите кровь</h4><p>При первом входе откроется выбор родословной. От неё зависят ваша сила, книга, которую вы получите, и то, какие величайшие клинки вас признают.</p></li><li><h4>Выберите путеводителя</h4><p>Следом — чей голос будет с вами: Путеводитель с загадками, ZorahM-GPT, разум Древней фабрики, или Наблюдатель, помнящий Все-Чёрного с первого удара.</p></li><li><h4>Найдите первый клинок</h4><p>Погибель и Резак лежат в сундуках древнего города, Арахнид — в вагонетках заброшенных шахт, Сумрачная секира — в крепостях Незера.</p></li><li><h4>Добудьте Душу демона</h4><p>Она лежит в сокровищнице бастиона. Клинок плюс Душа на верстаке — и он становится адским.</p></li><li><h4>Растите мастерство</h4><p>Клинок учится от каждого удара. Мастерство открывает заточку и пробуждение; эволюция просит только материалы.</p></li><li><h4>Найдите святилище</h4><p>Дорогу к святилищам покажут компасы и карты. Пробейтесь через стражу — и алтарь откроет испытания.</p></li><li><h4>Куйте последнюю форму</h4><p>Высшие клинки — Все-Чёрный, Люцифер, Истинный Экскалибур и Селестиал — куют у алтарей святилищ. Корона отвечает только крови в четвёртой форме, а Все-Чёрный навсегда меняет кровь на бездну.</p></li></ol><p class="small muted">Сервер узнаёт о ваших делах: первый выкованный, улучшенный или собранный клинок, сломанная Печать ночи, вытянутая Луна и сработавшие Королевские часы объявляются в чате всем — имя клинка можно навести мышью и рассмотреть. Способности с долгой перезарядкой видят только игроки рядом.</p>', 3)
-      ])]);
+      return openBlock(), createElementBlock(Fragment, null, [
+        _cache[0] || (_cache[0] = createBaseVNode("div", {
+          class: "sky",
+          "aria-hidden": "true"
+        }, null, -1)),
+        createBaseVNode("canvas", {
+          ref_key: "canvas",
+          ref: canvas,
+          class: "motes",
+          "aria-hidden": "true"
+        }, null, 512)
+      ], 64);
     };
   }
 };
-const _hoisted_1$a = { id: "rarity" };
-const _hoisted_2$7 = { class: "rarities" };
-const _hoisted_3$7 = { class: "rname" };
-const _hoisted_4$7 = {
+const _hoisted_1$e = {
+  class: "xp",
+  "aria-hidden": "true"
+};
+const _sfc_main$e = {
+  __name: "XpBar",
+  setup(__props) {
+    const filled = ref(0);
+    let ticking = false;
+    function measure() {
+      ticking = false;
+      const max = document.documentElement.scrollHeight - innerHeight;
+      filled.value = max > 0 ? Math.min(1, scrollY / max) : 0;
+    }
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(measure);
+      }
+    };
+    onMounted(() => {
+      measure();
+      addEventListener("scroll", onScroll, { passive: true });
+      addEventListener("resize", onScroll);
+    });
+    onBeforeUnmount(() => {
+      removeEventListener("scroll", onScroll);
+      removeEventListener("resize", onScroll);
+    });
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", _hoisted_1$e, [
+        createBaseVNode("span", {
+          class: "xp-fill",
+          style: normalizeStyle({ transform: `scaleX(${filled.value})` })
+        }, null, 4)
+      ]);
+    };
+  }
+};
+const _hoisted_1$d = { class: "sec-head" };
+const _hoisted_2$9 = { class: "sec-title" };
+const _hoisted_3$9 = {
+  key: 0,
+  class: "emblem",
+  "aria-hidden": "true"
+};
+const _hoisted_4$8 = ["src"];
+const _sfc_main$d = {
+  __name: "SecHead",
+  props: {
+    title: { type: String, required: true },
+    /** The item whose picture stands in the section's emblem. */
+    icon: { type: String, default: "" }
+  },
+  setup(__props) {
+    const props = __props;
+    const src = computed(() => {
+      var _a;
+      return props.icon && (((_a = item(props.icon)) == null ? void 0 : _a.icon) || data.icons[props.icon]);
+    });
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", _hoisted_1$d, [
+        createBaseVNode("div", _hoisted_2$9, [
+          src.value ? (openBlock(), createElementBlock("span", _hoisted_3$9, [
+            createBaseVNode("img", {
+              src: src.value,
+              alt: ""
+            }, null, 8, _hoisted_4$8)
+          ])) : createCommentVNode("", true),
+          createBaseVNode("h2", null, toDisplayString(__props.title), 1),
+          _cache[0] || (_cache[0] = createBaseVNode("span", {
+            class: "sec-rule",
+            "aria-hidden": "true"
+          }, null, -1))
+        ]),
+        renderSlot(_ctx.$slots, "default")
+      ]);
+    };
+  }
+};
+const _hoisted_1$c = { id: "start" };
+const _sfc_main$c = {
+  __name: "StartSection",
+  setup(__props) {
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("section", _hoisted_1$c, [
+        createVNode(_sfc_main$d, {
+          title: "С чего начать",
+          icon: "terra_compass"
+        }),
+        _cache[0] || (_cache[0] = createStaticVNode('<ol class="steps"><li><h4>Выберите кровь</h4><p>При первом входе откроется выбор родословной. От неё зависят ваша сила, книга, которую вы получите, и то, какие величайшие клинки вас признают.</p></li><li><h4>Выберите путеводителя</h4><p>Следом — чей голос будет с вами: Путеводитель с загадками, ZorahM-GPT, разум Древней фабрики, или Наблюдатель, помнящий Все-Чёрного с первого удара.</p></li><li><h4>Найдите первый клинок</h4><p>Погибель и Резак лежат в сундуках древнего города, Арахнид — в вагонетках заброшенных шахт, Сумрачная секира — в крепостях Незера.</p></li><li><h4>Добудьте Душу демона</h4><p>Она лежит в сокровищнице бастиона. Клинок плюс Душа на верстаке — и он становится адским.</p></li><li><h4>Растите мастерство</h4><p>Клинок учится от каждого удара. Мастерство открывает заточку и пробуждение; эволюция просит только материалы.</p></li><li><h4>Найдите святилище</h4><p>Дорогу к святилищам покажут компасы и карты. Пробейтесь через стражу — и алтарь откроет испытания.</p></li><li><h4>Куйте последнюю форму</h4><p>Высшие клинки — Все-Чёрный, Люцифер, Истинный Экскалибур и Селестиал — куют у алтарей святилищ. Корона отвечает только крови в четвёртой форме, а Все-Чёрный навсегда меняет кровь на бездну.</p></li></ol><p class="small muted">Сервер узнаёт о ваших делах: первый выкованный, улучшенный или собранный клинок, сломанная Печать ночи, вытянутая Луна и сработавшие Королевские часы объявляются в чате всем — имя клинка можно навести мышью и рассмотреть. Способности с долгой перезарядкой видят только игроки рядом.</p>', 2))
+      ]);
+    };
+  }
+};
+const _hoisted_1$b = { id: "rarity" };
+const _hoisted_2$8 = { class: "rarities" };
+const _hoisted_3$8 = { class: "rhead" };
+const _hoisted_4$7 = ["href", "title"];
+const _hoisted_5$7 = ["src"];
+const _hoisted_6$6 = { class: "rname" };
+const _hoisted_7$6 = {
   class: "swatches",
   "aria-hidden": "true"
 };
-const _hoisted_5$7 = { class: "rmotion" };
-const _hoisted_6$6 = { class: "rused" };
-const _hoisted_7$6 = {
+const _hoisted_8$6 = { class: "rmotion" };
+const _hoisted_9$6 = { class: "rused" };
+const _hoisted_10$5 = {
   key: 1,
   class: "muted"
 };
-const _sfc_main$a = {
+const _sfc_main$b = {
   __name: "RaritySection",
   setup(__props) {
+    const example = Object.fromEntries(data.rarities.map((r) => [r.const, data.items.find((i) => i.rarity === r.const)]));
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("section", _hoisted_1$a, [
-        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "sec-head" }, [
-          createBaseVNode("h2", null, "Редкости"),
-          createBaseVNode("p", { class: "lead" }, "Имя предмета окрашено градиентом его редкости — так же, как в игре. Старшие редкости переливаются.")
-        ], -1)),
-        createBaseVNode("ol", _hoisted_2$7, [
+      return openBlock(), createElementBlock("section", _hoisted_1$b, [
+        createVNode(_sfc_main$d, {
+          title: "Редкости",
+          icon: "wanderer_cube"
+        }, {
+          default: withCtx(() => [..._cache[0] || (_cache[0] = [
+            createBaseVNode("p", { class: "lead" }, "Имя предмета окрашено градиентом его редкости — так же, как в игре. Старшие редкости переливаются.", -1)
+          ])]),
+          _: 1
+        }),
+        createBaseVNode("ol", _hoisted_2$8, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(data).rarities, (r) => {
             return openBlock(), createElementBlock("li", {
               key: r.const,
               class: "rarity"
             }, [
-              createBaseVNode("span", _hoisted_3$7, [
-                createVNode(_sfc_main$l, {
-                  rarity: r.const
-                }, {
-                  default: withCtx(() => [
-                    createTextVNode(toDisplayString(r.label), 1)
-                  ]),
-                  _: 2
-                }, 1032, ["rarity"])
+              createBaseVNode("span", _hoisted_3$8, [
+                unref(example)[r.const] ? (openBlock(), createElementBlock("a", {
+                  key: 0,
+                  class: "rex",
+                  href: `#w-${unref(example)[r.const].id}`,
+                  title: unref(example)[r.const].name
+                }, [
+                  createBaseVNode("img", {
+                    src: unref(example)[r.const].icon,
+                    alt: ""
+                  }, null, 8, _hoisted_5$7)
+                ], 8, _hoisted_4$7)) : createCommentVNode("", true),
+                createBaseVNode("span", _hoisted_6$6, [
+                  createVNode(_sfc_main$p, {
+                    rarity: r.const
+                  }, {
+                    default: withCtx(() => [
+                      createTextVNode(toDisplayString(r.label), 1)
+                    ]),
+                    _: 2
+                  }, 1032, ["rarity"])
+                ])
               ]),
-              createBaseVNode("span", _hoisted_4$7, [
+              createBaseVNode("span", _hoisted_7$6, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(r.palette, (c) => {
                   return openBlock(), createElementBlock("span", {
                     key: c,
@@ -1259,11 +1726,11 @@ const _sfc_main$a = {
                   }, null, 4);
                 }), 128))
               ]),
-              createBaseVNode("span", _hoisted_5$7, toDisplayString(r.motion), 1),
-              createBaseVNode("span", _hoisted_6$6, [
+              createBaseVNode("span", _hoisted_8$6, toDisplayString(r.motion), 1),
+              createBaseVNode("span", _hoisted_9$6, [
                 r.used.length ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
                   createTextVNode(toDisplayString(r.used.join(", ")), 1)
-                ], 64)) : (openBlock(), createElementBlock("span", _hoisted_7$6, "пока ничем не окрашена"))
+                ], 64)) : (openBlock(), createElementBlock("span", _hoisted_10$5, "пока ничем не окрашена"))
               ])
             ]);
           }), 128))
@@ -1272,9 +1739,9 @@ const _sfc_main$a = {
     };
   }
 };
-const _hoisted_1$9 = { id: "weapons" };
-const _hoisted_2$6 = { class: "weapon-bar" };
-const _hoisted_3$6 = {
+const _hoisted_1$a = { id: "weapons" };
+const _hoisted_2$7 = { class: "weapon-bar" };
+const _hoisted_3$7 = {
   class: "filters",
   role: "group",
   "aria-label": "Фильтр по линии"
@@ -1292,9 +1759,9 @@ const _hoisted_8$5 = {
   class: "tbl wtable"
 };
 const _hoisted_9$5 = ["aria-sort"];
-const _hoisted_10$5 = { "aria-hidden": "true" };
+const _hoisted_10$4 = { "aria-hidden": "true" };
 const _hoisted_11$4 = ["aria-sort"];
-const _hoisted_12$3 = { "aria-hidden": "true" };
+const _hoisted_12$4 = { "aria-hidden": "true" };
 const _hoisted_13$3 = ["aria-sort"];
 const _hoisted_14$3 = { "aria-hidden": "true" };
 const _hoisted_15$3 = ["aria-sort"];
@@ -1310,19 +1777,25 @@ const _hoisted_24$2 = {
   key: 1,
   class: "lines"
 };
-const _hoisted_25$2 = { class: "line-title" };
-const _hoisted_26$2 = { class: "line-row" };
-const _hoisted_27$1 = {
+const _hoisted_25$2 = ["data-key"];
+const _hoisted_26$2 = { class: "line-title" };
+const _hoisted_27$1 = { class: "line-row" };
+const _hoisted_28$1 = {
   key: 0,
+  class: "energy",
+  "aria-hidden": "true"
+};
+const _hoisted_29$1 = {
+  key: 1,
   class: "arrow",
   "aria-hidden": "true"
 };
-const _hoisted_28$1 = {
+const _hoisted_30$1 = {
   key: 2,
   class: "empty"
 };
 const VIEW_KEY = "codex-weapons-view";
-const _sfc_main$9 = {
+const _sfc_main$a = {
   __name: "WeaponsSection",
   setup(__props) {
     const lines = [
@@ -1370,13 +1843,18 @@ const _sfc_main$9 = {
     const inLine = (chain) => filters.line === "all" || chain.key === filters.line || filters.line === "jungle" && chain.key === "terra";
     const visible = computed(() => chains.filter((c) => inLine(c) && c.entries.some((e) => shownIds.value.has(e.id))));
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("section", _hoisted_1$9, [
-        _cache[11] || (_cache[11] = createBaseVNode("div", { class: "sec-head" }, [
-          createBaseVNode("h2", null, "Оружие"),
-          createBaseVNode("p", { class: "lead" }, "Клинки выстроены в линии — от находки в мире до неломаемого оружия. Стрелка — эволюция у алтаря, «или» — развилка. Нажмите на клинок, чтобы открыть карточку.")
-        ], -1)),
-        createBaseVNode("div", _hoisted_2$6, [
-          createBaseVNode("div", _hoisted_3$6, [
+      return openBlock(), createElementBlock("section", _hoisted_1$a, [
+        createVNode(_sfc_main$d, {
+          title: "Оружие",
+          icon: "all_black"
+        }, {
+          default: withCtx(() => [..._cache[6] || (_cache[6] = [
+            createBaseVNode("p", { class: "lead" }, "Клинки выстроены в линии — от находки в мире до неломаемого оружия. Стрелка — эволюция у алтаря, «или» — развилка. Нажмите на клинок, чтобы открыть карточку.", -1)
+          ])]),
+          _: 1
+        }),
+        createBaseVNode("div", _hoisted_2$7, [
+          createBaseVNode("div", _hoisted_3$7, [
             (openBlock(), createElementBlock(Fragment, null, renderList(lines, ([key, title]) => {
               return createBaseVNode("button", {
                 key,
@@ -1412,8 +1890,8 @@ const _sfc_main$9 = {
                     class: "sort",
                     onClick: _cache[2] || (_cache[2] = ($event) => sortBy("name"))
                   }, [
-                    _cache[6] || (_cache[6] = createTextVNode("Клинок ", -1)),
-                    createBaseVNode("span", _hoisted_10$5, toDisplayString(mark("name")), 1)
+                    _cache[7] || (_cache[7] = createTextVNode("Клинок ", -1)),
+                    createBaseVNode("span", _hoisted_10$4, toDisplayString(mark("name")), 1)
                   ])
                 ], 8, _hoisted_9$5),
                 createBaseVNode("th", {
@@ -1425,8 +1903,8 @@ const _sfc_main$9 = {
                     class: "sort",
                     onClick: _cache[3] || (_cache[3] = ($event) => sortBy("damage"))
                   }, [
-                    _cache[7] || (_cache[7] = createTextVNode("Урон ", -1)),
-                    createBaseVNode("span", _hoisted_12$3, toDisplayString(mark("damage")), 1)
+                    _cache[8] || (_cache[8] = createTextVNode("Урон ", -1)),
+                    createBaseVNode("span", _hoisted_12$4, toDisplayString(mark("damage")), 1)
                   ])
                 ], 8, _hoisted_11$4),
                 createBaseVNode("th", {
@@ -1438,7 +1916,7 @@ const _sfc_main$9 = {
                     class: "sort",
                     onClick: _cache[4] || (_cache[4] = ($event) => sortBy("speed"))
                   }, [
-                    _cache[8] || (_cache[8] = createTextVNode("Скорость ", -1)),
+                    _cache[9] || (_cache[9] = createTextVNode("Скорость ", -1)),
                     createBaseVNode("span", _hoisted_14$3, toDisplayString(mark("speed")), 1)
                   ])
                 ], 8, _hoisted_13$3),
@@ -1450,11 +1928,11 @@ const _sfc_main$9 = {
                     class: "sort",
                     onClick: _cache[5] || (_cache[5] = ($event) => sortBy("rarity"))
                   }, [
-                    _cache[9] || (_cache[9] = createTextVNode("Редкость ", -1)),
+                    _cache[10] || (_cache[10] = createTextVNode("Редкость ", -1)),
                     createBaseVNode("span", _hoisted_16$2, toDisplayString(mark("rarity")), 1)
                   ])
                 ], 8, _hoisted_15$3),
-                _cache[10] || (_cache[10] = createBaseVNode("th", null, "Как получить", -1))
+                _cache[11] || (_cache[11] = createBaseVNode("th", null, "Как получить", -1))
               ])
             ]),
             createBaseVNode("tbody", null, [
@@ -1480,7 +1958,7 @@ const _sfc_main$9 = {
                   createBaseVNode("td", _hoisted_22$2, toDisplayString(w.speed), 1),
                   createBaseVNode("td", null, [
                     createBaseVNode("span", _hoisted_23$2, [
-                      createVNode(_sfc_main$l, {
+                      createVNode(_sfc_main$p, {
                         rarity: w.rarity
                       }, {
                         default: withCtx(() => [
@@ -1503,14 +1981,15 @@ const _sfc_main$9 = {
           (openBlock(true), createElementBlock(Fragment, null, renderList(visible.value, (chain) => {
             return openBlock(), createElementBlock("div", {
               key: chain.key,
-              class: "line"
+              class: "line",
+              "data-key": chain.key
             }, [
-              createBaseVNode("h3", _hoisted_25$2, toDisplayString(chain.title), 1),
-              createBaseVNode("div", _hoisted_26$2, [
+              createBaseVNode("h3", _hoisted_26$2, toDisplayString(chain.title), 1),
+              createBaseVNode("div", _hoisted_27$1, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(chain.entries, (e, i) => {
                   return openBlock(), createElementBlock(Fragment, { key: i }, [
-                    e.sep ? (openBlock(), createElementBlock("span", _hoisted_27$1, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
-                    createVNode(_sfc_main$g, {
+                    e.sep === "→" ? (openBlock(), createElementBlock("span", _hoisted_28$1)) : e.sep ? (openBlock(), createElementBlock("span", _hoisted_29$1, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
+                    createVNode(_sfc_main$k, {
                       item: e.item,
                       anchor: e.anchor,
                       named: "",
@@ -1519,23 +1998,23 @@ const _sfc_main$9 = {
                   ], 64);
                 }), 128))
               ])
-            ]);
+            ], 8, _hoisted_25$2);
           }), 128))
         ])),
-        (view.value === "table" ? !sorted.value.length : !visible.value.length) ? (openBlock(), createElementBlock("p", _hoisted_28$1, "Ни одного клинка — попробуйте другое слово или линию «Все».")) : createCommentVNode("", true)
+        (view.value === "table" ? !sorted.value.length : !visible.value.length) ? (openBlock(), createElementBlock("p", _hoisted_30$1, "Ни одного клинка — попробуйте другое слово или линию «Все».")) : createCommentVNode("", true)
       ]);
     };
   }
 };
-const _hoisted_1$8 = { id: "materials" };
-const _hoisted_2$5 = { class: "inventory" };
-const _hoisted_3$5 = { class: "inv-title" };
+const _hoisted_1$9 = { id: "materials" };
+const _hoisted_2$6 = { class: "inventory" };
+const _hoisted_3$6 = { class: "inv-title" };
 const _hoisted_4$5 = { class: "inv-row" };
 const _hoisted_5$5 = {
   key: 0,
   class: "empty"
 };
-const _sfc_main$8 = {
+const _sfc_main$9 = {
   __name: "MaterialsSection",
   setup(__props) {
     const GROUPS = [
@@ -1554,21 +2033,26 @@ const _sfc_main$8 = {
       return out.filter((g) => g.items.length);
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("section", _hoisted_1$8, [
-        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "sec-head" }, [
-          createBaseVNode("h2", null, "Материалы"),
-          createBaseVNode("p", { class: "lead" }, "Душа демона и терра-слиток — для крафта. Осколки и детали — валюта святилищ, сердца, перо и ядро — реликвии их стражей. В обычные рецепты и торговлю материалы не уходят.")
-        ], -1)),
-        createBaseVNode("div", _hoisted_2$5, [
+      return openBlock(), createElementBlock("section", _hoisted_1$9, [
+        createVNode(_sfc_main$d, {
+          title: "Материалы",
+          icon: "soul_shard"
+        }, {
+          default: withCtx(() => [..._cache[0] || (_cache[0] = [
+            createBaseVNode("p", { class: "lead" }, "Душа демона и терра-слиток — для крафта. Осколки и детали — валюта святилищ, сердца, перо и ядро — реликвии их стражей. В обычные рецепты и торговлю материалы не уходят.", -1)
+          ])]),
+          _: 1
+        }),
+        createBaseVNode("div", _hoisted_2$6, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(groups.value, (g) => {
             return openBlock(), createElementBlock("div", {
               key: g.title,
               class: "inv-group"
             }, [
-              createBaseVNode("h3", _hoisted_3$5, toDisplayString(g.title), 1),
+              createBaseVNode("h3", _hoisted_3$6, toDisplayString(g.title), 1),
               createBaseVNode("div", _hoisted_4$5, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(g.items, (m) => {
-                  return openBlock(), createBlock(_sfc_main$g, {
+                  return openBlock(), createBlock(_sfc_main$k, {
                     key: m.id,
                     item: m,
                     anchor: "",
@@ -1584,17 +2068,16 @@ const _sfc_main$8 = {
     };
   }
 };
-const _hoisted_1$7 = { id: "craft" };
-const _hoisted_2$4 = { class: "sec-head" };
-const _hoisted_3$4 = { class: "lead" };
-const _hoisted_4$4 = { class: "crafts" };
-const _hoisted_5$4 = { class: "methods" };
-const _hoisted_6$4 = { class: "muted small" };
-const _hoisted_7$4 = { class: "small" };
-const _hoisted_8$4 = { class: "mitems" };
-const _hoisted_9$4 = ["href", "title"];
-const _hoisted_10$4 = ["src"];
-const _sfc_main$7 = {
+const _hoisted_1$8 = { id: "craft" };
+const _hoisted_2$5 = { class: "lead" };
+const _hoisted_3$5 = { class: "crafts" };
+const _hoisted_4$4 = { class: "methods" };
+const _hoisted_5$4 = { class: "muted small" };
+const _hoisted_6$4 = { class: "small" };
+const _hoisted_7$4 = { class: "mitems" };
+const _hoisted_8$4 = ["href", "title"];
+const _hoisted_9$4 = ["src"];
+const _sfc_main$8 = {
   __name: "CraftingSection",
   setup(__props) {
     const ORDER = ["forge", "evolve", "assemble", "grows", "loot", "drop", "trial", "gift", "place", "secret"];
@@ -1620,25 +2103,30 @@ const _sfc_main$7 = {
       };
     }).filter((g) => g.items.length));
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("section", _hoisted_1$7, [
-        createBaseVNode("div", _hoisted_2$4, [
-          _cache[0] || (_cache[0] = createBaseVNode("h2", null, "Крафт", -1)),
-          createBaseVNode("p", _hoisted_3$4, "На верстаке делается " + toDisplayString(unref(data).recipes.length) + " вещей. Остальное куют у алтарей святилищ или находят.", 1)
-        ]),
-        createBaseVNode("div", _hoisted_4$4, [
+      return openBlock(), createElementBlock("section", _hoisted_1$8, [
+        createVNode(_sfc_main$d, {
+          title: "Крафт",
+          icon: "terra_ingot"
+        }, {
+          default: withCtx(() => [
+            createBaseVNode("p", _hoisted_2$5, "На верстаке делается " + toDisplayString(unref(data).recipes.length) + " вещей. Остальное куют у алтарей святилищ или находят.", 1)
+          ]),
+          _: 1
+        }),
+        createBaseVNode("div", _hoisted_3$5, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(data).recipes, (r) => {
-            return openBlock(), createBlock(_sfc_main$i, {
+            return openBlock(), createBlock(_sfc_main$m, {
               key: r.result,
               recipe: r
             }, null, 8, ["recipe"]);
           }), 128))
         ]),
-        _cache[1] || (_cache[1] = createBaseVNode("div", { class: "callout" }, [
+        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "callout" }, [
           createBaseVNode("b", null, "Если результат не появляется"),
           createTextVNode(" — проверьте, что предметы плагина настоящие: обычный меч вместо Погибели рецепт не примет. ")
         ], -1)),
-        _cache[2] || (_cache[2] = createBaseVNode("h3", { id: "craft-other" }, "Не на верстаке", -1)),
-        createBaseVNode("div", _hoisted_5$4, [
+        _cache[1] || (_cache[1] = createBaseVNode("h3", { id: "craft-other" }, "Не на верстаке", -1)),
+        createBaseVNode("div", _hoisted_4$4, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(groups.value, (g) => {
             return openBlock(), createElementBlock("article", {
               key: g.key,
@@ -1648,10 +2136,10 @@ const _sfc_main$7 = {
                 createBaseVNode("span", {
                   class: normalizeClass(["mbadge", `m-${g.key}`])
                 }, toDisplayString(g.label), 3),
-                createBaseVNode("span", _hoisted_6$4, toDisplayString(g.items.length), 1)
+                createBaseVNode("span", _hoisted_5$4, toDisplayString(g.items.length), 1)
               ]),
-              createBaseVNode("p", _hoisted_7$4, toDisplayString(g.how), 1),
-              createBaseVNode("div", _hoisted_8$4, [
+              createBaseVNode("p", _hoisted_6$4, toDisplayString(g.how), 1),
+              createBaseVNode("div", _hoisted_7$4, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(g.items, (i) => {
                   return openBlock(), createElementBlock("a", {
                     key: i.id,
@@ -1662,9 +2150,9 @@ const _sfc_main$7 = {
                     createBaseVNode("img", {
                       src: i.icon,
                       alt: ""
-                    }, null, 8, _hoisted_10$4),
+                    }, null, 8, _hoisted_9$4),
                     createBaseVNode("span", null, toDisplayString(i.name), 1)
-                  ], 8, _hoisted_9$4);
+                  ], 8, _hoisted_8$4);
                 }), 128))
               ])
             ]);
@@ -1674,51 +2162,56 @@ const _sfc_main$7 = {
     };
   }
 };
-const _hoisted_1$6 = { id: "growth" };
-const _hoisted_2$3 = { class: "twocol" };
-const _hoisted_3$3 = { class: "panel" };
+const _hoisted_1$7 = { id: "growth" };
+const _hoisted_2$4 = { class: "twocol" };
+const _hoisted_3$4 = { class: "panel" };
 const _hoisted_4$3 = { class: "tbl" };
 const _hoisted_5$3 = { class: "num" };
 const _hoisted_6$3 = { class: "num" };
 const _hoisted_7$3 = { class: "prices" };
 const _hoisted_8$3 = { class: "sets" };
-const _hoisted_9$3 = { class: "set" };
+const _hoisted_9$3 = { class: "set set-molten" };
 const _hoisted_10$3 = { class: "slot" };
 const _hoisted_11$3 = ["src"];
-const _hoisted_12$2 = { class: "set" };
+const _hoisted_12$3 = { class: "set set-paladin" };
 const _hoisted_13$2 = { class: "slot" };
 const _hoisted_14$2 = ["src"];
-const _hoisted_15$2 = { class: "set" };
+const _hoisted_15$2 = { class: "set set-nightking" };
 const _hoisted_16$1 = { class: "slot" };
 const _hoisted_17$1 = ["src"];
-const _hoisted_18$1 = { class: "set" };
+const _hoisted_18$1 = { class: "set set-terra" };
 const _hoisted_19$1 = { class: "slot" };
 const _hoisted_20$1 = ["src"];
-const _hoisted_21$1 = { class: "set" };
+const _hoisted_21$1 = { class: "set set-demon" };
 const _hoisted_22$1 = { class: "slot" };
 const _hoisted_23$1 = ["src"];
 const _hoisted_24$1 = { class: "prices" };
 const _hoisted_25$1 = { class: "prices" };
 const _hoisted_26$1 = { class: "prices" };
-const _sfc_main$6 = {
+const _sfc_main$7 = {
   __name: "GrowthSection",
   setup(__props) {
     const blades = new Set(data.items.filter((i) => i.kind === "weapon").map((i) => i.id));
     const evolutions = data.altar.filter((a) => a.kind === "evolve" && a.result !== "all_black");
     const forgedAt = (at) => data.altar.filter((a) => a.kind === "forge" && a.at === at && blades.has(a.result));
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("section", _hoisted_1$6, [
-        _cache[9] || (_cache[9] = createBaseVNode("div", { class: "sec-head" }, [
-          createBaseVNode("h2", null, "Рост клинка"),
-          createBaseVNode("p", { class: "lead" }, "У каждого клинка три дорожки роста; всё записано на самом клинке.")
-        ], -1)),
-        createBaseVNode("div", _hoisted_2$3, [
-          createBaseVNode("div", _hoisted_3$3, [
-            _cache[1] || (_cache[1] = createBaseVNode("h3", null, "Мастерство 0–100", -1)),
-            _cache[2] || (_cache[2] = createBaseVNode("p", { class: "small" }, "Клинок учится от нанесённого урона. Каждый уровень даёт +0,1% урона.", -1)),
+      return openBlock(), createElementBlock("section", _hoisted_1$7, [
+        createVNode(_sfc_main$d, {
+          title: "Рост клинка",
+          icon: "forge_heart"
+        }, {
+          default: withCtx(() => [..._cache[0] || (_cache[0] = [
+            createBaseVNode("p", { class: "lead" }, "У каждого клинка три дорожки роста; всё записано на самом клинке.", -1)
+          ])]),
+          _: 1
+        }),
+        createBaseVNode("div", _hoisted_2$4, [
+          createBaseVNode("div", _hoisted_3$4, [
+            _cache[2] || (_cache[2] = createBaseVNode("h3", null, "Мастерство 0–100", -1)),
+            _cache[3] || (_cache[3] = createBaseVNode("p", { class: "small" }, "Клинок учится от нанесённого урона. Каждый уровень даёт +0,1% урона.", -1)),
             createBaseVNode("div", _hoisted_4$3, [
               createBaseVNode("table", null, [
-                _cache[0] || (_cache[0] = createBaseVNode("thead", null, [
+                _cache[1] || (_cache[1] = createBaseVNode("thead", null, [
                   createBaseVNode("tr", null, [
                     createBaseVNode("th", null, "Уровень"),
                     createBaseVNode("th", { class: "num" }, "Всего очков"),
@@ -1741,12 +2234,12 @@ const _sfc_main$6 = {
               ])
             ])
           ]),
-          _cache[3] || (_cache[3] = createStaticVNode('<div class="panel"><h3>Заточка <span class="stars">★★★★★</span></h3><p class="small">Каждая звезда +4% урона.</p><div class="tbl"><table><thead><tr><th>Звезда</th><th class="num">Мастерство</th><th class="num">Осколки</th><th class="num">Катализатор</th><th>Реликвия</th></tr></thead><tbody><tr><td class="stars">★</td><td class="num">15</td><td class="num">8</td><td class="num">1</td><td>—</td></tr><tr><td class="stars">★★</td><td class="num">30</td><td class="num">16</td><td class="num">2</td><td>—</td></tr><tr><td class="stars">★★★</td><td class="num">45</td><td class="num">24</td><td class="num">3</td><td>—</td></tr><tr><td class="stars">★★★★</td><td class="num">60</td><td class="num">32</td><td class="num">4</td><td>1</td></tr><tr><td class="stars">★★★★★</td><td class="num">75</td><td class="num">40</td><td class="num">5</td><td>1</td></tr></tbody></table></div><p class="small muted">Катализатор: незеритовый лом в кузне, осколки аметиста в храме. Небесные клинки точат в Небесном храме, остальные — в Незеритовой кузне.</p></div><div class="panel"><h3>Пробуждение</h3><p class="small">Один раз за жизнь клинка: нужны заточка ★3, мастерство 50, осколки и реликвия стража.</p><p class="small">Перезарядка способности короче на четверть, урон +5%.</p></div>', 2))
+          _cache[4] || (_cache[4] = createStaticVNode('<div class="panel"><h3>Заточка <span class="stars">★★★★★</span></h3><p class="small">Каждая звезда +4% урона.</p><div class="tbl"><table><thead><tr><th>Звезда</th><th class="num">Мастерство</th><th class="num">Осколки</th><th class="num">Катализатор</th><th>Реликвия</th></tr></thead><tbody><tr><td class="stars">★</td><td class="num">15</td><td class="num">8</td><td class="num">1</td><td>—</td></tr><tr><td class="stars">★★</td><td class="num">30</td><td class="num">16</td><td class="num">2</td><td>—</td></tr><tr><td class="stars">★★★</td><td class="num">45</td><td class="num">24</td><td class="num">3</td><td>—</td></tr><tr><td class="stars">★★★★</td><td class="num">60</td><td class="num">32</td><td class="num">4</td><td>1</td></tr><tr><td class="stars">★★★★★</td><td class="num">75</td><td class="num">40</td><td class="num">5</td><td>1</td></tr></tbody></table></div><p class="small muted">Катализатор: незеритовый лом в кузне, осколки аметиста в храме. Небесные клинки точат в Небесном храме, остальные — в Незеритовой кузне.</p></div><div class="panel"><h3>Пробуждение</h3><p class="small">Один раз за жизнь клинка: нужны заточка ★3, мастерство 50, осколки и реликвия стража.</p><p class="small">Перезарядка способности короче на четверть, урон +5%.</p></div>', 2))
         ]),
         _cache[10] || (_cache[10] = createBaseVNode("h3", null, "Эволюции у алтарей", -1)),
         createBaseVNode("div", _hoisted_7$3, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(evolutions), (e, i) => {
-            return openBlock(), createBlock(_sfc_main$f, {
+            return openBlock(), createBlock(_sfc_main$j, {
               key: i,
               entry: e,
               boxed: ""
@@ -1762,20 +2255,20 @@ const _sfc_main$6 = {
                 alt: ""
               }, null, 8, _hoisted_11$3)
             ]),
-            _cache[4] || (_cache[4] = createBaseVNode("div", { class: "set-body" }, [
+            _cache[5] || (_cache[5] = createBaseVNode("div", { class: "set-body" }, [
               createBaseVNode("h4", null, "Расплавленный доспех"),
               createBaseVNode("p", { class: "set-where" }, "Кузня, после третьего испытания: 64 осколка души, незеритовая часть брони и Душа лорда за каждую часть"),
               createBaseVNode("p", { class: "set-bonus" }, "Двойной прыжок в воздухе. Погибель, Бедствие, Воля Демона и Империум бьют на 25% сильнее.")
             ], -1))
           ]),
-          createBaseVNode("article", _hoisted_12$2, [
+          createBaseVNode("article", _hoisted_12$3, [
             createBaseVNode("span", _hoisted_13$2, [
               createBaseVNode("img", {
                 src: unref(data).icons.paladin_helmet,
                 alt: ""
               }, null, 8, _hoisted_14$2)
             ]),
-            _cache[5] || (_cache[5] = createBaseVNode("div", { class: "set-body" }, [
+            _cache[6] || (_cache[6] = createBaseVNode("div", { class: "set-body" }, [
               createBaseVNode("h4", null, "Доспех паладина"),
               createBaseVNode("p", { class: "set-where" }, "Небесный храм, с третьей формы небесной или ночной крови: 64 небесных осколка за часть"),
               createBaseVNode("p", { class: "set-bonus" }, "15 секунд без урона — начинается исцеление. Падение с любой высоты не ранит.")
@@ -1788,7 +2281,7 @@ const _sfc_main$6 = {
                 alt: ""
               }, null, 8, _hoisted_17$1)
             ]),
-            _cache[6] || (_cache[6] = createBaseVNode("div", { class: "set-body" }, [
+            _cache[7] || (_cache[7] = createBaseVNode("div", { class: "set-body" }, [
               createBaseVNode("h4", null, "Доспех Короля ночи"),
               createBaseVNode("p", { class: "set-where" }, "Тёмный храм, после победы над Пустотным Серафимом: часть доспеха паладина, 32 небесных осколка, лазурит и мембраны фантома"),
               createBaseVNode("p", { class: "set-bonus" }, "Всё, что даёт доспех паладина. Ночью, в Незере и в Крае — ещё сила и скорость. Фантомы рядом становятся вашими и бьют ваших врагов.")
@@ -1801,7 +2294,7 @@ const _sfc_main$6 = {
                 alt: ""
               }, null, 8, _hoisted_20$1)
             ]),
-            _cache[7] || (_cache[7] = createBaseVNode("div", { class: "set-body" }, [
+            _cache[8] || (_cache[8] = createBaseVNode("div", { class: "set-body" }, [
               createBaseVNode("h4", null, "Терра-доспех"),
               createBaseVNode("p", { class: "set-where" }, "Храм джунглей, после того как принесли ему Терра-сущность: 64 реликтовых осколка и Терра-слитки за часть"),
               createBaseVNode("p", { class: "set-bonus" }, "+4 сердца. Никакие вредные эффекты не действуют: яд, слабость, замедление и другие.")
@@ -1814,7 +2307,7 @@ const _sfc_main$6 = {
                 alt: ""
               }, null, 8, _hoisted_23$1)
             ]),
-            _cache[8] || (_cache[8] = createBaseVNode("div", { class: "set-body" }, [
+            _cache[9] || (_cache[9] = createBaseVNode("div", { class: "set-body" }, [
               createBaseVNode("h4", null, "Демонический доспех"),
               createBaseVNode("p", { class: "set-where" }, "???"),
               createBaseVNode("p", { class: "set-bonus" }, [
@@ -1829,7 +2322,7 @@ const _sfc_main$6 = {
         _cache[14] || (_cache[14] = createBaseVNode("p", null, "Небесные клинки куют у алтаря Небесного храма: небесные осколки, Перо серафима и свой взнос. Золотой феникс вырастает из Сумрачной секиры, Призрачный страж лежит в сокровищнице Проклятого замка, Солнцестояние — в сокровищницах бастионов.", -1)),
         createBaseVNode("div", _hoisted_24$1, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(forgedAt("Небесный храм"), (e, i) => {
-            return openBlock(), createBlock(_sfc_main$f, {
+            return openBlock(), createBlock(_sfc_main$j, {
               key: i,
               entry: e,
               boxed: ""
@@ -1844,7 +2337,7 @@ const _sfc_main$6 = {
         ], -1)),
         createBaseVNode("div", _hoisted_25$1, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(forgedAt("Тёмный храм"), (e, i) => {
-            return openBlock(), createBlock(_sfc_main$f, {
+            return openBlock(), createBlock(_sfc_main$j, {
               key: i,
               entry: e,
               boxed: ""
@@ -1855,7 +2348,7 @@ const _sfc_main$6 = {
         _cache[18] || (_cache[18] = createBaseVNode("p", null, "Эти клинки куёт алтарь Храма джунглей.", -1)),
         createBaseVNode("div", _hoisted_26$1, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(forgedAt("Храм джунглей"), (e, i) => {
-            return openBlock(), createBlock(_sfc_main$f, {
+            return openBlock(), createBlock(_sfc_main$j, {
               key: i,
               entry: e,
               boxed: ""
@@ -1864,6 +2357,55 @@ const _sfc_main$6 = {
         ]),
         _cache[19] || (_cache[19] = createBaseVNode("p", { class: "small" }, "Селестиал — эволюция Энигмы, она выше, среди эволюций.", -1))
       ]);
+    };
+  }
+};
+const _hoisted_1$6 = { class: "bossbar-name" };
+const _hoisted_2$3 = {
+  class: "bossbar-track",
+  "aria-hidden": "true"
+};
+const _hoisted_3$3 = {
+  key: 0,
+  class: "bossbar-notch"
+};
+const _sfc_main$6 = {
+  __name: "BossBar",
+  props: {
+    name: { type: String, required: true },
+    colour: { type: String, default: "purple" },
+    notched: { type: Boolean, default: false }
+  },
+  setup(__props) {
+    const root = ref(null);
+    const full = ref(false);
+    let observer;
+    onMounted(() => {
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        full.value = true;
+        return;
+      }
+      observer = new IntersectionObserver(([e]) => {
+        if (e.isIntersecting) {
+          full.value = true;
+          observer.disconnect();
+        }
+      }, { threshold: 0.6 });
+      observer.observe(root.value);
+    });
+    onBeforeUnmount(() => observer == null ? void 0 : observer.disconnect());
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", {
+        ref_key: "root",
+        ref: root,
+        class: normalizeClass(["bossbar", [`bb-${__props.colour}`, { full: full.value }]])
+      }, [
+        createBaseVNode("h4", _hoisted_1$6, toDisplayString(__props.name), 1),
+        createBaseVNode("span", _hoisted_2$3, [
+          _cache[0] || (_cache[0] = createBaseVNode("span", { class: "bossbar-fill" }, null, -1)),
+          __props.notched ? (openBlock(), createElementBlock("span", _hoisted_3$3)) : createCommentVNode("", true)
+        ])
+      ], 2);
     };
   }
 };
@@ -1884,7 +2426,7 @@ const _hoisted_11$2 = {
   class: "guide-item",
   "aria-hidden": "true"
 };
-const _hoisted_12$1 = ["src"];
+const _hoisted_12$2 = ["src"];
 const _hoisted_13$1 = {
   class: "sanctum",
   id: "forge"
@@ -1896,124 +2438,152 @@ const _hoisted_17 = { class: "kv" };
 const _hoisted_18 = { class: "inline-icons" };
 const _hoisted_19 = ["src"];
 const _hoisted_20 = ["src"];
-const _hoisted_21 = {
+const _hoisted_21 = { class: "boss" };
+const _hoisted_22 = {
   class: "sanctum",
   id: "temple"
 };
-const _hoisted_22 = ["src"];
-const _hoisted_23 = { class: "sanctum-body" };
-const _hoisted_24 = { class: "sanctum-info" };
-const _hoisted_25 = { class: "kv" };
-const _hoisted_26 = { class: "inline-icons" };
-const _hoisted_27 = ["src"];
+const _hoisted_23 = ["src"];
+const _hoisted_24 = { class: "sanctum-body" };
+const _hoisted_25 = { class: "sanctum-info" };
+const _hoisted_26 = { class: "kv" };
+const _hoisted_27 = { class: "inline-icons" };
 const _hoisted_28 = ["src"];
 const _hoisted_29 = ["src"];
-const _hoisted_30 = {
+const _hoisted_30 = ["src"];
+const _hoisted_31 = { class: "boss" };
+const _hoisted_32 = {
   class: "sanctum",
   id: "jungle"
 };
-const _hoisted_31 = ["src"];
-const _hoisted_32 = { class: "sanctum-body" };
-const _hoisted_33 = { class: "sanctum-info" };
-const _hoisted_34 = { class: "kv" };
-const _hoisted_35 = { class: "inline-icons" };
-const _hoisted_36 = ["src"];
-const _hoisted_37 = ["src"];
-const _hoisted_38 = {
+const _hoisted_33 = ["src"];
+const _hoisted_34 = { class: "sanctum-body" };
+const _hoisted_35 = { class: "sanctum-info" };
+const _hoisted_36 = { class: "kv" };
+const _hoisted_37 = { class: "inline-icons" };
+const _hoisted_38 = ["src"];
+const _hoisted_39 = ["src"];
+const _hoisted_40 = { class: "boss" };
+const _hoisted_41 = {
   class: "sanctum",
   id: "night"
 };
-const _hoisted_39 = ["src"];
-const _hoisted_40 = { class: "sanctum-body" };
-const _hoisted_41 = { class: "sanctum-info" };
-const _hoisted_42 = { class: "kv" };
-const _hoisted_43 = { class: "inline-icons" };
-const _hoisted_44 = ["src"];
-const _hoisted_45 = {
+const _hoisted_42 = ["src"];
+const _hoisted_43 = { class: "sanctum-body" };
+const _hoisted_44 = { class: "sanctum-info" };
+const _hoisted_45 = { class: "kv" };
+const _hoisted_46 = { class: "inline-icons" };
+const _hoisted_47 = ["src"];
+const _hoisted_48 = { class: "boss" };
+const _hoisted_49 = {
   class: "sanctum",
   id: "factory"
 };
-const _hoisted_46 = ["src"];
-const _hoisted_47 = { class: "sanctum-body" };
-const _hoisted_48 = { class: "sanctum-info" };
-const _hoisted_49 = { class: "kv" };
-const _hoisted_50 = { class: "inline-icons" };
-const _hoisted_51 = ["src"];
-const _hoisted_52 = ["src"];
-const _hoisted_53 = {
+const _hoisted_50 = ["src"];
+const _hoisted_51 = { class: "sanctum-body" };
+const _hoisted_52 = { class: "sanctum-info" };
+const _hoisted_53 = { class: "kv" };
+const _hoisted_54 = { class: "inline-icons" };
+const _hoisted_55 = ["src"];
+const _hoisted_56 = ["src"];
+const _hoisted_57 = { class: "boss" };
+const _hoisted_58 = {
   class: "sanctum",
   id: "castle"
 };
-const _hoisted_54 = ["src"];
-const _hoisted_55 = { class: "sanctum-body" };
-const _hoisted_56 = { class: "sanctum-info" };
-const _hoisted_57 = { class: "kv" };
-const _hoisted_58 = { class: "inline-icons" };
 const _hoisted_59 = ["src"];
-const _hoisted_60 = ["src"];
-const _hoisted_61 = ["src"];
-const _hoisted_62 = {
+const _hoisted_60 = { class: "sanctum-body" };
+const _hoisted_61 = { class: "sanctum-info" };
+const _hoisted_62 = { class: "kv" };
+const _hoisted_63 = { class: "inline-icons" };
+const _hoisted_64 = ["src"];
+const _hoisted_65 = ["src"];
+const _hoisted_66 = ["src"];
+const _hoisted_67 = { class: "boss" };
+const _hoisted_68 = {
   class: "sanctum",
   id: "wanderer-cube"
 };
-const _hoisted_63 = { class: "terra-figure cube-figure" };
-const _hoisted_64 = { class: "cube-row" };
-const _hoisted_65 = ["src", "alt"];
-const _hoisted_66 = { class: "sanctum-body" };
-const _hoisted_67 = { class: "sanctum-info" };
-const _hoisted_68 = { class: "kv" };
-const _hoisted_69 = { class: "inline-icons" };
-const _hoisted_70 = ["src"];
-const _hoisted_71 = ["src"];
-const _hoisted_72 = {
+const _hoisted_69 = { class: "terra-figure cube-figure" };
+const _hoisted_70 = { class: "cube-row" };
+const _hoisted_71 = ["src", "alt"];
+const _hoisted_72 = { class: "sanctum-body" };
+const _hoisted_73 = { class: "sanctum-info" };
+const _hoisted_74 = { class: "kv" };
+const _hoisted_75 = { class: "inline-icons" };
+const _hoisted_76 = ["src"];
+const _hoisted_77 = ["src"];
+const _hoisted_78 = {
   class: "sanctum",
   id: "terra-trial"
 };
-const _hoisted_73 = { class: "terra-figure" };
-const _hoisted_74 = ["src"];
-const _hoisted_75 = { class: "sanctum-body" };
-const _hoisted_76 = { class: "sanctum-info" };
-const _hoisted_77 = { class: "kv" };
-const _hoisted_78 = { class: "inline-icons" };
-const _hoisted_79 = ["src"];
-const _hoisted_80 = { class: "inline-icons" };
-const _hoisted_81 = ["src"];
-const _hoisted_82 = ["src"];
-const _hoisted_83 = ["src"];
+const _hoisted_79 = { class: "terra-figure" };
+const _hoisted_80 = ["src"];
+const _hoisted_81 = { class: "sanctum-body" };
+const _hoisted_82 = { class: "sanctum-info" };
+const _hoisted_83 = { class: "kv" };
+const _hoisted_84 = { class: "inline-icons" };
+const _hoisted_85 = ["src"];
+const _hoisted_86 = { class: "inline-icons" };
+const _hoisted_87 = ["src"];
+const _hoisted_88 = ["src"];
+const _hoisted_89 = ["src"];
+const _hoisted_90 = {
+  class: "stack",
+  style: { "align-content": "start" }
+};
+const _hoisted_91 = { class: "boss" };
 const _sfc_main$5 = {
   __name: "SanctumsSection",
   setup(__props) {
     const recipe = (key) => data.recipes.find((r) => r.result === key);
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("section", _hoisted_1$5, [
-        _cache[68] || (_cache[68] = createStaticVNode('<div class="sec-head"><h2>Святилища</h2><p class="lead">Пять построек, каждая — в единственном экземпляре. Внутри ничего нельзя ломать и строить.</p><p class="lead"><b>Внутри нет чужих</b>: обычные мобы не появляются.</p><p class="lead"><b>Храмы кочуют</b>: опустевшее святилище исчезает и встаёт в другом месте. Древняя фабрика стоит на месте, Тёмный храм приходит только ночью.</p></div><div class="flow" aria-label="Путь через святилище"><div class="step"><b>Вход</b><span>туннель, ступени или ворота</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Три комнаты</b><span>в каждой стража; с неё падают осколки</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Алтарь</b><span>откроется, когда падёт вся стража: эволюция, заточка, испытания</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Арена</b><span>испытание: пять волн, в пятой — страж</span></div></div><h3>Пять святилищ коротко</h3><div class="tbl"><table><thead><tr><th>Святилище</th><th>Где</th><th>Чем искать</th><th>Страж</th><th>Кочует</th><th>Кровь</th></tr></thead><tbody><tr><th scope="row"><a href="#forge">Незеритовая кузня</a></th><td>Незер, в толще незерака</td><td>Карта кузни</td><td>Горнило</td><td>да</td><td>пепельная</td></tr><tr><th scope="row"><a href="#temple">Небесный храм</a></th><td>верхний мир, остров на высоте 200</td><td>Компас воздуха</td><td>Серафим Падшего Рассвета</td><td>да, и рушится от Печати ночи</td><td>небесная</td></tr><tr><th scope="row"><a href="#jungle">Храм джунглей</a></th><td>джунгли</td><td>Карта джунглей</td><td>Древний страж джунглей</td><td>да</td><td>предков</td></tr><tr><th scope="row"><a href="#night">Тёмный храм</a></th><td>верхний мир, только ночью</td><td>Ночной компас</td><td>Пустотный Серафим (призыв)</td><td>каждую ночь на новом месте</td><td>ночная небесная</td></tr><tr><th scope="row"><a href="#factory">Древняя фабрика</a></th><td>глубоко под землёй</td><td>Неизвестный компас</td><td>Предвестник</td><td>нет</td><td>техноорганическая</td></tr></tbody></table></div><h3>Как найти святилище</h3><p>Каждое святилище ищется своим предметом. Компас ведёт к храму, где бы тот ни стоял; карта показывает место, где святилище стояло, когда её сделали.</p>', 6)),
+        createVNode(_sfc_main$d, {
+          title: "Святилища",
+          icon: "night_seal"
+        }, {
+          default: withCtx(() => [..._cache[0] || (_cache[0] = [
+            createBaseVNode("p", { class: "lead" }, "Пять построек, каждая — в единственном экземпляре. Внутри ничего нельзя ломать и строить.", -1),
+            createBaseVNode("p", { class: "lead" }, [
+              createBaseVNode("b", null, "Внутри нет чужих"),
+              createTextVNode(": обычные мобы не появляются.")
+            ], -1),
+            createBaseVNode("p", { class: "lead" }, [
+              createBaseVNode("b", null, "Храмы кочуют"),
+              createTextVNode(": опустевшее святилище исчезает и встаёт в другом месте. Древняя фабрика стоит на месте, Тёмный храм приходит только ночью.")
+            ], -1)
+          ])]),
+          _: 1
+        }),
+        _cache[76] || (_cache[76] = createStaticVNode('<div class="flow" aria-label="Путь через святилище"><div class="step"><b>Вход</b><span>туннель, ступени или ворота</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Три комнаты</b><span>в каждой стража; с неё падают осколки</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Алтарь</b><span>откроется, когда падёт вся стража: эволюция, заточка, испытания</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Арена</b><span>испытание: пять волн, в пятой — страж</span></div></div><h3>Пять святилищ коротко</h3><div class="tbl"><table><thead><tr><th>Святилище</th><th>Где</th><th>Чем искать</th><th>Страж</th><th>Кочует</th><th>Кровь</th></tr></thead><tbody><tr><th scope="row"><a href="#forge">Незеритовая кузня</a></th><td>Незер, в толще незерака</td><td>Карта кузни</td><td>Горнило</td><td>да</td><td>пепельная</td></tr><tr><th scope="row"><a href="#temple">Небесный храм</a></th><td>верхний мир, остров на высоте 200</td><td>Компас воздуха</td><td>Серафим Падшего Рассвета</td><td>да, и рушится от Печати ночи</td><td>небесная</td></tr><tr><th scope="row"><a href="#jungle">Храм джунглей</a></th><td>джунгли</td><td>Карта джунглей</td><td>Древний страж джунглей</td><td>да</td><td>предков</td></tr><tr><th scope="row"><a href="#night">Тёмный храм</a></th><td>верхний мир, только ночью</td><td>Ночной компас</td><td>Пустотный Серафим (призыв)</td><td>каждую ночь на новом месте</td><td>ночная небесная</td></tr><tr><th scope="row"><a href="#factory">Древняя фабрика</a></th><td>глубоко под землёй</td><td>Неизвестный компас</td><td>Предвестник</td><td>нет</td><td>техноорганическая</td></tr></tbody></table></div><h3>Как найти святилище</h3><p>Каждое святилище ищется своим предметом. Компас ведёт к храму, где бы тот ни стоял; карта показывает место, где святилище стояло, когда её сделали.</p>', 5)),
         createBaseVNode("div", _hoisted_2$2, [
           createBaseVNode("div", _hoisted_3$2, [
-            createVNode(_sfc_main$i, {
+            createVNode(_sfc_main$m, {
               recipe: recipe("g:air_compass"),
               small: ""
             }, null, 8, ["recipe"]),
-            _cache[0] || (_cache[0] = createBaseVNode("div", null, [
+            _cache[1] || (_cache[1] = createBaseVNode("div", null, [
               createBaseVNode("h4", null, "Компас воздуха"),
               createBaseVNode("p", { class: "small muted" }, "Указывает на Небесный храм.")
             ], -1))
           ]),
           createBaseVNode("div", _hoisted_4$2, [
-            createVNode(_sfc_main$i, {
+            createVNode(_sfc_main$m, {
               recipe: recipe("g:forge_map"),
               small: ""
             }, null, 8, ["recipe"]),
-            _cache[1] || (_cache[1] = createBaseVNode("div", null, [
+            _cache[2] || (_cache[2] = createBaseVNode("div", null, [
               createBaseVNode("h4", null, "Карта кузни"),
               createBaseVNode("p", { class: "small muted" }, "Отмечает Незеритовую кузню.")
             ], -1))
           ]),
           createBaseVNode("div", _hoisted_5$2, [
-            createVNode(_sfc_main$i, {
+            createVNode(_sfc_main$m, {
               recipe: recipe("g:jungle_map"),
               small: ""
             }, null, 8, ["recipe"]),
-            _cache[2] || (_cache[2] = createBaseVNode("div", null, [
+            _cache[3] || (_cache[3] = createBaseVNode("div", null, [
               createBaseVNode("h4", null, "Карта джунглей"),
               createBaseVNode("p", { class: "small muted" }, "Отмечает Храм джунглей.")
             ], -1))
@@ -2025,7 +2595,7 @@ const _sfc_main$5 = {
                 alt: ""
               }, null, 8, _hoisted_8$2)
             ]),
-            _cache[3] || (_cache[3] = createBaseVNode("div", null, [
+            _cache[4] || (_cache[4] = createBaseVNode("div", null, [
               createBaseVNode("h4", null, "Неизвестный компас"),
               createBaseVNode("p", { class: "small" }, [
                 createTextVNode("Лежит в сундуках "),
@@ -2038,11 +2608,11 @@ const _sfc_main$5 = {
             ], -1))
           ]),
           createBaseVNode("div", _hoisted_9$2, [
-            createVNode(_sfc_main$i, {
+            createVNode(_sfc_main$m, {
               recipe: recipe("g:night_compass"),
               small: ""
             }, null, 8, ["recipe"]),
-            _cache[4] || (_cache[4] = createBaseVNode("div", null, [
+            _cache[5] || (_cache[5] = createBaseVNode("div", null, [
               createBaseVNode("h4", null, "Ночной компас"),
               createBaseVNode("p", { class: "small muted" }, "Указывает на Тёмный храм, пока тот стоит.")
             ], -1))
@@ -2052,9 +2622,9 @@ const _sfc_main$5 = {
               createBaseVNode("img", {
                 src: unref(data).icons.terra_compass,
                 alt: ""
-              }, null, 8, _hoisted_12$1)
+              }, null, 8, _hoisted_12$2)
             ]),
-            _cache[5] || (_cache[5] = createBaseVNode("div", null, [
+            _cache[6] || (_cache[6] = createBaseVNode("div", null, [
               createBaseVNode("h4", null, "Терра-компас"),
               createBaseVNode("p", { class: "small" }, [
                 createTextVNode("Собирает "),
@@ -2067,326 +2637,395 @@ const _sfc_main$5 = {
         ]),
         createBaseVNode("article", _hoisted_13$1, [
           createBaseVNode("figure", null, [
+            _cache[7] || (_cache[7] = createBaseVNode("span", {
+              class: "figure-title",
+              "aria-hidden": "true"
+            }, "Незеритовая кузня", -1)),
             createBaseVNode("img", {
               src: unref(data).images.forge,
               alt: "Незеритовая кузня: вид снаружи, разрез и план"
             }, null, 8, _hoisted_14$1),
-            _cache[6] || (_cache[6] = createBaseVNode("figcaption", null, "Снаружи · разрез · план", -1))
+            _cache[8] || (_cache[8] = createBaseVNode("figcaption", null, "Снаружи · разрез · план", -1))
           ]),
           createBaseVNode("div", _hoisted_15$1, [
             createBaseVNode("div", _hoisted_16, [
-              _cache[11] || (_cache[11] = createBaseVNode("div", { class: "sanctum-title" }, [
+              _cache[13] || (_cache[13] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Незеритовая кузня"),
                 createBaseVNode("span", { class: "pill" }, "Незер")
               ], -1)),
               createBaseVNode("dl", _hoisted_17, [
-                _cache[10] || (_cache[10] = createStaticVNode("<div><dt>Где</dt><dd>в Незере, внутри скалы</dd></div><div><dt>Внутри</dt><dd>вестибюль, кузнечный зал, арена и алтарная</dd></div><div><dt>Стража</dt><dd>скелеты-иссушители, ифриты, пиглины-громилы</dd></div><div><dt>Алтарь</dt><dd>испытания, эволюции, заточка и четвёртая форма пепельной крови</dd></div>", 4)),
+                _cache[12] || (_cache[12] = createStaticVNode("<div><dt>Где</dt><dd>в Незере, внутри скалы</dd></div><div><dt>Внутри</dt><dd>вестибюль, кузнечный зал, арена и алтарная</dd></div><div><dt>Стража</dt><dd>скелеты-иссушители, ифриты, пиглины-громилы</dd></div><div><dt>Алтарь</dt><dd>испытания, эволюции, заточка и четвёртая форма пепельной крови</dd></div>", 4)),
                 createBaseVNode("div", null, [
-                  _cache[9] || (_cache[9] = createBaseVNode("dt", null, "Добыча", -1)),
+                  _cache[11] || (_cache[11] = createBaseVNode("dt", null, "Добыча", -1)),
                   createBaseVNode("dd", _hoisted_18, [
                     createBaseVNode("img", {
                       src: unref(data).icons.soul_shard,
                       alt: ""
                     }, null, 8, _hoisted_19),
-                    _cache[7] || (_cache[7] = createTextVNode("Осколки души · ", -1)),
+                    _cache[9] || (_cache[9] = createTextVNode("Осколки души · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.forge_heart,
                       alt: ""
                     }, null, 8, _hoisted_20),
-                    _cache[8] || (_cache[8] = createTextVNode("Сердце кузни", -1))
+                    _cache[10] || (_cache[10] = createTextVNode("Сердце кузни", -1))
                   ])
                 ])
               ])
             ]),
-            _cache[12] || (_cache[12] = createStaticVNode('<div class="boss"><div class="boss-name">Горнило, кузнец Преисподней</div><div class="boss-stats"><span class="pill">400 здоровья</span><span class="pill">урон 7</span><span class="pill">броня 12</span><span class="pill">скелет-иссушитель</span></div><ul class="attacks"><li><b>Молот.</b> Прыгает к игроку; место посадки светится — уходите из круга, а после посадки бейте.</li><li><b>Огненное кольцо.</b> Катится по полу от босса — перепрыгивайте.</li><li><b>Извержение.</b> Из оранжевых кругов под бойцами бьёт лава — выйдите из них.</li><li><b>Подмастерья.</b> Зовёт скелетов-иссушителей.</li><li><b>Ярость.</b> Раненый — быстрее и сильнее.</li></ul></div>', 1))
+            createBaseVNode("div", _hoisted_21, [
+              createVNode(_sfc_main$6, {
+                name: "Горнило, кузнец Преисподней",
+                colour: "red"
+              }),
+              _cache[14] || (_cache[14] = createStaticVNode('<div class="boss-stats"><span class="pill">400 здоровья</span><span class="pill">урон 7</span><span class="pill">броня 12</span><span class="pill">скелет-иссушитель</span></div><ul class="attacks"><li><b>Молот.</b> Прыгает к игроку; место посадки светится — уходите из круга, а после посадки бейте.</li><li><b>Огненное кольцо.</b> Катится по полу от босса — перепрыгивайте.</li><li><b>Извержение.</b> Из оранжевых кругов под бойцами бьёт лава — выйдите из них.</li><li><b>Подмастерья.</b> Зовёт скелетов-иссушителей.</li><li><b>Ярость.</b> Раненый — быстрее и сильнее.</li></ul>', 2))
+            ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_21, [
+        createBaseVNode("article", _hoisted_22, [
           createBaseVNode("figure", null, [
+            _cache[15] || (_cache[15] = createBaseVNode("span", {
+              class: "figure-title",
+              "aria-hidden": "true"
+            }, "Небесный храм", -1)),
             createBaseVNode("img", {
               src: unref(data).images.temple,
               alt: "Небесный храм: вид снаружи, разрез и план"
-            }, null, 8, _hoisted_22),
-            _cache[13] || (_cache[13] = createBaseVNode("figcaption", null, "Снаружи · разрез · план", -1))
+            }, null, 8, _hoisted_23),
+            _cache[16] || (_cache[16] = createBaseVNode("figcaption", null, "Снаружи · разрез · план", -1))
           ]),
-          createBaseVNode("div", _hoisted_23, [
-            createBaseVNode("div", _hoisted_24, [
-              _cache[19] || (_cache[19] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_24, [
+            createBaseVNode("div", _hoisted_25, [
+              _cache[22] || (_cache[22] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Небесный храм"),
                 createBaseVNode("span", { class: "pill" }, "верхний мир")
               ], -1)),
-              createBaseVNode("dl", _hoisted_25, [
-                _cache[18] || (_cache[18] = createStaticVNode("<div><dt>Где</dt><dd>летающий остров высоко в небе</dd></div><div><dt>Внутри</dt><dd>колоннада, неф с колокольнями и ротонда с алтарём</dd></div><div><dt>Путь наверх</dt><dd>поток ветра у Врат ветра</dd></div><div><dt>Стража</dt><dd>зимогоры и поборники в золоте</dd></div><div><dt>Алтарь</dt><dd>испытания, ковка, заточка и пробуждение небесных клинков</dd></div>", 5)),
+              createBaseVNode("dl", _hoisted_26, [
+                _cache[21] || (_cache[21] = createStaticVNode("<div><dt>Где</dt><dd>летающий остров высоко в небе</dd></div><div><dt>Внутри</dt><dd>колоннада, неф с колокольнями и ротонда с алтарём</dd></div><div><dt>Путь наверх</dt><dd>поток ветра у Врат ветра</dd></div><div><dt>Стража</dt><dd>зимогоры и поборники в золоте</dd></div><div><dt>Алтарь</dt><dd>испытания, ковка, заточка и пробуждение небесных клинков</dd></div>", 5)),
                 createBaseVNode("div", null, [
-                  _cache[17] || (_cache[17] = createBaseVNode("dt", null, "Добыча", -1)),
-                  createBaseVNode("dd", _hoisted_26, [
+                  _cache[20] || (_cache[20] = createBaseVNode("dt", null, "Добыча", -1)),
+                  createBaseVNode("dd", _hoisted_27, [
                     createBaseVNode("img", {
                       src: unref(data).icons.celestial_shard,
                       alt: ""
-                    }, null, 8, _hoisted_27),
-                    _cache[14] || (_cache[14] = createTextVNode("Небесные осколки · ", -1)),
+                    }, null, 8, _hoisted_28),
+                    _cache[17] || (_cache[17] = createTextVNode("Небесные осколки · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.seraph_feather,
                       alt: ""
-                    }, null, 8, _hoisted_28),
-                    _cache[15] || (_cache[15] = createTextVNode("Перо серафима · ", -1)),
+                    }, null, 8, _hoisted_29),
+                    _cache[18] || (_cache[18] = createTextVNode("Перо серафима · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.night_seal,
                       alt: ""
-                    }, null, 8, _hoisted_29),
-                    _cache[16] || (_cache[16] = createTextVNode("Печать ночи", -1))
+                    }, null, 8, _hoisted_30),
+                    _cache[19] || (_cache[19] = createTextVNode("Печать ночи", -1))
                   ])
                 ])
               ])
             ]),
-            _cache[20] || (_cache[20] = createStaticVNode('<div class="boss"><div class="boss-name">Серафим Падшего Рассвета</div><div class="boss-stats"><span class="pill">450 здоровья</span><span class="pill">броня 8</span><span class="pill">иллюзор</span></div><ul class="attacks"><li><b>Печать ночи.</b> Падает с него в третьем испытании.</li><li><b>Суд.</b> В столбы света бьёт молния — выйдите из света.</li><li><b>Перья.</b> На золотые кольца падает залп стрел — выйдите из кольца.</li><li><b>Щит рассвета.</b> Неуязвим, пока живы призванные стражи.</li><li><b>Лучи рассвета.</b> Лучи обходят его кругом — перепрыгивайте их.</li><li><b>Мерцание.</b> Переносится по двору.</li></ul></div>', 1))
+            createBaseVNode("div", _hoisted_31, [
+              createVNode(_sfc_main$6, {
+                name: "Серафим Падшего Рассвета",
+                colour: "white"
+              }),
+              _cache[23] || (_cache[23] = createStaticVNode('<div class="boss-stats"><span class="pill">450 здоровья</span><span class="pill">броня 8</span><span class="pill">иллюзор</span></div><ul class="attacks"><li><b>Печать ночи.</b> Падает с него в третьем испытании.</li><li><b>Суд.</b> В столбы света бьёт молния — выйдите из света.</li><li><b>Перья.</b> На золотые кольца падает залп стрел — выйдите из кольца.</li><li><b>Щит рассвета.</b> Неуязвим, пока живы призванные стражи.</li><li><b>Лучи рассвета.</b> Лучи обходят его кругом — перепрыгивайте их.</li><li><b>Мерцание.</b> Переносится по двору.</li></ul>', 2))
+            ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_30, [
+        createBaseVNode("article", _hoisted_32, [
           createBaseVNode("figure", null, [
+            _cache[24] || (_cache[24] = createBaseVNode("span", {
+              class: "figure-title",
+              "aria-hidden": "true"
+            }, "Храм джунглей", -1)),
             createBaseVNode("img", {
               src: unref(data).images.jungle,
               alt: "Храм джунглей: вид снаружи, разрез, план залов и план лабиринта"
-            }, null, 8, _hoisted_31),
-            _cache[21] || (_cache[21] = createBaseVNode("figcaption", null, "Снаружи · разрез · план залов · лабиринт", -1))
+            }, null, 8, _hoisted_33),
+            _cache[25] || (_cache[25] = createBaseVNode("figcaption", null, "Снаружи · разрез · план залов · лабиринт", -1))
           ]),
-          createBaseVNode("div", _hoisted_32, [
-            createBaseVNode("div", _hoisted_33, [
-              _cache[26] || (_cache[26] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_34, [
+            createBaseVNode("div", _hoisted_35, [
+              _cache[30] || (_cache[30] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Храм джунглей"),
                 createBaseVNode("span", { class: "pill" }, "джунгли")
               ], -1)),
-              createBaseVNode("dl", _hoisted_34, [
-                _cache[25] || (_cache[25] = createStaticVNode("<div><dt>Где</dt><dd>ступенчатая пирамида в джунглях</dd></div><div><dt>Внутри</dt><dd>большой зал, арена и алтарная комната</dd></div><div><dt>Стража</dt><dd>болотники, пещерные пауки, пауки, ведьмы</dd></div><div><dt>Алтарь</dt><dd>испытания, ковка Терра-блейда и Энигмы, четвёртая форма крови предков</dd></div>", 4)),
+              createBaseVNode("dl", _hoisted_36, [
+                _cache[29] || (_cache[29] = createStaticVNode("<div><dt>Где</dt><dd>ступенчатая пирамида в джунглях</dd></div><div><dt>Внутри</dt><dd>большой зал, арена и алтарная комната</dd></div><div><dt>Стража</dt><dd>болотники, пещерные пауки, пауки, ведьмы</dd></div><div><dt>Алтарь</dt><dd>испытания, ковка Терра-блейда и Энигмы, четвёртая форма крови предков</dd></div>", 4)),
                 createBaseVNode("div", null, [
-                  _cache[24] || (_cache[24] = createBaseVNode("dt", null, "Добыча", -1)),
-                  createBaseVNode("dd", _hoisted_35, [
+                  _cache[28] || (_cache[28] = createBaseVNode("dt", null, "Добыча", -1)),
+                  createBaseVNode("dd", _hoisted_37, [
                     createBaseVNode("img", {
                       src: unref(data).icons.jungle_shard,
                       alt: ""
-                    }, null, 8, _hoisted_36),
-                    _cache[22] || (_cache[22] = createTextVNode("Реликтовые осколки · ", -1)),
+                    }, null, 8, _hoisted_38),
+                    _cache[26] || (_cache[26] = createTextVNode("Реликтовые осколки · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.jungle_heart,
                       alt: ""
-                    }, null, 8, _hoisted_37),
-                    _cache[23] || (_cache[23] = createTextVNode("Сердце джунглей", -1))
+                    }, null, 8, _hoisted_39),
+                    _cache[27] || (_cache[27] = createTextVNode("Сердце джунглей", -1))
                   ])
                 ])
               ]),
-              _cache[27] || (_cache[27] = createBaseVNode("p", { class: "sleeping" }, "Алтарь куёт и проводит испытания, но заточки и пробуждения терра-клинков здесь пока нет.", -1))
+              _cache[31] || (_cache[31] = createBaseVNode("p", { class: "sleeping" }, "Алтарь куёт и проводит испытания, но заточки и пробуждения терра-клинков здесь пока нет.", -1))
             ]),
-            _cache[28] || (_cache[28] = createStaticVNode('<div class="boss"><div class="boss-name">Древний страж джунглей</div><div class="boss-stats"><span class="pill">550 здоровья</span><span class="pill">урон 16</span><span class="pill">броня 10</span><span class="pill">разоритель</span></div><ul class="attacks"><li><b>Землетрясение.</b> Подбрасывает всех на земле рядом.</li><li><b>Корни.</b> Под бойцами сжимаются зелёные кольца — выйдите из них, пока из пола не вырвались корни.</li><li><b>Споры.</b> Ядовитое облако вокруг босса — успейте выйти.</li><li><b>Таран.</b> Мчится по зелёной линии — сойдите с неё; врезавшись в стену, уязвим.</li><li><b>Зов и натиск.</b> Зовёт обитателей храма; раненый таранит чаще.</li></ul></div>', 1))
+            createBaseVNode("div", _hoisted_40, [
+              createVNode(_sfc_main$6, {
+                name: "Древний страж джунглей",
+                colour: "green"
+              }),
+              _cache[32] || (_cache[32] = createStaticVNode('<div class="boss-stats"><span class="pill">550 здоровья</span><span class="pill">урон 16</span><span class="pill">броня 10</span><span class="pill">разоритель</span></div><ul class="attacks"><li><b>Землетрясение.</b> Подбрасывает всех на земле рядом.</li><li><b>Корни.</b> Под бойцами сжимаются зелёные кольца — выйдите из них, пока из пола не вырвались корни.</li><li><b>Споры.</b> Ядовитое облако вокруг босса — успейте выйти.</li><li><b>Таран.</b> Мчится по зелёной линии — сойдите с неё; врезавшись в стену, уязвим.</li><li><b>Зов и натиск.</b> Зовёт обитателей храма; раненый таранит чаще.</li></ul>', 2))
+            ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_38, [
+        createBaseVNode("article", _hoisted_41, [
           createBaseVNode("figure", null, [
+            _cache[33] || (_cache[33] = createBaseVNode("span", {
+              class: "figure-title",
+              "aria-hidden": "true"
+            }, "Тёмный храм", -1)),
             createBaseVNode("img", {
               src: unref(data).images.night,
               alt: "Тёмный храм: вид снаружи, разрез и план"
-            }, null, 8, _hoisted_39),
-            _cache[29] || (_cache[29] = createBaseVNode("figcaption", null, "Тёмный храм", -1))
+            }, null, 8, _hoisted_42),
+            _cache[34] || (_cache[34] = createBaseVNode("figcaption", null, "Тёмный храм", -1))
           ]),
-          createBaseVNode("div", _hoisted_40, [
-            createBaseVNode("div", _hoisted_41, [
-              _cache[33] || (_cache[33] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_43, [
+            createBaseVNode("div", _hoisted_44, [
+              _cache[38] || (_cache[38] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Тёмный храм"),
                 createBaseVNode("span", { class: "pill" }, "только ночью")
               ], -1)),
-              createBaseVNode("dl", _hoisted_42, [
-                _cache[32] || (_cache[32] = createStaticVNode("<div><dt>Когда</dt><dd>после того как сломали Печать ночи — каждую ночь в новом месте</dd></div><div><dt>Какой</dt><dd>тёмная тень Небесного храма</dd></div><div><dt>Стража</dt><dd>стражи полуночи</dd></div><div><dt>Алтарь</dt><dd>ночная ковка, заточка, призыв Пустотного Серафима</dd></div>", 4)),
+              createBaseVNode("dl", _hoisted_45, [
+                _cache[37] || (_cache[37] = createStaticVNode("<div><dt>Когда</dt><dd>после того как сломали Печать ночи — каждую ночь в новом месте</dd></div><div><dt>Какой</dt><dd>тёмная тень Небесного храма</dd></div><div><dt>Стража</dt><dd>стражи полуночи</dd></div><div><dt>Алтарь</dt><dd>ночная ковка, заточка, призыв Пустотного Серафима</dd></div>", 4)),
                 createBaseVNode("div", null, [
-                  _cache[31] || (_cache[31] = createBaseVNode("dt", null, "Добыча", -1)),
-                  createBaseVNode("dd", _hoisted_43, [
+                  _cache[36] || (_cache[36] = createBaseVNode("dt", null, "Добыча", -1)),
+                  createBaseVNode("dd", _hoisted_46, [
                     createBaseVNode("img", {
                       src: unref(data).icons.celestial_shard,
                       alt: ""
-                    }, null, 8, _hoisted_44),
-                    _cache[30] || (_cache[30] = createTextVNode("Небесные осколки со стражи и с Пустотного Серафима", -1))
+                    }, null, 8, _hoisted_47),
+                    _cache[35] || (_cache[35] = createTextVNode("Небесные осколки со стражи и с Пустотного Серафима", -1))
                   ])
                 ])
               ])
             ]),
-            _cache[34] || (_cache[34] = createStaticVNode('<div class="boss"><div class="boss-name">Пустотный Серафим</div><div class="boss-stats"><span class="pill">700 здоровья</span><span class="pill">урон 13</span><span class="pill">броня 10</span><span class="pill">эндермен</span></div><ul class="attacks"><li><b>Призыв.</b> Его зовут на алтаре. Призвавшему ночной крови третьей формы победа даёт четвёртую форму.</li><li><b>Щит ударов.</b> Снимается числом ударов, а не силой.</li><li><b>Головы пустоты.</b> Пока живы головы, Серафим получает меньше урона — фиолетовые нити ведут к ним.</li><li><b>Глиф.</b> Встаньте в круг упавшего маяка, иначе взрыв.</li><li><b>Лучи разбитого сердца.</b> Лучи обходят его кругом — прыгайте.</li><li><b>Шаг сквозь пустоту.</b> Встаёт за спиной — выйдите из фиолетового кольца.</li></ul></div>', 1))
+            createBaseVNode("div", _hoisted_48, [
+              createVNode(_sfc_main$6, {
+                name: "Пустотный Серафим",
+                colour: "purple"
+              }),
+              _cache[39] || (_cache[39] = createStaticVNode('<div class="boss-stats"><span class="pill">700 здоровья</span><span class="pill">урон 13</span><span class="pill">броня 10</span><span class="pill">эндермен</span></div><ul class="attacks"><li><b>Призыв.</b> Его зовут на алтаре. Призвавшему ночной крови третьей формы победа даёт четвёртую форму.</li><li><b>Щит ударов.</b> Снимается числом ударов, а не силой.</li><li><b>Головы пустоты.</b> Пока живы головы, Серафим получает меньше урона — фиолетовые нити ведут к ним.</li><li><b>Глиф.</b> Встаньте в круг упавшего маяка, иначе взрыв.</li><li><b>Лучи разбитого сердца.</b> Лучи обходят его кругом — прыгайте.</li><li><b>Шаг сквозь пустоту.</b> Встаёт за спиной — выйдите из фиолетового кольца.</li></ul>', 2))
+            ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_45, [
+        createBaseVNode("article", _hoisted_49, [
           createBaseVNode("figure", null, [
+            _cache[40] || (_cache[40] = createBaseVNode("span", {
+              class: "figure-title",
+              "aria-hidden": "true"
+            }, "Древняя фабрика", -1)),
             createBaseVNode("img", {
               src: unref(data).images.factory,
               alt: "Древняя фабрика: пещера без потолка, разрез и план"
-            }, null, 8, _hoisted_46),
-            _cache[35] || (_cache[35] = createBaseVNode("figcaption", null, "Пещера без потолка · разрез · план", -1))
+            }, null, 8, _hoisted_50),
+            _cache[41] || (_cache[41] = createBaseVNode("figcaption", null, "Пещера без потолка · разрез · план", -1))
           ]),
-          createBaseVNode("div", _hoisted_47, [
-            createBaseVNode("div", _hoisted_48, [
-              _cache[40] || (_cache[40] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_51, [
+            createBaseVNode("div", _hoisted_52, [
+              _cache[46] || (_cache[46] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Древняя фабрика"),
                 createBaseVNode("span", { class: "pill" }, "под землёй")
               ], -1)),
-              createBaseVNode("dl", _hoisted_49, [
-                _cache[39] || (_cache[39] = createStaticVNode("<div><dt>Где</dt><dd>глубоко под землёй. Путь укажет Неизвестный компас</dd></div><div><dt>Внутри</dt><dd>огромный цех: погрузочный и сборочный залы, реактор и пульт управления</dd></div><div><dt>Стража</dt><dd>автоматоны и летучие дроны</dd></div><div><dt>Терминал</dt><dd>запуск Предвестника, рейды, техноорганический вирус, сборка машин</dd></div>", 4)),
+              createBaseVNode("dl", _hoisted_53, [
+                _cache[45] || (_cache[45] = createStaticVNode("<div><dt>Где</dt><dd>глубоко под землёй. Путь укажет Неизвестный компас</dd></div><div><dt>Внутри</dt><dd>огромный цех: погрузочный и сборочный залы, реактор и пульт управления</dd></div><div><dt>Стража</dt><dd>автоматоны и летучие дроны</dd></div><div><dt>Терминал</dt><dd>запуск Предвестника, рейды, техноорганический вирус, сборка машин</dd></div>", 4)),
                 createBaseVNode("div", null, [
-                  _cache[38] || (_cache[38] = createBaseVNode("dt", null, "Добыча", -1)),
-                  createBaseVNode("dd", _hoisted_50, [
+                  _cache[44] || (_cache[44] = createBaseVNode("dt", null, "Добыча", -1)),
+                  createBaseVNode("dd", _hoisted_54, [
                     createBaseVNode("img", {
                       src: unref(data).icons.ancient_part,
                       alt: ""
-                    }, null, 8, _hoisted_51),
-                    _cache[36] || (_cache[36] = createTextVNode("Древние детали · ", -1)),
+                    }, null, 8, _hoisted_55),
+                    _cache[42] || (_cache[42] = createTextVNode("Древние детали · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.harbinger_core,
                       alt: ""
-                    }, null, 8, _hoisted_52),
-                    _cache[37] || (_cache[37] = createTextVNode("Ядро Предвестника", -1))
+                    }, null, 8, _hoisted_56),
+                    _cache[43] || (_cache[43] = createTextVNode("Ядро Предвестника", -1))
                   ])
                 ])
               ])
             ]),
-            _cache[41] || (_cache[41] = createStaticVNode('<div class="boss"><div class="boss-name">Предвестник</div><div class="boss-stats"><span class="pill">600 здоровья</span><span class="pill">урон 18</span><span class="pill">броня 14</span><span class="pill">железный голем</span></div><ul class="attacks"><li><b>Запуск.</b> В первый раз встаёт сам, потом его запускают на терминале.</li><li><b>Павшим вход закрыт</b> до конца боя.</li><li><b>Луч смерти.</b> Красная линия желтеет и стреляет — сойдите с неё или спрячьтесь за стену.</li><li><b>Ракеты.</b> Падают в оранжевые кольца.</li><li><b>Магнитный импульс.</b> Тянет к себе и разряжается — бегите против тяги, после разряда бейте.</li><li><b>Дроны.</b> Зовёт подмогу.</li><li><b>Перегрузка.</b> Раненый — быстрее и бьёт током всех рядом.</li></ul></div>', 1))
+            createBaseVNode("div", _hoisted_57, [
+              createVNode(_sfc_main$6, {
+                name: "Предвестник",
+                colour: "blue"
+              }),
+              _cache[47] || (_cache[47] = createStaticVNode('<div class="boss-stats"><span class="pill">600 здоровья</span><span class="pill">урон 18</span><span class="pill">броня 14</span><span class="pill">железный голем</span></div><ul class="attacks"><li><b>Запуск.</b> В первый раз встаёт сам, потом его запускают на терминале.</li><li><b>Павшим вход закрыт</b> до конца боя.</li><li><b>Луч смерти.</b> Красная линия желтеет и стреляет — сойдите с неё или спрячьтесь за стену.</li><li><b>Ракеты.</b> Падают в оранжевые кольца.</li><li><b>Магнитный импульс.</b> Тянет к себе и разряжается — бегите против тяги, после разряда бейте.</li><li><b>Дроны.</b> Зовёт подмогу.</li><li><b>Перегрузка.</b> Раненый — быстрее и бьёт током всех рядом.</li></ul>', 2))
+            ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_53, [
+        createBaseVNode("article", _hoisted_58, [
           createBaseVNode("figure", null, [
+            _cache[48] || (_cache[48] = createBaseVNode("span", {
+              class: "figure-title",
+              "aria-hidden": "true"
+            }, "Проклятый замок", -1)),
             createBaseVNode("img", {
               src: unref(data).images.castle,
               alt: "Проклятый замок на бедроковой крыше Незера"
-            }, null, 8, _hoisted_54),
-            _cache[42] || (_cache[42] = createBaseVNode("figcaption", null, "Проклятый замок", -1))
+            }, null, 8, _hoisted_59),
+            _cache[49] || (_cache[49] = createBaseVNode("figcaption", null, "Проклятый замок", -1))
           ]),
-          createBaseVNode("div", _hoisted_55, [
-            createBaseVNode("div", _hoisted_56, [
-              _cache[48] || (_cache[48] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_60, [
+            createBaseVNode("div", _hoisted_61, [
+              _cache[55] || (_cache[55] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Проклятый замок"),
                 createBaseVNode("span", { class: "pill" }, "крыша Незера")
               ], -1)),
-              createBaseVNode("dl", _hoisted_57, [
-                _cache[47] || (_cache[47] = createStaticVNode("<div><dt>Как найти</dt><dd>с третьей формы крови: на крыше Незера нажмите ПКМ Душой демона — она полетит к замку, как око Края. Замок встаёт к северу, воротами к вам</dd></div><div><dt>Где</dt><dd>на крыше Незера; один на сервер</dd></div><div><dt>Исчезает</dt><dd>опустевший замок растворяется, следующая душа найдёт новый. Король пробуждается в замке лишь однажды</dd></div><div><dt>Город</dt><dd>дома, рынок и таверна подданных короля</dd></div><div><dt>Жители</dt><dd>пока король жив, в замке появляются пиглины</dd></div><div><dt>Часовая башня</dt><dd>в атриуме висит Адская сущность; её охраняют Стражи пекла. Пока жив хоть один, поле не подпускает. В инвентаре сущность поджигает носителя</dd></div><div><dt>Донжон</dt><dd>большой зал, библиотека, спальня и тронный зал</dd></div><div><dt>Стража</dt><dd>пиглины-громилы и чемпионы: Мечники Бедствия и Берсерки короля</dd></div>", 8)),
+              createBaseVNode("dl", _hoisted_62, [
+                _cache[54] || (_cache[54] = createStaticVNode("<div><dt>Как найти</dt><dd>с третьей формы крови: на крыше Незера нажмите ПКМ Душой демона — она полетит к замку, как око Края. Замок встаёт к северу, воротами к вам</dd></div><div><dt>Где</dt><dd>на крыше Незера; один на сервер</dd></div><div><dt>Исчезает</dt><dd>опустевший замок растворяется, следующая душа найдёт новый. Король пробуждается в замке лишь однажды</dd></div><div><dt>Город</dt><dd>дома, рынок и таверна подданных короля</dd></div><div><dt>Жители</dt><dd>пока король жив, в замке появляются пиглины</dd></div><div><dt>Часовая башня</dt><dd>в атриуме висит Адская сущность; её охраняют Стражи пекла. Пока жив хоть один, поле не подпускает. В инвентаре сущность поджигает носителя</dd></div><div><dt>Донжон</dt><dd>большой зал, библиотека, спальня и тронный зал</dd></div><div><dt>Стража</dt><dd>пиглины-громилы и чемпионы: Мечники Бедствия и Берсерки короля</dd></div>", 8)),
                 createBaseVNode("div", null, [
-                  _cache[46] || (_cache[46] = createBaseVNode("dt", null, "Добыча", -1)),
-                  createBaseVNode("dd", _hoisted_58, [
+                  _cache[53] || (_cache[53] = createBaseVNode("dt", null, "Добыча", -1)),
+                  createBaseVNode("dd", _hoisted_63, [
                     createBaseVNode("img", {
                       src: unref(data).icons.black_substance,
                       alt: ""
-                    }, null, 8, _hoisted_59),
-                    _cache[43] || (_cache[43] = createTextVNode("Чёрная субстанция в рамке над троном · ", -1)),
+                    }, null, 8, _hoisted_64),
+                    _cache[50] || (_cache[50] = createTextVNode("Чёрная субстанция в рамке над троном · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.hell_essence,
                       alt: ""
-                    }, null, 8, _hoisted_60),
-                    _cache[44] || (_cache[44] = createTextVNode("Адская сущность в часовой башне · Призрачный страж в сокровищнице · ", -1)),
+                    }, null, 8, _hoisted_65),
+                    _cache[51] || (_cache[51] = createTextVNode("Адская сущность в часовой башне · Призрачный страж в сокровищнице · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.royal_clock,
                       alt: ""
-                    }, null, 8, _hoisted_61),
-                    _cache[45] || (_cache[45] = createTextVNode("Королевские часы с короля · сундуки с сокровищами", -1))
+                    }, null, 8, _hoisted_66),
+                    _cache[52] || (_cache[52] = createTextVNode("Королевские часы с короля · сундуки с сокровищами", -1))
                   ])
                 ])
               ])
             ]),
-            _cache[49] || (_cache[49] = createStaticVNode('<div class="boss"><div class="boss-name">Проклятый король</div><div class="boss-stats"><span class="pill">1200 здоровья</span><span class="pill">урон 10</span><span class="pill">броня 12</span><span class="pill">пиглин-громила</span></div><ul class="attacks"><li><b>Тронный зал.</b> Колонны — укрытие от указа. Пока король жив, субстанцию не снять; потом её достаёт любой, встав на трон.</li><li><b>Акт I. Удар короны.</b> Выйдите из золотого веера или зайдите за спину.</li><li><b>Рывок.</b> Несётся по золотой линии, потом уязвим.</li><li><b>Золото.</b> В круги рушится золото.</li><li><b>Указ.</b> Тянет к ногам всех на виду — спасают расстояние и колонны.</li><li><b>Бросок топора.</b> Топор летит по золотой дорожке и возвращается — сойдите с неё.</li><li><b>Поступь.</b> По полу бегут золотые волны — перепрыгивайте.</li><li><b>Акт II. Золотой бастион.</b> Король на троне под щитом, который считает удары, — бейте часто. С ворот идёт подмога, с трона летят копья.</li><li><b>Акт III. Проклятие короны.</b> Ярость. <b>Проклятие</b> жжёт края зала — бегите в середину. <b>Казнь</b>: прыгает на самого слабого.</li><li><b>Рог.</b> В третьем акте весь замок бежит в тронный зал. Когда король падает, его народ теряет волю.</li><li><b>Дань.</b> Подданные в зале лечат короля — бейте сначала их.</li></ul></div>', 1))
+            createBaseVNode("div", _hoisted_67, [
+              createVNode(_sfc_main$6, {
+                name: "Проклятый король",
+                colour: "red"
+              }),
+              _cache[56] || (_cache[56] = createStaticVNode('<div class="boss-stats"><span class="pill">1200 здоровья</span><span class="pill">урон 10</span><span class="pill">броня 12</span><span class="pill">пиглин-громила</span></div><ul class="attacks"><li><b>Тронный зал.</b> Колонны — укрытие от указа. Пока король жив, субстанцию не снять; потом её достаёт любой, встав на трон.</li><li><b>Акт I. Удар короны.</b> Выйдите из золотого веера или зайдите за спину.</li><li><b>Рывок.</b> Несётся по золотой линии, потом уязвим.</li><li><b>Золото.</b> В круги рушится золото.</li><li><b>Указ.</b> Тянет к ногам всех на виду — спасают расстояние и колонны.</li><li><b>Бросок топора.</b> Топор летит по золотой дорожке и возвращается — сойдите с неё.</li><li><b>Поступь.</b> По полу бегут золотые волны — перепрыгивайте.</li><li><b>Акт II. Золотой бастион.</b> Король на троне под щитом, который считает удары, — бейте часто. С ворот идёт подмога, с трона летят копья.</li><li><b>Акт III. Проклятие короны.</b> Ярость. <b>Проклятие</b> жжёт края зала — бегите в середину. <b>Казнь</b>: прыгает на самого слабого.</li><li><b>Рог.</b> В третьем акте весь замок бежит в тронный зал. Когда король падает, его народ теряет волю.</li><li><b>Дань.</b> Подданные в зале лечат короля — бейте сначала их.</li></ul>', 2))
+            ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_62, [
-          createBaseVNode("figure", _hoisted_63, [
-            createBaseVNode("div", _hoisted_64, [
+        createBaseVNode("article", _hoisted_68, [
+          createBaseVNode("figure", _hoisted_69, [
+            createBaseVNode("div", _hoisted_70, [
               (openBlock(), createElementBlock(Fragment, null, renderList(["green", "blue", "orange", "purple", "red", "gray"], (c) => {
                 return createBaseVNode("img", {
                   key: c,
                   src: unref(data).icons["wanderer_cube_" + c],
                   alt: c
-                }, null, 8, _hoisted_65);
+                }, null, 8, _hoisted_71);
               }), 64))
             ]),
-            _cache[50] || (_cache[50] = createBaseVNode("figcaption", null, "Цвет Тессеракта подсказывает, что он сделает", -1))
+            _cache[57] || (_cache[57] = createBaseVNode("figcaption", null, "Цвет Тессеракта подсказывает, что он сделает", -1))
           ]),
-          createBaseVNode("div", _hoisted_66, [
-            createBaseVNode("div", _hoisted_67, [
-              _cache[56] || (_cache[56] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_72, [
+            createBaseVNode("div", _hoisted_73, [
+              _cache[63] || (_cache[63] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Тессеракт"),
                 createBaseVNode("span", { class: "pill" }, "любая кровь")
               ], -1)),
-              createBaseVNode("dl", _hoisted_68, [
+              createBaseVNode("dl", _hoisted_74, [
                 createBaseVNode("div", null, [
-                  _cache[54] || (_cache[54] = createBaseVNode("dt", null, "Крафт", -1)),
-                  createBaseVNode("dd", _hoisted_69, [
-                    _cache[51] || (_cache[51] = createTextVNode("верстак: ", -1)),
+                  _cache[61] || (_cache[61] = createBaseVNode("dt", null, "Крафт", -1)),
+                  createBaseVNode("dd", _hoisted_75, [
+                    _cache[58] || (_cache[58] = createTextVNode("верстак: ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.terra_essence,
                       alt: ""
-                    }, null, 8, _hoisted_70),
-                    _cache[52] || (_cache[52] = createTextVNode("Терра-сущность, ", -1)),
+                    }, null, 8, _hoisted_76),
+                    _cache[59] || (_cache[59] = createTextVNode("Терра-сущность, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.hell_essence,
                       alt: ""
-                    }, null, 8, _hoisted_71),
-                    _cache[53] || (_cache[53] = createTextVNode("Адская сущность, звезда Незера и плачущий обсидиан", -1))
+                    }, null, 8, _hoisted_77),
+                    _cache[60] || (_cache[60] = createTextVNode("Адская сущность, звезда Незера и плачущий обсидиан", -1))
                   ])
                 ]),
-                _cache[55] || (_cache[55] = createStaticVNode("<div><dt>Как работает</dt><dd>правый клик; что он сделает, видно по цвету</dd></div><div><dt>Красный</dt><dd>вы стоите в чужом куполе — Сделке с дьяволом, Тёмной территории, Сборочном куполе, Огненном эдикте или Мировом Господстве — либо рядом с тем, кто вытянул чужую Луну: тессеракт развеивает это</dd></div><div><dt>Зелёный</dt><dd>здоровье не полное: лечит вас и своих рядом</dd></div><div><dt>Голубой</dt><dd>полное здоровье, обычный мир: перенос к случайному храму</dd></div><div><dt>Оранжевый</dt><dd>полное здоровье, Незер: перенос к Незеритовой кузне</dd></div><div><dt>Фиолетовый</dt><dd>полное здоровье, Энд: перенос к точке возрождения</dd></div><div><dt>Перенос</dt><dd>забирает всех живых рядом; из арены испытания не уводит</dd></div>", 7))
+                _cache[62] || (_cache[62] = createStaticVNode("<div><dt>Как работает</dt><dd>правый клик; что он сделает, видно по цвету</dd></div><div><dt>Красный</dt><dd>вы стоите в чужом куполе — Сделке с дьяволом, Тёмной территории, Сборочном куполе, Огненном эдикте или Мировом Господстве — либо рядом с тем, кто вытянул чужую Луну: тессеракт развеивает это</dd></div><div><dt>Зелёный</dt><dd>здоровье не полное: лечит вас и своих рядом</dd></div><div><dt>Голубой</dt><dd>полное здоровье, обычный мир: перенос к случайному храму</dd></div><div><dt>Оранжевый</dt><dd>полное здоровье, Незер: перенос к Незеритовой кузне</dd></div><div><dt>Фиолетовый</dt><dd>полное здоровье, Энд: перенос к точке возрождения</dd></div><div><dt>Перенос</dt><dd>забирает всех живых рядом; из арены испытания не уводит</dd></div>", 7))
               ])
             ])
           ])
         ]),
-        _cache[69] || (_cache[69] = createBaseVNode("div", { class: "prose small" }, [
+        _cache[77] || (_cache[77] = createBaseVNode("div", { class: "prose small" }, [
           createBaseVNode("p", null, [
             createBaseVNode("b", null, "Королевские часы"),
             createTextVNode(" работают как тотем бессмертия и, спасая от смерти, ненадолго останавливают время вокруг.")
           ])
         ], -1)),
-        createBaseVNode("article", _hoisted_72, [
-          createBaseVNode("figure", _hoisted_73, [
+        createBaseVNode("article", _hoisted_78, [
+          createBaseVNode("figure", _hoisted_79, [
             createBaseVNode("img", {
               src: unref(data).icons.terra_essence,
               alt: "Терра-сущность"
-            }, null, 8, _hoisted_74),
-            _cache[57] || (_cache[57] = createBaseVNode("figcaption", null, "Терра-сущность", -1))
+            }, null, 8, _hoisted_80),
+            _cache[64] || (_cache[64] = createBaseVNode("figcaption", null, "Терра-сущность", -1))
           ]),
-          createBaseVNode("div", _hoisted_75, [
-            createBaseVNode("div", _hoisted_76, [
-              _cache[66] || (_cache[66] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_81, [
+            createBaseVNode("div", _hoisted_82, [
+              _cache[73] || (_cache[73] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Терра-подземелье"),
                 createBaseVNode("span", { class: "pill" }, "под землёй")
               ], -1)),
-              createBaseVNode("dl", _hoisted_77, [
+              createBaseVNode("dl", _hoisted_83, [
                 createBaseVNode("div", null, [
-                  _cache[59] || (_cache[59] = createBaseVNode("dt", null, "Как найти", -1)),
-                  createBaseVNode("dd", _hoisted_78, [
+                  _cache[66] || (_cache[66] = createBaseVNode("dt", null, "Как найти", -1)),
+                  createBaseVNode("dd", _hoisted_84, [
                     createBaseVNode("img", {
                       src: unref(data).icons.terra_compass,
                       alt: ""
-                    }, null, 8, _hoisted_79),
-                    _cache[58] || (_cache[58] = createTextVNode("Терра-компас; копайте к шахте, на которую он указывает", -1))
+                    }, null, 8, _hoisted_85),
+                    _cache[65] || (_cache[65] = createTextVNode("Терра-компас; копайте к шахте, на которую он указывает", -1))
                   ])
                 ]),
-                _cache[65] || (_cache[65] = createStaticVNode("<div><dt>Где</dt><dd>верхний мир, глубоко под землёй; одно на сервер</dd></div><div><dt>Исчезает</dt><dd>когда все игроки его покинули; вернётся через несколько игровых суток в другом месте</dd></div><div><dt>Загадки</dt><dd>рычаги, кнопки и ловушки; дальний зал открывается загадками</dd></div><div><dt>Библиотека</dt><dd>лабиринт стеллажей; присмотритесь к рычагам под сводом</dd></div><div><dt>Разбойники</dt><dd>выходят с постов в залах, когда вы подходите</dd></div><div><dt>Всадники апокалипсиса</dt><dd>Война и Смерть в зале свечей; пока жив хоть один, голем спит</dd></div><div><dt>Терра-сущность в зале</dt><dd>появляется, когда голем пал; забрать — подойти к ней</dd></div><div><dt>Когда сущность взята</dt><dd>подземелье кишит болотниками</dd></div><div><dt>Терра-сущность</dt><dd>в инвентаре отравляет носителя, кроме крови предков и техноорганической</dd></div>", 9)),
+                _cache[72] || (_cache[72] = createStaticVNode("<div><dt>Где</dt><dd>верхний мир, глубоко под землёй; одно на сервер</dd></div><div><dt>Исчезает</dt><dd>когда все игроки его покинули; вернётся через несколько игровых суток в другом месте</dd></div><div><dt>Загадки</dt><dd>рычаги, кнопки и ловушки; дальний зал открывается загадками</dd></div><div><dt>Библиотека</dt><dd>лабиринт стеллажей; присмотритесь к рычагам под сводом</dd></div><div><dt>Разбойники</dt><dd>выходят с постов в залах, когда вы подходите</dd></div><div><dt>Всадники апокалипсиса</dt><dd>Война и Смерть в зале свечей; пока жив хоть один, голем спит</dd></div><div><dt>Терра-сущность в зале</dt><dd>появляется, когда голем пал; забрать — подойти к ней</dd></div><div><dt>Когда сущность взята</dt><dd>подземелье кишит болотниками</dd></div><div><dt>Терра-сущность</dt><dd>в инвентаре отравляет носителя, кроме крови предков и техноорганической</dd></div>", 9)),
                 createBaseVNode("div", null, [
-                  _cache[64] || (_cache[64] = createBaseVNode("dt", null, "Бочки", -1)),
-                  createBaseVNode("dd", _hoisted_80, [
-                    _cache[60] || (_cache[60] = createTextVNode("в одной из них — ", -1)),
+                  _cache[71] || (_cache[71] = createBaseVNode("dt", null, "Бочки", -1)),
+                  createBaseVNode("dd", _hoisted_86, [
+                    _cache[67] || (_cache[67] = createTextVNode("в одной из них — ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.ancient,
                       alt: ""
-                    }, null, 8, _hoisted_81),
-                    _cache[61] || (_cache[61] = createTextVNode("Древний; в остальных осколки, ", -1)),
+                    }, null, 8, _hoisted_87),
+                    _cache[68] || (_cache[68] = createTextVNode("Древний; в остальных осколки, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.terra_ingot,
                       alt: ""
-                    }, null, 8, _hoisted_82),
-                    _cache[62] || (_cache[62] = createTextVNode("терра-слитки, ", -1)),
+                    }, null, 8, _hoisted_88),
+                    _cache[69] || (_cache[69] = createTextVNode("терра-слитки, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.demon_soul,
                       alt: ""
-                    }, null, 8, _hoisted_83),
-                    _cache[63] || (_cache[63] = createTextVNode("Душа демона и припасы", -1))
+                    }, null, 8, _hoisted_89),
+                    _cache[70] || (_cache[70] = createTextVNode("Душа демона и припасы", -1))
                   ])
                 ])
               ])
             ]),
-            _cache[67] || (_cache[67] = createStaticVNode('<div class="stack" style="align-content:start;"><div class="boss"><div class="boss-name">Джунглевый голем</div><div class="boss-stats"><span class="pill">900 здоровья</span><span class="pill">7 блоков ростом</span><span class="pill">большой зал</span></div><ul class="attacks"><li><b>Сотрясение.</b> Выйдите из зелёного круга или подпрыгните.</li><li><b>Валун.</b> Уйдите со светящегося диска.</li><li><b>Плеть.</b> Сойдите с линии лоз.</li><li><b>Корни.</b> Щит из мха считает удары, а не урон.</li><li><b>Ярость.</b> Раненый — быстрее, оставляет ядовитые споры.</li><li><b>Награда.</b> Терра-слитки и Терра-сущность.</li></ul></div><div class="boss"><div class="boss-name">Древний</div><div class="boss-stats"><span class="pill">кровь предков, вторая форма</span></div><ul class="attacks"><li><b>Гнев предков.</b> Сильнее против разбойников и ведьм, удар оплетает цель корнями.</li><li><b>Разлом</b> — правый клик: разлом бежит кольцами, подбрасывает и оплетает врагов.</li><li><b>Где взять.</b> В бочке Терра-подземелья.</li></ul></div></div>', 1))
+            createBaseVNode("div", _hoisted_90, [
+              createBaseVNode("div", _hoisted_91, [
+                createVNode(_sfc_main$6, {
+                  name: "Джунглевый голем",
+                  colour: "green"
+                }),
+                _cache[74] || (_cache[74] = createStaticVNode('<div class="boss-stats"><span class="pill">900 здоровья</span><span class="pill">7 блоков ростом</span><span class="pill">большой зал</span></div><ul class="attacks"><li><b>Сотрясение.</b> Выйдите из зелёного круга или подпрыгните.</li><li><b>Валун.</b> Уйдите со светящегося диска.</li><li><b>Плеть.</b> Сойдите с линии лоз.</li><li><b>Корни.</b> Щит из мха считает удары, а не урон.</li><li><b>Ярость.</b> Раненый — быстрее, оставляет ядовитые споры.</li><li><b>Награда.</b> Терра-слитки и Терра-сущность.</li></ul>', 2))
+              ]),
+              _cache[75] || (_cache[75] = createStaticVNode('<div class="boss"><div class="boss-name">Древний</div><div class="boss-stats"><span class="pill">кровь предков, вторая форма</span></div><ul class="attacks"><li><b>Гнев предков.</b> Сильнее против разбойников и ведьм, удар оплетает цель корнями.</li><li><b>Разлом</b> — правый клик: разлом бежит кольцами, подбрасывает и оплетает врагов.</li><li><b>Где взять.</b> В бочке Терра-подземелья.</li></ul></div>', 1))
+            ])
           ])
         ]),
-        _cache[70] || (_cache[70] = createBaseVNode("div", { class: "prose small" }, [
+        _cache[78] || (_cache[78] = createBaseVNode("div", { class: "prose small" }, [
           createBaseVNode("p", null, "Каждый, кто бился со стражем, получает свою долю добычи. Пали все бойцы — страж уходит.")
         ], -1))
       ]);
@@ -2398,9 +3037,22 @@ const _sfc_main$4 = {
   __name: "TrialsSection",
   setup(__props) {
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("section", _hoisted_1$4, [..._cache[0] || (_cache[0] = [
-        createStaticVNode('<div class="sec-head"><h2>Испытания</h2><p class="lead">Стража святилища вызывают <b>испытанием</b> у алтаря.</p></div><div class="stack"><div class="panel"><h3>Испытание святилища</h3><p class="small">Пять волн в арене, в пятой — страж святилища. Уровень и награду определяет тот, кто начал. Покинуть арену до конца боя нельзя.</p><div class="tbl"><table><thead><tr><th>Уровень</th><th>Цена</th><th>Что даёт</th></tr></thead><tbody><tr><td>1</td><td>даром, раз в 10 минут на игрока</td><td>у всех бойцов этой крови и у начавшего первая форма → вторая</td></tr><tr><td>2</td><td>алмазный блок, изумрудный блок, 20 осколков</td><td>начавшему — реликвия святилища, даже если он погиб</td></tr><tr><td>3</td><td>32 осколка, реликвия, зачарованное золотое яблоко</td><td>начавшему — реликвия; у бойцов этой крови и у начавшего вторая форма → третья; Серафим роняет Печать ночи</td></tr></tbody></table></div><p class="small muted">Пройденное испытание открывает следующий уровень; начать можно любой открытый.</p><div class="tbl"><table><thead><tr><th>Уровень</th><th>С каждого стражника волн</th></tr></thead><tbody><tr><td>1</td><td>1 осколок — сразу в инвентарь</td></tr><tr><td>2</td><td>2 осколка</td></tr><tr><td>3</td><td>3 осколка</td></tr></tbody></table></div><p class="small"><b>Провал</b> забирает у каждого половину осколков, добытых в этом испытании.</p></div><div class="panel" id="fourth"><h3>Четвёртая форма</h3><p class="small">Четвёртую форму <b>приносят к алтарю своей крови</b>.</p><div class="tbl"><table><thead><tr><th>Кровь</th><th>Что нужно</th><th>Куда</th></tr></thead><tbody><tr><td>Пепельная</td><td><b>Адская сущность</b> из часовой башни Проклятого замка</td><td>кнопка крови у алтаря Незеритовой кузни</td></tr><tr><td>Предков</td><td><b>Терра-сущность</b> из большого зала Терра-подземелья</td><td>кнопка крови у алтаря Храма джунглей</td></tr><tr><td>Ночная небесная</td><td>победить <b>Пустотного Серафима</b> — форму получает тот, кто его призвал</td><td>алтарь Тёмного храма</td></tr><tr><td>Техноорганическая</td><td><b>Чёрная субстанция</b> с трона Проклятого замка</td><td>ZorahM-GPT: кнопка крови у терминала фабрики</td></tr></tbody></table></div><p class="small">Обе сущности с <b>проклятием утраты</b>: погибли с ней — она пропала.</p></div></div><div class="panel"><h3>Рейды фабрики</h3><p class="small">Рейды проводят в Древней фабрике после падения Предвестника: волны в реакторном зале, три уровня, как у испытаний.</p><div class="tbl"><table><thead><tr><th>Уровень</th><th>Цена</th><th>С каждого стражника</th><th>В конце всем в фабрике</th></tr></thead><tbody><tr><td>1</td><td>даром, раз в 10 минут</td><td>1 деталь</td><td>6–10 деталей</td></tr><tr><td>2</td><td>8 деталей</td><td>2 детали</td><td>12–20 деталей, шанс 15% на ядро</td></tr><tr><td>3</td><td>16 деталей</td><td>3 детали</td><td>20–30 деталей, шанс 30% на ядро</td></tr></tbody></table></div><p class="small">Провал забирает половину деталей, добытых в рейде.</p></div>', 3)
-      ])]);
+      return openBlock(), createElementBlock("section", _hoisted_1$4, [
+        createVNode(_sfc_main$d, {
+          title: "Испытания",
+          icon: "harbinger_core"
+        }, {
+          default: withCtx(() => [..._cache[0] || (_cache[0] = [
+            createBaseVNode("p", { class: "lead" }, [
+              createTextVNode("Стража святилища вызывают "),
+              createBaseVNode("b", null, "испытанием"),
+              createTextVNode(" у алтаря.")
+            ], -1)
+          ])]),
+          _: 1
+        }),
+        _cache[1] || (_cache[1] = createStaticVNode('<div class="stack"><div class="panel"><h3>Испытание святилища</h3><p class="small">Пять волн в арене, в пятой — страж святилища. Уровень и награду определяет тот, кто начал. Покинуть арену до конца боя нельзя.</p><div class="tbl"><table><thead><tr><th>Уровень</th><th>Цена</th><th>Что даёт</th></tr></thead><tbody><tr><td>1</td><td>даром, раз в 10 минут на игрока</td><td>у всех бойцов этой крови и у начавшего первая форма → вторая</td></tr><tr><td>2</td><td>алмазный блок, изумрудный блок, 20 осколков</td><td>начавшему — реликвия святилища, даже если он погиб</td></tr><tr><td>3</td><td>32 осколка, реликвия, зачарованное золотое яблоко</td><td>начавшему — реликвия; у бойцов этой крови и у начавшего вторая форма → третья; Серафим роняет Печать ночи</td></tr></tbody></table></div><p class="small muted">Пройденное испытание открывает следующий уровень; начать можно любой открытый.</p><div class="tbl"><table><thead><tr><th>Уровень</th><th>С каждого стражника волн</th></tr></thead><tbody><tr><td>1</td><td>1 осколок — сразу в инвентарь</td></tr><tr><td>2</td><td>2 осколка</td></tr><tr><td>3</td><td>3 осколка</td></tr></tbody></table></div><p class="small"><b>Провал</b> забирает у каждого половину осколков, добытых в этом испытании.</p></div><div class="panel" id="fourth"><h3>Четвёртая форма</h3><p class="small">Четвёртую форму <b>приносят к алтарю своей крови</b>.</p><div class="tbl"><table><thead><tr><th>Кровь</th><th>Что нужно</th><th>Куда</th></tr></thead><tbody><tr><td>Пепельная</td><td><b>Адская сущность</b> из часовой башни Проклятого замка</td><td>кнопка крови у алтаря Незеритовой кузни</td></tr><tr><td>Предков</td><td><b>Терра-сущность</b> из большого зала Терра-подземелья</td><td>кнопка крови у алтаря Храма джунглей</td></tr><tr><td>Ночная небесная</td><td>победить <b>Пустотного Серафима</b> — форму получает тот, кто его призвал</td><td>алтарь Тёмного храма</td></tr><tr><td>Техноорганическая</td><td><b>Чёрная субстанция</b> с трона Проклятого замка</td><td>ZorahM-GPT: кнопка крови у терминала фабрики</td></tr></tbody></table></div><p class="small">Обе сущности с <b>проклятием утраты</b>: погибли с ней — она пропала.</p></div></div><div class="panel"><h3>Рейды фабрики</h3><p class="small">Рейды проводят в Древней фабрике после падения Предвестника: волны в реакторном зале, три уровня, как у испытаний.</p><div class="tbl"><table><thead><tr><th>Уровень</th><th>Цена</th><th>С каждого стражника</th><th>В конце всем в фабрике</th></tr></thead><tbody><tr><td>1</td><td>даром, раз в 10 минут</td><td>1 деталь</td><td>6–10 деталей</td></tr><tr><td>2</td><td>8 деталей</td><td>2 детали</td><td>12–20 деталей, шанс 15% на ядро</td></tr><tr><td>3</td><td>16 деталей</td><td>3 детали</td><td>20–30 деталей, шанс 30% на ядро</td></tr></tbody></table></div><p class="small">Провал забирает половину деталей, добытых в рейде.</p></div>', 2))
+      ]);
     };
   }
 };
@@ -2421,7 +3073,7 @@ const _hoisted_9$1 = {
 };
 const _hoisted_10$1 = { class: "tbl" };
 const _hoisted_11$1 = { scope: "row" };
-const _hoisted_12 = { class: "tbl" };
+const _hoisted_12$1 = { class: "tbl" };
 const _hoisted_13 = { scope: "row" };
 const _hoisted_14 = {
   key: 0,
@@ -2437,12 +3089,17 @@ const _sfc_main$3 = {
     const quests = data.blood.filter((b) => !b.formless && b.deed);
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("section", _hoisted_1$3, [
-        _cache[4] || (_cache[4] = createBaseVNode("div", { class: "sec-head" }, [
-          createBaseVNode("h2", null, "Родословные"),
-          createBaseVNode("p", { class: "lead" }, "При первом входе каждый игрок сам выбирает одну из трёх родословных — пепельную, небесную или кровь предков —. Кровь решает, как игрок растёт, какую книгу получит и какие величайшие клинки его признают.")
-        ], -1)),
-        _cache[5] || (_cache[5] = createBaseVNode("h3", null, "Клинки крови", -1)),
-        _cache[6] || (_cache[6] = createBaseVNode("p", null, [
+        createVNode(_sfc_main$d, {
+          title: "Родословные",
+          icon: "demon_soul"
+        }, {
+          default: withCtx(() => [..._cache[0] || (_cache[0] = [
+            createBaseVNode("p", { class: "lead" }, "При первом входе каждый игрок сам выбирает одну из трёх родословных — пепельную, небесную или кровь предков —. Кровь решает, как игрок растёт, какую книгу получит и какие величайшие клинки его признают.", -1)
+          ])]),
+          _: 1
+        }),
+        _cache[6] || (_cache[6] = createBaseVNode("h3", null, "Клинки крови", -1)),
+        _cache[7] || (_cache[7] = createBaseVNode("p", null, [
           createTextVNode("Величайшие клинки привязаны к крови: в чужих руках они не работают. "),
           createBaseVNode("b", null, "Короны"),
           createTextVNode(" — Люцифер, Истинный Экскалибур и Селестиал — отвечают только крови в "),
@@ -2457,14 +3114,15 @@ const _sfc_main$3 = {
               style: normalizeStyle({ "--b": b.colour })
             }, [
               createBaseVNode("h4", null, [
-                createVNode(_sfc_main$e, {
-                  colour: b.colour
-                }, null, 8, ["colour"]),
+                _cache[1] || (_cache[1] = createBaseVNode("span", {
+                  class: "blood-gem",
+                  "aria-hidden": "true"
+                }, null, -1)),
                 createTextVNode(toDisplayString(b.title), 1)
               ]),
               createBaseVNode("p", _hoisted_3$1, toDisplayString(b.motto), 1),
               createBaseVNode("p", _hoisted_4$1, [
-                _cache[0] || (_cache[0] = createBaseVNode("span", { class: "muted" }, "Святилище:", -1)),
+                _cache[2] || (_cache[2] = createBaseVNode("span", { class: "muted" }, "Святилище:", -1)),
                 createTextVNode(" " + toDisplayString(b.sanctum), 1)
               ]),
               createBaseVNode("div", _hoisted_5$1, [
@@ -2487,10 +3145,10 @@ const _sfc_main$3 = {
             ], 4);
           }), 128))
         ]),
-        _cache[7] || (_cache[7] = createStaticVNode('<h3>Формы</h3><div class="flow" aria-label="Путь крови"><div class="step"><b>Первая</b><span>выбор при первом входе — или 20 осколков у алтаря святилища этой крови</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Вторая</b><span>испытание 1-го уровня в святилище своей крови</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Третья</b><span>испытание 3-го уровня там же</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Четвёртая</b><span>сущность или субстанция у алтаря своей крови · корона крови</span></div></div><p><b>Огонь не берёт своё.</b> Брошенные в лаву или огонь клинки пепельной крови и адские материалы не сгорают.</p><p><b>Крылья.</b> С третьей формой у небесной и ночной небесной крови вырастают крылья, на которых они летают: голубые и синие. С четвёртой формой крылья появляются и у пепельной крови — огненные, и у крови предков — зелёные.</p><p><b>У небесной крови нет четвёртой формы.</b> Сломав <b>Печать ночи</b>, небесная кровь становится <b>ночной небесной</b>. С тех пор по ночам появляется <b>Тёмный храм</b> — там ночная кровь растёт дальше.</p><p><b>Техноорганическая кровь</b> растёт иначе: вторая форма — победа в рейде фабрики, третья — три подвига в любом порядке, четвёртая — Чёрная субстанция, сданная на терминале фабрики.</p>', 6)),
+        _cache[8] || (_cache[8] = createStaticVNode('<h3>Формы</h3><div class="flow" aria-label="Путь крови"><div class="step"><b>Первая</b><span>выбор при первом входе — или 20 осколков у алтаря святилища этой крови</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Вторая</b><span>испытание 1-го уровня в святилище своей крови</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Третья</b><span>испытание 3-го уровня там же</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Четвёртая</b><span>сущность или субстанция у алтаря своей крови · корона крови</span></div></div><p><b>Огонь не берёт своё.</b> Брошенные в лаву или огонь клинки пепельной крови и адские материалы не сгорают.</p><p><b>Крылья.</b> С третьей формой у небесной и ночной небесной крови вырастают крылья, на которых они летают: голубые и синие. С четвёртой формой крылья появляются и у пепельной крови — огненные, и у крови предков — зелёные.</p><p><b>У небесной крови нет четвёртой формы.</b> Сломав <b>Печать ночи</b>, небесная кровь становится <b>ночной небесной</b>. С тех пор по ночам появляется <b>Тёмный храм</b> — там ночная кровь растёт дальше.</p><p><b>Техноорганическая кровь</b> растёт иначе: вторая форма — победа в рейде фабрики, третья — три подвига в любом порядке, четвёртая — Чёрная субстанция, сданная на терминале фабрики.</p>', 6)),
         createBaseVNode("div", _hoisted_10$1, [
           createBaseVNode("table", null, [
-            _cache[1] || (_cache[1] = createBaseVNode("thead", null, [
+            _cache[3] || (_cache[3] = createBaseVNode("thead", null, [
               createBaseVNode("tr", null, [
                 createBaseVNode("th", null, "Кровь"),
                 createBaseVNode("th", null, "Подношение"),
@@ -2503,7 +3161,7 @@ const _sfc_main$3 = {
                   key: b.id
                 }, [
                   createBaseVNode("th", _hoisted_11$1, [
-                    createVNode(_sfc_main$e, {
+                    createVNode(_sfc_main$i, {
                       colour: b.colour
                     }, null, 8, ["colour"]),
                     createTextVNode(toDisplayString(b.title), 1)
@@ -2515,8 +3173,8 @@ const _sfc_main$3 = {
             ])
           ])
         ]),
-        _cache[8] || (_cache[8] = createBaseVNode("p", { class: "small muted" }, "Третий подвиг — выковать любой клинок у любого алтаря. Подвиги засчитываются, пока кровь во второй форме.", -1)),
-        _cache[9] || (_cache[9] = createBaseVNode("p", null, [
+        _cache[9] || (_cache[9] = createBaseVNode("p", { class: "small muted" }, "Третий подвиг — выковать любой клинок у любого алтаря. Подвиги засчитываются, пока кровь во второй форме.", -1)),
+        _cache[10] || (_cache[10] = createBaseVNode("p", null, [
           createTextVNode("С "),
           createBaseVNode("b", null, "третьей формы"),
           createTextVNode(" клинки своей крови бьют сильнее. "),
@@ -2527,9 +3185,9 @@ const _sfc_main$3 = {
           createBaseVNode("a", { href: "#fourth" }, "«Четвёртая форма»"),
           createTextVNode(".")
         ], -1)),
-        createBaseVNode("div", _hoisted_12, [
+        createBaseVNode("div", _hoisted_12$1, [
           createBaseVNode("table", null, [
-            _cache[3] || (_cache[3] = createBaseVNode("thead", null, [
+            _cache[5] || (_cache[5] = createBaseVNode("thead", null, [
               createBaseVNode("tr", null, [
                 createBaseVNode("th", null, "Кровь"),
                 createBaseVNode("th", null, "Первая форма"),
@@ -2544,14 +3202,14 @@ const _sfc_main$3 = {
                   key: b.id
                 }, [
                   createBaseVNode("th", _hoisted_13, [
-                    createVNode(_sfc_main$e, {
+                    createVNode(_sfc_main$i, {
                       colour: b.colour
                     }, null, 8, ["colour"]),
                     createTextVNode(toDisplayString(b.title), 1)
                   ]),
                   b.formless ? (openBlock(), createElementBlock("td", _hoisted_14, [
                     createTextVNode(toDisplayString(b.perks.join(" ")) + " ", 1),
-                    _cache[2] || (_cache[2] = createBaseVNode("span", { class: "muted small" }, "Форм нет: всё сразу.", -1))
+                    _cache[4] || (_cache[4] = createBaseVNode("span", { class: "muted small" }, "Форм нет: всё сразу.", -1))
                   ])) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
                     (openBlock(true), createElementBlock(Fragment, null, renderList(b.perks, (perk, i) => {
                       return openBlock(), createElementBlock("td", { key: i }, toDisplayString(perk), 1);
@@ -2563,7 +3221,7 @@ const _sfc_main$3 = {
             ])
           ])
         ]),
-        _cache[10] || (_cache[10] = createStaticVNode('<p class="small muted">Сменить кровь можно у алтаря её святилища — кроме ночной, бездны и техноорганической.</p><p><b>Кровь бездны</b> не выбирают и не покупают. Её получает тот, кто выковал <b>Все-Чёрный</b>: в тот же миг кровь меняется на бездну — навсегда. У бездны нет форм, подвигов и испытаний. Выковать Все-Чёрный можно из <b>короны своей крови</b> и <b>Чёрной субстанции</b> у алтаря <b>своего</b> храма — и храм за это <b>гневается</b>.</p><p><b>Техноорганическую кровь</b> принимают на терминале Древней фабрики. Вместе с ней вы получаете <b>Энцефало-меч</b>: он сам растёт вместе с кровью — в <b>Энцефало-клинок</b>, а затем в <b>Антихрист</b> — и возвращается к вам после смерти.</p><p class="small">Алтарь фабрики собирает своей крови <b>призывные машины</b>: медного голема, малого Предвестника и Сборочный купол.</p><h3>Путеводитель</h3><p>Сразу после крови выбирается голос, что будет с вами в пути: он даёт советы, рассказывает легенды и отзывается на то, что с вами происходит. Каждая реплика звучит один раз.</p><div class="tbl"><table><thead><tr><th>Голос</th><th>Какой</th></tr></thead><tbody><tr><td>Путеводитель</td><td>старый хранитель знаний о клинках: тёплый, насмешливый, говорит загадками</td></tr><tr><td>ZorahM-GPT</td><td>разум Древней фабрики: язвительный, спокойный, презирает органику и не скрывает своих целей</td></tr><tr><td>Наблюдатель</td><td>древний свидетель: торжественный и печальный, рассказывает легенды о Все-Чёрном</td></tr></tbody></table></div><p class="small muted">Кровь бездны всегда слышит Наблюдателя, техноорганическая — ZorahM-GPT: их выбор голоса не касается.</p><h3>Книги</h3><p>Выбрав кровь, игрок получает <b>книгу своей крови</b>. Оператор сервера получает ещё и <b>книгу хранителя</b>.</p>', 10))
+        _cache[11] || (_cache[11] = createStaticVNode('<p class="small muted">Сменить кровь можно у алтаря её святилища — кроме ночной, бездны и техноорганической.</p><p><b>Кровь бездны</b> не выбирают и не покупают. Её получает тот, кто выковал <b>Все-Чёрный</b>: в тот же миг кровь меняется на бездну — навсегда. У бездны нет форм, подвигов и испытаний. Выковать Все-Чёрный можно из <b>короны своей крови</b> и <b>Чёрной субстанции</b> у алтаря <b>своего</b> храма — и храм за это <b>гневается</b>.</p><p><b>Техноорганическую кровь</b> принимают на терминале Древней фабрики. Вместе с ней вы получаете <b>Энцефало-меч</b>: он сам растёт вместе с кровью — в <b>Энцефало-клинок</b>, а затем в <b>Антихрист</b> — и возвращается к вам после смерти.</p><p class="small">Алтарь фабрики собирает своей крови <b>призывные машины</b>: медного голема, малого Предвестника и Сборочный купол.</p><h3>Путеводитель</h3><p>Сразу после крови выбирается голос, что будет с вами в пути: он даёт советы, рассказывает легенды и отзывается на то, что с вами происходит. Каждая реплика звучит один раз.</p><div class="tbl"><table><thead><tr><th>Голос</th><th>Какой</th></tr></thead><tbody><tr><td>Путеводитель</td><td>старый хранитель знаний о клинках: тёплый, насмешливый, говорит загадками</td></tr><tr><td>ZorahM-GPT</td><td>разум Древней фабрики: язвительный, спокойный, презирает органику и не скрывает своих целей</td></tr><tr><td>Наблюдатель</td><td>древний свидетель: торжественный и печальный, рассказывает легенды о Все-Чёрном</td></tr></tbody></table></div><p class="small muted">Кровь бездны всегда слышит Наблюдателя, техноорганическая — ZorahM-GPT: их выбор голоса не касается.</p><h3>Книги</h3><p>Выбрав кровь, игрок получает <b>книгу своей крови</b>. Оператор сервера получает ещё и <b>книгу хранителя</b>.</p>', 10))
       ]);
     };
   }
@@ -2579,10 +3237,11 @@ const _hoisted_4 = { class: "group" };
 const _hoisted_5 = { class: "advs" };
 const _hoisted_6 = ["title"];
 const _hoisted_7 = ["src"];
-const _hoisted_8 = { class: "adv-head" };
-const _hoisted_9 = { class: "quote" };
-const _hoisted_10 = { class: "cond" };
-const _hoisted_11 = {
+const _hoisted_8 = { class: "toast-head" };
+const _hoisted_9 = { class: "toast-title" };
+const _hoisted_10 = { class: "quote" };
+const _hoisted_11 = { class: "cond" };
+const _hoisted_12 = {
   key: 0,
   class: "empty"
 };
@@ -2591,13 +3250,19 @@ const _sfc_main$2 = {
   setup(__props) {
     const FRAMES = [["all", "Все"], ["task", "Задачи"], ["goal", "Цели"], ["challenge", "Испытания"]];
     const frame = ref("all");
+    const TOAST = { task: "Достижение получено!", goal: "Цель достигнута!", challenge: "Испытание завершено!" };
     const groups = computed(() => achievementGroups.value.map((g) => ({ ...g, cards: g.cards.filter((a) => frame.value === "all" || a.frame === frame.value) })).filter((g) => g.cards.length));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("section", _hoisted_1$2, [
-        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "sec-head" }, [
-          createBaseVNode("h2", null, "Достижения"),
-          createBaseVNode("p", { class: "lead" }, "Отдельная вкладка в меню достижений.")
-        ], -1)),
+        createVNode(_sfc_main$d, {
+          title: "Достижения",
+          icon: "royal_clock"
+        }, {
+          default: withCtx(() => [..._cache[0] || (_cache[0] = [
+            createBaseVNode("p", { class: "lead" }, "Отдельная вкладка в меню достижений.", -1)
+          ])]),
+          _: 1
+        }),
         createBaseVNode("div", _hoisted_2, [
           (openBlock(), createElementBlock(Fragment, null, renderList(FRAMES, ([key, title]) => {
             return createBaseVNode("button", {
@@ -2621,35 +3286,35 @@ const _sfc_main$2 = {
                   class: "adv"
                 }, [
                   createBaseVNode("div", {
-                    class: normalizeClass(["frame", `f-${a.frame}`]),
-                    title: a.caption
+                    class: normalizeClass(["toast", `t-${a.frame}`])
                   }, [
-                    a.icon ? (openBlock(), createElementBlock("img", {
-                      key: 0,
-                      src: a.icon,
-                      alt: ""
-                    }, null, 8, _hoisted_7)) : a.gem ? (openBlock(), createElementBlock("span", {
-                      key: 1,
-                      class: "gem",
-                      style: normalizeStyle({ "--gem": a.gem })
-                    }, null, 4)) : createCommentVNode("", true)
-                  ], 10, _hoisted_6),
-                  createBaseVNode("div", null, [
-                    createBaseVNode("div", _hoisted_8, [
-                      createBaseVNode("h4", null, toDisplayString(a.title), 1),
-                      createBaseVNode("span", {
-                        class: normalizeClass(["ftag", `t-${a.frame}`])
-                      }, toDisplayString(a.frameLabel), 3)
-                    ]),
-                    createBaseVNode("p", _hoisted_9, "«" + toDisplayString(a.description) + "»", 1),
-                    createBaseVNode("p", _hoisted_10, toDisplayString(a.condition), 1)
-                  ])
+                    createBaseVNode("div", {
+                      class: normalizeClass(["frame", `f-${a.frame}`]),
+                      title: a.caption
+                    }, [
+                      a.icon ? (openBlock(), createElementBlock("img", {
+                        key: 0,
+                        src: a.icon,
+                        alt: ""
+                      }, null, 8, _hoisted_7)) : a.gem ? (openBlock(), createElementBlock("span", {
+                        key: 1,
+                        class: "gem",
+                        style: normalizeStyle({ "--gem": a.gem })
+                      }, null, 4)) : createCommentVNode("", true)
+                    ], 10, _hoisted_6),
+                    createBaseVNode("div", null, [
+                      createBaseVNode("p", _hoisted_8, toDisplayString(TOAST[a.frame] || a.frameLabel), 1),
+                      createBaseVNode("h4", _hoisted_9, toDisplayString(a.title), 1)
+                    ])
+                  ], 2),
+                  createBaseVNode("p", _hoisted_10, "«" + toDisplayString(a.description) + "»", 1),
+                  createBaseVNode("p", _hoisted_11, toDisplayString(a.condition), 1)
                 ]);
               }), 128))
             ])
           ], 64);
         }), 128)),
-        !groups.value.length ? (openBlock(), createElementBlock("p", _hoisted_11, "Ни одного достижения по этому слову.")) : createCommentVNode("", true)
+        !groups.value.length ? (openBlock(), createElementBlock("p", _hoisted_12, "Ни одного достижения по этому слову.")) : createCommentVNode("", true)
       ]);
     };
   }
@@ -2659,9 +3324,13 @@ const _sfc_main$1 = {
   __name: "AdminSection",
   setup(__props) {
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("section", _hoisted_1$1, [..._cache[0] || (_cache[0] = [
-        createStaticVNode('<div class="sec-head"><h2>Для администратора</h2></div><div class="twocol"><div class="panel"><h3>Установка</h3><ol class="small" style="margin:0;padding-left:1.2em;display:grid;gap:6px;"><li>Собрать: <code>gradlew.bat build</code> (Windows) или <code>./gradlew build</code>; нужна Java 21+.</li><li>Положить <code>build/libs/virusswords-1.0.0.jar</code> в <code>plugins/</code> сервера Paper 1.21.11.</li><li>Раздать <code>VirusSwords-ResourcePack.zip</code> — через <code>server.properties</code> или в лаунчере. Нужен клиент 1.21.6+.</li><li>При первом запуске плагин сам ставит датапак достижений и один раз перезагружает данные.</li></ol></div><div class="panel"><h3>Главное в config.yml</h3><div class="tbl"><table><tbody><tr><td><code>progression.mastery-multiplier</code></td><td>скорость роста мастерства</td></tr><tr><td><code>progression.bloodlines</code></td><td>включить родословные и привязку клинков к крови</td></tr><tr><td><code>sanctums.roam-minutes</code></td><td>через сколько минут без гостей святилище переезжает; 0 — никогда</td></tr><tr><td><code>sanctums.build-radius</code></td><td>на каком расстоянии поднимается постройка</td></tr><tr><td><code>sanctums.boss-health-multiplier</code></td><td>здоровье стражей для больших компаний</td></tr><tr><td><code>sanctums.raid-relic-chance</code></td><td>шанс ядра в рейде фабрики</td></tr><tr><td><code>abilities.cooldown-seconds</code></td><td>перезарядки способностей</td></tr><tr><td><code>bound-drops.items</code></td><td>клинки, которые не теряются при смерти</td></tr></tbody></table></div></div></div><footer><span>Кодекс собран из исходников плагина: имена, описания, урон и достижения взяты прямо из кода.</span><span>Модели оружия — ресурспаки Fantasy Weapons (автор nongkos) и Blades of Majestica, используются приватно.</span></footer>', 3)
-      ])]);
+      return openBlock(), createElementBlock("section", _hoisted_1$1, [
+        createVNode(_sfc_main$d, {
+          title: "Для администратора",
+          icon: "ancient_part"
+        }),
+        _cache[0] || (_cache[0] = createStaticVNode('<div class="twocol"><div class="panel"><h3>Установка</h3><ol class="small" style="margin:0;padding-left:1.2em;display:grid;gap:6px;"><li>Собрать: <code>gradlew.bat build</code> (Windows) или <code>./gradlew build</code>; нужна Java 21+.</li><li>Положить <code>build/libs/virusswords-1.0.0.jar</code> в <code>plugins/</code> сервера Paper 1.21.11.</li><li>Раздать <code>VirusSwords-ResourcePack.zip</code> — через <code>server.properties</code> или в лаунчере. Нужен клиент 1.21.6+.</li><li>При первом запуске плагин сам ставит датапак достижений и один раз перезагружает данные.</li></ol></div><div class="panel"><h3>Главное в config.yml</h3><div class="tbl"><table><tbody><tr><td><code>progression.mastery-multiplier</code></td><td>скорость роста мастерства</td></tr><tr><td><code>progression.bloodlines</code></td><td>включить родословные и привязку клинков к крови</td></tr><tr><td><code>sanctums.roam-minutes</code></td><td>через сколько минут без гостей святилище переезжает; 0 — никогда</td></tr><tr><td><code>sanctums.build-radius</code></td><td>на каком расстоянии поднимается постройка</td></tr><tr><td><code>sanctums.boss-health-multiplier</code></td><td>здоровье стражей для больших компаний</td></tr><tr><td><code>sanctums.raid-relic-chance</code></td><td>шанс ядра в рейде фабрики</td></tr><tr><td><code>abilities.cooldown-seconds</code></td><td>перезарядки способностей</td></tr><tr><td><code>bound-drops.items</code></td><td>клинки, которые не теряются при смерти</td></tr></tbody></table></div></div></div><footer><span>Кодекс собран из исходников плагина: имена, описания, урон и достижения взяты прямо из кода.</span><span>Модели оружия — ресурспаки Fantasy Weapons (автор nongkos) и Blades of Majestica, используются приватно.</span></footer>', 2))
+      ]);
     };
   }
 };
@@ -2671,20 +3340,22 @@ const _sfc_main = {
   setup(__props) {
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock(Fragment, null, [
+        createVNode(_sfc_main$f),
+        createVNode(_sfc_main$e),
         _cache[0] || (_cache[0] = createBaseVNode("a", {
           class: "skip",
           href: "#weapons"
         }, "К оружию", -1)),
         createBaseVNode("div", _hoisted_1, [
-          createVNode(_sfc_main$m),
+          createVNode(_sfc_main$q),
           createBaseVNode("main", null, [
-            createVNode(_sfc_main$j),
+            createVNode(_sfc_main$n),
+            createVNode(_sfc_main$c),
             createVNode(_sfc_main$b),
             createVNode(_sfc_main$a),
             createVNode(_sfc_main$9),
             createVNode(_sfc_main$8),
             createVNode(_sfc_main$7),
-            createVNode(_sfc_main$6),
             createVNode(_sfc_main$5),
             createVNode(_sfc_main$4),
             createVNode(_sfc_main$3),
@@ -2692,7 +3363,7 @@ const _sfc_main = {
             createVNode(_sfc_main$1)
           ])
         ]),
-        createVNode(_sfc_main$c)
+        createVNode(_sfc_main$g)
       ], 64);
     };
   }
