@@ -2944,7 +2944,43 @@ const onRenderTracked = createHook("rtc");
 function onErrorCaptured(hook, target = currentInstance) {
   injectHook("ec", hook, target);
 }
+const COMPONENTS = "components";
 const NULL_DYNAMIC_COMPONENT = /* @__PURE__ */ Symbol.for("v-ndc");
+function resolveDynamicComponent(component) {
+  if (isString(component)) {
+    return resolveAsset(COMPONENTS, component, false) || component;
+  } else {
+    return component || NULL_DYNAMIC_COMPONENT;
+  }
+}
+function resolveAsset(type, name, warnMissing = true, maybeSelfReference = false) {
+  const instance = currentRenderingInstance || currentInstance;
+  if (instance) {
+    const Component = instance.type;
+    {
+      const selfName = getComponentName(
+        Component,
+        false
+      );
+      if (selfName && (selfName === name || selfName === camelize(name) || selfName === capitalize(camelize(name)))) {
+        return Component;
+      }
+    }
+    const res = (
+      // local registration
+      // check instance[type] first which is resolved for options API
+      resolve(instance[type] || Component[type], name) || // global registration
+      resolve(instance.appContext[type], name)
+    );
+    if (!res && maybeSelfReference) {
+      return Component;
+    }
+    return res;
+  }
+}
+function resolve(registry, name) {
+  return registry && (registry[name] || registry[camelize(name)] || registry[capitalize(camelize(name))]);
+}
 function renderList(source, renderItem, cache, index) {
   let ret;
   const cached = cache;
@@ -6579,13 +6615,13 @@ function resolveTransitionProps(rawProps) {
   const makeEnterHook = (isAppear) => {
     return (el, done) => {
       const hook = isAppear ? onAppear : onEnter;
-      const resolve = () => finishEnter(el, isAppear, done);
-      callHook(hook, [el, resolve]);
+      const resolve2 = () => finishEnter(el, isAppear, done);
+      callHook(hook, [el, resolve2]);
       nextFrame(() => {
         removeTransitionClass(el, isAppear ? appearFromClass : enterFromClass);
         addTransitionClass(el, isAppear ? appearToClass : enterToClass);
         if (!hasExplicitCallback(hook)) {
-          whenTransitionEnds(el, type, enterDuration, resolve);
+          whenTransitionEnds(el, type, enterDuration, resolve2);
         }
       });
     };
@@ -6605,7 +6641,7 @@ function resolveTransitionProps(rawProps) {
     onAppear: makeEnterHook(true),
     onLeave(el, done) {
       el._isLeaving = true;
-      const resolve = () => finishLeave(el, done);
+      const resolve2 = () => finishLeave(el, done);
       addTransitionClass(el, leaveFromClass);
       if (!el._enterCancelled) {
         forceReflow(el);
@@ -6621,10 +6657,10 @@ function resolveTransitionProps(rawProps) {
         removeTransitionClass(el, leaveFromClass);
         addTransitionClass(el, leaveToClass);
         if (!hasExplicitCallback(onLeave)) {
-          whenTransitionEnds(el, type, leaveDuration, resolve);
+          whenTransitionEnds(el, type, leaveDuration, resolve2);
         }
       });
-      callHook(onLeave, [el, resolve]);
+      callHook(onLeave, [el, resolve2]);
     },
     onEnterCancelled(el) {
       finishEnter(el, false, void 0, true);
@@ -6674,11 +6710,11 @@ function nextFrame(cb) {
   });
 }
 let endId = 0;
-function whenTransitionEnds(el, expectedType, explicitTimeout, resolve) {
+function whenTransitionEnds(el, expectedType, explicitTimeout, resolve2) {
   const id = el._endId = ++endId;
   const resolveIfNotStale = () => {
     if (id === el._endId) {
-      resolve();
+      resolve2();
     }
   };
   if (explicitTimeout != null) {
@@ -6686,7 +6722,7 @@ function whenTransitionEnds(el, expectedType, explicitTimeout, resolve) {
   }
   const { type, timeout, propCount } = getTransitionInfo(el, expectedType);
   if (!type) {
-    return resolve();
+    return resolve2();
   }
   const endEvent = type + "end";
   let ended = 0;
@@ -7254,11 +7290,12 @@ export {
   withCtx as p,
   createBlock as q,
   reactive as r,
-  nextTick as s,
+  resolveDynamicComponent as s,
   toDisplayString as t,
   unref as u,
   vModelText as v,
   watch as w,
-  createStaticVNode as x,
-  createApp as y
+  nextTick as x,
+  createStaticVNode as y,
+  createApp as z
 };

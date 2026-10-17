@@ -50,6 +50,21 @@ const guideIcons = {
   nether_brick: "images/guide/nether_brick.png",
   compass: "images/guide/compass.png",
   map: "images/guide/map.png",
+  lapis_block: "images/guide/lapis_block.png",
+  diamond_block: "images/guide/diamond_block.png",
+  gold_block: "images/guide/gold_block.png",
+  copper_block: "images/guide/copper_block.png",
+  iron_block: "images/guide/iron_block.png",
+  redstone_block: "images/guide/redstone_block.png",
+  ender_pearl: "images/guide/ender_pearl.png",
+  netherite_ingot: "images/guide/netherite_ingot.png",
+  amethyst_shard: "images/guide/amethyst_shard.png",
+  paper: "images/guide/paper.png",
+  light_blue_dye: "images/guide/light_blue_dye.png",
+  black_dye: "images/guide/black_dye.png",
+  quartz: "images/guide/quartz.png",
+  totem_of_undying: "images/guide/totem_of_undying.png",
+  phantom_membrane: "images/guide/phantom_membrane.png",
   air_compass: "images/guide/compass.png",
   night_compass: "images/guide/compass.png",
   unknown_compass: "images/guide/compass.png",
@@ -57,7 +72,7 @@ const guideIcons = {
   jungle_map: "images/guide/jungle_map.png",
   "minecraft:spyglass": "images/guide/minecraft:spyglass.png",
   "minecraft:wither_skeleton_skull": "images/guide/minecraft:wither_skeleton_skull.png",
-  "minecraft:totem_of_undying": "images/guide/minecraft:totem_of_undying.png",
+  "minecraft:totem_of_undying": "images/guide/totem_of_undying.png",
   "minecraft:zombie_head": "images/guide/minecraft:zombie_head.png",
   "minecraft:sculk_shrieker": "images/guide/minecraft:sculk_shrieker.png",
   "minecraft:ender_eye": "images/guide/minecraft:ender_eye.png",
@@ -2107,6 +2122,627 @@ const items = [
     recipe: false
   }
 ];
+const altar = [
+  {
+    kind: "evolve",
+    result: "calamity",
+    from: "doom",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "soul_shard",
+        n: 8
+      },
+      {
+        key: "demon_soul",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "demon_will",
+    from: "calamity",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "soul_shard",
+        n: 16
+      },
+      {
+        key: "wither_soul",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "imperium",
+    from: "demon_will",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "forge_heart",
+        n: 1
+      },
+      {
+        key: "soul_shard",
+        n: 64
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "grave_splitter",
+    from: "demon_slayer",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "soul_shard",
+        n: 32
+      },
+      {
+        key: "v:netherite_ingot",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "celestial",
+    from: "enigma",
+    at: "Храм джунглей",
+    time: "",
+    blood: "Кровь предков",
+    form: 4,
+    costs: [
+      {
+        key: "terra_ingot",
+        n: 24
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "nocturne",
+    from: "solstice",
+    at: "Тёмный храм",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 16
+      },
+      {
+        key: "v:lapis_block",
+        n: 8
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "requiem",
+    from: "nocturne",
+    at: "Тёмный храм",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 64
+      },
+      {
+        key: "seraph_feather",
+        n: 1
+      },
+      {
+        key: "warden_heart",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "all_black",
+    from: "lucifer",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "Пепельная кровь",
+    form: 4,
+    costs: [
+      {
+        key: "black_substance",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "all_black",
+    from: "true_excalibur",
+    at: "Тёмный храм",
+    time: "",
+    blood: "Ночная небесная кровь",
+    form: 4,
+    costs: [
+      {
+        key: "black_substance",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "all_black",
+    from: "celestial",
+    at: "Храм джунглей",
+    time: "",
+    blood: "Кровь предков",
+    form: 4,
+    costs: [
+      {
+        key: "black_substance",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "all_black",
+    from: "creation_splitter",
+    at: "Древняя фабрика",
+    time: "",
+    blood: "Техноорганическая кровь",
+    form: 4,
+    costs: [
+      {
+        key: "black_substance",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "hyperion",
+    at: "Небесный храм",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 40
+      },
+      {
+        key: "seraph_feather",
+        n: 1
+      },
+      {
+        key: "v:ender_pearl",
+        n: 16
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "nocturne",
+    at: "Тёмный храм",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 40
+      },
+      {
+        key: "seraph_feather",
+        n: 1
+      },
+      {
+        key: "v:lapis_block",
+        n: 8
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "excalibur",
+    at: "Небесный храм",
+    time: "только днём",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 40
+      },
+      {
+        key: "seraph_feather",
+        n: 1
+      },
+      {
+        key: "v:diamond_block",
+        n: 4
+      },
+      {
+        key: "v:gold_block",
+        n: 4
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "stars_edge",
+    at: "Тёмный храм",
+    time: "только в полнолуние, ночью",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 48
+      },
+      {
+        key: "seraph_feather",
+        n: 1
+      },
+      {
+        key: "v:nether_star",
+        n: 1
+      },
+      {
+        key: "v:amethyst_shard",
+        n: 16
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "true_excalibur",
+    at: "Тёмный храм",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "excalibur",
+        n: 1
+      },
+      {
+        key: "stars_edge",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "ash_box",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "Пепельная кровь",
+    form: 1,
+    costs: [
+      {
+        key: "soul_shard",
+        n: 128
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "angel_box",
+    at: "Небесный храм",
+    time: "",
+    blood: "Небесная кровь",
+    form: 1,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 128
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "angel_box",
+    at: "Тёмный храм",
+    time: "",
+    blood: "Ночная небесная кровь",
+    form: 1,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 128
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "tarot_hierophant",
+    at: "Небесный храм",
+    time: "",
+    blood: "Небесная кровь",
+    form: 2,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 32
+      },
+      {
+        key: "v:paper",
+        n: 8
+      },
+      {
+        key: "v:light_blue_dye",
+        n: 2
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "tarot_justice",
+    at: "Небесный храм",
+    time: "",
+    blood: "Небесная кровь",
+    form: 2,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 32
+      },
+      {
+        key: "v:paper",
+        n: 8
+      },
+      {
+        key: "v:light_blue_dye",
+        n: 2
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "tarot_hierophant",
+    at: "Тёмный храм",
+    time: "",
+    blood: "Ночная небесная кровь",
+    form: 2,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 32
+      },
+      {
+        key: "v:paper",
+        n: 8
+      },
+      {
+        key: "v:light_blue_dye",
+        n: 2
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "tarot_justice",
+    at: "Тёмный храм",
+    time: "",
+    blood: "Ночная небесная кровь",
+    form: 2,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 32
+      },
+      {
+        key: "v:paper",
+        n: 8
+      },
+      {
+        key: "v:light_blue_dye",
+        n: 2
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "tarot_moon",
+    at: "Тёмный храм",
+    time: "",
+    blood: "Ночная небесная кровь",
+    form: 3,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 64
+      },
+      {
+        key: "v:black_dye",
+        n: 12
+      },
+      {
+        key: "v:quartz",
+        n: 16
+      },
+      {
+        key: "v:totem_of_undying",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "jungle_box",
+    at: "Храм джунглей",
+    time: "",
+    blood: "Кровь предков",
+    form: 1,
+    costs: [
+      {
+        key: "jungle_shard",
+        n: 128
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "copper_automaton",
+    at: "Древняя фабрика",
+    time: "",
+    blood: "Техноорганическая кровь",
+    form: 2,
+    costs: [
+      {
+        key: "v:copper_block",
+        n: 2
+      },
+      {
+        key: "ancient_part",
+        n: 10
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "mini_harbinger",
+    at: "Древняя фабрика",
+    time: "",
+    blood: "Техноорганическая кровь",
+    form: 3,
+    costs: [
+      {
+        key: "v:iron_block",
+        n: 4
+      },
+      {
+        key: "ancient_part",
+        n: 20
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "assembly_dome",
+    at: "Древняя фабрика",
+    time: "",
+    blood: "Техноорганическая кровь",
+    form: 4,
+    costs: [
+      {
+        key: "v:iron_block",
+        n: 5
+      },
+      {
+        key: "v:redstone_block",
+        n: 5
+      },
+      {
+        key: "ancient_part",
+        n: 20
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "terra_blade",
+    at: "Храм джунглей",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "jungle_shard",
+        n: 40
+      },
+      {
+        key: "jungle_heart",
+        n: 1
+      },
+      {
+        key: "terra_ingot",
+        n: 8
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "terra_compass",
+    at: "Храм джунглей",
+    time: "",
+    blood: "Кровь предков",
+    form: 1,
+    costs: [
+      {
+        key: "v:compass",
+        n: 1
+      },
+      {
+        key: "terra_ingot",
+        n: 8
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "terra_magnet",
+    at: "Храм джунглей",
+    time: "",
+    blood: "Кровь предков",
+    form: 3,
+    costs: [
+      {
+        key: "terra_ingot",
+        n: 16
+      },
+      {
+        key: "jungle_shard",
+        n: 64
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "enigma",
+    at: "Храм джунглей",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "jungle_shard",
+        n: 48
+      },
+      {
+        key: "jungle_heart",
+        n: 1
+      },
+      {
+        key: "terra_ingot",
+        n: 4
+      },
+      {
+        key: "v:emerald_block",
+        n: 16
+      }
+    ]
+  }
+];
 const chains = [
   {
     key: "hell",
@@ -2395,7 +3031,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Пережить смертельный удар, держа Все-Чёрный",
-        icon: "images/guide/minecraft:totem_of_undying.png",
+        icon: "images/guide/totem_of_undying.png",
         caption: "Тотем бессмертия"
       },
       {
@@ -3177,7 +3813,22 @@ const vanillaNames = {
   wind_charge: "Заряд ветра",
   map: "Пустая карта",
   nether_brick: "Незерский кирпич",
-  emerald: "Изумруд"
+  emerald: "Изумруд",
+  lapis_block: "Лазуритовый блок",
+  diamond_block: "Алмазный блок",
+  gold_block: "Золотой блок",
+  copper_block: "Медный блок",
+  iron_block: "Железный блок",
+  redstone_block: "Блок редстоуна",
+  ender_pearl: "Жемчуг Края",
+  netherite_ingot: "Незеритовый слиток",
+  amethyst_shard: "Осколок аметиста",
+  paper: "Бумага",
+  light_blue_dye: "Голубой краситель",
+  black_dye: "Чёрный краситель",
+  quartz: "Кварц",
+  totem_of_undying: "Тотем бессмертия",
+  phantom_membrane: "Мембрана фантома"
 };
 const guideNames = {
   air_compass: "Компас воздуха",
@@ -3193,6 +3844,7 @@ const data = {
   images,
   rarities,
   items,
+  altar,
   chains,
   hotbar,
   achievements,
