@@ -1035,3 +1035,47 @@ footer::after { content: ""; position: absolute; top: -4px; left: 50%; width: 9p
 @media (max-width: 900px) { .sec-rune { width: 80px; height: 112px; top: -20px; } }
 .atlas.idle * { animation-play-state: paused !important; }
 .mtrack { margin-inline: 26px 34px; }
+
+/* --- the bloodline tree: a trunk of forms per blood, the crown at the top --------------------------- */
+.btree { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; align-items: start; }
+.btrunk { position: relative; overflow: hidden; display: grid; gap: 12px; padding: 18px 18px 16px; border-radius: var(--r-box);
+  background: radial-gradient(120% 60% at 20% 100%, color-mix(in srgb, var(--b) 20%, transparent), transparent 70%),
+              linear-gradient(180deg, rgba(0, 0, 0, .18), rgba(0, 0, 0, .32));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--b) 45%, transparent), 0 24px 60px -36px var(--b); }
+.btrunk-title { display: flex; align-items: center; gap: 12px; font: 400 1.45rem/1.1 var(--display); color: color-mix(in srgb, var(--b) 40%, #fff); text-shadow: 0 0 20px color-mix(in srgb, var(--b) 60%, transparent); }
+.bforms { list-style: none; margin: 0; padding: 0; position: relative; display: grid; gap: 16px; }
+.bforms::before { content: ""; position: absolute; left: 17px; top: 18px; bottom: 18px; width: 3px; border-radius: 3px;
+  background: linear-gradient(0deg, var(--b), color-mix(in srgb, var(--b) 50%, #fff) 70%, #fff);
+  box-shadow: 0 0 14px var(--b); transform-origin: 50% 100%; transform: scaleY(0); transition: transform 1.2s cubic-bezier(.3, .7, .2, 1) calc(var(--ti) * 120ms); }
+.btree.lit .bforms::before { transform: scaleY(1); }
+.bform { position: relative; display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 14px; align-items: start;
+  opacity: 0; transform: translateY(8px); transition: opacity .5s ease, transform .5s ease; transition-delay: calc(var(--ti) * 120ms + var(--fi) * 260ms + 200ms); }
+.btree.lit .bform { opacity: 1; transform: none; }
+.bnode { position: relative; z-index: 1; width: 38px; height: 38px; display: grid; place-items: center; }
+.bnode::before { content: ""; position: absolute; inset: 5px; transform: rotate(45deg); border-radius: 4px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--b) 55%, #fff), color-mix(in srgb, var(--b) 60%, #000));
+  box-shadow: 0 0 0 2px #120c19, 0 0 16px var(--b); }
+.bnode span { position: relative; font: 400 1rem/1 var(--display); color: #120c19; font-weight: 700; }
+.bform.crown .bnode::before { inset: 2px; background: linear-gradient(135deg, #fff, var(--gold) 50%, color-mix(in srgb, var(--b) 60%, #000)); box-shadow: 0 0 0 2px #120c19, 0 0 22px var(--gold), 0 0 40px -6px var(--b); animation: crown-glow 3s ease-in-out infinite; }
+@keyframes crown-glow { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.25); } }
+.bform.sealed .bnode::before { background: #1a1424; box-shadow: 0 0 0 2px color-mix(in srgb, var(--b) 50%, transparent); border: 1px dashed color-mix(in srgb, var(--b) 70%, transparent); }
+.bform.sealed .bnode span { color: var(--muted); }
+.bform-name { font-size: .78rem; color: color-mix(in srgb, var(--b) 55%, #fff); margin-top: 2px; }
+.bform.crown .bform-name { color: var(--gold); }
+.bform-perk { font-size: .88rem; color: var(--ink-2); line-height: 1.5; }
+.bform-blades { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 6px; }
+.bform-blades .islot { padding: 2px; }
+.bform-blades .islot-cell { width: 44px; height: 44px; padding: 4px; }
+.babyss { align-content: start; }
+.babyss-flow { display: grid; justify-items: center; gap: 4px; padding: 6px 0; }
+.babyss-crowns { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; }
+.babyss-crown .islot-cell { box-shadow: inset 2px 2px 0 var(--slot-lo), inset -2px -2px 0 var(--slot-hi), 0 0 16px -2px var(--c); }
+.babyss-stream { width: 4px; height: 46px; border-radius: 4px; background: linear-gradient(180deg, var(--gold), var(--b) 50%, #000) 0 0 / 100% 200%; box-shadow: 0 0 16px var(--b); animation: stream 1.8s linear infinite; }
+@keyframes stream { to { background-position: 0 -200%; } }
+.babyss-heart .islot-cell { width: 72px; height: 72px; box-shadow: inset 3px 3px 0 var(--slot-lo), inset -3px -3px 0 var(--slot-hi), 0 0 34px -2px var(--b), 0 0 60px -10px #000; }
+.babyss-heart .islot-name { color: color-mix(in srgb, var(--b) 40%, #fff); font-weight: 600; }
+@media (prefers-reduced-motion: reduce) {
+  .bforms::before, .bform { transition: none; }
+  .bform.crown .bnode::before, .babyss-stream { animation: none; }
+}
+@media (max-width: 640px) { .btree { grid-template-columns: minmax(0, 1fr); } }
