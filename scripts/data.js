@@ -421,12 +421,12 @@ const items = [
         text: "<span>Первый, кого вы ударите, становится жертвой.</span> <span>От её руки вы не умрёте — ни от удара, ни от стрелы,</span> <span>ни от падения, в которое она вас сбросила.</span> <span>Жертва одна; её отпускает смерть или полминуты</span> <span>без ваших ударов.</span>"
       },
       {
-        name: "Тёмная территория",
+        name: "Чёрный рывок",
         colour: "#FF5A5A",
         trigger: "ПКМ",
         kind: "rmb",
-        rest: "5 мин",
-        text: "<span>Тёмный купол на 30 секунд. Чёрные разрезы в нём</span> <span>ранят всех, кроме своих.</span> <span>Пока вы внутри, вас нельзя убить.</span>"
+        rest: "9 с",
+        text: "<span>Рывок на 6 блоков в чёрном дыму: 12 урона</span> <span>каждому на пути, а вас в рывке не ударить.</span> <span>Ранил кого-то — снова через секунду.</span>"
       }
     ],
     stats: "Урон 14 · Скорость 1.6",
@@ -1902,7 +1902,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
-    icon: "images/other/6f71e94f18.png",
+    icon: "",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
     recipe: false
@@ -1923,7 +1923,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
-    icon: "images/other/897fc1caae.png",
+    icon: "",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
     recipe: false
@@ -2134,7 +2134,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
-    icon: "images/other/23434c7088.png",
+    icon: "",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
     recipe: false
@@ -2339,6 +2339,21 @@ const altar = [
       },
       {
         key: "warden_heart",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "all_black",
+    from: "imperium",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "Пепельная кровь",
+    form: 4,
+    costs: [
+      {
+        key: "black_substance",
         n: 1
       }
     ]
@@ -3014,8 +3029,12 @@ const chains = [
     title: "Бездна: корона своей крови + Чёрная субстанция",
     entries: [
       {
-        id: "lucifer",
+        id: "imperium",
         sep: ""
+      },
+      {
+        id: "lucifer",
+        sep: "или"
       },
       {
         id: "celestial",
@@ -3472,34 +3491,46 @@ const blood = [
     deed: "",
     weapons: [
       {
+        id: "imperium",
+        name: "Империум",
+        icon: "images/other/f29e190984.png",
+        form: 4,
+        crown: true
+      },
+      {
         id: "lucifer",
         name: "Люцифер",
         icon: "images/other/1f90250f5b.png",
-        form: 3
+        form: 3,
+        crown: true
       },
       {
         id: "demon_will",
         name: "Воля Демона",
         icon: "images/other/5ffe2fbc10.png",
-        form: 2
+        form: 2,
+        crown: false
       },
       {
         id: "demon_slayer",
         name: "Убийца демонов",
         icon: "images/other/8f2915c708.png",
-        form: 1
+        form: 1,
+        crown: false
       },
       {
         id: "grave_splitter",
         name: "Сборщик душ",
         icon: "images/other/ca0b2d0595.png",
-        form: 2
+        form: 2,
+        crown: false
       },
       {
         id: "berserker_axe",
         name: "Секира берсерка",
         icon: "images/other/66344d5ef9.png",
-        form: 1
+        form: 1,
+        crown: false
       }
     ]
   },
@@ -3522,31 +3553,36 @@ const blood = [
         id: "hyperion",
         name: "Hyperion",
         icon: "images/other/efaf7051a3.png",
-        form: 3
+        form: 3,
+        crown: false
       },
       {
         id: "solstice",
         name: "Солнцестояние",
         icon: "images/other/1a4474ed65.png",
-        form: 2
+        form: 2,
+        crown: false
       },
       {
         id: "excalibur",
         name: "Экскалибур",
         icon: "images/other/a911f57db9.png",
-        form: 2
+        form: 2,
+        crown: false
       },
       {
         id: "phoenix_axe",
         name: "Золотой феникс",
         icon: "images/other/c02c9c9337.png",
-        form: 1
+        form: 1,
+        crown: false
       },
       {
         id: "phantomguard",
         name: "Призрачный страж",
         icon: "images/other/28b6759ee6.png",
-        form: 2
+        form: 2,
+        crown: false
       }
     ]
   },
@@ -3570,25 +3606,29 @@ const blood = [
         id: "true_excalibur",
         name: "Истинный Экскалибур",
         icon: "images/other/e470fbf77d.png",
-        form: 4
+        form: 4,
+        crown: true
       },
       {
         id: "stars_edge",
         name: "Звёздная грань",
         icon: "images/other/eadcf5b768.png",
-        form: 1
+        form: 1,
+        crown: false
       },
       {
         id: "requiem",
         name: "Реквием девятого неба",
         icon: "images/other/f8ef121ebd.png",
-        form: 1
+        form: 1,
+        crown: false
       },
       {
         id: "nocturne",
         name: "Ночная фурия",
         icon: "images/other/6d22f8cf26.png",
-        form: 1
+        form: 1,
+        crown: false
       }
     ]
   },
@@ -3615,7 +3655,8 @@ const blood = [
         id: "all_black",
         name: "Все-Чёрный",
         icon: "images/other/63ca5f7c3f.png",
-        form: 1
+        form: 1,
+        crown: true
       }
     ]
   },
@@ -3639,31 +3680,36 @@ const blood = [
         id: "celestial",
         name: "Селестиал",
         icon: "images/other/97fc9f3d00.png",
-        form: 4
+        form: 4,
+        crown: true
       },
       {
         id: "enigma",
         name: "Энигма",
         icon: "images/other/fd4a3c08f5.png",
-        form: 3
+        form: 3,
+        crown: false
       },
       {
         id: "terra_cutter",
         name: "Терра-резак",
         icon: "images/other/2808503131.png",
-        form: 1
+        form: 1,
+        crown: false
       },
       {
         id: "terra_blade",
         name: "Терра-блейд",
         icon: "images/other/bb4efe2f62.png",
-        form: 2
+        form: 2,
+        crown: false
       },
       {
         id: "ancient",
         name: "Древний",
         icon: "images/icons/ancient.png",
-        form: 2
+        form: 2,
+        crown: false
       }
     ]
   },
@@ -3692,19 +3738,22 @@ const blood = [
         id: "creation_splitter",
         name: "Антихрист",
         icon: "images/other/e48e7744f6.png",
-        form: 4
+        form: 4,
+        crown: true
       },
       {
         id: "cyber_katana",
         name: "Энцефало-клинок",
         icon: "images/other/9e6ab2b7b7.png",
-        form: 2
+        form: 2,
+        crown: false
       },
       {
         id: "cyber_blade",
         name: "Энцефало-меч",
         icon: "images/other/431234757a.png",
-        form: 1
+        form: 1,
+        crown: false
       }
     ]
   }
