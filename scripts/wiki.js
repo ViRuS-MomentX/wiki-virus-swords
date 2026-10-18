@@ -3954,9 +3954,9 @@ const _sfc_main$3 = {
         _cache[5] || (_cache[5] = createBaseVNode("p", null, [
           createTextVNode("Величайшие клинки привязаны к крови: в чужих руках они не работают. "),
           createBaseVNode("b", null, "Короны"),
-          createTextVNode(" — Люцифер, Истинный Экскалибур и Селестиал — отвечают только крови в "),
+          createTextVNode(" — Истинный Экскалибур, Селестиал и Антихрист — отвечают только крови в "),
           createBaseVNode("b", null, "четвёртой форме"),
-          createTextVNode(", а Все-Чёрный — только крови бездны.")
+          createTextVNode(", Люцифер — пепельной крови уже с третьей, а Все-Чёрный — только крови бездны.")
         ], -1)),
         createBaseVNode("div", _hoisted_2$2, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(data).blood, (b) => {
