@@ -365,12 +365,12 @@ const items = [
     ],
     abilities: [
       {
-        name: "Пекло",
+        name: "Огненный рывок",
         colour: "#FFAA00",
         trigger: "ПКМ",
         kind: "rmb",
-        rest: null,
-        text: "<span>Минута скорости, силы и огнестойкости —</span> <span>и всё живое в 35 блоках вспыхивает на 10 секунд.</span>"
+        rest: "9 с",
+        text: "<span>Рывок на 6 блоков в огне: 10 урона каждому</span> <span>на пути, он загорается и подсвечивается.</span> <span>В рывке вас не ударить.</span>"
       },
       {
         name: "Прозрение",
@@ -485,7 +485,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/f29e190984.png",
+    icon: "images/other/4ce04abda7.png",
     obtain: "Эволюция Воли Демона в Незеритовой кузне",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
@@ -655,10 +655,10 @@ const items = [
     damage: 10,
     speed: 1.6,
     icon: "images/other/8f2915c708.png",
-    obtain: "Крафт: Арахнид + Душа демона",
-    method: "craft",
-    methodLabel: "Верстак",
-    recipe: true
+    obtain: "Эволюция Арахнида в Незеритовой кузне",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false
   },
   {
     kind: "weapon",
@@ -2250,6 +2250,21 @@ const altar = [
   },
   {
     kind: "evolve",
+    result: "demon_slayer",
+    from: "arachnid",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "demon_soul",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
     result: "grave_splitter",
     from: "demon_slayer",
     at: "Незеритовая кузня",
@@ -3116,7 +3131,7 @@ const achievements = [
         description: "Всё, что дышит вокруг, уже знает, что ты смотришь.",
         frame: "task",
         frameLabel: "Задача",
-        condition: "Подсветить Прозрением 20 существ разом",
+        condition: "Пройти Огненным рывком Воли Демона сквозь 5 существ разом",
         icon: "images/guide/minecraft:spyglass.png",
         caption: "Подзорная труба"
       },
@@ -3493,7 +3508,7 @@ const blood = [
       {
         id: "imperium",
         name: "Империум",
-        icon: "images/other/f29e190984.png",
+        icon: "images/other/4ce04abda7.png",
         form: 4,
         crown: true
       },
@@ -3812,36 +3827,21 @@ const recipes = [
   {
     result: "terra_ingot",
     grid: [
-      "v:emerald_block",
-      "v:emerald_block",
-      "v:emerald_block",
-      "v:emerald_block",
+      "v:emerald",
+      "v:emerald",
+      "v:emerald",
+      "v:emerald",
       "v:diamond",
-      "v:emerald_block",
-      "v:emerald_block",
-      "v:emerald_block",
-      "v:emerald_block"
+      "v:emerald",
+      "v:emerald",
+      "v:emerald",
+      "v:emerald"
     ]
   },
   {
     result: "demonic_cutter",
     grid: [
       "cutter",
-      "demon_soul",
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    shapeless: true
-  },
-  {
-    result: "demon_slayer",
-    grid: [
-      "arachnid",
       "demon_soul",
       null,
       null,

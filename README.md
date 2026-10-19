@@ -58,7 +58,7 @@
 | | Клинок | Урон | Редкость | Где взять |
 |---|---|---|---|---|
 | <img src="assets/icons/arachnid.png" width="40" height="40" alt=""> | **Арахнид** | 8 | Необычная | Сундуки заброшенной шахты |
-| <img src="assets/icons/demon_slayer.png" width="40" height="40" alt=""> | **Убийца демонов** | 10 | Адская | Крафт: Арахнид + Душа демона |
+| <img src="assets/icons/demon_slayer.png" width="40" height="40" alt=""> | **Убийца демонов** | 10 | Адская | Эволюция Арахнида в Незеритовой кузне |
 | <img src="assets/icons/grave_splitter.png" width="40" height="40" alt=""> | **Сборщик душ** | 11 | Адская | Эволюция Убийцы демонов в Незеритовой кузне |
 | <img src="assets/icons/lucifer.png" width="40" height="40" alt=""> | **Люцифер** | 14 | Супер-адская | ??? |
 

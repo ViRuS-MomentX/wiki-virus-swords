@@ -2328,10 +2328,14 @@ const _sfc_main$b = {
           }), 128))
         ]),
         _cache[0] || (_cache[0] = createBaseVNode("div", { class: "callout" }, [
+          createBaseVNode("b", null, "Клинки пепельной крови на верстаке не делаются."),
+          createTextVNode(" Убийца демонов, Бедствие, Воля Демона, Империум и Сборщик душ — только эволюция у алтаря Незеритовой кузни. ")
+        ], -1)),
+        _cache[1] || (_cache[1] = createBaseVNode("div", { class: "callout" }, [
           createBaseVNode("b", null, "Если результат не появляется"),
           createTextVNode(" — проверьте, что предметы плагина настоящие: обычный меч вместо Погибели рецепт не примет. ")
         ], -1)),
-        _cache[1] || (_cache[1] = createBaseVNode("h3", { id: "craft-other" }, "Не на верстаке", -1)),
+        _cache[2] || (_cache[2] = createBaseVNode("h3", { id: "craft-other" }, "Не на верстаке", -1)),
         createBaseVNode("div", _hoisted_4$8, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(groups.value, (g) => {
             return openBlock(), createElementBlock("article", {
