@@ -1108,3 +1108,8 @@ footer::after { content: ""; position: absolute; top: -4px; left: 50%; width: 9p
 .totop:hover::before { box-shadow: 0 0 28px var(--w1), 0 0 0 2px #120c19; }
 @media (max-width: 640px) { .totop { right: 14px; bottom: 14px; } }
 @media (prefers-reduced-motion: reduce) { .totop { transition: none; } }
+
+/* --- blood titles: the prefix shimmers as the game's shader makes it ------------------------------- */
+.btitle { font: 700 1.05rem/1.2 var(--display); background: var(--g) 0 0 / 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: btitle 4s linear infinite; filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .6)); }
+@keyframes btitle { to { background-position: -300% 0; } }
+@media (prefers-reduced-motion: reduce) { .btitle { animation: none; } }
