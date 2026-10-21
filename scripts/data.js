@@ -381,9 +381,9 @@ const items = [
     line: "abyss",
     lore: [
       '<span style="color:#555555"><em>Из его тьмы на вас кто-то смотрит.</em></span>',
-      '<span style="color:#555555"><em>Дотянуться он может. Просто ещё не время.</em></span>',
+      '<span style="color:#555555"><em>Дотянуться он может. Просто не хочет.</em></span>',
       "",
-      '<span style="color:#AAAAAA"><em>Чтобы презирать богов, сначала надо увидеть их лица.</em></span>'
+      '<span style="color:#AAAAAA"><em>Чтобы презирать богов, надо их знать.</em></span>'
     ],
     abilities: [
       {
@@ -478,8 +478,7 @@ const items = [
     rarityLabel: "Обычная",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Его унесли под землю — туда, где не слышно зова.</em></span>',
-      '<span style="color:#555555"><em>Тот, кто спустился за ним, не вернулся к свету.</em></span>'
+      '<span style="color:#555555"><em>Кто-то унёс его под землю и не вернулся.</em></span>'
     ],
     abilities: [
       {
@@ -948,8 +947,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "night",
     lore: [
-      '<span style="color:#555555"><em>Её выковали из звёздного камня, что падает с небес</em></span>',
-      '<span style="color:#555555"><em>в ночь, когда полная луна открывает врата.</em></span>'
+      '<span style="color:#555555"><em>Её выковали из того, что падает с неба</em></span>',
+      '<span style="color:#555555"><em>в ночь, когда луна полна.</em></span>'
     ],
     abilities: [
       {
@@ -1355,8 +1354,8 @@ const items = [
     rarityLabel: "Техно",
     line: "techno",
     lore: [
-      '<span style="color:#555555"><em>На нём нет ни одной нити, ведущей к небесам.</em></span>',
-      '<span style="color:#555555"><em>Его выковали, чтобы перекроить мир по новому чертежу.</em></span>'
+      '<span style="color:#555555"><em>На нём нет нитей. Его ковали, чтобы</em></span>',
+      '<span style="color:#555555"><em>мир наконец заработал как следует.</em></span>'
     ],
     abilities: [
       {
