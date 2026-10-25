@@ -1,11 +1,11 @@
 const counts = {
-  weapons: 30,
-  materials: 30,
-  trophies: 37
+  weapons: 31,
+  materials: 34,
+  trophies: 38
 };
 const words = {
-  weapons: "клинков",
-  materials: "материалов",
+  weapons: "клинок",
+  materials: "материала",
   trophies: "достижений"
 };
 const icons = {
@@ -206,9 +206,9 @@ const rarities = [
     used: [
       "Терра-резак",
       "Терра-блейд",
-      "Древний",
+      "Шёпот Древнего Леса",
       "Энигма",
-      "Селестиал",
+      "Букет лжи",
       "Терра-слиток",
       "Реликтовый осколок",
       "Сердце джунглей",
@@ -216,6 +216,26 @@ const rarities = [
       "Терра-компас",
       "Терра-магнит",
       "Джунглевая коробка"
+    ]
+  },
+  {
+    "const": "ASCENDANT",
+    label: "Целестиальная",
+    palette: [
+      "#ffe7a3",
+      "#f08a5d",
+      "#b8235a",
+      "#f08a5d"
+    ],
+    period: 45,
+    motion: "переливается, проход 2.25 с",
+    used: [
+      "Целестиал",
+      "Архитектор",
+      "Целестиальный шлем",
+      "Целестиальный нагрудник",
+      "Целестиальные поножи",
+      "Целестиальные сапоги"
     ]
   },
   {
@@ -233,7 +253,6 @@ const rarities = [
       "Золотой феникс",
       "Солнцестояние",
       "Призрачный страж",
-      "Экскалибур",
       "Hyperion",
       "Небесный осколок",
       "Перо серафима",
@@ -309,10 +328,11 @@ const items = [
     rarityLabel: "Обычная",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Он ждал в темноте дольше, чем стоит город над ним.</em></span>',
+      '<span style="color:#555555"><em>Задолго до первого камня он ждал в темноте.</em></span>',
+      '<span style="color:#555555"><em>Город вырос над ним — и стал лишь отсрочкой.</em></span>',
       "",
       '<span style="color:#AAAAAA">Ни чар, ни хитростей. Только сталь,</span>',
-      '<span style="color:#AAAAAA">которая пережила всех, кто её боялся.</span>'
+      '<span style="color:#AAAAAA">пережившая всех, кто её страшился.</span>'
     ],
     abilities: [],
     stats: "Урон 7 · Скорость 1.6",
@@ -332,7 +352,8 @@ const items = [
     rarityLabel: "Адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>В сталь вплавили то, что моргало. Теперь моргает сталь.</em></span>'
+      '<span style="color:#555555"><em>Когда небо раскололось, пламя ушло в сталь.</em></span>',
+      '<span style="color:#555555"><em>Теперь оно ждёт, когда мир снова дрогнет.</em></span>'
     ],
     abilities: [
       {
@@ -361,7 +382,8 @@ const items = [
     rarityLabel: "Адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Иссушитель умер. То, что внутри клинка, — нет.</em></span>'
+      '<span style="color:#555555"><em>Иссушитель пал. Его воля — нет.</em></span>',
+      '<span style="color:#555555"><em>Она вошла в сталь и сама выбирает, кому служить.</em></span>'
     ],
     abilities: [
       {
@@ -446,7 +468,8 @@ const items = [
     rarityLabel: "Ультра-адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Клинок пекла, выкованный из его же сердца.</em></span>'
+      '<span style="color:#555555"><em>Выкованный из сердца самого Пекла,</em></span>',
+      '<span style="color:#555555"><em>он правит всеми клинками, что были до него.</em></span>'
     ],
     abilities: [
       {
@@ -528,7 +551,8 @@ const items = [
     rarityLabel: "Эпическая",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Лезвие потемнело и стало брать шире.</em></span>'
+      '<span style="color:#555555"><em>Лезвие почернело, впитав демонскую кровь.</em></span>',
+      '<span style="color:#555555"><em>И с каждым ударом берёт всё больше, не насыщаясь.</em></span>'
     ],
     abilities: [
       {
@@ -557,7 +581,8 @@ const items = [
     rarityLabel: "Терра",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Зелёный металл не тупится и не прощает.</em></span>'
+      '<span style="color:#555555"><em>Зелёный металл, рождённый в глубинах Терры,</em></span>',
+      '<span style="color:#555555"><em>не тупится никогда и никогда не прощает.</em></span>'
     ],
     abilities: [
       {
@@ -594,7 +619,8 @@ const items = [
     rarityLabel: "Необычная",
     line: "blood",
     lore: [
-      '<span style="color:#555555"><em>Тот, кто его ковал, держал пауков не для яда.</em></span>'
+      '<span style="color:#555555"><em>Говорят, кузнец растил пауков не ради яда,</em></span>',
+      '<span style="color:#555555"><em>а ради нитей, на которых подвешивают судьбы.</em></span>'
     ],
     abilities: [
       {
@@ -631,7 +657,8 @@ const items = [
     rarityLabel: "Адская",
     line: "blood",
     lore: [
-      '<span style="color:#555555"><em>Паучья сталь напилась и больше не отпускает.</em></span>'
+      '<span style="color:#555555"><em>Паучья сталь напилась демонской крови</em></span>',
+      '<span style="color:#555555"><em>и с тех пор не знает пощады.</em></span>'
     ],
     abilities: [
       {
@@ -662,7 +689,7 @@ const items = [
   },
   {
     kind: "weapon",
-    id: "grave_splitter",
+    id: "soul_collector",
     name: "Сборщик душ",
     rarity: "HELLISH",
     rarityLabel: "Адская",
@@ -751,14 +778,14 @@ const items = [
   },
   {
     kind: "weapon",
-    id: "gloomsteel_axe",
+    id: "twilight_axe",
     name: "Сумрачная секира",
     rarity: "UNCOMMON",
     rarityLabel: "Необычная",
     line: "axe",
     lore: [
-      '<span style="color:#555555"><em>Её ковали там, где не бывает рассвета.</em></span>',
-      '<span style="color:#555555"><em>Она и не ждёт его.</em></span>'
+      '<span style="color:#555555"><em>Её ковали там, где рассвет не знает дороги.</em></span>',
+      '<span style="color:#555555"><em>Она и не ждёт его — ей довольно тьмы.</em></span>'
     ],
     abilities: [
       {
@@ -795,8 +822,8 @@ const items = [
     rarityLabel: "Адская",
     line: "axe",
     lore: [
-      '<span style="color:#555555"><em>Она видела, как остыл горн. Жар Горнила ушёл в неё —</em></span>',
-      '<span style="color:#555555"><em>и каждая рана делает её тяжелее.</em></span>'
+      '<span style="color:#555555"><em>Она видела, как погас последний горн Горнила.</em></span>',
+      '<span style="color:#555555"><em>Его жар ушёл в неё, и каждая рана делает её тяжелее.</em></span>'
     ],
     abilities: [
       {
@@ -827,14 +854,14 @@ const items = [
   },
   {
     kind: "weapon",
-    id: "phoenix_axe",
+    id: "golden_phoenix",
     name: "Золотой феникс",
     rarity: "CELESTIAL",
     rarityLabel: "Небесная",
     line: "axe",
     lore: [
-      '<span style="color:#555555"><em>Серафим упал, и его свет искал, где остаться.</em></span>',
-      '<span style="color:#555555"><em>Сумрачная сталь впервые увидела рассвет.</em></span>'
+      '<span style="color:#555555"><em>Серафим пал, и последний луч его света искал, где остаться.</em></span>',
+      '<span style="color:#555555"><em>Сумрачная сталь впервые увидела рассвет — и возродилась золотой.</em></span>'
     ],
     abilities: [
       {
@@ -871,8 +898,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>Самый длинный день в году.</em></span>',
-      '<span style="color:#555555"><em>Для кого-то — последний.</em></span>'
+      '<span style="color:#555555"><em>Самый долгий день в году, когда солнце не спешит садиться.</em></span>',
+      '<span style="color:#555555"><em>Для кого-то он стал последним.</em></span>'
     ],
     abilities: [
       {
@@ -903,14 +930,14 @@ const items = [
   },
   {
     kind: "weapon",
-    id: "nocturne",
+    id: "night_fury",
     name: "Ночная фурия",
     rarity: "CELESTIAL_NIGHT",
     rarityLabel: "Небесная",
     line: "night",
     lore: [
-      '<span style="color:#555555"><em>Музыка, которую играют только для тех, кто не спит.</em></span>',
-      '<span style="color:#555555"><em>И не проснётся.</em></span>',
+      '<span style="color:#555555"><em>Мелодия, которую играют лишь для тех, кто не спит.</em></span>',
+      '<span style="color:#555555"><em>Тех, кто её услышал, уже не разбудит рассвет.</em></span>',
       "",
       "",
       "",
@@ -946,14 +973,14 @@ const items = [
   },
   {
     kind: "weapon",
-    id: "phantomguard",
+    id: "phantom_guard",
     name: "Призрачный страж",
     rarity: "CELESTIAL",
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>Он стоит на посту так давно, что забыл,</em></span>',
-      '<span style="color:#555555"><em>что именно охраняет. Тебя — пока что.</em></span>'
+      '<span style="color:#555555"><em>Он стоит на страже так давно, что позабыл,</em></span>',
+      '<span style="color:#555555"><em>кого охраняет. Тебя — пока что.</em></span>'
     ],
     abilities: [
       {
@@ -1029,7 +1056,7 @@ const items = [
     line: "night",
     lore: [
       '<span style="color:#555555"><em>Ночная фурия поднялась на девятое небо</em></span>',
-      '<span style="color:#555555"><em>и вернулась оттуда косой.</em></span>'
+      '<span style="color:#555555"><em>и вернулась оттуда жнецом, несущим вечный покой.</em></span>'
     ],
     abilities: [
       {
@@ -1060,52 +1087,14 @@ const items = [
   },
   {
     kind: "weapon",
-    id: "excalibur",
-    name: "Экскалибур",
-    rarity: "CELESTIAL",
-    rarityLabel: "Небесная",
-    line: "sky",
-    lore: [
-      '<span style="color:#555555"><em>Его вынули из камня. Говорят, это был не камень,</em></span>',
-      '<span style="color:#555555"><em>а ножны — и в них спало ещё что-то.</em></span>'
-    ],
-    abilities: [
-      {
-        name: "Благословение",
-        colour: "#FFAA00",
-        trigger: "Пассивно",
-        kind: "passive",
-        rest: null,
-        text: "<span>По нежити +2 урона.</span>"
-      },
-      {
-        name: "Клятва рыцаря",
-        colour: "#FFAA00",
-        trigger: "ПКМ",
-        kind: "rmb",
-        rest: "30 с",
-        text: "<span>8 секунд силы I и сопротивления I.</span>"
-      }
-    ],
-    stats: "Урон 12 · Скорость 1.6",
-    damage: 12,
-    speed: 1.6,
-    icon: "images/other/a911f57db9.png",
-    obtain: "Ковка в Небесном храме, днём",
-    method: "forge",
-    methodLabel: "Ковка у алтаря",
-    recipe: false
-  },
-  {
-    kind: "weapon",
     id: "true_excalibur",
     name: "Истинный Экскалибур",
     rarity: "CELESTIAL_NIGHT",
     rarityLabel: "Небесная",
     line: "night",
     lore: [
-      '<span style="color:#555555"><em>Камень был лишь ножнами. Это — то,</em></span>',
-      '<span style="color:#555555"><em>что в них спало, пока не пришёл достойный.</em></span>'
+      '<span style="color:#555555"><em>Камень был лишь ножнами. Истинный клинок —</em></span>',
+      '<span style="color:#555555"><em>то, что в них спало, пока не явился достойный.</em></span>'
     ],
     abilities: [
       {
@@ -1145,7 +1134,7 @@ const items = [
     damage: 16,
     speed: 1.6,
     icon: "images/other/e470fbf77d.png",
-    obtain: "Ковка в Тёмном храме: Экскалибур и Звёздная грань",
+    obtain: "Ковка в Тёмном храме: Hyperion и Звёздная грань",
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -1159,7 +1148,7 @@ const items = [
     line: "jungle",
     lore: [
       '<span style="color:#555555"><em>Лес вырастил его сам — из корней, света</em></span>',
-      '<span style="color:#555555"><em>и всего, что в нём когда-то умерло.</em></span>'
+      '<span style="color:#555555"><em>и всего, что в нём когда-то умерло и проросло вновь.</em></span>'
     ],
     abilities: [
       {
@@ -1191,35 +1180,39 @@ const items = [
   {
     kind: "weapon",
     id: "ancient",
-    name: "Древний",
+    name: "Шёпот Древнего Леса",
     rarity: "TERRA",
     rarityLabel: "Терра",
     line: "terra",
     lore: [
-      '<span style="color:#555555"><em>Его ковали, когда мир ещё был камнем,</em></span>',
-      '<span style="color:#555555"><em>и камень помнит каждый его удар.</em></span>'
+      '<span style="color:#555555"><em>Тетиву свили из корня, что старше гор.</em></span>',
+      '<span style="color:#555555"><em>Лес не стреляет. Лес связывает — и ждёт.</em></span>',
+      "",
+      "",
+      "",
+      '<span style="color:#555555">Зачаровывается как обычный лук.</span>'
     ],
     abilities: [
       {
-        name: "Гнев предков",
+        name: "Ядовитый шип",
         colour: "#55FF55",
         trigger: "Пассивно",
         kind: "passive",
         rest: null,
-        text: "<span>По разбойникам и ведьмам +4 урона.</span> <span>Каждый удар оплетает цель корнями:</span> <span>замедление II на 1,5 секунды.</span>"
+        text: "<span>Любая стрела из этого лука, даже простая,</span> <span>отравляет цель: яд I на 3 секунды.</span>"
       },
       {
-        name: "Разлом",
+        name: "Сплетение корней",
         colour: "#55FF55",
-        trigger: "ПКМ",
-        kind: "rmb",
-        rest: "20 с",
-        text: "<span>Удар оземь: разлом бежит на 6 блоков вокруг —</span> <span>8 урона, подброс и корни на 3 секунды.</span> <span>Вам — поглощение II на 8 секунд.</span>"
+        trigger: "Натянуть 5 секунд",
+        kind: "other",
+        rest: "13 с",
+        text: "<span>Держите тетиву: вокруг растут зелёные знаки,</span> <span>снизу копится полоса. На полном заряде лук</span> <span>бьёт зелёным лучом. Где луч упадёт — взрыв:</span> <span>все, кого задело, светятся и связаны корнями</span> <span>на 8 секунд — урон по одному из них</span> <span>получают и все остальные.</span>"
       }
     ],
-    stats: "Урон 11 · Скорость 1.6",
-    damage: 11,
-    speed: 1.6,
+    stats: "Урон 1 · Скорость 4",
+    damage: 1,
+    speed: 4,
     icon: "images/icons/ancient.png",
     obtain: "Бочки Терра-подземелья",
     method: "loot",
@@ -1235,52 +1228,7 @@ const items = [
     line: "jungle",
     lore: [
       '<span style="color:#555555"><em>Предки не оставили ответа. Они оставили вопрос —</em></span>',
-      '<span style="color:#555555"><em>и того, кто сможет его вынести.</em></span>'
-    ],
-    abilities: [
-      {
-        name: "Круг предков",
-        colour: "#55FF55",
-        trigger: "ПКМ",
-        kind: "rmb",
-        rest: "30 с",
-        text: "<span>У ваших ног пульсирует круг предков.</span> <span>Свои в нём получают регенерацию III и сопротивление,</span> <span>вы — ещё и скорость. Враги в нём — отравление III.</span> Держится 10 секунд."
-      },
-      {
-        name: "Печать загадки",
-        colour: "#FFAA00",
-        trigger: "Пассивно",
-        kind: "passive",
-        rest: null,
-        text: "<span>Третий удар подряд по одной цели ломает печать:</span> <span>+6 урона и слабость на 5 секунд.</span>"
-      },
-      {
-        name: "Завет предков",
-        colour: "#FFAA00",
-        trigger: "Пассивно",
-        kind: "passive",
-        rest: null,
-        text: "<span>Когда здоровья меньше трети, предки заслоняют вас:</span> <span>поглощение II на 10 секунд, а союзникам рядом —</span> <span>сопротивление. Раз в минуту.</span>"
-      }
-    ],
-    stats: "Урон 13 · Скорость 1.6",
-    damage: 13,
-    speed: 1.6,
-    icon: "images/other/fd4a3c08f5.png",
-    obtain: "Ковка в Храме джунглей",
-    method: "forge",
-    methodLabel: "Ковка у алтаря",
-    recipe: false
-  },
-  {
-    kind: "weapon",
-    id: "celestial",
-    name: "Селестиал",
-    rarity: "TERRA",
-    rarityLabel: "Терра",
-    line: "jungle",
-    lore: [
-      '<span style="color:#555555"><em>Вопрос, на который предки наконец ответили.</em></span>'
+      '<span style="color:#555555"><em>и тому, кто сумеет его вынести, суждено стать легендой.</em></span>'
     ],
     abilities: [
       {
@@ -1320,21 +1268,134 @@ const items = [
     damage: 15,
     speed: 1.6,
     icon: "images/other/97fc9f3d00.png",
-    obtain: "Эволюция Энигмы в Храме джунглей, 4-я форма крови предков",
+    obtain: "Эволюция Терра-блейда в Храме джунглей, 3-я форма крови предков и Терра-сущность в инвентаре",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
   },
   {
     kind: "weapon",
-    id: "cyber_blade",
+    id: "bouquet_of_lies",
+    name: "Букет лжи",
+    rarity: "TERRA",
+    rarityLabel: "Терра",
+    line: "jungle",
+    lore: [
+      '<span style="color:#555555"><em>Самые красивые цветы дарят тем,</em></span>',
+      '<span style="color:#555555"><em>кому собираются солгать.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Алые розы",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "6 с",
+        text: "<span>Три розы срываются в толпу врагов. Каждая</span> <span>сама находит цель и, как бумеранг, перескакивает</span> <span>с врага на врага — до 5 целей, по 6 урона</span> <span>каждой, оставляя алый шлейф лепестков, —</span> <span>и возвращается в руку.</span>"
+      },
+      {
+        name: "Шипы",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Задетый розой кровоточит: замедление I</span> <span>на 2 секунды, а ваш следующий удар</span> <span>по нему — +4 урона.</span>"
+      }
+    ],
+    stats: "Урон 13 · Скорость 1.6",
+    damage: 13,
+    speed: 1.6,
+    icon: "images/other/b28283363b.png",
+    obtain: "Ковка в Храме джунглей: по 16 цветков 16 видов и 64 реликтовых осколка",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "weapon",
+    id: "celestial",
+    name: "Целестиал",
+    rarity: "ASCENDANT",
+    rarityLabel: "Целестиальная",
+    line: "jungle",
+    lore: [
+      '<span style="color:#555555"><em>Ответ на вопрос предков — тот, которого никто не ждал.</em></span>',
+      '<span style="color:#555555"><em>Ответ сплетён из света.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Звёздные нити",
+        colour: "#FFAA00",
+        trigger: "При ударе",
+        kind: "hit",
+        rest: null,
+        text: "<span>Каждый удар привязывает цель нитью света.</span> <span>Третий подряд по ней рвёт нити: +8 урона,</span> <span>замедление II на 3 секунды, а вам — 2 сердца.</span>"
+      },
+      {
+        name: "Небесная паутина",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "20 с",
+        text: "<span>Там, куда вы смотрите (до 24 блоков), падает</span> <span>сеть из света в 6 блоков: врагам в ней 10 урона</span> <span>и замедление V на 4 секунды.</span>"
+      }
+    ],
+    stats: "Урон 16 · Скорость 1.6",
+    damage: 16,
+    speed: 1.6,
+    icon: "images/other/f5ae1e3d25.png",
+    obtain: "Эволюция Энигмы в Храме джунглей, 5-я форма крови предков",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false
+  },
+  {
+    kind: "weapon",
+    id: "architect",
+    name: "Архитектор",
+    rarity: "ASCENDANT",
+    rarityLabel: "Целестиальная",
+    line: "sky",
+    lore: [
+      '<span style="color:#555555"><em>Предки строили не стены. Они строили порядок.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Чертёж",
+        colour: "#FFAA00",
+        trigger: "При ударе",
+        kind: "hit",
+        rest: null,
+        text: "<span>Каждый четвёртый удар обрушивает на цель</span> <span>столп света: +8 урона и подбрасывает.</span>"
+      },
+      {
+        name: "Возведение",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "35 с",
+        text: "<span>Вокруг вас встаёт круг света на 10 секунд и идёт</span> <span>за вами. Свои в нём получают регенерацию III</span> <span>и сопротивление, вы — ещё и скорость; врагов</span> <span>он жжёт и замедляет.</span>"
+      }
+    ],
+    stats: "Урон 15 · Скорость 1.4",
+    damage: 15,
+    speed: 1.4,
+    icon: "images/other/d81db49a72.png",
+    obtain: "",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "weapon",
+    id: "encephalo_sword",
     name: "Энцефало-меч",
     rarity: "TECHNO",
     rarityLabel: "Техно",
     line: "techno",
     lore: [
-      '<span style="color:#555555"><em>Сталь, провод и красный свет. Фабрика дарит его</em></span>',
-      '<span style="color:#555555"><em>каждому, кто впустил её в кровь.</em></span>'
+      '<span style="color:#555555"><em>Сталь, провод и багряный свет. Фабрика дарит его</em></span>',
+      '<span style="color:#555555"><em>каждому, кто впустил её в свою кровь.</em></span>'
     ],
     abilities: [
       {
@@ -1373,14 +1434,14 @@ const items = [
   },
   {
     kind: "weapon",
-    id: "cyber_katana",
+    id: "encephalo_blade",
     name: "Энцефало-клинок",
     rarity: "TECHNO",
     rarityLabel: "Техно",
     line: "techno",
     lore: [
       '<span style="color:#555555"><em>Второе поколение. Тоньше, быстрее,</em></span>',
-      '<span style="color:#555555"><em>и в нём уже почти нет ошибок.</em></span>'
+      '<span style="color:#555555"><em>и в нём не осталось ни одного изъяна.</em></span>'
     ],
     abilities: [
       {
@@ -1419,7 +1480,7 @@ const items = [
   },
   {
     kind: "weapon",
-    id: "creation_splitter",
+    id: "antichrist",
     name: "Антихрист",
     rarity: "TECHNO",
     rarityLabel: "Техно",
@@ -1487,7 +1548,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>С ним расстояние перестаёт быть препятствием.</em></span>'
+      '<span style="color:#555555"><em>Титан света, чьё имя носит этот клинок,</em></span>',
+      '<span style="color:#555555"><em>для которого расстояние перестаёт быть преградой.</em></span>'
     ],
     abilities: [
       {
@@ -2188,6 +2250,114 @@ const items = [
     method: "place",
     methodLabel: "Святилище",
     recipe: false
+  },
+  {
+    kind: "material",
+    id: "celestial_helmet",
+    name: "Целестиальный шлем",
+    rarity: "ASCENDANT",
+    rarityLabel: "Целестиальная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Восемь глаз — и все смотрят вверх.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>+5 сердец; негативные эффекты и падение не ранят.</span> <span>Днём под открытым небом — регенерация I.</span> <span>За спиной раскрываются крылья.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "",
+    icon: "images/other/379dcbb208.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "celestial_chestplate",
+    name: "Целестиальный нагрудник",
+    rarity: "ASCENDANT",
+    rarityLabel: "Целестиальная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Хитин, что светится изнутри, как небо на закате.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>+5 сердец; негативные эффекты и падение не ранят.</span> <span>Днём под открытым небом — регенерация I.</span> <span>За спиной раскрываются крылья.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "",
+    icon: "images/other/50c7e7b612.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "celestial_leggings",
+    name: "Целестиальные поножи",
+    rarity: "ASCENDANT",
+    rarityLabel: "Целестиальная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Шаг неслышен, как шаг по паутине.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>+5 сердец; негативные эффекты и падение не ранят.</span> <span>Днём под открытым небом — регенерация I.</span> <span>За спиной раскрываются крылья.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "",
+    icon: "images/other/f8802f2922.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "celestial_boots",
+    name: "Целестиальные сапоги",
+    rarity: "ASCENDANT",
+    rarityLabel: "Целестиальная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Земля под ними тянется вверх нитями.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Весь комплект",
+        colour: "#FFAA00",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>+5 сердец; негативные эффекты и падение не ранят.</span> <span>Днём под открытым небом — регенерация I.</span> <span>За спиной раскрываются крылья.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "",
+    icon: "images/other/e9a39d0a18.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
   }
 ];
 const altar = [
@@ -2265,7 +2435,7 @@ const altar = [
   },
   {
     kind: "evolve",
-    result: "grave_splitter",
+    result: "soul_collector",
     from: "demon_slayer",
     at: "Незеритовая кузня",
     time: "",
@@ -2303,22 +2473,45 @@ const altar = [
   },
   {
     kind: "evolve",
-    result: "celestial",
-    from: "enigma",
+    result: "enigma",
+    from: "terra_blade",
     at: "Храм джунглей",
     time: "",
     blood: "Кровь предков",
-    form: 4,
+    form: 3,
     costs: [
       {
         key: "terra_ingot",
         n: 16
+      },
+      {
+        key: "jungle_shard",
+        n: 128
       }
     ]
   },
   {
     kind: "evolve",
-    result: "nocturne",
+    result: "celestial",
+    from: "enigma",
+    at: "Храм джунглей",
+    time: "",
+    blood: "Кровь предков",
+    form: 5,
+    costs: [
+      {
+        key: "terra_ingot",
+        n: 32
+      },
+      {
+        key: "jungle_heart",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "night_fury",
     from: "solstice",
     at: "Тёмный храм",
     time: "",
@@ -2338,7 +2531,7 @@ const altar = [
   {
     kind: "evolve",
     result: "requiem",
-    from: "nocturne",
+    from: "night_fury",
     at: "Тёмный храм",
     time: "",
     blood: "",
@@ -2406,7 +2599,7 @@ const altar = [
   {
     kind: "evolve",
     result: "all_black",
-    from: "celestial",
+    from: "enigma",
     at: "Храм джунглей",
     time: "",
     blood: "Кровь предков",
@@ -2421,7 +2614,7 @@ const altar = [
   {
     kind: "evolve",
     result: "all_black",
-    from: "creation_splitter",
+    from: "antichrist",
     at: "Древняя фабрика",
     time: "",
     blood: "Техноорганическая кровь",
@@ -2457,7 +2650,7 @@ const altar = [
   },
   {
     kind: "forge",
-    result: "nocturne",
+    result: "night_fury",
     at: "Тёмный храм",
     time: "",
     blood: "",
@@ -2474,32 +2667,6 @@ const altar = [
       {
         key: "v:lapis_block",
         n: 8
-      }
-    ]
-  },
-  {
-    kind: "forge",
-    result: "excalibur",
-    at: "Небесный храм",
-    time: "только днём",
-    blood: "",
-    form: 0,
-    costs: [
-      {
-        key: "celestial_shard",
-        n: 40
-      },
-      {
-        key: "seraph_feather",
-        n: 1
-      },
-      {
-        key: "v:diamond_block",
-        n: 4
-      },
-      {
-        key: "v:gold_block",
-        n: 4
       }
     ]
   },
@@ -2538,7 +2705,7 @@ const altar = [
     form: 0,
     costs: [
       {
-        key: "excalibur",
+        key: "hyperion",
         n: 1
       },
       {
@@ -2780,20 +2947,34 @@ const altar = [
     result: "terra_blade",
     at: "Храм джунглей",
     time: "",
-    blood: "",
-    form: 0,
+    blood: "Кровь предков",
+    form: 2,
     costs: [
-      {
-        key: "jungle_shard",
-        n: 40
-      },
-      {
-        key: "jungle_heart",
-        n: 1
-      },
       {
         key: "terra_ingot",
         n: 8
+      },
+      {
+        key: "v:gold_block",
+        n: 3
+      },
+      {
+        key: "jungle_shard",
+        n: 64
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "bouquet_of_lies",
+    at: "Храм джунглей",
+    time: "",
+    blood: "Кровь предков",
+    form: 3,
+    costs: [
+      {
+        key: "jungle_shard",
+        n: 64
       }
     ]
   },
@@ -2830,32 +3011,6 @@ const altar = [
       {
         key: "jungle_shard",
         n: 64
-      }
-    ]
-  },
-  {
-    kind: "forge",
-    result: "enigma",
-    at: "Храм джунглей",
-    time: "",
-    blood: "",
-    form: 0,
-    costs: [
-      {
-        key: "jungle_shard",
-        n: 48
-      },
-      {
-        key: "jungle_heart",
-        n: 1
-      },
-      {
-        key: "terra_ingot",
-        n: 4
-      },
-      {
-        key: "v:emerald_block",
-        n: 16
       }
     ]
   }
@@ -2914,7 +3069,7 @@ const chains = [
         sep: "→"
       },
       {
-        id: "grave_splitter",
+        id: "soul_collector",
         sep: "→"
       },
       {
@@ -2928,7 +3083,7 @@ const chains = [
     title: "Секиры",
     entries: [
       {
-        id: "gloomsteel_axe",
+        id: "twilight_axe",
         sep: ""
       },
       {
@@ -2936,7 +3091,7 @@ const chains = [
         sep: "→"
       },
       {
-        id: "phoenix_axe",
+        id: "golden_phoenix",
         sep: "или"
       }
     ]
@@ -2954,11 +3109,7 @@ const chains = [
         sep: ""
       },
       {
-        id: "phantomguard",
-        sep: ""
-      },
-      {
-        id: "excalibur",
+        id: "phantom_guard",
         sep: ""
       }
     ]
@@ -2976,7 +3127,7 @@ const chains = [
         sep: "·"
       },
       {
-        id: "nocturne",
+        id: "night_fury",
         sep: "→"
       },
       {
@@ -2984,7 +3135,7 @@ const chains = [
         sep: "→"
       },
       {
-        id: "excalibur",
+        id: "hyperion",
         sep: "·"
       },
       {
@@ -3003,11 +3154,15 @@ const chains = [
       },
       {
         id: "enigma",
-        sep: ""
+        sep: "→"
       },
       {
         id: "celestial",
         sep: "→"
+      },
+      {
+        id: "bouquet_of_lies",
+        sep: "·"
       }
     ]
   },
@@ -3026,15 +3181,15 @@ const chains = [
     title: "Техноорганическая кровь",
     entries: [
       {
-        id: "cyber_blade",
+        id: "encephalo_sword",
         sep: ""
       },
       {
-        id: "cyber_katana",
+        id: "encephalo_blade",
         sep: "→"
       },
       {
-        id: "creation_splitter",
+        id: "antichrist",
         sep: "→"
       }
     ]
@@ -3052,7 +3207,7 @@ const chains = [
         sep: "или"
       },
       {
-        id: "celestial",
+        id: "enigma",
         sep: "или"
       },
       {
@@ -3060,7 +3215,7 @@ const chains = [
         sep: "или"
       },
       {
-        id: "creation_splitter",
+        id: "antichrist",
         sep: "или"
       },
       {
@@ -3075,10 +3230,10 @@ const hotbar = [
   "lucifer",
   "enigma",
   "solstice",
-  "nocturne",
-  "phoenix_axe",
+  "night_fury",
+  "golden_phoenix",
   "terra_blade",
-  "phantomguard",
+  "phantom_guard",
   "hyperion"
 ];
 const achievements = [
@@ -3267,7 +3422,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Выковать Энигму",
-        icon: "images/other/fd4a3c08f5.png",
+        icon: "images/other/97fc9f3d00.png",
         caption: "Энигма"
       }
     ]
@@ -3534,7 +3689,7 @@ const blood = [
         crown: false
       },
       {
-        id: "grave_splitter",
+        id: "soul_collector",
         name: "Сборщик душ",
         icon: "images/other/ca0b2d0595.png",
         form: 2,
@@ -3579,21 +3734,14 @@ const blood = [
         crown: false
       },
       {
-        id: "excalibur",
-        name: "Экскалибур",
-        icon: "images/other/a911f57db9.png",
-        form: 2,
-        crown: false
-      },
-      {
-        id: "phoenix_axe",
+        id: "golden_phoenix",
         name: "Золотой феникс",
         icon: "images/other/c02c9c9337.png",
         form: 1,
         crown: false
       },
       {
-        id: "phantomguard",
+        id: "phantom_guard",
         name: "Призрачный страж",
         icon: "images/other/28b6759ee6.png",
         form: 2,
@@ -3639,7 +3787,7 @@ const blood = [
         crown: false
       },
       {
-        id: "nocturne",
+        id: "night_fury",
         name: "Ночная фурия",
         icon: "images/other/6d22f8cf26.png",
         form: 1,
@@ -3684,7 +3832,8 @@ const blood = [
       "Не отбрасывается; яд и иссушение не действуют.",
       "+6 к броне; полсердца каждые 10 секунд.",
       "Двойной прыжок без урона от падения; удар в прыжке стягивает врагов к цели.",
-      "Ниже половины здоровья — щит на 20 ударов, раз в 10 минут."
+      "Ниже половины здоровья — щит на 20 ударов, раз в 10 минут.",
+      "Отвечают Целестиал и Архитектор; Целестиальный доспех целиком — крылья за спиной."
     ],
     formless: false,
     sanctum: "Храм джунглей",
@@ -3693,15 +3842,29 @@ const blood = [
     weapons: [
       {
         id: "celestial",
-        name: "Селестиал",
-        icon: "images/other/97fc9f3d00.png",
-        form: 4,
-        crown: true
+        name: "Целестиал",
+        icon: "images/other/f5ae1e3d25.png",
+        form: 5,
+        crown: false
+      },
+      {
+        id: "architect",
+        name: "Архитектор",
+        icon: "images/other/d81db49a72.png",
+        form: 5,
+        crown: false
       },
       {
         id: "enigma",
         name: "Энигма",
-        icon: "images/other/fd4a3c08f5.png",
+        icon: "images/other/97fc9f3d00.png",
+        form: 3,
+        crown: true
+      },
+      {
+        id: "bouquet_of_lies",
+        name: "Букет лжи",
+        icon: "images/other/b28283363b.png",
         form: 3,
         crown: false
       },
@@ -3721,7 +3884,7 @@ const blood = [
       },
       {
         id: "ancient",
-        name: "Древний",
+        name: "Шёпот Древнего Леса",
         icon: "images/icons/ancient.png",
         form: 2,
         crown: false
@@ -3750,21 +3913,21 @@ const blood = [
     deed: "уничтожить 100 автоматонов фабрики",
     weapons: [
       {
-        id: "creation_splitter",
+        id: "antichrist",
         name: "Антихрист",
         icon: "images/other/e48e7744f6.png",
         form: 4,
         crown: true
       },
       {
-        id: "cyber_katana",
+        id: "encephalo_blade",
         name: "Энцефало-клинок",
         icon: "images/other/9e6ab2b7b7.png",
         form: 2,
         crown: false
       },
       {
-        id: "cyber_blade",
+        id: "encephalo_sword",
         name: "Энцефало-меч",
         icon: "images/other/431234757a.png",
         form: 1,

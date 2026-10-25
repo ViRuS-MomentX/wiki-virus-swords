@@ -7,12 +7,12 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Minecraft-1.21.11-3c8527" alt="Minecraft 1.21.11">
   <img src="https://img.shields.io/badge/Paper-%D0%BF%D0%BB%D0%B0%D0%B3%D0%B8%D0%BD-1f6feb" alt="Paper: плагин">
-  <img src="https://img.shields.io/badge/%D0%BA%D0%BB%D0%B8%D0%BD%D0%BA%D0%BE%D0%B2-30-b02a2a" alt="клинков: 30">
+  <img src="https://img.shields.io/badge/%D0%BA%D0%BB%D0%B8%D0%BD%D0%BA%D0%BE%D0%B2-31-b02a2a" alt="клинков: 31">
   <img src="https://img.shields.io/badge/%D1%80%D0%BE%D0%B4%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D1%8B%D1%85-6-c9822b" alt="родословных: 6">
-  <img src="https://img.shields.io/badge/%D0%B4%D0%BE%D1%81%D1%82%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-37-8a5cf6" alt="достижений: 37">
+  <img src="https://img.shields.io/badge/%D0%B4%D0%BE%D1%81%D1%82%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-38-8a5cf6" alt="достижений: 38">
 </p>
 
-**VirusSwords** — плагин для Minecraft о клинках, которые выбирают своих хозяев. 30 клинков со своими моделями и способностями, шесть родословных, святилища со стражами и боссами, Проклятый замок на крыше Незера и сюжет, который ведут Путеводитель, Наблюдатель и ZorahM-GPT.
+**VirusSwords** — плагин для Minecraft о клинках, которые выбирают своих хозяев. 31 клинков со своими моделями и способностями, шесть родословных, святилища со стражами и боссами, Проклятый замок на крыше Незера и сюжет, который ведут Путеводитель, Наблюдатель и ZorahM-GPT.
 
 Это репозиторий **Кодекса** — вики плагина. Всё, что нужно игроку, — на сайте:
 **[virus-momentx.github.io/wiki-virus-swords](https://virus-momentx.github.io/wiki-virus-swords/)**
@@ -59,16 +59,16 @@
 |---|---|---|---|---|
 | <img src="assets/icons/arachnid.png" width="40" height="40" alt=""> | **Арахнид** | 8 | Необычная | Сундуки заброшенной шахты |
 | <img src="assets/icons/demon_slayer.png" width="40" height="40" alt=""> | **Убийца демонов** | 10 | Адская | Эволюция Арахнида в Незеритовой кузне |
-| <img src="assets/icons/grave_splitter.png" width="40" height="40" alt=""> | **Сборщик душ** | 11 | Адская | Эволюция Убийцы демонов в Незеритовой кузне |
+| <img src="assets/icons/soul_collector.png" width="40" height="40" alt=""> | **Сборщик душ** | 11 | Адская | Эволюция Убийцы демонов в Незеритовой кузне |
 | <img src="assets/icons/lucifer.png" width="40" height="40" alt=""> | **Люцифер** | 14 | Супер-адская | ??? |
 
 ### Секиры
 
 | | Клинок | Урон | Редкость | Где взять |
 |---|---|---|---|---|
-| <img src="assets/icons/gloomsteel_axe.png" width="40" height="40" alt=""> | **Сумрачная секира** | 10 | Необычная | Сундуки крепости Незера |
+| <img src="assets/icons/twilight_axe.png" width="40" height="40" alt=""> | **Сумрачная секира** | 10 | Необычная | Сундуки крепости Незера |
 | <img src="assets/icons/berserker_axe.png" width="40" height="40" alt=""> | **Секира берсерка** | 13 | Адская | Сумрачная секира меняется сама в испытании Незеритовой кузни |
-| <img src="assets/icons/phoenix_axe.png" width="40" height="40" alt=""> | **Золотой феникс** | 14 | Небесная | Сумрачная секира меняется сама в испытании Небесного храма |
+| <img src="assets/icons/golden_phoenix.png" width="40" height="40" alt=""> | **Золотой феникс** | 14 | Небесная | Сумрачная секира меняется сама в испытании Небесного храма |
 
 ### Небесные клинки
 
@@ -76,8 +76,7 @@
 |---|---|---|---|---|
 | <img src="assets/icons/hyperion.png" width="40" height="40" alt=""> | **Hyperion** | 14 | Небесная | Ковка в Небесном храме |
 | <img src="assets/icons/solstice.png" width="40" height="40" alt=""> | **Солнцестояние** | 13 | Небесная | Сокровищница бастиона, редко |
-| <img src="assets/icons/phantomguard.png" width="40" height="40" alt=""> | **Призрачный страж** | 12 | Небесная | Сокровищница Проклятого замка |
-| <img src="assets/icons/excalibur.png" width="40" height="40" alt=""> | **Экскалибур** | 12 | Небесная | Ковка в Небесном храме, днём |
+| <img src="assets/icons/phantom_guard.png" width="40" height="40" alt=""> | **Призрачный страж** | 12 | Небесная | Сокровищница Проклятого замка |
 
 ### Небесная ночь
 
@@ -85,32 +84,33 @@
 |---|---|---|---|---|
 | <img src="assets/icons/stars_edge.png" width="40" height="40" alt=""> | **Звёздная грань** | 13 | Небесная | Ковка в Тёмном храме, в полнолуние |
 | <img src="assets/icons/solstice.png" width="40" height="40" alt=""> | **Солнцестояние** | 13 | Небесная | Сокровищница бастиона, редко |
-| <img src="assets/icons/nocturne.png" width="40" height="40" alt=""> | **Ночная фурия** | 13 | Небесная | Ковка в Тёмном храме или эволюция Солнцестояния |
+| <img src="assets/icons/night_fury.png" width="40" height="40" alt=""> | **Ночная фурия** | 13 | Небесная | Ковка в Тёмном храме или эволюция Солнцестояния |
 | <img src="assets/icons/requiem.png" width="40" height="40" alt=""> | **Реквием девятого неба** | 15 | Небесная | Эволюция Ночной фурии в Тёмном храме |
-| <img src="assets/icons/excalibur.png" width="40" height="40" alt=""> | **Экскалибур** | 12 | Небесная | Ковка в Небесном храме, днём |
-| <img src="assets/icons/true_excalibur.png" width="40" height="40" alt=""> | **Истинный Экскалибур** | 16 | Небесная | Ковка в Тёмном храме: Экскалибур и Звёздная грань |
+| <img src="assets/icons/hyperion.png" width="40" height="40" alt=""> | **Hyperion** | 14 | Небесная | Ковка в Небесном храме |
+| <img src="assets/icons/true_excalibur.png" width="40" height="40" alt=""> | **Истинный Экскалибур** | 16 | Небесная | Ковка в Тёмном храме: Hyperion и Звёздная грань |
 
 ### Ковка в джунглях
 
 | | Клинок | Урон | Редкость | Где взять |
 |---|---|---|---|---|
 | <img src="assets/icons/terra_blade.png" width="40" height="40" alt=""> | **Терра-блейд** | 12 | Терра | Ковка в Храме джунглей |
-| <img src="assets/icons/enigma.png" width="40" height="40" alt=""> | **Энигма** | 13 | Терра | Ковка в Храме джунглей |
-| <img src="assets/icons/celestial.png" width="40" height="40" alt=""> | **Селестиал** | 15 | Терра | Эволюция Энигмы в Храме джунглей, 4-я форма крови предков |
+| <img src="assets/icons/enigma.png" width="40" height="40" alt=""> | **Энигма** | 15 | Терра | Эволюция Терра-блейда в Храме джунглей, 3-я форма крови предков и Терра-сущность в инвентаре |
+| <img src="assets/icons/celestial.png" width="40" height="40" alt=""> | **Целестиал** | 16 | Целестиальная | Эволюция Энигмы в Храме джунглей, 5-я форма крови предков |
+| <img src="assets/icons/bouquet_of_lies.png" width="40" height="40" alt=""> | **Букет лжи** | 13 | Терра | Ковка в Храме джунглей: по 16 цветков 16 видов и 64 реликтовых осколка |
 
 ### Терра-подземелье
 
 | | Клинок | Урон | Редкость | Где взять |
 |---|---|---|---|---|
-| <img src="assets/icons/ancient.png" width="40" height="40" alt=""> | **Древний** | 11 | Терра | Бочки Терра-подземелья |
+| <img src="assets/icons/ancient.png" width="40" height="40" alt=""> | **Шёпот Древнего Леса** | 1 | Терра | Бочки Терра-подземелья |
 
 ### Техноорганическая кровь
 
 | | Клинок | Урон | Редкость | Где взять |
 |---|---|---|---|---|
-| <img src="assets/icons/cyber_blade.png" width="40" height="40" alt=""> | **Энцефало-меч** | 10 | Техно | Дар Древней фабрики вместе с техноорганической кровью |
-| <img src="assets/icons/cyber_katana.png" width="40" height="40" alt=""> | **Энцефало-клинок** | 12 | Техно | Сам вырастает из Энцефало-меча |
-| <img src="assets/icons/creation_splitter.png" width="40" height="40" alt=""> | **Антихрист** | 14 | Техно | Сам вырастает из Энцефало-клинка |
+| <img src="assets/icons/encephalo_sword.png" width="40" height="40" alt=""> | **Энцефало-меч** | 10 | Техно | Дар Древней фабрики вместе с техноорганической кровью |
+| <img src="assets/icons/encephalo_blade.png" width="40" height="40" alt=""> | **Энцефало-клинок** | 12 | Техно | Сам вырастает из Энцефало-меча |
+| <img src="assets/icons/antichrist.png" width="40" height="40" alt=""> | **Антихрист** | 14 | Техно | Сам вырастает из Энцефало-клинка |
 
 ### Бездна: корона своей крови + Чёрная субстанция
 
@@ -118,9 +118,9 @@
 |---|---|---|---|---|
 | <img src="assets/icons/imperium.png" width="40" height="40" alt=""> | **Империум** | 14 | Ультра-адская | Эволюция Воли Демона в Незеритовой кузне |
 | <img src="assets/icons/lucifer.png" width="40" height="40" alt=""> | **Люцифер** | 14 | Супер-адская | ??? |
-| <img src="assets/icons/celestial.png" width="40" height="40" alt=""> | **Селестиал** | 15 | Терра | Эволюция Энигмы в Храме джунглей, 4-я форма крови предков |
-| <img src="assets/icons/true_excalibur.png" width="40" height="40" alt=""> | **Истинный Экскалибур** | 16 | Небесная | Ковка в Тёмном храме: Экскалибур и Звёздная грань |
-| <img src="assets/icons/creation_splitter.png" width="40" height="40" alt=""> | **Антихрист** | 14 | Техно | Сам вырастает из Энцефало-клинка |
+| <img src="assets/icons/enigma.png" width="40" height="40" alt=""> | **Энигма** | 15 | Терра | Эволюция Терра-блейда в Храме джунглей, 3-я форма крови предков и Терра-сущность в инвентаре |
+| <img src="assets/icons/true_excalibur.png" width="40" height="40" alt=""> | **Истинный Экскалибур** | 16 | Небесная | Ковка в Тёмном храме: Hyperion и Звёздная грань |
+| <img src="assets/icons/antichrist.png" width="40" height="40" alt=""> | **Антихрист** | 14 | Техно | Сам вырастает из Энцефало-клинка |
 | <img src="assets/icons/all_black.png" width="40" height="40" alt=""> | **Все-Чёрный** | 14 | Ультра-адская | Эволюция короны крови с Чёрной субстанцией у алтаря своего храма |
 
 ## Родословные
@@ -148,7 +148,7 @@
 | **Проклятый замок** | на крыше Незера | Проклятый король |
 | **Терра-подземелье** | под джунглями, появляется и исчезает | Джунглевый голем |
 
-Ещё в вики: 50 материалов, 37 достижений, испытания святилищ и рост клинка до пробуждения.
+Ещё в вики: 54 материалов, 38 достижений, испытания святилищ и рост клинка до пробуждения.
 
 ## Как устроен репозиторий
 
