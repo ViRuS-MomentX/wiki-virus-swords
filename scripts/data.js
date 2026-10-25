@@ -1,11 +1,11 @@
 const counts = {
   weapons: 31,
-  materials: 34,
+  materials: 35,
   trophies: 38
 };
 const words = {
   weapons: "клинок",
-  materials: "материала",
+  materials: "материалов",
   trophies: "достижений"
 };
 const icons = {
@@ -21,6 +21,7 @@ const icons = {
   harbinger_core: "images/icons/harbinger_core.png",
   terra_essence: "images/icons/terra_essence.png",
   royal_clock: "images/icons/royal_clock.png",
+  rewind_gear: "images/icons/rewind_gear.png",
   terra_compass: "images/icons/terra_compass.png",
   terra_ingot: "images/icons/terra_ingot.png",
   demon_soul: "images/icons/demon_soul.png",
@@ -169,6 +170,7 @@ const rarities = [
       "Душа Иссушителя",
       "Адская сущность",
       "Королевские часы",
+      "Шестерня вспять",
       "Тайник пепла",
       "Душа лорда"
     ]
@@ -1918,14 +1920,41 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Спасают от смерти, как тотем бессмертия,</span>',
       '<span style="color:#AAAAAA">и на 5 секунд останавливают время вокруг.</span>',
-      '<span style="color:#AAAAAA">Падают с Проклятого короля.</span>'
+      '<span style="color:#AAAAAA">Падают с Хронарха.</span>'
     ],
     abilities: [],
     stats: "",
-    obtain: "Проклятый король",
+    obtain: "Хронарх в Зале маятника Проклятого замка",
     icon: "images/icons/royal_clock.png",
-    method: "drop",
-    methodLabel: "Добыча",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
+    id: "rewind_gear",
+    name: "Шестерня вспять",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Зубцы стёрты с обратной стороны: её крутили против хода.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Пять секунд назад",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "3 мин",
+        text: "<span>Возвращает туда, где вы стояли 5 секунд назад,</span> <span>и здоровье, если тогда его было больше.</span> <span>Не тратится. Падает с Хронарха.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Хронарх в Зале маятника Проклятого замка",
+    icon: "images/icons/rewind_gear.png",
+    method: "place",
+    methodLabel: "Святилище",
     recipe: false
   },
   {
