@@ -238,6 +238,7 @@ const rarities = [
     used: [
       "Целестиал",
       "Архитектор",
+      "Ключ Забытого мира",
       "Целестиальный шлем",
       "Целестиальный нагрудник",
       "Целестиальные поножи",
@@ -262,7 +263,6 @@ const rarities = [
       "Hyperion",
       "Небесный осколок",
       "Перо серафима",
-      "Ключ Забытого мира",
       "Ангельская шкатулка",
       "V — Иерофант",
       "VIII — Правосудие",
@@ -930,7 +930,7 @@ const items = [
     damage: 13,
     speed: 1.6,
     icon: "images/other/1a4474ed65.png",
-    obtain: "Сокровищница бастиона, редко",
+    obtain: "Сокровищница бастиона, редко · наградные сундуки Забытого мира",
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -1011,7 +1011,7 @@ const items = [
     damage: 12,
     speed: 1.6,
     icon: "images/other/28b6759ee6.png",
-    obtain: "Сокровищница Проклятого замка",
+    obtain: "Сокровищница Проклятого замка · наградные сундуки Забытого мира",
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -1313,7 +1313,7 @@ const items = [
     damage: 13,
     speed: 1.6,
     icon: "images/other/b28283363b.png",
-    obtain: "Ковка в Храме джунглей: по 16 цветков 16 видов и 64 реликтовых осколка",
+    obtain: "Ковка в Храме джунглей: по 16 цветков 16 видов и 64 реликтовых осколка · наградные сундуки Забытого мира",
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -1939,8 +1939,8 @@ const items = [
     kind: "material",
     id: "forgotten_key",
     name: "Ключ Забытого мира",
-    rarity: "CELESTIAL",
-    rarityLabel: "Небесная",
+    rarity: "ASCENDANT",
+    rarityLabel: "Целестиальная",
     line: "material",
     lore: [
       '<span style="color:#555555"><em>Он открывает не дверь, а небо за ней.</em></span>',
