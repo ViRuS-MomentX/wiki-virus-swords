@@ -1,6 +1,6 @@
 const counts = {
   weapons: 31,
-  materials: 35,
+  materials: 36,
   trophies: 38
 };
 const words = {
@@ -23,6 +23,10 @@ const icons = {
   royal_clock: "images/icons/royal_clock.png",
   rewind_gear: "images/icons/rewind_gear.png",
   terra_compass: "images/icons/terra_compass.png",
+  forgotten_key: "images/icons/forgotten_key.png",
+  architect: "images/icons/architect.png",
+  celestial: "images/icons/celestial.png",
+  celestial_helmet: "images/icons/celestial_helmet.png",
   terra_ingot: "images/icons/terra_ingot.png",
   demon_soul: "images/icons/demon_soul.png",
   ancient: "images/icons/ancient.png",
@@ -258,6 +262,7 @@ const rarities = [
       "Hyperion",
       "Небесный осколок",
       "Перо серафима",
+      "Ключ Забытого мира",
       "Ангельская шкатулка",
       "V — Иерофант",
       "VIII — Правосудие",
@@ -1345,7 +1350,7 @@ const items = [
     stats: "Урон 16 · Скорость 1.6",
     damage: 16,
     speed: 1.6,
-    icon: "images/other/f5ae1e3d25.png",
+    icon: "images/icons/celestial.png",
     obtain: "Эволюция Энигмы в Храме джунглей, 5-я форма крови предков",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
@@ -1382,7 +1387,7 @@ const items = [
     stats: "Урон 15 · Скорость 1.4",
     damage: 15,
     speed: 1.4,
-    icon: "images/other/d81db49a72.png",
+    icon: "images/icons/architect.png",
     obtain: "",
     method: "place",
     methodLabel: "Святилище",
@@ -1932,6 +1937,30 @@ const items = [
   },
   {
     kind: "material",
+    id: "forgotten_key",
+    name: "Ключ Забытого мира",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Он открывает не дверь, а небо за ней.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">За Небесным храмом, на облачном краю острова,</span>',
+      '<span style="color:#AAAAAA">его владелец видит тёмную платформу.</span>',
+      '<span style="color:#AAAAAA">Встаньте на неё — и через 10 секунд вас и всех,</span>',
+      '<span style="color:#AAAAAA">кто стоит рядом, заберёт Забытый мир.</span>',
+      '<span style="color:#555555">Тратится на один проход.</span>'
+    ],
+    abilities: [],
+    stats: "",
+    obtain: "",
+    icon: "images/icons/forgotten_key.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
     id: "rewind_gear",
     name: "Шестерня вспять",
     rarity: "SUPER_HELLISH",
@@ -2302,7 +2331,7 @@ const items = [
     ],
     stats: "",
     obtain: "",
-    icon: "images/other/379dcbb208.png",
+    icon: "images/icons/celestial_helmet.png",
     method: "place",
     methodLabel: "Святилище",
     recipe: false
@@ -3022,6 +3051,32 @@ const altar = [
       {
         key: "terra_ingot",
         n: 8
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "forgotten_key",
+    at: "Храм джунглей",
+    time: "",
+    blood: "",
+    form: 4,
+    costs: [
+      {
+        key: "terra_ingot",
+        n: 16
+      },
+      {
+        key: "celestial_shard",
+        n: 64
+      },
+      {
+        key: "soul_shard",
+        n: 64
+      },
+      {
+        key: "jungle_shard",
+        n: 64
       }
     ]
   },
@@ -3872,14 +3927,14 @@ const blood = [
       {
         id: "celestial",
         name: "Целестиал",
-        icon: "images/other/f5ae1e3d25.png",
+        icon: "images/icons/celestial.png",
         form: 5,
         crown: false
       },
       {
         id: "architect",
         name: "Архитектор",
-        icon: "images/other/d81db49a72.png",
+        icon: "images/icons/architect.png",
         form: 5,
         crown: false
       },
