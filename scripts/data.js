@@ -1,6 +1,6 @@
 const counts = {
   weapons: 31,
-  materials: 36,
+  materials: 37,
   trophies: 38
 };
 const words = {
@@ -24,6 +24,7 @@ const icons = {
   rewind_gear: "images/icons/rewind_gear.png",
   terra_compass: "images/icons/terra_compass.png",
   forgotten_key: "images/icons/forgotten_key.png",
+  forgotten_key_moss: "images/icons/forgotten_key_moss.png",
   architect: "images/icons/architect.png",
   celestial: "images/icons/celestial.png",
   celestial_helmet: "images/icons/celestial_helmet.png",
@@ -220,6 +221,7 @@ const rarities = [
       "Сердце джунглей",
       "Терра-сущность",
       "Терра-компас",
+      "Мшистый ключ Забытого мира",
       "Терра-магнит",
       "Джунглевая коробка"
     ]
@@ -238,7 +240,7 @@ const rarities = [
     used: [
       "Целестиал",
       "Архитектор",
-      "Ключ Забытого мира",
+      "Сияющий ключ Забытого мира",
       "Целестиальный шлем",
       "Целестиальный нагрудник",
       "Целестиальные поножи",
@@ -545,7 +547,7 @@ const items = [
     damage: 5,
     speed: 1,
     icon: "images/other/9adf817a26.png",
-    obtain: "Сундуки древнего города",
+    obtain: "Сундуки древнего города · сундуки Истинного голема в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -651,7 +653,7 @@ const items = [
     damage: 8,
     speed: 1.6,
     icon: "images/other/8572c066ae.png",
-    obtain: "Сундуки заброшенной шахты",
+    obtain: "Сундуки заброшенной шахты · сундуки Истинного голема в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -689,7 +691,7 @@ const items = [
     damage: 10,
     speed: 1.6,
     icon: "images/other/8f2915c708.png",
-    obtain: "Эволюция Арахнида в Незеритовой кузне",
+    obtain: "Эволюция Арахнида в Незеритовой кузне · сундуки Истинного голема в Забытом мире",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -739,7 +741,7 @@ const items = [
     damage: 11,
     speed: 1.6,
     icon: "images/other/ca0b2d0595.png",
-    obtain: "Эволюция Убийцы демонов в Незеритовой кузне",
+    obtain: "Эволюция Убийцы демонов в Незеритовой кузне · сундуки Целестиала в Забытом мире",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -816,7 +818,7 @@ const items = [
     damage: 10,
     speed: 1,
     icon: "images/other/5e7c8e6aba.png",
-    obtain: "Сундуки крепости Незера",
+    obtain: "Сундуки крепости Незера · сундуки Истинного голема в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -854,7 +856,7 @@ const items = [
     damage: 13,
     speed: 1,
     icon: "images/other/66344d5ef9.png",
-    obtain: "Сумрачная секира меняется сама в испытании Незеритовой кузни",
+    obtain: "Сумрачная секира меняется сама в испытании Незеритовой кузни · сундуки Целестиала в Забытом мире",
     method: "grows",
     methodLabel: "Растёт сам",
     recipe: false
@@ -892,7 +894,7 @@ const items = [
     damage: 14,
     speed: 1,
     icon: "images/other/c02c9c9337.png",
-    obtain: "Сумрачная секира меняется сама в испытании Небесного храма",
+    obtain: "Сумрачная секира меняется сама в испытании Небесного храма · сундуки Целестиала в Забытом мире",
     method: "grows",
     methodLabel: "Растёт сам",
     recipe: false
@@ -930,7 +932,7 @@ const items = [
     damage: 13,
     speed: 1.6,
     icon: "images/other/1a4474ed65.png",
-    obtain: "Сокровищница бастиона, редко · наградные сундуки Забытого мира",
+    obtain: "Сокровищница бастиона, редко · сундуки Истинного голема в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -973,7 +975,7 @@ const items = [
     damage: 13,
     speed: 1.6,
     icon: "images/other/6d22f8cf26.png",
-    obtain: "Ковка в Тёмном храме или эволюция Солнцестояния",
+    obtain: "Ковка в Тёмном храме или эволюция Солнцестояния · сундуки Целестиала в Забытом мире",
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -1011,7 +1013,7 @@ const items = [
     damage: 12,
     speed: 1.6,
     icon: "images/other/28b6759ee6.png",
-    obtain: "Сокровищница Проклятого замка · наградные сундуки Забытого мира",
+    obtain: "Сокровищница Проклятого замка · сундуки Целестиала в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -1313,9 +1315,9 @@ const items = [
     damage: 13,
     speed: 1.6,
     icon: "images/other/b28283363b.png",
-    obtain: "Ковка в Храме джунглей: по 16 цветков 16 видов и 64 реликтовых осколка · наградные сундуки Забытого мира",
-    method: "forge",
-    methodLabel: "Ковка у алтаря",
+    obtain: "Только наградные сундуки Забытого мира (голем и Целестиал)",
+    method: "place",
+    methodLabel: "Святилище",
     recipe: false
   },
   {
@@ -1351,7 +1353,7 @@ const items = [
     damage: 16,
     speed: 1.6,
     icon: "images/icons/celestial.png",
-    obtain: "Эволюция Энигмы в Храме джунглей, 5-я форма крови предков",
+    obtain: "Эволюция Энигмы в Храме джунглей, 5-я форма крови предков · сундуки Целестиала в Забытом мире",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -1572,7 +1574,7 @@ const items = [
     damage: 14,
     speed: 1.6,
     icon: "images/other/efaf7051a3.png",
-    obtain: "Ковка в Небесном храме",
+    obtain: "Ковка в Небесном храме · сундуки Истинного голема в Забытом мире",
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -1594,7 +1596,7 @@ const items = [
     ],
     abilities: [],
     stats: "",
-    obtain: "Сокровищница бастиона",
+    obtain: "Сокровищница бастиона · сундуки Истинного голема в Забытом мире",
     icon: "images/icons/demon_soul.png",
     method: "loot",
     methodLabel: "Находка",
@@ -1635,7 +1637,7 @@ const items = [
     ],
     abilities: [],
     stats: "",
-    obtain: "Иногда падает с Иссушителя",
+    obtain: "Иногда падает с Иссушителя · сундуки Целестиала в Забытом мире",
     icon: "images/other/55344aa5c9.png",
     method: "drop",
     methodLabel: "Добыча",
@@ -1937,19 +1939,45 @@ const items = [
   },
   {
     kind: "material",
+    id: "forgotten_key_moss",
+    name: "Мшистый ключ Забытого мира",
+    rarity: "TERRA",
+    rarityLabel: "Терра",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Мох на нём ещё помнит, как дышит голем.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Правый клик в большом зале Терра-подземелья,</span>',
+      '<span style="color:#AAAAAA">когда Джунглевый голем пал: за Терра-сущностью</span>',
+      '<span style="color:#AAAAAA">ложится платформа, её видят все. 10 секунд на ней —</span>',
+      '<span style="color:#AAAAAA">и отряд уходит в Забытый мир.</span>',
+      '<span style="color:#55FF55">Внизу ждёт Истинный Джунглевый голем.</span>',
+      '<span style="color:#555555">Тратится, когда открывает путь.</span>'
+    ],
+    abilities: [],
+    stats: "",
+    obtain: "",
+    icon: "images/icons/forgotten_key_moss.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false
+  },
+  {
+    kind: "material",
     id: "forgotten_key",
-    name: "Ключ Забытого мира",
+    name: "Сияющий ключ Забытого мира",
     rarity: "ASCENDANT",
     rarityLabel: "Целестиальная",
     line: "material",
     lore: [
       '<span style="color:#555555"><em>Он открывает не дверь, а небо за ней.</em></span>',
       "",
-      '<span style="color:#AAAAAA">За Небесным храмом, на облачном краю острова,</span>',
-      '<span style="color:#AAAAAA">его владелец видит тёмную платформу.</span>',
-      '<span style="color:#AAAAAA">Встаньте на неё — и через 10 секунд вас и всех,</span>',
-      '<span style="color:#AAAAAA">кто стоит рядом, заберёт Забытый мир.</span>',
-      '<span style="color:#555555">Тратится на один проход.</span>'
+      '<span style="color:#AAAAAA">Правый клик в большом зале Терра-подземелья,</span>',
+      '<span style="color:#AAAAAA">когда Джунглевый голем пал: за Терра-сущностью</span>',
+      '<span style="color:#AAAAAA">ложится платформа, её видят все. 10 секунд на ней —</span>',
+      '<span style="color:#AAAAAA">и отряд уходит в Забытый мир.</span>',
+      '<span style="color:#FFAA00">Внизу ждёт Целестиал.</span>',
+      '<span style="color:#555555">Тратится, когда открывает путь.</span>'
     ],
     abilities: [],
     stats: "",
@@ -2069,7 +2097,7 @@ const items = [
       }
     ],
     stats: "",
-    obtain: "Ковка у алтаря Храма джунглей: 16 терра-слитков, 64 реликтовых осколка; кровь предков с 3-й формы",
+    obtain: "Ковка у алтаря Храма джунглей: 16 терра-слитков, 64 реликтовых осколка; кровь предков с 3-й формы · сундуки Целестиала в Забытом мире",
     icon: "images/other/aad712b223.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -2177,7 +2205,7 @@ const items = [
       }
     ],
     stats: "",
-    obtain: "Ковка у алтаря Небесного или Тёмного храма: 32 небесных осколка, 8 бумаги, 2 голубых красителя; небесная или ночная кровь со 2-й формы",
+    obtain: "Ковка у алтаря Небесного или Тёмного храма: 32 небесных осколка, 8 бумаги, 2 голубых красителя; небесная или ночная кровь со 2-й формы · сундуки Целестиала в Забытом мире",
     icon: "images/other/bdde4e2356.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -2204,7 +2232,7 @@ const items = [
       }
     ],
     stats: "",
-    obtain: "Ковка у алтаря Небесного или Тёмного храма: 32 небесных осколка, 8 бумаги, 2 голубых красителя; небесная или ночная кровь со 2-й формы",
+    obtain: "Ковка у алтаря Небесного или Тёмного храма: 32 небесных осколка, 8 бумаги, 2 голубых красителя; небесная или ночная кровь со 2-й формы · сундуки Целестиала в Забытом мире",
     icon: "images/other/d7be5a344a.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -2231,7 +2259,7 @@ const items = [
       }
     ],
     stats: "",
-    obtain: "Ковка у алтаря Тёмного храма: 64 небесных осколка, 12 чёрных красителей, 16 кварца, тотем бессмертия; ночная кровь с 3-й формы",
+    obtain: "Ковка у алтаря Тёмного храма: 64 небесных осколка, 12 чёрных красителей, 16 кварца, тотем бессмертия; ночная кровь с 3-й формы · сундуки Целестиала в Забытом мире",
     icon: "images/other/725891b28f.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -3024,20 +3052,6 @@ const altar = [
   },
   {
     kind: "forge",
-    result: "bouquet_of_lies",
-    at: "Храм джунглей",
-    time: "",
-    blood: "Кровь предков",
-    form: 3,
-    costs: [
-      {
-        key: "jungle_shard",
-        n: 64
-      }
-    ]
-  },
-  {
-    kind: "forge",
     result: "terra_compass",
     at: "Храм джунглей",
     time: "",
@@ -3056,6 +3070,32 @@ const altar = [
   },
   {
     kind: "forge",
+    result: "forgotten_key_moss",
+    at: "Храм джунглей",
+    time: "",
+    blood: "",
+    form: 3,
+    costs: [
+      {
+        key: "terra_ingot",
+        n: 8
+      },
+      {
+        key: "soul_shard",
+        n: 16
+      },
+      {
+        key: "celestial_shard",
+        n: 16
+      },
+      {
+        key: "jungle_shard",
+        n: 16
+      }
+    ]
+  },
+  {
+    kind: "forge",
     result: "forgotten_key",
     at: "Храм джунглей",
     time: "",
@@ -3067,16 +3107,20 @@ const altar = [
         n: 16
       },
       {
-        key: "celestial_shard",
+        key: "soul_shard",
         n: 64
       },
       {
-        key: "soul_shard",
+        key: "celestial_shard",
         n: 64
       },
       {
         key: "jungle_shard",
         n: 64
+      },
+      {
+        key: "jungle_heart",
+        n: 1
       }
     ]
   },
@@ -3762,7 +3806,7 @@ const blood = [
         id: "demon_will",
         name: "Воля Демона",
         icon: "images/other/5ffe2fbc10.png",
-        form: 2,
+        form: 3,
         crown: false
       },
       {
@@ -3828,7 +3872,7 @@ const blood = [
         id: "phantom_guard",
         name: "Призрачный страж",
         icon: "images/other/28b6759ee6.png",
-        form: 2,
+        form: 3,
         crown: false
       }
     ]
@@ -3949,7 +3993,7 @@ const blood = [
         id: "bouquet_of_lies",
         name: "Букет лжи",
         icon: "images/other/b28283363b.png",
-        form: 3,
+        form: 2,
         crown: false
       },
       {
