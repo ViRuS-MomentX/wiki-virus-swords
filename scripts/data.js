@@ -1948,8 +1948,9 @@ const items = [
       '<span style="color:#555555"><em>Мох на нём ещё помнит, как дышит голем.</em></span>',
       "",
       '<span style="color:#AAAAAA">Правый клик в большом зале Терра-подземелья,</span>',
-      '<span style="color:#AAAAAA">когда Джунглевый голем пал: за Терра-сущностью</span>',
-      '<span style="color:#AAAAAA">ложится платформа, её видят все. 10 секунд на ней —</span>',
+      '<span style="color:#AAAAAA">когда Джунглевый голем пал и Терра-сущность</span>',
+      '<span style="color:#AAAAAA">взята: за холмом ложится платформа, её видят все.</span>',
+      '<span style="color:#AAAAAA">10 секунд на ней —</span>',
       '<span style="color:#AAAAAA">и отряд уходит в Забытый мир.</span>',
       '<span style="color:#55FF55">Внизу ждёт Истинный Джунглевый голем.</span>',
       '<span style="color:#555555">Тратится, когда открывает путь.</span>'
@@ -1973,8 +1974,9 @@ const items = [
       '<span style="color:#555555"><em>Он открывает не дверь, а небо за ней.</em></span>',
       "",
       '<span style="color:#AAAAAA">Правый клик в большом зале Терра-подземелья,</span>',
-      '<span style="color:#AAAAAA">когда Джунглевый голем пал: за Терра-сущностью</span>',
-      '<span style="color:#AAAAAA">ложится платформа, её видят все. 10 секунд на ней —</span>',
+      '<span style="color:#AAAAAA">когда Джунглевый голем пал и Терра-сущность</span>',
+      '<span style="color:#AAAAAA">взята: за холмом ложится платформа, её видят все.</span>',
+      '<span style="color:#AAAAAA">10 секунд на ней —</span>',
       '<span style="color:#AAAAAA">и отряд уходит в Забытый мир.</span>',
       '<span style="color:#FFAA00">Внизу ждёт Целестиал.</span>',
       '<span style="color:#555555">Тратится, когда открывает путь.</span>'
