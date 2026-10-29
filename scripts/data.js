@@ -653,7 +653,7 @@ const items = [
     damage: 8,
     speed: 1.6,
     icon: "images/other/8572c066ae.png",
-    obtain: "Сундуки заброшенной шахты · сундуки Истинного голема в Забытом мире",
+    obtain: "Сундуки заброшенной шахты · сундуки Истинного голема в Забытом мире (только пепельной крови)",
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -1326,7 +1326,7 @@ const items = [
     name: "Целестиал",
     rarity: "ASCENDANT",
     rarityLabel: "Целестиальная",
-    line: "jungle",
+    line: "sky",
     lore: [
       '<span style="color:#555555"><em>Ответ на вопрос предков — тот, которого никто не ждал.</em></span>',
       '<span style="color:#555555"><em>Ответ сплетён из света.</em></span>'
@@ -1353,9 +1353,9 @@ const items = [
     damage: 16,
     speed: 1.6,
     icon: "images/icons/celestial.png",
-    obtain: "Эволюция Энигмы в Храме джунглей, 5-я форма крови предков · сундуки Целестиала в Забытом мире",
-    method: "evolve",
-    methodLabel: "Эволюция у алтаря",
+    obtain: "Не куётся: только сундуки Целестиала в Забытом мире; кровь предков 5-й формы",
+    method: "place",
+    methodLabel: "Святилище",
     recipe: false
   },
   {
@@ -1596,7 +1596,7 @@ const items = [
     ],
     abilities: [],
     stats: "",
-    obtain: "Сокровищница бастиона · сундуки Истинного голема в Забытом мире",
+    obtain: "Сокровищница бастиона · сундуки Истинного голема в Забытом мире (только пепельной крови)",
     icon: "images/icons/demon_soul.png",
     method: "loot",
     methodLabel: "Находка",
@@ -2580,25 +2580,6 @@ const altar = [
   },
   {
     kind: "evolve",
-    result: "celestial",
-    from: "enigma",
-    at: "Храм джунглей",
-    time: "",
-    blood: "Кровь предков",
-    form: 5,
-    costs: [
-      {
-        key: "terra_ingot",
-        n: 32
-      },
-      {
-        key: "jungle_heart",
-        n: 1
-      }
-    ]
-  },
-  {
-    kind: "evolve",
     result: "night_fury",
     from: "solstice",
     at: "Тёмный храм",
@@ -3284,10 +3265,6 @@ const chains = [
       },
       {
         id: "enigma",
-        sep: "→"
-      },
-      {
-        id: "celestial",
         sep: "→"
       },
       {
