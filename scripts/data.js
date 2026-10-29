@@ -1,10 +1,10 @@
 const counts = {
-  weapons: 31,
+  weapons: 33,
   materials: 38,
   trophies: 38
 };
 const words = {
-  weapons: "клинок",
+  weapons: "клинка",
   materials: "материалов",
   trophies: "достижений"
 };
@@ -33,7 +33,7 @@ const icons = {
   ancient: "images/icons/ancient.png",
   hell_essence: "images/icons/hell_essence.png",
   wanderer_cube: "images/icons/wanderer_cube.png",
-  wanderer_cube_green: "images/icons/wanderer_cube.png",
+  wanderer_cube_green: "images/icons/wanderer_cube_green.png",
   wanderer_cube_blue: "images/icons/wanderer_cube_blue.png",
   wanderer_cube_orange: "images/icons/wanderer_cube_orange.png",
   wanderer_cube_purple: "images/icons/wanderer_cube_purple.png",
@@ -74,6 +74,7 @@ const guideIcons = {
   red_mushroom: "images/guide/red_mushroom.png",
   brown_mushroom: "images/guide/brown_mushroom.png",
   gunpowder: "images/guide/gunpowder.png",
+  netherite_scrap: "images/guide/netherite_scrap.png",
   air_compass: "images/guide/compass.png",
   night_compass: "images/guide/compass.png",
   unknown_compass: "images/guide/compass.png",
@@ -176,6 +177,8 @@ const rarities = [
     motion: "переливается, проход 3 с",
     used: [
       "Люцифер",
+      "Магморос",
+      "Кримсон",
       "Душа Иссушителя",
       "Адская сущность",
       "Королевские часы",
@@ -351,7 +354,7 @@ const items = [
     stats: "Урон 7 · Скорость 1.6",
     damage: 7,
     speed: 1.6,
-    icon: "images/other/72806b35de.png",
+    icon: "images/other/c0bc28b533.png",
     obtain: "Сундуки древнего города",
     method: "loot",
     methodLabel: "Находка",
@@ -381,7 +384,7 @@ const items = [
     stats: "Урон 9 · Скорость 1.6",
     damage: 9,
     speed: 1.6,
-    icon: "images/other/a4a3c2e4f9.png",
+    icon: "images/other/63b7d512ee.png",
     obtain: "Эволюция Погибели в Незеритовой кузне",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
@@ -419,7 +422,7 @@ const items = [
     stats: "Урон 11 · Скорость 1.6",
     damage: 11,
     speed: 1.6,
-    icon: "images/other/5ffe2fbc10.png",
+    icon: "images/other/bc91d43701.png",
     obtain: "Эволюция Бедствия в Незеритовой кузне",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
@@ -467,7 +470,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/63ca5f7c3f.png",
+    icon: "images/other/b8d1f1cd53.png",
     obtain: "Эволюция короны крови с Чёрной субстанцией у алтаря своего храма",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
@@ -521,7 +524,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/4ce04abda7.png",
+    icon: "images/other/99b1e0ba7a.png",
     obtain: "Эволюция Воли Демона в Незеритовой кузне",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
@@ -580,7 +583,7 @@ const items = [
     stats: "Урон 7 · Скорость 1",
     damage: 7,
     speed: 1,
-    icon: "images/other/9499d8c8aa.png",
+    icon: "images/other/95cfb67a88.png",
     obtain: "Крафт: Резак + Душа демона",
     method: "craft",
     methodLabel: "Верстак",
@@ -618,7 +621,7 @@ const items = [
     stats: "Урон 10 · Скорость 1",
     damage: 10,
     speed: 1,
-    icon: "images/other/2808503131.png",
+    icon: "images/other/2e90025b93.png",
     obtain: "Крафт из Демонического резака и терра-слитков",
     method: "craft",
     methodLabel: "Верстак",
@@ -656,7 +659,7 @@ const items = [
     stats: "Урон 8 · Скорость 1.6",
     damage: 8,
     speed: 1.6,
-    icon: "images/other/8572c066ae.png",
+    icon: "images/other/dee02b9d7c.png",
     obtain: "Сундуки заброшенной шахты · сундуки Истинного голема в Забытом мире (только пепельной крови)",
     method: "loot",
     methodLabel: "Находка",
@@ -694,7 +697,7 @@ const items = [
     stats: "Урон 10 · Скорость 1.6",
     damage: 10,
     speed: 1.6,
-    icon: "images/other/8f2915c708.png",
+    icon: "images/other/a9a5eb8961.png",
     obtain: "Эволюция Арахнида в Незеритовой кузне · сундуки Истинного голема в Забытом мире",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
@@ -744,7 +747,7 @@ const items = [
     stats: "Урон 11 · Скорость 1.6",
     damage: 11,
     speed: 1.6,
-    icon: "images/other/ca0b2d0595.png",
+    icon: "images/other/441a54f11e.png",
     obtain: "Эволюция Убийцы демонов в Незеритовой кузне · сундуки Целестиала в Забытом мире",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
@@ -783,7 +786,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/1f90250f5b.png",
+    icon: "images/other/08c5999cab.png",
     obtain: "???",
     method: "secret",
     methodLabel: "Секрет",
@@ -821,7 +824,7 @@ const items = [
     stats: "Урон 10 · Скорость 1",
     damage: 10,
     speed: 1,
-    icon: "images/other/5e7c8e6aba.png",
+    icon: "images/other/7ad0b3ffe6.png",
     obtain: "Сундуки крепости Незера · сундуки Истинного голема в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
@@ -859,10 +862,86 @@ const items = [
     stats: "Урон 13 · Скорость 1",
     damage: 13,
     speed: 1,
-    icon: "images/other/66344d5ef9.png",
+    icon: "images/other/5c43b2d9a6.png",
     obtain: "Сумрачная секира меняется сама в испытании Незеритовой кузни · сундуки Целестиала в Забытом мире",
     method: "grows",
     methodLabel: "Растёт сам",
+    recipe: false
+  },
+  {
+    kind: "weapon",
+    id: "magmoros",
+    name: "Магморос",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "axe",
+    lore: [
+      '<span style="color:#555555"><em>Секира берсерка остыла в лаве и проснулась великаном.</em></span>',
+      '<span style="color:#555555"><em>С тех пор она падает с неба туда, куда ей укажут.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Раскол",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Удар не замечает пятой части брони врага.</span>"
+      },
+      {
+        name: "Падение Магмороса",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "20 с",
+        text: '<span>Туда, куда вы смотрите (до 20 блоков), с неба</span> <span>падает исполинский топор: 16 урона и огонь</span> <span>всем врагам в 8 блоках, их подбрасывает.</span> <br><span style="color:#555555">Пепельная кровь, со второй формы.</span>'
+      }
+    ],
+    stats: "Урон 15 · Скорость 0.9",
+    damage: 15,
+    speed: 0.9,
+    icon: "images/other/7a469fe17d.png",
+    obtain: "Эволюция Секиры берсерка в Незеритовой кузне: 6 незеритовых ломов, 6 железных блоков; пепельная кровь со 2-й формы",
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false
+  },
+  {
+    kind: "weapon",
+    id: "crimson",
+    name: "Кримсон",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "sky",
+    lore: [
+      '<span style="color:#555555"><em>Пламя в нём не горит — оно кружит,</em></span>',
+      '<span style="color:#555555"><em>как вихрь, который ищет, кого поднять.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Добивание",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Чем меньше здоровья у врага, тем больнее удар:</span> <span>до +60% на последних сердцах.</span>"
+      },
+      {
+        name: "Огненный столб",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "40 с",
+        text: '<span>Там, куда вы смотрите, закручивается спиральный</span> <span>столб огня. 15 секунд он ползёт к сильнейшему</span> <span>врагу рядом (блок в секунду), жжёт и поджигает.</span> <span>Удерживайте ПКМ — столб идёт туда, куда вы</span> <span>смотрите (до 5 блоков в секунду), лишь поджигая.</span> <br><span style="color:#555555">Пепельная кровь, с третьей формы.</span>'
+      }
+    ],
+    stats: "Урон 12 · Скорость 1.6",
+    damage: 12,
+    speed: 1.6,
+    icon: "images/other/b59f15737e.png",
+    obtain: "Только сундуки Забытого мира (Истинный голем и Целестиал); пепельная кровь с 3-й формы",
+    method: "place",
+    methodLabel: "Святилище",
     recipe: false
   },
   {
@@ -897,7 +976,7 @@ const items = [
     stats: "Урон 14 · Скорость 1",
     damage: 14,
     speed: 1,
-    icon: "images/other/c02c9c9337.png",
+    icon: "images/other/0d5be3d64d.png",
     obtain: "Сумрачная секира меняется сама в испытании Небесного храма · сундуки Целестиала в Забытом мире",
     method: "grows",
     methodLabel: "Растёт сам",
@@ -935,7 +1014,7 @@ const items = [
     stats: "Урон 13 · Скорость 1.6",
     damage: 13,
     speed: 1.6,
-    icon: "images/other/1a4474ed65.png",
+    icon: "images/other/ad3ddc78bb.png",
     obtain: "Сокровищница бастиона, редко · сундуки Истинного голема в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
@@ -978,7 +1057,7 @@ const items = [
     stats: "Урон 13 · Скорость 1.6",
     damage: 13,
     speed: 1.6,
-    icon: "images/other/6d22f8cf26.png",
+    icon: "images/other/e04bd0277f.png",
     obtain: "Ковка в Тёмном храме или эволюция Солнцестояния · сундуки Целестиала в Забытом мире",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -1016,7 +1095,7 @@ const items = [
     stats: "Урон 12 · Скорость 1.6",
     damage: 12,
     speed: 1.6,
-    icon: "images/other/28b6759ee6.png",
+    icon: "images/other/e43fff931c.png",
     obtain: "Сокровищница Проклятого замка · сундуки Целестиала в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
@@ -1054,7 +1133,7 @@ const items = [
     stats: "Урон 13 · Скорость 1.6",
     damage: 13,
     speed: 1.6,
-    icon: "images/other/eadcf5b768.png",
+    icon: "images/other/d94c8a111d.png",
     obtain: "Ковка в Тёмном храме, в полнолуние",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -1092,7 +1171,7 @@ const items = [
     stats: "Урон 15 · Скорость 1.2",
     damage: 15,
     speed: 1.2,
-    icon: "images/other/f8ef121ebd.png",
+    icon: "images/other/6131db9961.png",
     obtain: "Эволюция Ночной фурии в Тёмном храме",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
@@ -1146,7 +1225,7 @@ const items = [
     stats: "Урон 16 · Скорость 1.6",
     damage: 16,
     speed: 1.6,
-    icon: "images/other/e470fbf77d.png",
+    icon: "images/other/d69fca03b5.png",
     obtain: "Ковка в Тёмном храме: Hyperion и Звёздная грань",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -1184,7 +1263,7 @@ const items = [
     stats: "Урон 12 · Скорость 1.6",
     damage: 12,
     speed: 1.6,
-    icon: "images/other/bb4efe2f62.png",
+    icon: "images/other/765e686369.png",
     obtain: "Ковка в Храме джунглей",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -1439,7 +1518,7 @@ const items = [
     stats: "Урон 10 · Скорость 1.6",
     damage: 10,
     speed: 1.6,
-    icon: "images/other/431234757a.png",
+    icon: "images/other/ca1c321e43.png",
     obtain: "Дар Древней фабрики вместе с техноорганической кровью",
     method: "gift",
     methodLabel: "Дар святилища",
@@ -1485,7 +1564,7 @@ const items = [
     stats: "Урон 12 · Скорость 1.6",
     damage: 12,
     speed: 1.6,
-    icon: "images/other/9e6ab2b7b7.png",
+    icon: "images/other/e3b8ab68d3.png",
     obtain: "Сам вырастает из Энцефало-меча",
     method: "grows",
     methodLabel: "Растёт сам",
@@ -1547,7 +1626,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/e48e7744f6.png",
+    icon: "images/other/9c859cd09e.png",
     obtain: "Сам вырастает из Энцефало-клинка",
     method: "grows",
     methodLabel: "Растёт сам",
@@ -1577,7 +1656,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/efaf7051a3.png",
+    icon: "images/other/3baac2e917.png",
     obtain: "Ковка в Небесном храме · сундуки Истинного голема в Забытом мире",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -2573,6 +2652,25 @@ const altar = [
   },
   {
     kind: "evolve",
+    result: "magmoros",
+    from: "berserker_axe",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "Пепельная кровь",
+    form: 2,
+    costs: [
+      {
+        key: "v:netherite_scrap",
+        n: 6
+      },
+      {
+        key: "v:iron_block",
+        n: 6
+      }
+    ]
+  },
+  {
+    kind: "evolve",
     result: "terra_cutter",
     from: "demonic_cutter",
     at: "Храм джунглей",
@@ -3259,6 +3357,10 @@ const chains = [
         sep: "→"
       },
       {
+        id: "magmoros",
+        sep: "→"
+      },
+      {
         id: "golden_phoenix",
         sep: "или"
       }
@@ -3411,7 +3513,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Получить Погибель",
-        icon: "images/other/72806b35de.png",
+        icon: "images/other/c0bc28b533.png",
         caption: "Погибель"
       },
       {
@@ -3431,7 +3533,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Создать Бедствие",
-        icon: "images/other/a4a3c2e4f9.png",
+        icon: "images/other/63b7d512ee.png",
         caption: "Бедствие"
       },
       {
@@ -3481,7 +3583,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Подобрать привязанный клинок после своей смерти",
-        icon: "images/other/63ca5f7c3f.png",
+        icon: "images/other/b8d1f1cd53.png",
         caption: "Все-Чёрный"
       },
       {
@@ -3536,7 +3638,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Создать Демонический резак",
-        icon: "images/other/9499d8c8aa.png",
+        icon: "images/other/95cfb67a88.png",
         caption: "Демонический резак"
       },
       {
@@ -3556,7 +3658,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Создать Терра-резак",
-        icon: "images/other/2808503131.png",
+        icon: "images/other/2e90025b93.png",
         caption: "Терра-резак"
       },
       {
@@ -3576,7 +3678,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Выковать Терра-блейд",
-        icon: "images/other/bb4efe2f62.png",
+        icon: "images/other/765e686369.png",
         caption: "Терра-блейд"
       },
       {
@@ -3611,7 +3713,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Выковать Звёздную грань",
-        icon: "images/other/eadcf5b768.png",
+        icon: "images/other/d94c8a111d.png",
         caption: "Звёздная грань"
       },
       {
@@ -3621,7 +3723,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Получить Реквием девятого неба",
-        icon: "images/other/f8ef121ebd.png",
+        icon: "images/other/6131db9961.png",
         caption: "Реквием девятого неба"
       },
       {
@@ -3631,7 +3733,7 @@ const achievements = [
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Получить Истинный Экскалибур",
-        icon: "images/other/e470fbf77d.png",
+        icon: "images/other/d69fca03b5.png",
         caption: "Истинный Экскалибур"
       }
     ]
@@ -3646,7 +3748,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Получить Арахнид",
-        icon: "images/other/8572c066ae.png",
+        icon: "images/other/dee02b9d7c.png",
         caption: "Арахнид"
       },
       {
@@ -3656,7 +3758,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Создать Убийцу демонов",
-        icon: "images/other/8f2915c708.png",
+        icon: "images/other/a9a5eb8961.png",
         caption: "Убийца демонов"
       },
       {
@@ -3666,7 +3768,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Поднять купол Люцифера",
-        icon: "images/other/1f90250f5b.png",
+        icon: "images/other/08c5999cab.png",
         caption: "Люцифер"
       }
     ]
@@ -3781,7 +3883,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Взять в руки любой из особых клинков",
-        icon: "images/other/63ca5f7c3f.png",
+        icon: "images/other/b8d1f1cd53.png",
         caption: "Все-Чёрный"
       },
       {
@@ -3791,7 +3893,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Первый раз совершить Странствие с Hyperion",
-        icon: "images/other/efaf7051a3.png",
+        icon: "images/other/3baac2e917.png",
         caption: "Hyperion"
       },
       {
@@ -3827,42 +3929,63 @@ const blood = [
       {
         id: "imperium",
         name: "Империум",
-        icon: "images/other/4ce04abda7.png",
+        icon: "images/other/99b1e0ba7a.png",
         form: 4,
         crown: true
       },
       {
         id: "lucifer",
         name: "Люцифер",
-        icon: "images/other/1f90250f5b.png",
+        icon: "images/other/08c5999cab.png",
         form: 3,
         crown: true
       },
       {
         id: "demon_will",
         name: "Воля Демона",
-        icon: "images/other/5ffe2fbc10.png",
+        icon: "images/other/bc91d43701.png",
         form: 3,
+        crown: false
+      },
+      {
+        id: "crimson",
+        name: "Кримсон",
+        icon: "images/other/b59f15737e.png",
+        form: 3,
+        crown: false
+      },
+      {
+        id: "calamity",
+        name: "Бедствие",
+        icon: "images/other/63b7d512ee.png",
+        form: 2,
+        crown: false
+      },
+      {
+        id: "magmoros",
+        name: "Магморос",
+        icon: "images/other/7a469fe17d.png",
+        form: 2,
         crown: false
       },
       {
         id: "demon_slayer",
         name: "Убийца демонов",
-        icon: "images/other/8f2915c708.png",
+        icon: "images/other/a9a5eb8961.png",
         form: 1,
         crown: false
       },
       {
         id: "soul_collector",
         name: "Сборщик душ",
-        icon: "images/other/ca0b2d0595.png",
+        icon: "images/other/441a54f11e.png",
         form: 2,
         crown: false
       },
       {
         id: "berserker_axe",
         name: "Секира берсерка",
-        icon: "images/other/66344d5ef9.png",
+        icon: "images/other/5c43b2d9a6.png",
         form: 1,
         crown: false
       }
@@ -3886,28 +4009,28 @@ const blood = [
       {
         id: "hyperion",
         name: "Hyperion",
-        icon: "images/other/efaf7051a3.png",
+        icon: "images/other/3baac2e917.png",
         form: 3,
         crown: false
       },
       {
         id: "solstice",
         name: "Солнцестояние",
-        icon: "images/other/1a4474ed65.png",
+        icon: "images/other/ad3ddc78bb.png",
         form: 2,
         crown: false
       },
       {
         id: "golden_phoenix",
         name: "Золотой феникс",
-        icon: "images/other/c02c9c9337.png",
+        icon: "images/other/0d5be3d64d.png",
         form: 1,
         crown: false
       },
       {
         id: "phantom_guard",
         name: "Призрачный страж",
-        icon: "images/other/28b6759ee6.png",
+        icon: "images/other/e43fff931c.png",
         form: 3,
         crown: false
       }
@@ -3932,28 +4055,28 @@ const blood = [
       {
         id: "true_excalibur",
         name: "Истинный Экскалибур",
-        icon: "images/other/e470fbf77d.png",
+        icon: "images/other/d69fca03b5.png",
         form: 4,
         crown: true
       },
       {
         id: "stars_edge",
         name: "Звёздная грань",
-        icon: "images/other/eadcf5b768.png",
+        icon: "images/other/d94c8a111d.png",
         form: 1,
         crown: false
       },
       {
         id: "requiem",
         name: "Реквием девятого неба",
-        icon: "images/other/f8ef121ebd.png",
+        icon: "images/other/6131db9961.png",
         form: 1,
         crown: false
       },
       {
         id: "night_fury",
         name: "Ночная фурия",
-        icon: "images/other/6d22f8cf26.png",
+        icon: "images/other/e04bd0277f.png",
         form: 1,
         crown: false
       }
@@ -3981,7 +4104,7 @@ const blood = [
       {
         id: "all_black",
         name: "Все-Чёрный",
-        icon: "images/other/63ca5f7c3f.png",
+        icon: "images/other/b8d1f1cd53.png",
         form: 1,
         crown: true
       }
@@ -4035,14 +4158,14 @@ const blood = [
       {
         id: "terra_cutter",
         name: "Терра-резак",
-        icon: "images/other/2808503131.png",
+        icon: "images/other/2e90025b93.png",
         form: 1,
         crown: false
       },
       {
         id: "terra_blade",
         name: "Терра-блейд",
-        icon: "images/other/bb4efe2f62.png",
+        icon: "images/other/765e686369.png",
         form: 2,
         crown: false
       },
@@ -4079,21 +4202,21 @@ const blood = [
       {
         id: "antichrist",
         name: "Антихрист",
-        icon: "images/other/e48e7744f6.png",
+        icon: "images/other/9c859cd09e.png",
         form: 4,
         crown: true
       },
       {
         id: "encephalo_blade",
         name: "Энцефало-клинок",
-        icon: "images/other/9e6ab2b7b7.png",
+        icon: "images/other/e3b8ab68d3.png",
         form: 2,
         crown: false
       },
       {
         id: "encephalo_sword",
         name: "Энцефало-меч",
-        icon: "images/other/431234757a.png",
+        icon: "images/other/ca1c321e43.png",
         form: 1,
         crown: false
       }
@@ -4294,7 +4417,8 @@ const vanillaNames = {
   phantom_membrane: "Мембрана фантома",
   red_mushroom: "Мухомор",
   brown_mushroom: "Коричневый гриб",
-  gunpowder: "Порох"
+  gunpowder: "Порох",
+  netherite_scrap: "Незеритовый лом"
 };
 const guideNames = {
   air_compass: "Компас воздуха",

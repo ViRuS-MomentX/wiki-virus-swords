@@ -7,12 +7,12 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Minecraft-1.21.11-3c8527" alt="Minecraft 1.21.11">
   <img src="https://img.shields.io/badge/Paper-%D0%BF%D0%BB%D0%B0%D0%B3%D0%B8%D0%BD-1f6feb" alt="Paper: плагин">
-  <img src="https://img.shields.io/badge/%D0%BA%D0%BB%D0%B8%D0%BD%D0%BA%D0%BE%D0%B2-31-b02a2a" alt="клинков: 31">
+  <img src="https://img.shields.io/badge/%D0%BA%D0%BB%D0%B8%D0%BD%D0%BA%D0%BE%D0%B2-33-b02a2a" alt="клинков: 33">
   <img src="https://img.shields.io/badge/%D1%80%D0%BE%D0%B4%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D1%8B%D1%85-6-c9822b" alt="родословных: 6">
   <img src="https://img.shields.io/badge/%D0%B4%D0%BE%D1%81%D1%82%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-38-8a5cf6" alt="достижений: 38">
 </p>
 
-**VirusSwords** — плагин для Minecraft о клинках, которые выбирают своих хозяев. 31 клинков со своими моделями и способностями, шесть родословных, святилища со стражами и боссами, Проклятый замок на крыше Незера и сюжет, который ведут Путеводитель, Наблюдатель и ZorahM-GPT.
+**VirusSwords** — плагин для Minecraft о клинках, которые выбирают своих хозяев. 33 клинков со своими моделями и способностями, шесть родословных, святилища со стражами и боссами, Проклятый замок на крыше Незера и сюжет, который ведут Путеводитель, Наблюдатель и ZorahM-GPT.
 
 Это репозиторий **Кодекса** — вики плагина. Всё, что нужно игроку, — на сайте:
 **[virus-momentx.github.io/wiki-virus-swords](https://virus-momentx.github.io/wiki-virus-swords/)**
@@ -68,6 +68,7 @@
 |---|---|---|---|---|
 | <img src="assets/icons/twilight_axe.png" width="40" height="40" alt=""> | **Сумрачная секира** | 10 | Необычная | Сундуки крепости Незера · сундуки Истинного голема в Забытом мире |
 | <img src="assets/icons/berserker_axe.png" width="40" height="40" alt=""> | **Секира берсерка** | 13 | Адская | Сумрачная секира меняется сама в испытании Незеритовой кузни · сундуки Целестиала в Забытом мире |
+| <img src="assets/icons/magmoros.png" width="40" height="40" alt=""> | **Магморос** | 15 | Супер-адская | Эволюция Секиры берсерка в Незеритовой кузне: 6 незеритовых ломов, 6 железных блоков; пепельная кровь со 2-й формы |
 | <img src="assets/icons/golden_phoenix.png" width="40" height="40" alt=""> | **Золотой феникс** | 14 | Небесная | Сумрачная секира меняется сама в испытании Небесного храма · сундуки Целестиала в Забытом мире |
 
 ### Небесные клинки
