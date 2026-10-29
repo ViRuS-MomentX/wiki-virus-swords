@@ -1277,7 +1277,7 @@ const items = [
     damage: 15,
     speed: 1.6,
     icon: "images/other/97fc9f3d00.png",
-    obtain: "Эволюция Терра-блейда в Храме джунглей, 3-я форма крови предков и Терра-сущность в инвентаре",
+    obtain: "Эволюция Терра-блейда в Храме джунглей, 3-я форма крови предков",
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -3972,7 +3972,7 @@ const blood = [
         id: "bouquet_of_lies",
         name: "Букет лжи",
         icon: "images/other/b28283363b.png",
-        form: 2,
+        form: 3,
         crown: false
       },
       {
