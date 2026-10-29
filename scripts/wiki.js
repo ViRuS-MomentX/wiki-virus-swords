@@ -2228,7 +2228,7 @@ const _sfc_main$c = {
       ["Валюта святилищ", ["soul_shard", "celestial_shard", "jungle_shard", "ancient_part"]],
       ["Реликвии стражей", ["forge_heart", "seraph_feather", "jungle_heart", "warden_heart", "harbinger_core", "royal_clock", "rewind_gear", "night_seal"]],
       ["Сущности", ["hell_essence", "terra_essence", "black_substance"]],
-      ["Снаряжение крови", ["ash_box", "angel_box", "jungle_box", "tarot_hierophant", "tarot_justice", "tarot_moon", "terra_compass", "terra_magnet", "wanderer_cube"]],
+      ["Снаряжение крови", ["ash_box", "smoke_mushroom", "angel_box", "jungle_box", "tarot_hierophant", "tarot_justice", "tarot_moon", "terra_compass", "terra_magnet", "wanderer_cube"]],
       ["Машины фабрики", ["copper_automaton", "mini_harbinger", "assembly_dome"]]
     ];
     const placed = new Set(GROUPS.flatMap(([, ids]) => ids));

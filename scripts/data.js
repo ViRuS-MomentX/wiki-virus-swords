@@ -1,6 +1,6 @@
 const counts = {
   weapons: 31,
-  materials: 37,
+  materials: 38,
   trophies: 38
 };
 const words = {
@@ -71,6 +71,9 @@ const guideIcons = {
   quartz: "images/guide/quartz.png",
   totem_of_undying: "images/guide/totem_of_undying.png",
   phantom_membrane: "images/guide/phantom_membrane.png",
+  red_mushroom: "images/guide/red_mushroom.png",
+  brown_mushroom: "images/guide/brown_mushroom.png",
+  gunpowder: "images/guide/gunpowder.png",
   air_compass: "images/guide/compass.png",
   night_compass: "images/guide/compass.png",
   unknown_compass: "images/guide/compass.png",
@@ -156,7 +159,8 @@ const rarities = [
       "Сборщик душ",
       "Секира берсерка",
       "Душа демона",
-      "Осколок души"
+      "Осколок души",
+      "Дымовой гриб"
     ]
   },
   {
@@ -2188,6 +2192,33 @@ const items = [
   },
   {
     kind: "material",
+    id: "smoke_mushroom",
+    name: "Дымовой гриб",
+    rarity: "HELLISH",
+    rarityLabel: "Адская",
+    line: "material",
+    lore: [
+      '<span style="color:#555555"><em>Споры с пеплом и порохом. Лучше не нюхать.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Дымовой взрыв",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "10 с",
+        text: "<span>Гриб лопается облаком дыма и подбрасывает</span> <span>вас на 10 блоков вверх; падение не ранит.</span> <span>Пепельная кровь, со второй формы. Не тратится.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Ковка у алтаря Незеритовой кузни: 16 мухоморов, 16 коричневых грибов, 32 пороха, 32 осколка души; пепельная кровь со 2-й формы",
+    icon: "images/other/3002c6165b.png",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
+    recipe: false
+  },
+  {
+    kind: "material",
     id: "tarot_hierophant",
     name: "V — Иерофант",
     rarity: "CELESTIAL",
@@ -2794,6 +2825,32 @@ const altar = [
       {
         key: "soul_shard",
         n: 128
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "smoke_mushroom",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "Пепельная кровь",
+    form: 2,
+    costs: [
+      {
+        key: "v:red_mushroom",
+        n: 16
+      },
+      {
+        key: "v:brown_mushroom",
+        n: 16
+      },
+      {
+        key: "v:gunpowder",
+        n: 32
+      },
+      {
+        key: "soul_shard",
+        n: 32
       }
     ]
   },
@@ -3760,7 +3817,7 @@ const blood = [
       "Огнестойкость: огонь, лава и магма не ранят.",
       "Ходит по лаве, как по камню, а с Shift ныряет в неё; в Незере бьёт сильнее.",
       "Удар поджигает цель; кто ударит вас, загорится сам.",
-      "Смертельный удар не убивает, как тотем: 30 секунд пламени — сопротивление, огненные шары во врагов, Империум бьёт всех, кроме союзников. Раз в 10 минут."
+      "Смертельный удар не убивает, как тотем: 30 секунд пламени — сопротивление, пять огненных шаров кружат вокруг и бьют всех вокруг, Империум бьёт всех, кроме союзников. Раз в 10 минут."
     ],
     formless: false,
     sanctum: "Незеритовая кузня",
@@ -4234,7 +4291,10 @@ const vanillaNames = {
   black_dye: "Чёрный краситель",
   quartz: "Кварц",
   totem_of_undying: "Тотем бессмертия",
-  phantom_membrane: "Мембрана фантома"
+  phantom_membrane: "Мембрана фантома",
+  red_mushroom: "Мухомор",
+  brown_mushroom: "Коричневый гриб",
+  gunpowder: "Порох"
 };
 const guideNames = {
   air_compass: "Компас воздуха",
