@@ -1,11 +1,11 @@
 const counts = {
   weapons: 33,
-  materials: 38,
+  materials: 34,
   trophies: 38
 };
 const words = {
   weapons: "клинка",
-  materials: "материалов",
+  materials: "материала",
   trophies: "достижений"
 };
 const icons = {
@@ -247,11 +247,7 @@ const rarities = [
     used: [
       "Целестиал",
       "Архитектор",
-      "Целестиальный ключ Забытого мира",
-      "Целестиальный шлем",
-      "Целестиальный нагрудник",
-      "Целестиальные поножи",
-      "Целестиальные сапоги"
+      "Целестиальный ключ Забытого мира"
     ]
   },
   {
@@ -385,7 +381,9 @@ const items = [
     damage: 9,
     speed: 1.6,
     icon: "images/other/63b7d512ee.png",
-    obtain: "Эволюция Погибели в Незеритовой кузне",
+    obtain: "Эволюция Погибели в Незеритовой кузне; пепельная кровь со 2-й формы",
+    blood: "ember",
+    form: 2,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -424,6 +422,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/bc91d43701.png",
     obtain: "Эволюция Бедствия в Незеритовой кузне",
+    blood: "ember",
+    form: 3,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -472,6 +472,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/b8d1f1cd53.png",
     obtain: "Эволюция короны крови с Чёрной субстанцией у алтаря своего храма",
+    blood: "abyss",
+    form: 0,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -526,6 +528,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/99b1e0ba7a.png",
     obtain: "Эволюция Воли Демона в Незеритовой кузне",
+    blood: "ember",
+    form: 4,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -623,6 +627,8 @@ const items = [
     speed: 1,
     icon: "images/other/2e90025b93.png",
     obtain: "Крафт из Демонического резака и терра-слитков",
+    blood: "steel",
+    form: 1,
     method: "craft",
     methodLabel: "Верстак",
     recipe: true
@@ -699,6 +705,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/a9a5eb8961.png",
     obtain: "Эволюция Арахнида в Незеритовой кузне · сундуки Истинного голема в Забытом мире",
+    blood: "ember",
+    form: 1,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -749,6 +757,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/441a54f11e.png",
     obtain: "Эволюция Убийцы демонов в Незеритовой кузне · сундуки Целестиала в Забытом мире",
+    blood: "ember",
+    form: 2,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -788,6 +798,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/08c5999cab.png",
     obtain: "???",
+    blood: "ember",
+    form: 3,
     method: "secret",
     methodLabel: "Секрет",
     recipe: false
@@ -864,6 +876,8 @@ const items = [
     speed: 1,
     icon: "images/other/5c43b2d9a6.png",
     obtain: "Сумрачная секира меняется сама в испытании Незеритовой кузни · сундуки Целестиала в Забытом мире",
+    blood: "ember",
+    form: 1,
     method: "grows",
     methodLabel: "Растёт сам",
     recipe: false
@@ -902,6 +916,8 @@ const items = [
     speed: 0.9,
     icon: "images/other/7a469fe17d.png",
     obtain: "Эволюция Секиры берсерка в Незеритовой кузне: 6 незеритовых ломов, 6 железных блоков; пепельная кровь со 2-й формы",
+    blood: "ember",
+    form: 2,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -912,7 +928,7 @@ const items = [
     name: "Кримсон",
     rarity: "SUPER_HELLISH",
     rarityLabel: "Супер-адская",
-    line: "sky",
+    line: "forgotten",
     lore: [
       '<span style="color:#555555"><em>Пламя в нём не горит — оно кружит,</em></span>',
       '<span style="color:#555555"><em>как вихрь, который ищет, кого поднять.</em></span>'
@@ -940,8 +956,10 @@ const items = [
     speed: 1.6,
     icon: "images/other/b59f15737e.png",
     obtain: "Только сундуки Забытого мира (Истинный голем и Целестиал); пепельная кровь с 3-й формы",
-    method: "place",
-    methodLabel: "Святилище",
+    blood: "ember",
+    form: 3,
+    method: "loot",
+    methodLabel: "Находка",
     recipe: false
   },
   {
@@ -978,6 +996,8 @@ const items = [
     speed: 1,
     icon: "images/other/0d5be3d64d.png",
     obtain: "Сумрачная секира меняется сама в испытании Небесного храма · сундуки Целестиала в Забытом мире",
+    blood: "sky",
+    form: 1,
     method: "grows",
     methodLabel: "Растёт сам",
     recipe: false
@@ -1016,6 +1036,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/ad3ddc78bb.png",
     obtain: "Сокровищница бастиона, редко · сундуки Истинного голема в Забытом мире",
+    blood: "sky",
+    form: 2,
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -1059,6 +1081,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/e04bd0277f.png",
     obtain: "Ковка в Тёмном храме или эволюция Солнцестояния · сундуки Целестиала в Забытом мире",
+    blood: "night",
+    form: 1,
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -1097,6 +1121,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/e43fff931c.png",
     obtain: "Сокровищница Проклятого замка · сундуки Целестиала в Забытом мире",
+    blood: "sky",
+    form: 3,
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -1135,6 +1161,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/d94c8a111d.png",
     obtain: "Ковка в Тёмном храме, в полнолуние",
+    blood: "night",
+    form: 1,
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -1173,6 +1201,8 @@ const items = [
     speed: 1.2,
     icon: "images/other/6131db9961.png",
     obtain: "Эволюция Ночной фурии в Тёмном храме",
+    blood: "night",
+    form: 1,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -1227,6 +1257,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/d69fca03b5.png",
     obtain: "Ковка в Тёмном храме: Hyperion и Звёздная грань",
+    blood: "night",
+    form: 4,
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -1265,6 +1297,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/765e686369.png",
     obtain: "Ковка в Храме джунглей",
+    blood: "steel",
+    form: 2,
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -1307,6 +1341,8 @@ const items = [
     speed: 4,
     icon: "images/icons/ancient.png",
     obtain: "Бочки Терра-подземелья",
+    blood: "steel",
+    form: 2,
     method: "loot",
     methodLabel: "Находка",
     recipe: false
@@ -1361,6 +1397,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/97fc9f3d00.png",
     obtain: "Эволюция Терра-блейда в Храме джунглей, 3-я форма крови предков",
+    blood: "steel",
+    form: 3,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
     recipe: false
@@ -1399,8 +1437,10 @@ const items = [
     speed: 1.6,
     icon: "images/other/b28283363b.png",
     obtain: "Только наградные сундуки Забытого мира (голем и Целестиал)",
-    method: "place",
-    methodLabel: "Святилище",
+    blood: "steel",
+    form: 3,
+    method: "loot",
+    methodLabel: "Находка",
     recipe: false
   },
   {
@@ -1409,27 +1449,19 @@ const items = [
     name: "Целестиал",
     rarity: "ASCENDANT",
     rarityLabel: "Целестиальная",
-    line: "sky",
+    line: "forgotten",
     lore: [
       '<span style="color:#555555"><em>Ответ на вопрос предков — тот, которого никто не ждал.</em></span>',
       '<span style="color:#555555"><em>Ответ сплетён из света.</em></span>'
     ],
     abilities: [
       {
-        name: "Звёздные нити",
-        colour: "#FFAA00",
-        trigger: "При ударе",
-        kind: "hit",
+        name: "???",
+        colour: "#f1b94d",
+        trigger: null,
+        kind: null,
         rest: null,
-        text: "<span>Каждый удар привязывает цель нитью света.</span> <span>Третий подряд по ней рвёт нити: +8 урона,</span> <span>замедление II на 3 секунды, а вам — 2 сердца.</span>"
-      },
-      {
-        name: "Небесная паутина",
-        colour: "#FFAA00",
-        trigger: "ПКМ",
-        kind: "rmb",
-        rest: "20 с",
-        text: "<span>Там, куда вы смотрите (до 24 блоков), падает</span> <span>сеть из света в 6 блоков: врагам в ней 10 урона</span> <span>и замедление V на 4 секунды.</span>"
+        text: "Способности этого клинка переделываются — описание появится позже."
       }
     ],
     stats: "Урон 16 · Скорость 1.6",
@@ -1437,8 +1469,10 @@ const items = [
     speed: 1.6,
     icon: "images/icons/celestial.png",
     obtain: "Не куётся: только сундуки Целестиала в Забытом мире; кровь предков 5-й формы",
-    method: "place",
-    methodLabel: "Святилище",
+    blood: "steel",
+    form: 5,
+    method: "loot",
+    methodLabel: "Находка",
     recipe: false
   },
   {
@@ -1447,35 +1481,29 @@ const items = [
     name: "Архитектор",
     rarity: "ASCENDANT",
     rarityLabel: "Целестиальная",
-    line: "sky",
+    line: "forgotten",
     lore: [
       '<span style="color:#555555"><em>Предки строили не стены. Они строили порядок.</em></span>'
     ],
     abilities: [
       {
-        name: "Чертёж",
-        colour: "#FFAA00",
-        trigger: "При ударе",
-        kind: "hit",
+        name: "???",
+        colour: "#f1b94d",
+        trigger: null,
+        kind: null,
         rest: null,
-        text: "<span>Каждый четвёртый удар обрушивает на цель</span> <span>столп света: +8 урона и подбрасывает.</span>"
-      },
-      {
-        name: "Возведение",
-        colour: "#FFAA00",
-        trigger: "ПКМ",
-        kind: "rmb",
-        rest: "35 с",
-        text: "<span>Вокруг вас встаёт круг света на 10 секунд и идёт</span> <span>за вами. Свои в нём получают регенерацию III</span> <span>и сопротивление, вы — ещё и скорость; врагов</span> <span>он жжёт и замедляет.</span>"
+        text: "Способности этого клинка переделываются — описание появится позже."
       }
     ],
     stats: "Урон 15 · Скорость 1.4",
     damage: 15,
     speed: 1.4,
     icon: "images/icons/architect.png",
-    obtain: "",
-    method: "place",
-    methodLabel: "Святилище",
+    obtain: "Не куётся: только сундуки Целестиала в Забытом мире; кровь предков 5-й формы",
+    blood: "steel",
+    form: 5,
+    method: "loot",
+    methodLabel: "Находка",
     recipe: false
   },
   {
@@ -1520,6 +1548,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/ca1c321e43.png",
     obtain: "Дар Древней фабрики вместе с техноорганической кровью",
+    blood: "techno",
+    form: 1,
     method: "gift",
     methodLabel: "Дар святилища",
     recipe: false
@@ -1566,6 +1596,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/e3b8ab68d3.png",
     obtain: "Сам вырастает из Энцефало-меча",
+    blood: "techno",
+    form: 2,
     method: "grows",
     methodLabel: "Растёт сам",
     recipe: false
@@ -1628,6 +1660,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/9c859cd09e.png",
     obtain: "Сам вырастает из Энцефало-клинка",
+    blood: "techno",
+    form: 4,
     method: "grows",
     methodLabel: "Растёт сам",
     recipe: false
@@ -1658,6 +1692,8 @@ const items = [
     speed: 1.6,
     icon: "images/other/3baac2e917.png",
     obtain: "Ковка в Небесном храме · сундуки Истинного голема в Забытом мире",
+    blood: "sky",
+    form: 3,
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false
@@ -2040,10 +2076,10 @@ const items = [
     ],
     abilities: [],
     stats: "",
-    obtain: "",
+    obtain: "Ковка у алтаря Храма джунглей с 3-й формы любой крови: 8 терра-слитков и по 16 осколков души, небесных и реликтовых",
     icon: "images/icons/forgotten_key_moss.png",
-    method: "place",
-    methodLabel: "Святилище",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
     recipe: false
   },
   {
@@ -2066,10 +2102,10 @@ const items = [
     ],
     abilities: [],
     stats: "",
-    obtain: "",
+    obtain: "Ковка у алтаря Храма джунглей с 4-й формы любой крови: 16 терра-слитков, по 64 осколка каждого вида и Сердце джунглей",
     icon: "images/icons/forgotten_key.png",
-    method: "place",
-    methodLabel: "Святилище",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
     recipe: false
   },
   {
@@ -2135,7 +2171,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
-    icon: "",
+    icon: "images/other/6f71e94f18.png",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
     recipe: false
@@ -2156,7 +2192,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
-    icon: "",
+    icon: "images/other/897fc1caae.png",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
     recipe: false
@@ -2394,7 +2430,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
-    icon: "",
+    icon: "images/other/23434c7088.png",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
     recipe: false
@@ -2445,114 +2481,6 @@ const items = [
     stats: "",
     obtain: "Горнило третьего испытания Незеритовой кузни",
     icon: "images/icons/lord_soul.png",
-    method: "place",
-    methodLabel: "Святилище",
-    recipe: false
-  },
-  {
-    kind: "material",
-    id: "celestial_helmet",
-    name: "Целестиальный шлем",
-    rarity: "ASCENDANT",
-    rarityLabel: "Целестиальная",
-    line: "material",
-    lore: [
-      '<span style="color:#555555"><em>Восемь глаз — и все смотрят вверх.</em></span>'
-    ],
-    abilities: [
-      {
-        name: "Весь комплект",
-        colour: "#FFAA00",
-        trigger: null,
-        kind: null,
-        rest: null,
-        text: "<span>+5 сердец; негативные эффекты и падение не ранят.</span> <span>Днём под открытым небом — регенерация I.</span> <span>За спиной раскрываются крылья.</span>"
-      }
-    ],
-    stats: "",
-    obtain: "",
-    icon: "images/icons/celestial_helmet.png",
-    method: "place",
-    methodLabel: "Святилище",
-    recipe: false
-  },
-  {
-    kind: "material",
-    id: "celestial_chestplate",
-    name: "Целестиальный нагрудник",
-    rarity: "ASCENDANT",
-    rarityLabel: "Целестиальная",
-    line: "material",
-    lore: [
-      '<span style="color:#555555"><em>Хитин, что светится изнутри, как небо на закате.</em></span>'
-    ],
-    abilities: [
-      {
-        name: "Весь комплект",
-        colour: "#FFAA00",
-        trigger: null,
-        kind: null,
-        rest: null,
-        text: "<span>+5 сердец; негативные эффекты и падение не ранят.</span> <span>Днём под открытым небом — регенерация I.</span> <span>За спиной раскрываются крылья.</span>"
-      }
-    ],
-    stats: "",
-    obtain: "",
-    icon: "images/other/50c7e7b612.png",
-    method: "place",
-    methodLabel: "Святилище",
-    recipe: false
-  },
-  {
-    kind: "material",
-    id: "celestial_leggings",
-    name: "Целестиальные поножи",
-    rarity: "ASCENDANT",
-    rarityLabel: "Целестиальная",
-    line: "material",
-    lore: [
-      '<span style="color:#555555"><em>Шаг неслышен, как шаг по паутине.</em></span>'
-    ],
-    abilities: [
-      {
-        name: "Весь комплект",
-        colour: "#FFAA00",
-        trigger: null,
-        kind: null,
-        rest: null,
-        text: "<span>+5 сердец; негативные эффекты и падение не ранят.</span> <span>Днём под открытым небом — регенерация I.</span> <span>За спиной раскрываются крылья.</span>"
-      }
-    ],
-    stats: "",
-    obtain: "",
-    icon: "images/other/f8802f2922.png",
-    method: "place",
-    methodLabel: "Святилище",
-    recipe: false
-  },
-  {
-    kind: "material",
-    id: "celestial_boots",
-    name: "Целестиальные сапоги",
-    rarity: "ASCENDANT",
-    rarityLabel: "Целестиальная",
-    line: "material",
-    lore: [
-      '<span style="color:#555555"><em>Земля под ними тянется вверх нитями.</em></span>'
-    ],
-    abilities: [
-      {
-        name: "Весь комплект",
-        colour: "#FFAA00",
-        trigger: null,
-        kind: null,
-        rest: null,
-        text: "<span>+5 сердец; негативные эффекты и падение не ранят.</span> <span>Днём под открытым небом — регенерация I.</span> <span>За спиной раскрываются крылья.</span>"
-      }
-    ],
-    stats: "",
-    obtain: "",
-    icon: "images/other/e9a39d0a18.png",
     method: "place",
     methodLabel: "Святилище",
     recipe: false
@@ -3439,6 +3367,24 @@ const chains = [
       {
         id: "ancient",
         sep: ""
+      }
+    ]
+  },
+  {
+    key: "forgotten",
+    title: "Только из Забытого мира",
+    entries: [
+      {
+        id: "crimson",
+        sep: ""
+      },
+      {
+        id: "celestial",
+        sep: "·"
+      },
+      {
+        id: "architect",
+        sep: "·"
       }
     ]
   },
