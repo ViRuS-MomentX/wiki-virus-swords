@@ -354,7 +354,8 @@ const items = [
     obtain: "Сундуки древнего города",
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -386,7 +387,8 @@ const items = [
     form: 2,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -426,7 +428,8 @@ const items = [
     form: 3,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -476,7 +479,8 @@ const items = [
     form: 0,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -532,7 +536,8 @@ const items = [
     form: 4,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -561,7 +566,8 @@ const items = [
     obtain: "Сундуки древнего города · сундуки Истинного голема в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -591,7 +597,8 @@ const items = [
     obtain: "Крафт: Резак + Душа демона",
     method: "craft",
     methodLabel: "Верстак",
-    recipe: true
+    recipe: true,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -631,7 +638,8 @@ const items = [
     form: 1,
     method: "craft",
     methodLabel: "Верстак",
-    recipe: true
+    recipe: true,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -669,7 +677,8 @@ const items = [
     obtain: "Сундуки заброшенной шахты · сундуки Истинного голема в Забытом мире (только пепельной крови)",
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -709,7 +718,8 @@ const items = [
     form: 1,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -761,7 +771,8 @@ const items = [
     form: 2,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -802,7 +813,8 @@ const items = [
     form: 3,
     method: "secret",
     methodLabel: "Секрет",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -840,7 +852,8 @@ const items = [
     obtain: "Сундуки крепости Незера · сундуки Истинного голема в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -880,7 +893,8 @@ const items = [
     form: 1,
     method: "grows",
     methodLabel: "Растёт сам",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -920,7 +934,8 @@ const items = [
     form: 2,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -960,7 +975,8 @@ const items = [
     form: 3,
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1000,7 +1016,8 @@ const items = [
     form: 1,
     method: "grows",
     methodLabel: "Растёт сам",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1040,7 +1057,8 @@ const items = [
     form: 2,
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1085,7 +1103,8 @@ const items = [
     form: 1,
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1125,7 +1144,8 @@ const items = [
     form: 3,
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1165,7 +1185,8 @@ const items = [
     form: 1,
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1205,7 +1226,8 @@ const items = [
     form: 1,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1261,7 +1283,8 @@ const items = [
     form: 4,
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1301,7 +1324,8 @@ const items = [
     form: 2,
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1345,7 +1369,8 @@ const items = [
     form: 2,
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1401,7 +1426,8 @@ const items = [
     form: 3,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1441,7 +1467,8 @@ const items = [
     form: 3,
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "weapon",
@@ -1473,7 +1500,8 @@ const items = [
     form: 5,
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1504,7 +1532,8 @@ const items = [
     form: 5,
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1552,7 +1581,8 @@ const items = [
     form: 1,
     method: "gift",
     methodLabel: "Дар святилища",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1600,7 +1630,8 @@ const items = [
     form: 2,
     method: "grows",
     methodLabel: "Растёт сам",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1664,7 +1695,8 @@ const items = [
     form: 4,
     method: "grows",
     methodLabel: "Растёт сам",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "weapon",
@@ -1696,7 +1728,8 @@ const items = [
     form: 3,
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "material",
@@ -1719,7 +1752,8 @@ const items = [
     icon: "images/icons/demon_soul.png",
     method: "loot",
     methodLabel: "Находка",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1739,7 +1773,8 @@ const items = [
     icon: "images/icons/terra_ingot.png",
     method: "craft",
     methodLabel: "Верстак",
-    recipe: true
+    recipe: true,
+    model3d: false
   },
   {
     kind: "material",
@@ -1760,7 +1795,8 @@ const items = [
     icon: "images/other/55344aa5c9.png",
     method: "drop",
     methodLabel: "Добыча",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1780,7 +1816,8 @@ const items = [
     icon: "images/icons/soul_shard.png",
     method: "place",
     methodLabel: "Святилище",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1800,7 +1837,8 @@ const items = [
     icon: "images/icons/celestial_shard.png",
     method: "place",
     methodLabel: "Святилище",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1820,7 +1858,8 @@ const items = [
     icon: "images/icons/jungle_shard.png",
     method: "place",
     methodLabel: "Святилище",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1841,7 +1880,8 @@ const items = [
     icon: "images/other/ab92445b9c.png",
     method: "drop",
     methodLabel: "Добыча",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1861,7 +1901,8 @@ const items = [
     icon: "images/icons/forge_heart.png",
     method: "trial",
     methodLabel: "Испытание",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1881,7 +1922,8 @@ const items = [
     icon: "images/icons/seraph_feather.png",
     method: "trial",
     methodLabel: "Испытание",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1901,7 +1943,8 @@ const items = [
     icon: "images/icons/jungle_heart.png",
     method: "trial",
     methodLabel: "Испытание",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1921,7 +1964,8 @@ const items = [
     icon: "images/icons/ancient_part.png",
     method: "place",
     methodLabel: "Святилище",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1943,7 +1987,8 @@ const items = [
     icon: "images/icons/night_seal.png",
     method: "trial",
     methodLabel: "Испытание",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1965,7 +2010,8 @@ const items = [
     icon: "images/icons/black_substance.png",
     method: "place",
     methodLabel: "Святилище",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -1988,7 +2034,8 @@ const items = [
     icon: "images/icons/terra_essence.png",
     method: "place",
     methodLabel: "Святилище",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "material",
@@ -2011,7 +2058,8 @@ const items = [
     icon: "images/icons/hell_essence.png",
     method: "place",
     methodLabel: "Святилище",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "material",
@@ -2032,7 +2080,8 @@ const items = [
     icon: "images/icons/terra_compass.png",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2054,7 +2103,8 @@ const items = [
     icon: "images/icons/royal_clock.png",
     method: "place",
     methodLabel: "Святилище",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "material",
@@ -2080,7 +2130,8 @@ const items = [
     icon: "images/icons/forgotten_key_moss.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "material",
@@ -2106,7 +2157,8 @@ const items = [
     icon: "images/icons/forgotten_key.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: true
   },
   {
     kind: "material",
@@ -2133,7 +2185,8 @@ const items = [
     icon: "images/icons/rewind_gear.png",
     method: "place",
     methodLabel: "Святилище",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2153,7 +2206,8 @@ const items = [
     icon: "images/icons/harbinger_core.png",
     method: "drop",
     methodLabel: "Добыча",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2174,7 +2228,8 @@ const items = [
     icon: "images/other/6f71e94f18.png",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2195,7 +2250,8 @@ const items = [
     icon: "images/other/897fc1caae.png",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2222,7 +2278,8 @@ const items = [
     icon: "images/other/aad712b223.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2249,7 +2306,8 @@ const items = [
     icon: "images/other/96e6dd50fd.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2276,7 +2334,8 @@ const items = [
     icon: "images/other/5e62065f22.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2303,7 +2362,8 @@ const items = [
     icon: "images/other/be49e055b5.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2330,7 +2390,8 @@ const items = [
     icon: "images/other/3002c6165b.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2357,7 +2418,8 @@ const items = [
     icon: "images/other/bdde4e2356.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2384,7 +2446,8 @@ const items = [
     icon: "images/other/d7be5a344a.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2411,7 +2474,8 @@ const items = [
     icon: "images/other/725891b28f.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2433,7 +2497,8 @@ const items = [
     icon: "images/other/23434c7088.png",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
-    recipe: false
+    recipe: false,
+    model3d: false
   },
   {
     kind: "material",
@@ -2460,7 +2525,8 @@ const items = [
     icon: "images/icons/wanderer_cube.png",
     method: "craft",
     methodLabel: "Верстак",
-    recipe: true
+    recipe: true,
+    model3d: true
   },
   {
     kind: "material",
@@ -2483,7 +2549,8 @@ const items = [
     icon: "images/icons/lord_soul.png",
     method: "place",
     methodLabel: "Святилище",
-    recipe: false
+    recipe: false,
+    model3d: false
   }
 ];
 const altar = [

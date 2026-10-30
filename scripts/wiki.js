@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./model3d.js","./vue.js","./data.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./soft3d.js","./data.js","./model3d.js","./vue.js"])))=>i.map(i=>d[i]);
 import { r as reactive, c as computed, w as watch, o as onMounted, a as onBeforeUnmount, b as openBlock, d as createElementBlock, e as createBaseVNode, u as unref, f as withDirectives, v as vModelText, F as Fragment, g as renderList, h as createCommentVNode, i as createTextVNode, t as toDisplayString, j as ref, n as normalizeClass, k as renderSlot, l as normalizeStyle, m as createVNode, p as withCtx, q as vShow, s as createBlock, x as resolveDynamicComponent, y as nextTick, T as Transition, z as createStaticVNode, A as createApp } from "./vue.js";
 import { d as data } from "./data.js";
 const norm = (s) => s.toLowerCase().replace(/ё/g, "е");
@@ -58,7 +58,7 @@ const _hoisted_7$k = {
   role: "listbox",
   "aria-label": "Найденные предметы"
 };
-const _hoisted_8$i = ["id", "aria-selected"];
+const _hoisted_8$j = ["id", "aria-selected"];
 const _hoisted_9$g = ["href", "onMouseenter"];
 const _hoisted_10$e = ["src"];
 const _hoisted_11$d = ["title"];
@@ -256,7 +256,7 @@ const _sfc_main$w = {
                       }, toDisplayString(i.name), 9, _hoisted_11$d),
                       createBaseVNode("span", _hoisted_12$d, toDisplayString(i.kind === "weapon" ? "клинок" : "материал"), 1)
                     ], 42, _hoisted_9$g)
-                  ], 8, _hoisted_8$i);
+                  ], 8, _hoisted_8$j);
                 }), 128))
               ])) : createCommentVNode("", true),
               createBaseVNode("p", _hoisted_13$b, [
@@ -337,7 +337,7 @@ const _hoisted_6$k = {
   class: "tstats"
 };
 const _hoisted_7$j = { key: 0 };
-const _hoisted_8$h = { class: "trar" };
+const _hoisted_8$i = { class: "trar" };
 const _sfc_main$u = {
   __name: "ItemTooltip",
   props: { item: { type: Object, required: true } },
@@ -370,7 +370,7 @@ const _sfc_main$u = {
             ], 64);
           }), 128))
         ])) : createCommentVNode("", true),
-        createBaseVNode("div", _hoisted_8$h, [
+        createBaseVNode("div", _hoisted_8$i, [
           _cache[0] || (_cache[0] = createTextVNode("Редкость: ", -1)),
           createVNode(_sfc_main$v, {
             rarity: __props.item.rarity
@@ -496,6 +496,11 @@ const _hoisted_4$k = ["y2", "transform"];
 const _hoisted_5$j = ["transform"];
 const _hoisted_6$j = ["x", "y"];
 const _hoisted_7$i = ["src"];
+const _hoisted_8$h = {
+  key: 1,
+  class: "mstage-hint",
+  "aria-hidden": "true"
+};
 const _sfc_main$t = {
   __name: "ModelStage",
   props: {
@@ -519,10 +524,12 @@ const _sfc_main$t = {
     const ticks = Array.from({ length: 72 }, (_, i) => i * 5);
     const host = ref(null);
     const canvas = ref(null);
-    const yawDeg = ref(-24);
     const flat = ref(true);
     const reduced = typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
     let lib = null, renderer, scene, camera, holder, model, raf = 0, seen2, sizer;
+    let soft = null, softCtx = null, quads = null, softGrow = 1, asked = 0;
+    const softCanvas = ref(null);
+    const mode = ref("flat");
     let yaw = -0.42, swing = 0, dragging = false, lastX = 0, idle = 999, start = 0, onScreen = false;
     function canGL() {
       try {
@@ -533,6 +540,10 @@ const _sfc_main$t = {
       }
     }
     function place() {
+      if (mode.value === "soft") {
+        placeSoft();
+        return;
+      }
       if (!lib) return;
       const { build, dispose } = lib;
       if (model) {
@@ -557,7 +568,12 @@ const _sfc_main$t = {
         idle++;
         if (!reduced && idle > 90) yaw += 6e-3;
       }
-      if (lib && model) {
+      if (mode.value === "soft" && quads) {
+        if (softGrow < 1) softGrow = Math.min(1, softGrow + 0.08);
+        const c = softCanvas.value;
+        softCtx.setTransform(1, 0, 0, 1, 0, 0);
+        draw(c.width, c.height, t);
+      } else if (lib && model) {
         holder.rotation.y = yaw;
         holder.position.y = reduced ? 0 : Math.sin(t * 2) * 0.06;
         if (model.userData.grow < 1) {
@@ -567,9 +583,26 @@ const _sfc_main$t = {
         }
         lib.animate(Math.floor(t * 20));
         renderer.render(scene, camera);
-      } else {
-        yawDeg.value = yaw * 180 / Math.PI;
       }
+    }
+    function draw(w, h, t) {
+      const g = 1 - (1 - softGrow) ** 3;
+      soft.draw(softCtx, w, h, quads, yaw, reduced ? 0 : Math.sin(t * 2) * 0.06, 0.6 + 0.4 * g);
+    }
+    async function placeSoft() {
+      const id = props.item.id, ask = ++asked;
+      const built = await soft.build(id);
+      if (ask !== asked) return;
+      quads = built;
+      softGrow = 0;
+      flat.value = !quads;
+    }
+    async function setupSoft() {
+      soft = await __vitePreload(() => import("./soft3d.js"), true ? __vite__mapDeps([0,1]) : void 0, import.meta.url);
+      mode.value = "soft";
+      softCtx = softCanvas.value.getContext("2d");
+      resize();
+      await placeSoft();
     }
     function run() {
       cancelAnimationFrame(raf);
@@ -608,8 +641,7 @@ const _sfc_main$t = {
       }
     }
     async function setup() {
-      if (!data.models || !canGL()) return;
-      lib = await __vitePreload(() => import("./model3d.js"), true ? __vite__mapDeps([0,1,2]) : void 0, import.meta.url);
+      lib = await __vitePreload(() => import("./model3d.js"), true ? __vite__mapDeps([2,3,1]) : void 0, import.meta.url);
       const { THREE } = lib;
       renderer = new THREE.WebGLRenderer({ canvas: canvas.value, alpha: true, antialias: true });
       renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -628,10 +660,17 @@ const _sfc_main$t = {
       holder = new THREE.Group();
       holder.position.y = 0;
       scene.add(holder);
+      mode.value = "gl";
       resize();
       place();
     }
     function resize() {
+      if (mode.value === "soft" && softCanvas.value) {
+        const c = softCanvas.value, dpr = Math.min(window.devicePixelRatio || 1, 2);
+        c.width = Math.round(c.clientWidth * dpr);
+        c.height = Math.round(c.clientHeight * dpr);
+        return;
+      }
       if (!renderer || !host.value) return;
       const w = canvas.value.clientWidth, h = canvas.value.clientHeight;
       if (!w || !h) return;
@@ -640,7 +679,7 @@ const _sfc_main$t = {
       camera.updateProjectionMatrix();
     }
     watch(() => props.item.id, () => {
-      if (lib) place();
+      if (lib || soft) place();
       idle = 0;
     });
     onMounted(async () => {
@@ -650,7 +689,20 @@ const _sfc_main$t = {
       });
       seen2.observe(host.value);
       document.addEventListener("visibilitychange", run);
-      if (data.models && canGL()) await setup();
+      if (data.models) {
+        let gl = false;
+        if (canGL()) {
+          try {
+            await setup();
+            gl = true;
+          } catch (e) {
+            renderer == null ? void 0 : renderer.dispose();
+            renderer = null;
+            lib = null;
+          }
+        }
+        if (!gl) await setupSoft();
+      }
       sizer = new ResizeObserver(resize);
       sizer.observe(host.value);
       run();
@@ -678,7 +730,7 @@ const _sfc_main$t = {
         onPointercancel: up,
         onKeydown: key
       }, [
-        _cache[5] || (_cache[5] = createBaseVNode("span", {
+        _cache[6] || (_cache[6] = createBaseVNode("span", {
           class: "mstage-beam",
           "aria-hidden": "true"
         }, null, -1)),
@@ -739,7 +791,14 @@ const _sfc_main$t = {
           ref: canvas,
           class: "mstage-gl"
         }, null, 512), [
-          [vShow, !flat.value]
+          [vShow, !flat.value && mode.value === "gl"]
+        ]),
+        withDirectives(createBaseVNode("canvas", {
+          ref_key: "softCanvas",
+          ref: softCanvas,
+          class: "mstage-gl"
+        }, null, 512), [
+          [vShow, !flat.value && mode.value === "soft"]
         ]),
         flat.value ? (openBlock(), createElementBlock("span", {
           key: __props.item.id,
@@ -747,14 +806,10 @@ const _sfc_main$t = {
         }, [
           createBaseVNode("img", {
             src: __props.item.icon,
-            alt: "",
-            style: normalizeStyle({ transform: `rotateY(${yawDeg.value}deg)` })
-          }, null, 12, _hoisted_7$i)
+            alt: ""
+          }, null, 8, _hoisted_7$i)
         ])) : createCommentVNode("", true),
-        _cache[6] || (_cache[6] = createBaseVNode("span", {
-          class: "mstage-hint",
-          "aria-hidden": "true"
-        }, [
+        !flat.value ? (openBlock(), createElementBlock("span", _hoisted_8$h, [..._cache[5] || (_cache[5] = [
           createBaseVNode("svg", { viewBox: "0 0 16 16" }, [
             createBaseVNode("path", {
               d: "M5 5L2 8l3 3M11 5l3 3-3 3M2 8h12",
@@ -762,9 +817,9 @@ const _sfc_main$t = {
               stroke: "currentColor",
               "stroke-width": "1.4"
             })
-          ]),
-          createTextVNode("Тяните, чтобы повернуть")
-        ], -1))
+          ], -1),
+          createTextVNode("Тяните, чтобы повернуть", -1)
+        ])])) : createCommentVNode("", true)
       ], 46, _hoisted_1$q);
     };
   }
@@ -2569,7 +2624,7 @@ const _hoisted_37$1 = ["innerHTML"];
 const _sfc_main$c = {
   __name: "CatalogSection",
   setup(__props) {
-    const items = data.items;
+    const items = data.items.filter((i) => i.model3d);
     const rarities2 = data.rarities.filter((r) => items.some((i) => i.rarity === r.const));
     const bloods = data.blood.map((b) => ({ id: b.id, title: b.title, colour: b.colour }));
     const bloodOf = Object.fromEntries(bloods.map((b) => [b.id, b]));
@@ -2577,7 +2632,7 @@ const _sfc_main$c = {
     const rarity = ref(/* @__PURE__ */ new Set());
     const blood = ref("any");
     const query = ref("");
-    const KINDS = [["all", "Всё"], ["weapon", "Клинки"], ["material", "Материалы"]];
+    const KINDS = [["all", "Всё"], ["weapon", "Клинки"], ["material", "Материалы"]].filter(([k]) => k === "all" || items.some((i) => i.kind === k));
     const toggleRarity = (key) => {
       const next = new Set(rarity.value);
       next.has(key) ? next.delete(key) : next.add(key);
@@ -2640,7 +2695,7 @@ const _sfc_main$c = {
           icon: "hyperion"
         }, {
           default: withCtx(() => [..._cache[4] || (_cache[4] = [
-            createBaseVNode("p", { class: "lead" }, "Все предметы плагина. Отберите их по виду, редкости и крови и выберите любой: он встанет на магический круг. Тяните его мышью или пальцем, чтобы повернуть.", -1)
+            createBaseVNode("p", { class: "lead" }, "Предметы плагина с объёмной моделью. Отберите их по виду, редкости и крови и выберите любой: он встанет на магический круг. Тяните его мышью или пальцем, чтобы повернуть.", -1)
           ])]),
           _: 1
         }),
@@ -2681,14 +2736,14 @@ const _sfc_main$c = {
                 ])
               ]),
               createBaseVNode("div", _hoisted_6$9, [
-                (openBlock(), createElementBlock(Fragment, null, renderList(KINDS, ([k, t]) => {
-                  return createBaseVNode("button", {
+                (openBlock(true), createElementBlock(Fragment, null, renderList(unref(KINDS), ([k, t]) => {
+                  return openBlock(), createElementBlock("button", {
                     key: k,
                     type: "button",
                     "aria-pressed": String(kind.value === k),
                     onClick: ($event) => kind.value = k
                   }, toDisplayString(t), 9, _hoisted_7$9);
-                }), 64))
+                }), 128))
               ]),
               createBaseVNode("fieldset", _hoisted_8$8, [
                 _cache[7] || (_cache[7] = createBaseVNode("legend", null, "Редкость", -1)),
