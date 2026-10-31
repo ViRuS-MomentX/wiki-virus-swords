@@ -687,6 +687,26 @@ body { overflow-x: clip; }
   .sec-title h2, .sec-title h2 * { color: #14101a !important; -webkit-text-fill-color: #14101a !important; background: none !important; filter: none !important; }
   .cat-filters, .cat-search, input, .seg, .text-btn, .cv-more { display: none !important; }
 }
+
+/* The keys help */
+.keys { padding: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--bg-2); color: var(--ink); width: min(460px, calc(100vw - 32px)); max-height: calc(100dvh - 48px); box-shadow: 0 30px 80px rgba(0, 0, 0, .55); }
+.keys::backdrop { background: rgba(8, 5, 12, .62); backdrop-filter: blur(3px); }
+.keys[open] { animation: keys-in .18s cubic-bezier(.2, .8, .2, 1); }
+@keyframes keys-in { from { opacity: 0; transform: translateY(8px) scale(.98); } }
+@media (prefers-reduced-motion: reduce) { .keys[open] { animation: none; } }
+.keys-box { padding: 20px 22px 22px; }
+.keys-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.keys-head h2 { font-size: 1.6rem; }
+.keys-close { width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 8px; background: transparent; color: var(--ink-2); cursor: pointer; font-size: .95rem; }
+.keys-close:hover { background: var(--line-soft); color: var(--ink); }
+.keys-group { margin-top: 14px; }
+.keys-group h3 { font: 600 .74rem/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.keys dl { margin: 0; }
+.keys-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 7px 0; border-bottom: 1px solid var(--line-soft); }
+.keys-row:last-child { border-bottom: 0; }
+.keys dt { display: flex; gap: 4px; align-items: center; flex: none; color: var(--muted); }
+.keys dd { margin: 0; color: var(--ink-2); font-size: .9rem; text-align: right; }
+.sitefoot-keys { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
 /*
  * The enchantment over the codex.
  *
