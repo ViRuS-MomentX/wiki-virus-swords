@@ -71,6 +71,13 @@ main:focus { outline: none; }
 main { min-width: 0; padding: 0 48px 96px; }
 section { padding-block: 84px 0; display: grid; gap: 22px; scroll-margin-top: 8px; }
 .sec-head { display: grid; gap: 10px; max-width: 70ch; }
+.sec-anchor { position: relative; margin-left: -10px; display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; color: var(--muted); opacity: 0; transition: opacity .15s, color .15s, background .15s; flex: none; }
+.sec-anchor svg { width: 18px; height: 18px; }
+.sec-head:hover .sec-anchor, .sec-anchor:focus-visible { opacity: 1; }
+.sec-anchor:hover { color: var(--soul); background: var(--soul-soft); }
+.sec-anchor-tip { position: absolute; left: calc(100% + 8px); top: 50%; transform: translateY(-50%); z-index: 2; white-space: nowrap; font: 500 .78rem/1 var(--body); color: var(--soul); pointer-events: none; }
+.sec-anchor-tip:not(:empty) { padding: 6px 10px; border: 1px solid var(--soul-line); border-radius: 999px; background: var(--bg-2); box-shadow: 0 4px 16px rgba(0, 0, 0, .4); }
+@media (hover: none) { .sec-anchor { opacity: .7; } }
 .lead { color: var(--ink-2); font-size: 1.05rem; line-height: 1.6; max-width: 66ch; }
 .prose { max-width: 70ch; display: grid; gap: 12px; color: var(--ink-2); }
 section > p, section > .stack > p { max-width: 74ch; color: var(--ink-2); }

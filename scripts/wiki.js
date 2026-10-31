@@ -51,7 +51,7 @@ const _hoisted_6$m = {
   key: 0,
   class: "found-box"
 };
-const _hoisted_7$l = {
+const _hoisted_7$m = {
   key: 0,
   id: "found",
   class: "found",
@@ -231,7 +231,7 @@ const _sfc_main$x = {
               "aria-hidden": "true"
             }, "/", -1)),
             listOpen.value && unref(filters).query ? (openBlock(), createElementBlock("div", _hoisted_6$m, [
-              unref(found).length ? (openBlock(), createElementBlock("ul", _hoisted_7$l, [
+              unref(found).length ? (openBlock(), createElementBlock("ul", _hoisted_7$m, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(unref(found).slice(0, SHOWN), (i, k) => {
                   return openBlock(), createElementBlock("li", {
                     id: `found-${k}`,
@@ -336,7 +336,7 @@ const _hoisted_6$l = {
   key: 0,
   class: "tstats"
 };
-const _hoisted_7$k = { key: 0 };
+const _hoisted_7$l = { key: 0 };
 const _hoisted_8$j = { class: "trar" };
 const _sfc_main$v = {
   __name: "ItemTooltip",
@@ -364,7 +364,7 @@ const _sfc_main$v = {
         __props.item.stats ? (openBlock(), createElementBlock("div", _hoisted_6$l, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(stats.value, (part, i) => {
             return openBlock(), createElementBlock(Fragment, { key: i }, [
-              i % 2 ? (openBlock(), createElementBlock("b", _hoisted_7$k, toDisplayString(part), 1)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
+              i % 2 ? (openBlock(), createElementBlock("b", _hoisted_7$l, toDisplayString(part), 1)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
                 createTextVNode(toDisplayString(part), 1)
               ], 64))
             ], 64);
@@ -495,7 +495,7 @@ const _hoisted_3$m = { class: "mstage-spin" };
 const _hoisted_4$l = ["y2", "transform"];
 const _hoisted_5$k = ["transform"];
 const _hoisted_6$k = ["x", "y"];
-const _hoisted_7$j = ["src"];
+const _hoisted_7$k = ["src"];
 const _hoisted_8$i = {
   key: 1,
   class: "mstage-hint",
@@ -807,7 +807,7 @@ const _sfc_main$u = {
           createBaseVNode("img", {
             src: __props.item.icon,
             alt: ""
-          }, null, 8, _hoisted_7$j)
+          }, null, 8, _hoisted_7$k)
         ])) : createCommentVNode("", true),
         !flat.value ? (openBlock(), createElementBlock("span", _hoisted_8$i, [..._cache[5] || (_cache[5] = [
           createBaseVNode("svg", { viewBox: "0 0 16 16" }, [
@@ -830,7 +830,7 @@ const _hoisted_3$l = { href: "#catalog" };
 const _hoisted_4$k = { href: "#catalog" };
 const _hoisted_5$j = { href: "#blood" };
 const _hoisted_6$j = { href: "#trophies" };
-const _hoisted_7$i = { class: "stage" };
+const _hoisted_7$j = { class: "stage" };
 const _hoisted_8$h = { class: "hero-model" };
 const _hoisted_9$g = {
   class: "stage-tip",
@@ -1000,7 +1000,7 @@ const _sfc_main$t = {
             ])
           ])
         ]),
-        createBaseVNode("div", _hoisted_7$i, [
+        createBaseVNode("div", _hoisted_7$j, [
           createBaseVNode("div", _hoisted_8$h, [
             createVNode(_sfc_main$u, {
               item: held.value,
@@ -1058,7 +1058,7 @@ const _hoisted_3$k = { class: "craft-grid" };
 const _hoisted_4$j = ["href", "title"];
 const _hoisted_5$i = ["src", "alt"];
 const _hoisted_6$i = ["title"];
-const _hoisted_7$h = ["src", "alt"];
+const _hoisted_7$i = ["src", "alt"];
 const _hoisted_8$g = {
   key: 2,
   class: "cslot"
@@ -1116,7 +1116,7 @@ const _sfc_main$s = {
                   createBaseVNode("img", {
                     src: c.icon,
                     alt: c.name
-                  }, null, 8, _hoisted_7$h)
+                  }, null, 8, _hoisted_7$i)
                 ], 8, _hoisted_6$i)) : (openBlock(), createElementBlock("span", _hoisted_8$g))
               ], 64);
             }), 128))
@@ -1172,7 +1172,7 @@ const _hoisted_5$h = {
   "stroke-width": "1.4"
 };
 const _hoisted_6$h = ["d", "fill", "stroke-width"];
-const _hoisted_7$g = {
+const _hoisted_7$h = {
   key: 1,
   class: "chip rest"
 };
@@ -1213,7 +1213,7 @@ const _sfc_main$r = {
                   ])),
                   createTextVNode(toDisplayString(a.trigger), 1)
                 ])) : createCommentVNode("", true),
-                a.rest ? (openBlock(), createElementBlock("span", _hoisted_7$g, [
+                a.rest ? (openBlock(), createElementBlock("span", _hoisted_7$h, [
                   _cache[0] || (_cache[0] = createBaseVNode("svg", {
                     viewBox: "0 0 16 16",
                     "aria-hidden": "true"
@@ -1307,7 +1307,7 @@ const _hoisted_6$g = {
   class: "price-row",
   "aria-hidden": "true"
 };
-const _hoisted_7$f = ["href", "title"];
+const _hoisted_7$g = ["href", "title"];
 const _hoisted_8$e = ["src"];
 const _hoisted_9$e = ["src"];
 const _hoisted_10$c = {
@@ -1384,7 +1384,7 @@ const _sfc_main$p = {
                 src: from.value.icon,
                 alt: ""
               }, null, 8, _hoisted_8$e)
-            ], 8, _hoisted_7$f),
+            ], 8, _hoisted_7$g),
             _cache[1] || (_cache[1] = createBaseVNode("span", { class: "price-plus" }, "+", -1))
           ], 64)) : createCommentVNode("", true),
           (openBlock(true), createElementBlock(Fragment, null, renderList(costs.value, (c, i) => {
@@ -1443,7 +1443,7 @@ const _hoisted_3$g = { class: "versus-pic" };
 const _hoisted_4$f = ["src"];
 const _hoisted_5$f = { class: "versus-body" };
 const _hoisted_6$f = { class: "versus-title" };
-const _hoisted_7$e = { class: "versus-nums" };
+const _hoisted_7$f = { class: "versus-nums" };
 const _hoisted_8$d = {
   key: 1,
   class: "statbars"
@@ -1552,7 +1552,7 @@ const _sfc_main$n = {
               _cache[1] || (_cache[1] = createTextVNode("Против: ", -1)),
               createBaseVNode("b", null, toDisplayString(rival.value.name), 1)
             ]),
-            createBaseVNode("p", _hoisted_7$e, [
+            createBaseVNode("p", _hoisted_7$f, [
               createBaseVNode("span", {
                 class: normalizeClass(sign(__props.item.damage, rival.value.damage))
               }, "Урон " + toDisplayString(delta(__props.item.damage, rival.value.damage)), 3),
@@ -1682,7 +1682,7 @@ const _hoisted_3$f = {
 const _hoisted_4$e = { class: "step-name" };
 const _hoisted_5$e = ["src"];
 const _hoisted_6$e = { class: "step-name" };
-const _hoisted_7$d = ["src"];
+const _hoisted_7$e = ["src"];
 const _hoisted_8$c = { class: "inspect-foot" };
 const _hoisted_9$c = {
   class: "copied",
@@ -1826,7 +1826,7 @@ const _sfc_main$m = {
                     createBaseVNode("img", {
                       src: next.value.icon,
                       alt: ""
-                    }, null, 8, _hoisted_7$d),
+                    }, null, 8, _hoisted_7$e),
                     createTextVNode(toDisplayString(next.value.name), 1)
                   ])
                 ])) : createCommentVNode("", true)
@@ -2144,7 +2144,7 @@ const _hoisted_4$d = {
 };
 const _hoisted_5$d = ["src"];
 const _hoisted_6$d = { class: "sitefoot-stats" };
-const _hoisted_7$c = ["aria-label"];
+const _hoisted_7$d = ["aria-label"];
 const _hoisted_8$b = ["href"];
 const _hoisted_9$b = { class: "sitefoot-bottom" };
 const _hoisted_10$a = { key: 0 };
@@ -2193,7 +2193,7 @@ const _sfc_main$h = {
                   ]);
                 }), 128))
               ])
-            ], 8, _hoisted_7$c);
+            ], 8, _hoisted_7$d);
           }), 64))
         ]),
         createBaseVNode("div", _hoisted_9$b, [
@@ -2204,20 +2204,24 @@ const _sfc_main$h = {
     };
   }
 };
-const _hoisted_1$g = { class: "sec-head" };
-const _hoisted_2$f = {
+const _hoisted_1$g = {
   class: "sec-rune",
   viewBox: "0 0 5 7",
   "aria-hidden": "true"
 };
-const _hoisted_3$d = ["x", "y"];
-const _hoisted_4$c = { class: "sec-title" };
-const _hoisted_5$c = {
+const _hoisted_2$f = ["x", "y"];
+const _hoisted_3$d = { class: "sec-title" };
+const _hoisted_4$c = {
   key: 0,
   class: "emblem",
   "aria-hidden": "true"
 };
-const _hoisted_6$c = ["src"];
+const _hoisted_5$c = ["src"];
+const _hoisted_6$c = ["href", "aria-label"];
+const _hoisted_7$c = {
+  class: "sec-anchor-tip",
+  role: "status"
+};
 const _sfc_main$g = {
   __name: "SecHead",
   props: {
@@ -2232,9 +2236,34 @@ const _sfc_main$g = {
       return props.icon && (((_a = item(props.icon)) == null ? void 0 : _a.icon) || data.icons[props.icon]);
     });
     const rune = computed(() => cells(RUNES[[...props.title].reduce((n, c) => n + c.charCodeAt(0), 0) % RUNES.length]));
+    const root = ref(null);
+    const anchor = ref("");
+    const copied = ref(false);
+    onMounted(() => {
+      var _a, _b;
+      anchor.value = ((_b = (_a = root.value) == null ? void 0 : _a.closest("section[id]")) == null ? void 0 : _b.id) || "";
+    });
+    async function copyLink(e) {
+      if (!anchor.value) return;
+      e.preventDefault();
+      history.replaceState(null, "", `#${anchor.value}`);
+      const url = location.href;
+      try {
+        await navigator.clipboard.writeText(url);
+      } catch (err) {
+      }
+      copied.value = true;
+      setTimeout(() => {
+        copied.value = false;
+      }, 1600);
+    }
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$g, [
-        (openBlock(), createElementBlock("svg", _hoisted_2$f, [
+      return openBlock(), createElementBlock("div", {
+        ref_key: "root",
+        ref: root,
+        class: "sec-head"
+      }, [
+        (openBlock(), createElementBlock("svg", _hoisted_1$g, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(rune.value, ([x, y], i) => {
             return openBlock(), createElementBlock("rect", {
               key: i,
@@ -2242,24 +2271,45 @@ const _sfc_main$g = {
               y,
               width: "1",
               height: "1"
-            }, null, 8, _hoisted_3$d);
+            }, null, 8, _hoisted_2$f);
           }), 128))
         ])),
-        createBaseVNode("div", _hoisted_4$c, [
-          src.value ? (openBlock(), createElementBlock("span", _hoisted_5$c, [
+        createBaseVNode("div", _hoisted_3$d, [
+          src.value ? (openBlock(), createElementBlock("span", _hoisted_4$c, [
             createBaseVNode("img", {
               src: src.value,
               alt: ""
-            }, null, 8, _hoisted_6$c)
+            }, null, 8, _hoisted_5$c)
           ])) : createCommentVNode("", true),
           createBaseVNode("h2", null, toDisplayString(__props.title), 1),
-          _cache[0] || (_cache[0] = createBaseVNode("span", {
+          anchor.value ? (openBlock(), createElementBlock("a", {
+            key: 1,
+            class: "sec-anchor",
+            href: `#${anchor.value}`,
+            "aria-label": `Ссылка на раздел «${__props.title}»`,
+            onClick: copyLink
+          }, [
+            _cache[0] || (_cache[0] = createBaseVNode("svg", {
+              viewBox: "0 0 16 16",
+              "aria-hidden": "true"
+            }, [
+              createBaseVNode("path", {
+                d: "M6.5 9.5l3-3M7 4.5l1.2-1.2a2.6 2.6 0 0 1 3.7 3.7L10.7 8.2M9 11.5l-1.2 1.2a2.6 2.6 0 0 1-3.7-3.7L5.3 7.8",
+                fill: "none",
+                stroke: "currentColor",
+                "stroke-width": "1.5",
+                "stroke-linecap": "round"
+              })
+            ], -1)),
+            createBaseVNode("span", _hoisted_7$c, toDisplayString(copied.value ? "Ссылка скопирована" : ""), 1)
+          ], 8, _hoisted_6$c)) : createCommentVNode("", true),
+          _cache[1] || (_cache[1] = createBaseVNode("span", {
             class: "sec-rule",
             "aria-hidden": "true"
           }, null, -1))
         ]),
         renderSlot(_ctx.$slots, "default")
-      ]);
+      ], 512);
     };
   }
 };
