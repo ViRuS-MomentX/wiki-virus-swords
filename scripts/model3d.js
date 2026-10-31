@@ -1,5 +1,5 @@
-import { G as Group, B as Box3, V as Vector3, C as TextureLoader, N as NearestFilter, S as SRGBColorSpace, D as BufferGeometry, E as Float32BufferAttribute, M as Mesh, H as MeshLambertMaterial, I as DoubleSide } from "./vue.js";
-import { J } from "./vue.js";
+import { G as Group, B as Box3, V as Vector3, T as TextureLoader, N as NearestFilter, S as SRGBColorSpace, a as BufferGeometry, F as Float32BufferAttribute, M as Mesh, b as MeshLambertMaterial, D as DoubleSide } from "./three.js";
+import { t } from "./three.js";
 import { d as data } from "./data.js";
 const bundle = data.models || { textures: [], models: {} };
 const hasModel = (id) => !!bundle.models[id];
@@ -56,12 +56,12 @@ class Builder {
   constructor() {
     this.parts = /* @__PURE__ */ new Map();
   }
-  part(t) {
-    if (!this.parts.has(t)) this.parts.set(t, { pos: [], uv: [], nrm: [], idx: [] });
-    return this.parts.get(t);
+  part(t2) {
+    if (!this.parts.has(t2)) this.parts.set(t2, { pos: [], uv: [], nrm: [], idx: [] });
+    return this.parts.get(t2);
   }
-  quad(t, corners, uvs, normal) {
-    const p = this.part(t), base = p.pos.length / 3;
+  quad(t2, corners, uvs, normal) {
+    const p = this.part(t2), base = p.pos.length / 3;
     for (let k = 0; k < 4; k++) {
       p.pos.push(...corners[k]);
       p.uv.push(...uvs[k]);
@@ -71,13 +71,13 @@ class Builder {
   }
   group() {
     const g = new Group();
-    for (const [t, p] of this.parts) {
+    for (const [t2, p] of this.parts) {
       const geo = new BufferGeometry();
       geo.setAttribute("position", new Float32BufferAttribute(p.pos, 3));
       geo.setAttribute("uv", new Float32BufferAttribute(p.uv, 2));
       geo.setAttribute("normal", new Float32BufferAttribute(p.nrm, 3));
       geo.setIndex(p.idx);
-      g.add(new Mesh(geo, material(texture(t).tex)));
+      g.add(new Mesh(geo, material(texture(t2).tex)));
     }
     return g;
   }
@@ -121,20 +121,20 @@ function sprite(model) {
     const b = new Builder();
     const px = 16 / w, py = 16 / h;
     const Z0 = 7.5, Z1 = 8.5;
-    layers.forEach((t, li) => {
+    layers.forEach((t2, li) => {
       const dz = li * 0.01;
-      b.quad(t, [[0, 16, Z1 + dz], [16, 16, Z1 + dz], [16, 0, Z1 + dz], [0, 0, Z1 + dz]], [[0, 0], [1, 0], [1, 1], [0, 1]], [0, 0, 1]);
-      b.quad(t, [[16, 16, Z0 - dz], [0, 16, Z0 - dz], [0, 0, Z0 - dz], [16, 0, Z0 - dz]], [[1, 0], [0, 0], [0, 1], [1, 1]], [0, 0, -1]);
+      b.quad(t2, [[0, 16, Z1 + dz], [16, 16, Z1 + dz], [16, 0, Z1 + dz], [0, 0, Z1 + dz]], [[0, 0], [1, 0], [1, 1], [0, 1]], [0, 0, 1]);
+      b.quad(t2, [[16, 16, Z0 - dz], [0, 16, Z0 - dz], [0, 0, Z0 - dz], [16, 0, Z0 - dz]], [[1, 0], [0, 0], [0, 1], [1, 1]], [0, 0, -1]);
     });
     for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
       if (!solid(x, y)) continue;
       const x0 = x * px, x1 = x0 + px, y1 = 16 - y * py, y0 = y1 - py;
       const uv = [(x + 0.5) / w, (y + 0.5) / h], uvs = [uv, uv, uv, uv];
-      const t = layers[0];
-      if (!solid(x, y - 1)) b.quad(t, [[x0, y1, Z0], [x1, y1, Z0], [x1, y1, Z1], [x0, y1, Z1]], uvs, [0, 1, 0]);
-      if (!solid(x, y + 1)) b.quad(t, [[x0, y0, Z1], [x1, y0, Z1], [x1, y0, Z0], [x0, y0, Z0]], uvs, [0, -1, 0]);
-      if (!solid(x - 1, y)) b.quad(t, [[x0, y1, Z0], [x0, y1, Z1], [x0, y0, Z1], [x0, y0, Z0]], uvs, [-1, 0, 0]);
-      if (!solid(x + 1, y)) b.quad(t, [[x1, y1, Z1], [x1, y1, Z0], [x1, y0, Z0], [x1, y0, Z1]], uvs, [1, 0, 0]);
+      const t2 = layers[0];
+      if (!solid(x, y - 1)) b.quad(t2, [[x0, y1, Z0], [x1, y1, Z0], [x1, y1, Z1], [x0, y1, Z1]], uvs, [0, 1, 0]);
+      if (!solid(x, y + 1)) b.quad(t2, [[x0, y0, Z1], [x1, y0, Z1], [x1, y0, Z0], [x0, y0, Z0]], uvs, [0, -1, 0]);
+      if (!solid(x - 1, y)) b.quad(t2, [[x0, y1, Z0], [x0, y1, Z1], [x0, y0, Z1], [x0, y0, Z0]], uvs, [-1, 0, 0]);
+      if (!solid(x + 1, y)) b.quad(t2, [[x1, y1, Z1], [x1, y1, Z0], [x1, y0, Z0], [x1, y0, Z1]], uvs, [1, 0, 0]);
     }
     g.add(...b.group().children);
     g.dispatchEvent({ type: "built" });
@@ -187,7 +187,7 @@ function dispose(obj) {
   });
 }
 export {
-  J as THREE,
+  t as THREE,
   animate,
   build,
   dispose,
