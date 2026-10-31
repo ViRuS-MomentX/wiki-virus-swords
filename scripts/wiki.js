@@ -1,5 +1,5 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./soft3d.js","./data.js","./model3d.js","./three.js"])))=>i.map(i=>d[i]);
-import { r as reactive, c as computed, w as watch, o as onMounted, a as onBeforeUnmount, b as openBlock, d as createElementBlock, e as createBaseVNode, u as unref, f as withDirectives, v as vModelText, F as Fragment, g as renderList, h as createCommentVNode, i as createTextVNode, t as toDisplayString, n as normalizeClass, j as ref, k as withModifiers, l as renderSlot, m as normalizeStyle, p as createVNode, q as withCtx, s as vShow, x as createBlock, y as resolveDynamicComponent, z as nextTick, T as Transition, A as createStaticVNode, B as createApp } from "./vue.js";
+import { r as reactive, c as computed, w as watch, o as onMounted, a as onBeforeUnmount, b as openBlock, d as createElementBlock, e as createBaseVNode, u as unref, f as withDirectives, v as vModelText, F as Fragment, g as renderList, h as createCommentVNode, i as createTextVNode, t as toDisplayString, n as normalizeClass, j as ref, k as withModifiers, l as renderSlot, m as normalizeStyle, p as createVNode, q as withCtx, s as vShow, x as createBlock, y as resolveDynamicComponent, z as nextTick, T as Transition, A as createStaticVNode, B as vModelSelect, C as createApp } from "./vue.js";
 import { d as data } from "./data.js";
 const norm = (s) => s.toLowerCase().replace(/ё/g, "е");
 const plural = (n, one, few, many) => {
@@ -2957,53 +2957,53 @@ const _hoisted_12$7 = { class: "cat-chips" };
 const _hoisted_13$5 = ["aria-pressed"];
 const _hoisted_14$5 = ["aria-pressed", "onClick"];
 const _hoisted_15$5 = ["aria-pressed"];
-const _hoisted_16$4 = {
-  class: "cat-count",
-  "aria-live": "polite"
-};
-const _hoisted_17$4 = ["aria-selected", "title", "onClick"];
-const _hoisted_18$3 = ["src"];
-const _hoisted_19$3 = { class: "sr-only" };
-const _hoisted_20$3 = {
+const _hoisted_16$4 = { class: "cat-count" };
+const _hoisted_17$4 = { "aria-live": "polite" };
+const _hoisted_18$3 = { class: "cat-order" };
+const _hoisted_19$3 = ["value"];
+const _hoisted_20$3 = ["aria-selected", "title", "onClick"];
+const _hoisted_21$3 = ["src"];
+const _hoisted_22$2 = { class: "sr-only" };
+const _hoisted_23$2 = {
   key: 0,
   class: "cat-empty",
   role: "status"
 };
-const _hoisted_21$3 = { class: "cv-head" };
-const _hoisted_22$2 = { class: "cv-tags" };
-const _hoisted_23$2 = { class: "cv-tag" };
-const _hoisted_24$2 = { class: "cv-tag" };
-const _hoisted_25$2 = {
+const _hoisted_24$2 = { class: "cv-head" };
+const _hoisted_25$2 = { class: "cv-tags" };
+const _hoisted_26$2 = { class: "cv-tag" };
+const _hoisted_27$2 = { class: "cv-tag" };
+const _hoisted_28$2 = {
   key: 0,
   class: "cv-tag"
 };
-const _hoisted_26$2 = {
+const _hoisted_29$2 = {
   key: 1,
   class: "cv-tag"
 };
-const _hoisted_27$2 = {
+const _hoisted_30$1 = {
   key: 0,
   class: "cv-lore"
 };
-const _hoisted_28$2 = ["innerHTML"];
-const _hoisted_29$2 = {
+const _hoisted_31$1 = ["innerHTML"];
+const _hoisted_32$1 = {
   key: 1,
   class: "cv-stats statbars"
 };
-const _hoisted_30$1 = { class: "statbar" };
-const _hoisted_31$1 = {
-  class: "statbar-track",
-  "aria-hidden": "true"
-};
-const _hoisted_32$1 = { class: "statbar-value" };
 const _hoisted_33$1 = { class: "statbar" };
 const _hoisted_34$1 = {
   class: "statbar-track",
   "aria-hidden": "true"
 };
 const _hoisted_35$1 = { class: "statbar-value" };
-const _hoisted_36$1 = { class: "cv-obtain" };
-const _hoisted_37$1 = ["innerHTML"];
+const _hoisted_36$1 = { class: "statbar" };
+const _hoisted_37$1 = {
+  class: "statbar-track",
+  "aria-hidden": "true"
+};
+const _hoisted_38$1 = { class: "statbar-value" };
+const _hoisted_39$1 = { class: "cv-obtain" };
+const _hoisted_40$1 = ["innerHTML"];
 const _sfc_main$c = {
   __name: "CatalogSection",
   setup(__props) {
@@ -3015,6 +3015,8 @@ const _sfc_main$c = {
     const rarity = ref(/* @__PURE__ */ new Set());
     const blood = ref("any");
     const query = ref("");
+    const order2 = ref("rarity");
+    const ORDERS = [["rarity", "По редкости"], ["name", "По названию"], ["damage", "По урону"]];
     const KINDS = [["all", "Всё"], ["weapon", "Клинки"], ["material", "Материалы"]].filter(([k]) => k === "all" || items.some((i) => i.kind === k));
     const toggleRarity = (key) => {
       const next = new Set(rarity.value);
@@ -3030,9 +3032,16 @@ const _sfc_main$c = {
     const busy = computed(() => kind.value !== "all" || rarity.value.size || blood.value !== "any" || query.value);
     const rank = Object.fromEntries(data.rarities.map((r, i) => [r.const, i]));
     const text = (i) => norm([i.name, i.rarityLabel, i.obtain, i.lore.join(" ").replace(/<[^>]+>/g, ""), i.abilities.map((a) => a.name).join(" ")].join(" "));
+    const byName = (a, b) => a.name.localeCompare(b.name, "ru");
+    const kindFirst = (a, b) => a.kind === b.kind ? 0 : a.kind === "weapon" ? -1 : 1;
+    const ORDER_BY = {
+      rarity: (a, b) => kindFirst(a, b) || rank[b.rarity] - rank[a.rarity] || byName(a, b),
+      name: byName,
+      damage: (a, b) => kindFirst(a, b) || (b.damage || 0) - (a.damage || 0) || rank[b.rarity] - rank[a.rarity] || byName(a, b)
+    };
     const shown = computed(() => {
       const q = norm(query.value.trim());
-      return items.filter((i) => kind.value === "all" || i.kind === kind.value).filter((i) => !rarity.value.size || rarity.value.has(i.rarity)).filter((i) => blood.value === "any" || (blood.value === "none" ? !i.blood && i.kind === "weapon" : i.blood === blood.value)).filter((i) => !q || text(i).includes(q)).sort((a, b) => (a.kind === b.kind ? 0 : a.kind === "weapon" ? -1 : 1) || rank[b.rarity] - rank[a.rarity] || a.name.localeCompare(b.name, "ru"));
+      return items.filter((i) => kind.value === "all" || i.kind === kind.value).filter((i) => !rarity.value.size || rarity.value.has(i.rarity)).filter((i) => blood.value === "any" || (blood.value === "none" ? !i.blood && i.kind === "weapon" : i.blood === blood.value)).filter((i) => !q || text(i).includes(q)).sort(ORDER_BY[order2.value]);
     });
     const picked = ref("all_black");
     const current = computed(() => items.find((i) => i.id === picked.value) || shown.value[0] || items[0]);
@@ -3077,7 +3086,7 @@ const _sfc_main$c = {
           title: "Каталог",
           icon: "hyperion"
         }, {
-          default: withCtx(() => [..._cache[4] || (_cache[4] = [
+          default: withCtx(() => [..._cache[5] || (_cache[5] = [
             createBaseVNode("p", { class: "lead" }, "Предметы плагина с объёмной моделью. Отберите их по виду, редкости и крови и выберите любой: он встанет на магический круг. Тяните его мышью или пальцем, чтобы повернуть.", -1)
           ])]),
           _: 1
@@ -3086,11 +3095,11 @@ const _sfc_main$c = {
           createBaseVNode("div", _hoisted_3$a, [
             createBaseVNode("div", _hoisted_4$9, [
               createBaseVNode("div", _hoisted_5$9, [
-                _cache[5] || (_cache[5] = createBaseVNode("label", {
+                _cache[6] || (_cache[6] = createBaseVNode("label", {
                   for: "cat-q",
                   class: "sr-only"
                 }, "Найти в каталоге", -1)),
-                _cache[6] || (_cache[6] = createBaseVNode("svg", {
+                _cache[7] || (_cache[7] = createBaseVNode("svg", {
                   viewBox: "0 0 16 16",
                   "aria-hidden": "true"
                 }, [
@@ -3129,7 +3138,7 @@ const _sfc_main$c = {
                 }), 128))
               ]),
               createBaseVNode("fieldset", _hoisted_8$9, [
-                _cache[7] || (_cache[7] = createBaseVNode("legend", null, "Редкость", -1)),
+                _cache[8] || (_cache[8] = createBaseVNode("legend", null, "Редкость", -1)),
                 createBaseVNode("div", _hoisted_9$9, [
                   (openBlock(true), createElementBlock(Fragment, null, renderList(unref(rarities2), (r) => {
                     return openBlock(), createElementBlock("button", {
@@ -3157,7 +3166,7 @@ const _sfc_main$c = {
                 ])
               ]),
               createBaseVNode("fieldset", _hoisted_11$8, [
-                _cache[8] || (_cache[8] = createBaseVNode("legend", null, "Кровь", -1)),
+                _cache[9] || (_cache[9] = createBaseVNode("legend", null, "Кровь", -1)),
                 createBaseVNode("div", _hoisted_12$7, [
                   createBaseVNode("button", {
                     type: "button",
@@ -3188,13 +3197,28 @@ const _sfc_main$c = {
                 ])
               ]),
               createBaseVNode("p", _hoisted_16$4, [
-                createTextVNode(toDisplayString(shown.value.length) + " из " + toDisplayString(unref(items).length) + " ", 1),
+                createBaseVNode("span", _hoisted_17$4, toDisplayString(shown.value.length) + " из " + toDisplayString(unref(items).length), 1),
                 busy.value ? (openBlock(), createElementBlock("button", {
                   key: 0,
                   type: "button",
                   class: "text-btn",
                   onClick: reset
-                }, "Сбросить фильтры")) : createCommentVNode("", true)
+                }, "Сбросить фильтры")) : createCommentVNode("", true),
+                createBaseVNode("label", _hoisted_18$3, [
+                  _cache[10] || (_cache[10] = createTextVNode("Порядок ", -1)),
+                  withDirectives(createBaseVNode("select", {
+                    "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => order2.value = $event)
+                  }, [
+                    (openBlock(), createElementBlock(Fragment, null, renderList(ORDERS, ([k, label]) => {
+                      return createBaseVNode("option", {
+                        key: k,
+                        value: k
+                      }, toDisplayString(label), 9, _hoisted_19$3);
+                    }), 64))
+                  ], 512), [
+                    [vModelSelect, order2.value]
+                  ])
+                ])
               ])
             ]),
             withDirectives(createBaseVNode("div", {
@@ -3218,25 +3242,25 @@ const _sfc_main$c = {
                     src: i.icon,
                     alt: "",
                     loading: "lazy"
-                  }, null, 8, _hoisted_18$3),
-                  createBaseVNode("span", _hoisted_19$3, toDisplayString(i.name), 1),
+                  }, null, 8, _hoisted_21$3),
+                  createBaseVNode("span", _hoisted_22$2, toDisplayString(i.name), 1),
                   i.blood ? (openBlock(), createElementBlock("span", {
                     key: 0,
                     class: "catslot-blood",
                     style: normalizeStyle({ background: unref(bloodOf)[i.blood].colour }),
                     "aria-hidden": "true"
                   }, null, 4)) : createCommentVNode("", true)
-                ], 10, _hoisted_17$4);
+                ], 10, _hoisted_20$3);
               }), 128))
             ], 544), [
               [vShow, shown.value.length]
             ]),
-            !shown.value.length ? (openBlock(), createElementBlock("div", _hoisted_20$3, [
-              _cache[9] || (_cache[9] = createBaseVNode("span", {
+            !shown.value.length ? (openBlock(), createElementBlock("div", _hoisted_23$2, [
+              _cache[11] || (_cache[11] = createBaseVNode("span", {
                 class: "cat-empty-slot",
                 "aria-hidden": "true"
               }, null, -1)),
-              _cache[10] || (_cache[10] = createBaseVNode("p", null, [
+              _cache[12] || (_cache[12] = createBaseVNode("p", null, [
                 createBaseVNode("strong", null, "Под такие фильтры не подходит ни один предмет."),
                 createBaseVNode("br"),
                 createTextVNode("Уберите часть условий или начните заново.")
@@ -3259,13 +3283,13 @@ const _sfc_main$c = {
               item: current.value,
               size: "panel"
             }, null, 8, ["item"]),
-            createBaseVNode("header", _hoisted_21$3, [
+            createBaseVNode("header", _hoisted_24$2, [
               createBaseVNode("h3", {
                 class: "cv-name paint",
                 style: normalizeStyle(unref(rarityStyle)(current.value.rarity))
               }, toDisplayString(current.value.name), 5),
-              createBaseVNode("p", _hoisted_22$2, [
-                createBaseVNode("span", _hoisted_23$2, [
+              createBaseVNode("p", _hoisted_25$2, [
+                createBaseVNode("span", _hoisted_26$2, [
                   createVNode(_sfc_main$x, {
                     rarity: current.value.rarity
                   }, {
@@ -3275,8 +3299,8 @@ const _sfc_main$c = {
                     _: 1
                   }, 8, ["rarity"])
                 ]),
-                createBaseVNode("span", _hoisted_24$2, toDisplayString(current.value.kind === "weapon" ? "Клинок" : "Материал"), 1),
-                owner.value ? (openBlock(), createElementBlock("span", _hoisted_25$2, [
+                createBaseVNode("span", _hoisted_27$2, toDisplayString(current.value.kind === "weapon" ? "Клинок" : "Материал"), 1),
+                owner.value ? (openBlock(), createElementBlock("span", _hoisted_28$2, [
                   createVNode(_sfc_main$p, {
                     colour: owner.value.colour
                   }, null, 8, ["colour"]),
@@ -3284,58 +3308,58 @@ const _sfc_main$c = {
                   current.value.form ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
                     createTextVNode(", " + toDisplayString(formText(current.value.form)), 1)
                   ], 64)) : createCommentVNode("", true)
-                ])) : current.value.kind === "weapon" ? (openBlock(), createElementBlock("span", _hoisted_26$2, "Любая кровь")) : createCommentVNode("", true)
+                ])) : current.value.kind === "weapon" ? (openBlock(), createElementBlock("span", _hoisted_29$2, "Любая кровь")) : createCommentVNode("", true)
               ])
             ]),
-            plain.value.length ? (openBlock(), createElementBlock("div", _hoisted_27$2, [
+            plain.value.length ? (openBlock(), createElementBlock("div", _hoisted_30$1, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(plain.value, (l, k) => {
                 return openBlock(), createElementBlock("p", {
                   key: k,
                   innerHTML: l
-                }, null, 8, _hoisted_28$2);
+                }, null, 8, _hoisted_31$1);
               }), 128))
             ])) : createCommentVNode("", true),
-            current.value.kind === "weapon" ? (openBlock(), createElementBlock("div", _hoisted_29$2, [
-              createBaseVNode("div", _hoisted_30$1, [
-                _cache[11] || (_cache[11] = createBaseVNode("span", { class: "statbar-label" }, "Урон", -1)),
-                createBaseVNode("span", _hoisted_31$1, [
+            current.value.kind === "weapon" ? (openBlock(), createElementBlock("div", _hoisted_32$1, [
+              createBaseVNode("div", _hoisted_33$1, [
+                _cache[13] || (_cache[13] = createBaseVNode("span", { class: "statbar-label" }, "Урон", -1)),
+                createBaseVNode("span", _hoisted_34$1, [
                   createBaseVNode("span", {
                     class: "statbar-fill",
                     style: normalizeStyle({ width: `${Math.round(current.value.damage / MAX.damage * 100)}%` })
                   }, null, 4)
                 ]),
-                createBaseVNode("b", _hoisted_32$1, toDisplayString(current.value.damage), 1)
+                createBaseVNode("b", _hoisted_35$1, toDisplayString(current.value.damage), 1)
               ]),
-              createBaseVNode("div", _hoisted_33$1, [
-                _cache[12] || (_cache[12] = createBaseVNode("span", { class: "statbar-label" }, "Скорость", -1)),
-                createBaseVNode("span", _hoisted_34$1, [
+              createBaseVNode("div", _hoisted_36$1, [
+                _cache[14] || (_cache[14] = createBaseVNode("span", { class: "statbar-label" }, "Скорость", -1)),
+                createBaseVNode("span", _hoisted_37$1, [
                   createBaseVNode("span", {
                     class: "statbar-fill",
                     style: normalizeStyle({ width: `${Math.round(current.value.speed / MAX.speed * 100)}%` })
                   }, null, 4)
                 ]),
-                createBaseVNode("b", _hoisted_35$1, toDisplayString(current.value.speed), 1)
+                createBaseVNode("b", _hoisted_38$1, toDisplayString(current.value.speed), 1)
               ])
             ])) : createCommentVNode("", true),
             current.value.abilities.length ? (openBlock(), createBlock(_sfc_main$s, {
               key: 2,
               abilities: current.value.abilities
             }, null, 8, ["abilities"])) : createCommentVNode("", true),
-            createBaseVNode("div", _hoisted_36$1, [
+            createBaseVNode("div", _hoisted_39$1, [
               createBaseVNode("h4", null, [
-                _cache[13] || (_cache[13] = createTextVNode("Как получить ", -1)),
+                _cache[15] || (_cache[15] = createTextVNode("Как получить ", -1)),
                 createBaseVNode("span", {
                   class: normalizeClass(["mbadge", `m-${current.value.method}`])
                 }, toDisplayString(current.value.methodLabel), 3)
               ]),
               createBaseVNode("p", {
                 innerHTML: current.value.obtain || "Источник описан в разделах ниже."
-              }, null, 8, _hoisted_37$1)
+              }, null, 8, _hoisted_40$1)
             ]),
             createBaseVNode("button", {
               type: "button",
               class: "cv-more",
-              onClick: _cache[3] || (_cache[3] = ($event) => unref(openItem)(current.value.id))
+              onClick: _cache[4] || (_cache[4] = ($event) => unref(openItem)(current.value.id))
             }, "Полная карточка: цены, рецепты, линии →")
           ], 6)
         ])

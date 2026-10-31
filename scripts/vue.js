@@ -247,6 +247,9 @@ function looseEqual(a, b, seen) {
   }
   return String(a) === String(b);
 }
+function looseIndexOf(arr, val) {
+  return arr.findIndex((item) => looseEqual(item, val));
+}
 const isRef$1 = (val) => {
   return !!(val && val["__v_isRef"] === true);
 };
@@ -7267,6 +7270,94 @@ const vModelText = {
     el.value = newValue;
   }
 };
+const vModelSelect = {
+  // <select multiple> value need to be deep traversed
+  deep: true,
+  created(el, { value, modifiers: { number } }, vnode) {
+    el._modelValue = value;
+    addEventListener(el, "change", () => {
+      const selectedVal = Array.prototype.filter.call(el.options, (o) => o.selected).map(
+        (o) => number ? looseToNumber(getValue(o)) : getValue(o)
+      );
+      const multiple = el.multiple;
+      const assignedValue = multiple ? isSet(el._modelValue) ? new Set(selectedVal) : selectedVal : selectedVal[0];
+      const pending = el._pendingValue = [
+        multiple,
+        multiple ? isArray(assignedValue) ? selectedVal.slice() : selectedVal : assignedValue
+      ];
+      try {
+        el[assignKey](assignedValue);
+      } finally {
+        nextTick(() => {
+          if (el._pendingValue === pending) {
+            el._pendingValue = void 0;
+          }
+        });
+      }
+    });
+    el[assignKey] = getModelAssigner(vnode);
+  },
+  // set value in mounted & updated because <select> relies on its children
+  // <option>s.
+  mounted(el, { value }) {
+    setSelected(el, value);
+  },
+  beforeUpdate(el, { value }, vnode) {
+    el._modelValue = value;
+    el[assignKey] = getModelAssigner(vnode);
+  },
+  updated(el, { value }) {
+    const pending = el._pendingValue;
+    el._pendingValue = void 0;
+    if (!pending || pending[0] !== el.multiple || !isSameSelectValue(value, pending[1], pending[0])) {
+      setSelected(el, value);
+    }
+  }
+};
+function isSameSelectValue(value, assignedValue, multiple) {
+  if (!multiple) return looseEqual(value, assignedValue);
+  if (isArray(value)) return looseEqual(value, assignedValue);
+  if (isSet(value)) {
+    if (value.size !== assignedValue.length) return false;
+    for (const item of assignedValue) {
+      if (!value.has(item)) return false;
+    }
+    return true;
+  }
+  return false;
+}
+function setSelected(el, value) {
+  const isMultiple = el.multiple;
+  const isArrayValue = isArray(value);
+  if (isMultiple && !isArrayValue && !isSet(value)) {
+    return;
+  }
+  for (let i = 0, l = el.options.length; i < l; i++) {
+    const option = el.options[i];
+    const optionValue = getValue(option);
+    if (isMultiple) {
+      if (isArrayValue) {
+        const optionType = typeof optionValue;
+        if (optionType === "string" || optionType === "number") {
+          option.selected = value.some((v) => String(v) === String(optionValue));
+        } else {
+          option.selected = looseIndexOf(value, optionValue) > -1;
+        }
+      } else {
+        option.selected = value.has(optionValue);
+      }
+    } else if (looseEqual(getValue(option), value)) {
+      if (el.selectedIndex !== i) el.selectedIndex = i;
+      return;
+    }
+  }
+  if (!isMultiple && el.selectedIndex !== -1) {
+    el.selectedIndex = -1;
+  }
+}
+function getValue(el) {
+  return "_value" in el ? el._value : el.value;
+}
 const systemModifiers = ["ctrl", "shift", "alt", "meta"];
 const modifierGuards = {
   stop: (e) => e.stopPropagation(),
@@ -7337,7 +7428,8 @@ function normalizeContainer(container) {
 }
 export {
   createStaticVNode as A,
-  createApp as B,
+  vModelSelect as B,
+  createApp as C,
   Fragment as F,
   Transition as T,
   onBeforeUnmount as a,

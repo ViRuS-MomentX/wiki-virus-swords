@@ -640,6 +640,11 @@ main { padding-inline: max(24px, env(safe-area-inset-left, 0px)) max(24px, env(s
 .rchip[aria-pressed="true"], .bchip[aria-pressed="true"] { border-color: var(--soul-line); background: var(--soul-soft); color: var(--ink); }
 .rchip-swatch { width: 14px; height: 14px; border-radius: 4px; flex: none; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .25); }
 .rchip .paint { font-weight: 600; }
+.cat-order { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.cat-order select { font: 500 .84rem var(--body); color: var(--ink); background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px; padding: 5px 28px 5px 10px; cursor: pointer; appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-2) 50%), linear-gradient(135deg, var(--ink-2) 50%, transparent 50%);
+  background-position: right 13px center, right 8px center; background-size: 5px 5px; background-repeat: no-repeat; }
+.cat-order select:hover { border-color: color-mix(in srgb, var(--soul) 50%, var(--line)); }
 .cat-count { display: flex; gap: 14px; align-items: baseline; font-size: .85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(58px, 1fr)); gap: 4px; padding: 10px; background: #2b2b2b; border: 2px solid #000; box-shadow: inset 0 0 0 2px #5a5a5a; }
 .cat-grid:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
