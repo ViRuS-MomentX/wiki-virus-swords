@@ -62,6 +62,7 @@ const closeItem = () => {
   history.replaceState(null, "", location.pathname + location.search);
 };
 const compare = reactive({ id: null });
+const pageUrl = () => location.href.split(/[?#]/)[0];
 const _hoisted_1$u = { class: "topbar" };
 const _hoisted_2$r = { class: "topbar-in" };
 const _hoisted_3$p = {
@@ -1864,7 +1865,7 @@ const _sfc_main$n = {
     }
     const copied = ref("");
     async function copyLink() {
-      const url = location.href.split("#")[0] + "#w-" + inspector.id;
+      const url = pageUrl() + "#w-" + inspector.id;
       try {
         await navigator.clipboard.writeText(url);
         copied.value = "Ссылка скопирована";
@@ -2561,7 +2562,7 @@ const _sfc_main$g = {
       if (!anchor.value) return;
       e.preventDefault();
       history.replaceState(null, "", `#${anchor.value}`);
-      const url = location.href;
+      const url = pageUrl() + (anchor.value === "catalog" ? location.search : "") + `#${anchor.value}`;
       try {
         await navigator.clipboard.writeText(url);
       } catch (err) {
