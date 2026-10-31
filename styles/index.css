@@ -631,6 +631,8 @@ main { padding-inline: max(24px, env(safe-area-inset-left, 0px)) max(24px, env(s
 .catslot.on::after { content: ""; position: absolute; inset: -3px; border: 3px solid #fff; box-shadow: 0 0 0 1px #000, inset 0 0 0 1px #000; pointer-events: none; }
 .catslot-blood { position: absolute; left: 4px; top: 4px; width: 7px; height: 7px; border-radius: 50%; box-shadow: 0 0 0 1px #000; }
 .cat-empty { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 10px; padding: 14px 16px; border: 1px dashed var(--line); border-radius: 10px; color: var(--ink-2); font-size: .92rem; }
+.cat-view { transition: opacity .25s, filter .25s; }
+.cat-view.stale { opacity: .45; filter: saturate(.4); }
 .cat-empty p { flex: 1 1 220px; margin: 0; }
 .cat-empty strong { color: var(--ink); }
 .cat-empty-slot { flex: none; width: 40px; height: 40px; background: #8b8b8b; box-shadow: inset 3px 3px 0 #373737, inset -3px -3px 0 #fff; opacity: .55; }

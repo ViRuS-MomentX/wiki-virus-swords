@@ -3129,7 +3129,7 @@ const _sfc_main$c = {
           createBaseVNode("article", {
             ref_key: "viewer",
             ref: viewer,
-            class: "cat-view",
+            class: normalizeClass(["cat-view", { stale: !shown.value.length }]),
             style: normalizeStyle(glow.value),
             "aria-live": "polite"
           }, [
@@ -3215,7 +3215,7 @@ const _sfc_main$c = {
               class: "cv-more",
               onClick: _cache[3] || (_cache[3] = ($event) => unref(openItem)(current.value.id))
             }, "Полная карточка: цены, рецепты, линии →")
-          ], 4)
+          ], 6)
         ])
       ]);
     };
