@@ -7267,6 +7267,32 @@ const vModelText = {
     el.value = newValue;
   }
 };
+const systemModifiers = ["ctrl", "shift", "alt", "meta"];
+const modifierGuards = {
+  stop: (e) => e.stopPropagation(),
+  prevent: (e) => e.preventDefault(),
+  self: (e) => e.target !== e.currentTarget,
+  ctrl: (e) => !e.ctrlKey,
+  shift: (e) => !e.shiftKey,
+  alt: (e) => !e.altKey,
+  meta: (e) => !e.metaKey,
+  left: (e) => "button" in e && e.button !== 0,
+  middle: (e) => "button" in e && e.button !== 1,
+  right: (e) => "button" in e && e.button !== 2,
+  exact: (e, modifiers) => systemModifiers.some((m) => e[`${m}Key`] && !modifiers.includes(m))
+};
+const withModifiers = (fn, modifiers) => {
+  if (!fn) return fn;
+  const cache = fn._withMods || (fn._withMods = {});
+  const cacheKey = modifiers.join(".");
+  return cache[cacheKey] || (cache[cacheKey] = ((event, ...args) => {
+    for (let i = 0; i < modifiers.length; i++) {
+      const guard = modifierGuards[modifiers[i]];
+      if (guard && guard(event, modifiers)) return;
+    }
+    return fn(event, ...args);
+  }));
+};
 const rendererOptions = /* @__PURE__ */ extend({ patchProp }, nodeOps);
 let renderer;
 function ensureRenderer() {
@@ -7310,7 +7336,8 @@ function normalizeContainer(container) {
   return container;
 }
 export {
-  createApp as A,
+  createStaticVNode as A,
+  createApp as B,
   Fragment as F,
   Transition as T,
   onBeforeUnmount as a,
@@ -7323,20 +7350,20 @@ export {
   createCommentVNode as h,
   createTextVNode as i,
   ref as j,
-  renderSlot as k,
-  normalizeStyle as l,
-  createVNode as m,
+  withModifiers as k,
+  renderSlot as l,
+  normalizeStyle as m,
   normalizeClass as n,
   onMounted as o,
-  withCtx as p,
-  vShow as q,
+  createVNode as p,
+  withCtx as q,
   reactive as r,
-  createBlock as s,
+  vShow as s,
   toDisplayString as t,
   unref as u,
   vModelText as v,
   watch as w,
-  resolveDynamicComponent as x,
-  nextTick as y,
-  createStaticVNode as z
+  createBlock as x,
+  resolveDynamicComponent as y,
+  nextTick as z
 };

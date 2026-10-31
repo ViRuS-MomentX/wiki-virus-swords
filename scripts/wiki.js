@@ -1,5 +1,5 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./soft3d.js","./data.js","./model3d.js","./three.js"])))=>i.map(i=>d[i]);
-import { r as reactive, c as computed, w as watch, o as onMounted, a as onBeforeUnmount, b as openBlock, d as createElementBlock, e as createBaseVNode, u as unref, f as withDirectives, v as vModelText, F as Fragment, g as renderList, h as createCommentVNode, i as createTextVNode, t as toDisplayString, n as normalizeClass, j as ref, k as renderSlot, l as normalizeStyle, m as createVNode, p as withCtx, q as vShow, s as createBlock, x as resolveDynamicComponent, y as nextTick, T as Transition, z as createStaticVNode, A as createApp } from "./vue.js";
+import { r as reactive, c as computed, w as watch, o as onMounted, a as onBeforeUnmount, b as openBlock, d as createElementBlock, e as createBaseVNode, u as unref, f as withDirectives, v as vModelText, F as Fragment, g as renderList, h as createCommentVNode, i as createTextVNode, t as toDisplayString, n as normalizeClass, j as ref, k as withModifiers, l as renderSlot, m as normalizeStyle, p as createVNode, q as withCtx, s as vShow, x as createBlock, y as resolveDynamicComponent, z as nextTick, T as Transition, A as createStaticVNode, B as createApp } from "./vue.js";
 import { d as data } from "./data.js";
 const norm = (s) => s.toLowerCase().replace(/ё/g, "е");
 const plural = (n, one, few, many) => {
@@ -26,6 +26,29 @@ const found = computed(() => {
   const hits = data.items.filter((i) => (i.kind === "weapon" || i.kind === "material") && searchText(i).includes(filters.query));
   const inName = (i) => norm(i.name).includes(filters.query) ? 0 : 1;
   return hits.sort((a, b) => inName(a) - inName(b));
+});
+function distance(a, b) {
+  const row = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    let prev = row[0];
+    row[0] = i;
+    for (let j = 1; j <= b.length; j++) {
+      const keep = row[j];
+      row[j] = Math.min(row[j] + 1, row[j - 1] + 1, prev + (a[i - 1] === b[j - 1] ? 0 : 1));
+      prev = keep;
+    }
+  }
+  return row[b.length];
+}
+const suggestions = computed(() => {
+  const q = filters.query.trim();
+  if (q.length < 3 || found.value.length) return [];
+  const scored = data.items.filter((i) => i.kind === "weapon" || i.kind === "material").map((i) => {
+    const name = norm(i.name);
+    const best = Math.min(distance(q, name), ...name.split(/[\s-]+/).filter((w) => w.length > 2).map((w) => distance(q, w)));
+    return { item: i, d: best };
+  }).filter((s) => s.d <= Math.max(2, Math.floor(q.length / 3)));
+  return scored.sort((a, b) => a.d - b.d).slice(0, 3).map((s) => s.item);
 });
 const order = [.../* @__PURE__ */ new Set([...data.chains.flatMap((c) => c.entries.map((e) => e.id)), ...data.items.filter((i) => i.kind === "material").map((i) => i.id)])];
 const shownIds = computed(() => new Set([...weapons.value, ...materials.value].map((i) => i.id)));
@@ -69,10 +92,15 @@ const _hoisted_13$b = {
 };
 const _hoisted_14$9 = {
   key: 1,
+  class: "search-suggest"
+};
+const _hoisted_15$8 = ["onClick"];
+const _hoisted_16$7 = {
+  key: 1,
   class: "search-hint"
 };
-const _hoisted_15$8 = ["href", "aria-current"];
-const _hoisted_16$7 = {
+const _hoisted_17$7 = ["href", "aria-current"];
+const _hoisted_18$6 = {
   key: 0,
   class: "count"
 };
@@ -104,6 +132,12 @@ const _sfc_main$x = {
       cursor.value = 0;
       listOpen.value = true;
     };
+    function suggest(name) {
+      var _a;
+      search.value = name;
+      onSearch();
+      (_a = input.value) == null ? void 0 : _a.focus();
+    }
     function onSearchKey(e) {
       const list = found.value.slice(0, SHOWN);
       if (e.key === "ArrowDown" && list.length) {
@@ -200,18 +234,18 @@ const _sfc_main$x = {
               src: unref(data).icons.forge_heart,
               alt: ""
             }, null, 8, _hoisted_4$n),
-            _cache[4] || (_cache[4] = createBaseVNode("span", { class: "brand-name" }, "Кодекс", -1))
+            _cache[5] || (_cache[5] = createBaseVNode("span", { class: "brand-name" }, "Кодекс", -1))
           ]),
           createBaseVNode("div", {
             class: "search",
             role: "search",
             onFocusout: onBlur
           }, [
-            _cache[5] || (_cache[5] = createBaseVNode("label", {
+            _cache[7] || (_cache[7] = createBaseVNode("label", {
               for: "q",
               class: "sr-only"
             }, "Поиск по кодексу", -1)),
-            _cache[6] || (_cache[6] = createBaseVNode("svg", {
+            _cache[8] || (_cache[8] = createBaseVNode("svg", {
               class: "search-icon",
               viewBox: "0 0 16 16",
               "aria-hidden": "true"
@@ -250,7 +284,7 @@ const _sfc_main$x = {
             }, null, 40, _hoisted_5$m), [
               [vModelText, search.value]
             ]),
-            _cache[7] || (_cache[7] = createBaseVNode("kbd", {
+            _cache[9] || (_cache[9] = createBaseVNode("kbd", {
               class: "search-key",
               "aria-hidden": "true"
             }, "/", -1)),
@@ -288,8 +322,21 @@ const _sfc_main$x = {
                 unref(found).length > SHOWN ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
                   createTextVNode(". В списке первые " + toDisplayString(SHOWN) + ", остальные подсвечены на странице")
                 ], 64)) : createCommentVNode("", true)
-              ])
-            ])) : unref(filters).query ? (openBlock(), createElementBlock("p", _hoisted_14$9, [
+              ]),
+              unref(suggestions).length ? (openBlock(), createElementBlock("p", _hoisted_14$9, [
+                _cache[6] || (_cache[6] = createTextVNode("Возможно, вы искали: ", -1)),
+                (openBlock(true), createElementBlock(Fragment, null, renderList(unref(suggestions), (i) => {
+                  return openBlock(), createElementBlock("button", {
+                    key: i.id,
+                    type: "button",
+                    class: "suggest-chip",
+                    onMousedown: _cache[2] || (_cache[2] = withModifiers(() => {
+                    }, ["prevent"])),
+                    onClick: ($event) => suggest(i.name)
+                  }, toDisplayString(i.name), 41, _hoisted_15$8);
+                }), 128))
+              ])) : createCommentVNode("", true)
+            ])) : unref(filters).query ? (openBlock(), createElementBlock("p", _hoisted_16$7, [
               createTextVNode(toDisplayString(unref(hint)) + ". ", 1),
               createBaseVNode("button", {
                 type: "button",
@@ -306,8 +353,8 @@ const _sfc_main$x = {
               class: "nav-step left",
               tabindex: "-1",
               "aria-hidden": "true",
-              onClick: _cache[2] || (_cache[2] = ($event) => step(-1))
-            }, [..._cache[8] || (_cache[8] = [
+              onClick: _cache[3] || (_cache[3] = ($event) => step(-1))
+            }, [..._cache[10] || (_cache[10] = [
               createBaseVNode("svg", { viewBox: "0 0 16 16" }, [
                 createBaseVNode("path", {
                   d: "M10 3L5 8l5 5",
@@ -333,8 +380,8 @@ const _sfc_main$x = {
                   "aria-current": current.value === id ? "location" : void 0
                 }, [
                   createBaseVNode("span", null, toDisplayString(title), 1),
-                  count ? (openBlock(), createElementBlock("span", _hoisted_16$7, toDisplayString(count), 1)) : createCommentVNode("", true)
-                ], 10, _hoisted_15$8);
+                  count ? (openBlock(), createElementBlock("span", _hoisted_18$6, toDisplayString(count), 1)) : createCommentVNode("", true)
+                ], 10, _hoisted_17$7);
               }), 64))
             ], 544),
             createBaseVNode("button", {
@@ -342,8 +389,8 @@ const _sfc_main$x = {
               class: "nav-step right",
               tabindex: "-1",
               "aria-hidden": "true",
-              onClick: _cache[3] || (_cache[3] = ($event) => step(1))
-            }, [..._cache[9] || (_cache[9] = [
+              onClick: _cache[4] || (_cache[4] = ($event) => step(1))
+            }, [..._cache[11] || (_cache[11] = [
               createBaseVNode("svg", { viewBox: "0 0 16 16" }, [
                 createBaseVNode("path", {
                   d: "M6 3l5 5-5 5",

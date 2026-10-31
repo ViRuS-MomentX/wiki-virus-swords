@@ -543,6 +543,9 @@ th.num .sort { text-align: right; }
 /* --- the card: whose blade it is, and a link to it --------------------------------------------- */
 .card-owner { font-size: .9rem; color: var(--ink-2); margin-top: -8px; }
 .inspect-foot { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-top: 18px; }
+.search-suggest { margin: 0; padding: 4px 14px 12px; font-size: .82rem; color: var(--muted); display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.suggest-chip { border: 1px solid var(--soul-line); background: var(--soul-soft); color: var(--ink); border-radius: 999px; padding: 4px 10px; font: inherit; cursor: pointer; }
+.suggest-chip:hover, .suggest-chip:focus-visible { background: color-mix(in srgb, var(--soul) 24%, transparent); }
 .copied { font-size: .8rem; color: var(--soul); word-break: break-all; }
 
 /* --- the top bar: the codex's spine, across the page -------------------------------------- */
