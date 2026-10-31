@@ -64,6 +64,7 @@ kbd { border: 1px solid var(--line); border-bottom-width: 2px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .skip { position: absolute; left: 12px; top: -60px; z-index: 50; padding: 8px 14px; background: var(--soul); color: var(--bg); border-radius: var(--r-small); font-weight: 600; text-decoration: none; }
 .skip:focus { top: 12px; }
+main:focus { outline: none; }
 
 /* --- shell -------------------------------------------------------------------------- */
 .shell { display: grid; grid-template-columns: 236px minmax(0, 1fr); max-width: 1380px; margin: 0 auto; }
@@ -168,7 +169,7 @@ section > h3 { margin-top: 18px; }
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 40px; counter-reset: s; max-width: 980px; }
 .steps li { counter-increment: s; position: relative; display: grid; grid-template-columns: 44px minmax(0, 1fr); column-gap: 14px; align-content: start; padding: 0 0 26px; }
 .steps li::before { content: counter(s); grid-row: span 2; width: 36px; height: 36px; display: grid; place-items: center; font: 400 1.3rem/1 var(--display); color: var(--bg); background: var(--soul); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); margin-top: -4px; }
-.steps h4 { font-size: 1.02rem; margin-bottom: 4px; }
+.steps h3 { font: 600 1.02rem/1.35 var(--body); margin-bottom: 4px; }
 .steps p { color: var(--ink-2); font-size: .93rem; }
 .steps li:last-child::before { background: var(--gold); }
 

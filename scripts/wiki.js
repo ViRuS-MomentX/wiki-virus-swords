@@ -40,7 +40,7 @@ const closeItem = () => {
 };
 const compare = reactive({ id: null });
 const _hoisted_1$t = { class: "topbar" };
-const _hoisted_2$p = { class: "topbar-in" };
+const _hoisted_2$q = { class: "topbar-in" };
 const _hoisted_3$o = {
   class: "brand",
   href: "#top"
@@ -169,7 +169,7 @@ const _sfc_main$x = {
     });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("header", _hoisted_1$t, [
-        createBaseVNode("div", _hoisted_2$p, [
+        createBaseVNode("div", _hoisted_2$q, [
           createBaseVNode("a", _hoisted_3$o, [
             createBaseVNode("img", {
               class: "brand-mark",
@@ -325,7 +325,7 @@ const _sfc_main$w = {
   }
 };
 const _hoisted_1$s = { class: "tip" };
-const _hoisted_2$o = ["innerHTML"];
+const _hoisted_2$p = ["innerHTML"];
 const _hoisted_3$n = { class: "tlore" };
 const _hoisted_4$m = {
   key: 0,
@@ -350,7 +350,7 @@ const _sfc_main$v = {
           class: "tname paint",
           style: normalizeStyle(unref(rarityStyle)(__props.item.rarity)),
           innerHTML: __props.item.name
-        }, null, 12, _hoisted_2$o),
+        }, null, 12, _hoisted_2$p),
         createBaseVNode("div", _hoisted_3$n, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(__props.item.lore, (line, i) => {
             return openBlock(), createElementBlock(Fragment, { key: i }, [
@@ -486,7 +486,7 @@ const RUNES = [
 ];
 const cells = (rune) => rune.flatMap((row, y) => [...row].map((c, x) => c === "#" ? [x, y] : null).filter(Boolean));
 const _hoisted_1$r = ["aria-label"];
-const _hoisted_2$n = {
+const _hoisted_2$o = {
   class: "mstage-circle",
   viewBox: "-130 -130 260 260",
   "aria-hidden": "true"
@@ -734,7 +734,7 @@ const _sfc_main$u = {
           class: "mstage-beam",
           "aria-hidden": "true"
         }, null, -1)),
-        (openBlock(), createElementBlock("svg", _hoisted_2$n, [
+        (openBlock(), createElementBlock("svg", _hoisted_2$o, [
           createBaseVNode("g", _hoisted_3$m, [
             _cache[0] || (_cache[0] = createBaseVNode("circle", {
               r: "124",
@@ -825,7 +825,7 @@ const _sfc_main$u = {
   }
 };
 const _hoisted_1$q = { class: "hero-text" };
-const _hoisted_2$m = { class: "facts" };
+const _hoisted_2$n = { class: "facts" };
 const _hoisted_3$l = { href: "#catalog" };
 const _hoisted_4$k = { href: "#catalog" };
 const _hoisted_5$j = { href: "#blood" };
@@ -967,7 +967,7 @@ const _sfc_main$t = {
             createBaseVNode("span", { class: "h1-line" }, "VirusSwords")
           ], -1)),
           _cache[5] || (_cache[5] = createBaseVNode("p", { class: "lead" }, "Клинки находят в мире, куют из душ и доводят до последней формы у алтарей святилищ. Здесь — что умеет каждый клинок, откуда он берётся, как растёт и кто стережёт святилища.", -1)),
-          createBaseVNode("ul", _hoisted_2$m, [
+          createBaseVNode("ul", _hoisted_2$n, [
             createBaseVNode("li", null, [
               createBaseVNode("a", _hoisted_3$l, [
                 createBaseVNode("b", null, toDisplayString(unref(data).counts.weapons), 1),
@@ -1053,7 +1053,7 @@ const _sfc_main$t = {
   }
 };
 const _hoisted_1$p = ["aria-label"];
-const _hoisted_2$l = { class: "craft-table" };
+const _hoisted_2$m = { class: "craft-table" };
 const _hoisted_3$k = { class: "craft-grid" };
 const _hoisted_4$j = ["href", "title"];
 const _hoisted_5$i = ["src", "alt"];
@@ -1094,7 +1094,7 @@ const _sfc_main$s = {
         class: normalizeClass(["craft", { small: __props.small }]),
         "aria-label": `Рецепт: ${(_a = result.value) == null ? void 0 : _a.name}`
       }, [
-        createBaseVNode("div", _hoisted_2$l, [
+        createBaseVNode("div", _hoisted_2$m, [
           createBaseVNode("div", _hoisted_3$k, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(cells2.value, (c, i) => {
               return openBlock(), createElementBlock(Fragment, { key: i }, [
@@ -1151,7 +1151,7 @@ const _sfc_main$s = {
   }
 };
 const _hoisted_1$o = { class: "abilities" };
-const _hoisted_2$k = { class: "chips" };
+const _hoisted_2$l = { class: "chips" };
 const _hoisted_3$j = {
   key: 0,
   class: "chip"
@@ -1199,7 +1199,7 @@ const _sfc_main$r = {
           }, [
             createBaseVNode("header", null, [
               createBaseVNode("h4", null, toDisplayString(a.name), 1),
-              createBaseVNode("div", _hoisted_2$k, [
+              createBaseVNode("div", _hoisted_2$l, [
                 a.trigger ? (openBlock(), createElementBlock("span", _hoisted_3$j, [
                   (openBlock(), createElementBlock("svg", _hoisted_4$i, [
                     mouse(a.kind) ? (openBlock(), createElementBlock("rect", _hoisted_5$h)) : createCommentVNode("", true),
@@ -1249,7 +1249,7 @@ const _sfc_main$r = {
   }
 };
 const _hoisted_1$n = ["id", "href", "title", "aria-label"];
-const _hoisted_2$j = { class: "islot-cell" };
+const _hoisted_2$k = { class: "islot-cell" };
 const _hoisted_3$i = ["src"];
 const _hoisted_4$h = {
   key: 0,
@@ -1283,7 +1283,7 @@ const _sfc_main$q = {
         title: __props.named ? void 0 : __props.item.name,
         "aria-label": __props.item.name
       }, [
-        createBaseVNode("span", _hoisted_2$j, [
+        createBaseVNode("span", _hoisted_2$k, [
           createBaseVNode("img", {
             src: __props.item.icon,
             alt: "",
@@ -1296,7 +1296,7 @@ const _sfc_main$q = {
   }
 };
 const _hoisted_1$m = ["aria-label"];
-const _hoisted_2$i = {
+const _hoisted_2$j = {
   key: 0,
   class: "price-title"
 };
@@ -1359,7 +1359,7 @@ const _sfc_main$p = {
         class: normalizeClass(["price", { boxed: __props.boxed }]),
         "aria-label": `${verb.value}: ${spoken.value} — ${result.value.name}`
       }, [
-        __props.boxed ? (openBlock(), createElementBlock("figcaption", _hoisted_2$i, [
+        __props.boxed ? (openBlock(), createElementBlock("figcaption", _hoisted_2$j, [
           createBaseVNode("a", {
             href: result.value.href
           }, toDisplayString(result.value.name), 9, _hoisted_3$h)
@@ -1435,7 +1435,7 @@ const _sfc_main$o = {
   }
 };
 const _hoisted_1$l = { class: "card-top" };
-const _hoisted_2$h = {
+const _hoisted_2$i = {
   key: 0,
   class: "versus"
 };
@@ -1540,7 +1540,7 @@ const _sfc_main$n = {
           }, null, 8, ["item"]),
           createVNode(_sfc_main$v, { item: __props.item }, null, 8, ["item"])
         ]),
-        rival.value ? (openBlock(), createElementBlock("div", _hoisted_2$h, [
+        rival.value ? (openBlock(), createElementBlock("div", _hoisted_2$i, [
           createBaseVNode("span", _hoisted_3$g, [
             createBaseVNode("img", {
               src: rival.value.icon,
@@ -1674,7 +1674,7 @@ const _hoisted_1$k = {
   key: 0,
   class: "inspect-wrap"
 };
-const _hoisted_2$g = ["aria-label"];
+const _hoisted_2$h = ["aria-label"];
 const _hoisted_3$f = {
   class: "inspect-steps",
   "aria-label": "Соседние предметы"
@@ -1840,7 +1840,7 @@ const _sfc_main$m = {
                 createBaseVNode("span", _hoisted_9$c, toDisplayString(copied.value), 1)
               ]),
               _cache[7] || (_cache[7] = createBaseVNode("p", { class: "inspect-keys" }, "Стрелки ← → листают карточки, Esc закрывает.", -1))
-            ], 8, _hoisted_2$g)
+            ], 8, _hoisted_2$h)
           ])) : createCommentVNode("", true)
         ]),
         _: 1
@@ -2136,7 +2136,7 @@ const _hoisted_1$h = {
   class: "sitefoot",
   "aria-labelledby": "sitefoot-title"
 };
-const _hoisted_2$f = { class: "sitefoot-in" };
+const _hoisted_2$g = { class: "sitefoot-in" };
 const _hoisted_3$e = { class: "sitefoot-brand" };
 const _hoisted_4$d = {
   class: "sitefoot-name",
@@ -2163,7 +2163,7 @@ const _sfc_main$h = {
     })();
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("footer", _hoisted_1$h, [
-        createBaseVNode("div", _hoisted_2$f, [
+        createBaseVNode("div", _hoisted_2$g, [
           createBaseVNode("div", _hoisted_3$e, [
             createBaseVNode("a", _hoisted_4$d, [
               createBaseVNode("img", {
@@ -2205,7 +2205,7 @@ const _sfc_main$h = {
   }
 };
 const _hoisted_1$g = { class: "sec-head" };
-const _hoisted_2$e = {
+const _hoisted_2$f = {
   class: "sec-rune",
   viewBox: "0 0 5 7",
   "aria-hidden": "true"
@@ -2234,7 +2234,7 @@ const _sfc_main$g = {
     const rune = computed(() => cells(RUNES[[...props.title].reduce((n, c) => n + c.charCodeAt(0), 0) % RUNES.length]));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$g, [
-        (openBlock(), createElementBlock("svg", _hoisted_2$e, [
+        (openBlock(), createElementBlock("svg", _hoisted_2$f, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(rune.value, ([x, y], i) => {
             return openBlock(), createElementBlock("rect", {
               key: i,
@@ -2273,13 +2273,13 @@ const _sfc_main$f = {
           title: "С чего начать",
           icon: "terra_compass"
         }),
-        _cache[0] || (_cache[0] = createStaticVNode('<ol class="steps"><li><h4>Выберите кровь</h4><p>При первом входе откроется выбор родословной. От неё зависят ваша сила, книга, которую вы получите, и то, какие величайшие клинки вас признают.</p></li><li><h4>Выберите путеводителя</h4><p>Следом — чей голос будет с вами: Путеводитель с загадками, ZorahM-GPT, разум Древней фабрики, или Наблюдатель, помнящий Все-Чёрного с первого удара.</p></li><li><h4>Найдите первый клинок</h4><p>Погибель и Резак лежат в сундуках древнего города, Арахнид — в вагонетках заброшенных шахт, Сумрачная секира — в крепостях Незера.</p></li><li><h4>Добудьте Душу демона</h4><p>Она лежит в сокровищнице бастиона. Резак и Душа на верстаке дают Демонический резак, а у алтаря Незеритовой кузни Душа превращает Погибель в Бедствие и Арахнида в Убийцу демонов.</p></li><li><h4>Растите мастерство</h4><p>Клинок учится от каждого удара. Мастерство открывает заточку и пробуждение; эволюция просит только материалы.</p></li><li><h4>Найдите святилище</h4><p>Дорогу к святилищам покажут компасы и карты. Пробейтесь через стражу — и алтарь откроет испытания.</p></li><li><h4>Доведите клинок до вершины</h4><p>Высшие клинки — Империум, Истинный Экскалибур, Энигма и другие — получают эволюцией или ковкой у алтарей святилищ. Корона отвечает только своей крови, обычно с четвёртой формы, а Все-Чёрный, выкованный из короны за Чёрную субстанцию, навсегда меняет кровь на бездну.</p></li></ol><p class="small muted">Сервер узнаёт о ваших делах: первый выкованный, улучшенный или собранный клинок, сломанная Печать ночи, вытянутая Луна и сработавшие Королевские часы объявляются в чате всем — имя клинка можно навести мышью и рассмотреть. Способности с долгой перезарядкой видят только игроки рядом.</p>', 2))
+        _cache[0] || (_cache[0] = createStaticVNode('<ol class="steps"><li><h3>Выберите кровь</h3><p>При первом входе откроется выбор родословной. От неё зависят ваша сила, книга, которую вы получите, и то, какие величайшие клинки вас признают.</p></li><li><h3>Выберите путеводителя</h3><p>Следом — чей голос будет с вами: Путеводитель с загадками, ZorahM-GPT, разум Древней фабрики, или Наблюдатель, помнящий Все-Чёрного с первого удара.</p></li><li><h3>Найдите первый клинок</h3><p>Погибель и Резак лежат в сундуках древнего города, Арахнид — в вагонетках заброшенных шахт, Сумрачная секира — в крепостях Незера.</p></li><li><h3>Добудьте Душу демона</h3><p>Она лежит в сокровищнице бастиона. Резак и Душа на верстаке дают Демонический резак, а у алтаря Незеритовой кузни Душа превращает Погибель в Бедствие и Арахнида в Убийцу демонов.</p></li><li><h3>Растите мастерство</h3><p>Клинок учится от каждого удара. Мастерство открывает заточку и пробуждение; эволюция просит только материалы.</p></li><li><h3>Найдите святилище</h3><p>Дорогу к святилищам покажут компасы и карты. Пробейтесь через стражу — и алтарь откроет испытания.</p></li><li><h3>Доведите клинок до вершины</h3><p>Высшие клинки — Империум, Истинный Экскалибур, Энигма и другие — получают эволюцией или ковкой у алтарей святилищ. Корона отвечает только своей крови, обычно с четвёртой формы, а Все-Чёрный, выкованный из короны за Чёрную субстанцию, навсегда меняет кровь на бездну.</p></li></ol><p class="small muted">Сервер узнаёт о ваших делах: первый выкованный, улучшенный или собранный клинок, сломанная Печать ночи, вытянутая Луна и сработавшие Королевские часы объявляются в чате всем — имя клинка можно навести мышью и рассмотреть. Способности с долгой перезарядкой видят только игроки рядом.</p>', 2))
       ]);
     };
   }
 };
 const _hoisted_1$e = { id: "rarity" };
-const _hoisted_2$d = { class: "rarities" };
+const _hoisted_2$e = { class: "rarities" };
 const _hoisted_3$c = { class: "rhead" };
 const _hoisted_4$b = ["href", "title"];
 const _hoisted_5$b = ["src"];
@@ -2309,7 +2309,7 @@ const _sfc_main$e = {
           ])]),
           _: 1
         }),
-        createBaseVNode("ol", _hoisted_2$d, [
+        createBaseVNode("ol", _hoisted_2$e, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(data).rarities, (r) => {
             return openBlock(), createElementBlock("li", {
               key: r.const,
@@ -2361,7 +2361,7 @@ const _sfc_main$e = {
   }
 };
 const _hoisted_1$d = { id: "weapons" };
-const _hoisted_2$c = { class: "weapon-bar" };
+const _hoisted_2$d = { class: "weapon-bar" };
 const _hoisted_3$b = {
   class: "filters",
   role: "group",
@@ -2475,7 +2475,7 @@ const _sfc_main$d = {
           ])]),
           _: 1
         }),
-        createBaseVNode("div", _hoisted_2$c, [
+        createBaseVNode("div", _hoisted_2$d, [
           createBaseVNode("div", _hoisted_3$b, [
             (openBlock(), createElementBlock(Fragment, null, renderList(lines, ([key, title]) => {
               return createBaseVNode("button", {
@@ -2629,7 +2629,7 @@ const _sfc_main$d = {
   }
 };
 const _hoisted_1$c = { id: "catalog" };
-const _hoisted_2$b = { class: "cat" };
+const _hoisted_2$c = { class: "cat" };
 const _hoisted_3$a = { class: "cat-side" };
 const _hoisted_4$9 = { class: "cat-filters" };
 const _hoisted_5$9 = { class: "cat-search" };
@@ -2771,7 +2771,7 @@ const _sfc_main$c = {
           ])]),
           _: 1
         }),
-        createBaseVNode("div", _hoisted_2$b, [
+        createBaseVNode("div", _hoisted_2$c, [
           createBaseVNode("div", _hoisted_3$a, [
             createBaseVNode("div", _hoisted_4$9, [
               createBaseVNode("div", _hoisted_5$9, [
@@ -3016,7 +3016,7 @@ const _sfc_main$c = {
   }
 };
 const _hoisted_1$b = { id: "craft" };
-const _hoisted_2$a = { class: "lead" };
+const _hoisted_2$b = { class: "lead" };
 const _hoisted_3$9 = { class: "crafts" };
 const _hoisted_4$8 = { class: "methods" };
 const _hoisted_5$8 = { class: "muted small" };
@@ -3056,7 +3056,7 @@ const _sfc_main$b = {
           icon: "terra_ingot"
         }, {
           default: withCtx(() => [
-            createBaseVNode("p", _hoisted_2$a, "На верстаке делается " + toDisplayString(unref(data).recipes.length) + " вещей. Остальное куют у алтарей святилищ или находят.", 1)
+            createBaseVNode("p", _hoisted_2$b, "На верстаке делается " + toDisplayString(unref(data).recipes.length) + " вещей. Остальное куют у алтарей святилищ или находят.", 1)
           ]),
           _: 1
         }),
@@ -3114,7 +3114,7 @@ const _sfc_main$b = {
   }
 };
 const _hoisted_1$a = ["aria-label"];
-const _hoisted_2$9 = { class: "mlabel" };
+const _hoisted_2$a = { class: "mlabel" };
 const _sfc_main$a = {
   __name: "MasteryTrack",
   setup(__props) {
@@ -3154,7 +3154,7 @@ const _sfc_main$a = {
             style: normalizeStyle({ left: `${m.level}%`, "--delay": `${m.level * 14}ms` })
           }, [
             _cache[0] || (_cache[0] = createBaseVNode("span", { class: "mgem" }, null, -1)),
-            createBaseVNode("span", _hoisted_2$9, [
+            createBaseVNode("span", _hoisted_2$a, [
               createBaseVNode("b", null, toDisplayString(m.level), 1),
               createBaseVNode("span", null, toDisplayString(m.note || m.bonus), 1)
             ])
@@ -3165,7 +3165,7 @@ const _sfc_main$a = {
   }
 };
 const _hoisted_1$9 = { id: "growth" };
-const _hoisted_2$8 = { class: "twocol" };
+const _hoisted_2$9 = { class: "twocol" };
 const _hoisted_3$8 = { class: "panel" };
 const _hoisted_4$7 = { class: "tbl" };
 const _hoisted_5$7 = { class: "num" };
@@ -3210,7 +3210,7 @@ const _sfc_main$9 = {
           ])]),
           _: 1
         }),
-        createBaseVNode("div", _hoisted_2$8, [
+        createBaseVNode("div", _hoisted_2$9, [
           createBaseVNode("div", _hoisted_3$8, [
             _cache[2] || (_cache[2] = createBaseVNode("h3", null, "Мастерство 0–100", -1)),
             _cache[3] || (_cache[3] = createBaseVNode("p", { class: "small" }, "Клинок учится от нанесённого урона. Каждый уровень даёт +0,1% урона.", -1)),
@@ -3380,7 +3380,7 @@ const _sfc_main$9 = {
   }
 };
 const _hoisted_1$8 = { class: "bossbar-name" };
-const _hoisted_2$7 = {
+const _hoisted_2$8 = {
   class: "bossbar-track",
   "aria-hidden": "true"
 };
@@ -3420,7 +3420,7 @@ const _sfc_main$8 = {
         class: normalizeClass(["bossbar", [`bb-${__props.colour}`, { full: full.value }]])
       }, [
         createBaseVNode("h4", _hoisted_1$8, toDisplayString(__props.name), 1),
-        createBaseVNode("span", _hoisted_2$7, [
+        createBaseVNode("span", _hoisted_2$8, [
           _cache[0] || (_cache[0] = createBaseVNode("span", { class: "bossbar-fill" }, null, -1)),
           __props.notched ? (openBlock(), createElementBlock("span", _hoisted_3$7)) : createCommentVNode("", true)
         ])
@@ -3429,7 +3429,7 @@ const _sfc_main$8 = {
   }
 };
 const _hoisted_1$7 = { class: "atlas-scroll" };
-const _hoisted_2$6 = {
+const _hoisted_2$7 = {
   class: "atlas-svg",
   viewBox: "0 0 1200 640",
   role: "img",
@@ -3517,7 +3517,7 @@ const _sfc_main$7 = {
         class: normalizeClass(["atlas", { idle: idle.value }])
       }, [
         createBaseVNode("div", _hoisted_1$7, [
-          (openBlock(), createElementBlock("svg", _hoisted_2$6, [
+          (openBlock(), createElementBlock("svg", _hoisted_2$7, [
             _cache[13] || (_cache[13] = createBaseVNode("title", { id: "atlas-title" }, "Атлас мира", -1)),
             _cache[14] || (_cache[14] = createBaseVNode("desc", { id: "atlas-desc" }, "Разрез мира от неба до крыши Незера с местами всех святилищ.", -1)),
             createBaseVNode("defs", null, [
@@ -3743,7 +3743,7 @@ const _sfc_main$7 = {
   }
 };
 const _hoisted_1$6 = { id: "sanctums" };
-const _hoisted_2$5 = { class: "guides" };
+const _hoisted_2$6 = { class: "guides" };
 const _hoisted_3$5 = { class: "guide-card" };
 const _hoisted_4$5 = { class: "guide-card" };
 const _hoisted_5$5 = { class: "guide-card" };
@@ -3945,7 +3945,7 @@ const _sfc_main$6 = {
         }),
         createVNode(_sfc_main$7),
         _cache[126] || (_cache[126] = createStaticVNode('<div class="flow" aria-label="Путь через святилище"><div class="step"><b>Вход</b><span>туннель, ступени или ворота</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Три комнаты</b><span>в каждой стража; с неё падают осколки</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Алтарь</b><span>откроется, когда падёт вся стража: эволюция, заточка, испытания</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Арена</b><span>испытание: пять волн, в пятой — страж</span></div></div><h3>Пять святилищ коротко</h3><div class="tbl"><table><thead><tr><th>Святилище</th><th>Где</th><th>Чем искать</th><th>Страж</th><th>Кочует</th><th>Кровь</th></tr></thead><tbody><tr><th scope="row"><a href="#forge">Незеритовая кузня</a></th><td>Незер, в толще незерака</td><td>Карта кузни</td><td>Горнило</td><td>да</td><td>пепельная</td></tr><tr><th scope="row"><a href="#temple">Небесный храм</a></th><td>верхний мир, остров на высоте 200</td><td>Компас воздуха</td><td>Серафим Падшего Рассвета</td><td>да, и рушится от Печати ночи</td><td>небесная</td></tr><tr><th scope="row"><a href="#jungle">Храм джунглей</a></th><td>джунгли</td><td>Карта джунглей</td><td>Древний страж джунглей</td><td>да</td><td>предков</td></tr><tr><th scope="row"><a href="#night">Тёмный храм</a></th><td>верхний мир, только ночью</td><td>Ночной компас</td><td>Пустотный Серафим (призыв)</td><td>каждую ночь на новом месте</td><td>ночная небесная</td></tr><tr><th scope="row"><a href="#factory">Древняя фабрика</a></th><td>глубоко под землёй</td><td>Неизвестный компас</td><td>Предвестник</td><td>нет</td><td>техноорганическая</td></tr></tbody></table></div><h3>Как найти святилище</h3><p>Каждое святилище ищется своим предметом. Компас ведёт к храму, где бы тот ни стоял; карта показывает место, где святилище стояло, когда её сделали.</p>', 5)),
-        createBaseVNode("div", _hoisted_2$5, [
+        createBaseVNode("div", _hoisted_2$6, [
           createBaseVNode("div", _hoisted_3$5, [
             createVNode(_sfc_main$s, {
               recipe: recipe("g:air_compass"),
@@ -4665,7 +4665,7 @@ const _sfc_main$6 = {
   }
 };
 const _hoisted_1$5 = { id: "raids" };
-const _hoisted_2$4 = { class: "stack" };
+const _hoisted_2$5 = { class: "stack" };
 const _hoisted_3$4 = { class: "panel" };
 const _hoisted_4$4 = {
   class: "waves",
@@ -4728,7 +4728,7 @@ const _sfc_main$5 = {
           ])]),
           _: 1
         }),
-        createBaseVNode("div", _hoisted_2$4, [
+        createBaseVNode("div", _hoisted_2$5, [
           createBaseVNode("div", _hoisted_3$4, [
             _cache[4] || (_cache[4] = createBaseVNode("h3", null, "Испытание святилища", -1)),
             _cache[5] || (_cache[5] = createBaseVNode("p", { class: "small" }, "Пять волн в арене, в пятой — страж святилища. Уровень и награду определяет тот, кто начал. Покинуть арену до конца боя нельзя.", -1)),
@@ -4819,7 +4819,7 @@ const _sfc_main$5 = {
   }
 };
 const _hoisted_1$4 = { class: "btrunk-title" };
-const _hoisted_2$3 = {
+const _hoisted_2$4 = {
   key: 0,
   class: "btrunk-then"
 };
@@ -4899,7 +4899,7 @@ const _sfc_main$4 = {
                 "aria-hidden": "true"
               }, null, -1)),
               createTextVNode(toDisplayString(t.title), 1),
-              t.dual ? (openBlock(), createElementBlock("span", _hoisted_2$3, "→ ночная")) : createCommentVNode("", true)
+              t.dual ? (openBlock(), createElementBlock("span", _hoisted_2$4, "→ ночная")) : createCommentVNode("", true)
             ]),
             createBaseVNode("ol", _hoisted_3$3, [
               (openBlock(true), createElementBlock(Fragment, null, renderList([...t.steps].reverse(), (f, i) => {
@@ -4979,7 +4979,7 @@ const _sfc_main$4 = {
   }
 };
 const _hoisted_1$3 = { id: "blood" };
-const _hoisted_2$2 = { class: "bloods" };
+const _hoisted_2$3 = { class: "bloods" };
 const _hoisted_3$2 = { class: "blood-motto" };
 const _hoisted_4$2 = { class: "blood-home" };
 const _hoisted_5$2 = { class: "blood-blades" };
@@ -5032,7 +5032,7 @@ const _sfc_main$3 = {
           _: 1
         }),
         _cache[5] || (_cache[5] = createStaticVNode("<h3>Клинки крови</h3><p>Величайшие клинки привязаны к крови: в чужих руках они не работают. <b>Короны</b> — Истинный Экскалибур и Антихрист — отвечают только крови в <b>четвёртой форме</b>, Энигма предков — уже с <b>третьей</b>, а Целестиал и Архитектор — только с <b>пятой</b> формы крови предков. У пепельной крови <b>две короны</b>: <b>Империум</b> — с четвёртой формы, <b>Люцифер</b> — уже с третьей. Все-Чёрный отвечает только крови бездны.</p>", 2)),
-        createBaseVNode("div", _hoisted_2$2, [
+        createBaseVNode("div", _hoisted_2$3, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(data).blood, (b) => {
             return openBlock(), createElementBlock("article", {
               key: b.id,
@@ -5162,7 +5162,7 @@ const _sfc_main$3 = {
   }
 };
 const _hoisted_1$2 = { id: "trophies" };
-const _hoisted_2$1 = {
+const _hoisted_2$2 = {
   class: "filters",
   role: "group",
   "aria-label": "Тип достижения"
@@ -5198,7 +5198,7 @@ const _sfc_main$2 = {
           ])]),
           _: 1
         }),
-        createBaseVNode("div", _hoisted_2$1, [
+        createBaseVNode("div", _hoisted_2$2, [
           (openBlock(), createElementBlock(Fragment, null, renderList(FRAMES, ([key, title]) => {
             return createBaseVNode("button", {
               key,
@@ -5255,7 +5255,7 @@ const _sfc_main$2 = {
   }
 };
 const _hoisted_1$1 = { id: "admin" };
-const _hoisted_2 = { class: "twocol" };
+const _hoisted_2$1 = { class: "twocol" };
 const _hoisted_3 = { class: "term" };
 const _hoisted_4 = { class: "term-body" };
 const _hoisted_5 = { class: "t-k" };
@@ -5287,7 +5287,7 @@ const _sfc_main$1 = {
           title: "Для администратора",
           icon: "ancient_part"
         }),
-        createBaseVNode("div", _hoisted_2, [
+        createBaseVNode("div", _hoisted_2$1, [
           _cache[4] || (_cache[4] = createStaticVNode('<figure class="term"><figcaption class="term-bar"><span class="term-dots" aria-hidden="true"><i></i><i></i><i></i></span>Установка</figcaption><pre class="term-body"><code><span class="t-c"># собрать плагин (нужна Java 21+; на Windows — gradlew.bat build)</span>\n<span class="t-p">$</span> ./gradlew build\n<span class="t-c"># положить в папку плагинов сервера Paper 1.21.11</span>\n<span class="t-p">$</span> cp build/libs/virusswords-1.0.0.jar server/plugins/\n<span class="t-c"># раздать ресурспак (клиент 1.21.6+): строка в server.properties</span>\n<span class="t-k">resource-pack</span>=<span class="t-v">https://…/VirusSwords-ResourcePack.zip</span>\n<span class="t-c"># первый запуск: плагин сам ставит датапак достижений</span>\n<span class="t-c"># и один раз перезагружает данные</span>\n<span class="t-p">$</span> java -jar paper.jar --nogui\n<span class="t-ok">[VirusSwords] Enabling VirusSwords v1.0.0</span><span class="term-caret" aria-hidden="true"></span></code></pre></figure>', 1)),
           createBaseVNode("figure", _hoisted_3, [
             _cache[3] || (_cache[3] = createBaseVNode("figcaption", { class: "term-bar" }, [
@@ -5324,6 +5324,10 @@ const _sfc_main$1 = {
   }
 };
 const _hoisted_1 = { class: "shell" };
+const _hoisted_2 = {
+  id: "main",
+  tabindex: "-1"
+};
 const _sfc_main = {
   __name: "App",
   setup(__props) {
@@ -5333,11 +5337,11 @@ const _sfc_main = {
         createVNode(_sfc_main$k),
         _cache[0] || (_cache[0] = createBaseVNode("a", {
           class: "skip",
-          href: "#catalog"
-        }, "К каталогу", -1)),
+          href: "#main"
+        }, "Перейти к содержанию", -1)),
         createVNode(_sfc_main$x),
         createBaseVNode("div", _hoisted_1, [
-          createBaseVNode("main", null, [
+          createBaseVNode("main", _hoisted_2, [
             createVNode(_sfc_main$t),
             createVNode(_sfc_main$c),
             createVNode(_sfc_main$f),
