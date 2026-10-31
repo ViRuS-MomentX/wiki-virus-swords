@@ -360,10 +360,22 @@ const _sfc_main$x = {
   }
 };
 const rarities = new Map(data.rarities.map((r) => [r.const, r]));
+const MIN_LIGHT = 0.42;
+function luminance([r, g, b]) {
+  return (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+}
+function lift(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  const rgb = [n >> 16, n >> 8 & 255, n & 255];
+  const l = luminance(rgb);
+  if (l >= MIN_LIGHT) return hex;
+  const t = (MIN_LIGHT - l) / (1 - l);
+  return "#" + rgb.map((c) => Math.round(c + (255 - c) * t).toString(16).padStart(2, "0")).join("");
+}
 function rarityStyle(key) {
   const r = rarities.get(key);
   if (!r) return {};
-  const pal = r.palette;
+  const pal = r.palette.map(lift);
   const stops = [...pal, pal[0]];
   if (!r.period) return { backgroundImage: `linear-gradient(90deg, ${stops.join(", ")})` };
   return {
@@ -5141,7 +5153,7 @@ const _sfc_main$3 = {
       line: data.blood.find((b) => b.id === t.blood),
       item: data.items.find((i) => i.id === t.crown),
       icon: icon(t.crown),
-      style: { "--g": `linear-gradient(90deg, ${[...t.palette, t.palette[0]].join(", ")})` }
+      style: { "--g": `linear-gradient(90deg, ${[...t.palette, t.palette[0]].map(lift).join(", ")})` }
     }));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("section", _hoisted_1$3, [
