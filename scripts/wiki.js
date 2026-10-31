@@ -1830,6 +1830,35 @@ const _sfc_main$n = {
     const prev = computed(() => at.value > 0 ? item(order[at.value - 1]) : null);
     const next = computed(() => at.value >= 0 && at.value < order.length - 1 ? item(order[at.value + 1]) : null);
     const panel = ref(null);
+    let pullFrom = null, pulled = 0;
+    function pullStart(e) {
+      const el = panel.value;
+      if (!el || el.scrollTop > 0 || !matchMedia("(max-width: 640px)").matches) {
+        pullFrom = null;
+        return;
+      }
+      pullFrom = e.touches[0].clientY;
+      pulled = 0;
+    }
+    function pullMove(e) {
+      if (pullFrom === null) return;
+      pulled = Math.max(0, e.touches[0].clientY - pullFrom);
+      if (panel.value.scrollTop > 0) {
+        pullFrom = null;
+        pulled = 0;
+      }
+      panel.value.style.transform = pulled ? `translateY(${pulled}px)` : "";
+      panel.value.style.transition = "none";
+    }
+    function pullEnd() {
+      if (pullFrom === null) return;
+      const el = panel.value;
+      el.style.transition = "";
+      if (pulled > 110) closeItem();
+      else el.style.transform = "";
+      pullFrom = null;
+      pulled = 0;
+    }
     const copied = ref("");
     async function copyLink() {
       const url = location.href.split("#")[0] + "#w-" + inspector.id;
@@ -1909,8 +1938,16 @@ const _sfc_main$n = {
               role: "dialog",
               "aria-modal": "true",
               "aria-label": current.value.name,
-              tabindex: "-1"
+              tabindex: "-1",
+              onTouchstartPassive: pullStart,
+              onTouchmovePassive: pullMove,
+              onTouchend: pullEnd,
+              onTouchcancel: pullEnd
             }, [
+              _cache[7] || (_cache[7] = createBaseVNode("span", {
+                class: "inspect-grab",
+                "aria-hidden": "true"
+              }, null, -1)),
               createBaseVNode("button", {
                 class: "inspect-close",
                 type: "button",
@@ -1973,8 +2010,8 @@ const _sfc_main$n = {
                 }, "Ссылка на карточку"),
                 createBaseVNode("span", _hoisted_9$d, toDisplayString(copied.value), 1)
               ]),
-              _cache[7] || (_cache[7] = createBaseVNode("p", { class: "inspect-keys" }, "Стрелки ← → листают карточки, Esc закрывает.", -1))
-            ], 8, _hoisted_2$i)
+              _cache[8] || (_cache[8] = createBaseVNode("p", { class: "inspect-keys" }, "Стрелки ← → листают карточки, Esc закрывает.", -1))
+            ], 40, _hoisted_2$i)
           ])) : createCommentVNode("", true)
         ]),
         _: 1
