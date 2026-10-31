@@ -641,6 +641,25 @@ html { scroll-padding-top: 76px; }
 body { overflow-x: clip; }
 .rchip .paint, .cv-tag .paint { filter: drop-shadow(0 0 .6px rgba(255, 255, 255, .5)); }
 .cv-stats.statbars { margin-top: 0; }
+
+/* --- print: the codex on paper - light, plain, nothing that moves or floats --------------------- */
+@media print {
+  @page { margin: 16mm 14mm; }
+  :root { --bg: #fff; --bg-2: #fff; --surface: #fff; --surface-2: #f5f3f8; --line: #c9c2d4; --line-soft: #ddd7e5; --ink: #14101a; --ink-2: #2b2433; --muted: #5a5266; --code-bg: #f3f0f7; }
+  html, body { background: #fff !important; color: #14101a; }
+  .sky, .motes, .xp, .totop, .hovertip, .skip, .topbar, .sec-anchor, .sec-rune, .sec-rule, .mstage-hint, .inspect-wrap { display: none !important; }
+  * { box-shadow: none !important; text-shadow: none !important; animation: none !important; transition: none !important; }
+  .shell, main { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+  section { break-inside: auto; margin-top: 0 !important; padding-top: 18px !important; }
+  h2, h3, h4 { break-after: avoid; color: #14101a; }
+  article, figure, li, tr, .card, .ability, .blood, .set { break-inside: avoid; }
+  a { color: inherit; text-decoration: underline; }
+  img { image-rendering: pixelated; }
+  .sitefoot { margin-top: 24px; background: none; }
+  .sitefoot-col { display: none; }
+  .sec-title h2, .sec-title h2 * { color: #14101a !important; -webkit-text-fill-color: #14101a !important; background: none !important; filter: none !important; }
+  .cat-filters, .cat-search, input, .seg, .text-btn, .cv-more { display: none !important; }
+}
 /*
  * The enchantment over the codex.
  *
