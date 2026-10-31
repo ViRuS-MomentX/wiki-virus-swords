@@ -2983,53 +2983,63 @@ const _hoisted_23$2 = {
 };
 const _hoisted_24$2 = { class: "cat-order" };
 const _hoisted_25$2 = ["value"];
-const _hoisted_26$2 = ["aria-selected", "title", "onClick"];
-const _hoisted_27$2 = ["src"];
-const _hoisted_28$2 = { class: "sr-only" };
-const _hoisted_29$2 = {
+const _hoisted_26$2 = {
+  key: 0,
+  class: "catsep first",
+  "aria-hidden": "true"
+};
+const _hoisted_27$2 = {
+  key: 1,
+  class: "catsep",
+  "aria-hidden": "true"
+};
+const _hoisted_28$2 = ["aria-selected", "title", "onClick"];
+const _hoisted_29$2 = ["src"];
+const _hoisted_30$1 = { class: "sr-only" };
+const _hoisted_31$1 = {
   key: 0,
   class: "cat-empty",
   role: "status"
 };
-const _hoisted_30$1 = { class: "cv-head" };
-const _hoisted_31$1 = { class: "cv-tags" };
-const _hoisted_32$1 = { class: "cv-tag" };
-const _hoisted_33$1 = { class: "cv-tag" };
-const _hoisted_34$1 = {
+const _hoisted_32$1 = { class: "cv-head" };
+const _hoisted_33$1 = { class: "cv-tags" };
+const _hoisted_34$1 = { class: "cv-tag" };
+const _hoisted_35$1 = { class: "cv-tag" };
+const _hoisted_36$1 = {
   key: 0,
   class: "cv-tag"
 };
-const _hoisted_35$1 = {
+const _hoisted_37$1 = {
   key: 1,
   class: "cv-tag"
 };
-const _hoisted_36$1 = {
+const _hoisted_38$1 = {
   key: 0,
   class: "cv-lore"
 };
-const _hoisted_37$1 = ["innerHTML"];
-const _hoisted_38$1 = {
+const _hoisted_39$1 = ["innerHTML"];
+const _hoisted_40$1 = {
   key: 1,
   class: "cv-stats statbars"
 };
-const _hoisted_39$1 = { class: "statbar" };
-const _hoisted_40$1 = {
+const _hoisted_41$1 = { class: "statbar" };
+const _hoisted_42$1 = {
   class: "statbar-track",
   "aria-hidden": "true"
 };
-const _hoisted_41$1 = { class: "statbar-value" };
-const _hoisted_42$1 = { class: "statbar" };
-const _hoisted_43$1 = {
-  class: "statbar-track",
-  "aria-hidden": "true"
-};
-const _hoisted_44$1 = { class: "statbar-value" };
+const _hoisted_43$1 = { class: "statbar-value" };
+const _hoisted_44$1 = { class: "statbar" };
 const _hoisted_45$1 = {
+  class: "statbar-track",
+  "aria-hidden": "true"
+};
+const _hoisted_46$1 = { class: "statbar-value" };
+const _hoisted_47$1 = {
   key: 3,
   class: "no-abil"
 };
-const _hoisted_46$1 = { class: "cv-obtain" };
-const _hoisted_47$1 = ["innerHTML"];
+const _hoisted_48$1 = { class: "cv-obtain" };
+const _hoisted_49$1 = ["innerHTML"];
 const _sfc_main$c = {
   __name: "CatalogSection",
   setup(__props) {
@@ -3073,6 +3083,12 @@ const _sfc_main$c = {
       return (i) => !q || text(i).includes(q);
     });
     const shown = computed(() => items.filter((i) => byKind(i, kind.value) && byRarity(i, rarity.value) && byBlood(i, blood.value) && byQuery.value(i)).sort(ORDER_BY[order2.value]));
+    const firstMaterial = computed(() => {
+      if (order2.value === "name") return null;
+      const list = shown.value;
+      const at = list.findIndex((i) => i.kind === "material");
+      return at > 0 ? list[at].id : null;
+    });
     const facets = computed(() => {
       const q = byQuery.value;
       const count = (keep) => items.filter((i) => q(i) && keep(i)).length;
@@ -3329,33 +3345,38 @@ const _sfc_main$c = {
               onKeydown: onGridKey
             }, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(shown.value, (i) => {
-                return openBlock(), createElementBlock("button", {
-                  key: i.id,
-                  type: "button",
-                  role: "option",
-                  class: normalizeClass(["catslot", { on: i.id === current.value.id }]),
-                  "aria-selected": String(i.id === current.value.id),
-                  title: i.name,
-                  onClick: ($event) => pick(i.id)
+                return openBlock(), createElementBlock(Fragment, {
+                  key: i.id
                 }, [
-                  createBaseVNode("img", {
-                    src: i.icon,
-                    alt: "",
-                    loading: "lazy"
-                  }, null, 8, _hoisted_27$2),
-                  createBaseVNode("span", _hoisted_28$2, toDisplayString(i.name), 1),
-                  i.blood ? (openBlock(), createElementBlock("span", {
-                    key: 0,
-                    class: "catslot-blood",
-                    style: normalizeStyle({ background: unref(bloodOf)[i.blood].colour }),
-                    "aria-hidden": "true"
-                  }, null, 4)) : createCommentVNode("", true)
-                ], 10, _hoisted_26$2);
+                  firstMaterial.value && i === shown.value[0] ? (openBlock(), createElementBlock("span", _hoisted_26$2, "Клинки")) : createCommentVNode("", true),
+                  i.id === firstMaterial.value ? (openBlock(), createElementBlock("span", _hoisted_27$2, "Материалы")) : createCommentVNode("", true),
+                  createBaseVNode("button", {
+                    type: "button",
+                    role: "option",
+                    class: normalizeClass(["catslot", { on: i.id === current.value.id }]),
+                    "aria-selected": String(i.id === current.value.id),
+                    title: i.name,
+                    onClick: ($event) => pick(i.id)
+                  }, [
+                    createBaseVNode("img", {
+                      src: i.icon,
+                      alt: "",
+                      loading: "lazy"
+                    }, null, 8, _hoisted_29$2),
+                    createBaseVNode("span", _hoisted_30$1, toDisplayString(i.name), 1),
+                    i.blood ? (openBlock(), createElementBlock("span", {
+                      key: 0,
+                      class: "catslot-blood",
+                      style: normalizeStyle({ background: unref(bloodOf)[i.blood].colour }),
+                      "aria-hidden": "true"
+                    }, null, 4)) : createCommentVNode("", true)
+                  ], 10, _hoisted_28$2)
+                ], 64);
               }), 128))
             ], 544), [
               [vShow, shown.value.length]
             ]),
-            !shown.value.length ? (openBlock(), createElementBlock("div", _hoisted_29$2, [
+            !shown.value.length ? (openBlock(), createElementBlock("div", _hoisted_31$1, [
               _cache[13] || (_cache[13] = createBaseVNode("span", {
                 class: "cat-empty-slot",
                 "aria-hidden": "true"
@@ -3383,13 +3404,13 @@ const _sfc_main$c = {
               item: current.value,
               size: "panel"
             }, null, 8, ["item"]),
-            createBaseVNode("header", _hoisted_30$1, [
+            createBaseVNode("header", _hoisted_32$1, [
               createBaseVNode("h3", {
                 class: "cv-name paint",
                 style: normalizeStyle(unref(rarityStyle)(current.value.rarity))
               }, toDisplayString(current.value.name), 5),
-              createBaseVNode("p", _hoisted_31$1, [
-                createBaseVNode("span", _hoisted_32$1, [
+              createBaseVNode("p", _hoisted_33$1, [
+                createBaseVNode("span", _hoisted_34$1, [
                   createVNode(_sfc_main$x, {
                     rarity: current.value.rarity
                   }, {
@@ -3399,8 +3420,8 @@ const _sfc_main$c = {
                     _: 1
                   }, 8, ["rarity"])
                 ]),
-                createBaseVNode("span", _hoisted_33$1, toDisplayString(current.value.kind === "weapon" ? "Клинок" : "Материал"), 1),
-                owner.value ? (openBlock(), createElementBlock("span", _hoisted_34$1, [
+                createBaseVNode("span", _hoisted_35$1, toDisplayString(current.value.kind === "weapon" ? "Клинок" : "Материал"), 1),
+                owner.value ? (openBlock(), createElementBlock("span", _hoisted_36$1, [
                   createVNode(_sfc_main$p, {
                     colour: owner.value.colour
                   }, null, 8, ["colour"]),
@@ -3408,44 +3429,44 @@ const _sfc_main$c = {
                   current.value.form ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
                     createTextVNode(", " + toDisplayString(formText(current.value.form)), 1)
                   ], 64)) : createCommentVNode("", true)
-                ])) : current.value.kind === "weapon" ? (openBlock(), createElementBlock("span", _hoisted_35$1, "Любая кровь")) : createCommentVNode("", true)
+                ])) : current.value.kind === "weapon" ? (openBlock(), createElementBlock("span", _hoisted_37$1, "Любая кровь")) : createCommentVNode("", true)
               ])
             ]),
-            plain.value.length ? (openBlock(), createElementBlock("div", _hoisted_36$1, [
+            plain.value.length ? (openBlock(), createElementBlock("div", _hoisted_38$1, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(plain.value, (l, k) => {
                 return openBlock(), createElementBlock("p", {
                   key: k,
                   innerHTML: l
-                }, null, 8, _hoisted_37$1);
+                }, null, 8, _hoisted_39$1);
               }), 128))
             ])) : createCommentVNode("", true),
-            current.value.kind === "weapon" ? (openBlock(), createElementBlock("div", _hoisted_38$1, [
-              createBaseVNode("div", _hoisted_39$1, [
+            current.value.kind === "weapon" ? (openBlock(), createElementBlock("div", _hoisted_40$1, [
+              createBaseVNode("div", _hoisted_41$1, [
                 _cache[15] || (_cache[15] = createBaseVNode("span", { class: "statbar-label" }, "Урон", -1)),
-                createBaseVNode("span", _hoisted_40$1, [
+                createBaseVNode("span", _hoisted_42$1, [
                   createBaseVNode("span", {
                     class: "statbar-fill",
                     style: normalizeStyle({ width: `${Math.round(current.value.damage / MAX.damage * 100)}%` })
                   }, null, 4)
                 ]),
-                createBaseVNode("b", _hoisted_41$1, toDisplayString(current.value.damage), 1)
+                createBaseVNode("b", _hoisted_43$1, toDisplayString(current.value.damage), 1)
               ]),
-              createBaseVNode("div", _hoisted_42$1, [
+              createBaseVNode("div", _hoisted_44$1, [
                 _cache[16] || (_cache[16] = createBaseVNode("span", { class: "statbar-label" }, "Скорость", -1)),
-                createBaseVNode("span", _hoisted_43$1, [
+                createBaseVNode("span", _hoisted_45$1, [
                   createBaseVNode("span", {
                     class: "statbar-fill",
                     style: normalizeStyle({ width: `${Math.round(current.value.speed / MAX.speed * 100)}%` })
                   }, null, 4)
                 ]),
-                createBaseVNode("b", _hoisted_44$1, toDisplayString(current.value.speed), 1)
+                createBaseVNode("b", _hoisted_46$1, toDisplayString(current.value.speed), 1)
               ])
             ])) : createCommentVNode("", true),
             current.value.abilities.length ? (openBlock(), createBlock(_sfc_main$s, {
               key: 2,
               abilities: current.value.abilities
-            }, null, 8, ["abilities"])) : current.value.kind === "weapon" ? (openBlock(), createElementBlock("p", _hoisted_45$1, "Способностей нет — только сталь: урон и скорость.")) : createCommentVNode("", true),
-            createBaseVNode("div", _hoisted_46$1, [
+            }, null, 8, ["abilities"])) : current.value.kind === "weapon" ? (openBlock(), createElementBlock("p", _hoisted_47$1, "Способностей нет — только сталь: урон и скорость.")) : createCommentVNode("", true),
+            createBaseVNode("div", _hoisted_48$1, [
               createBaseVNode("h4", null, [
                 _cache[17] || (_cache[17] = createTextVNode("Как получить ", -1)),
                 createBaseVNode("span", {
@@ -3454,7 +3475,7 @@ const _sfc_main$c = {
               ]),
               createBaseVNode("p", {
                 innerHTML: current.value.obtain || "Источник описан в разделах ниже."
-              }, null, 8, _hoisted_47$1)
+              }, null, 8, _hoisted_49$1)
             ]),
             createBaseVNode("button", {
               type: "button",

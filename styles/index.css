@@ -654,6 +654,8 @@ main { padding-inline: max(24px, env(safe-area-inset-left, 0px)) max(24px, env(s
 .cat-count { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: .85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(58px, 1fr)); gap: 4px; padding: 10px; background: #2b2b2b; border: 2px solid #000; box-shadow: inset 0 0 0 2px #5a5a5a; }
 .cat-grid:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.catsep { grid-column: 1 / -1; padding: 10px 2px 2px; font: 600 .7rem/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: #cfcfcf; border-top: 2px solid #1c1c1c; margin-top: 4px; }
+.catsep.first { border-top: 0; margin-top: 0; padding-top: 2px; }
 .catslot { position: relative; aspect-ratio: 1; border: 0; padding: 7px; cursor: pointer; background: #8b8b8b; box-shadow: inset 2px 2px 0 #373737, inset -2px -2px 0 #fff; }
 .catslot img { width: 100%; height: 100%; display: block; image-rendering: pixelated; }
 .catslot:hover { background: #a3a3a3; }
