@@ -53,14 +53,43 @@ const suggestions = computed(() => {
 const order = [.../* @__PURE__ */ new Set([...data.chains.flatMap((c) => c.entries.map((e) => e.id)), ...data.items.filter((i) => i.kind === "material").map((i) => i.id)])];
 const shownIds = computed(() => new Set([...weapons.value, ...materials.value].map((i) => i.id)));
 const inspector = reactive({ id: null });
+const safe = (fn) => {
+  try {
+    fn();
+  } catch (e) {
+  }
+};
+const plain = () => location.pathname + location.search;
 const openItem = (id) => {
+  const first = !inspector.id;
   inspector.id = id;
-  history.replaceState(null, "", `#w-${id}`);
+  safe(() => {
+    var _a;
+    if (!first || ((_a = history.state) == null ? void 0 : _a.card)) {
+      history.replaceState({ card: true }, "", `#w-${id}`);
+      return;
+    }
+    if (location.hash === `#w-${id}`) history.replaceState(null, "", plain());
+    history.pushState({ card: true }, "", `#w-${id}`);
+  });
 };
 const closeItem = () => {
+  var _a;
+  if ((_a = history.state) == null ? void 0 : _a.card) {
+    history.back();
+    return;
+  }
   inspector.id = null;
-  history.replaceState(null, "", location.pathname + location.search);
+  safe(() => history.replaceState(null, "", plain()));
 };
+addEventListener("popstate", () => {
+  var _a;
+  const id = location.hash.startsWith("#w-") ? location.hash.slice(3) : null;
+  if (id && item(id)) {
+    inspector.id = id;
+    if (!((_a = history.state) == null ? void 0 : _a.card)) safe(() => history.replaceState({ card: true }, "", location.hash));
+  } else inspector.id = null;
+});
 const compare = reactive({ id: null });
 const pageUrl = () => location.href.split(/[?#]/)[0];
 const _hoisted_1$u = { class: "topbar" };
@@ -3162,8 +3191,8 @@ const _sfc_main$c = {
     }
     watch([kind, rarity, blood, query, order2, picked], () => {
       const u = new URLSearchParams(location.search);
-      const put = (key, value, plain2) => {
-        if (value && value !== plain2) u.set(key, value);
+      const put = (key, value, plain3) => {
+        if (value && value !== plain3) u.set(key, value);
         else u.delete(key);
       };
       put("kind", kind.value, "all");
@@ -3223,7 +3252,7 @@ const _sfc_main$c = {
       const pal = [...((_a = data.rarities.find((r) => r.const === current.value.rarity)) == null ? void 0 : _a.palette) || ["#8a5cff"]].sort((a, b) => light(b) - light(a));
       return { "--r1": pal[0], "--r2": pal[Math.min(1, pal.length - 1)] };
     });
-    const plain = computed(() => current.value.lore.filter((l) => l !== ""));
+    const plain2 = computed(() => current.value.lore.filter((l) => l !== ""));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("section", _hoisted_1$c, [
         createVNode(_sfc_main$g, {
@@ -3477,8 +3506,8 @@ const _sfc_main$c = {
                 ])) : current.value.kind === "weapon" ? (openBlock(), createElementBlock("span", _hoisted_37$1, "Любая кровь")) : createCommentVNode("", true)
               ])
             ]),
-            plain.value.length ? (openBlock(), createElementBlock("div", _hoisted_38$1, [
-              (openBlock(true), createElementBlock(Fragment, null, renderList(plain.value, (l, k) => {
+            plain2.value.length ? (openBlock(), createElementBlock("div", _hoisted_38$1, [
+              (openBlock(true), createElementBlock(Fragment, null, renderList(plain2.value, (l, k) => {
                 return openBlock(), createElementBlock("p", {
                   key: k,
                   innerHTML: l
