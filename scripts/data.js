@@ -4247,7 +4247,7 @@ const mastery = [
   {
     level: 15,
     total: "900",
-    bonus: "+1.5%",
+    bonus: "+1,5%",
     note: "можно ★1"
   },
   {
@@ -4259,7 +4259,7 @@ const mastery = [
   {
     level: 45,
     total: "6 075",
-    bonus: "+4.5%",
+    bonus: "+4,5%",
     note: "★3"
   },
   {
@@ -4277,7 +4277,7 @@ const mastery = [
   {
     level: 75,
     total: "15 750",
-    bonus: "+7.5%",
+    bonus: "+7,5%",
     note: "★5"
   },
   {
