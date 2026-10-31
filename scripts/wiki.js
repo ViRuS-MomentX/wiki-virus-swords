@@ -2189,8 +2189,9 @@ const _sfc_main$k = {
     const current = computed(() => tip.id && item(tip.id));
     const linkOf = (e) => {
       var _a, _b;
-      return (_b = (_a = e.target).closest) == null ? void 0 : _b.call(_a, 'a[href^="#w-"]');
+      return (_b = (_a = e.target).closest) == null ? void 0 : _b.call(_a, 'a[href^="#w-"], [data-tip]');
     };
+    const idOf = (a) => a.dataset.tip || a.getAttribute("href").slice(3);
     function place(e) {
       tip.x = e.clientX;
       tip.y = e.clientY;
@@ -2200,7 +2201,7 @@ const _sfc_main$k = {
     function onOver(e) {
       const a = linkOf(e);
       if (!a || a.matches(".wname, .found-item")) return;
-      const id = a.getAttribute("href").slice(3);
+      const id = idOf(a);
       if (!item(id)) return;
       tip.id = id;
       place(e);
@@ -2993,7 +2994,7 @@ const _hoisted_27$2 = {
   class: "catsep",
   "aria-hidden": "true"
 };
-const _hoisted_28$2 = ["aria-selected", "title", "onClick"];
+const _hoisted_28$2 = ["aria-selected", "data-tip", "onClick"];
 const _hoisted_29$2 = ["src"];
 const _hoisted_30$1 = { class: "sr-only" };
 const _hoisted_31$1 = {
@@ -3355,7 +3356,7 @@ const _sfc_main$c = {
                     role: "option",
                     class: normalizeClass(["catslot", { on: i.id === current.value.id }]),
                     "aria-selected": String(i.id === current.value.id),
-                    title: i.name,
+                    "data-tip": i.id,
                     onClick: ($event) => pick(i.id)
                   }, [
                     createBaseVNode("img", {
