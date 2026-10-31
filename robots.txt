@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://virus-momentx.github.io/wiki-virus-swords/sitemap.xml
