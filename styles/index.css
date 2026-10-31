@@ -547,7 +547,9 @@ th.num .sort { text-align: right; }
 
 /* --- the top bar: the codex's spine, across the page -------------------------------------- */
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
-.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: blur(14px) saturate(1.2); border-bottom: 1px solid var(--line-soft); }
+/* Nothing pushes the page sideways on a phone: the bar's row of sections runs to its edges, not past. */
+html, body { overflow-x: clip; }
+.topbar { overflow-x: clip; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: blur(14px) saturate(1.2); border-bottom: 1px solid var(--line-soft); }
 .topbar-in { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(200px, 280px); align-items: center; gap: 24px; padding-block: 10px; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
 .topbar .brand-name { font-size: 1.45rem; }
 .topbar-in { grid-template-areas: "brand nav search"; }
