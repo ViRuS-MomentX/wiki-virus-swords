@@ -54,7 +54,12 @@ h1, h2, h3, h4 { text-wrap: balance; margin: 0; font-weight: 400; }
 h2 { font: 400 clamp(2.1rem, 3.4vw, 2.75rem)/1.05 var(--display); letter-spacing: -.005em; }
 h3 { font: 400 1.5rem/1.15 var(--display); }
 h4 { font: 600 1rem/1.35 var(--body); }
-p { margin: 0; }
+p { margin: 0; text-wrap: pretty; }
+li, td, .lead { text-wrap: pretty; }
+td.num, td:has(> .num) { font-variant-numeric: tabular-nums; }
+tbody tr { transition: background-color .15s; }
+tbody tr:hover { background: color-mix(in srgb, var(--soul) 6%, transparent); }
+@media (max-width: 640px) { p, li, td { hyphens: auto; -webkit-hyphens: auto; hyphenate-limit-chars: 7 3 3; } }
 b, strong { font-weight: 600; color: var(--ink); }
 code, kbd { font: .84em var(--mono); background: var(--code-bg); padding: .12em .4em; border-radius: 5px; }
 kbd { border: 1px solid var(--line); border-bottom-width: 2px; }
