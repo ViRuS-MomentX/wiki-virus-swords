@@ -733,6 +733,9 @@ body { overflow-x: clip; }
 .keys dd { margin: 0; color: var(--ink-2); font-size: .9rem; text-align: right; }
 .sitefoot-keys { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
 .no-abil { padding: 10px 14px; border: 1px dashed var(--line); border-radius: 10px; color: var(--muted); font-size: .9rem; }
+/* Hints in two versions: for a mouse and keys, and for a finger on a screen without them. */
+.for-touch { display: none; }
+@media (hover: none) and (pointer: coarse) { .for-mouse { display: none; } .for-touch { display: inline; } }
 /*
  * The enchantment over the codex.
  *

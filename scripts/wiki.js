@@ -83,7 +83,7 @@ const _hoisted_8$l = {
   "aria-label": "Найденные предметы"
 };
 const _hoisted_9$i = ["id", "aria-selected"];
-const _hoisted_10$f = ["href", "onMouseenter"];
+const _hoisted_10$g = ["href", "onMouseenter"];
 const _hoisted_11$e = ["src"];
 const _hoisted_12$d = ["title"];
 const _hoisted_13$c = { class: "found-kind" };
@@ -319,7 +319,7 @@ const _sfc_main$y = {
                         title: i.name
                       }, toDisplayString(i.name), 9, _hoisted_12$d),
                       createBaseVNode("span", _hoisted_13$c, toDisplayString(i.kind === "weapon" ? "клинок" : "материал"), 1)
-                    ], 42, _hoisted_10$f)
+                    ], 42, _hoisted_10$g)
                   ], 8, _hoisted_9$i);
                 }), 128))
               ])) : createCommentVNode("", true),
@@ -963,7 +963,7 @@ const _hoisted_9$h = {
   class: "stage-tip",
   "aria-live": "polite"
 };
-const _hoisted_10$e = { class: "hotbar-wrap" };
+const _hoisted_10$f = { class: "hotbar-wrap" };
 const _hoisted_11$d = ["aria-label", "aria-pressed", "onClick"];
 const _hoisted_12$c = ["src"];
 const _hoisted_13$b = {
@@ -1149,7 +1149,7 @@ const _sfc_main$u = {
             }, "Открыть карточку клинка")
           ])
         ]),
-        createBaseVNode("div", _hoisted_10$e, [
+        createBaseVNode("div", _hoisted_10$f, [
           createBaseVNode("div", {
             class: "hotbar",
             role: "toolbar",
@@ -1173,7 +1173,10 @@ const _sfc_main$u = {
               ], 10, _hoisted_11$d);
             }), 128))
           ], 32),
-          _cache[6] || (_cache[6] = createBaseVNode("p", { class: "hotbar-note" }, "Клавиши 1–9 или колесо мыши выбирают клинок, повторный клик открывает его карточку.", -1))
+          _cache[6] || (_cache[6] = createBaseVNode("p", { class: "hotbar-note" }, [
+            createBaseVNode("span", { class: "for-mouse" }, "Клавиши 1–9 или колесо мыши выбирают клинок, повторный клик открывает его карточку."),
+            createBaseVNode("span", { class: "for-touch" }, "Коснитесь клинка, чтобы выбрать его; второе касание открывает карточку. Ряд листается в сторону.")
+          ], -1))
         ])
       ], 4);
     };
@@ -1191,7 +1194,7 @@ const _hoisted_8$h = {
   class: "cslot"
 };
 const _hoisted_9$g = ["title"];
-const _hoisted_10$d = ["src", "alt"];
+const _hoisted_10$e = ["src", "alt"];
 const _hoisted_11$c = { key: 0 };
 const _hoisted_12$b = ["href"];
 const _hoisted_13$a = {
@@ -1259,7 +1262,7 @@ const _sfc_main$t = {
             createBaseVNode("img", {
               src: (_c = result.value) == null ? void 0 : _c.icon,
               alt: (_d = result.value) == null ? void 0 : _d.name
-            }, null, 8, _hoisted_10$d)
+            }, null, 8, _hoisted_10$e)
           ], 8, _hoisted_9$g)
         ]),
         !__props.small ? (openBlock(), createElementBlock("figcaption", _hoisted_11$c, [
@@ -1437,7 +1440,7 @@ const _hoisted_6$g = {
 const _hoisted_7$g = ["href", "title"];
 const _hoisted_8$f = ["src"];
 const _hoisted_9$f = ["src"];
-const _hoisted_10$c = {
+const _hoisted_10$d = {
   key: 0,
   class: "pcount"
 };
@@ -1527,7 +1530,7 @@ const _sfc_main$q = {
                   src: c.icon,
                   alt: ""
                 }, null, 8, _hoisted_9$f),
-                c.n > 1 ? (openBlock(), createElementBlock("span", _hoisted_10$c, toDisplayString(c.n), 1)) : createCommentVNode("", true)
+                c.n > 1 ? (openBlock(), createElementBlock("span", _hoisted_10$d, toDisplayString(c.n), 1)) : createCommentVNode("", true)
               ]),
               _: 2
             }, 1032, ["href", "title"]);
@@ -1576,7 +1579,7 @@ const _hoisted_8$e = {
   class: "statbars"
 };
 const _hoisted_9$e = { class: "statbar-label" };
-const _hoisted_10$b = {
+const _hoisted_10$c = {
   class: "statbar-track",
   "aria-hidden": "true"
 };
@@ -1705,7 +1708,7 @@ const _sfc_main$o = {
               class: "statbar"
             }, [
               createBaseVNode("span", _hoisted_9$e, toDisplayString(b.label), 1),
-              createBaseVNode("span", _hoisted_10$b, [
+              createBaseVNode("span", _hoisted_10$c, [
                 createBaseVNode("span", {
                   class: "statbar-fill",
                   style: normalizeStyle({ width: `${Math.round(b.share * 100)}%` })
@@ -2374,6 +2377,7 @@ const _hoisted_6$d = { class: "sitefoot-stats" };
 const _hoisted_7$d = ["aria-label"];
 const _hoisted_8$c = ["href"];
 const _hoisted_9$c = { class: "sitefoot-bottom" };
+const _hoisted_10$b = { class: "for-mouse" };
 const REPO = "https://github.com/virus-momentx/wiki-virus-swords";
 const _sfc_main$h = {
   __name: "SiteFooter",
@@ -2454,13 +2458,18 @@ const _sfc_main$h = {
         createBaseVNode("div", _hoisted_9$c, [
           _cache[3] || (_cache[3] = createBaseVNode("span", null, "Модели предметов — из ресурспака сервера: Fantasy Weapons (nongkos), Blades of Majestica и другие паки; используются приватно.", -1)),
           createBaseVNode("span", null, [
-            createBaseVNode("button", {
-              type: "button",
-              class: "sitefoot-keys",
-              onClick: keys
-            }, "Горячие клавиши"),
+            createBaseVNode("span", _hoisted_10$b, [
+              createBaseVNode("button", {
+                type: "button",
+                class: "sitefoot-keys",
+                onClick: keys
+              }, "Горячие клавиши"),
+              unref(built) ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
+                createTextVNode(" · ")
+              ], 64)) : createCommentVNode("", true)
+            ]),
             unref(built) ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
-              createTextVNode(" · Обновлено " + toDisplayString(unref(built)), 1)
+              createTextVNode("Обновлено " + toDisplayString(unref(built)), 1)
             ], 64)) : createCommentVNode("", true)
           ])
         ])
