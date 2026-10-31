@@ -850,7 +850,7 @@ const _sfc_main$v = {
         style: normalizeStyle(aura.value),
         tabindex: "0",
         role: "img",
-        "aria-label": `${__props.item.name}: модель, поворачивается перетаскиванием или стрелками`,
+        "aria-label": flat.value ? __props.item.name : `${__props.item.name}: модель, поворачивается перетаскиванием или стрелками`,
         onPointerdown: down,
         onPointermove: move,
         onPointerup: up,
@@ -3011,7 +3011,7 @@ const _hoisted_41$1 = ["innerHTML"];
 const _sfc_main$c = {
   __name: "CatalogSection",
   setup(__props) {
-    const items = data.items.filter((i) => i.model3d);
+    const items = data.items;
     const rarities2 = data.rarities.filter((r) => items.some((i) => i.rarity === r.const));
     const bloods = data.blood.map((b) => ({ id: b.id, title: b.title, colour: b.colour }));
     const bloodOf = Object.fromEntries(bloods.map((b) => [b.id, b]));
@@ -3135,7 +3135,7 @@ const _sfc_main$c = {
           icon: "hyperion"
         }, {
           default: withCtx(() => [..._cache[5] || (_cache[5] = [
-            createBaseVNode("p", { class: "lead" }, "Предметы плагина с объёмной моделью. Отберите их по виду, редкости и крови и выберите любой: он встанет на магический круг. Тяните его мышью или пальцем, чтобы повернуть.", -1)
+            createBaseVNode("p", { class: "lead" }, "Все предметы плагина. Отберите их по виду, редкости и крови и выберите любой: он встанет на магический круг. Объёмную модель можно тянуть мышью или пальцем, чтобы повернуть.", -1)
           ])]),
           _: 1
         }),
