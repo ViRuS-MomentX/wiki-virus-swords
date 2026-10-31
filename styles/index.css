@@ -588,6 +588,8 @@ main { padding-inline: max(24px, env(safe-area-inset-left, 0px)) max(24px, env(s
 /* --- the foot of the page: the codex, its sections in columns, the credits ----------------------- */
 .sitefoot { margin-top: 96px; border-top: 1px solid var(--line-soft); background: linear-gradient(180deg, rgba(20, 14, 30, 0) 0%, rgba(12, 8, 18, .72) 100%); color: var(--muted); font-size: .86rem; }
 .sitefoot-in { max-width: 1320px; margin: 0 auto; padding: 48px max(24px, env(safe-area-inset-right, 0px)) 32px max(24px, env(safe-area-inset-left, 0px)); display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr)); gap: 32px 40px; }
+.sitefoot-gh a { display: inline-flex; align-items: center; gap: 7px; color: var(--ink-2); text-decoration: none; }
+.sitefoot-gh a:hover, .sitefoot-gh a:focus-visible { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
 .sitefoot-brand p { margin: 12px 0 0; max-width: 46ch; line-height: 1.6; }
 .sitefoot-name { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-family: Forum, serif; font-size: 1.35rem; }
 .sitefoot-name img { image-rendering: pixelated; }

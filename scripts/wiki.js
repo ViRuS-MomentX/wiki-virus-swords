@@ -2370,6 +2370,7 @@ const _hoisted_6$d = { class: "sitefoot-stats" };
 const _hoisted_7$d = ["aria-label"];
 const _hoisted_8$c = ["href"];
 const _hoisted_9$c = { class: "sitefoot-bottom" };
+const REPO = "https://github.com/virus-momentx/wiki-virus-swords";
 const _sfc_main$h = {
   __name: "SiteFooter",
   setup(__props) {
@@ -2383,6 +2384,12 @@ const _sfc_main$h = {
       const [y, m, d] = (data.built || "").split("-").map(Number);
       return y ? `${d} ${MONTHS[m - 1]} ${y}` : "";
     })();
+    const c = data.counts;
+    const stats = [
+      `${c.weapons} ${plural(c.weapons, "клинок", "клинка", "клинков")}`,
+      `${c.materials} ${plural(c.materials, "материал", "материала", "материалов")}`,
+      `${c.trophies} ${plural(c.trophies, "достижение", "достижения", "достижений")}`
+    ].join(" · ");
     const keys = () => dispatchEvent(new Event("codex:keys"));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("footer", _hoisted_1$h, [
@@ -2397,8 +2404,29 @@ const _sfc_main$h = {
               }, null, 8, _hoisted_5$d),
               _cache[0] || (_cache[0] = createBaseVNode("span", { id: "sitefoot-title" }, "Кодекс VirusSwords", -1))
             ]),
-            _cache[1] || (_cache[1] = createBaseVNode("p", null, "Энциклопедия плагина VirusSwords для Paper 1.21.11. Имена, описания, урон, цены алтарей и достижения взяты прямо из исходного кода плагина.", -1)),
-            createBaseVNode("p", _hoisted_6$d, toDisplayString(unref(data).counts.weapons) + " клинка · " + toDisplayString(unref(data).counts.materials) + " материала · " + toDisplayString(unref(data).counts.trophies) + " достижений", 1)
+            _cache[2] || (_cache[2] = createBaseVNode("p", null, "Энциклопедия плагина VirusSwords для Paper 1.21.11. Имена, описания, урон, цены алтарей и достижения взяты прямо из исходного кода плагина.", -1)),
+            createBaseVNode("p", _hoisted_6$d, toDisplayString(unref(stats)), 1),
+            createBaseVNode("p", { class: "sitefoot-gh" }, [
+              createBaseVNode("a", {
+                href: REPO,
+                rel: "noopener",
+                target: "_blank"
+              }, [..._cache[1] || (_cache[1] = [
+                createBaseVNode("svg", {
+                  viewBox: "0 0 16 16",
+                  width: "16",
+                  height: "16",
+                  "aria-hidden": "true"
+                }, [
+                  createBaseVNode("path", {
+                    fill: "currentColor",
+                    d: "M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.71 1.23 1.88.87 2.34.67.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0z"
+                  })
+                ], -1),
+                createTextVNode("Исходники вики на GitHub", -1),
+                createBaseVNode("span", { class: "sr-only" }, " (откроется в новой вкладке)", -1)
+              ])])
+            ])
           ]),
           (openBlock(), createElementBlock(Fragment, null, renderList(columns, ([title, links]) => {
             return createBaseVNode("nav", {
@@ -2420,7 +2448,7 @@ const _sfc_main$h = {
           }), 64))
         ]),
         createBaseVNode("div", _hoisted_9$c, [
-          _cache[2] || (_cache[2] = createBaseVNode("span", null, "Модели предметов — из ресурспака сервера: Fantasy Weapons (nongkos), Blades of Majestica и другие паки; используются приватно.", -1)),
+          _cache[3] || (_cache[3] = createBaseVNode("span", null, "Модели предметов — из ресурспака сервера: Fantasy Weapons (nongkos), Blades of Majestica и другие паки; используются приватно.", -1)),
           createBaseVNode("span", null, [
             createBaseVNode("button", {
               type: "button",
