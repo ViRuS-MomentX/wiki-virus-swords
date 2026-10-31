@@ -1910,6 +1910,7 @@ const _sfc_main$m = {
     };
   }
 };
+const COLUMN = 1340;
 const _sfc_main$l = {
   __name: "Atmosphere",
   setup(__props) {
@@ -1960,10 +1961,19 @@ const _sfc_main$l = {
       const css = getComputedStyle(document.documentElement);
       colours = [css.getPropertyValue("--w1").trim() || colours[0], css.getPropertyValue("--w2").trim() || colours[1]];
     }
+    function gutter(w) {
+      return Math.max(0, (w - COLUMN) / 2);
+    }
+    function spawnX(w, rune) {
+      const g = gutter(w);
+      if (!rune || g < 60) return Math.random() * w;
+      const x = Math.random() * (g - 24);
+      return Math.random() < 0.5 ? x : w - x;
+    }
     function spawn(w, h, anywhere) {
-      const rune = Math.random() < 0.38;
+      const rune = Math.random() < 0.3;
       return {
-        x: Math.random() * w,
+        x: spawnX(w, rune),
         y: anywhere ? Math.random() * h : h + 20,
         vy: -(0.12 + Math.random() * 0.35),
         sway: Math.random() * Math.PI * 2,
@@ -1997,7 +2007,8 @@ const _sfc_main$l = {
           motes[i] = spawn(w, h, false);
           continue;
         }
-        ctx.globalAlpha = Math.max(0, fade) * (m.rune ? 0.32 : 0.55);
+        const runeAlpha = gutter(w) >= 60 ? 0.28 : 0.1;
+        ctx.globalAlpha = Math.max(0, fade) * (m.rune ? runeAlpha : 0.4);
         ctx.fillStyle = colours[m.tone];
         if (m.rune) {
           for (const [cx, cy] of m.rune) ctx.fillRect(Math.round(x + cx * m.size), Math.round(m.y + cy * m.size), Math.ceil(m.size), Math.ceil(m.size));
