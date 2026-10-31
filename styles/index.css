@@ -743,6 +743,10 @@ body { overflow-x: clip; }
 /* Hints in two versions: for a mouse and keys, and for a finger on a screen without them. */
 .for-touch { display: none; }
 @media (hover: none) and (pointer: coarse) { .for-mouse { display: none; } .for-touch { display: inline; } }
+.card-give { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 18px; padding: 10px 12px; border-radius: 10px; background: #0b0810; border: 1px solid var(--line-soft); }
+.card-give-label { font-size: .78rem; color: var(--muted); }
+.card-give code { flex: 1 1 auto; background: none; border: 0; padding: 0; color: #80ff20; font-size: .86rem; }
+.card-give .term-copy { margin-left: 0; }
 /*
  * The enchantment over the codex.
  *

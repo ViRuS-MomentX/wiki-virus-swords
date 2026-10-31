@@ -1644,12 +1644,33 @@ const _hoisted_24$4 = {
   class: "arrow",
   "aria-hidden": "true"
 };
+const _hoisted_25$4 = { class: "card-give" };
+const _hoisted_26$4 = {
+  class: "sr-only",
+  "aria-live": "polite"
+};
 const _sfc_main$o = {
   __name: "ItemCard",
   props: { item: { type: Object, required: true } },
   setup(__props) {
     const props = __props;
     const recipe = computed(() => props.item.recipe ? data.recipes.find((r) => r.result === props.item.id) : null);
+    const command = computed(() => `/swords give ${props.item.id}`);
+    const given = ref(false);
+    watch(() => props.item.id, () => {
+      given.value = false;
+    });
+    async function copyCommand() {
+      try {
+        await navigator.clipboard.writeText(command.value);
+        given.value = true;
+      } catch (e) {
+        return;
+      }
+      setTimeout(() => {
+        given.value = false;
+      }, 1600);
+    }
     const RARITY = Object.fromEntries(data.rarities.map((r) => [r.const, r]));
     const glow = computed(() => {
       var _a;
@@ -1832,7 +1853,17 @@ const _sfc_main$o = {
               }), 128))
             ])
           ], 8, _hoisted_21$5);
-        }), 128))
+        }), 128)),
+        createBaseVNode("div", _hoisted_25$4, [
+          _cache[5] || (_cache[5] = createBaseVNode("span", { class: "card-give-label" }, "Выдать (оператор)", -1)),
+          createBaseVNode("code", null, toDisplayString(command.value), 1),
+          createBaseVNode("button", {
+            type: "button",
+            class: "term-copy",
+            onClick: copyCommand
+          }, toDisplayString(given.value ? "Скопировано" : "Копировать"), 1),
+          createBaseVNode("span", _hoisted_26$4, toDisplayString(given.value ? "Команда скопирована" : ""), 1)
+        ])
       ], 4);
     };
   }
