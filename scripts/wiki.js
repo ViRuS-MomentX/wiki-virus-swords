@@ -1790,12 +1790,15 @@ const _sfc_main$o = {
             createBaseVNode("h3", null, toDisplayString(c.title), 1),
             createBaseVNode("div", _hoisted_22$4, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(c.entries, (e, i) => {
-                return openBlock(), createElementBlock(Fragment, { key: i }, [
+                return openBlock(), createElementBlock("span", {
+                  key: i,
+                  class: "chain-step"
+                }, [
                   e.sep === "→" ? (openBlock(), createElementBlock("span", _hoisted_23$4)) : e.sep ? (openBlock(), createElementBlock("span", _hoisted_24$4, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
                   createVNode(_sfc_main$r, {
                     item: unref(item)(e.id)
                   }, null, 8, ["item"])
-                ], 64);
+                ]);
               }), 128))
             ])
           ], 8, _hoisted_21$5);
@@ -1833,7 +1836,7 @@ const _sfc_main$n = {
     let pullFrom = null, pulled = 0;
     function pullStart(e) {
       const el = panel.value;
-      if (!el || el.scrollTop > 0 || !matchMedia("(max-width: 640px)").matches) {
+      if (!el || el.scrollTop > 0 || e.target.closest(".mstage") || !matchMedia("(max-width: 640px)").matches) {
         pullFrom = null;
         return;
       }
@@ -2970,7 +2973,10 @@ const _sfc_main$d = {
               createBaseVNode("h3", _hoisted_26$3, toDisplayString(chain.title), 1),
               createBaseVNode("div", _hoisted_27$3, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(chain.entries, (e, i) => {
-                  return openBlock(), createElementBlock(Fragment, { key: i }, [
+                  return openBlock(), createElementBlock("span", {
+                    key: i,
+                    class: "chain-step"
+                  }, [
                     e.sep === "→" ? (openBlock(), createElementBlock("span", _hoisted_28$3)) : e.sep ? (openBlock(), createElementBlock("span", _hoisted_29$3, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
                     createVNode(_sfc_main$r, {
                       item: e.item,
@@ -2978,7 +2984,7 @@ const _sfc_main$d = {
                       named: "",
                       dim: !unref(shownIds).has(e.id)
                     }, null, 8, ["item", "anchor", "dim"])
-                  ], 64);
+                  ]);
                 }), 128))
               ])
             ], 8, _hoisted_25$3);

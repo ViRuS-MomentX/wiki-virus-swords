@@ -207,6 +207,8 @@ section > h3 { margin-top: 18px; }
 .line-title { font-size: 1.3rem; color: var(--ink); }
 .line-row, .chain-row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2px 4px; }
 .chain-row { align-items: center; }
+.chain-step { display: inline-flex; align-items: center; gap: 4px; }
+.line-row .chain-step { align-items: flex-start; gap: 2px 4px; }
 .arrow { color: var(--soul); font-size: .9rem; padding: 0 4px; margin-top: 34px; }
 .chain-row .arrow { margin-top: 0; }
 .inventory { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 14px; align-items: start; }
