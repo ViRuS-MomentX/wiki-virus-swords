@@ -555,6 +555,20 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .topbar .found-box { position: absolute; right: 0; top: calc(100% + 6px); width: min(380px, 92vw); z-index: 30; }
 .shell { display: block; max-width: 1320px; }
 main { padding-inline: max(24px, env(safe-area-inset-left, 0px)) max(24px, env(safe-area-inset-right, 0px)); }
+/* --- the foot of the page: the codex, its sections in columns, the credits ----------------------- */
+.sitefoot { margin-top: 96px; border-top: 1px solid var(--line-soft); background: linear-gradient(180deg, rgba(20, 14, 30, 0) 0%, rgba(12, 8, 18, .72) 100%); color: var(--muted); font-size: .86rem; }
+.sitefoot-in { max-width: 1320px; margin: 0 auto; padding: 48px max(24px, env(safe-area-inset-right, 0px)) 32px max(24px, env(safe-area-inset-left, 0px)); display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr)); gap: 32px 40px; }
+.sitefoot-brand p { margin: 12px 0 0; max-width: 46ch; line-height: 1.6; }
+.sitefoot-name { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-family: Forum, serif; font-size: 1.35rem; }
+.sitefoot-name img { image-rendering: pixelated; }
+.sitefoot-stats { font-variant-numeric: tabular-nums; color: var(--ink); opacity: .75; }
+.sitefoot-col h2 { margin: 4px 0 12px; font: 600 .74rem/1 Onest, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); opacity: .7; }
+.sitefoot-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.sitefoot-col a { color: var(--muted); text-decoration: none; transition: color .15s; }
+.sitefoot-col a:hover, .sitefoot-col a:focus-visible { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.sitefoot-bottom { max-width: 1320px; margin: 0 auto; padding: 18px max(24px, env(safe-area-inset-right, 0px)) calc(28px + env(safe-area-inset-bottom, 0px)) max(24px, env(safe-area-inset-left, 0px)); border-top: 1px solid var(--line-soft); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: .78rem; }
+@media (max-width: 900px) { .sitefoot-in { grid-template-columns: repeat(3, minmax(0, 1fr)); } .sitefoot-brand { grid-column: 1 / -1; } }
+@media (max-width: 520px) { .sitefoot-in { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .foot { max-width: 1320px; margin: 0 auto; padding: 28px max(24px, env(safe-area-inset-right, 0px)) 40px max(24px, env(safe-area-inset-left, 0px)); border-top: 1px solid var(--line-soft); color: var(--muted); font-size: .82rem; }
 @media (max-width: 900px) {
   .topbar-in { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "brand search" "nav nav"; gap: 8px 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
