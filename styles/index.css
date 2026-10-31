@@ -643,6 +643,9 @@ main { padding-inline: max(24px, env(safe-area-inset-left, 0px)) max(24px, env(s
 .rchip-swatch { width: 14px; height: 14px; border-radius: 4px; flex: none; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .25); }
 .rchip .paint { font-weight: 600; }
 .cat-link { margin-left: auto; }
+.facet { margin-left: 7px; font: 500 .74em/1 var(--body); font-variant-numeric: tabular-nums; color: var(--muted); -webkit-text-fill-color: var(--muted); }
+[aria-pressed=true] > .facet { color: inherit; -webkit-text-fill-color: currentColor; opacity: .75; }
+.rchip.none, .bchip.none { opacity: .45; }
 .cat-order { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
 .cat-order select { font: 500 .84rem var(--body); color: var(--ink); background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px; padding: 5px 28px 5px 10px; cursor: pointer; appearance: none;
   background-image: linear-gradient(45deg, transparent 50%, var(--ink-2) 50%), linear-gradient(135deg, var(--ink-2) 50%, transparent 50%);
