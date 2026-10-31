@@ -3048,7 +3048,36 @@ const _sfc_main$c = {
     watch(shown, (list) => {
       if (list.length && !list.some((i) => i.id === picked.value)) picked.value = list[0].id;
     });
-    const viewer = ref(null);
+    const ids = new Set(items.map((i) => i.id));
+    try {
+      const u = new URLSearchParams(location.search);
+      if (KINDS.some(([k]) => k === u.get("kind"))) kind.value = u.get("kind");
+      const rs = (u.get("rarity") || "").split(",").filter((r) => rarities2.some((x) => x.const === r));
+      if (rs.length) rarity.value = new Set(rs);
+      if (u.get("blood") === "none" || bloodOf[u.get("blood")]) blood.value = u.get("blood");
+      if (u.get("q")) query.value = u.get("q").slice(0, 80);
+      if (ORDERS.some(([k]) => k === u.get("order"))) order2.value = u.get("order");
+      if (ids.has(u.get("item"))) picked.value = u.get("item");
+    } catch (err) {
+    }
+    watch([kind, rarity, blood, query, order2, picked], () => {
+      const u = new URLSearchParams(location.search);
+      const put = (key, value, plain2) => {
+        if (value && value !== plain2) u.set(key, value);
+        else u.delete(key);
+      };
+      put("kind", kind.value, "all");
+      put("rarity", [...rarity.value].join(","), "");
+      put("blood", blood.value, "any");
+      put("q", query.value.trim(), "");
+      put("order", order2.value, "rarity");
+      put("item", picked.value, "all_black");
+      const search = u.toString();
+      try {
+        history.replaceState(history.state, "", location.pathname + (search ? "?" + search : "") + location.hash);
+      } catch (err) {
+      }
+    });
     function pick(id) {
       var _a;
       picked.value = id;
@@ -3273,8 +3302,7 @@ const _sfc_main$c = {
             ])) : createCommentVNode("", true)
           ]),
           createBaseVNode("article", {
-            ref_key: "viewer",
-            ref: viewer,
+            ref: "viewer",
             class: normalizeClass(["cat-view", { stale: !shown.value.length }]),
             style: normalizeStyle(glow.value),
             "aria-live": "polite"
