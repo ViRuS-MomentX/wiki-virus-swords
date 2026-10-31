@@ -341,8 +341,8 @@ const items = [
     rarityLabel: "Обычная",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Задолго до первого камня он ждал в темноте.</em></span>',
-      '<span style="color:#555555"><em>Город вырос над ним — и стал лишь отсрочкой.</em></span>',
+      '<span style="color:#808080"><em>Задолго до первого камня он ждал в темноте.</em></span>',
+      '<span style="color:#808080"><em>Город вырос над ним — и стал лишь отсрочкой.</em></span>',
       "",
       '<span style="color:#AAAAAA">Ни чар, ни хитростей. Только сталь,</span>',
       '<span style="color:#AAAAAA">пережившая всех, кто её страшился.</span>'
@@ -366,8 +366,8 @@ const items = [
     rarityLabel: "Адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Когда небо раскололось, пламя ушло в сталь.</em></span>',
-      '<span style="color:#555555"><em>Теперь оно ждёт, когда мир снова дрогнет.</em></span>'
+      '<span style="color:#808080"><em>Когда небо раскололось, пламя ушло в сталь.</em></span>',
+      '<span style="color:#808080"><em>Теперь оно ждёт, когда мир снова дрогнет.</em></span>'
     ],
     abilities: [
       {
@@ -399,8 +399,8 @@ const items = [
     rarityLabel: "Адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Иссушитель пал. Его воля — нет.</em></span>',
-      '<span style="color:#555555"><em>Она вошла в сталь и сама выбирает, кому служить.</em></span>'
+      '<span style="color:#808080"><em>Иссушитель пал. Его воля — нет.</em></span>',
+      '<span style="color:#808080"><em>Она вошла в сталь и сама выбирает, кому служить.</em></span>'
     ],
     abilities: [
       {
@@ -440,8 +440,8 @@ const items = [
     rarityLabel: "Ультра-адская",
     line: "abyss",
     lore: [
-      '<span style="color:#555555"><em>Из его тьмы на вас кто-то смотрит.</em></span>',
-      '<span style="color:#555555"><em>Дотянуться он может. Просто не хочет.</em></span>',
+      '<span style="color:#808080"><em>Из его тьмы на вас кто-то смотрит.</em></span>',
+      '<span style="color:#808080"><em>Дотянуться он может. Просто не хочет.</em></span>',
       "",
       '<span style="color:#AAAAAA"><em>Чтобы презирать богов, надо их знать.</em></span>'
     ],
@@ -491,8 +491,8 @@ const items = [
     rarityLabel: "Ультра-адская",
     line: "hell",
     lore: [
-      '<span style="color:#555555"><em>Выкованный из сердца самого Пекла,</em></span>',
-      '<span style="color:#555555"><em>он правит всеми клинками, что были до него.</em></span>'
+      '<span style="color:#808080"><em>Выкованный из сердца самого Пекла,</em></span>',
+      '<span style="color:#808080"><em>он правит всеми клинками, что были до него.</em></span>'
     ],
     abilities: [
       {
@@ -548,7 +548,7 @@ const items = [
     rarityLabel: "Обычная",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Кто-то унёс его под землю и не вернулся.</em></span>'
+      '<span style="color:#808080"><em>Кто-то унёс его под землю и не вернулся.</em></span>'
     ],
     abilities: [
       {
@@ -578,8 +578,8 @@ const items = [
     rarityLabel: "Эпическая",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Лезвие почернело, впитав демонскую кровь.</em></span>',
-      '<span style="color:#555555"><em>И с каждым ударом берёт всё больше, не насыщаясь.</em></span>'
+      '<span style="color:#808080"><em>Лезвие почернело, впитав демонскую кровь.</em></span>',
+      '<span style="color:#808080"><em>И с каждым ударом берёт всё больше, не насыщаясь.</em></span>'
     ],
     abilities: [
       {
@@ -609,8 +609,8 @@ const items = [
     rarityLabel: "Терра",
     line: "cleaver",
     lore: [
-      '<span style="color:#555555"><em>Зелёный металл, рождённый в глубинах Терры,</em></span>',
-      '<span style="color:#555555"><em>не тупится никогда и никогда не прощает.</em></span>'
+      '<span style="color:#808080"><em>Зелёный металл, рождённый в глубинах Терры,</em></span>',
+      '<span style="color:#808080"><em>не тупится никогда и никогда не прощает.</em></span>'
     ],
     abilities: [
       {
@@ -650,8 +650,8 @@ const items = [
     rarityLabel: "Необычная",
     line: "blood",
     lore: [
-      '<span style="color:#555555"><em>Говорят, кузнец растил пауков не ради яда,</em></span>',
-      '<span style="color:#555555"><em>а ради нитей, на которых подвешивают судьбы.</em></span>'
+      '<span style="color:#808080"><em>Говорят, кузнец растил пауков не ради яда,</em></span>',
+      '<span style="color:#808080"><em>а ради нитей, на которых подвешивают судьбы.</em></span>'
     ],
     abilities: [
       {
@@ -689,8 +689,8 @@ const items = [
     rarityLabel: "Адская",
     line: "blood",
     lore: [
-      '<span style="color:#555555"><em>Паучья сталь напилась демонской крови</em></span>',
-      '<span style="color:#555555"><em>и с тех пор не знает пощады.</em></span>'
+      '<span style="color:#808080"><em>Паучья сталь напилась демонской крови</em></span>',
+      '<span style="color:#808080"><em>и с тех пор не знает пощады.</em></span>'
     ],
     abilities: [
       {
@@ -730,12 +730,12 @@ const items = [
     rarityLabel: "Адская",
     line: "blood",
     lore: [
-      '<span style="color:#555555"><em>Он помнит лицо Проклятого короля —</em></span>',
-      '<span style="color:#555555"><em>настоящее, не пиглинье. Каждая трещина</em></span>',
-      '<span style="color:#555555"><em>на этом оружии — след разорванного контракта,</em></span>',
-      '<span style="color:#555555"><em>а его холодный блеск — напоминание о том,</em></span>',
-      '<span style="color:#555555"><em>что любая корона рано или поздно превращается</em></span>',
-      '<span style="color:#555555"><em>в прах под копытами свиней.</em></span>'
+      '<span style="color:#808080"><em>Он помнит лицо Проклятого короля —</em></span>',
+      '<span style="color:#808080"><em>настоящее, не пиглинье. Каждая трещина</em></span>',
+      '<span style="color:#808080"><em>на этом оружии — след разорванного контракта,</em></span>',
+      '<span style="color:#808080"><em>а его холодный блеск — напоминание о том,</em></span>',
+      '<span style="color:#808080"><em>что любая корона рано или поздно превращается</em></span>',
+      '<span style="color:#808080"><em>в прах под копытами свиней.</em></span>'
     ],
     abilities: [
       {
@@ -783,9 +783,9 @@ const items = [
     rarityLabel: "Супер-адская",
     line: "blood",
     lore: [
-      '<span style="color:#555555"><em>Выкованный из осколков утренней звезды,</em></span>',
-      '<span style="color:#555555"><em>этот клинок хранит в себе первородный свет,</em></span>',
-      '<span style="color:#555555"><em>ставший всепожирающим пламенем.</em></span>'
+      '<span style="color:#808080"><em>Выкованный из осколков утренней звезды,</em></span>',
+      '<span style="color:#808080"><em>этот клинок хранит в себе первородный свет,</em></span>',
+      '<span style="color:#808080"><em>ставший всепожирающим пламенем.</em></span>'
     ],
     abilities: [
       {
@@ -825,8 +825,8 @@ const items = [
     rarityLabel: "Необычная",
     line: "axe",
     lore: [
-      '<span style="color:#555555"><em>Её ковали там, где рассвет не знает дороги.</em></span>',
-      '<span style="color:#555555"><em>Она и не ждёт его — ей довольно тьмы.</em></span>'
+      '<span style="color:#808080"><em>Её ковали там, где рассвет не знает дороги.</em></span>',
+      '<span style="color:#808080"><em>Она и не ждёт его — ей довольно тьмы.</em></span>'
     ],
     abilities: [
       {
@@ -864,8 +864,8 @@ const items = [
     rarityLabel: "Адская",
     line: "axe",
     lore: [
-      '<span style="color:#555555"><em>Она видела, как погас последний горн Горнила.</em></span>',
-      '<span style="color:#555555"><em>Его жар ушёл в неё, и каждая рана делает её тяжелее.</em></span>'
+      '<span style="color:#808080"><em>Она видела, как погас последний горн Горнила.</em></span>',
+      '<span style="color:#808080"><em>Его жар ушёл в неё, и каждая рана делает её тяжелее.</em></span>'
     ],
     abilities: [
       {
@@ -905,8 +905,8 @@ const items = [
     rarityLabel: "Супер-адская",
     line: "axe",
     lore: [
-      '<span style="color:#555555"><em>Секира берсерка остыла в лаве и проснулась великаном.</em></span>',
-      '<span style="color:#555555"><em>С тех пор она падает с неба туда, куда ей укажут.</em></span>'
+      '<span style="color:#808080"><em>Секира берсерка остыла в лаве и проснулась великаном.</em></span>',
+      '<span style="color:#808080"><em>С тех пор она падает с неба туда, куда ей укажут.</em></span>'
     ],
     abilities: [
       {
@@ -923,7 +923,7 @@ const items = [
         trigger: "ПКМ",
         kind: "rmb",
         rest: "20 с",
-        text: '<span>Туда, куда вы смотрите (до 20 блоков), с неба</span> <span>падает исполинский топор: 16 урона и огонь</span> <span>всем врагам в 8 блоках, их подбрасывает.</span> <br><span style="color:#555555">Пепельная кровь, со второй формы.</span>'
+        text: '<span>Туда, куда вы смотрите (до 20 блоков), с неба</span> <span>падает исполинский топор: 16 урона и огонь</span> <span>всем врагам в 8 блоках, их подбрасывает.</span> <br><span style="color:#808080">Пепельная кровь, со второй формы.</span>'
       }
     ],
     stats: "Урон 15 · Скорость 0.9",
@@ -946,8 +946,8 @@ const items = [
     rarityLabel: "Супер-адская",
     line: "forgotten",
     lore: [
-      '<span style="color:#555555"><em>Пламя в нём не горит — оно кружит,</em></span>',
-      '<span style="color:#555555"><em>как вихрь, который ищет, кого поднять.</em></span>'
+      '<span style="color:#808080"><em>Пламя в нём не горит — оно кружит,</em></span>',
+      '<span style="color:#808080"><em>как вихрь, который ищет, кого поднять.</em></span>'
     ],
     abilities: [
       {
@@ -964,7 +964,7 @@ const items = [
         trigger: "ПКМ",
         kind: "rmb",
         rest: "40 с",
-        text: '<span>Там, куда вы смотрите, закручивается спиральный</span> <span>столб огня. 15 секунд он ползёт к сильнейшему</span> <span>врагу рядом (блок в секунду), жжёт и поджигает.</span> <span>Удерживайте ПКМ — столб идёт туда, куда вы</span> <span>смотрите (до 5 блоков в секунду), лишь поджигая.</span> <br><span style="color:#555555">Пепельная кровь, с третьей формы.</span>'
+        text: '<span>Там, куда вы смотрите, закручивается спиральный</span> <span>столб огня. 15 секунд он ползёт к сильнейшему</span> <span>врагу рядом (блок в секунду), жжёт и поджигает.</span> <span>Удерживайте ПКМ — столб идёт туда, куда вы</span> <span>смотрите (до 5 блоков в секунду), лишь поджигая.</span> <br><span style="color:#808080">Пепельная кровь, с третьей формы.</span>'
       }
     ],
     stats: "Урон 12 · Скорость 1.6",
@@ -987,8 +987,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "axe",
     lore: [
-      '<span style="color:#555555"><em>Серафим пал, и последний луч его света искал, где остаться.</em></span>',
-      '<span style="color:#555555"><em>Сумрачная сталь впервые увидела рассвет — и возродилась золотой.</em></span>'
+      '<span style="color:#808080"><em>Серафим пал, и последний луч его света искал, где остаться.</em></span>',
+      '<span style="color:#808080"><em>Сумрачная сталь впервые увидела рассвет — и возродилась золотой.</em></span>'
     ],
     abilities: [
       {
@@ -1028,8 +1028,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>Самый долгий день в году, когда солнце не спешит садиться.</em></span>',
-      '<span style="color:#555555"><em>Для кого-то он стал последним.</em></span>'
+      '<span style="color:#808080"><em>Самый долгий день в году, когда солнце не спешит садиться.</em></span>',
+      '<span style="color:#808080"><em>Для кого-то он стал последним.</em></span>'
     ],
     abilities: [
       {
@@ -1046,7 +1046,7 @@ const items = [
         trigger: "Зажать ПКМ",
         kind: "hold",
         rest: null,
-        text: '<span>Пока кнопка зажата, клинок вспыхивает каждую</span> <span>секунду: 2 урона всему враждебному в 12 блоках,</span> <span>нежить загорается.</span> <br><span style="color:#555555">Без перезарядки.</span>'
+        text: '<span>Пока кнопка зажата, клинок вспыхивает каждую</span> <span>секунду: 2 урона всему враждебному в 12 блоках,</span> <span>нежить загорается.</span> <br><span style="color:#808080">Без перезарядки.</span>'
       }
     ],
     stats: "Урон 13 · Скорость 1.6",
@@ -1069,13 +1069,13 @@ const items = [
     rarityLabel: "Небесная",
     line: "night",
     lore: [
-      '<span style="color:#555555"><em>Мелодия, которую играют лишь для тех, кто не спит.</em></span>',
-      '<span style="color:#555555"><em>Тех, кто её услышал, уже не разбудит рассвет.</em></span>',
+      '<span style="color:#808080"><em>Мелодия, которую играют лишь для тех, кто не спит.</em></span>',
+      '<span style="color:#808080"><em>Тех, кто её услышал, уже не разбудит рассвет.</em></span>',
       "",
       "",
       "",
-      '<span style="color:#555555">Солнцестояние в одной руке и Ночная фурия в другой</span>',
-      '<span style="color:#555555">не знают ни дня, ни ночи.</span>'
+      '<span style="color:#808080">Солнцестояние в одной руке и Ночная фурия в другой</span>',
+      '<span style="color:#808080">не знают ни дня, ни ночи.</span>'
     ],
     abilities: [
       {
@@ -1115,8 +1115,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>Он стоит на страже так давно, что позабыл,</em></span>',
-      '<span style="color:#555555"><em>кого охраняет. Тебя — пока что.</em></span>'
+      '<span style="color:#808080"><em>Он стоит на страже так давно, что позабыл,</em></span>',
+      '<span style="color:#808080"><em>кого охраняет. Тебя — пока что.</em></span>'
     ],
     abilities: [
       {
@@ -1156,8 +1156,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "night",
     lore: [
-      '<span style="color:#555555"><em>Её выковали из того, что падает с неба</em></span>',
-      '<span style="color:#555555"><em>в ночь, когда луна полна.</em></span>'
+      '<span style="color:#808080"><em>Её выковали из того, что падает с неба</em></span>',
+      '<span style="color:#808080"><em>в ночь, когда луна полна.</em></span>'
     ],
     abilities: [
       {
@@ -1197,8 +1197,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "night",
     lore: [
-      '<span style="color:#555555"><em>Ночная фурия поднялась на девятое небо</em></span>',
-      '<span style="color:#555555"><em>и вернулась оттуда жнецом, несущим вечный покой.</em></span>'
+      '<span style="color:#808080"><em>Ночная фурия поднялась на девятое небо</em></span>',
+      '<span style="color:#808080"><em>и вернулась оттуда жнецом, несущим вечный покой.</em></span>'
     ],
     abilities: [
       {
@@ -1238,8 +1238,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "night",
     lore: [
-      '<span style="color:#555555"><em>Камень был лишь ножнами. Истинный клинок —</em></span>',
-      '<span style="color:#555555"><em>то, что в них спало, пока не явился достойный.</em></span>'
+      '<span style="color:#808080"><em>Камень был лишь ножнами. Истинный клинок —</em></span>',
+      '<span style="color:#808080"><em>то, что в них спало, пока не явился достойный.</em></span>'
     ],
     abilities: [
       {
@@ -1295,8 +1295,8 @@ const items = [
     rarityLabel: "Терра",
     line: "jungle",
     lore: [
-      '<span style="color:#555555"><em>Лес вырастил его сам — из корней, света</em></span>',
-      '<span style="color:#555555"><em>и всего, что в нём когда-то умерло и проросло вновь.</em></span>'
+      '<span style="color:#808080"><em>Лес вырастил его сам — из корней, света</em></span>',
+      '<span style="color:#808080"><em>и всего, что в нём когда-то умерло и проросло вновь.</em></span>'
     ],
     abilities: [
       {
@@ -1305,7 +1305,7 @@ const items = [
         trigger: "Зажать ПКМ",
         kind: "hold",
         rest: null,
-        text: '<span>Пока кнопка зажата, клинок строчит зелёными лучами:</span> <span>1 урон и отравление первому, кого луч заденет.</span> <br><span style="color:#555555">Союзников лучи проходят насквозь.</span>'
+        text: '<span>Пока кнопка зажата, клинок строчит зелёными лучами:</span> <span>1 урон и отравление первому, кого луч заденет.</span> <br><span style="color:#808080">Союзников лучи проходят насквозь.</span>'
       },
       {
         name: "Щит жизни",
@@ -1336,12 +1336,12 @@ const items = [
     rarityLabel: "Терра",
     line: "terra",
     lore: [
-      '<span style="color:#555555"><em>Тетиву свили из корня, что старше гор.</em></span>',
-      '<span style="color:#555555"><em>Лес не стреляет. Лес связывает — и ждёт.</em></span>',
+      '<span style="color:#808080"><em>Тетиву свили из корня, что старше гор.</em></span>',
+      '<span style="color:#808080"><em>Лес не стреляет. Лес связывает — и ждёт.</em></span>',
       "",
       "",
       "",
-      '<span style="color:#555555">Зачаровывается как обычный лук.</span>'
+      '<span style="color:#808080">Зачаровывается как обычный лук.</span>'
     ],
     abilities: [
       {
@@ -1381,8 +1381,8 @@ const items = [
     rarityLabel: "Терра",
     line: "jungle",
     lore: [
-      '<span style="color:#555555"><em>Предки не оставили ответа. Они оставили вопрос —</em></span>',
-      '<span style="color:#555555"><em>и тому, кто сумеет его вынести, суждено стать легендой.</em></span>'
+      '<span style="color:#808080"><em>Предки не оставили ответа. Они оставили вопрос —</em></span>',
+      '<span style="color:#808080"><em>и тому, кто сумеет его вынести, суждено стать легендой.</em></span>'
     ],
     abilities: [
       {
@@ -1438,8 +1438,8 @@ const items = [
     rarityLabel: "Терра",
     line: "jungle",
     lore: [
-      '<span style="color:#555555"><em>Самые красивые цветы дарят тем,</em></span>',
-      '<span style="color:#555555"><em>кому собираются солгать.</em></span>'
+      '<span style="color:#808080"><em>Самые красивые цветы дарят тем,</em></span>',
+      '<span style="color:#808080"><em>кому собираются солгать.</em></span>'
     ],
     abilities: [
       {
@@ -1479,8 +1479,8 @@ const items = [
     rarityLabel: "Целестиальная",
     line: "forgotten",
     lore: [
-      '<span style="color:#555555"><em>Ответ на вопрос предков — тот, которого никто не ждал.</em></span>',
-      '<span style="color:#555555"><em>Ответ сплетён из света.</em></span>'
+      '<span style="color:#808080"><em>Ответ на вопрос предков — тот, которого никто не ждал.</em></span>',
+      '<span style="color:#808080"><em>Ответ сплетён из света.</em></span>'
     ],
     abilities: [
       {
@@ -1512,7 +1512,7 @@ const items = [
     rarityLabel: "Целестиальная",
     line: "forgotten",
     lore: [
-      '<span style="color:#555555"><em>Предки строили не стены. Они строили порядок.</em></span>'
+      '<span style="color:#808080"><em>Предки строили не стены. Они строили порядок.</em></span>'
     ],
     abilities: [
       {
@@ -1544,8 +1544,8 @@ const items = [
     rarityLabel: "Техно",
     line: "techno",
     lore: [
-      '<span style="color:#555555"><em>Сталь, провод и багряный свет. Фабрика дарит его</em></span>',
-      '<span style="color:#555555"><em>каждому, кто впустил её в свою кровь.</em></span>'
+      '<span style="color:#808080"><em>Сталь, провод и багряный свет. Фабрика дарит его</em></span>',
+      '<span style="color:#808080"><em>каждому, кто впустил её в свою кровь.</em></span>'
     ],
     abilities: [
       {
@@ -1562,7 +1562,7 @@ const items = [
         trigger: "ПКМ",
         kind: "rmb",
         rest: null,
-        text: '<span>Голем на 60 секунд бьёт тех, кого бьёте вы.</span> <br><span style="color:#555555">Снова — через 30 секунд после его гибели.</span>'
+        text: '<span>Голем на 60 секунд бьёт тех, кого бьёте вы.</span> <br><span style="color:#808080">Снова — через 30 секунд после его гибели.</span>'
       },
       {
         name: "Отталкивающий луч",
@@ -1570,7 +1570,7 @@ const items = [
         trigger: "Зажать ПКМ",
         kind: "hold",
         rest: null,
-        text: '<span>Луч до самой стены: 0,5 урона и сильный отброс</span> <span>всех на пути; кто в нём остался, того несёт дальше.</span> <br><span style="color:#555555">Без перезарядки.</span>'
+        text: '<span>Луч до самой стены: 0,5 урона и сильный отброс</span> <span>всех на пути; кто в нём остался, того несёт дальше.</span> <br><span style="color:#808080">Без перезарядки.</span>'
       }
     ],
     stats: "Урон 10 · Скорость 1.6",
@@ -1593,8 +1593,8 @@ const items = [
     rarityLabel: "Техно",
     line: "techno",
     lore: [
-      '<span style="color:#555555"><em>Второе поколение. Тоньше, быстрее,</em></span>',
-      '<span style="color:#555555"><em>и в нём не осталось ни одного изъяна.</em></span>'
+      '<span style="color:#808080"><em>Второе поколение. Тоньше, быстрее,</em></span>',
+      '<span style="color:#808080"><em>и в нём не осталось ни одного изъяна.</em></span>'
     ],
     abilities: [
       {
@@ -1611,7 +1611,7 @@ const items = [
         trigger: "ПКМ",
         kind: "rmb",
         rest: null,
-        text: '<span>Три голема на 60 секунд бьют тех, кого бьёте вы.</span> <br><span style="color:#555555">Снова — через 30 секунд после гибели последнего.</span>'
+        text: '<span>Три голема на 60 секунд бьют тех, кого бьёте вы.</span> <br><span style="color:#808080">Снова — через 30 секунд после гибели последнего.</span>'
       },
       {
         name: "Лазеры",
@@ -1642,8 +1642,8 @@ const items = [
     rarityLabel: "Техно",
     line: "techno",
     lore: [
-      '<span style="color:#555555"><em>На нём нет нитей. Его ковали, чтобы</em></span>',
-      '<span style="color:#555555"><em>мир наконец заработал как следует.</em></span>'
+      '<span style="color:#808080"><em>На нём нет нитей. Его ковали, чтобы</em></span>',
+      '<span style="color:#808080"><em>мир наконец заработал как следует.</em></span>'
     ],
     abilities: [
       {
@@ -1676,7 +1676,7 @@ const items = [
         trigger: "Правый клик по блоку",
         kind: "other",
         rest: null,
-        text: '<span>Поле на 20 блоков — навсегда. Вам и союзникам</span> <span>в нём — сопротивление, +50% урона, перезарядки</span> <span>на треть быстрее, и голод не тратит еду,</span> <span>кроме как на лечение. Каждая смерть в поле</span> <span>расширяет его на 2 блока.</span> <br><span style="color:#555555">Убрать: /vswords dominance off</span>'
+        text: '<span>Поле на 20 блоков — навсегда. Вам и союзникам</span> <span>в нём — сопротивление, +50% урона, перезарядки</span> <span>на треть быстрее, и голод не тратит еду,</span> <span>кроме как на лечение. Каждая смерть в поле</span> <span>расширяет его на 2 блока.</span> <br><span style="color:#808080">Убрать: /vswords dominance off</span>'
       },
       {
         name: "Лазерный луч",
@@ -1707,8 +1707,8 @@ const items = [
     rarityLabel: "Небесная",
     line: "sky",
     lore: [
-      '<span style="color:#555555"><em>Титан света, чьё имя носит этот клинок,</em></span>',
-      '<span style="color:#555555"><em>для которого расстояние перестаёт быть преградой.</em></span>'
+      '<span style="color:#808080"><em>Титан света, чьё имя носит этот клинок,</em></span>',
+      '<span style="color:#808080"><em>для которого расстояние перестаёт быть преградой.</em></span>'
     ],
     abilities: [
       {
@@ -1740,7 +1740,7 @@ const items = [
     rarityLabel: "Адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Оно моргает. Это не отражение.</em></span>',
+      '<span style="color:#808080"><em>Оно моргает. Это не отражение.</em></span>',
       "",
       '<span style="color:#AAAAAA">Вплавляется в клинок и меняет его природу —</span>',
       '<span style="color:#AAAAAA">на верстаке или у алтаря Незеритовой кузни.</span>',
@@ -1764,7 +1764,7 @@ const items = [
     rarityLabel: "Терра",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Алмаз, перекованный вокруг изумрудной жилы.</em></span>',
+      '<span style="color:#808080"><em>Алмаз, перекованный вокруг изумрудной жилы.</em></span>',
       "",
       '<span style="color:#AAAAAA">Металл, который не тупится.</span>'
     ],
@@ -1785,7 +1785,7 @@ const items = [
     rarityLabel: "Супер-адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Три головы — и ни одной мысли, кроме голода.</em></span>',
+      '<span style="color:#808080"><em>Три головы — и ни одной мысли, кроме голода.</em></span>',
       "",
       '<span style="color:#AAAAAA">Её отдают алтарю Незеритовой кузни вместе с Бедствием —</span>',
       '<span style="color:#AAAAAA">и оно становится Волей Демона.</span>'
@@ -1807,7 +1807,7 @@ const items = [
     rarityLabel: "Адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Кусок того, что горело в кузне дольше, чем стоит мир.</em></span>',
+      '<span style="color:#808080"><em>Кусок того, что горело в кузне дольше, чем стоит мир.</em></span>',
       "",
       '<span style="color:#AAAAAA">Незеритовая кузня принимает его в уплату.</span>'
     ],
@@ -1828,7 +1828,7 @@ const items = [
     rarityLabel: "Небесная",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Свет, который упал и не разбился до конца.</em></span>',
+      '<span style="color:#808080"><em>Свет, который упал и не разбился до конца.</em></span>',
       "",
       '<span style="color:#AAAAAA">Небесный и Тёмный храмы принимают его в уплату.</span>'
     ],
@@ -1849,7 +1849,7 @@ const items = [
     rarityLabel: "Терра",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Зелёный камень, который помнит, каким был лес до леса.</em></span>',
+      '<span style="color:#808080"><em>Зелёный камень, который помнит, каким был лес до леса.</em></span>',
       "",
       '<span style="color:#AAAAAA">Храм джунглей принимает его в уплату.</span>'
     ],
@@ -1870,7 +1870,7 @@ const items = [
     rarityLabel: "Кровавая",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Оно всё ещё слушает. Не шумите.</em></span>',
+      '<span style="color:#808080"><em>Оно всё ещё слушает. Не шумите.</em></span>',
       "",
       '<span style="color:#AAAAAA">Падает с Хранителя, сражённого особым клинком.</span>',
       '<span style="color:#AAAAAA">Им питается Реквием девятого неба.</span>'
@@ -1892,7 +1892,7 @@ const items = [
     rarityLabel: "Ультра-адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Горнило остыло. Это — всё, что в нём ещё горит.</em></span>',
+      '<span style="color:#808080"><em>Горнило остыло. Это — всё, что в нём ещё горит.</em></span>',
       "",
       '<span style="color:#AAAAAA">Нужно, чтобы перековать клинок в последнюю форму.</span>'
     ],
@@ -1913,7 +1913,7 @@ const items = [
     rarityLabel: "Небесная",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Он падал долго. Это перо падало дольше.</em></span>',
+      '<span style="color:#808080"><em>Он падал долго. Это перо падало дольше.</em></span>',
       "",
       '<span style="color:#AAAAAA">Небесный храм ценит его выше золота.</span>'
     ],
@@ -1934,7 +1934,7 @@ const items = [
     rarityLabel: "Терра",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Оно всё ещё бьётся. Корни вокруг него — тоже.</em></span>',
+      '<span style="color:#808080"><em>Оно всё ещё бьётся. Корни вокруг него — тоже.</em></span>',
       "",
       '<span style="color:#AAAAAA">Храм джунглей куёт из него Терра-блейд и Энигму.</span>'
     ],
@@ -1955,7 +1955,7 @@ const items = [
     rarityLabel: "Техно",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Шестерня, которая всё ещё тёплая. Изнутри.</em></span>',
+      '<span style="color:#808080"><em>Шестерня, которая всё ещё тёплая. Изнутри.</em></span>',
       "",
       '<span style="color:#AAAAAA">Терминал Древней фабрики принимает её в уплату.</span>'
     ],
@@ -1976,7 +1976,7 @@ const items = [
     rarityLabel: "Небесная",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Воск чёрный, оттиск — луна. Сломать её страшно.</em></span>',
+      '<span style="color:#808080"><em>Воск чёрный, оттиск — луна. Сломать её страшно.</em></span>',
       "",
       '<span style="color:#AAAAAA">Падает с Серафима третьего испытания.</span>',
       '<span style="color:#AAAAAA">Правый клик: небесная кровь третьей формы</span>',
@@ -1999,7 +1999,7 @@ const items = [
     rarityLabel: "Ультра-адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Она не отражает свет. Она его ест.</em></span>',
+      '<span style="color:#808080"><em>Она не отражает свет. Она его ест.</em></span>',
       "",
       '<span style="color:#AAAAAA">Висит в рамке над троном Проклятого замка.</span>',
       '<span style="color:#AAAAAA">Вместе с короной крови становится Все-Чёрным.</span>',
@@ -2022,7 +2022,7 @@ const items = [
     rarityLabel: "Терра",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Многогранник, в котором бьётся зелёное сердце земли.</em></span>',
+      '<span style="color:#808080"><em>Многогранник, в котором бьётся зелёное сердце земли.</em></span>',
       "",
       '<span style="color:#AAAAAA">Остаётся после Джунглевого голема в Терра-подземелье.</span>',
       '<span style="color:#AAAAAA">Ключ к четвёртой форме крови предков и часть Тессеракта.</span>',
@@ -2046,7 +2046,7 @@ const items = [
     rarityLabel: "Супер-адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Многогранник, в котором тлеет красное сердце Незера.</em></span>',
+      '<span style="color:#808080"><em>Многогранник, в котором тлеет красное сердце Незера.</em></span>',
       "",
       '<span style="color:#AAAAAA">Хранится в часовой башне Проклятого замка.</span>',
       '<span style="color:#AAAAAA">Ключ к четвёртой форме пепельной крови и часть Тессеракта.</span>',
@@ -2070,10 +2070,10 @@ const items = [
     rarityLabel: "Терра",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Стрелку тянет вниз, под корни, к зелёному сердцу.</em></span>',
+      '<span style="color:#808080"><em>Стрелку тянет вниз, под корни, к зелёному сердцу.</em></span>',
       "",
       '<span style="color:#AAAAAA">Указывает путь к Терра-подземелью.</span>',
-      '<span style="color:#555555">Собирает кровь предков у алтаря Храма джунглей.</span>'
+      '<span style="color:#808080">Собирает кровь предков у алтаря Храма джунглей.</span>'
     ],
     abilities: [],
     stats: "",
@@ -2092,7 +2092,7 @@ const items = [
     rarityLabel: "Супер-адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Стрелки стоят. Время идёт — для всех, кроме владельца.</em></span>',
+      '<span style="color:#808080"><em>Стрелки стоят. Время идёт — для всех, кроме владельца.</em></span>',
       "",
       '<span style="color:#AAAAAA">Спасают от смерти, как тотем бессмертия,</span>',
       '<span style="color:#AAAAAA">и на 5 секунд останавливают время вокруг.</span>',
@@ -2115,7 +2115,7 @@ const items = [
     rarityLabel: "Терра",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Мох на нём ещё помнит, как дышит голем.</em></span>',
+      '<span style="color:#808080"><em>Мох на нём ещё помнит, как дышит голем.</em></span>',
       "",
       '<span style="color:#AAAAAA">Правый клик в большом зале Терра-подземелья,</span>',
       '<span style="color:#AAAAAA">когда Джунглевый голем пал и Терра-сущность</span>',
@@ -2123,7 +2123,7 @@ const items = [
       '<span style="color:#AAAAAA">10 секунд на ней —</span>',
       '<span style="color:#AAAAAA">и отряд уходит в Забытый мир.</span>',
       '<span style="color:#55FF55">Внизу ждёт Истинный Джунглевый голем.</span>',
-      '<span style="color:#555555">Тратится, когда открывает путь.</span>'
+      '<span style="color:#808080">Тратится, когда открывает путь.</span>'
     ],
     abilities: [],
     stats: "",
@@ -2142,7 +2142,7 @@ const items = [
     rarityLabel: "Целестиальная",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Он открывает не дверь, а небо за ней.</em></span>',
+      '<span style="color:#808080"><em>Он открывает не дверь, а небо за ней.</em></span>',
       "",
       '<span style="color:#AAAAAA">Правый клик в большом зале Терра-подземелья,</span>',
       '<span style="color:#AAAAAA">когда Джунглевый голем пал и Терра-сущность</span>',
@@ -2150,7 +2150,7 @@ const items = [
       '<span style="color:#AAAAAA">10 секунд на ней —</span>',
       '<span style="color:#AAAAAA">и отряд уходит в Забытый мир.</span>',
       '<span style="color:#FFAA00">Внизу ждёт Целестиал.</span>',
-      '<span style="color:#555555">Тратится, когда открывает путь.</span>'
+      '<span style="color:#808080">Тратится, когда открывает путь.</span>'
     ],
     abilities: [],
     stats: "",
@@ -2169,7 +2169,7 @@ const items = [
     rarityLabel: "Супер-адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Зубцы стёрты с обратной стороны: её крутили против хода.</em></span>'
+      '<span style="color:#808080"><em>Зубцы стёрты с обратной стороны: её крутили против хода.</em></span>'
     ],
     abilities: [
       {
@@ -2197,7 +2197,7 @@ const items = [
     rarityLabel: "Техно",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Оно тикает. Не как часы — как сердце.</em></span>',
+      '<span style="color:#808080"><em>Оно тикает. Не как часы — как сердце.</em></span>',
       "",
       '<span style="color:#AAAAAA">Всё, что осталось от Предвестника.</span>'
     ],
@@ -2218,7 +2218,7 @@ const items = [
     rarityLabel: "Техно",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Сложен в ладонь. Развернётся сам.</em></span>',
+      '<span style="color:#808080"><em>Сложен в ладонь. Развернётся сам.</em></span>',
       "",
       '<span style="color:#AAAAAA">Правый клик: медный голем на 60 секунд,</span>',
       '<span style="color:#AAAAAA">как у Энцефало-меча. Предмет тратится.</span>'
@@ -2240,7 +2240,7 @@ const items = [
     rarityLabel: "Техно",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Маленький. Злой. Помнит своего создателя.</em></span>',
+      '<span style="color:#808080"><em>Маленький. Злой. Помнит своего создателя.</em></span>',
       "",
       '<span style="color:#AAAAAA">Правый клик: малый Предвестник на 60 секунд,</span>',
       '<span style="color:#AAAAAA">с лучом смерти и ракетами. Предмет тратится.</span>'
@@ -2262,7 +2262,7 @@ const items = [
     rarityLabel: "Терра",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Зелёный металл помнит, где лежит всё живое.</em></span>'
+      '<span style="color:#808080"><em>Зелёный металл помнит, где лежит всё живое.</em></span>'
     ],
     abilities: [
       {
@@ -2290,7 +2290,7 @@ const items = [
     rarityLabel: "Терра",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Из щелей пахнет болотом. Кто-то внутри шуршит.</em></span>'
+      '<span style="color:#808080"><em>Из щелей пахнет болотом. Кто-то внутри шуршит.</em></span>'
     ],
     abilities: [
       {
@@ -2318,7 +2318,7 @@ const items = [
     rarityLabel: "Небесная",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Её открывают тихо: внутри поют.</em></span>'
+      '<span style="color:#808080"><em>Её открывают тихо: внутри поют.</em></span>'
     ],
     abilities: [
       {
@@ -2346,7 +2346,7 @@ const items = [
     rarityLabel: "Супер-адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Обугленный сундучок. Тёплый, даже зимой.</em></span>'
+      '<span style="color:#808080"><em>Обугленный сундучок. Тёплый, даже зимой.</em></span>'
     ],
     abilities: [
       {
@@ -2374,7 +2374,7 @@ const items = [
     rarityLabel: "Адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Споры с пеплом и порохом. Лучше не нюхать.</em></span>'
+      '<span style="color:#808080"><em>Споры с пеплом и порохом. Лучше не нюхать.</em></span>'
     ],
     abilities: [
       {
@@ -2402,7 +2402,7 @@ const items = [
     rarityLabel: "Небесная",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Ангел трубит — и стрелы не долетают.</em></span>'
+      '<span style="color:#808080"><em>Ангел трубит — и стрелы не долетают.</em></span>'
     ],
     abilities: [
       {
@@ -2430,7 +2430,7 @@ const items = [
     rarityLabel: "Небесная",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Весы не видят, чья рана. Они делят.</em></span>'
+      '<span style="color:#808080"><em>Весы не видят, чья рана. Они делят.</em></span>'
     ],
     abilities: [
       {
@@ -2458,7 +2458,7 @@ const items = [
     rarityLabel: "Небесная",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Чёрная луна течёт на землю и укрывает тебя.</em></span>'
+      '<span style="color:#808080"><em>Чёрная луна течёт на землю и укрывает тебя.</em></span>'
     ],
     abilities: [
       {
@@ -2486,11 +2486,11 @@ const items = [
     rarityLabel: "Техно",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Внутри него — целый цех. Сложенный.</em></span>',
+      '<span style="color:#808080"><em>Внутри него — целый цех. Сложенный.</em></span>',
       "",
       '<span style="color:#AAAAAA">Правый клик: купол на минуту. В нём собираются</span>',
       '<span style="color:#AAAAAA">автоматоны и бьют врагов. Предмет не тратится.</span>',
-      '<span style="color:#555555">Перезарядка 2 минуты.</span>'
+      '<span style="color:#808080">Перезарядка 2 минуты.</span>'
     ],
     abilities: [],
     stats: "",
@@ -2509,7 +2509,7 @@ const items = [
     rarityLabel: "Ультра-адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Земля и пекло, запертые в одной грани.</em></span>'
+      '<span style="color:#808080"><em>Земля и пекло, запертые в одной грани.</em></span>'
     ],
     abilities: [
       {
@@ -2518,7 +2518,7 @@ const items = [
         trigger: "Цвет подсказывает, что будет",
         kind: "other",
         rest: null,
-        text: '<span style="color:#FF5555">Красный</span><span> — в чужом куполе, поле, эдикте или</span> <span>под чужой Луной: развеивает их.</span> <br><span style="color:#55FF55">Зелёный</span><span> — не всё здоровье: +50% вам и своим рядом.</span> <br><span style="color:#55FFFF">Голубой</span><span> — в мире: к случайному храму.</span> <br><span style="color:#FFAA00">Оранжевый</span><span> — в Незере: к Незеритовой кузне.</span> <br><span style="color:#FF55FF">Фиолетовый</span><span> — в Энде: к точке возрождения.</span> <span>Переносит всех в круге рядом; круг горит</span> <span>ещё немного и забирает вошедших.</span> <br><span style="color:#555555">Серый — перезарядка: 10 минут, лечение — 5.</span>'
+        text: '<span style="color:#FF5555">Красный</span><span> — в чужом куполе, поле, эдикте или</span> <span>под чужой Луной: развеивает их.</span> <br><span style="color:#55FF55">Зелёный</span><span> — не всё здоровье: +50% вам и своим рядом.</span> <br><span style="color:#55FFFF">Голубой</span><span> — в мире: к случайному храму.</span> <br><span style="color:#FFAA00">Оранжевый</span><span> — в Незере: к Незеритовой кузне.</span> <br><span style="color:#FF55FF">Фиолетовый</span><span> — в Энде: к точке возрождения.</span> <span>Переносит всех в круге рядом; круг горит</span> <span>ещё немного и забирает вошедших.</span> <br><span style="color:#808080">Серый — перезарядка: 10 минут, лечение — 5.</span>'
       }
     ],
     stats: "",
@@ -2537,7 +2537,7 @@ const items = [
     rarityLabel: "Супер-адская",
     line: "material",
     lore: [
-      '<span style="color:#555555"><em>Горнило не умирает. Оно отдаёт то, что в нём горело.</em></span>',
+      '<span style="color:#808080"><em>Горнило не умирает. Оно отдаёт то, что в нём горело.</em></span>',
       "",
       '<span style="color:#AAAAAA">Остаётся там, где пало Горнило</span>',
       '<span style="color:#AAAAAA">третьего испытания Незеритовой кузни.</span>',

@@ -156,9 +156,9 @@ section > h3 { margin-top: 18px; }
 .tlore { margin-top: 6px; display: grid; gap: 1px; }
 .tlore .gap { height: 7px; }
 .tlore em { font-style: italic; }
-.tstats { margin-top: 8px; color: #555; }
+.tstats { margin-top: 8px; color: #808080; }
 .tstats b { color: #aaa; font-weight: 400; }
-.trar { margin-top: 6px; color: #555; }
+.trar { margin-top: 6px; color: #808080; }
 .trar .paint { font-weight: 600; }
 .slot { width: 80px; height: 80px; flex: none; padding: 7px; background: var(--slot); box-shadow: inset 3px 3px 0 var(--slot-lo), inset -3px -3px 0 var(--slot-hi); display: grid; place-items: center; }
 .slot img { width: 100%; height: 100%; image-rendering: pixelated; }
