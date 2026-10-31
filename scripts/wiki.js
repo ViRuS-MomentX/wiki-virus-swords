@@ -204,11 +204,11 @@ const _sfc_main$y = {
     onBeforeUnmount(() => {
       observer == null ? void 0 : observer.disconnect();
       document.removeEventListener("keydown", onKey);
-      window.removeEventListener("resize", edges);
+      window.removeEventListener("resize", edges2);
     });
     const moreLeft = ref(false);
     const moreRight = ref(false);
-    function edges() {
+    function edges2() {
       const el = nav.value;
       if (!el) return;
       moreLeft.value = el.scrollLeft > 2;
@@ -225,10 +225,10 @@ const _sfc_main$y = {
       el.scrollLeft += e.deltaY;
     }
     onMounted(() => {
-      edges();
-      window.addEventListener("resize", edges);
+      edges2();
+      window.addEventListener("resize", edges2);
     });
-    watch(current, () => setTimeout(edges, 400));
+    watch(current, () => setTimeout(edges2, 400));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("header", _hoisted_1$u, [
         createBaseVNode("div", _hoisted_2$r, [
@@ -375,7 +375,7 @@ const _sfc_main$y = {
               ref: nav,
               class: "nav",
               "aria-label": "Разделы",
-              onScrollPassive: edges,
+              onScrollPassive: edges2,
               onWheel
             }, [
               (openBlock(), createElementBlock(Fragment, null, renderList(sections, ([id, title, count]) => {
@@ -5739,6 +5739,27 @@ const _sfc_main = {
   }
 };
 createApp(_sfc_main).mount("#app");
+const edges = (el) => {
+  const max = el.scrollWidth - el.clientWidth;
+  el.classList.toggle("more-left", max > 1 && el.scrollLeft > 1);
+  el.classList.toggle("more-right", max > 1 && el.scrollLeft < max - 1);
+};
+let queued = false;
+const markAll = () => {
+  if (queued) return;
+  queued = true;
+  requestAnimationFrame(() => {
+    queued = false;
+    document.querySelectorAll(".tbl").forEach(edges);
+  });
+};
+document.addEventListener("scroll", (e) => {
+  var _a;
+  if ((_a = e.target.classList) == null ? void 0 : _a.contains("tbl")) edges(e.target);
+}, { capture: true, passive: true });
+addEventListener("resize", markAll);
+new MutationObserver(markAll).observe(document.getElementById("app"), { childList: true, subtree: true });
+markAll();
 document.addEventListener("click", (e) => {
   const a = e.target.closest('a[href^="#w-"]');
   if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;

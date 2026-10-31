@@ -239,7 +239,19 @@ section > h3 { margin-top: 18px; }
 .card dl { margin: 0; display: grid; gap: 8px; }
 
 /* --- tables --------------------------------------------------------------------------------- */
-.tbl { overflow-x: auto; background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--r-box); }
+.tbl { overflow-x: auto; background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--r-box); overscroll-behavior-x: contain; }
+/* A table wider than its box fades out on the side it goes on past (main.js marks which). */
+.tbl.more-right { mask-image: linear-gradient(to left, transparent, #000 44px); }
+.tbl.more-left:not(:has(tbody th[scope=row])) { mask-image: linear-gradient(to right, transparent, #000 44px); }
+.tbl.more-left.more-right:not(:has(tbody th[scope=row])) { mask-image: linear-gradient(to right, transparent, #000 44px calc(100% - 44px), transparent); }
+/* On a phone the row names stay put while the rest scrolls under them. */
+@media (max-width: 640px) {
+  .tbl:has(tbody th[scope=row]) tbody th, .tbl:has(tbody th[scope=row]) thead th:first-child { position: sticky; left: 0; z-index: 1; box-shadow: 1px 0 0 var(--line-soft); }
+  .tbl:has(tbody th[scope=row]) tbody th { background: var(--surface); white-space: normal; min-width: 7.5em; max-width: 9.5em; }
+  th, td { padding: 9px 11px; }
+  td { min-width: 8em; }
+  td.num, th.num { min-width: 0; }
+}
 table { border-collapse: collapse; width: 100%; font-size: .91rem; }
 th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
 thead th { font: 600 .8rem/1.3 var(--body); color: var(--muted); background: var(--bg-2); white-space: nowrap; }
