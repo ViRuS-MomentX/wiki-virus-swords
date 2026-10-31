@@ -2844,7 +2844,8 @@ const _hoisted_18$3 = ["src"];
 const _hoisted_19$3 = { class: "sr-only" };
 const _hoisted_20$3 = {
   key: 0,
-  class: "empty cat-empty"
+  class: "cat-empty",
+  role: "status"
 };
 const _hoisted_21$3 = { class: "cv-head" };
 const _hoisted_22$2 = { class: "cv-tags" };
@@ -3074,7 +3075,7 @@ const _sfc_main$c = {
                 }, "Сбросить фильтры")) : createCommentVNode("", true)
               ])
             ]),
-            createBaseVNode("div", {
+            withDirectives(createBaseVNode("div", {
               class: "cat-grid",
               role: "listbox",
               "aria-label": "Предметы",
@@ -3104,9 +3105,26 @@ const _sfc_main$c = {
                     "aria-hidden": "true"
                   }, null, 4)) : createCommentVNode("", true)
                 ], 10, _hoisted_17$4);
-              }), 128)),
-              !shown.value.length ? (openBlock(), createElementBlock("p", _hoisted_20$3, "Ничего не нашлось. Уберите часть фильтров.")) : createCommentVNode("", true)
-            ], 32)
+              }), 128))
+            ], 544), [
+              [vShow, shown.value.length]
+            ]),
+            !shown.value.length ? (openBlock(), createElementBlock("div", _hoisted_20$3, [
+              _cache[9] || (_cache[9] = createBaseVNode("span", {
+                class: "cat-empty-slot",
+                "aria-hidden": "true"
+              }, null, -1)),
+              _cache[10] || (_cache[10] = createBaseVNode("p", null, [
+                createBaseVNode("strong", null, "Под такие фильтры не подходит ни один предмет."),
+                createBaseVNode("br"),
+                createTextVNode("Уберите часть условий или начните заново.")
+              ], -1)),
+              createBaseVNode("button", {
+                type: "button",
+                class: "suggest-chip",
+                onClick: reset
+              }, "Сбросить фильтры")
+            ])) : createCommentVNode("", true)
           ]),
           createBaseVNode("article", {
             ref_key: "viewer",
@@ -3157,7 +3175,7 @@ const _sfc_main$c = {
             ])) : createCommentVNode("", true),
             current.value.kind === "weapon" ? (openBlock(), createElementBlock("div", _hoisted_29$2, [
               createBaseVNode("div", _hoisted_30$1, [
-                _cache[9] || (_cache[9] = createBaseVNode("span", { class: "statbar-label" }, "Урон", -1)),
+                _cache[11] || (_cache[11] = createBaseVNode("span", { class: "statbar-label" }, "Урон", -1)),
                 createBaseVNode("span", _hoisted_31$1, [
                   createBaseVNode("span", {
                     class: "statbar-fill",
@@ -3167,7 +3185,7 @@ const _sfc_main$c = {
                 createBaseVNode("b", _hoisted_32$1, toDisplayString(current.value.damage), 1)
               ]),
               createBaseVNode("div", _hoisted_33$1, [
-                _cache[10] || (_cache[10] = createBaseVNode("span", { class: "statbar-label" }, "Скорость", -1)),
+                _cache[12] || (_cache[12] = createBaseVNode("span", { class: "statbar-label" }, "Скорость", -1)),
                 createBaseVNode("span", _hoisted_34$1, [
                   createBaseVNode("span", {
                     class: "statbar-fill",
@@ -3183,7 +3201,7 @@ const _sfc_main$c = {
             }, null, 8, ["abilities"])) : createCommentVNode("", true),
             createBaseVNode("div", _hoisted_36$1, [
               createBaseVNode("h4", null, [
-                _cache[11] || (_cache[11] = createTextVNode("Как получить ", -1)),
+                _cache[13] || (_cache[13] = createTextVNode("Как получить ", -1)),
                 createBaseVNode("span", {
                   class: normalizeClass(["mbadge", `m-${current.value.method}`])
                 }, toDisplayString(current.value.methodLabel), 3)

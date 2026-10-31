@@ -630,7 +630,10 @@ main { padding-inline: max(24px, env(safe-area-inset-left, 0px)) max(24px, env(s
 .catslot.on { background: #c6c6c6; }
 .catslot.on::after { content: ""; position: absolute; inset: -3px; border: 3px solid #fff; box-shadow: 0 0 0 1px #000, inset 0 0 0 1px #000; pointer-events: none; }
 .catslot-blood { position: absolute; left: 4px; top: 4px; width: 7px; height: 7px; border-radius: 50%; box-shadow: 0 0 0 1px #000; }
-.cat-empty { grid-column: 1 / -1; color: #ddd; padding: 12px; }
+.cat-empty { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 10px; padding: 14px 16px; border: 1px dashed var(--line); border-radius: 10px; color: var(--ink-2); font-size: .92rem; }
+.cat-empty p { flex: 1 1 220px; margin: 0; }
+.cat-empty strong { color: var(--ink); }
+.cat-empty-slot { flex: none; width: 40px; height: 40px; background: #8b8b8b; box-shadow: inset 3px 3px 0 #373737, inset -3px -3px 0 #fff; opacity: .55; }
 .cat-view { position: sticky; top: 76px; display: grid; gap: 14px; padding: 18px 20px 20px; border-radius: 16px; border: 1px solid var(--line-soft);
   background: radial-gradient(80% 55% at 50% 22%, color-mix(in srgb, var(--w1) 16%, transparent), transparent 70%), linear-gradient(180deg, #1d1529, #150f1e);
   max-height: calc(100vh - 92px); overflow-y: auto; scrollbar-width: thin; min-width: 0; }
