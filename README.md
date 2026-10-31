@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/%D0%B4%D0%BE%D1%81%D1%82%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-38-8a5cf6" alt="достижений: 38">
 </p>
 
-**VirusSwords** — плагин для Minecraft о клинках, которые выбирают своих хозяев. 33 клинков со своими моделями и способностями, шесть родословных, святилища со стражами и боссами, Проклятый замок на крыше Незера и сюжет, который ведут Путеводитель, Наблюдатель и ZorahM-GPT.
+**VirusSwords** — плагин для Minecraft о клинках, которые выбирают своих хозяев. 33 клинка со своими моделями и способностями, шесть родословных, святилища со стражами и боссами, Проклятый замок на крыше Незера и сюжет, который ведут Путеводитель, Наблюдатель и ZorahM-GPT.
 
 Это репозиторий **Кодекса** — вики плагина. Всё, что нужно игроку, — на сайте:
 **[virus-momentx.github.io/wiki-virus-swords](https://virus-momentx.github.io/wiki-virus-swords/)**
@@ -21,20 +21,21 @@
 
 | Раздел | О чём |
 |---|---|
+| [Каталог](https://virus-momentx.github.io/wiki-virus-swords/#catalog) | все предметы плагина с фильтрами по виду, редкости и крови |
 | [С чего начать](https://virus-momentx.github.io/wiki-virus-swords/#start) | первые шаги: выбор крови, компасы, первый клинок |
 | [Редкости](https://virus-momentx.github.io/wiki-virus-swords/#rarity) | от обычной до ультра-адской, с переливами названий |
-| [Оружие](https://virus-momentx.github.io/wiki-virus-swords/#weapons) | все клинки: урон, способности, где взять |
-| [Материалы](https://virus-momentx.github.io/wiki-virus-swords/#materials) | души, сердца, сущности, осколки и Тессеракт |
+| [Линии клинков](https://virus-momentx.github.io/wiki-virus-swords/#weapons) | все клинки по линиям: урон, способности, где взять |
+| [Крафт](https://virus-momentx.github.io/wiki-virus-swords/#craft) | рецепты верстака: Терра-слиток, Тессеракт, компасы и карты |
 | [Рост клинка](https://virus-momentx.github.io/wiki-virus-swords/#growth) | мастерство, заточка до ★5 и пробуждение |
 | [Святилища](https://virus-momentx.github.io/wiki-virus-swords/#sanctums) | храмы, их стража, боссы, Проклятый замок, Терра-подземелье и Забытый мир |
 | [Испытания](https://virus-momentx.github.io/wiki-virus-swords/#raids) | пять волн святилища, уровни и награды |
-| [Родословные](https://virus-momentx.github.io/wiki-virus-swords/#blood) | шесть кровей, четыре формы, крылья |
+| [Родословные](https://virus-momentx.github.io/wiki-virus-swords/#blood) | шесть кровей, формы, полёт и дары крови |
 | [Достижения](https://virus-momentx.github.io/wiki-virus-swords/#trophies) | все достижения и как их получить |
 | [Для администратора](https://virus-momentx.github.io/wiki-virus-swords/#admin) | установка, ресурспак и настройки |
 
 ## Клинки
 
-Клинки собраны в линии: каждый следующий вырастает из предыдущего или куётся в святилище. Полные способности и рецепты — в разделе [«Оружие»](https://virus-momentx.github.io/wiki-virus-swords/#weapons).
+Клинки собраны в линии: каждый следующий вырастает из предыдущего или куётся в святилище. Полные способности и рецепты — в разделе [«Линии клинков»](https://virus-momentx.github.io/wiki-virus-swords/#weapons).
 
 ### Адская линия
 
