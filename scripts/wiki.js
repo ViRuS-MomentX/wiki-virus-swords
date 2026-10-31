@@ -1585,24 +1585,28 @@ const _hoisted_12$9 = {
   key: 2,
   class: "card-owner"
 };
-const _hoisted_13$8 = { class: "obtain" };
-const _hoisted_14$7 = { class: "obtain-head" };
-const _hoisted_15$7 = ["href"];
-const _hoisted_16$6 = ["innerHTML"];
-const _hoisted_17$6 = ["innerHTML"];
-const _hoisted_18$5 = {
+const _hoisted_13$8 = {
   key: 4,
+  class: "no-abil"
+};
+const _hoisted_14$7 = { class: "obtain" };
+const _hoisted_15$7 = { class: "obtain-head" };
+const _hoisted_16$6 = ["href"];
+const _hoisted_17$6 = ["innerHTML"];
+const _hoisted_18$5 = ["innerHTML"];
+const _hoisted_19$5 = {
+  key: 5,
   class: "card-chain"
 };
-const _hoisted_19$5 = { class: "chain-row" };
-const _hoisted_20$5 = ["data-key"];
-const _hoisted_21$5 = { class: "chain-row" };
-const _hoisted_22$4 = {
+const _hoisted_20$5 = { class: "chain-row" };
+const _hoisted_21$5 = ["data-key"];
+const _hoisted_22$4 = { class: "chain-row" };
+const _hoisted_23$4 = {
   key: 0,
   class: "energy",
   "aria-hidden": "true"
 };
-const _hoisted_23$4 = {
+const _hoisted_24$4 = {
   key: 1,
   class: "arrow",
   "aria-hidden": "true"
@@ -1733,14 +1737,14 @@ const _sfc_main$o = {
         __props.item.abilities && __props.item.abilities.length ? (openBlock(), createBlock(_sfc_main$s, {
           key: 3,
           abilities: __props.item.abilities
-        }, null, 8, ["abilities"])) : createCommentVNode("", true),
-        createBaseVNode("div", _hoisted_13$8, [
-          createBaseVNode("div", _hoisted_14$7, [
+        }, null, 8, ["abilities"])) : __props.item.kind === "weapon" ? (openBlock(), createElementBlock("p", _hoisted_13$8, "Способностей нет — только сталь: урон и скорость.")) : createCommentVNode("", true),
+        createBaseVNode("div", _hoisted_14$7, [
+          createBaseVNode("div", _hoisted_15$7, [
             _cache[3] || (_cache[3] = createBaseVNode("h3", null, "Как получить", -1)),
             createBaseVNode("a", {
               class: normalizeClass(["mbadge", `m-${__props.item.method}`]),
               href: recipe.value ? "#craft" : "#craft-other"
-            }, toDisplayString(__props.item.methodLabel), 11, _hoisted_15$7)
+            }, toDisplayString(__props.item.methodLabel), 11, _hoisted_16$6)
           ]),
           recipe.value ? (openBlock(), createBlock(_sfc_main$t, {
             key: 0,
@@ -1756,16 +1760,16 @@ const _sfc_main$o = {
           createBaseVNode("p", {
             class: normalizeClass(["obtain-text", { muted: altars.value.length }]),
             innerHTML: recipe.value ? recipe.value.note : __props.item.obtain
-          }, null, 10, _hoisted_16$6),
+          }, null, 10, _hoisted_17$6),
           recipe.value && __props.item.obtain.includes(" или ") ? (openBlock(), createElementBlock("p", {
             key: 1,
             class: "obtain-text muted",
             innerHTML: __props.item.obtain
-          }, null, 8, _hoisted_17$6)) : createCommentVNode("", true)
+          }, null, 8, _hoisted_18$5)) : createCommentVNode("", true)
         ]),
-        usedIn.value.length ? (openBlock(), createElementBlock("div", _hoisted_18$5, [
+        usedIn.value.length ? (openBlock(), createElementBlock("div", _hoisted_19$5, [
           _cache[4] || (_cache[4] = createBaseVNode("h3", null, "Нужен для", -1)),
-          createBaseVNode("div", _hoisted_19$5, [
+          createBaseVNode("div", _hoisted_20$5, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(usedIn.value, (u) => {
               return openBlock(), createBlock(_sfc_main$r, {
                 key: u.id,
@@ -1781,17 +1785,17 @@ const _sfc_main$o = {
             "data-key": c.key
           }, [
             createBaseVNode("h3", null, toDisplayString(c.title), 1),
-            createBaseVNode("div", _hoisted_21$5, [
+            createBaseVNode("div", _hoisted_22$4, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(c.entries, (e, i) => {
                 return openBlock(), createElementBlock(Fragment, { key: i }, [
-                  e.sep === "→" ? (openBlock(), createElementBlock("span", _hoisted_22$4)) : e.sep ? (openBlock(), createElementBlock("span", _hoisted_23$4, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
+                  e.sep === "→" ? (openBlock(), createElementBlock("span", _hoisted_23$4)) : e.sep ? (openBlock(), createElementBlock("span", _hoisted_24$4, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
                   createVNode(_sfc_main$r, {
                     item: unref(item)(e.id)
                   }, null, 8, ["item"])
                 ], 64);
               }), 128))
             ])
-          ], 8, _hoisted_20$5);
+          ], 8, _hoisted_21$5);
         }), 128))
       ], 4);
     };
@@ -3011,8 +3015,12 @@ const _hoisted_43$1 = {
   "aria-hidden": "true"
 };
 const _hoisted_44$1 = { class: "statbar-value" };
-const _hoisted_45$1 = { class: "cv-obtain" };
-const _hoisted_46$1 = ["innerHTML"];
+const _hoisted_45$1 = {
+  key: 3,
+  class: "no-abil"
+};
+const _hoisted_46$1 = { class: "cv-obtain" };
+const _hoisted_47$1 = ["innerHTML"];
 const _sfc_main$c = {
   __name: "CatalogSection",
   setup(__props) {
@@ -3427,8 +3435,8 @@ const _sfc_main$c = {
             current.value.abilities.length ? (openBlock(), createBlock(_sfc_main$s, {
               key: 2,
               abilities: current.value.abilities
-            }, null, 8, ["abilities"])) : createCommentVNode("", true),
-            createBaseVNode("div", _hoisted_45$1, [
+            }, null, 8, ["abilities"])) : current.value.kind === "weapon" ? (openBlock(), createElementBlock("p", _hoisted_45$1, "Способностей нет — только сталь: урон и скорость.")) : createCommentVNode("", true),
+            createBaseVNode("div", _hoisted_46$1, [
               createBaseVNode("h4", null, [
                 _cache[17] || (_cache[17] = createTextVNode("Как получить ", -1)),
                 createBaseVNode("span", {
@@ -3437,7 +3445,7 @@ const _sfc_main$c = {
               ]),
               createBaseVNode("p", {
                 innerHTML: current.value.obtain || "Источник описан в разделах ниже."
-              }, null, 8, _hoisted_46$1)
+              }, null, 8, _hoisted_47$1)
             ]),
             createBaseVNode("button", {
               type: "button",
