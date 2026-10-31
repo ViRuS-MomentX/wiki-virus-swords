@@ -553,8 +553,18 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .topbar-in { grid-template-areas: "brand nav search"; }
 .topbar .brand { grid-area: brand; }
 .topbar .search { grid-area: search; }
-.topbar .nav { grid-area: nav; }
-.topbar .nav { flex-direction: row; overflow-x: auto; overflow-y: hidden; gap: 2px; scrollbar-width: none; mask-image: linear-gradient(90deg, transparent, #000 12px, #000 calc(100% - 18px), transparent); padding-inline: 8px; }
+.topbar .nav-wrap { grid-area: nav; position: relative; min-width: 0; display: flex; align-items: center; }
+.topbar .nav { flex: 1 1 auto; min-width: 0; flex-direction: row; overflow-x: auto; overflow-y: hidden; gap: 2px; scrollbar-width: none; padding-inline: 8px; }
+.nav-wrap.more-left .nav { mask-image: linear-gradient(90deg, transparent 0, #000 44px); }
+.nav-wrap.more-right .nav { mask-image: linear-gradient(90deg, #000 calc(100% - 44px), transparent 100%); }
+.nav-wrap.more-left.more-right .nav { mask-image: linear-gradient(90deg, transparent 0, #000 44px, #000 calc(100% - 44px), transparent 100%); }
+.nav-step { position: absolute; top: 50%; z-index: 2; display: grid; place-items: center; width: 28px; height: 28px; margin-top: -14px; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--ink-2); cursor: pointer; opacity: 0; pointer-events: none; transition: opacity .15s, color .15s; }
+.nav-step svg { width: 14px; height: 14px; }
+.nav-step.left { left: -4px; }
+.nav-step.right { right: -4px; }
+.nav-wrap.more-left .nav-step.left, .nav-wrap.more-right .nav-step.right { opacity: 1; pointer-events: auto; }
+.nav-step:hover { color: var(--ink); border-color: var(--soul-line); }
+@media (hover: none) { .nav-step { display: none; } }
 .topbar .nav::-webkit-scrollbar { display: none; }
 .topbar .nav a { flex: none; border-left: 0; border-radius: 8px; padding: 7px 11px; font-size: .9rem; gap: 6px; white-space: nowrap; }
 .topbar .nav a:hover { background: var(--surface); }
@@ -582,7 +592,7 @@ main { padding-inline: max(24px, env(safe-area-inset-left, 0px)) max(24px, env(s
   .topbar-in { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "brand search" "nav nav"; gap: 8px 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
   .topbar .brand { grid-area: brand; }
   .topbar .search { grid-area: search; }
-  .topbar .nav { grid-area: nav; margin-inline: -8px; }
+  .topbar .nav-wrap { grid-area: nav; margin-inline: -8px; }
   main { padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
 }
 

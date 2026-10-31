@@ -1,5 +1,5 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./soft3d.js","./data.js","./model3d.js","./vue.js"])))=>i.map(i=>d[i]);
-import { r as reactive, c as computed, w as watch, o as onMounted, a as onBeforeUnmount, b as openBlock, d as createElementBlock, e as createBaseVNode, u as unref, f as withDirectives, v as vModelText, F as Fragment, g as renderList, h as createCommentVNode, i as createTextVNode, t as toDisplayString, j as ref, n as normalizeClass, k as renderSlot, l as normalizeStyle, m as createVNode, p as withCtx, q as vShow, s as createBlock, x as resolveDynamicComponent, y as nextTick, T as Transition, z as createStaticVNode, A as createApp } from "./vue.js";
+import { r as reactive, c as computed, w as watch, o as onMounted, a as onBeforeUnmount, b as openBlock, d as createElementBlock, e as createBaseVNode, u as unref, f as withDirectives, v as vModelText, F as Fragment, g as renderList, h as createCommentVNode, i as createTextVNode, t as toDisplayString, n as normalizeClass, j as ref, k as renderSlot, l as normalizeStyle, m as createVNode, p as withCtx, q as vShow, s as createBlock, x as resolveDynamicComponent, y as nextTick, T as Transition, z as createStaticVNode, A as createApp } from "./vue.js";
 import { d as data } from "./data.js";
 const norm = (s) => s.toLowerCase().replace(/ё/g, "е");
 const plural = (n, one, few, many) => {
@@ -166,7 +166,31 @@ const _sfc_main$x = {
     onBeforeUnmount(() => {
       observer == null ? void 0 : observer.disconnect();
       document.removeEventListener("keydown", onKey);
+      window.removeEventListener("resize", edges);
     });
+    const moreLeft = ref(false);
+    const moreRight = ref(false);
+    function edges() {
+      const el = nav.value;
+      if (!el) return;
+      moreLeft.value = el.scrollLeft > 2;
+      moreRight.value = el.scrollLeft + el.clientWidth < el.scrollWidth - 2;
+    }
+    function step(dir) {
+      const el = nav.value;
+      if (el) el.scrollBy({ left: dir * el.clientWidth * 0.7, behavior: "smooth" });
+    }
+    function onWheel(e) {
+      const el = nav.value;
+      if (!el || el.scrollWidth <= el.clientWidth || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+      e.preventDefault();
+      el.scrollLeft += e.deltaY;
+    }
+    onMounted(() => {
+      edges();
+      window.addEventListener("resize", edges);
+    });
+    watch(current, () => setTimeout(edges, 400));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("header", _hoisted_1$t, [
         createBaseVNode("div", _hoisted_2$q, [
@@ -176,18 +200,18 @@ const _sfc_main$x = {
               src: unref(data).icons.forge_heart,
               alt: ""
             }, null, 8, _hoisted_4$n),
-            _cache[2] || (_cache[2] = createBaseVNode("span", { class: "brand-name" }, "Кодекс", -1))
+            _cache[4] || (_cache[4] = createBaseVNode("span", { class: "brand-name" }, "Кодекс", -1))
           ]),
           createBaseVNode("div", {
             class: "search",
             role: "search",
             onFocusout: onBlur
           }, [
-            _cache[3] || (_cache[3] = createBaseVNode("label", {
+            _cache[5] || (_cache[5] = createBaseVNode("label", {
               for: "q",
               class: "sr-only"
             }, "Поиск по кодексу", -1)),
-            _cache[4] || (_cache[4] = createBaseVNode("svg", {
+            _cache[6] || (_cache[6] = createBaseVNode("svg", {
               class: "search-icon",
               viewBox: "0 0 16 16",
               "aria-hidden": "true"
@@ -226,7 +250,7 @@ const _sfc_main$x = {
             }, null, 40, _hoisted_5$m), [
               [vModelText, search.value]
             ]),
-            _cache[5] || (_cache[5] = createBaseVNode("kbd", {
+            _cache[7] || (_cache[7] = createBaseVNode("kbd", {
               class: "search-key",
               "aria-hidden": "true"
             }, "/", -1)),
@@ -274,24 +298,62 @@ const _sfc_main$x = {
               }, "Сбросить")
             ])) : createCommentVNode("", true)
           ], 32),
-          createBaseVNode("nav", {
-            ref_key: "nav",
-            ref: nav,
-            class: "nav",
-            "aria-label": "Разделы"
+          createBaseVNode("div", {
+            class: normalizeClass(["nav-wrap", { "more-left": moreLeft.value, "more-right": moreRight.value }])
           }, [
-            (openBlock(), createElementBlock(Fragment, null, renderList(sections, ([id, title, count]) => {
-              return createBaseVNode("a", {
-                key: id,
-                href: `#${id}`,
-                class: normalizeClass({ on: current.value === id }),
-                "aria-current": current.value === id ? "location" : void 0
-              }, [
-                createBaseVNode("span", null, toDisplayString(title), 1),
-                count ? (openBlock(), createElementBlock("span", _hoisted_16$7, toDisplayString(count), 1)) : createCommentVNode("", true)
-              ], 10, _hoisted_15$8);
-            }), 64))
-          ], 512)
+            createBaseVNode("button", {
+              type: "button",
+              class: "nav-step left",
+              tabindex: "-1",
+              "aria-hidden": "true",
+              onClick: _cache[2] || (_cache[2] = ($event) => step(-1))
+            }, [..._cache[8] || (_cache[8] = [
+              createBaseVNode("svg", { viewBox: "0 0 16 16" }, [
+                createBaseVNode("path", {
+                  d: "M10 3L5 8l5 5",
+                  fill: "none",
+                  stroke: "currentColor",
+                  "stroke-width": "1.8"
+                })
+              ], -1)
+            ])]),
+            createBaseVNode("nav", {
+              ref_key: "nav",
+              ref: nav,
+              class: "nav",
+              "aria-label": "Разделы",
+              onScrollPassive: edges,
+              onWheel
+            }, [
+              (openBlock(), createElementBlock(Fragment, null, renderList(sections, ([id, title, count]) => {
+                return createBaseVNode("a", {
+                  key: id,
+                  href: `#${id}`,
+                  class: normalizeClass({ on: current.value === id }),
+                  "aria-current": current.value === id ? "location" : void 0
+                }, [
+                  createBaseVNode("span", null, toDisplayString(title), 1),
+                  count ? (openBlock(), createElementBlock("span", _hoisted_16$7, toDisplayString(count), 1)) : createCommentVNode("", true)
+                ], 10, _hoisted_15$8);
+              }), 64))
+            ], 544),
+            createBaseVNode("button", {
+              type: "button",
+              class: "nav-step right",
+              tabindex: "-1",
+              "aria-hidden": "true",
+              onClick: _cache[3] || (_cache[3] = ($event) => step(1))
+            }, [..._cache[9] || (_cache[9] = [
+              createBaseVNode("svg", { viewBox: "0 0 16 16" }, [
+                createBaseVNode("path", {
+                  d: "M6 3l5 5-5 5",
+                  fill: "none",
+                  stroke: "currentColor",
+                  "stroke-width": "1.8"
+                })
+              ], -1)
+            ])])
+          ], 2)
         ])
       ]);
     };
