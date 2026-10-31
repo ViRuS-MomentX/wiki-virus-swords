@@ -93,7 +93,8 @@ const guideIcons = {
   "minecraft:crossbow": "images/guide/minecraft:crossbow.png",
   "minecraft:experience_bottle": "images/guide/minecraft:experience_bottle.png",
   "minecraft:nether_star": "images/guide/nether_star.png",
-  "minecraft:red_dye": "images/guide/minecraft:red_dye.png"
+  "minecraft:red_dye": "images/guide/minecraft:red_dye.png",
+  "minecraft:writable_book": "images/guide/minecraft:writable_book.png"
 };
 const images = {
   forge: "images/places/forge.webp",
@@ -3919,6 +3920,16 @@ const achievements = [
         condition: "Умереть 10 раз",
         icon: "images/guide/minecraft:skeleton_skull.png",
         caption: "Череп скелета"
+      },
+      {
+        key: "death_list",
+        title: "Список смертников",
+        description: "Все имена вычеркнуты одной рукой. Теперь кто-то пишет твоё.",
+        frame: "challenge",
+        frameLabel: "Испытание",
+        condition: "Победить в одиночку каждого босса из Списка смертников",
+        icon: "images/guide/minecraft:writable_book.png",
+        caption: "minecraft:writable_book"
       }
     ]
   }

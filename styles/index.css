@@ -197,6 +197,8 @@ section > h3 { margin-top: 18px; }
 
 /* --- weapons: the lines ---------------------------------------------------------------------- */
 .filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip-count { margin-left: 7px; font-size: .78em; font-variant-numeric: tabular-nums; color: var(--muted); }
+.chip[aria-pressed=true] .chip-count { color: inherit; opacity: .75; }
 .chip { font: 500 .86rem var(--body); padding: 6px 13px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--ink-2); cursor: pointer; }
 .chip:hover { border-color: var(--muted); color: var(--ink); }
 .chip[aria-pressed="true"] { background: var(--soul-soft); border-color: var(--soul-line); color: var(--ink); }
@@ -1010,7 +1012,8 @@ section > h3::before { content: ""; display: inline-block; width: 8px; height: 8
 /* As the game paints the advancement's name: green for a task or a goal, purple for a challenge. */
 .toast .toast-title { color: #55ff55; }
 .toast.t-challenge .toast-title { color: #c76bff; }
-.adv { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+.adv { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr auto; gap: 8px; }
+.adv .cond { align-self: end; }
 .adv:hover .toast { box-shadow: inset 0 0 0 2px #8b8b8b, inset 0 0 0 4px #212121, inset 0 0 0 5px #000, 0 0 26px -8px var(--w1); }
 
 /* --- odds and ends ------------------------------------------------------------------------------------ */

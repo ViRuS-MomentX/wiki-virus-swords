@@ -86,7 +86,7 @@ const _hoisted_9$i = ["id", "aria-selected"];
 const _hoisted_10$f = ["href", "onMouseenter"];
 const _hoisted_11$e = ["src"];
 const _hoisted_12$d = ["title"];
-const _hoisted_13$b = { class: "found-kind" };
+const _hoisted_13$c = { class: "found-kind" };
 const _hoisted_14$9 = {
   class: "search-hint",
   "aria-live": "polite"
@@ -318,7 +318,7 @@ const _sfc_main$y = {
                         class: "found-name",
                         title: i.name
                       }, toDisplayString(i.name), 9, _hoisted_12$d),
-                      createBaseVNode("span", _hoisted_13$b, toDisplayString(i.kind === "weapon" ? "клинок" : "материал"), 1)
+                      createBaseVNode("span", _hoisted_13$c, toDisplayString(i.kind === "weapon" ? "клинок" : "материал"), 1)
                     ], 42, _hoisted_10$f)
                   ], 8, _hoisted_9$i);
                 }), 128))
@@ -966,7 +966,7 @@ const _hoisted_9$h = {
 const _hoisted_10$e = { class: "hotbar-wrap" };
 const _hoisted_11$d = ["aria-label", "aria-pressed", "onClick"];
 const _hoisted_12$c = ["src"];
-const _hoisted_13$a = {
+const _hoisted_13$b = {
   class: "hkey",
   "aria-hidden": "true"
 };
@@ -1169,7 +1169,7 @@ const _sfc_main$u = {
                   src: slot.icon,
                   alt: ""
                 }, null, 8, _hoisted_12$c),
-                createBaseVNode("span", _hoisted_13$a, toDisplayString(i + 1), 1)
+                createBaseVNode("span", _hoisted_13$b, toDisplayString(i + 1), 1)
               ], 10, _hoisted_11$d);
             }), 128))
           ], 32),
@@ -1194,7 +1194,7 @@ const _hoisted_9$g = ["title"];
 const _hoisted_10$d = ["src", "alt"];
 const _hoisted_11$c = { key: 0 };
 const _hoisted_12$b = ["href"];
-const _hoisted_13$9 = {
+const _hoisted_13$a = {
   key: 0,
   class: "note"
 };
@@ -1271,7 +1271,7 @@ const _sfc_main$t = {
               createTextVNode(toDisplayString((_f = result.value) == null ? void 0 : _f.name), 1)
             ], 64))
           ]),
-          __props.recipe.note ? (openBlock(), createElementBlock("span", _hoisted_13$9, toDisplayString(__props.recipe.note), 1)) : createCommentVNode("", true)
+          __props.recipe.note ? (openBlock(), createElementBlock("span", _hoisted_13$a, toDisplayString(__props.recipe.note), 1)) : createCommentVNode("", true)
         ])) : createCommentVNode("", true)
       ], 10, _hoisted_1$q);
     };
@@ -1443,7 +1443,7 @@ const _hoisted_10$c = {
 };
 const _hoisted_11$b = ["title"];
 const _hoisted_12$a = ["src"];
-const _hoisted_13$8 = { class: "price-words" };
+const _hoisted_13$9 = { class: "price-words" };
 const _hoisted_14$8 = {
   key: 1,
   class: "price-owner"
@@ -1543,7 +1543,7 @@ const _sfc_main$q = {
             }, null, 8, _hoisted_12$a)
           ], 8, _hoisted_11$b)
         ]),
-        createBaseVNode("p", _hoisted_13$8, toDisplayString(spoken.value), 1),
+        createBaseVNode("p", _hoisted_13$9, toDisplayString(spoken.value), 1),
         __props.boxed && owner.value ? (openBlock(), createElementBlock("p", _hoisted_14$8, "Признаёт: " + toDisplayString(owner.value), 1)) : createCommentVNode("", true)
       ], 10, _hoisted_1$n);
     };
@@ -1585,7 +1585,7 @@ const _hoisted_12$9 = {
   key: 2,
   class: "card-owner"
 };
-const _hoisted_13$7 = { class: "obtain" };
+const _hoisted_13$8 = { class: "obtain" };
 const _hoisted_14$7 = { class: "obtain-head" };
 const _hoisted_15$7 = ["href"];
 const _hoisted_16$6 = ["innerHTML"];
@@ -1734,7 +1734,7 @@ const _sfc_main$o = {
           key: 3,
           abilities: __props.item.abilities
         }, null, 8, ["abilities"])) : createCommentVNode("", true),
-        createBaseVNode("div", _hoisted_13$7, [
+        createBaseVNode("div", _hoisted_13$8, [
           createBaseVNode("div", _hoisted_14$7, [
             _cache[3] || (_cache[3] = createBaseVNode("h3", null, "Как получить", -1)),
             createBaseVNode("a", {
@@ -2693,7 +2693,7 @@ const _hoisted_9$a = ["aria-sort"];
 const _hoisted_10$9 = { "aria-hidden": "true" };
 const _hoisted_11$9 = ["aria-sort"];
 const _hoisted_12$8 = { "aria-hidden": "true" };
-const _hoisted_13$6 = ["aria-sort"];
+const _hoisted_13$7 = ["aria-sort"];
 const _hoisted_14$6 = { "aria-hidden": "true" };
 const _hoisted_15$6 = ["aria-sort"];
 const _hoisted_16$5 = { "aria-hidden": "true" };
@@ -2851,7 +2851,7 @@ const _sfc_main$d = {
                     _cache[9] || (_cache[9] = createTextVNode("Скорость ", -1)),
                     createBaseVNode("span", _hoisted_14$6, toDisplayString(mark("speed")), 1)
                   ])
-                ], 8, _hoisted_13$6),
+                ], 8, _hoisted_13$7),
                 createBaseVNode("th", {
                   "aria-sort": ariaSort("rarity")
                 }, [
@@ -2954,7 +2954,7 @@ const _hoisted_9$9 = { class: "cat-chips" };
 const _hoisted_10$8 = ["aria-pressed", "onClick"];
 const _hoisted_11$8 = { class: "cat-group" };
 const _hoisted_12$7 = { class: "cat-chips" };
-const _hoisted_13$5 = ["aria-pressed"];
+const _hoisted_13$6 = ["aria-pressed"];
 const _hoisted_14$5 = ["aria-pressed", "onClick"];
 const _hoisted_15$5 = ["aria-pressed"];
 const _hoisted_16$4 = { class: "cat-count" };
@@ -3221,7 +3221,7 @@ const _sfc_main$c = {
                     class: "bchip",
                     "aria-pressed": String(blood.value === "any"),
                     onClick: _cache[1] || (_cache[1] = ($event) => blood.value = "any")
-                  }, "Любая", 8, _hoisted_13$5),
+                  }, "Любая", 8, _hoisted_13$6),
                   (openBlock(true), createElementBlock(Fragment, null, renderList(unref(bloods), (b) => {
                     return openBlock(), createElementBlock("button", {
                       key: b.id,
@@ -3582,7 +3582,7 @@ const _hoisted_9$7 = { class: "set set-molten" };
 const _hoisted_10$7 = { class: "slot" };
 const _hoisted_11$7 = ["src"];
 const _hoisted_12$6 = { class: "set set-paladin" };
-const _hoisted_13$4 = { class: "slot" };
+const _hoisted_13$5 = { class: "slot" };
 const _hoisted_14$4 = ["src"];
 const _hoisted_15$4 = { class: "set set-nightking" };
 const _hoisted_16$3 = { class: "slot" };
@@ -3674,7 +3674,7 @@ const _sfc_main$9 = {
             ], -1))
           ]),
           createBaseVNode("article", _hoisted_12$6, [
-            createBaseVNode("span", _hoisted_13$4, [
+            createBaseVNode("span", _hoisted_13$5, [
               createBaseVNode("img", {
                 src: unref(data).icons.paladin_helmet,
                 alt: ""
@@ -3851,7 +3851,7 @@ const _hoisted_9$6 = ["x", "y"];
 const _hoisted_10$6 = { class: "atlas-ruler" };
 const _hoisted_11$6 = ["y1", "y2"];
 const _hoisted_12$5 = ["y"];
-const _hoisted_13$3 = { "clip-path": "url(#clip-ne)" };
+const _hoisted_13$4 = { "clip-path": "url(#clip-ne)" };
 const _hoisted_14$3 = ["cx", "cy"];
 const _hoisted_15$3 = { class: "atlas-ruler right" };
 const _hoisted_16$2 = ["y1", "y2"];
@@ -4032,7 +4032,7 @@ const _sfc_main$7 = {
                 class: "atlas-world"
               }, "Верхний мир", -1))
             ]),
-            createBaseVNode("g", _hoisted_13$3, [
+            createBaseVNode("g", _hoisted_13$4, [
               _cache[8] || (_cache[8] = createBaseVNode("rect", {
                 x: "760",
                 y: "0",
@@ -4166,7 +4166,7 @@ const _hoisted_11$5 = {
   "aria-hidden": "true"
 };
 const _hoisted_12$4 = ["src"];
-const _hoisted_13$2 = {
+const _hoisted_13$3 = {
   class: "sanctum",
   id: "forge"
 };
@@ -4429,7 +4429,7 @@ const _sfc_main$6 = {
             ], -1))
           ])
         ]),
-        createBaseVNode("article", _hoisted_13$2, [
+        createBaseVNode("article", _hoisted_13$3, [
           createBaseVNode("figure", null, [
             _cache[7] || (_cache[7] = createBaseVNode("span", {
               class: "figure-title",
@@ -5095,7 +5095,7 @@ const _hoisted_11$4 = {
   id: "fourth"
 };
 const _hoisted_12$3 = { class: "fourths" };
-const _hoisted_13$1 = { class: "fourth-relic" };
+const _hoisted_13$2 = { class: "fourth-relic" };
 const _hoisted_14$1 = ["src"];
 const _hoisted_15$1 = { class: "fourth-blood" };
 const _hoisted_16 = { class: "small" };
@@ -5197,7 +5197,7 @@ const _sfc_main$5 = {
                   class: "fourth",
                   style: normalizeStyle({ "--b": unref(blood)[f.blood].colour })
                 }, [
-                  createBaseVNode("span", _hoisted_13$1, [
+                  createBaseVNode("span", _hoisted_13$2, [
                     createBaseVNode("img", {
                       src: icon(f.icon),
                       alt: ""
@@ -5402,7 +5402,7 @@ const _hoisted_9$2 = {
 const _hoisted_10$2 = { class: "tbl" };
 const _hoisted_11$2 = { scope: "row" };
 const _hoisted_12$1 = { class: "tbl" };
-const _hoisted_13 = { scope: "row" };
+const _hoisted_13$1 = { scope: "row" };
 const _hoisted_14 = { class: "inline-icons" };
 const _hoisted_15 = ["src"];
 const _sfc_main$3 = {
@@ -5536,7 +5536,7 @@ const _sfc_main$3 = {
                 return openBlock(), createElementBlock("tr", {
                   key: t.name
                 }, [
-                  createBaseVNode("th", _hoisted_13, [
+                  createBaseVNode("th", _hoisted_13$1, [
                     createBaseVNode("span", {
                       class: "btitle",
                       style: normalizeStyle(t.style)
@@ -5574,15 +5574,16 @@ const _hoisted_2$2 = {
   "aria-label": "Тип достижения"
 };
 const _hoisted_3$1 = ["aria-pressed", "onClick"];
-const _hoisted_4$1 = { class: "group" };
-const _hoisted_5$1 = { class: "advs" };
-const _hoisted_6$1 = ["title"];
-const _hoisted_7$1 = ["src"];
-const _hoisted_8$1 = { class: "toast-head" };
-const _hoisted_9$1 = { class: "toast-title" };
-const _hoisted_10$1 = { class: "quote" };
-const _hoisted_11$1 = { class: "cond" };
-const _hoisted_12 = {
+const _hoisted_4$1 = { class: "chip-count" };
+const _hoisted_5$1 = { class: "group" };
+const _hoisted_6$1 = { class: "advs" };
+const _hoisted_7$1 = ["title"];
+const _hoisted_8$1 = ["src"];
+const _hoisted_9$1 = { class: "toast-head" };
+const _hoisted_10$1 = { class: "toast-title" };
+const _hoisted_11$1 = { class: "quote" };
+const _hoisted_12 = { class: "cond" };
+const _hoisted_13 = {
   key: 0,
   class: "empty"
 };
@@ -5592,6 +5593,10 @@ const _sfc_main$2 = {
     const FRAMES = [["all", "Все"], ["task", "Задачи"], ["goal", "Цели"], ["challenge", "Испытания"]];
     const frame = ref("all");
     const TOAST = { task: "Достижение получено!", goal: "Цель достигнута!", challenge: "Испытание завершено!" };
+    const counts = computed(() => {
+      const all = achievementGroups.value.flatMap((g) => g.cards);
+      return Object.fromEntries(FRAMES.map(([key]) => [key, key === "all" ? all.length : all.filter((a) => a.frame === key).length]));
+    });
     const groups = computed(() => achievementGroups.value.map((g) => ({ ...g, cards: g.cards.filter((a) => frame.value === "all" || a.frame === frame.value) })).filter((g) => g.cards.length));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("section", _hoisted_1$2, [
@@ -5612,15 +5617,18 @@ const _sfc_main$2 = {
               class: "chip",
               "aria-pressed": String(frame.value === key),
               onClick: ($event) => frame.value = key
-            }, toDisplayString(title), 9, _hoisted_3$1);
+            }, [
+              createTextVNode(toDisplayString(title), 1),
+              createBaseVNode("span", _hoisted_4$1, toDisplayString(counts.value[key]), 1)
+            ], 8, _hoisted_3$1);
           }), 64))
         ]),
         (openBlock(true), createElementBlock(Fragment, null, renderList(groups.value, (group) => {
           return openBlock(), createElementBlock(Fragment, {
             key: group.title
           }, [
-            createBaseVNode("h3", _hoisted_4$1, toDisplayString(group.title), 1),
-            createBaseVNode("div", _hoisted_5$1, [
+            createBaseVNode("h3", _hoisted_5$1, toDisplayString(group.title), 1),
+            createBaseVNode("div", _hoisted_6$1, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(group.cards, (a) => {
                 return openBlock(), createElementBlock("article", {
                   key: a.key,
@@ -5637,25 +5645,25 @@ const _sfc_main$2 = {
                         key: 0,
                         src: a.icon,
                         alt: ""
-                      }, null, 8, _hoisted_7$1)) : a.gem ? (openBlock(), createElementBlock("span", {
+                      }, null, 8, _hoisted_8$1)) : a.gem ? (openBlock(), createElementBlock("span", {
                         key: 1,
                         class: "gem",
                         style: normalizeStyle({ "--gem": a.gem })
                       }, null, 4)) : createCommentVNode("", true)
-                    ], 10, _hoisted_6$1),
+                    ], 10, _hoisted_7$1),
                     createBaseVNode("div", null, [
-                      createBaseVNode("p", _hoisted_8$1, toDisplayString(TOAST[a.frame] || a.frameLabel), 1),
-                      createBaseVNode("h4", _hoisted_9$1, toDisplayString(a.title), 1)
+                      createBaseVNode("p", _hoisted_9$1, toDisplayString(TOAST[a.frame] || a.frameLabel), 1),
+                      createBaseVNode("h4", _hoisted_10$1, toDisplayString(a.title), 1)
                     ])
                   ], 2),
-                  createBaseVNode("p", _hoisted_10$1, "«" + toDisplayString(a.description) + "»", 1),
-                  createBaseVNode("p", _hoisted_11$1, toDisplayString(a.condition), 1)
+                  createBaseVNode("p", _hoisted_11$1, "«" + toDisplayString(a.description) + "»", 1),
+                  createBaseVNode("p", _hoisted_12, toDisplayString(a.condition), 1)
                 ]);
               }), 128))
             ])
           ], 64);
         }), 128)),
-        !groups.value.length ? (openBlock(), createElementBlock("p", _hoisted_12, "Ни одного достижения по этому слову.")) : createCommentVNode("", true)
+        !groups.value.length ? (openBlock(), createElementBlock("p", _hoisted_13, "Ни одного достижения по этому слову.")) : createCommentVNode("", true)
       ]);
     };
   }
