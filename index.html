@@ -36,6 +36,7 @@
   <link rel="stylesheet" crossorigin href="./styles/index.css">
   <link rel="apple-touch-icon" href="assets/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <script>if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}))</script>
 </head>
 <style>
   /* Until the codex has mounted - a moment on a slow phone - the page is not a blank: Vue replaces all of it. */
