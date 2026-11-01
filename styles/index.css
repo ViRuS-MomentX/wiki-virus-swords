@@ -747,6 +747,11 @@ body { overflow-x: clip; }
 .card-give-label { font-size: .78rem; color: var(--muted); }
 .card-give code { flex: 1 1 auto; background: none; border: 0; padding: 0; color: #80ff20; font-size: .86rem; }
 .card-give .term-copy { margin-left: 0; }
+.netnote { white-space: nowrap; position: fixed; left: 50%; bottom: 18px; z-index: 40; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; margin: 0; padding: 8px 14px; border-radius: 999px; background: color-mix(in srgb, var(--bg-2) 92%, transparent); border: 1px solid var(--line); color: var(--ink-2); font-size: .84rem; box-shadow: 0 12px 30px -12px #000; backdrop-filter: blur(8px); max-width: calc(100vw - 32px); }
+.netnote svg { width: 16px; height: 16px; flex: none; color: var(--gold); }
+.netnote-enter-active, .netnote-leave-active { transition: opacity .2s, transform .2s; }
+.netnote-enter-from, .netnote-leave-to { opacity: 0; transform: translate(-50%, 8px); }
+@media print { .netnote { display: none; } }
 /*
  * The enchantment over the codex.
  *

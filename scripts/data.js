@@ -3,7 +3,7 @@ const counts = {
   materials: 34,
   trophies: 38
 };
-const built = "2026-10-31";
+const built = "2026-11-01";
 const words = {
   weapons: "клинка",
   materials: "материала",
