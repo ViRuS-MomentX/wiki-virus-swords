@@ -6071,11 +6071,25 @@ document.addEventListener("click", (e) => {
   e.preventDefault();
   openItem(id);
 });
+function hold(el, block) {
+  if (!el) return;
+  const put = () => el.scrollIntoView({ block, behavior: "instant" });
+  put();
+  const watch2 = new ResizeObserver(put);
+  watch2.observe(document.querySelector("main") || document.body);
+  const stop = () => {
+    watch2.disconnect();
+    for (const t of ["wheel", "touchstart", "keydown", "pointerdown"]) removeEventListener(t, stop, true);
+  };
+  for (const t of ["wheel", "touchstart", "keydown", "pointerdown"]) addEventListener(t, stop, { capture: true, passive: true });
+  const later = () => setTimeout(stop, 800);
+  if (document.readyState === "complete") later();
+  else addEventListener("load", later, { once: true });
+}
 nextTick(() => {
-  var _a, _b;
   const hash = location.hash.slice(1);
   if (hash.startsWith("w-") && item(hash.slice(2))) {
-    (_a = document.getElementById(hash)) == null ? void 0 : _a.scrollIntoView({ block: "center" });
+    hold(document.getElementById(hash), "center");
     openItem(hash.slice(2));
-  } else if (hash) (_b = document.getElementById(hash)) == null ? void 0 : _b.scrollIntoView();
+  } else if (hash) hold(document.getElementById(hash), "start");
 });

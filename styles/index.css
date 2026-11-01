@@ -74,7 +74,8 @@ main:focus { outline: none; }
 /* --- shell -------------------------------------------------------------------------- */
 .shell { display: grid; grid-template-columns: 236px minmax(0, 1fr); max-width: 1380px; margin: 0 auto; }
 main { min-width: 0; padding: 0 48px 96px; }
-section { padding-block: 84px 0; display: grid; gap: 22px; scroll-margin-top: 8px; }
+/* A jump to a section lands its title a little under the bar, not its empty top padding. */
+section { padding-block: 84px 0; display: grid; gap: 22px; scroll-margin-top: -56px; }
 .sec-head { display: grid; gap: 10px; max-width: 70ch; }
 .sec-anchor { position: relative; margin-left: -10px; display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; color: var(--muted); opacity: 0; transition: opacity .15s, color .15s, background .15s; flex: none; }
 .sec-anchor svg { width: 18px; height: 18px; }
@@ -436,8 +437,7 @@ a.mbadge:hover { border-color: var(--muted); }
   .nav a.on { border-bottom-color: var(--soul); }
   .nav .count { display: none; }
   main { padding: 0 16px 64px; }
-  section { padding-block: 56px 0; scroll-margin-top: 104px; }
-  html { scroll-padding-top: 108px; }
+  section { padding-block: 56px 0; scroll-margin-top: 0; }
   .line { grid-template-columns: minmax(0, 1fr); gap: 6px; }
   .steps { grid-template-columns: minmax(0, 1fr); }
 }
