@@ -3,7 +3,7 @@ const counts = {
   materials: 34,
   trophies: 38
 };
-const built = "2026-11-01";
+const built = "2026-11-11";
 const words = {
   weapons: "клинка",
   materials: "материала",
@@ -75,6 +75,7 @@ const guideIcons = {
   red_mushroom: "images/guide/red_mushroom.png",
   brown_mushroom: "images/guide/brown_mushroom.png",
   gunpowder: "images/guide/gunpowder.png",
+  blaze_powder: "images/guide/blaze_powder.png",
   netherite_scrap: "images/guide/netherite_scrap.png",
   air_compass: "images/guide/compass.png",
   night_compass: "images/guide/compass.png",
@@ -204,7 +205,7 @@ const rarities = [
       "Все-Чёрный",
       "Империум",
       "Сердце кузни",
-      "Чёрная субстанция",
+      "Чёрная душа",
       "Тессеракт"
     ]
   },
@@ -476,7 +477,7 @@ const items = [
     damage: 14,
     speed: 1.6,
     icon: "images/other/b8d1f1cd53.png",
-    obtain: "Эволюция короны крови с Чёрной субстанцией у алтаря своего храма",
+    obtain: "Эволюция короны крови с Чёрной душой у алтаря своего храма",
     blood: "abyss",
     form: 0,
     method: "evolve",
@@ -1143,7 +1144,7 @@ const items = [
     icon: "images/other/e43fff931c.png",
     obtain: "Сокровищница Проклятого замка · сундуки Целестиала в Забытом мире",
     blood: "sky",
-    form: 3,
+    form: 2,
     method: "loot",
     methodLabel: "Находка",
     recipe: false,
@@ -1306,7 +1307,7 @@ const items = [
         trigger: "Зажать ПКМ",
         kind: "hold",
         rest: null,
-        text: '<span>Пока кнопка зажата, клинок строчит зелёными лучами:</span> <span>1 урон и отравление первому, кого луч заденет.</span> <br><span style="color:#808080">Союзников лучи проходят насквозь.</span>'
+        text: '<span>Пока кнопка зажата, клинок строчит зелёными лучами:</span> <span>1 урон и отравление первому, кого луч заденет.</span> <span>Долгая стрельба греет клинок: лучи идут всё реже,</span> <span>а отпустите кнопку — он остынет за несколько секунд.</span> <br><span style="color:#808080">Союзников лучи проходят насквозь.</span>'
       },
       {
         name: "Щит жизни",
@@ -1481,7 +1482,7 @@ const items = [
     line: "forgotten",
     lore: [
       '<span style="color:#808080"><em>Ответ на вопрос предков — тот, которого никто не ждал.</em></span>',
-      '<span style="color:#808080"><em>Ответ сплетён из света.</em></span>'
+      '<span style="color:#808080"><em>Ответ сплетён из света. Теперь он в ваших руках.</em></span>'
     ],
     abilities: [
       {
@@ -1746,7 +1747,7 @@ const items = [
       '<span style="color:#AAAAAA">Вплавляется в клинок и меняет его природу —</span>',
       '<span style="color:#AAAAAA">на верстаке или у алтаря Незеритовой кузни.</span>',
       '<span style="color:#AAAAAA">Брошенная на крыше Незера, показывает путь</span>',
-      '<span style="color:#AAAAAA">к Проклятому замку. Кровь с третьей формы.</span>'
+      '<span style="color:#AAAAAA">к Проклятому замку — кровь любой формы.</span>'
     ],
     abilities: [],
     stats: "",
@@ -1995,14 +1996,15 @@ const items = [
   {
     kind: "material",
     id: "black_substance",
-    name: "Чёрная субстанция",
+    name: "Чёрная душа",
     rarity: "ULTRA_HELLISH",
     rarityLabel: "Ультра-адская",
     line: "material",
     lore: [
       '<span style="color:#808080"><em>Она не отражает свет. Она его ест.</em></span>',
+      '<span style="color:#808080"><em>Когда-то её отдали сами. Цену не помнит никто.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Висит в рамке над троном Проклятого замка.</span>',
+      '<span style="color:#AAAAAA">Висит над троном Проклятого замка, как трофей.</span>',
       '<span style="color:#AAAAAA">Вместе с короной крови становится Все-Чёрным.</span>',
       '<span style="color:#AAAAAA">Техноорганическая кровь платит ею за четвёртую форму.</span>'
     ],
@@ -2026,7 +2028,8 @@ const items = [
       '<span style="color:#808080"><em>Многогранник, в котором бьётся зелёное сердце земли.</em></span>',
       "",
       '<span style="color:#AAAAAA">Остаётся после Джунглевого голема в Терра-подземелье.</span>',
-      '<span style="color:#AAAAAA">Ключ к четвёртой форме крови предков и часть Тессеракта.</span>',
+      '<span style="color:#AAAAAA">Улучшает алтарь Храма джунглей: открывает</span>',
+      '<span style="color:#AAAAAA">третье испытание. Часть Тессеракта.</span>',
       "",
       '<span style="color:#00AA00">Отравляет носящего — кроме крови предков и техноорганической.</span>'
     ],
@@ -2050,7 +2053,8 @@ const items = [
       '<span style="color:#808080"><em>Многогранник, в котором тлеет красное сердце Незера.</em></span>',
       "",
       '<span style="color:#AAAAAA">Хранится в часовой башне Проклятого замка.</span>',
-      '<span style="color:#AAAAAA">Ключ к четвёртой форме пепельной крови и часть Тессеракта.</span>',
+      '<span style="color:#AAAAAA">Улучшает алтарь Незеритовой кузни: открывает</span>',
+      '<span style="color:#AAAAAA">третье испытание. Часть Тессеракта.</span>',
       "",
       '<span style="color:#FF5555">Жжёт носящего; пепельной крови огонь не страшен.</span>'
     ],
@@ -2272,7 +2276,7 @@ const items = [
         trigger: "ПКМ",
         kind: "rmb",
         rest: "1 с",
-        text: "<span>Тянет к вам существо или лежащий предмет, пока</span> <span>магнит в руке. Повторный клик отпускает.</span> <span>Кровь предков, с третьей формы.</span>"
+        text: "<span>Тянет к вам существо или лежащий предмет, пока</span> <span>магнит в руке. Повторный клик отпускает.</span> <span>Кровь предков, со второй формы.</span> <span>Только из сундуков Забытого мира.</span>"
       }
     ],
     stats: "",
@@ -2609,7 +2613,15 @@ const altar = [
       },
       {
         key: "soul_shard",
+        n: 128
+      },
+      {
+        key: "v:blaze_powder",
         n: 64
+      },
+      {
+        key: "v:nether_star",
+        n: 1
       }
     ]
   },
@@ -2639,10 +2651,14 @@ const altar = [
     costs: [
       {
         key: "soul_shard",
-        n: 32
+        n: 16
       },
       {
         key: "v:netherite_ingot",
+        n: 1
+      },
+      {
+        key: "wither_soul",
         n: 1
       }
     ]
@@ -2794,7 +2810,7 @@ const altar = [
   {
     kind: "evolve",
     result: "all_black",
-    from: "enigma",
+    from: "celestial",
     at: "Храм джунглей",
     time: "",
     blood: "Кровь предков",
@@ -3150,16 +3166,8 @@ const altar = [
     form: 4,
     costs: [
       {
-        key: "v:iron_block",
-        n: 5
-      },
-      {
-        key: "v:redstone_block",
-        n: 5
-      },
-      {
         key: "ancient_part",
-        n: 20
+        n: 128
       }
     ]
   },
@@ -3256,24 +3264,6 @@ const altar = [
       {
         key: "jungle_heart",
         n: 1
-      }
-    ]
-  },
-  {
-    kind: "forge",
-    result: "terra_magnet",
-    at: "Храм джунглей",
-    time: "",
-    blood: "Кровь предков",
-    form: 3,
-    costs: [
-      {
-        key: "terra_ingot",
-        n: 16
-      },
-      {
-        key: "jungle_shard",
-        n: 64
       }
     ]
   }
@@ -3477,7 +3467,7 @@ const chains = [
   },
   {
     key: "abyss",
-    title: "Бездна: корона своей крови + Чёрная субстанция",
+    title: "Бездна: корона своей крови + Чёрная душа",
     entries: [
       {
         id: "imperium",
@@ -3879,7 +3869,7 @@ const achievements = [
       {
         key: "blood_remembers",
         title: "Кровь помнит всё",
-        description: "Сущность у алтаря, субстанция в руках машины, Серафим у твоих ног — и твоя кровь вспомнила всё.",
+        description: "Король у твоих ног, Чёрная душа в руках машины, Серафим повержен, Забытый мир пройден — и твоя кровь вспомнила всё.",
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Поднять кровь до четвёртой формы",
@@ -3948,8 +3938,8 @@ const blood = [
     ],
     formless: false,
     sanctum: "Незеритовая кузня",
-    offering: [],
-    deed: "",
+    secondPrice: [],
+    thirdPrice: [],
     weapons: [
       {
         id: "imperium",
@@ -4028,8 +4018,8 @@ const blood = [
     ],
     formless: false,
     sanctum: "Небесный храм",
-    offering: [],
-    deed: "",
+    secondPrice: [],
+    thirdPrice: [],
     weapons: [
       {
         id: "hyperion",
@@ -4056,7 +4046,7 @@ const blood = [
         id: "phantom_guard",
         name: "Призрачный страж",
         icon: "images/other/e43fff931c.png",
-        form: 3,
+        form: 2,
         crown: false
       }
     ]
@@ -4074,8 +4064,8 @@ const blood = [
     ],
     formless: false,
     sanctum: "Тёмный храм",
-    offering: [],
-    deed: "",
+    secondPrice: [],
+    thirdPrice: [],
     weapons: [
       {
         id: "true_excalibur",
@@ -4118,13 +4108,8 @@ const blood = [
     ],
     formless: true,
     sanctum: "Незеритовая кузня",
-    offering: [
-      "48 осколков души",
-      "Душа демона ×2",
-      "Душа Иссушителя",
-      "32 скалка"
-    ],
-    deed: "вырвать у Хранителя сердце",
+    secondPrice: [],
+    thirdPrice: [],
     weapons: [
       {
         id: "all_black",
@@ -4149,15 +4134,15 @@ const blood = [
     ],
     formless: false,
     sanctum: "Храм джунглей",
-    offering: [],
-    deed: "",
+    secondPrice: [],
+    thirdPrice: [],
     weapons: [
       {
         id: "celestial",
         name: "Целестиал",
         icon: "images/icons/celestial.png",
         form: 5,
-        crown: false
+        crown: true
       },
       {
         id: "architect",
@@ -4171,7 +4156,7 @@ const blood = [
         name: "Энигма",
         icon: "images/other/97fc9f3d00.png",
         form: 3,
-        crown: true
+        crown: false
       },
       {
         id: "bouquet_of_lies",
@@ -4216,13 +4201,13 @@ const blood = [
     ],
     formless: false,
     sanctum: "Древняя фабрика",
-    offering: [
-      "48 древних деталей",
-      "Ядро Предвестника",
-      "16 медных блоков",
-      "8 блоков редстоуна"
+    secondPrice: [
+      "24 древних деталей"
     ],
-    deed: "уничтожить 100 автоматонов фабрики",
+    thirdPrice: [
+      "64 древних деталей",
+      "Ядро Предвестника"
+    ],
     weapons: [
       {
         id: "antichrist",
@@ -4443,6 +4428,7 @@ const vanillaNames = {
   red_mushroom: "Мухомор",
   brown_mushroom: "Коричневый гриб",
   gunpowder: "Порох",
+  blaze_powder: "Огненный порошок",
   netherite_scrap: "Незеритовый лом"
 };
 const guideNames = {
