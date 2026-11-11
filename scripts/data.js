@@ -34,7 +34,7 @@ const icons = {
   ancient: "images/icons/ancient.png",
   hell_essence: "images/icons/hell_essence.png",
   wanderer_cube: "images/icons/wanderer_cube.png",
-  wanderer_cube_green: "images/icons/wanderer_cube_green.png",
+  wanderer_cube_green: "images/icons/wanderer_cube.png",
   wanderer_cube_blue: "images/icons/wanderer_cube_blue.png",
   wanderer_cube_orange: "images/icons/wanderer_cube_orange.png",
   wanderer_cube_purple: "images/icons/wanderer_cube_purple.png",
@@ -449,12 +449,36 @@ const items = [
     ],
     abilities: [
       {
+        name: "Геноцид",
+        colour: "#FF5A5A",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Каждый моб, убитый клинком, навсегда</span> <span>добавляет ему 0,3 урона.</span>"
+      },
+      {
         name: "Ужас",
         colour: "#FF5A5A",
         trigger: null,
         kind: null,
         rest: null,
-        text: "<span>Мирные и стрелки идут к вам вплотную,</span> <span>бойцы ближнего боя отлетают в чёрном дыму.</span>"
+        text: "<span>Всё живое в 24 блоках идёт на вас;</span> <span>мирных и стрелков тянет вплотную.</span>"
+      },
+      {
+        name: "Такт",
+        colour: "#FF5A5A",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Удар через 0,55–1,3 с после прошлого попадает</span> <span>в такт: до 5 долей, каждая +12% урона. Щелчок</span> <span>подскажет, когда пора. Удар раньше срока сбивает</span> <span>все доли, пропущенный по вам — две, 4 секунды</span> <span>без ударов — все.</span>"
+      },
+      {
+        name: "Удар в спину",
+        colour: "#FF5A5A",
+        trigger: null,
+        kind: null,
+        rest: null,
+        text: "<span>Удар сзади в полтора раза сильнее.</span>"
       },
       {
         name: "Жертва",
@@ -462,7 +486,7 @@ const items = [
         trigger: null,
         kind: null,
         rest: null,
-        text: "<span>Первый, кого вы ударите, становится жертвой.</span> <span>От её руки вы не умрёте — ни от удара, ни от стрелы,</span> <span>ни от падения, в которое она вас сбросила.</span> <span>Жертва одна; её отпускает смерть или полминуты</span> <span>без ваших ударов.</span>"
+        text: "<span>Первый, кого вы ударите, становится жертвой.</span> <span>Пока горят 3 доли такта, от её руки вы не умрёте.</span>"
       },
       {
         name: "Чёрный рывок",
@@ -470,7 +494,15 @@ const items = [
         trigger: "ПКМ",
         kind: "rmb",
         rest: "9 с",
-        text: "<span>Рывок на 6 блоков в чёрном дыму: 12 урона</span> <span>каждому на пути, а вас в рывке не ударить.</span> <span>Ранил кого-то — снова через секунду.</span>"
+        text: "<span>Рывок на 6 блоков сквозь врагов: 12 урона и половина</span> <span>Геноцида каждому, вас в рывке не ударить.</span> <span>Ранил кого-то — снова через секунду.</span> <span>С 5 долями это Казнь: урон втрое, каждый убитый</span> <span>возвращает 2 сердца, доли сгорают.</span>"
+      },
+      {
+        name: "Чёрное зеркало",
+        colour: "#FF5A5A",
+        trigger: "Shift + правый клик",
+        kind: "other",
+        rest: null,
+        text: '<span>0,4 секунды клинок держит удар: пришедший в этот</span> <span>миг не ранит и возвращается ударившему вдвойне,</span> <span>оглушая его; вам +2 доли, зеркало готово через 1,5 с.</span> <br><span style="color:#808080">Поднято впустую — 7 секунд отдыха и минус 2 доли.</span>'
       }
     ],
     stats: "Урон 14 · Скорость 1.6",
@@ -533,7 +565,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/99b1e0ba7a.png",
+    icon: "images/other/4290e3a7d5.png",
     obtain: "Эволюция Воли Демона в Незеритовой кузне",
     blood: "ember",
     form: 4,
@@ -931,7 +963,7 @@ const items = [
     stats: "Урон 15 · Скорость 0.9",
     damage: 15,
     speed: 0.9,
-    icon: "images/other/7a469fe17d.png",
+    icon: "images/other/34ffeb13e6.png",
     obtain: "Эволюция Секиры берсерка в Незеритовой кузне: 6 незеритовых ломов, 6 железных блоков; пепельная кровь со 2-й формы",
     blood: "ember",
     form: 2,
@@ -972,7 +1004,7 @@ const items = [
     stats: "Урон 12 · Скорость 1.6",
     damage: 12,
     speed: 1.6,
-    icon: "images/other/b59f15737e.png",
+    icon: "images/other/9873dd086a.png",
     obtain: "Только сундуки Забытого мира (Истинный голем и Целестиал); пепельная кровь с 3-й формы",
     blood: "ember",
     form: 3,
@@ -1423,7 +1455,7 @@ const items = [
     stats: "Урон 15 · Скорость 1.6",
     damage: 15,
     speed: 1.6,
-    icon: "images/other/97fc9f3d00.png",
+    icon: "images/other/5e5218c8bc.png",
     obtain: "Эволюция Терра-блейда в Храме джунглей, 3-я форма крови предков",
     blood: "steel",
     form: 3,
@@ -1464,14 +1496,14 @@ const items = [
     stats: "Урон 13 · Скорость 1.6",
     damage: 13,
     speed: 1.6,
-    icon: "images/other/b28283363b.png",
+    icon: "images/other/69640228e3.png",
     obtain: "Только наградные сундуки Забытого мира (голем и Целестиал)",
     blood: "steel",
     form: 3,
     method: "loot",
     methodLabel: "Находка",
     recipe: false,
-    model3d: false
+    model3d: true
   },
   {
     kind: "weapon",
@@ -3693,7 +3725,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "Выковать Энигму",
-        icon: "images/other/97fc9f3d00.png",
+        icon: "images/other/5e5218c8bc.png",
         caption: "Энигма"
       }
     ]
@@ -3944,7 +3976,7 @@ const blood = [
       {
         id: "imperium",
         name: "Империум",
-        icon: "images/other/99b1e0ba7a.png",
+        icon: "images/other/4290e3a7d5.png",
         form: 4,
         crown: true
       },
@@ -3965,7 +3997,7 @@ const blood = [
       {
         id: "crimson",
         name: "Кримсон",
-        icon: "images/other/b59f15737e.png",
+        icon: "images/other/9873dd086a.png",
         form: 3,
         crown: false
       },
@@ -3979,7 +4011,7 @@ const blood = [
       {
         id: "magmoros",
         name: "Магморос",
-        icon: "images/other/7a469fe17d.png",
+        icon: "images/other/34ffeb13e6.png",
         form: 2,
         crown: false
       },
@@ -4154,14 +4186,14 @@ const blood = [
       {
         id: "enigma",
         name: "Энигма",
-        icon: "images/other/97fc9f3d00.png",
+        icon: "images/other/5e5218c8bc.png",
         form: 3,
         crown: false
       },
       {
         id: "bouquet_of_lies",
         name: "Букет лжи",
-        icon: "images/other/b28283363b.png",
+        icon: "images/other/69640228e3.png",
         form: 3,
         crown: false
       },
