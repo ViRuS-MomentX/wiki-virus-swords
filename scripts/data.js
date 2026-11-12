@@ -2441,7 +2441,7 @@ const items = [
     ],
     stats: "",
     obtain: "Ковка у алтаря Незеритовой кузни: 16 мухоморов, 16 коричневых грибов, 32 пороха, 32 осколка души; пепельная кровь со 2-й формы",
-    icon: "images/other/eebf5a98d6.png",
+    icon: "images/other/3ca44a2bc0.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false,
