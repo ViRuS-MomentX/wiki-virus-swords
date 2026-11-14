@@ -7384,6 +7384,30 @@ const withModifiers = (fn, modifiers) => {
     return fn(event, ...args);
   }));
 };
+const keyNames = {
+  esc: "escape",
+  space: " ",
+  up: "arrow-up",
+  left: "arrow-left",
+  right: "arrow-right",
+  down: "arrow-down",
+  delete: "backspace"
+};
+const withKeys = (fn, modifiers) => {
+  const cache = fn._withKeys || (fn._withKeys = {});
+  const cacheKey = modifiers.join(".");
+  return cache[cacheKey] || (cache[cacheKey] = ((event) => {
+    if (!("key" in event)) {
+      return;
+    }
+    const eventKey = hyphenate(event.key);
+    if (modifiers.some(
+      (k) => k === eventKey || keyNames[k] === eventKey
+    )) {
+      return fn(event);
+    }
+  }));
+};
 const rendererOptions = /* @__PURE__ */ extend({ patchProp }, nodeOps);
 let renderer;
 function ensureRenderer() {
@@ -7428,8 +7452,9 @@ function normalizeContainer(container) {
 }
 export {
   createStaticVNode as A,
-  vModelSelect as B,
-  createApp as C,
+  withKeys as B,
+  vModelSelect as C,
+  createApp as D,
   Fragment as F,
   Transition as T,
   onBeforeUnmount as a,

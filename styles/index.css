@@ -1,3 +1,210 @@
+
+.cmp-bar[data-v-d9466e27] { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px; margin-bottom: 8px;
+}
+.cmp-chips[data-v-d9466e27] { display: flex; flex-wrap: wrap; gap: 6px;
+}
+.cmp-crown[data-v-d9466e27] { cursor: pointer; padding: 7px 13px; color: var(--ink-2);
+}
+.cmp-count[data-v-d9466e27] { margin: 0 0 10px; font-size: .84rem; color: var(--muted);
+}
+.cmp-tbl table[data-v-d9466e27] { width: 100%;
+}
+.cmp-tbl td[data-v-d9466e27], .cmp-tbl tbody th[data-v-d9466e27] { vertical-align: middle; padding: 8px 14px;
+}
+.cmp-tbl thead th[data-v-d9466e27] { padding: 0;
+}
+.cmp-arrow[data-v-d9466e27] { display: inline-block; min-width: 1em; font-size: .8em; color: var(--copper);
+}
+.cmp-row[data-v-d9466e27] { cursor: pointer;
+}
+.cmp-row[data-v-d9466e27]:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px;
+}
+.cmp-name[data-v-d9466e27] { display: table-cell;
+}
+.cmp-name[data-v-d9466e27] > * { vertical-align: middle;
+}
+.cmp-name .islot-cell[data-v-d9466e27] { display: inline-grid; margin-right: 10px;
+}
+.cmp-tag[data-v-d9466e27] { margin-left: 8px; padding: 1px 6px; font: 600 .66rem/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--copper); border: 1px solid var(--copper-deep);
+}
+.cmp-empty[data-v-d9466e27] { text-align: center; color: var(--muted); padding: 22px 14px;
+}
+@media (max-width: 640px) {
+.cmp-tbl[data-v-d9466e27] { overflow-x: visible; background: none; border: 0; box-shadow: none; mask-image: none !important;
+}
+.cmp-tbl table[data-v-d9466e27], .cmp-tbl tbody[data-v-d9466e27], .cmp-tbl tr[data-v-d9466e27], .cmp-tbl td[data-v-d9466e27], .cmp-tbl tbody th[data-v-d9466e27] { display: block; width: 100%;
+}
+  /* Headers stay in the page for sorting, laid out as a row of buttons. */
+.cmp-tbl thead[data-v-d9466e27] { display: block; margin-bottom: 10px;
+}
+.cmp-tbl thead tr[data-v-d9466e27] { display: flex; flex-wrap: wrap; gap: 6px;
+}
+.cmp-tbl thead th[data-v-d9466e27] { display: block; width: auto; border: 2px solid var(--edge); text-align: left;
+}
+.cmp-tbl thead th .sort[data-v-d9466e27] { padding: 7px 10px; width: auto; text-align: left;
+}
+.cmp-tbl tbody tr[data-v-d9466e27] { margin-bottom: 10px; border: 2px solid var(--edge); background: var(--surface); box-shadow: var(--bevel); padding: 4px 0;
+}
+.cmp-tbl tbody tr[data-v-d9466e27]:nth-child(even) { background: var(--surface);
+}
+.cmp-tbl tbody th.cmp-name[data-v-d9466e27] { display: flex; align-items: center; padding: 8px 12px; min-width: 0; max-width: none; position: static; box-shadow: none; background: none;
+}
+.cmp-tbl td[data-v-d9466e27] { display: flex; justify-content: space-between; gap: 12px; padding: 5px 12px; border: 0; text-align: right; white-space: normal;
+}
+.cmp-tbl td[data-v-d9466e27]::before { content: attr(data-label); flex: none; text-align: left; font: 600 .68rem/1.6 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
+}
+.cmp-tbl td[colspan][data-v-d9466e27] { display: block; text-align: center;
+}
+.cmp-tbl td[colspan][data-v-d9466e27]::before { content: none;
+}
+}
+
+.kv-head[data-v-ee3b88b8] { margin: 14px 0 4px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--copper);
+}
+.kv-head[data-v-ee3b88b8]:first-of-type { margin-top: 0;
+}
+.kv dd[data-v-ee3b88b8], .kv dt[data-v-ee3b88b8] { min-width: 0; overflow-wrap: anywhere;
+}
+
+.beasts[data-v-8f080a3f] { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 14px;
+}
+.beast[data-v-8f080a3f] {
+  --c: var(--ink-2);
+  display: flex; flex-direction: column; gap: 12px; min-width: 0;
+  padding: 16px 16px 14px 20px;
+  background: var(--surface); border: 2px solid var(--edge);
+  box-shadow: var(--bevel), inset 6px 0 0 var(--c);
+}
+.beast-ranged[data-v-8f080a3f] { --c: var(--soul);
+}
+.beast-mini[data-v-8f080a3f] { --c: var(--copper);
+}
+.beast-blood[data-v-8f080a3f] { --c: #d04848;
+}
+.beast-affix[data-v-8f080a3f] { --c: #b48ad8;
+}
+.beast-head[data-v-8f080a3f] { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+}
+.beast-id[data-v-8f080a3f] { min-width: 0;
+}
+.beast-role[data-v-8f080a3f] { margin: 0 0 4px; font: 600 .68rem/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--c);
+}
+.beast-type[data-v-8f080a3f] { color: var(--muted);
+}
+.beast h4[data-v-8f080a3f] { margin: 0; font: 600 1.02rem/1.25 var(--display); color: var(--ink); overflow-wrap: anywhere;
+}
+.beast-hp[data-v-8f080a3f] { margin: 0; flex: none; display: grid; justify-items: end; text-align: right; max-width: 45%;
+}
+.beast-hp b[data-v-8f080a3f] { font: 700 1.9rem/1 var(--display); color: var(--c); font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.beast-hp span[data-v-8f080a3f] { margin-top: 4px; font: 500 .7rem/1.3 var(--body); color: var(--muted);
+}
+.beast-facts[data-v-8f080a3f] { display: grid; gap: 10px; margin: 0; font-size: .9rem;
+}
+.beast-facts dt[data-v-8f080a3f] { font: 600 .66rem/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+}
+.beast-facts dd[data-v-8f080a3f] { margin: 2px 0 0; color: var(--ink-2); overflow-wrap: anywhere;
+}
+.beast-counter[data-v-8f080a3f] { padding-top: 10px; border-top: 1px solid var(--line-soft);
+}
+.beast-counter dt[data-v-8f080a3f] { color: var(--c);
+}
+.beast-counter dd[data-v-8f080a3f] { color: var(--ink);
+}
+.beast-star[data-v-8f080a3f] { margin: auto 0 0; padding-top: 2px; font-size: .74rem; color: var(--muted);
+}
+.beast-rules[data-v-8f080a3f] { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; color: var(--ink-2);
+}
+@media (max-width: 420px) {
+.beast[data-v-8f080a3f] { padding: 14px 12px 12px 18px;
+}
+.beast-hp b[data-v-8f080a3f] { font-size: 1.55rem;
+}
+}
+
+.cmp[data-v-bccb53ae] { overflow-x: auto; background: var(--surface); border: 2px solid var(--edge); box-shadow: var(--bevel);
+}
+.cmp table[data-v-bccb53ae] { width: 100%; border-collapse: collapse; font-size: .86rem;
+}
+.cmp th[data-v-bccb53ae], .cmp td[data-v-bccb53ae] { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line-soft);
+}
+.cmp thead th[data-v-bccb53ae] { font: 600 .7rem/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--copper); background: var(--bg-2); border-bottom: 2px solid var(--edge);
+}
+.cmp tbody th[data-v-bccb53ae] { font: 600 .92rem/1.4 var(--body); min-width: 9em; border-left: 3px solid var(--b);
+}
+.cmp td[data-v-bccb53ae] { min-width: 12em; color: var(--ink-2);
+}
+.cmp-perk[data-v-bccb53ae], .cmp-blades[data-v-bccb53ae] { display: block;
+}
+.cmp-blades[data-v-bccb53ae] { margin-top: 6px; font-size: .78rem; color: var(--muted);
+}
+.cmp-tag[data-v-bccb53ae] { display: block; font-weight: 600; color: var(--ink); margin-bottom: 4px;
+}
+.cmp-dash[data-v-bccb53ae] { color: var(--muted);
+}
+.pick[data-v-bccb53ae] { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px;
+}
+.pick li[data-v-bccb53ae] { padding: 10px 14px; background: var(--surface); border: 1px solid var(--line-soft); border-left: 3px solid var(--b); color: var(--ink-2);
+}
+.pick b[data-v-bccb53ae] { color: var(--ink);
+}
+@media (max-width: 640px) {
+.cmp[data-v-bccb53ae] { overflow: visible; background: none; border: 0; box-shadow: none;
+}
+.cmp table[data-v-bccb53ae], .cmp tbody[data-v-bccb53ae], .cmp tr[data-v-bccb53ae], .cmp th[data-v-bccb53ae], .cmp td[data-v-bccb53ae] { display: block; width: 100%;
+}
+.cmp thead[data-v-bccb53ae] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%);
+}
+.cmp tr[data-v-bccb53ae] { margin-bottom: 12px; background: var(--surface); border: 1px solid var(--line-soft); border-top: 3px solid var(--b);
+}
+.cmp tbody th[data-v-bccb53ae] { min-width: 0; border-left: 0; background: var(--bg-2);
+}
+.cmp td[data-v-bccb53ae] { min-width: 0;
+}
+.cmp td[data-v-bccb53ae]::before { content: attr(data-label); display: block; font: 600 .68rem/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--copper); margin-bottom: 3px;
+}
+.cmp td.none[data-v-bccb53ae] { padding-top: 6px; padding-bottom: 6px;
+}
+.cmp td.none[data-v-bccb53ae]::before { display: inline; margin: 0 8px 0 0;
+}
+.cmp td.none .cmp-dash[data-v-bccb53ae] { display: inline;
+}
+.cmp-all[data-v-bccb53ae]::before { content: none;
+}
+}
+
+.faq-find[data-v-9aba0da0] { margin: 0 0 1rem;
+}
+.faq-input[data-v-9aba0da0] { width: 100%; box-sizing: border-box; padding: .6rem .8rem; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: var(--r-small); font: inherit;
+}
+.faq-input[data-v-9aba0da0]:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px;
+}
+.faq-group[data-v-9aba0da0] { margin: 0 0 1.4rem;
+}
+.faq-group h3[data-v-9aba0da0] { margin: 0 0 .5rem;
+}
+.faq-item[data-v-9aba0da0] { background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--r-box); box-shadow: var(--bevel); margin: 0 0 .4rem;
+}
+.faq-item[open][data-v-9aba0da0] { border-color: var(--soul-line);
+}
+.faq-item summary[data-v-9aba0da0] { cursor: pointer; padding: .7rem .9rem; list-style: none; display: flex; gap: .6rem; align-items: baseline; color: var(--ink);
+}
+.faq-item summary[data-v-9aba0da0]::-webkit-details-marker { display: none;
+}
+.faq-item summary[data-v-9aba0da0]::before { content: '+'; flex: none; width: 1ch; color: var(--copper); font-family: var(--mono);
+}
+.faq-item[open] summary[data-v-9aba0da0]::before { content: '\2212';
+}
+.faq-item summary[data-v-9aba0da0]:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px;
+}
+.faq-q[data-v-9aba0da0] { min-width: 0; overflow-wrap: anywhere;
+}
+.faq-a[data-v-9aba0da0] { padding: 0 .9rem .8rem 2.2rem; color: var(--ink-2); overflow-wrap: anywhere;
+}
+.faq-a p[data-v-9aba0da0] { margin: 0 0 .4rem;
+}
+.faq-links a[data-v-9aba0da0] { color: var(--soul);
+}
 /*
  * Кодекс VirusSwords.
  *
@@ -1557,3 +1764,200 @@ html body { background:
 .cat-view { border-radius: 0; border: 2px solid var(--edge); background: var(--surface); box-shadow: var(--bevel); }
 .cat-view .mstage, .mstage { background-color: var(--bg); }
 .boot-name { font-family: "Unbounded", sans-serif; }
+
+/* ==================================================================================== *
+ * THIRD PASS: leftovers of the old "obsidian" theme, accessibility, print, typography.
+ * Everything below only overrides style.css / fx.css; nothing here moves the layout.
+ * ==================================================================================== */
+
+/* --- 1a. tokens --------------------------------------------------------------------- */
+:root {
+  /* --muted on --surface-2 was 4.34:1; this value gives >= 5.2:1 on every panel colour. */
+  --muted: #9aa3ac;
+  --section-gap: clamp(48px, 7vw, 72px);
+  --measure: 70ch; /* about 75 Cyrillic characters in Golos Text */
+}
+
+/* The world colours (--w1/--w2) tint section frames and rules. The purple ones of the old
+   theme are re-mapped to copper / verdigris / slate; the place colours of the sanctums
+   (red forge, green jungle, ...) are kept on purpose. */
+:root, :root[data-world="hero"] { --w1: #e58a4e; --w2: #5fcfab; }
+:root[data-world="catalog"], :root[data-world="rarity"], :root[data-world="sanctums"] { --w1: #e58a4e; --w2: #5fcfab; }
+:root[data-world="start"], :root[data-world="materials"] { --w2: #e58a4e; }
+:root[data-world="raids"], :root[data-world="trophies"] { --w2: #5fcfab; }
+:root[data-world="night"] { --w1: #6f8fd6; --w2: #5fcfab; }
+:root[data-world="cube"] { --w2: #5fcfab; }
+html { scrollbar-color: var(--line) var(--bg); }
+::selection { background: var(--soul-line); color: var(--ink); }
+
+/* --- 1b. frames: the gradient border-boxes of fx.css showed a purple wash under the slabs - */
+.panel, .sanctum, .adv, .set, .blood, .price.boxed, .inv-group, .method, .craft:not(.small), .guide-card,
+.tbl, .rarities, .found-box, .step-btn, .boss, .hero, .tier, .fourth, .btrunk, .term, .versus {
+  background-image: none;
+}
+.sanctum, .boss, .blood, .set, .adv { background-image: linear-gradient(180deg, color-mix(in srgb, var(--w1, var(--copper)) 7%, transparent), transparent 120px); }
+.panel .tbl, .boss .tbl { background: var(--bg-2); }
+.btrunk { background-color: var(--surface); border: 2px solid var(--edge); box-shadow: var(--bevel); }
+.hero::before { display: none; } /* lavender star dots */
+.hero { box-shadow: var(--bevel); }
+.hero h1 .h1-line, .sec-title h2 { filter: none; animation: none; }
+.facts a:hover { box-shadow: none; background: var(--surface); }
+.flow .step { border-top: 2px solid var(--edge); box-shadow: var(--bevel); }
+.line::before, .energy::before, .energy::after { box-shadow: none; filter: none; }
+.line { background: linear-gradient(90deg, color-mix(in srgb, var(--lw) 9%, transparent), transparent 55%); }
+.line-title, .sanctum-title h3, .blood h4, .btrunk-title, .btrunk-then { text-shadow: none; }
+
+/* --- 1c. glows and soft shadows ------------------------------------------------------- */
+.sec-rule::before, .sec-rule::after, .emblem::before, .totop::before, footer::before, footer::after, .side::after { display: none; }
+section > h3::before { box-shadow: none; transform: none; border-radius: 0; }
+.emblem img { filter: none; }
+.blood::before, .set::before { opacity: .55; }
+.blood:hover { box-shadow: var(--bevel); }
+.blood-gem, .bnode::before, .bform.crown .bnode::before { box-shadow: none; border-radius: 0; animation: none; }
+.bform.seal .bnode::before, .bform.sealed .bnode::before { border-radius: 0; box-shadow: none; }
+.bforms::before { box-shadow: none; border-radius: 0; }
+.babyss-stream { box-shadow: none; border-radius: 0; }
+.babyss-crown .islot-cell, .babyss-heart .islot-cell { box-shadow: inset 2px 2px 0 var(--slot-lo), inset -2px -2px 0 var(--slot-hi); }
+.set .slot { box-shadow: inset 3px 3px 0 var(--slot-lo), inset -3px -3px 0 var(--slot-hi); }
+.rname { box-shadow: inset 0 0 0 2px #28007f; } /* the game's own tooltip border stays, its halo goes */
+.wave.boss { box-shadow: var(--bevel); }
+.fourth-relic { border-radius: 0; background: none; }
+.fourth-relic img, .card-pic img { filter: none; }
+.card-halo, .card-halo::after { display: none; }
+.statbar-fill { background: var(--r1, var(--copper)); box-shadow: none; }
+.bossbar-fill { box-shadow: none; }
+.mtrack-fill { background: linear-gradient(90deg, var(--soul), var(--copper)); box-shadow: none; }
+.mgem, .mmark.star .mgem, .mmark.big .mgem { border-radius: 0; background: var(--copper); box-shadow: none; }
+.mmark.big .mgem { background: var(--soul); }
+.islot-cell::before { border-radius: 0; }
+.islot:hover .islot-cell, .islot:focus-visible .islot-cell { box-shadow: inset 3px 3px 0 var(--slot-lo), inset -3px -3px 0 var(--slot-hi); }
+.islot:hover .islot-cell::after, .islot.open .islot-cell::after { background: rgba(255, 255, 255, .3); }
+.toast { border-radius: 0; }
+.adv:hover .toast { box-shadow: inset 0 0 0 2px #8b8b8b, inset 0 0 0 4px #212121, inset 0 0 0 5px #000; }
+.cv-name, .tip .tname { filter: drop-shadow(0 0 .6px rgba(255, 255, 255, .55)); }
+.figure-title { text-shadow: 0 2px 0 rgba(0, 0, 0, .6); }
+.catslot-blood, .rchip-swatch, .term-dots i { border-radius: 0; }
+.inspect-veil { background: rgba(8, 10, 12, .7); backdrop-filter: none; }
+.inspect-grab { border-radius: 0; }
+.netnote { border-radius: 0; box-shadow: var(--bevel); backdrop-filter: none; border: 2px solid var(--edge); background: var(--bg-2); }
+.keys { border-radius: 0; border: 2px solid var(--edge); box-shadow: var(--bevel); background: var(--bg-2); }
+.keys::backdrop { background: rgba(8, 10, 12, .7); backdrop-filter: none; }
+
+/* soft corners that style.css hard-codes in px (the variables are already 0) */
+.sec-anchor-tip:not(:empty), .craft .any, .ability .chip, .search-hint, .topbar .search-hint, .found-item,
+.cv-more, .cat-order select, .cat-empty, .no-abil, .card-give, .term-copy, .skip, .mitem, .sleeping,
+.f-task, .f-goal, .bnode::before, .steps li::before, .mstage { border-radius: 0; }
+.cat-order select { border: 2px solid var(--edge); background-color: var(--bg); }
+.steps::before, .steps li::before { box-shadow: none; }
+.steps li::before { background: var(--copper); }
+.steps li:last-child::before { background: var(--soul); box-shadow: none; }
+
+/* dark "screens" had a purple black (#120d18, #0b0810): make them deepslate */
+.sanctum figure, .sanctum figcaption, figure.rooms { background: var(--bg); }
+.sanctum figure.terra-figure { background: radial-gradient(circle at 50% 40%, #1f3a22 0%, var(--bg) 70%); }
+.sanctum figure.cube-figure { background: radial-gradient(circle at 50% 40%, #1c2f46 0%, var(--bg) 70%); }
+.term, .card-give { background: var(--bg); }
+.term-bar { background: var(--bg-2); border-bottom: 2px solid var(--edge); }
+.term-body { background: var(--bg); }
+.term-copy { background: var(--surface); border: 2px solid var(--edge); }
+.t-c { color: #9aa3ac; } /* was #7d7392: 4.27:1 on the terminal ground, now 7.4:1 */
+
+/* advancement tags and the challenge frame were purple */
+.t-goal { background: var(--surface-2); color: #f0cf6a; }
+.t-challenge { background: var(--surface-2); color: var(--copper); }
+.f-challenge { background: linear-gradient(160deg, var(--copper), var(--copper-deep)); }
+.btrunk, .fourth { background-image: radial-gradient(120% 60% at 20% 100%, color-mix(in srgb, var(--b) 14%, transparent), transparent 70%); }
+
+/* the atlas: rounded clip paths and glowing pins are in the SVG itself, CSS geometry wins over the attributes */
+.atlas-scroll { border-radius: 0; box-shadow: none; background: var(--bg); }
+#clip-ow rect, #clip-ne rect, .pin-gem { rx: 0; ry: 0; }
+.pin-gem { filter: none; }
+.pin-glow { opacity: 0; animation: none; }
+
+/* --- 2. accessibility ----------------------------------------------------------------- */
+/* One visible keyboard focus ring everywhere, in the theme's verdigris (9.4:1 on --bg, 8.2:1 on --surface). */
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 0; }
+/* style.css removed the outline from the text fields and relied on a soft glow: give them the ring back. */
+.search input:focus-visible, .cat-search input:focus-visible, .cat-order select:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; box-shadow: var(--bevel); }
+/* Where the ring would be clipped by a scroll container, draw it inside the element. */
+.topbar .nav a:focus-visible, .seg button:focus-visible, .facts a:focus-visible, .sort:focus-visible,
+.found-item:focus-visible, .nav-step:focus-visible, .step-btn:focus-visible { outline-offset: -3px; }
+/* Game slots sit on light grey: verdigris is only 1.9:1 there, the dark edge colour is 5.7:1 (11.4:1 on the light GUI grey). */
+a.cslot:focus-visible, a.pslot:focus-visible, .hslot:focus-visible { outline: 3px solid var(--edge); outline-offset: -3px; }
+.hslot.sel:focus-visible { outline-color: var(--edge); }
+/* SVG pins in the atlas cannot take an outline reliably: light the glow ring and the gem instead. */
+.pin:focus-visible .pin-glow { opacity: 1; fill: var(--focus); animation: none; }
+.pin:focus-visible .pin-gem { stroke: var(--focus); stroke-width: 4; }
+.skip:focus-visible { outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  /* No animation of any kind; end states are the resting states in every rule above. */
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .sparks { display: none; }
+}
+
+/* --- 4. typography and tables -------------------------------------------------------------- */
+/* One rhythm between chapters on every width (style.css used 84 / 56 px). */
+section { padding-block: var(--section-gap) 0; gap: 22px; }
+section + section { margin-top: 0; }
+/* Reading measure: running text never runs wider than ~75 characters, even on the wide page. */
+.lead, .prose, .callout, .quote, .obtain-text, section > p, section > .stack > p, section > ul, section > ol,
+.panel p, .sanctum-body p, .method p, .guide-card p, .card p { max-width: var(--measure); }
+p, li, td, dd { overflow-wrap: break-word; }
+
+/* A table scrolls inside its own frame (both ways); its head stays put while the body moves.
+   The frame is capped in height so the sticky head has something to stick to. */
+.tbl { overflow: auto; max-height: min(78vh, 720px); max-width: 100%; overscroll-behavior: contain; }
+.tbl table { width: 100%; max-width: none; }
+.tbl thead th { position: sticky; top: 0; z-index: 2; background: var(--bg-2); box-shadow: inset 0 -2px 0 var(--edge); border-bottom: 0; }
+.tbl thead th:first-child { z-index: 3; }
+.wtable thead th { background: var(--bg-2); }
+.term-body, pre { max-width: 100%; overflow-x: auto; }
+.shell, main { min-width: 0; }
+
+/* --- 3. print ----------------------------------------------------------------------------------- */
+/* style.css has a print block too, but its light variables lose to the :root of this file, so they are set again here. */
+@media print {
+  @page { margin: 14mm 12mm; }
+  :root, :root[data-world] {
+    --bg: #fff; --bg-2: #f4f2ee; --surface: #fff; --surface-2: #eceae5; --line: #8a8f95; --line-soft: #cfd2d5;
+    --ink: #14171b; --ink-2: #2c3238; --muted: #4f565d; --soul: #0b6a50; --focus: #0b6a50;
+    --copper: #8a3f12; --gold: #8a3f12; --edge: #3d4650; --code-bg: #eceae5; --bevel: 0 0 #0000; --section-gap: 20px;
+    --w1: #8a3f12; --w2: #0b6a50;
+  }
+  html, html body, body { background: #fff !important; color: var(--ink); font-size: 11pt; }
+  /* navigation, atmosphere, floating and interactive furniture */
+  .topbar, .sky, .motes, .sparks, .xp, .totop, .netnote, .keys, .inspect-wrap, .hovertip, .nav-step, .skip,
+  .hero-model, .mstage-hint, .hotbar-wrap, .cat-filters, .weapon-bar, .sitefoot-col, .sitefoot-keys, .term-copy, .cv-more { display: none !important; }
+  .shell, .sitefoot, main { margin: 0 !important; padding: 0 !important; max-width: none !important; }
+  section { padding-top: var(--section-gap) !important; }
+  .sec-head, h2, h3, h4 { break-after: avoid; }
+  /* cards stay whole */
+  .panel, .method, .sanctum, .boss, .set, .blood, .adv, .craft, .guide-card, .boxed, .inv-group, .rarity, .ability,
+  .step, .line, .callout, .tier, .wave, .fourth, .btrunk, .babyss, .versus, .price, .toast, .kv > div, .atlas, figure, tr, li {
+    break-inside: avoid; page-break-inside: avoid;
+  }
+  .panel, .method, .sanctum, .boss, .set, .blood, .adv, .craft, .guide-card, .boxed, .inv-group, .rarities, .callout,
+  .tier, .fourth, .btrunk, .tbl, .sec-title, .hero, .facts, .atlas, .cat-view, .sitefoot, .term {
+    background: #fff !important; background-image: none !important; border: 1px solid var(--edge) !important; box-shadow: none !important; color: var(--ink);
+  }
+  .sec-title { border-left: 6px solid var(--edge) !important; }
+  .hero h1 .h1-line { color: var(--ink); -webkit-text-fill-color: currentColor; }
+  .hero h1 .h1-line + .h1-line { -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px var(--copper); }
+  /* tables flow across pages with the head repeated; no inner scrolling on paper */
+  .tbl { overflow: visible !important; max-height: none !important; mask-image: none !important; }
+  .tbl thead { display: table-header-group; }
+  .tbl thead th, .tbl tbody th { position: static !important; box-shadow: none !important; background: var(--bg-2) !important; }
+  .tbl table { width: 100%; }
+  .atlas-scroll { overflow: visible; }
+  .atlas-svg { min-width: 0; width: 100%; }
+  .cat-view { position: static !important; max-height: none !important; overflow: visible !important; }
+  .term-body { overflow: visible; white-space: pre-wrap; }
+  .term-body code { color: var(--ink); }
+  /* game slots and tooltips keep their own colours: they are pictures of the game */
+  .slot, .islot-cell, .cslot, .pslot, .tip, .gslot, .guide-grid, .guide-item, .craft-table, .price-row, .frame, .toast, .rname, .sw, .catslot, .cat-grid {
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  a { color: inherit; text-decoration: underline; }
+}
