@@ -3,7 +3,7 @@ const counts = {
   materials: 34,
   trophies: 38
 };
-const built = "2026-11-14";
+const built = "2026-11-15";
 const words = {
   weapons: "клинка",
   materials: "материала",
@@ -668,12 +668,12 @@ const items = [
     damage: 10,
     speed: 1,
     icon: "images/other/2e90025b93.png",
-    obtain: "Крафт из Демонического резака и терра-слитков",
+    obtain: "Эволюция Демонического резака у алтаря Храма джунглей",
     blood: "steel",
     form: 1,
-    method: "craft",
-    methodLabel: "Верстак",
-    recipe: true,
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false,
     model3d: true
   },
   {
@@ -4378,20 +4378,6 @@ const recipes = [
       null
     ],
     shapeless: true
-  },
-  {
-    result: "terra_cutter",
-    grid: [
-      "terra_ingot",
-      "terra_ingot",
-      "terra_ingot",
-      "terra_ingot",
-      "demonic_cutter",
-      "terra_ingot",
-      "terra_ingot",
-      "terra_ingot",
-      "terra_ingot"
-    ]
   },
   {
     result: "wanderer_cube",
