@@ -1241,7 +1241,7 @@ const items = [
         trigger: "При ударе",
         kind: "hit",
         rest: null,
-        text: "<span>Коса бьёт не одного: врагам в дуге перед вами</span> <span>(3 блока) достаётся половина удара.</span>"
+        text: "<span>Коса бьёт не одного: врагам в дуге перед вами</span> <span>(3,4 блока) достаётся половина удара.</span>"
       },
       {
         name: "Души",
@@ -2880,22 +2880,7 @@ const altar = [
     at: "Храм джунглей",
     time: "",
     blood: "Кровь предков",
-    form: 4,
-    costs: [
-      {
-        key: "black_substance",
-        n: 1
-      }
-    ]
-  },
-  {
-    kind: "evolve",
-    result: "all_black",
-    from: "antichrist",
-    at: "Древняя фабрика",
-    time: "",
-    blood: "Техноорганическая кровь",
-    form: 4,
+    form: 5,
     costs: [
       {
         key: "black_substance",
@@ -3544,15 +3529,11 @@ const chains = [
         sep: "или"
       },
       {
-        id: "enigma",
+        id: "celestial",
         sep: "или"
       },
       {
         id: "true_excalibur",
-        sep: "или"
-      },
-      {
-        id: "antichrist",
         sep: "или"
       },
       {

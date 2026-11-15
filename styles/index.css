@@ -1,23 +1,23 @@
 
 /* The list in groups: a label over each, the rows as before. On a short screen it scrolls in its box. */
-.found[data-v-93340b23] { max-height: min(62vh, 460px); overflow-y: auto; overscroll-behavior: contain;
+.found[data-v-2da65d61] { max-height: min(62vh, 460px); overflow-y: auto; overscroll-behavior: contain;
 }
-.found-group[data-v-93340b23] { display: grid; gap: 1px; min-width: 0;
+.found-group[data-v-2da65d61] { display: grid; gap: 1px; min-width: 0;
 }
-.found-group + .found-group[data-v-93340b23] { margin-top: 4px; padding-top: 4px; border-top: 1px solid var(--line-soft);
+.found-group + .found-group[data-v-2da65d61] { margin-top: 4px; padding-top: 4px; border-top: 1px solid var(--line-soft);
 }
-.found-label[data-v-93340b23] { padding: 5px 8px 3px; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+.found-label[data-v-2da65d61] { padding: 5px 8px 3px; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
 }
-.found-item[data-v-93340b23] { min-width: 0;
+.found-item[data-v-2da65d61] { min-width: 0;
 }
-.found-kind[data-v-93340b23] { max-width: 11em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+.found-kind[data-v-2da65d61] { max-width: 11em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 /* Rows without a picture: a section is an outlined square, a bloodline a square of its own colour. */
-.found-mark[data-v-93340b23] { width: 12px; height: 12px; justify-self: center; border: 1px solid var(--line); background: var(--surface-2);
+.found-mark[data-v-2da65d61] { width: 12px; height: 12px; justify-self: center; border: 1px solid var(--line); background: var(--surface-2);
 }
-.found-mark.section[data-v-93340b23] { border-color: var(--copper);
+.found-mark.section[data-v-2da65d61] { border-color: var(--copper);
 }
-.found-none[data-v-93340b23] { margin: 0; padding: 10px 10px 2px; font-size: .9rem; color: var(--ink);
+.found-none[data-v-2da65d61] { margin: 0; padding: 10px 10px 2px; font-size: .9rem; color: var(--ink);
 }
 
 .road[data-v-060b7782] { list-style: none; margin: 0 0 28px; padding: 0; max-width: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 14px;
@@ -178,66 +178,70 @@ button.road-icon[data-v-060b7782]:hover { border-color: var(--copper); backgroun
 .calc-out b[data-v-b814b206] { color: var(--ink);
 }
 
-.kv-head[data-v-ee3b88b8] { margin: 14px 0 4px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--copper);
+.kv-head[data-v-86c6a540] { margin: 14px 0 4px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--copper);
 }
-.kv-head[data-v-ee3b88b8]:first-of-type { margin-top: 0;
+.kv-head[data-v-86c6a540]:first-of-type { margin-top: 0;
 }
-.kv dd[data-v-ee3b88b8], .kv dt[data-v-ee3b88b8] { min-width: 0; overflow-wrap: anywhere;
+.kv dd[data-v-86c6a540], .kv dt[data-v-86c6a540] { min-width: 0; overflow-wrap: anywhere;
 }
 
-.beasts[data-v-8f080a3f] { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 14px;
+.beasts[data-v-80ac7c13] { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 14px;
 }
-.beast[data-v-8f080a3f] {
+.beast[data-v-80ac7c13] {
   --c: var(--ink-2);
   display: flex; flex-direction: column; gap: 12px; min-width: 0;
   padding: 16px 16px 14px 20px;
   background: var(--surface); border: 2px solid var(--edge);
   box-shadow: var(--bevel), inset 6px 0 0 var(--c);
 }
-.beast-ranged[data-v-8f080a3f] { --c: var(--soul);
+.beast-ranged[data-v-80ac7c13] { --c: var(--soul);
 }
-.beast-mini[data-v-8f080a3f] { --c: var(--copper);
+.beast-mini[data-v-80ac7c13] { --c: var(--copper);
 }
-.beast-blood[data-v-8f080a3f] { --c: #d04848;
+.beast-blood[data-v-80ac7c13] { --c: #d04848;
 }
-.beast-affix[data-v-8f080a3f] { --c: #b48ad8;
+.beast-affix[data-v-80ac7c13] { --c: #b48ad8;
 }
-.beast-head[data-v-8f080a3f] { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+.beast-head[data-v-80ac7c13] { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
 }
-.beast-id[data-v-8f080a3f] { min-width: 0;
+.beast-id[data-v-80ac7c13] { min-width: 0;
 }
-.beast-role[data-v-8f080a3f] { margin: 0 0 4px; font: 600 .68rem/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--c);
+.beast-role[data-v-80ac7c13] { margin: 0 0 4px; font: 600 .68rem/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--c);
 }
-.beast-type[data-v-8f080a3f] { color: var(--muted);
+.beast-type[data-v-80ac7c13] { color: var(--muted);
 }
-.beast h4[data-v-8f080a3f] { margin: 0; font: 600 1.02rem/1.25 var(--display); color: var(--ink); overflow-wrap: anywhere;
+.beast h4[data-v-80ac7c13] { margin: 0; font: 600 1.02rem/1.25 var(--display); color: var(--ink); overflow-wrap: anywhere;
 }
-.beast-hp[data-v-8f080a3f] { margin: 0; flex: none; display: grid; justify-items: end; text-align: right; max-width: 45%;
+.beast-hp[data-v-80ac7c13] { margin: 0; flex: none; display: grid; justify-items: end; text-align: right; max-width: 45%;
 }
-.beast-hp b[data-v-8f080a3f] { font: 700 1.9rem/1 var(--display); color: var(--c); font-variant-numeric: tabular-nums; white-space: nowrap;
+.beast-hp b[data-v-80ac7c13] { font: 700 1.9rem/1 var(--display); color: var(--c); font-variant-numeric: tabular-nums; white-space: nowrap;
 }
-.beast-hp span[data-v-8f080a3f] { margin-top: 4px; font: 500 .7rem/1.3 var(--body); color: var(--muted);
+.beast-hp span[data-v-80ac7c13] { margin-top: 4px; font: 500 .7rem/1.3 var(--body); color: var(--muted);
 }
-.beast-facts[data-v-8f080a3f] { display: grid; gap: 10px; margin: 0; font-size: .9rem;
+.beast-facts[data-v-80ac7c13] { display: grid; gap: 10px; margin: 0; font-size: .9rem;
 }
-.beast-facts dt[data-v-8f080a3f] { font: 600 .66rem/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+.beast-facts dt[data-v-80ac7c13] { font: 600 .66rem/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
 }
-.beast-facts dd[data-v-8f080a3f] { margin: 2px 0 0; color: var(--ink-2); overflow-wrap: anywhere;
+.beast-facts dd[data-v-80ac7c13] { margin: 2px 0 0; color: var(--ink-2); overflow-wrap: anywhere;
 }
-.beast-counter[data-v-8f080a3f] { padding-top: 10px; border-top: 1px solid var(--line-soft);
+.beast-counter[data-v-80ac7c13] { padding-top: 10px; border-top: 1px solid var(--line-soft);
 }
-.beast-counter dt[data-v-8f080a3f] { color: var(--c);
+.beast-counter dt[data-v-80ac7c13] { color: var(--c);
 }
-.beast-counter dd[data-v-8f080a3f] { color: var(--ink);
+.beast-counter dd[data-v-80ac7c13] { color: var(--ink);
 }
-.beast-star[data-v-8f080a3f] { margin: auto 0 0; padding-top: 2px; font-size: .74rem; color: var(--muted);
+.beast-star[data-v-80ac7c13] { margin: auto 0 0; padding-top: 2px; font-size: .74rem; color: var(--muted);
 }
-.beast-rules[data-v-8f080a3f] { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; color: var(--ink-2);
+.affix-lead[data-v-80ac7c13] { max-width: var(--measure); color: var(--ink-2); overflow-wrap: anywhere;
+}
+.beasts + .panel[data-v-80ac7c13] { margin-top: 18px;
+}
+.beast-rules[data-v-80ac7c13] { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; color: var(--ink-2);
 }
 @media (max-width: 420px) {
-.beast[data-v-8f080a3f] { padding: 14px 12px 12px 18px;
+.beast[data-v-80ac7c13] { padding: 14px 12px 12px 18px;
 }
-.beast-hp b[data-v-8f080a3f] { font-size: 1.55rem;
+.beast-hp b[data-v-80ac7c13] { font-size: 1.55rem;
 }
 }
 
@@ -2189,4 +2193,94 @@ p, li, td, dd { overflow-wrap: break-word; }
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
   a { color: inherit; text-decoration: underline; }
+}
+
+/* ==================================================================================== *
+ * FOURTH PASS: accessibility audit. Only corrections: focus, motion, contrast,
+ * touch targets on phones, print. Nothing here changes the look or the palette.
+ * ==================================================================================== */
+
+/* --- focus ------------------------------------------------------------------------------ */
+/* Catalog slots are light grey buttons packed 4px apart: an inner dark ring, as on the other game slots. */
+.catslot:focus-visible { outline: 3px solid var(--edge); outline-offset: -3px; }
+/* Things that sit inside a scrolling or clipping frame keep their ring inside themselves. */
+.tbl a:focus-visible, .tbl tbody tr:focus-visible, .chip:focus-visible, .rchip:focus-visible, .bchip:focus-visible,
+.suggest-chip:focus-visible, .mitem:focus-visible, .term-copy:focus-visible, .faq-item summary:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
+/* A row of the comparison table opens a card: it must look pressable from the keyboard as it does under the mouse. */
+.tbl tbody tr:focus-visible { background: var(--surface-2); }
+/* Forced colours (Windows high contrast) drop box-shadows and backgrounds: keep a real outline. */
+@media (forced-colors: active) {
+  :focus-visible { outline: 2px solid Highlight; }
+  .chip[aria-pressed="true"], .rchip[aria-pressed="true"], .bchip[aria-pressed="true"], .seg button[aria-pressed="true"], .topbar .nav a.on { outline: 2px solid Highlight; outline-offset: -2px; }
+}
+
+/* --- contrast --------------------------------------------------------------------------- */
+/* Facets with nothing behind them were at 45% opacity: label 3.1:1, counter 2.3:1. Still clickable, so still readable:
+   70% keeps them visibly quieter, the label is 5.4:1 and the counter takes the label's colour. */
+.rchip.none, .bchip.none { opacity: .7; }
+.rchip.none > .facet, .bchip.none > .facet { color: inherit; -webkit-text-fill-color: currentColor; }
+/* The red of the blood-moon beasts was 3.5:1 as small text on a panel; the bar and the big number keep the original red. */
+.beasts .beast-blood .beast-role, .beasts .beast-blood .beast-counter dt { color: #e87070; } /* 5.2:1 on --surface */
+
+/* --- motion ----------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  /* The view transition API and scroll-driven effects are not covered by the * rule above. */
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+  /* Without transitions the "not yet seen" states would stay hidden if a script is late: show the end states. */
+  .bform { opacity: 1; transform: none; }
+  .bforms::before, .mtrack-fill, .bossbar-fill { transform: none; }
+  .mgem { opacity: 1; transform: rotate(45deg); }
+  .islot:hover .islot-cell, .islot:focus-visible .islot-cell { transform: none; }
+}
+
+/* --- touch targets: at least 40px on a phone ----------------------------------------------- */
+@media (max-width: 480px) {
+  button.chip, .rchip, .bchip, .seg button, .suggest-chip, .tally-reset, .path-reset, .term-copy, .cv-more, .text-btn,
+  .cat-order select, .sort, .step-btn, .search input, .cat-search input, .faq-input { min-height: 40px; }
+  .topbar .nav a { min-height: 40px; align-items: center; }
+  .topbar .brand { min-height: 40px; }
+  .found-item, .mitem, .wname { min-height: 40px; }
+  .sec-anchor, .inspect-close, .keys-close { width: 40px; height: 40px; }
+  .sitefoot-col ul { gap: 0; }
+  .sitefoot-col a, .sitefoot-gh a { display: inline-flex; align-items: center; min-height: 40px; }
+  .road .road-card .road-more { padding-block: 10px; }
+  section .calc .calc-stars button { min-width: 40px; min-height: 40px; }
+  section .calc .calc-row input[type="range"] { min-height: 40px; }
+  .calc .calc-check, .path-step .path-head { min-height: 40px; }
+  /* The recipe grid is a picture of the game's table, but its cells are links: 40px cells, the icons as they were. */
+  .craft:not(.small) .craft-grid { grid-template-columns: repeat(3, 40px); grid-auto-rows: 40px; }
+  /* Atlas pins: the invisible ring under a pin is its hit area; 29 units of the 1200-wide drawing shown at 860px is 41px. */
+  .pin-glow { r: 29px; }
+}
+
+/* --- print: what the third pass left on the screen's terms --------------------------------- */
+@media print {
+  /* interactive furniture that means nothing on paper */
+  .faq-find, .tally-reset, .path-reset, .calc-stars, .sec-anchor, .cat-empty, .figure-title { display: none !important; }
+  /* Collapsed answers are printed open. ::details-content needs a 2025 browser; older ones print the questions only. */
+  details.faq-item::details-content { display: block !important; content-visibility: visible !important; height: auto !important; }
+  .faq-item summary { list-style: none; }
+  .faq-item summary::before { content: none !important; }
+  .faq-item { break-inside: avoid; border: 1px solid var(--edge) !important; background: #fff !important; }
+  /* Sections that light up when scrolled into view: on paper everything is lit. */
+  .bform { opacity: 1 !important; transform: none !important; }
+  .bforms::before, .mtrack-fill, .bossbar-fill { transform: none !important; }
+  .mgem { opacity: 1 !important; transform: rotate(45deg) !important; }
+  .cat-view.stale, .islot.dim, .rchip.none, .bchip.none { opacity: 1 !important; filter: none !important; }
+  /* Light text meant for the dark page: ink on white. */
+  .line-title, .blood h4, .boss-name, .bossbar-name, .wave.boss .wave-t, .versus-nums .up, .versus-nums .down, .mlabel span,
+  .term-bar, .term-body, .term-body span, .card-give code, .beast-role, .beast-hp b, .beast-counter dt,
+  .road-n, b[style*="color"] { color: var(--ink) !important; -webkit-text-fill-color: currentColor; }
+  /* Rarity names are painted with light gradients: darken them on white, leave the game's own dark tooltips alone. */
+  .paint, .btitle { filter: brightness(.5) saturate(1.4) !important; }
+  .tip .paint, .rname .paint, .toast .paint { filter: none !important; }
+  /* dark panels that were missed: every remaining slab goes white */
+  .beast, .road-card, .first, .path-step, .calc, .calc-out, .cmp, .pick li, .card-give, .term-bar, .term-body, .btree, .babyss, .wave, .versus,
+  .ability, .step, .line, .rarity, .sanctum figure, .sanctum figcaption, figure.rooms, .atlas-scroll {
+    background: #fff !important; background-image: none !important; box-shadow: none !important;
+  }
+  .road-n { background: none !important; border: 1px solid var(--edge); }
+  .sanctum > figure::after { display: none !important; }
+  /* a link on paper is only useful with its address; in-page anchors are left as plain text */
+  .faq-a a[href^="http"]::after, .sitefoot-gh a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .85em; overflow-wrap: anywhere; }
 }
