@@ -1,12 +1,12 @@
 const counts = {
   weapons: 33,
-  materials: 34,
-  trophies: 38
+  materials: 36,
+  trophies: 39
 };
-const built = "2026-11-15";
+const built = "2026-11-16";
 const words = {
   weapons: "клинка",
-  materials: "материала",
+  materials: "материалов",
   trophies: "достижений"
 };
 const icons = {
@@ -164,7 +164,8 @@ const rarities = [
       "Секира берсерка",
       "Душа демона",
       "Осколок души",
-      "Дымовой гриб"
+      "Дымовой гриб",
+      "Огненный мешочек"
     ]
   },
   {
@@ -274,7 +275,8 @@ const rarities = [
       "Ангельская шкатулка",
       "V — Иерофант",
       "VIII — Правосудие",
-      "XVIII — Луна"
+      "XVIII — Луна",
+      "Небесная арфа"
     ]
   },
   {
@@ -668,12 +670,12 @@ const items = [
     damage: 10,
     speed: 1,
     icon: "images/other/2e90025b93.png",
-    obtain: "Эволюция Демонического резака у алтаря Храма джунглей",
+    obtain: "Крафт из Демонического резака и терра-слитков",
     blood: "steel",
     form: 1,
-    method: "evolve",
-    methodLabel: "Эволюция у алтаря",
-    recipe: false,
+    method: "craft",
+    methodLabel: "Верстак",
+    recipe: true,
     model3d: true
   },
   {
@@ -2623,6 +2625,78 @@ const items = [
     methodLabel: "Святилище",
     recipe: false,
     model3d: false
+  },
+  {
+    kind: "material",
+    id: "fire_pouch",
+    name: "Огненный мешочек",
+    rarity: "HELLISH",
+    rarityLabel: "Адская",
+    line: "material",
+    lore: [
+      '<span style="color:#808080"><em>Кошель с пояса пиглина. Тёплый, тяжёлый, звенит.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Добыча рейда",
+        colour: "#FFAA00",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: null,
+        text: "<span>Золото, обсидиан и сокровища бастионов —</span> <span>а изредка и клинок Кримсон.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Каждому участнику отражённого рейда пиглинов; ПКМ — открыть",
+    icon: "images/other/9ddebcd392.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false,
+    model3d: false
+  },
+  {
+    kind: "material",
+    id: "sky_harp",
+    name: "Небесная арфа",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "material",
+    lore: [
+      '<span style="color:#808080"><em>Её струны натянуты из первого света. Ранить ими нельзя.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Отзвук",
+        colour: "#55FFFF",
+        trigger: "В руке",
+        kind: "other",
+        rest: null,
+        text: "<span>Вы и союзники в 6 блоках понемногу лечитесь.</span>"
+      },
+      {
+        name: "Гимн рассвета",
+        colour: "#55FFFF",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "20 с",
+        text: "<span>Свои в 8 блоках: +4 сердца и регенерация.</span>"
+      },
+      {
+        name: "Колыбельная небес",
+        colour: "#55FFFF",
+        trigger: "Shift + правый клик",
+        kind: "other",
+        rest: "45 с",
+        text: "<span>Свои в 6 блоках: яды и слабости сняты,</span> <span>поглощение и сопротивление на 8 секунд.</span> <span>Только небесная кровь с третьей формы.</span>"
+      }
+    ],
+    stats: "",
+    obtain: "Огненный мешочек (3%); небесная кровь с 3-й формы",
+    icon: "images/other/9a8322215a.png",
+    method: "place",
+    methodLabel: "Святилище",
+    recipe: false,
+    model3d: true
   }
 ];
 const altar = [
@@ -2880,7 +2954,22 @@ const altar = [
     at: "Храм джунглей",
     time: "",
     blood: "Кровь предков",
-    form: 5,
+    form: 4,
+    costs: [
+      {
+        key: "black_substance",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "evolve",
+    result: "all_black",
+    from: "antichrist",
+    at: "Древняя фабрика",
+    time: "",
+    blood: "Техноорганическая кровь",
+    form: 4,
     costs: [
       {
         key: "black_substance",
@@ -3529,11 +3618,15 @@ const chains = [
         sep: "или"
       },
       {
-        id: "celestial",
+        id: "enigma",
         sep: "или"
       },
       {
         id: "true_excalibur",
+        sep: "или"
+      },
+      {
+        id: "antichrist",
         sep: "или"
       },
       {
@@ -4359,6 +4452,20 @@ const recipes = [
       null
     ],
     shapeless: true
+  },
+  {
+    result: "terra_cutter",
+    grid: [
+      "terra_ingot",
+      "terra_ingot",
+      "terra_ingot",
+      "terra_ingot",
+      "demonic_cutter",
+      "terra_ingot",
+      "terra_ingot",
+      "terra_ingot",
+      "terra_ingot"
+    ]
   },
   {
     result: "wanderer_cube",

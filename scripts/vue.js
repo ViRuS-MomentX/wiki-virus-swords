@@ -7270,61 +7270,6 @@ const vModelText = {
     el.value = newValue;
   }
 };
-const vModelCheckbox = {
-  // #4096 array checkboxes need to be deep traversed
-  deep: true,
-  created(el, _, vnode) {
-    el[assignKey] = getModelAssigner(vnode);
-    addEventListener(el, "change", () => {
-      const modelValue = el._modelValue;
-      const elementValue = getValue(el);
-      const checked = el.checked;
-      const assign = el[assignKey];
-      if (isArray(modelValue)) {
-        const index = looseIndexOf(modelValue, elementValue);
-        const found = index !== -1;
-        if (checked && !found) {
-          assign(modelValue.concat(elementValue));
-        } else if (!checked && found) {
-          const filtered = [...modelValue];
-          filtered.splice(index, 1);
-          assign(filtered);
-        }
-      } else if (isSet(modelValue)) {
-        const cloned = new Set(modelValue);
-        if (checked) {
-          cloned.add(elementValue);
-        } else {
-          cloned.delete(elementValue);
-        }
-        assign(cloned);
-      } else {
-        assign(getCheckboxValue(el, checked));
-      }
-    });
-  },
-  // set initial checked on mount to wait for true-value/false-value
-  mounted: setChecked,
-  beforeUpdate(el, binding, vnode) {
-    el[assignKey] = getModelAssigner(vnode);
-    setChecked(el, binding, vnode);
-  }
-};
-function setChecked(el, { value, oldValue }, vnode) {
-  el._modelValue = value;
-  let checked;
-  if (isArray(value)) {
-    checked = looseIndexOf(value, vnode.props.value) > -1;
-  } else if (isSet(value)) {
-    checked = value.has(vnode.props.value);
-  } else {
-    if (value === oldValue) return;
-    checked = looseEqual(value, getCheckboxValue(el, true));
-  }
-  if (el.checked !== checked) {
-    el.checked = checked;
-  }
-}
 const vModelSelect = {
   // <select multiple> value need to be deep traversed
   deep: true,
@@ -7413,10 +7358,6 @@ function setSelected(el, value) {
 function getValue(el) {
   return "_value" in el ? el._value : el.value;
 }
-function getCheckboxValue(el, checked) {
-  const key = checked ? "_trueValue" : "_falseValue";
-  return key in el ? el[key] : checked;
-}
 const systemModifiers = ["ctrl", "shift", "alt", "meta"];
 const modifierGuards = {
   stop: (e) => e.stopPropagation(),
@@ -7441,30 +7382,6 @@ const withModifiers = (fn, modifiers) => {
       if (guard && guard(event, modifiers)) return;
     }
     return fn(event, ...args);
-  }));
-};
-const keyNames = {
-  esc: "escape",
-  space: " ",
-  up: "arrow-up",
-  left: "arrow-left",
-  right: "arrow-right",
-  down: "arrow-down",
-  delete: "backspace"
-};
-const withKeys = (fn, modifiers) => {
-  const cache = fn._withKeys || (fn._withKeys = {});
-  const cacheKey = modifiers.join(".");
-  return cache[cacheKey] || (cache[cacheKey] = ((event) => {
-    if (!("key" in event)) {
-      return;
-    }
-    const eventKey = hyphenate(event.key);
-    if (modifiers.some(
-      (k) => k === eventKey || keyNames[k] === eventKey
-    )) {
-      return fn(event);
-    }
   }));
 };
 const rendererOptions = /* @__PURE__ */ extend({ patchProp }, nodeOps);
@@ -7510,11 +7427,9 @@ function normalizeContainer(container) {
   return container;
 }
 export {
-  withKeys as A,
+  createStaticVNode as A,
   vModelSelect as B,
-  createStaticVNode as C,
-  vModelCheckbox as D,
-  createApp as E,
+  createApp as C,
   Fragment as F,
   Transition as T,
   onBeforeUnmount as a,
@@ -7524,23 +7439,23 @@ export {
   createBaseVNode as e,
   withDirectives as f,
   renderList as g,
-  createTextVNode as h,
-  createCommentVNode as i,
-  normalizeClass as j,
-  ref as k,
-  normalizeStyle as l,
-  withModifiers as m,
-  nextTick as n,
+  createCommentVNode as h,
+  createTextVNode as i,
+  ref as j,
+  withModifiers as k,
+  renderSlot as l,
+  normalizeStyle as m,
+  normalizeClass as n,
   onMounted as o,
-  renderSlot as p,
-  createVNode as q,
+  createVNode as p,
+  withCtx as q,
   reactive as r,
-  withCtx as s,
+  vShow as s,
   toDisplayString as t,
   unref as u,
   vModelText as v,
   watch as w,
-  vShow as x,
-  createBlock as y,
-  resolveDynamicComponent as z
+  createBlock as x,
+  resolveDynamicComponent as y,
+  nextTick as z
 };
