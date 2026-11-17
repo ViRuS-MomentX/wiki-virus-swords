@@ -1,6 +1,6 @@
 const counts = {
   weapons: 33,
-  materials: 36,
+  materials: 38,
   trophies: 39
 };
 const built = "2026-11-17";
@@ -77,6 +77,8 @@ const guideIcons = {
   gunpowder: "images/guide/gunpowder.png",
   blaze_powder: "images/guide/blaze_powder.png",
   netherite_scrap: "images/guide/netherite_scrap.png",
+  sculk_shrieker: "images/guide/sculk_shrieker.png",
+  ancient_debris: "images/guide/ancient_debris.png",
   air_compass: "images/guide/compass.png",
   night_compass: "images/guide/compass.png",
   unknown_compass: "images/guide/compass.png",
@@ -86,7 +88,7 @@ const guideIcons = {
   "minecraft:wither_skeleton_skull": "images/guide/minecraft:wither_skeleton_skull.png",
   "minecraft:totem_of_undying": "images/guide/totem_of_undying.png",
   "minecraft:zombie_head": "images/guide/minecraft:zombie_head.png",
-  "minecraft:sculk_shrieker": "images/guide/minecraft:sculk_shrieker.png",
+  "minecraft:sculk_shrieker": "images/guide/sculk_shrieker.png",
   "minecraft:ender_eye": "images/guide/minecraft:ender_eye.png",
   "minecraft:iron_sword": "images/guide/minecraft:iron_sword.png",
   "minecraft:emerald": "images/guide/emerald.png",
@@ -332,7 +334,9 @@ const rarities = [
       "Ядро Предвестника",
       "Призывной медный голем",
       "Призывной малый Предвестник",
-      "Сборочный купол"
+      "Сборочный купол",
+      "Улучшенный крикун",
+      "Материальный разрушитель"
     ]
   }
 ];
@@ -1741,12 +1745,12 @@ const items = [
         text: "<span>Удар посылает фантома на цель; нет его — зовёт.</span>"
       },
       {
-        name: "Мировое Господство",
+        name: "Пришествие",
         colour: "#FFAA00",
-        trigger: "Правый клик по блоку",
-        kind: "other",
-        rest: null,
-        text: '<span>Поле на 20 блоков — навсегда. Вам и союзникам</span> <span>в нём — сопротивление, +30% урона, перезарядки</span> <span>на треть быстрее, и голод не тратит еду,</span> <span>кроме как на лечение. Каждая смерть в поле</span> <span>расширяет его на 2 блока.</span> <br><span style="color:#808080">Убрать: /vswords dominance off</span>'
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "45 с. Падение не ранит",
+        text: "<span>4 секунды вы возноситесь в нимбе красных</span> <span>молний: каждые полсекунды разряд бьёт трёх</span> <span>ближайших врагов в 10 блоках, по 3 урона,</span> <span>и копит «Нет предела совершенству». Затем —</span> <span>удар о землю: 8 урона и отброс в 5 блоках.</span>"
       },
       {
         name: "Лазерный луч",
@@ -2697,6 +2701,62 @@ const items = [
     methodLabel: "Святилище",
     recipe: false,
     model3d: true
+  },
+  {
+    kind: "material",
+    id: "improved_shrieker",
+    name: "Улучшенный крикун",
+    rarity: "TECHNO",
+    rarityLabel: "Техно",
+    line: "material",
+    lore: [
+      '<span style="color:#808080"><em>Аметист настроил его на один звук — чужой.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Страж глубин",
+        colour: "#FF5555",
+        trigger: "Поставленный",
+        kind: "other",
+        rest: null,
+        text: '<span>Слышит на 16 блоков. Услышав враждебного</span> <span>моба или чужого игрока, зовёт вардена —</span> <span>тот сразу бросается на эту цель. Вас</span> <span>и ваш клан не трогает. Когда враги стихнут,</span> <span>варден уходит под землю.</span> <br><span style="color:#808080">Крадущихся не слышит.</span>'
+      }
+    ],
+    stats: "",
+    obtain: "Сборка на алтаре Древней фабрики, любая кровь: рецепт открывает ZorahM-GPT в Древнем городе или прошлый заход в терминал",
+    icon: "images/other/44a3894fbb.png",
+    method: "assemble",
+    methodLabel: "Сборка у алтаря",
+    recipe: false,
+    model3d: false
+  },
+  {
+    kind: "material",
+    id: "material_destroyer",
+    name: "Материальный разрушитель",
+    rarity: "TECHNO",
+    rarityLabel: "Техно",
+    line: "material",
+    lore: [
+      '<span style="color:#808080"><em>Он не ломает материю. Он её отменяет.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Столб отмены",
+        colour: "#FF5555",
+        trigger: "Поставленный",
+        kind: "other",
+        rest: null,
+        text: '<span>Приставьте к бедроку: столб 3×3 высотой</span> <span>до 10 блоков уходит вверх или вниз —</span> <span>от грани, к которой его поставили.</span> <span>Берёт только бедрок: крышу Незера и дно</span> <span>верхнего мира. Остальное не трогает.</span> <br><span style="color:#808080">Тратится.</span>'
+      }
+    ],
+    stats: "",
+    obtain: "Сборка на алтаре Древней фабрики, любая кровь",
+    icon: "images/other/fb4e721ad2.png",
+    method: "assemble",
+    methodLabel: "Сборка у алтаря",
+    recipe: false,
+    model3d: true
   }
 ];
 const altar = [
@@ -3313,6 +3373,46 @@ const altar = [
   },
   {
     kind: "forge",
+    result: "improved_shrieker",
+    at: "Древняя фабрика",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "v:sculk_shrieker",
+        n: 1
+      },
+      {
+        key: "v:amethyst_shard",
+        n: 16
+      },
+      {
+        key: "ancient_part",
+        n: 16
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "material_destroyer",
+    at: "Древняя фабрика",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "v:crying_obsidian",
+        n: 16
+      },
+      {
+        key: "v:ancient_debris",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "forge",
     result: "terra_blade",
     at: "Храм джунглей",
     time: "",
@@ -3748,7 +3848,7 @@ const achievements = [
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Убить Вардена Все-Чёрным",
-        icon: "images/guide/minecraft:sculk_shrieker.png",
+        icon: "images/guide/sculk_shrieker.png",
         caption: "Скалк-крикун"
       },
       {
@@ -4569,7 +4669,9 @@ const vanillaNames = {
   brown_mushroom: "Коричневый гриб",
   gunpowder: "Порох",
   blaze_powder: "Огненный порошок",
-  netherite_scrap: "Незеритовый лом"
+  netherite_scrap: "Незеритовый лом",
+  sculk_shrieker: "Скалковый крикун",
+  ancient_debris: "Древние обломки"
 };
 const guideNames = {
   air_compass: "Компас воздуха",
