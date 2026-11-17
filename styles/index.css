@@ -767,6 +767,14 @@ body { overflow-x: clip; }
 .raid-prize span { display: grid; gap: 2px; min-width: 0; }
 .raid-prize small { color: var(--muted); font-size: .8rem; line-height: 1.3; }
 .raid-prize.rare { border-color: color-mix(in srgb, var(--gold) 55%, var(--line-soft)); }
+
+/* --- the piglin raid: its captains ---------------------------------------------------------- */
+.captains { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-top: 10px; }
+.captain { padding: 12px 14px; background: var(--bg-2); border: 1px solid color-mix(in srgb, var(--gold) 45%, var(--line-soft)); }
+.captain h4 { margin: 0 0 4px; color: var(--gold); }
+/* A captain's card is narrow: each trick's name over its description, not beside it. */
+.captain .kv div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+.captain .kv div:first-child { padding-top: 7px; }
 /*
  * The enchantment over the codex.
  *

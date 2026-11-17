@@ -1645,8 +1645,8 @@ const _hoisted_24$5 = {
   class: "arrow",
   "aria-hidden": "true"
 };
-const _hoisted_25$4 = { class: "card-give" };
-const _hoisted_26$4 = {
+const _hoisted_25$5 = { class: "card-give" };
+const _hoisted_26$5 = {
   class: "sr-only",
   "aria-live": "polite"
 };
@@ -1855,7 +1855,7 @@ const _sfc_main$q = {
             ])
           ], 8, _hoisted_21$6);
         }), 128)),
-        createBaseVNode("div", _hoisted_25$4, [
+        createBaseVNode("div", _hoisted_25$5, [
           _cache[5] || (_cache[5] = createBaseVNode("span", { class: "card-give-label" }, "Выдать (оператор)", -1)),
           createBaseVNode("code", null, toDisplayString(command.value), 1),
           createBaseVNode("button", {
@@ -1863,7 +1863,7 @@ const _sfc_main$q = {
             class: "term-copy",
             onClick: copyCommand
           }, toDisplayString(given.value ? "Скопировано" : "Копировать"), 1),
-          createBaseVNode("span", _hoisted_26$4, toDisplayString(given.value ? "Команда скопирована" : ""), 1)
+          createBaseVNode("span", _hoisted_26$5, toDisplayString(given.value ? "Команда скопирована" : ""), 1)
         ])
       ], 4);
     };
@@ -2870,10 +2870,10 @@ const _hoisted_24$4 = {
   key: 1,
   class: "lines"
 };
-const _hoisted_25$3 = ["data-key"];
-const _hoisted_26$3 = { class: "line-title" };
-const _hoisted_27$3 = { class: "line-row" };
-const _hoisted_28$3 = {
+const _hoisted_25$4 = ["data-key"];
+const _hoisted_26$4 = { class: "line-title" };
+const _hoisted_27$4 = { class: "line-row" };
+const _hoisted_28$4 = {
   key: 0,
   class: "energy",
   "aria-hidden": "true"
@@ -3078,14 +3078,14 @@ const _sfc_main$e = {
               class: "line",
               "data-key": chain.key
             }, [
-              createBaseVNode("h3", _hoisted_26$3, toDisplayString(chain.title), 1),
-              createBaseVNode("div", _hoisted_27$3, [
+              createBaseVNode("h3", _hoisted_26$4, toDisplayString(chain.title), 1),
+              createBaseVNode("div", _hoisted_27$4, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(chain.entries, (e, i) => {
                   return openBlock(), createElementBlock("span", {
                     key: i,
                     class: "chain-step"
                   }, [
-                    e.sep === "→" ? (openBlock(), createElementBlock("span", _hoisted_28$3)) : e.sep ? (openBlock(), createElementBlock("span", _hoisted_29$3, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
+                    e.sep === "→" ? (openBlock(), createElementBlock("span", _hoisted_28$4)) : e.sep ? (openBlock(), createElementBlock("span", _hoisted_29$3, toDisplayString(e.sep), 1)) : createCommentVNode("", true),
                     createVNode(_sfc_main$t, {
                       item: e.item,
                       anchor: e.anchor,
@@ -3095,7 +3095,7 @@ const _sfc_main$e = {
                   ]);
                 }), 128))
               ])
-            ], 8, _hoisted_25$3);
+            ], 8, _hoisted_25$4);
           }), 128))
         ])),
         (view.value === "table" ? !sorted.value.length : !visible.value.length) ? (openBlock(), createElementBlock("p", _hoisted_30$2, "Ни одного клинка — попробуйте другое слово или линию «Все».")) : createCommentVNode("", true)
@@ -3134,18 +3134,18 @@ const _hoisted_23$3 = {
   "aria-live": "polite"
 };
 const _hoisted_24$3 = { class: "cat-order" };
-const _hoisted_25$2 = ["value"];
-const _hoisted_26$2 = {
+const _hoisted_25$3 = ["value"];
+const _hoisted_26$3 = {
   key: 0,
   class: "catsep first",
   "aria-hidden": "true"
 };
-const _hoisted_27$2 = {
+const _hoisted_27$3 = {
   key: 1,
   class: "catsep",
   "aria-hidden": "true"
 };
-const _hoisted_28$2 = ["aria-selected", "data-tip", "onClick"];
+const _hoisted_28$3 = ["aria-selected", "data-tip", "onClick"];
 const _hoisted_29$2 = ["src"];
 const _hoisted_30$1 = { class: "sr-only" };
 const _hoisted_31$1 = {
@@ -3481,7 +3481,7 @@ const _sfc_main$d = {
                       return createBaseVNode("option", {
                         key: k,
                         value: k
-                      }, toDisplayString(label), 9, _hoisted_25$2);
+                      }, toDisplayString(label), 9, _hoisted_25$3);
                     }), 64))
                   ], 512), [
                     [vModelSelect, order2.value]
@@ -3500,8 +3500,8 @@ const _sfc_main$d = {
                 return openBlock(), createElementBlock(Fragment, {
                   key: i.id
                 }, [
-                  firstMaterial.value && i === shown.value[0] ? (openBlock(), createElementBlock("span", _hoisted_26$2, "Клинки")) : createCommentVNode("", true),
-                  i.id === firstMaterial.value ? (openBlock(), createElementBlock("span", _hoisted_27$2, "Материалы")) : createCommentVNode("", true),
+                  firstMaterial.value && i === shown.value[0] ? (openBlock(), createElementBlock("span", _hoisted_26$3, "Клинки")) : createCommentVNode("", true),
+                  i.id === firstMaterial.value ? (openBlock(), createElementBlock("span", _hoisted_27$3, "Материалы")) : createCommentVNode("", true),
                   createBaseVNode("button", {
                     type: "button",
                     role: "option",
@@ -3522,7 +3522,7 @@ const _sfc_main$d = {
                       style: normalizeStyle({ background: unref(bloodOf)[i.blood].colour }),
                       "aria-hidden": "true"
                     }, null, 4)) : createCommentVNode("", true)
-                  ], 10, _hoisted_28$2)
+                  ], 10, _hoisted_28$3)
                 ], 64);
               }), 128))
             ], 544), [
@@ -3813,10 +3813,10 @@ const _hoisted_21$3 = { class: "set set-celestial" };
 const _hoisted_22$2 = { class: "slot" };
 const _hoisted_23$2 = ["src"];
 const _hoisted_24$2 = { class: "set set-demon" };
-const _hoisted_25$1 = { class: "slot" };
-const _hoisted_26$1 = ["src"];
-const _hoisted_27$1 = { class: "prices" };
-const _hoisted_28$1 = { class: "prices" };
+const _hoisted_25$2 = { class: "slot" };
+const _hoisted_26$2 = ["src"];
+const _hoisted_27$2 = { class: "prices" };
+const _hoisted_28$2 = { class: "prices" };
 const _hoisted_29$1 = { class: "prices" };
 const _sfc_main$a = {
   __name: "GrowthSection",
@@ -3945,11 +3945,11 @@ const _sfc_main$a = {
             ], -1))
           ]),
           createBaseVNode("article", _hoisted_24$2, [
-            createBaseVNode("span", _hoisted_25$1, [
+            createBaseVNode("span", _hoisted_25$2, [
               createBaseVNode("img", {
                 src: unref(data).icons.demon_helmet,
                 alt: ""
-              }, null, 8, _hoisted_26$1)
+              }, null, 8, _hoisted_26$2)
             ]),
             _cache[10] || (_cache[10] = createBaseVNode("div", { class: "set-body" }, [
               createBaseVNode("h4", null, "Демонический доспех"),
@@ -3964,7 +3964,7 @@ const _sfc_main$a = {
         _cache[13] || (_cache[13] = createBaseVNode("p", { class: "small" }, "Душа лорда остаётся там, где пало Горнило третьего испытания кузни, — одна за победу.", -1)),
         _cache[14] || (_cache[14] = createBaseVNode("h3", null, "Небесная ковка", -1)),
         _cache[15] || (_cache[15] = createBaseVNode("p", null, "Небесные клинки куют у алтаря Небесного храма: небесные осколки, Перо серафима и свой взнос. Золотой феникс вырастает из Сумрачной секиры, Призрачный страж лежит в сокровищнице Проклятого замка, Солнцестояние — в сокровищницах бастионов.", -1)),
-        createBaseVNode("div", _hoisted_27$1, [
+        createBaseVNode("div", _hoisted_27$2, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(forgedAt("Небесный храм"), (e, i) => {
             return openBlock(), createBlock(_sfc_main$s, {
               key: i,
@@ -3979,7 +3979,7 @@ const _sfc_main$a = {
           createBaseVNode("b", null, "Тёмном храме"),
           createTextVNode("; они признают только ночную небесную кровь.")
         ], -1)),
-        createBaseVNode("div", _hoisted_28$1, [
+        createBaseVNode("div", _hoisted_28$2, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(forgedAt("Тёмный храм"), (e, i) => {
             return openBlock(), createBlock(_sfc_main$s, {
               key: i,
@@ -4403,10 +4403,10 @@ const _hoisted_22$1 = {
 };
 const _hoisted_23$1 = ["src"];
 const _hoisted_24$1 = { class: "sanctum-body" };
-const _hoisted_25 = { class: "sanctum-info" };
-const _hoisted_26 = { class: "kv" };
-const _hoisted_27 = { class: "inline-icons" };
-const _hoisted_28 = ["src"];
+const _hoisted_25$1 = { class: "sanctum-info" };
+const _hoisted_26$1 = { class: "kv" };
+const _hoisted_27$1 = { class: "inline-icons" };
+const _hoisted_28$1 = ["src"];
 const _hoisted_29 = ["src"];
 const _hoisted_30 = ["src"];
 const _hoisted_31 = { class: "boss" };
@@ -4706,20 +4706,20 @@ const _sfc_main$7 = {
             _cache[16] || (_cache[16] = createBaseVNode("figcaption", null, "Снаружи · разрез · план", -1))
           ]),
           createBaseVNode("div", _hoisted_24$1, [
-            createBaseVNode("div", _hoisted_25, [
+            createBaseVNode("div", _hoisted_25$1, [
               _cache[22] || (_cache[22] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Небесный храм"),
                 createBaseVNode("span", { class: "pill" }, "верхний мир")
               ], -1)),
-              createBaseVNode("dl", _hoisted_26, [
+              createBaseVNode("dl", _hoisted_26$1, [
                 _cache[21] || (_cache[21] = createStaticVNode("<div><dt>Где</dt><dd>летающий остров высоко в небе</dd></div><div><dt>Внутри</dt><dd>колоннада, неф с колокольнями и ротонда с алтарём</dd></div><div><dt>Путь наверх</dt><dd>поток ветра у Врат ветра</dd></div><div><dt>Стража</dt><dd>зимогоры и поборники в золоте</dd></div><div><dt>Алтарь</dt><dd>испытания, ковка, заточка и пробуждение небесных клинков</dd></div>", 5)),
                 createBaseVNode("div", null, [
                   _cache[20] || (_cache[20] = createBaseVNode("dt", null, "Добыча", -1)),
-                  createBaseVNode("dd", _hoisted_27, [
+                  createBaseVNode("dd", _hoisted_27$1, [
                     createBaseVNode("img", {
                       src: unref(data).icons.celestial_shard,
                       alt: ""
-                    }, null, 8, _hoisted_28),
+                    }, null, 8, _hoisted_28$1),
                     _cache[17] || (_cache[17] = createTextVNode("Небесные осколки · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.seraph_feather,
@@ -5455,34 +5455,38 @@ const _hoisted_8$4 = { class: "panel" };
 const _hoisted_9$4 = { class: "tbl" };
 const _hoisted_10$4 = { scope: "row" };
 const _hoisted_11$4 = { class: "panel" };
-const _hoisted_12$3 = { class: "raid-loot" };
-const _hoisted_13$2 = {
+const _hoisted_12$3 = { class: "captains" };
+const _hoisted_13$2 = { class: "small muted" };
+const _hoisted_14$1 = { class: "kv" };
+const _hoisted_15$1 = { class: "panel" };
+const _hoisted_16 = { class: "raid-loot" };
+const _hoisted_17 = {
   class: "raid-prize",
   href: "#w-soul_shard"
 };
-const _hoisted_14$1 = ["src"];
-const _hoisted_15$1 = {
+const _hoisted_18 = ["src"];
+const _hoisted_19 = {
   class: "raid-prize",
   href: "#w-wither_soul"
 };
-const _hoisted_16 = ["src"];
-const _hoisted_17 = {
+const _hoisted_20 = ["src"];
+const _hoisted_21 = {
   class: "raid-prize",
   href: "#w-fire_pouch"
 };
-const _hoisted_18 = ["src"];
-const _hoisted_19 = { class: "raid-rare" };
-const _hoisted_20 = {
+const _hoisted_22 = ["src"];
+const _hoisted_23 = { class: "raid-rare" };
+const _hoisted_24 = {
   class: "raid-prize rare",
   href: "#w-crimson"
 };
-const _hoisted_21 = ["src"];
-const _hoisted_22 = {
+const _hoisted_25 = ["src"];
+const _hoisted_26 = {
   class: "raid-prize rare",
   href: "#w-sky_harp"
 };
-const _hoisted_23 = ["src"];
-const _hoisted_24 = { class: "tbl" };
+const _hoisted_27 = ["src"];
+const _hoisted_28 = { class: "tbl" };
 const _sfc_main$5 = {
   __name: "PiglinRaidSection",
   setup(__props) {
@@ -5502,6 +5506,25 @@ const _sfc_main$5 = {
       ["Боковые врата", "120 на двоих: 16 брутов, 30 всадников на хоглинах, 40 арбалетчиков, 34 мечника", "каждые врата первыми выпускают двух брутов"],
       ["Летающие врата", "по гасту каждые 20 секунд, до шести с каждых", "стреляют по постройкам, а не по игрокам"],
       ["Иссушитель", "из центральных врат, когда все врата опустели", "его смерть — победа"]
+    ];
+    const CAPTAINS = [
+      { name: "Палач короля", from: "центральные врата", stats: "600 ❤ · удар 18", look: "брут в незерите с золотой отделкой, незеритовый топор", tricks: [
+        ["Плаха", "защитник рядом — на 1,2 с встаёт, вокруг красный круг 4,5 блока; затем топор по кругу: 20 урона, отброс, стены вокруг рушатся (кроме обсидиана); раз в 7 с"],
+        ["Прыжок", "на защитника в 6–18 блоках: при приземлении 10 урона вокруг; раз в 6 с"],
+        ["Казнь", "удары по игроку с меньше чем 35% здоровья — вдвое сильнее"],
+        ["Ярость", "на половине здоровья — Скорость I и Сила I до конца боя"]
+      ] },
+      { name: "Знаменосец короля", from: "левые врата", stats: "450 ❤ · удар 11", look: "пиглин со знаменем короля на голове и золотым копьём", tricks: [
+        ["Штандарт", "раз в 10 с: войско в 14 блоках на 8 с получает Силу, Скорость и Сопротивление"],
+        ["Сбор", "на 60% здоровья: 5 бойцов его врат выходят из портала рядом с ним"],
+        ["Знамя", "на половине здоровья ставит знамя короля: пока оно стоит, войско в 16 блоках регенерирует, а сам он получает 40% урона. Сломайте знамя"]
+      ] },
+      { name: "Огнежрец короля", from: "правые врата", stats: "380 ❤ · удар 8", look: "пиглин в тёмно-красной мантии с огненным жезлом, огнём не горит", tricks: [
+        ["Огненные столпы", "под тремя ближайшими защитниками огненный круг, через 1,5 с — столп: 12 урона, поджог, подброс; раз в 8 с"],
+        ["Залп", "три огненных заряда веером, раз в 3 с"],
+        ["Шаг сквозь портал", "подошедшего ближе 3,5 блока встречает пустота: он уже в 8–12 блоках"],
+        ["Кольцо пламени", "на половине здоровья: 8 с огонь в 5 блоках вокруг — 4 урона в секунду"]
+      ] }
     ];
     const POUCH = [
       ["золотые слитки 4–12", "60%"],
@@ -5531,7 +5554,7 @@ const _sfc_main$5 = {
           _: 1
         }),
         createBaseVNode("div", _hoisted_2$5, [
-          _cache[8] || (_cache[8] = createStaticVNode('<div class="panel"><h3>Кража</h3><p class="small">Пока <a href="#w-demon_soul">Душа демона</a> лежит в инвентаре, на игрока бросаются все пиглины и зомбифицированные пиглины в 32 блоках — золотая броня не спасает. Избавились от души — они о вас забыли.</p><p class="small">Первая душа, попавшая к игроку клана, отмечает весь клан; игрок без клана отвечает один. Через <b>7–14 игровых суток</b> к базе приходит войско короля. Проспанная ночь приближает его. На мирной сложности рейд ждёт. Рейд бывает <b>один раз за всё время</b>: вторая украденная душа второго войска не зовёт.</p><dl class="kv"><div><dt>База клана</dt><dd>точка базы, которую назвал лидер; кто-то из клана должен стоять на земле клана</dd></div><div><dt>База без клана</dt><dd>место, где сошлись три признака в 48 блоках: игрок на месте, его точка возрождения, два его сундука, горящий портал в Незер</dd></div><div><dt>Пока врата стоят</dt><dd>базу сменить нельзя</dd></div></dl></div>', 1)),
+          _cache[10] || (_cache[10] = createStaticVNode('<div class="panel"><h3>Кража</h3><p class="small">Пока <a href="#w-demon_soul">Душа демона</a> лежит в инвентаре, на игрока бросаются все пиглины и зомбифицированные пиглины в 32 блоках — золотая броня не спасает. Избавились от души — они о вас забыли.</p><p class="small">Первая душа, попавшая к игроку клана, отмечает весь клан; игрок без клана отвечает один. Через <b>7–14 игровых суток</b> к базе приходит войско короля. Проспанная ночь приближает его. На мирной сложности рейд ждёт. Рейд бывает <b>один раз за всё время</b>: вторая украденная душа второго войска не зовёт.</p><dl class="kv"><div><dt>База клана</dt><dd>точка базы, которую назвал лидер; кто-то из клана должен стоять на земле клана</dd></div><div><dt>База без клана</dt><dd>место, где сошлись три признака в 48 блоках: игрок на месте, его точка возрождения, два его сундука, горящий портал в Незер</dd></div><div><dt>Пока врата стоят</dt><dd>базу сменить нельзя</dd></div></dl></div>', 1)),
           createBaseVNode("div", _hoisted_3$4, [
             _cache[1] || (_cache[1] = createBaseVNode("h3", null, "Врата Проклятого короля", -1)),
             _cache[2] || (_cache[2] = createBaseVNode("p", { class: "small" }, "Врата из обсидиана встают в 100–200 блоках от базы, лицом к ней. Их нельзя сломать, взорвать или сдвинуть, и пройти сквозь них в Незер тоже нельзя. Каждые сутки добавляются новые, под ними расползается незерак.", -1)),
@@ -5556,7 +5579,7 @@ const _sfc_main$5 = {
             _cache[5] || (_cache[5] = createBaseVNode("h3", null, "Войско", -1)),
             _cache[6] || (_cache[6] = createBaseVNode("p", { class: "small" }, [
               createTextVNode("Размер войска зависит от числа защитников в 300 блоках от базы (от 1 до 6). Для одного защитника это "),
-              createBaseVNode("b", null, "207 мобов"),
+              createBaseVNode("b", null, "207 мобов и 3 капитана"),
               createTextVNode(" — в таблице. Каждый следующий добавляет 16 мечников, 4 брутов, 6 всадников и 10 арбалетчиков, каждый второй — по гасту; здоровье войска растёт на 10% за защитника, иссушителя — на 35%. На поле одновременно не больше 60 мобов войска (+12 за каждого защитника сверх первого) — остальные ждут за вратами.")
             ], -1)),
             createBaseVNode("div", _hoisted_9$4, [
@@ -5583,68 +5606,93 @@ const _sfc_main$5 = {
             ]),
             _cache[7] || (_cache[7] = createStaticVNode('<dl class="kv"><div><dt>Бруты</dt><dd>восемь с <a href="#w-magmoros">Магморосом</a> (удар 15), восемь с <a href="#w-crimson">Кримсоном</a> (удар 12); способностей у клинков нет. Пробив блок, брут сносит всю стену перед собой проёмом 3×3</dd></div><div><dt>Всадники</dt><dd>с разбега в 6–18 блоков бьют тараном: 9 урона и отброс, раз в 6 секунд; блоков не ломают</dd></div><div><dt>Арбалетчики</dt><dd>держат дистанцию: от подошедшего ближе 5 блоков отходят и стреляют оттуда</dd></div><div><dt>Осада</dt><dd>видеть защитника не нужно: никого рядом — пиглин идёт к ближайшему защитнику на земле рейда, где бы тот ни был, и ломает всё, что мешает, — впереди, ступенью вверх или вниз, а над целью — пол под ногами. Стоит у стены полторы секунды (брут — секунду); обсидиан — около 5 секунд на блок (брут — 2,5)</dd></div><div><dt>Гасты</dt><dd>огненный шар раз в 4 секунды ломает всё в 3 блоках, а там, куда попал, — и обсидиан</dd></div><div><dt>Вода и провалы</dt><dd>пешие кладут мост из незерака, наверх поднимаются столбом из него</dd></div><div><dt>Синий огонь</dt><dd>не пугает: огонь душ, факелы, фонари и костры душ рядом с собой пиглины гасят и ломают</dd></div><div><dt>Иссушитель</dt><dd>видит игрока в 40 блоках — преследует. Не видит никого — <b>один раз за рейд идёт на таран</b>: летит прямо к ближайшему защитнику и пробивает тоннель почти в 5 блоков шириной через всё, включая обсидиан (кроме бедрока, святилищ и своих врат); на пути — 8 урона и отброс, цели — 16 и сильный отброс. Потом бьёт черепами по постройкам</dd></div></dl><p class="small">Войско бьёт игроков, их питомцев и жителей. Святилища, замок, Терра-подземелье и Забытый мир оно не трогает.</p>', 2))
           ]),
-          _cache[9] || (_cache[9] = createStaticVNode('<div class="panel"><h3>Победа и поражение</h3><dl class="kv"><div><dt>Победа</dt><dd>убит иссушитель: остальное войско исчезает без добычи</dd></div><div><dt>Поражение</dt><dd>в 300 блоках от базы не осталось ни жителей, ни кроватей, и сломано 90% построенного игроками (обсидиан не в счёт)</dd></div><div><dt>После</dt><dd>врата и незерак исчезают, земля возвращается как была</dd></div></dl><p class="small">Полоса сверху по очереди показывает, сколько войска повержено, насколько близко поражение и здоровье иссушителя.</p></div>', 1))
+          createBaseVNode("div", _hoisted_11$4, [
+            _cache[8] || (_cache[8] = createBaseVNode("h3", null, "Капитаны короля", -1)),
+            _cache[9] || (_cache[9] = createBaseVNode("p", { class: "small" }, "Три мини-босса рейда, как в Забытом мире: над головой имя и здоровье, светятся сквозь стены, сильный удар видно заранее. Каждые наземные врата выпускают своего капитана на середине своего войска. За каждого защитника сверх первого — +30% здоровья. С капитана падают 5 осколков души и Огненный мешочек.", -1)),
+            createBaseVNode("div", _hoisted_12$3, [
+              (openBlock(), createElementBlock(Fragment, null, renderList(CAPTAINS, (c) => {
+                return createBaseVNode("article", {
+                  key: c.name,
+                  class: "captain"
+                }, [
+                  createBaseVNode("h4", null, "✦ " + toDisplayString(c.name), 1),
+                  createBaseVNode("p", _hoisted_13$2, toDisplayString(c.from) + " · " + toDisplayString(c.stats) + " · " + toDisplayString(c.look), 1),
+                  createBaseVNode("dl", _hoisted_14$1, [
+                    (openBlock(true), createElementBlock(Fragment, null, renderList(c.tricks, (t) => {
+                      return openBlock(), createElementBlock("div", {
+                        key: t[0]
+                      }, [
+                        createBaseVNode("dt", null, toDisplayString(t[0]), 1),
+                        createBaseVNode("dd", null, toDisplayString(t[1]), 1)
+                      ]);
+                    }), 128))
+                  ])
+                ]);
+              }), 64))
+            ])
+          ]),
+          _cache[11] || (_cache[11] = createStaticVNode('<div class="panel"><h3>Победа и поражение</h3><dl class="kv"><div><dt>Победа</dt><dd>убит иссушитель: остальное войско исчезает без добычи</dd></div><div><dt>Поражение</dt><dd>в 300 блоках от базы не осталось ни жителей, ни кроватей, и сломано 90% построенного игроками (обсидиан не в счёт)</dd></div><div><dt>После</dt><dd>врата и незерак исчезают, земля возвращается как была</dd></div></dl><p class="small">Полоса сверху по очереди показывает, сколько войска повержено, насколько близко поражение и здоровье иссушителя.</p></div>', 1))
         ]),
-        createBaseVNode("div", _hoisted_11$4, [
-          _cache[16] || (_cache[16] = createBaseVNode("h3", null, "Добыча", -1)),
-          createBaseVNode("div", _hoisted_12$3, [
-            createBaseVNode("a", _hoisted_13$2, [
+        createBaseVNode("div", _hoisted_15$1, [
+          _cache[18] || (_cache[18] = createBaseVNode("h3", null, "Добыча", -1)),
+          createBaseVNode("div", _hoisted_16, [
+            createBaseVNode("a", _hoisted_17, [
               createBaseVNode("img", {
                 src: icon("soul_shard"),
                 alt: ""
-              }, null, 8, _hoisted_14$1),
-              _cache[10] || (_cache[10] = createBaseVNode("span", null, [
+              }, null, 8, _hoisted_18),
+              _cache[12] || (_cache[12] = createBaseVNode("span", null, [
                 createBaseVNode("b", null, "Осколок души"),
                 createBaseVNode("small", null, "с каждого моба войска; хоглины не в счёт")
               ], -1))
             ]),
-            createBaseVNode("a", _hoisted_15$1, [
+            createBaseVNode("a", _hoisted_19, [
               createBaseVNode("img", {
                 src: icon("wither_soul"),
                 alt: ""
-              }, null, 8, _hoisted_16),
-              _cache[11] || (_cache[11] = createBaseVNode("span", null, [
+              }, null, 8, _hoisted_20),
+              _cache[13] || (_cache[13] = createBaseVNode("span", null, [
                 createBaseVNode("b", null, "Душа Иссушителя"),
                 createBaseVNode("small", null, "с иссушителя — всегда")
               ], -1))
             ]),
-            createBaseVNode("a", _hoisted_17, [
+            createBaseVNode("a", _hoisted_21, [
               createBaseVNode("img", {
                 src: icon("fire_pouch"),
                 alt: ""
-              }, null, 8, _hoisted_18),
-              _cache[12] || (_cache[12] = createBaseVNode("span", null, [
+              }, null, 8, _hoisted_22),
+              _cache[14] || (_cache[14] = createBaseVNode("span", null, [
                 createBaseVNode("b", null, "Огненный мешочек"),
                 createBaseVNode("small", null, "каждому участнику победы — по 5")
               ], -1))
             ])
           ]),
-          _cache[17] || (_cache[17] = createBaseVNode("p", { class: "small" }, "Участник — тот, кто был в 300 блоках от базы, пока шёл рейд, или бил войско. Каждый получает 5 мешочков; кто был не в сети, получит их, когда зайдёт. Мешочек открывается правым кликом; каждая строка разыгрывается отдельно, пустым он не бывает.", -1)),
-          createBaseVNode("div", _hoisted_19, [
-            createBaseVNode("a", _hoisted_20, [
+          _cache[19] || (_cache[19] = createBaseVNode("p", { class: "small" }, "Участник — тот, кто был в 300 блоках от базы, пока шёл рейд, или бил войско. Каждый получает 5 мешочков; кто был не в сети, получит их, когда зайдёт. Мешочек открывается правым кликом; каждая строка разыгрывается отдельно, пустым он не бывает.", -1)),
+          createBaseVNode("div", _hoisted_23, [
+            createBaseVNode("a", _hoisted_24, [
               createBaseVNode("img", {
                 src: icon("crimson"),
                 alt: ""
-              }, null, 8, _hoisted_21),
-              _cache[13] || (_cache[13] = createBaseVNode("span", null, [
+              }, null, 8, _hoisted_25),
+              _cache[15] || (_cache[15] = createBaseVNode("span", null, [
                 createBaseVNode("b", null, "Кримсон"),
                 createBaseVNode("small", null, "0,5% — главный приз мешочка")
               ], -1))
             ]),
-            createBaseVNode("a", _hoisted_22, [
+            createBaseVNode("a", _hoisted_26, [
               createBaseVNode("img", {
                 src: icon("sky_harp"),
                 alt: ""
-              }, null, 8, _hoisted_23),
-              _cache[14] || (_cache[14] = createBaseVNode("span", null, [
+              }, null, 8, _hoisted_27),
+              _cache[16] || (_cache[16] = createBaseVNode("span", null, [
                 createBaseVNode("b", null, "Небесная арфа"),
                 createBaseVNode("small", null, "3%")
               ], -1))
             ])
           ]),
-          createBaseVNode("div", _hoisted_24, [
+          createBaseVNode("div", _hoisted_28, [
             createBaseVNode("table", null, [
-              _cache[15] || (_cache[15] = createBaseVNode("thead", null, [
+              _cache[17] || (_cache[17] = createBaseVNode("thead", null, [
                 createBaseVNode("tr", null, [
                   createBaseVNode("th", null, "В мешочке"),
                   createBaseVNode("th", null, "Шанс")
@@ -5663,7 +5711,7 @@ const _sfc_main$5 = {
             ])
           ])
         ]),
-        _cache[18] || (_cache[18] = createStaticVNode('<div class="panel" id="allies"><h3>Свои и чужие</h3><p class="small">Союзников определяет <b>клан</b>. Купола, обереги, карты Таро, <a href="#w-sky_harp">Небесная арфа</a>, <a href="#w-wanderer_cube">Куб странника</a> и способности клинков считают своими игроков вашего клана, их питомцев и призванных.</p><dl class="kv"><div><dt>Вы в клане</dt><dd>свои — только клан; остальные игроки под вашим куполом или в вашем поле — враги</dd></div><div><dt>Вы без клана</dt><dd>лечение и защита достаются всем игрокам рядом; розы Букета и чужие обереги при этом бьют по каждому</dd></div></dl></div>', 1))
+        _cache[20] || (_cache[20] = createStaticVNode('<div class="panel" id="allies"><h3>Свои и чужие</h3><p class="small">Союзников определяет <b>клан</b>. Купола, обереги, карты Таро, <a href="#w-sky_harp">Небесная арфа</a>, <a href="#w-wanderer_cube">Куб странника</a> и способности клинков считают своими игроков вашего клана, их питомцев и призванных.</p><dl class="kv"><div><dt>Вы в клане</dt><dd>свои — только клан; остальные игроки под вашим куполом или в вашем поле — враги</dd></div><div><dt>Вы без клана</dt><dd>лечение и защита достаются всем игрокам рядом; розы Букета и чужие обереги при этом бьют по каждому</dd></div></dl></div>', 1))
       ]);
     };
   }
