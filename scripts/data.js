@@ -1,13 +1,13 @@
 const counts = {
   weapons: 33,
   materials: 38,
-  trophies: 39
+  trophies: 51
 };
 const built = "2026-11-19";
 const words = {
   weapons: "клинка",
   materials: "материалов",
-  trophies: "достижений"
+  trophies: "достижение"
 };
 const icons = {
   forge_heart: "images/icons/forge_heart.png",
@@ -3749,8 +3749,18 @@ const hotbar = [
 ];
 const achievements = [
   {
-    title: "Адская линия и Все-Чёрный",
+    title: "",
     cards: [
+      {
+        key: "gaze",
+        title: "Взгляд",
+        description: "Ещё один скиталец поднял то, что лежало не для него.",
+        frame: "task",
+        frameLabel: "Задача",
+        condition: "Взять в руки любой из особых клинков",
+        icon: "images/other/b8d1f1cd53.png",
+        caption: "Все-Чёрный"
+      },
       {
         key: "cold_steel",
         title: "Холодная сталь",
@@ -3782,6 +3792,16 @@ const achievements = [
         caption: "Бедствие"
       },
       {
+        key: "debt_paid",
+        title: "Долг не уплачен",
+        description: "Король прислал за своим войско. Оно не вернулось.",
+        frame: "challenge",
+        frameLabel: "Испытание",
+        condition: "Отразить рейд пиглинов",
+        icon: "",
+        caption: "minecraft:crying_obsidian"
+      },
+      {
         key: "wither_legacy",
         title: "Наследство Иссушителя",
         description: "Он не умер. Его переложили — в то, что ты теперь носишь.",
@@ -3790,16 +3810,6 @@ const achievements = [
         condition: "Забрать Душу Иссушителя",
         icon: "images/other/fd2a0e001a.png",
         caption: "Душа Иссушителя"
-      },
-      {
-        key: "insight",
-        title: "Прозрение",
-        description: "Всё, что дышит вокруг, уже знает, что ты смотришь.",
-        frame: "task",
-        frameLabel: "Задача",
-        condition: "Пройти Огненным рывком Воли Демона сквозь 5 существ разом",
-        icon: "images/guide/minecraft:spyglass.png",
-        caption: "Подзорная труба"
       },
       {
         key: "genocide",
@@ -3822,50 +3832,15 @@ const achievements = [
         caption: "Тотем бессмертия"
       },
       {
-        key: "he_returned",
-        title: "Он вернулся",
-        description: "Он всегда возвращается",
-        frame: "task",
-        frameLabel: "Задача",
-        condition: "Подобрать привязанный клинок после своей смерти",
-        icon: "images/other/b8d1f1cd53.png",
-        caption: "Все-Чёрный"
-      },
-      {
-        key: "not_rubber",
-        title: "Я не резиновый",
-        description: "Ни одного зрителя. Все — участники.",
-        frame: "challenge",
-        frameLabel: "Испытание",
-        condition: "Собрать на себе 30 существ разом",
-        icon: "images/guide/minecraft:zombie_head.png",
-        caption: "Голова зомби"
-      },
-      {
         key: "harmless_pet",
         title: "Безобидная зверюшка",
         description: "Слепое, сильное, безупречное. И всё-таки кончилось.",
         frame: "challenge",
         frameLabel: "Испытание",
-        condition: "Убить Вардена Все-Чёрным",
+        condition: "Убить Вардена",
         icon: "images/guide/sculk_shrieker.png",
         caption: "Скалк-крикун"
       },
-      {
-        key: "holy_promise",
-        title: "Святое обещание",
-        description: "Три мира видели тебя с ним в руке. Ни один не стал лучше.",
-        frame: "goal",
-        frameLabel: "Цель",
-        condition: "Побывать с Все-Чёрным во всех трёх измерениях",
-        icon: "images/guide/minecraft:ender_eye.png",
-        caption: "Око Края"
-      }
-    ]
-  },
-  {
-    title: "Резаки и джунгли",
-    cards: [
       {
         key: "butcher",
         title: "Инструмент мясника",
@@ -3917,41 +3892,6 @@ const achievements = [
         caption: "Изумруд"
       },
       {
-        key: "forest_breath",
-        title: "Дыхание леса",
-        description: "Лес вырастил клинок и отдал его тебе. Лес ничего не отдаёт даром.",
-        frame: "goal",
-        frameLabel: "Цель",
-        condition: "Выковать Терра-блейд",
-        icon: "images/other/765e686369.png",
-        caption: "Терра-блейд"
-      },
-      {
-        key: "riddle",
-        title: "Загадка предков",
-        description: "Они не оставили ответа. Только вопрос — и тебя, чтобы его нести.",
-        frame: "goal",
-        frameLabel: "Цель",
-        condition: "Выковать Энигму",
-        icon: "images/other/5e5218c8bc.png",
-        caption: "Энигма"
-      }
-    ]
-  },
-  {
-    title: "Небесная ночь",
-    cards: [
-      {
-        key: "night_let_in",
-        title: "Ночь впущена",
-        description: "Ты сломал печать, и небо рухнуло.",
-        frame: "goal",
-        frameLabel: "Цель",
-        condition: "Сломать Печать ночи",
-        icon: "images/icons/night_seal.png",
-        caption: "Печать ночи"
-      },
-      {
         key: "starfall",
         title: "Звездопад",
         description: "Звёзды упали. Загадывай желания.",
@@ -3980,12 +3920,27 @@ const achievements = [
         condition: "Получить Истинный Экскалибур",
         icon: "images/other/d69fca03b5.png",
         caption: "Истинный Экскалибур"
-      }
-    ]
-  },
-  {
-    title: "Кровавая линия",
-    cards: [
+      },
+      {
+        key: "forest_breath",
+        title: "Дыхание леса",
+        description: "Лес вырастил клинок и отдал его тебе. Лес ничего не отдаёт даром.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Выковать Терра-блейд",
+        icon: "images/other/765e686369.png",
+        caption: "Терра-блейд"
+      },
+      {
+        key: "riddle",
+        title: "Загадка предков",
+        description: "Они не оставили ответа. Только вопрос — и тебя, чтобы его нести.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Выковать Энигму",
+        icon: "images/other/5e5218c8bc.png",
+        caption: "Энигма"
+      },
       {
         key: "one_of_them",
         title: "Свой среди чужих",
@@ -4015,12 +3970,27 @@ const achievements = [
         condition: "Поднять купол Люцифера",
         icon: "images/other/08c5999cab.png",
         caption: "Люцифер"
-      }
-    ]
-  },
-  {
-    title: "Святилища",
-    cards: [
+      },
+      {
+        key: "distance",
+        title: "Расстояние",
+        description: "Оно больше ничего не значит.",
+        frame: "task",
+        frameLabel: "Задача",
+        condition: "Первый раз совершить Странствие с Hyperion",
+        icon: "images/other/3baac2e917.png",
+        caption: "Hyperion"
+      },
+      {
+        key: "temporary_inconvenience",
+        title: "Временное неудобство",
+        description: "Десять раз. Для полубога — десять неудобств.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Умереть 10 раз",
+        icon: "images/guide/minecraft:skeleton_skull.png",
+        caption: "Череп скелета"
+      },
       {
         key: "forge_cold",
         title: "Горн остыл",
@@ -4070,21 +4040,6 @@ const achievements = [
         condition: "Пройти испытание святилища или рейд фабрики",
         icon: "images/guide/minecraft:crossbow.png",
         caption: "Арбалет"
-      }
-    ]
-  },
-  {
-    title: "Рост клинка и крови",
-    cards: [
-      {
-        key: "one_whole",
-        title: "Одно целое",
-        description: "Ты больше не держишь клинок. Вы держите друг друга.",
-        frame: "goal",
-        frameLabel: "Цель",
-        condition: "Довести мастерство клинка до 100",
-        icon: "images/guide/minecraft:experience_bottle.png",
-        caption: "Пузырёк опыта"
       },
       {
         key: "fifth_star",
@@ -4115,41 +4070,16 @@ const achievements = [
         condition: "Поднять кровь до четвёртой формы",
         icon: "images/guide/minecraft:red_dye.png",
         caption: "Красный краситель"
-      }
-    ]
-  },
-  {
-    title: "Весь путь",
-    cards: [
-      {
-        key: "gaze",
-        title: "Взгляд",
-        description: "Ещё один скиталец поднял то, что лежало не для него.",
-        frame: "task",
-        frameLabel: "Задача",
-        condition: "Взять в руки любой из особых клинков",
-        icon: "images/other/b8d1f1cd53.png",
-        caption: "Все-Чёрный"
       },
       {
-        key: "distance",
-        title: "Расстояние",
-        description: "Оно больше ничего не значит.",
-        frame: "task",
-        frameLabel: "Задача",
-        condition: "Первый раз совершить Странствие с Hyperion",
-        icon: "images/other/3baac2e917.png",
-        caption: "Hyperion"
-      },
-      {
-        key: "temporary_inconvenience",
-        title: "Временное неудобство",
-        description: "Десять раз. Для полубога — десять неудобств.",
+        key: "night_let_in",
+        title: "Ночь впущена",
+        description: "Ты сломал печать, и небо рухнуло.",
         frame: "goal",
         frameLabel: "Цель",
-        condition: "Умереть 10 раз",
-        icon: "images/guide/minecraft:skeleton_skull.png",
-        caption: "Череп скелета"
+        condition: "Сломать Печать ночи",
+        icon: "images/icons/night_seal.png",
+        caption: "Печать ночи"
       },
       {
         key: "death_list",
@@ -4160,6 +4090,176 @@ const achievements = [
         condition: "Победить в одиночку каждого босса из Списка смертников",
         icon: "images/guide/minecraft:writable_book.png",
         caption: "minecraft:writable_book"
+      },
+      {
+        key: "empire_strikes_back",
+        title: "Империя наносит ответный удар",
+        description: "Он ударил в ответ. Ты ударил последним.",
+        frame: "challenge",
+        frameLabel: "Испытание",
+        condition: "Победить Проклятого короля",
+        icon: "images/icons/lord_soul.png",
+        caption: "Душа лорда"
+      },
+      {
+        key: "out_of_time",
+        title: "Время вышло",
+        description: "Он держал в руках всё время мира. Ему не хватило ровно одного мгновения.",
+        frame: "challenge",
+        frameLabel: "Испытание",
+        condition: "Победить Хронарха",
+        icon: "images/icons/royal_clock.png",
+        caption: "Королевские часы"
+      },
+      {
+        key: "empty_sky",
+        title: "Пустое небо",
+        description: "Страж Забытого мира пал. Теперь его небо сторожит только ветер.",
+        frame: "challenge",
+        frameLabel: "Испытание",
+        condition: "Победить Целестиала, стража Забытого мира",
+        icon: "images/icons/celestial_shard.png",
+        caption: "Небесный осколок"
+      },
+      {
+        key: "void_turned_away",
+        title: "Пустота отвернулась",
+        description: "Ты посмотрел в неё слишком долго. Она моргнула первой.",
+        frame: "challenge",
+        frameLabel: "Испытание",
+        condition: "Победить Пустотного Серафима",
+        icon: "",
+        caption: ""
+      },
+      {
+        key: "stone_heart",
+        title: "Каменное сердце",
+        description: "Лес собрал его из камня и мха, чтобы тот стоял вечно. Вечность вышла короткой.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Победить Джунглевого голема",
+        icon: "images/icons/jungle_shard.png",
+        caption: "Реликтовый осколок"
+      },
+      {
+        key: "the_real_one",
+        title: "Тот самый",
+        description: "Первый был копией. Этот — нет. Это ничего не изменило.",
+        frame: "challenge",
+        frameLabel: "Испытание",
+        condition: "Победить Истинного Джунглевого голема",
+        icon: "images/icons/terra_essence.png",
+        caption: "Терра-сущность"
+      },
+      {
+        key: "last_wave",
+        title: "Последняя волна",
+        description: "Фабрика бросила на тебя всё, что у неё было. Этого оказалось мало.",
+        frame: "challenge",
+        frameLabel: "Испытание",
+        condition: "Пройти рейд фабрики третьего уровня",
+        icon: "images/other/897fc1caae.png",
+        caption: "Призывной малый Предвестник"
+      },
+      {
+        key: "second_coming",
+        title: "Второе пришествие",
+        description: "Его ждали иначе. С неба — да. С твоей руки — никто.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Получить Антихрист",
+        icon: "images/other/9c859cd09e.png",
+        caption: "Антихрист"
+      },
+      {
+        key: "sharp_mind",
+        title: "Острый ум",
+        description: "Мысль режет глубже стали. Теперь у мысли есть рукоять.",
+        frame: "task",
+        frameLabel: "Задача",
+        condition: "Получить Энцефало-меч",
+        icon: "images/other/ca1c321e43.png",
+        caption: "Энцефало-меч"
+      },
+      {
+        key: "empire",
+        title: "Империя",
+        description: "Корона не нужна. Достаточно того, что в руке.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Получить Империум",
+        icon: "images/other/4290e3a7d5.png",
+        caption: "Империум"
+      },
+      {
+        key: "heavenly",
+        title: "Небесный",
+        description: "Небо отдало своё лучшее. Небо об этом пожалеет.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Получить Целестиал",
+        icon: "images/icons/celestial.png",
+        caption: "Целестиал"
+      },
+      {
+        key: "blueprint",
+        title: "Чертёж",
+        description: "Всё построенное можно перестроить. Начни с врагов.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Получить Архитектор",
+        icon: "images/icons/architect.png",
+        caption: "Архитектор"
+      },
+      {
+        key: "sweet_lies",
+        title: "Сладкая ложь",
+        description: "Цветы пахнут правдой. Шипы — тем, что под ней.",
+        frame: "task",
+        frameLabel: "Задача",
+        condition: "Получить Букет лжи",
+        icon: "images/other/69640228e3.png",
+        caption: "Букет лжи"
+      },
+      {
+        key: "soul_tax",
+        title: "Налог на души",
+        description: "Каждый, кто падает рядом, платит. Ты собираешь.",
+        frame: "task",
+        frameLabel: "Задача",
+        condition: "Получить Сборщик душ",
+        icon: "images/other/441a54f11e.png",
+        caption: "Сборщик душ"
+      },
+      {
+        key: "dawn_song",
+        title: "Песнь рассвета",
+        description: "Струны помнят утро, которого здесь никогда не было.",
+        frame: "task",
+        frameLabel: "Задача",
+        condition: "Получить Небесную арфу",
+        icon: "images/other/9a8322215a.png",
+        caption: "Небесная арфа"
+      },
+      {
+        key: "loyal_guard",
+        title: "Свой сторож",
+        description: "Тот же слепой зверь. Только теперь он ищет не тебя.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Призвать Вардена-стража Улучшенным крикуном",
+        icon: "images/other/44a3894fbb.png",
+        caption: "Улучшенный крикун"
+      },
+      {
+        key: "bottom_line",
+        title: "Дна нет",
+        description: "То, что мир положил навсегда, ушло за пару секунд.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Пробить бедрок Материальным разрушителем",
+        icon: "images/other/fb4e721ad2.png",
+        caption: "Материальный разрушитель"
       }
     ]
   }
