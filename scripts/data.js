@@ -3,7 +3,7 @@ const counts = {
   materials: 38,
   trophies: 39
 };
-const built = "2026-11-18";
+const built = "2026-11-19";
 const words = {
   weapons: "клинка",
   materials: "материалов",
@@ -2678,12 +2678,12 @@ const items = [
         text: "<span>Вы и союзники в 6 блоках понемногу лечитесь.</span>"
       },
       {
-        name: "Гимн рассвета",
+        name: "Мелодия рассвета",
         colour: "#55FFFF",
-        trigger: "ПКМ",
-        kind: "rmb",
-        rest: "20 с",
-        text: "<span>Свои в 8 блоках: +4 сердца и регенерация.</span>"
+        trigger: "Зажать ПКМ",
+        kind: "hold",
+        rest: null,
+        text: "<span>Пока держите, арфа играет: раз в секунду вы</span> <span>и свои в 6 блоках лечитесь на 0,5 здоровья.</span>"
       },
       {
         name: "Колыбельная небес",
