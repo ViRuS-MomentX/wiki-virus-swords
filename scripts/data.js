@@ -2299,7 +2299,8 @@ const items = [
       '<span style="color:#808080"><em>Сложен в ладонь. Развернётся сам.</em></span>',
       "",
       '<span style="color:#AAAAAA">Правый клик: медный голем на 60 секунд,</span>',
-      '<span style="color:#AAAAAA">как у Энцефало-меча. Предмет тратится.</span>'
+      '<span style="color:#AAAAAA">как у Энцефало-меча. Предмет тратится.</span>',
+      '<span style="color:#AAAAAA">В строю — не больше 10 медных големов.</span>'
     ],
     abilities: [
       {
@@ -2330,7 +2331,8 @@ const items = [
       '<span style="color:#808080"><em>Маленький. Злой. Помнит своего создателя.</em></span>',
       "",
       '<span style="color:#AAAAAA">Правый клик: малый Предвестник на 60 секунд,</span>',
-      '<span style="color:#AAAAAA">с лучом смерти и ракетами. Предмет тратится.</span>'
+      '<span style="color:#AAAAAA">с лучом смерти и ракетами. Предмет тратится.</span>',
+      '<span style="color:#AAAAAA">В строю — не больше 3 малых Предвестников.</span>'
     ],
     abilities: [],
     stats: "",
