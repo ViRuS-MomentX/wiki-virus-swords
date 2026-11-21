@@ -2301,7 +2301,16 @@ const items = [
       '<span style="color:#AAAAAA">Правый клик: медный голем на 60 секунд,</span>',
       '<span style="color:#AAAAAA">как у Энцефало-меча. Предмет тратится.</span>'
     ],
-    abilities: [],
+    abilities: [
+      {
+        name: "Шахтёр",
+        colour: "#FFAA00",
+        trigger: "Кирка, потом руда",
+        kind: "other",
+        rest: null,
+        text: "<span>ПКМ по голему киркой — он остаётся шахтёром.</span> <span>ПКМ рудой или слитком — 10 минут ищет</span> <span>такую же под землёй и несёт всё вам.</span> <span>ПКМ пустой рукой — его сумка.</span>"
+      }
+    ],
     stats: "",
     obtain: "Сборка на алтаре Древней фабрики",
     icon: "images/other/6f71e94f18.png",
