@@ -1,9 +1,9 @@
 const counts = {
   weapons: 33,
-  materials: 38,
+  materials: 39,
   trophies: 51
 };
-const built = "2026-11-19";
+const built = "2026-11-21";
 const words = {
   weapons: "клинка",
   materials: "материалов",
@@ -336,7 +336,8 @@ const rarities = [
       "Призывной малый Предвестник",
       "Сборочный купол",
       "Улучшенный крикун",
-      "Материальный разрушитель"
+      "Материальный разрушитель",
+      "Портативный терминал"
     ]
   }
 ];
@@ -2757,6 +2758,34 @@ const items = [
     methodLabel: "Сборка у алтаря",
     recipe: false,
     model3d: true
+  },
+  {
+    kind: "material",
+    id: "portable_terminal",
+    name: "Портативный терминал",
+    rarity: "TECHNO",
+    rarityLabel: "Техно",
+    line: "material",
+    lore: [
+      '<span style="color:#808080"><em>Фабрика всегда при тебе. Она не против.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Связь с фабрикой",
+        colour: "#55FFFF",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: null,
+        text: '<span>Открывает терминал Древней фабрики где угодно —</span> <span>но только его лавку гаджетов технокрови:</span> <span>медный автоматон, мини-Предвестник, купол.</span> <span>Цены и формы крови — как у терминала.</span> <br><span style="color:#808080">Не тратится.</span>'
+      }
+    ],
+    stats: "",
+    obtain: "Сборка на алтаре Древней фабрики: техноорганическая кровь со второй формы, 64 детали",
+    icon: "images/other/cfd1c04f64.png",
+    method: "assemble",
+    methodLabel: "Сборка у алтаря",
+    recipe: false,
+    model3d: false
   }
 ];
 const altar = [
@@ -3408,6 +3437,20 @@ const altar = [
       {
         key: "v:ancient_debris",
         n: 1
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "portable_terminal",
+    at: "Древняя фабрика",
+    time: "",
+    blood: "Техноорганическая кровь",
+    form: 2,
+    costs: [
+      {
+        key: "ancient_part",
+        n: 64
       }
     ]
   },
