@@ -1,5 +1,5 @@
 const counts = {
-  weapons: 33,
+  weapons: 34,
   materials: 40,
   trophies: 51
 };
@@ -271,6 +271,7 @@ const rarities = [
       "Золотой феникс",
       "Солнцестояние",
       "Призрачный страж",
+      "Приговор",
       "Hyperion",
       "Небесный осколок",
       "Перо серафима",
@@ -1511,6 +1512,52 @@ const items = [
     form: 3,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
+    recipe: false,
+    model3d: true
+  },
+  {
+    kind: "weapon",
+    id: "verdict",
+    name: "Приговор",
+    rarity: "CELESTIAL",
+    rarityLabel: "Небесная",
+    line: "sky",
+    lore: [
+      '<span style="color:#808080"><em>Он не промахивается. Он откладывает.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Бросок",
+        colour: "#FFAA00",
+        trigger: "Замах и отпустить ПКМ",
+        kind: "other",
+        rest: null,
+        text: "<span>Летит как трезубец; задев существо, ранит,</span> <span>замедляет и тащит его к вам. Возвращается всегда.</span>"
+      },
+      {
+        name: "Небесный суд",
+        colour: "#FFAA00",
+        trigger: "Бросок в небо",
+        kind: "other",
+        rest: "40 с",
+        text: "<span>Сотня трезубцев падает вокруг вас пять секунд —</span> <span>по 5 урона врагам, не чаще раза в полсекунды.</span>"
+      },
+      {
+        name: "Круг приговора",
+        colour: "#FFAA00",
+        trigger: "Бросок с Shift",
+        kind: "other",
+        rest: "25 с",
+        text: "<span>Задетый оглушён на 2 секунды, затем трезубец</span> <span>встаёт вилами в землю: круг на 8 секунд, врагам —</span> <span>7 урона в секунду, союзникам — регенерация II.</span>"
+      }
+    ],
+    stats: "Урон 11 · Скорость 1.1",
+    damage: 11,
+    speed: 1.1,
+    icon: "images/other/03b9c7dc94.png",
+    obtain: "Способа получения пока нет",
+    method: "place",
+    methodLabel: "Святилище",
     recipe: false,
     model3d: true
   },
