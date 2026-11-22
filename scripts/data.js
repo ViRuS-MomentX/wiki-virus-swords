@@ -1554,7 +1554,7 @@ const items = [
     stats: "Урон 11 · Скорость 1.1",
     damage: 11,
     speed: 1.1,
-    icon: "images/other/03b9c7dc94.png",
+    icon: "images/other/f7b983f89b.png",
     obtain: "Способа получения пока нет",
     method: "place",
     methodLabel: "Святилище",
