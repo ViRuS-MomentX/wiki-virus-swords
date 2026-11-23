@@ -3,7 +3,7 @@ const counts = {
   materials: 40,
   trophies: 51
 };
-const built = "2026-11-22";
+const built = "2026-11-23";
 const words = {
   weapons: "клинка",
   materials: "материалов",
@@ -1548,14 +1548,14 @@ const items = [
         trigger: "Бросок с Shift",
         kind: "other",
         rest: "25 с",
-        text: "<span>Задетый оглушён на 2 секунды, затем трезубец</span> <span>встаёт вилами в землю: круг на 8 секунд, врагам —</span> <span>7 урона в секунду, союзникам — регенерация II.</span>"
+        text: "<span>Задетый оглушён на 2 секунды, а трезубец сразу</span> <span>встаёт вилами в землю рядом: круг на 8 секунд, врагам —</span> <span>7 урона в секунду, союзникам — регенерация II.</span>"
       }
     ],
     stats: "Урон 11 · Скорость 1.1",
     damage: 11,
     speed: 1.1,
     icon: "images/other/f7b983f89b.png",
-    obtain: "Способа получения пока нет",
+    obtain: "Наградные сундуки Забытого мира (голем и Целестиал), как Кримсон, любой крови",
     method: "place",
     methodLabel: "Святилище",
     recipe: false,
