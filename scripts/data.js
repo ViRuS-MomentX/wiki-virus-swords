@@ -2109,16 +2109,17 @@ const items = [
     lore: [
       '<span style="color:#808080"><em>Воск чёрный, оттиск — луна. Сломать её страшно.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Падает с Серафима третьего испытания.</span>',
+      '<span style="color:#AAAAAA">Куётся у алтаря Небесного храма небесной</span>',
+      '<span style="color:#AAAAAA">кровью третьей формы.</span>',
       '<span style="color:#AAAAAA">Правый клик: небесная кровь третьей формы</span>',
       '<span style="color:#AAAAAA">станет ночной, а Небесный храм рухнет.</span>'
     ],
     abilities: [],
     stats: "",
-    obtain: "Третье испытание Небесного храма",
+    obtain: "Ковка у алтаря Небесного храма, небесная кровь 3-й формы: Душа Иссушителя, 128 небесных осколков, Перо серафима",
     icon: "images/icons/night_seal.png",
-    method: "trial",
-    methodLabel: "Испытание",
+    method: "forge",
+    methodLabel: "Ковка у алтаря",
     recipe: false,
     model3d: false
   },
@@ -3388,6 +3389,28 @@ const altar = [
       {
         key: "celestial_shard",
         n: 64
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "night_seal",
+    at: "Небесный храм",
+    time: "",
+    blood: "Небесная кровь",
+    form: 3,
+    costs: [
+      {
+        key: "wither_soul",
+        n: 1
+      },
+      {
+        key: "celestial_shard",
+        n: 128
+      },
+      {
+        key: "seraph_feather",
+        n: 1
       }
     ]
   },
