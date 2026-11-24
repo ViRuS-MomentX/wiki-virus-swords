@@ -4850,12 +4850,12 @@ const _sfc_main$7 = {
                       src: unref(data).icons.verdict,
                       alt: ""
                     }, null, 8, _hoisted_51),
-                    _cache[40] || (_cache[40] = createTextVNode("Приговор и 32 ", -1)),
+                    _cache[40] || (_cache[40] = createTextVNode("Приговор, 32 ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.celestial_shard,
                       alt: ""
                     }, null, 8, _hoisted_52),
-                    _cache[41] || (_cache[41] = createTextVNode("небесных осколка. Сломавший печать становится ", -1)),
+                    _cache[41] || (_cache[41] = createTextVNode("небесных осколка и с шансом 50% Горн ветра (без смертей — всегда). Сломавший печать становится ", -1)),
                     _cache[42] || (_cache[42] = createBaseVNode("b", null, "ночной небесной кровью", -1)),
                     _cache[43] || (_cache[43] = createTextVNode(", приходит ночь, и с этого дня может вставать ", -1)),
                     _cache[44] || (_cache[44] = createBaseVNode("a", { href: "#night" }, "Тёмный храм", -1)),
