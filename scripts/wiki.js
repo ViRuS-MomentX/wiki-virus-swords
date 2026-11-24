@@ -4409,127 +4409,130 @@ const _hoisted_26$1 = { class: "kv" };
 const _hoisted_27$1 = { class: "inline-icons" };
 const _hoisted_28$1 = ["src"];
 const _hoisted_29 = ["src"];
-const _hoisted_30 = ["src"];
-const _hoisted_31 = { class: "boss" };
-const _hoisted_32 = {
+const _hoisted_30 = { class: "inline-icons" };
+const _hoisted_31 = ["src"];
+const _hoisted_32 = { class: "boss" };
+const _hoisted_33 = {
   class: "sanctum",
   id: "jungle"
 };
-const _hoisted_33 = ["src"];
-const _hoisted_34 = { class: "sanctum-body" };
-const _hoisted_35 = { class: "sanctum-info" };
-const _hoisted_36 = { class: "kv" };
-const _hoisted_37 = { class: "inline-icons" };
-const _hoisted_38 = ["src"];
+const _hoisted_34 = ["src"];
+const _hoisted_35 = { class: "sanctum-body" };
+const _hoisted_36 = { class: "sanctum-info" };
+const _hoisted_37 = { class: "kv" };
+const _hoisted_38 = { class: "inline-icons" };
 const _hoisted_39 = ["src"];
-const _hoisted_40 = { class: "boss" };
-const _hoisted_41 = {
+const _hoisted_40 = ["src"];
+const _hoisted_41 = { class: "boss" };
+const _hoisted_42 = {
+  class: "sanctum",
+  id: "tribunal"
+};
+const _hoisted_43 = { class: "terra-figure" };
+const _hoisted_44 = ["src"];
+const _hoisted_45 = { class: "sanctum-body" };
+const _hoisted_46 = { class: "sanctum-info" };
+const _hoisted_47 = { class: "kv" };
+const _hoisted_48 = { class: "inline-icons" };
+const _hoisted_49 = ["src"];
+const _hoisted_50 = { class: "inline-icons" };
+const _hoisted_51 = ["src"];
+const _hoisted_52 = ["src"];
+const _hoisted_53 = { class: "boss" };
+const _hoisted_54 = {
   class: "sanctum",
   id: "night"
 };
-const _hoisted_42 = ["src"];
-const _hoisted_43 = { class: "sanctum-body" };
-const _hoisted_44 = { class: "sanctum-info" };
-const _hoisted_45 = { class: "kv" };
-const _hoisted_46 = { class: "inline-icons" };
-const _hoisted_47 = ["src"];
-const _hoisted_48 = { class: "boss" };
-const _hoisted_49 = {
+const _hoisted_55 = ["src"];
+const _hoisted_56 = { class: "sanctum-body" };
+const _hoisted_57 = { class: "sanctum-info" };
+const _hoisted_58 = { class: "kv" };
+const _hoisted_59 = { class: "inline-icons" };
+const _hoisted_60 = ["src"];
+const _hoisted_61 = { class: "boss" };
+const _hoisted_62 = {
   class: "sanctum",
   id: "factory"
 };
-const _hoisted_50 = ["src"];
-const _hoisted_51 = { class: "sanctum-body" };
-const _hoisted_52 = { class: "sanctum-info" };
-const _hoisted_53 = { class: "kv" };
-const _hoisted_54 = { class: "inline-icons" };
-const _hoisted_55 = ["src"];
-const _hoisted_56 = ["src"];
-const _hoisted_57 = { class: "boss" };
-const _hoisted_58 = {
+const _hoisted_63 = ["src"];
+const _hoisted_64 = { class: "sanctum-body" };
+const _hoisted_65 = { class: "sanctum-info" };
+const _hoisted_66 = { class: "kv" };
+const _hoisted_67 = { class: "inline-icons" };
+const _hoisted_68 = ["src"];
+const _hoisted_69 = ["src"];
+const _hoisted_70 = { class: "boss" };
+const _hoisted_71 = {
   class: "sanctum",
   id: "castle"
 };
-const _hoisted_59 = ["src"];
-const _hoisted_60 = { class: "sanctum-body" };
-const _hoisted_61 = { class: "sanctum-info" };
-const _hoisted_62 = { class: "kv" };
-const _hoisted_63 = { class: "inline-icons" };
-const _hoisted_64 = ["src"];
-const _hoisted_65 = ["src"];
-const _hoisted_66 = ["src"];
-const _hoisted_67 = { class: "boss" };
-const _hoisted_68 = { class: "boss" };
-const _hoisted_69 = { class: "attacks" };
-const _hoisted_70 = { class: "inline-icons" };
-const _hoisted_71 = ["src"];
 const _hoisted_72 = ["src"];
-const _hoisted_73 = {
+const _hoisted_73 = { class: "sanctum-body" };
+const _hoisted_74 = { class: "sanctum-info" };
+const _hoisted_75 = { class: "kv" };
+const _hoisted_76 = { class: "inline-icons" };
+const _hoisted_77 = ["src"];
+const _hoisted_78 = ["src"];
+const _hoisted_79 = ["src"];
+const _hoisted_80 = { class: "boss" };
+const _hoisted_81 = { class: "boss" };
+const _hoisted_82 = { class: "attacks" };
+const _hoisted_83 = { class: "inline-icons" };
+const _hoisted_84 = ["src"];
+const _hoisted_85 = ["src"];
+const _hoisted_86 = {
   class: "sanctum",
   id: "wanderer-cube"
 };
-const _hoisted_74 = { class: "terra-figure cube-figure" };
-const _hoisted_75 = { class: "cube-row" };
-const _hoisted_76 = ["src", "alt"];
-const _hoisted_77 = { class: "sanctum-body" };
-const _hoisted_78 = { class: "sanctum-info" };
-const _hoisted_79 = { class: "kv" };
-const _hoisted_80 = { class: "inline-icons" };
-const _hoisted_81 = ["src"];
-const _hoisted_82 = ["src"];
-const _hoisted_83 = {
-  class: "sanctum",
-  id: "terra-trial"
-};
-const _hoisted_84 = { class: "terra-figure" };
-const _hoisted_85 = ["src"];
-const _hoisted_86 = { class: "sanctum-body" };
-const _hoisted_87 = { class: "sanctum-info" };
-const _hoisted_88 = { class: "kv" };
-const _hoisted_89 = { class: "inline-icons" };
-const _hoisted_90 = ["src"];
-const _hoisted_91 = { class: "inline-icons" };
-const _hoisted_92 = ["src"];
+const _hoisted_87 = { class: "terra-figure cube-figure" };
+const _hoisted_88 = { class: "cube-row" };
+const _hoisted_89 = ["src", "alt"];
+const _hoisted_90 = { class: "sanctum-body" };
+const _hoisted_91 = { class: "sanctum-info" };
+const _hoisted_92 = { class: "kv" };
 const _hoisted_93 = { class: "inline-icons" };
 const _hoisted_94 = ["src"];
 const _hoisted_95 = ["src"];
-const _hoisted_96 = ["src"];
-const _hoisted_97 = {
+const _hoisted_96 = {
+  class: "sanctum",
+  id: "terra-trial"
+};
+const _hoisted_97 = { class: "terra-figure" };
+const _hoisted_98 = ["src"];
+const _hoisted_99 = { class: "sanctum-body" };
+const _hoisted_100 = { class: "sanctum-info" };
+const _hoisted_101 = { class: "kv" };
+const _hoisted_102 = { class: "inline-icons" };
+const _hoisted_103 = ["src"];
+const _hoisted_104 = { class: "inline-icons" };
+const _hoisted_105 = ["src"];
+const _hoisted_106 = { class: "inline-icons" };
+const _hoisted_107 = ["src"];
+const _hoisted_108 = ["src"];
+const _hoisted_109 = ["src"];
+const _hoisted_110 = {
   class: "stack",
   style: { "align-content": "start" }
 };
-const _hoisted_98 = { class: "boss" };
-const _hoisted_99 = {
+const _hoisted_111 = { class: "boss" };
+const _hoisted_112 = {
   class: "sanctum",
   id: "forgotten-world"
 };
-const _hoisted_100 = { class: "terra-figure" };
-const _hoisted_101 = ["src"];
-const _hoisted_102 = { class: "sanctum-body" };
-const _hoisted_103 = { class: "sanctum-info" };
-const _hoisted_104 = { class: "kv" };
-const _hoisted_105 = { class: "inline-icons" };
-const _hoisted_106 = ["src"];
-const _hoisted_107 = ["src"];
-const _hoisted_108 = ["src"];
-const _hoisted_109 = { class: "inline-icons" };
-const _hoisted_110 = ["src"];
-const _hoisted_111 = ["src"];
-const _hoisted_112 = ["src"];
-const _hoisted_113 = { class: "inline-icons" };
+const _hoisted_113 = { class: "terra-figure" };
 const _hoisted_114 = ["src"];
-const _hoisted_115 = ["src"];
-const _hoisted_116 = ["src"];
-const _hoisted_117 = ["src"];
-const _hoisted_118 = ["src"];
+const _hoisted_115 = { class: "sanctum-body" };
+const _hoisted_116 = { class: "sanctum-info" };
+const _hoisted_117 = { class: "kv" };
+const _hoisted_118 = { class: "inline-icons" };
 const _hoisted_119 = ["src"];
 const _hoisted_120 = ["src"];
 const _hoisted_121 = ["src"];
-const _hoisted_122 = ["src"];
+const _hoisted_122 = { class: "inline-icons" };
 const _hoisted_123 = ["src"];
-const _hoisted_124 = { class: "inline-icons" };
+const _hoisted_124 = ["src"];
 const _hoisted_125 = ["src"];
-const _hoisted_126 = ["src"];
+const _hoisted_126 = { class: "inline-icons" };
 const _hoisted_127 = ["src"];
 const _hoisted_128 = ["src"];
 const _hoisted_129 = ["src"];
@@ -4539,12 +4542,25 @@ const _hoisted_132 = ["src"];
 const _hoisted_133 = ["src"];
 const _hoisted_134 = ["src"];
 const _hoisted_135 = ["src"];
-const _hoisted_136 = {
+const _hoisted_136 = ["src"];
+const _hoisted_137 = { class: "inline-icons" };
+const _hoisted_138 = ["src"];
+const _hoisted_139 = ["src"];
+const _hoisted_140 = ["src"];
+const _hoisted_141 = ["src"];
+const _hoisted_142 = ["src"];
+const _hoisted_143 = ["src"];
+const _hoisted_144 = ["src"];
+const _hoisted_145 = ["src"];
+const _hoisted_146 = ["src"];
+const _hoisted_147 = ["src"];
+const _hoisted_148 = ["src"];
+const _hoisted_149 = {
   class: "stack",
   style: { "align-content": "start" }
 };
-const _hoisted_137 = { class: "boss" };
-const _hoisted_138 = { class: "boss" };
+const _hoisted_150 = { class: "boss" };
+const _hoisted_151 = { class: "boss" };
 const _sfc_main$7 = {
   __name: "SanctumsSection",
   setup(__props) {
@@ -4570,7 +4586,7 @@ const _sfc_main$7 = {
           _: 1
         }),
         createVNode(_sfc_main$8),
-        _cache[125] || (_cache[125] = createStaticVNode('<div class="flow" aria-label="Путь через святилище"><div class="step"><b>Вход</b><span>туннель, ступени или ворота</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Три комнаты</b><span>в каждой стража; с неё падают осколки</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Алтарь</b><span>откроется, когда падёт вся стража: эволюция, заточка, испытания</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Арена</b><span>испытание: пять волн, в пятой — страж</span></div></div><h3>Пять святилищ коротко</h3><div class="tbl"><table><thead><tr><th>Святилище</th><th>Где</th><th>Чем искать</th><th>Страж</th><th>Кочует</th><th>Кровь</th></tr></thead><tbody><tr><th scope="row"><a href="#forge">Незеритовая кузня</a></th><td>Незер, в толще незерака</td><td>Карта кузни</td><td>Горнило</td><td>да</td><td>пепельная</td></tr><tr><th scope="row"><a href="#temple">Небесный храм</a></th><td>верхний мир, остров на высоте 200</td><td>Компас воздуха</td><td>Серафим Падшего Рассвета</td><td>да, и рушится от Печати ночи</td><td>небесная</td></tr><tr><th scope="row"><a href="#jungle">Храм джунглей</a></th><td>джунгли</td><td>Карта джунглей</td><td>Древний страж джунглей</td><td>да</td><td>предков</td></tr><tr><th scope="row"><a href="#night">Тёмный храм</a></th><td>верхний мир, только ночью</td><td>Ночной компас</td><td>Пустотный Серафим (платформа)</td><td>каждую ночь на новом месте</td><td>ночная небесная</td></tr><tr><th scope="row"><a href="#factory">Древняя фабрика</a></th><td>глубоко под землёй</td><td>Неизвестный компас</td><td>Предвестник</td><td>нет</td><td>техноорганическая</td></tr></tbody></table></div><h3>Как найти святилище</h3><p>Каждое святилище ищется своим предметом. Компас ведёт к храму, где бы тот ни стоял; карта показывает место, где святилище стояло, когда её сделали.</p>', 5)),
+        _cache[144] || (_cache[144] = createStaticVNode('<div class="flow" aria-label="Путь через святилище"><div class="step"><b>Вход</b><span>туннель, ступени или ворота</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Три комнаты</b><span>в каждой стража; с неё падают осколки</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Алтарь</b><span>откроется, когда падёт вся стража: эволюция, заточка, испытания</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Арена</b><span>испытание: пять волн, в пятой — страж</span></div></div><h3>Пять святилищ коротко</h3><div class="tbl"><table><thead><tr><th>Святилище</th><th>Где</th><th>Чем искать</th><th>Страж</th><th>Кочует</th><th>Кровь</th></tr></thead><tbody><tr><th scope="row"><a href="#forge">Незеритовая кузня</a></th><td>Незер, в толще незерака</td><td>Карта кузни</td><td>Горнило</td><td>да</td><td>пепельная</td></tr><tr><th scope="row"><a href="#temple">Небесный храм</a></th><td>верхний мир, остров на высоте 200</td><td>Компас воздуха</td><td>Серафим Падшего Рассвета</td><td>да, и рушится от Печати ночи</td><td>небесная</td></tr><tr><th scope="row"><a href="#jungle">Храм джунглей</a></th><td>джунгли</td><td>Карта джунглей</td><td>Древний страж джунглей</td><td>да</td><td>предков</td></tr><tr><th scope="row"><a href="#night">Тёмный храм</a></th><td>верхний мир, только ночью</td><td>Ночной компас</td><td>Пустотный Серафим (платформа)</td><td>каждую ночь на новом месте</td><td>ночная небесная</td></tr><tr><th scope="row"><a href="#factory">Древняя фабрика</a></th><td>глубоко под землёй</td><td>Неизвестный компас</td><td>Предвестник</td><td>нет</td><td>техноорганическая</td></tr></tbody></table></div><h3>Как найти святилище</h3><p>Каждое святилище ищется своим предметом. Компас ведёт к храму, где бы тот ни стоял; карта показывает место, где святилище стояло, когда её сделали.</p>', 5)),
         createBaseVNode("div", _hoisted_2$7, [
           createBaseVNode("div", _hoisted_3$6, [
             createVNode(_sfc_main$v, {
@@ -4709,14 +4725,14 @@ const _sfc_main$7 = {
           ]),
           createBaseVNode("div", _hoisted_24$1, [
             createBaseVNode("div", _hoisted_25$1, [
-              _cache[22] || (_cache[22] = createBaseVNode("div", { class: "sanctum-title" }, [
+              _cache[24] || (_cache[24] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Небесный храм"),
                 createBaseVNode("span", { class: "pill" }, "верхний мир")
               ], -1)),
               createBaseVNode("dl", _hoisted_26$1, [
-                _cache[21] || (_cache[21] = createStaticVNode("<div><dt>Где</dt><dd>летающий остров высоко в небе</dd></div><div><dt>Внутри</dt><dd>колоннада, неф с колокольнями и ротонда с алтарём</dd></div><div><dt>Путь наверх</dt><dd>поток ветра у Врат ветра</dd></div><div><dt>Стража</dt><dd>зимогоры и поборники в золоте</dd></div><div><dt>Алтарь</dt><dd>испытания, ковка, заточка и пробуждение небесных клинков</dd></div>", 5)),
+                _cache[23] || (_cache[23] = createStaticVNode("<div><dt>Где</dt><dd>летающий остров высоко в небе</dd></div><div><dt>Внутри</dt><dd>колоннада, неф с колокольнями и ротонда с алтарём</dd></div><div><dt>Путь наверх</dt><dd>поток ветра у Врат ветра</dd></div><div><dt>Стража</dt><dd>зимогоры и поборники в золоте</dd></div><div><dt>Алтарь</dt><dd>испытания, ковка, заточка и пробуждение небесных клинков</dd></div>", 5)),
                 createBaseVNode("div", null, [
-                  _cache[20] || (_cache[20] = createBaseVNode("dt", null, "Добыча", -1)),
+                  _cache[19] || (_cache[19] = createBaseVNode("dt", null, "Добыча", -1)),
                   createBaseVNode("dd", _hoisted_27$1, [
                     createBaseVNode("img", {
                       src: unref(data).icons.celestial_shard,
@@ -4727,275 +4743,344 @@ const _sfc_main$7 = {
                       src: unref(data).icons.seraph_feather,
                       alt: ""
                     }, null, 8, _hoisted_29),
-                    _cache[18] || (_cache[18] = createTextVNode("Перо серафима · ", -1)),
+                    _cache[18] || (_cache[18] = createTextVNode("Перо серафима", -1))
+                  ])
+                ]),
+                createBaseVNode("div", null, [
+                  _cache[22] || (_cache[22] = createBaseVNode("dt", null, "Печать ночи", -1)),
+                  createBaseVNode("dd", _hoisted_30, [
                     createBaseVNode("img", {
                       src: unref(data).icons.night_seal,
                       alt: ""
-                    }, null, 8, _hoisted_30),
-                    _cache[19] || (_cache[19] = createTextVNode("Печать ночи", -1))
+                    }, null, 8, _hoisted_31),
+                    _cache[20] || (_cache[20] = createTextVNode("куётся у алтаря на 3-й форме; сломанная в храме — срывает крышу и призывает ", -1)),
+                    _cache[21] || (_cache[21] = createBaseVNode("a", { href: "#tribunal" }, "Небесного Трибунала", -1))
                   ])
                 ])
               ])
             ]),
-            createBaseVNode("div", _hoisted_31, [
+            createBaseVNode("div", _hoisted_32, [
               createVNode(_sfc_main$9, {
                 name: "Серафим Падшего Рассвета",
                 colour: "white"
               }),
-              _cache[23] || (_cache[23] = createStaticVNode('<div class="boss-stats"><span class="pill">450 здоровья</span><span class="pill">броня 8</span><span class="pill">иллюзор</span></div><ul class="attacks"><li><b>Печать ночи.</b> Куётся у алтаря храма небесной кровью третьей формы: Душа Иссушителя, 128 небесных осколков, Перо серафима.</li><li><b>Суд.</b> В столбы света бьёт молния — выйдите из света.</li><li><b>Перья.</b> На золотые кольца падает залп стрел — выйдите из кольца.</li><li><b>Фаза 2 · Полдень (66%).</b> Сначала <b>Щит рассвета</b>: неуязвим, пока живы призванные стражи. Потом <b>Зенит</b>: солнце бьёт всех, кого видит, — прячьтесь в тень колонн.</li><li><b>Фаза 3 · Закат (33%).</b> <b>Падший нимб</b>: четыре осколка над двором лечат Серафима — сбивайте их луком. Суд падает очередью из шести столбов — уходите вбок.</li><li><b>Лучи рассвета.</b> Лучи обходят его кругом — перепрыгивайте их.</li><li><b>Мерцание.</b> Переносится по двору.</li></ul>', 2))
+              _cache[25] || (_cache[25] = createStaticVNode('<div class="boss-stats"><span class="pill">450 здоровья</span><span class="pill">броня 8</span><span class="pill">иллюзор</span></div><ul class="attacks"><li><b>Печать ночи.</b> Куётся у алтаря храма небесной кровью третьей формы: Душа Иссушителя, 128 небесных осколков, Перо серафима. Сломайте её в храме — барьер падёт, и всех, кто внутри, призовёт <a href="#tribunal">Небесный Трибунал</a>.</li><li><b>Суд.</b> В столбы света бьёт молния — выйдите из света.</li><li><b>Перья.</b> На золотые кольца падает залп стрел — выйдите из кольца.</li><li><b>Фаза 2 · Полдень (66%).</b> Сначала <b>Щит рассвета</b>: неуязвим, пока живы призванные стражи. Потом <b>Зенит</b>: солнце бьёт всех, кого видит, — прячьтесь в тень колонн.</li><li><b>Фаза 3 · Закат (33%).</b> <b>Падший нимб</b>: четыре осколка над двором лечат Серафима — сбивайте их луком. Суд падает очередью из шести столбов — уходите вбок.</li><li><b>Лучи рассвета.</b> Лучи обходят его кругом — перепрыгивайте их.</li><li><b>Мерцание.</b> Переносится по двору.</li></ul>', 2))
             ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_32, [
+        createBaseVNode("article", _hoisted_33, [
           createBaseVNode("figure", null, [
-            _cache[24] || (_cache[24] = createBaseVNode("span", {
+            _cache[26] || (_cache[26] = createBaseVNode("span", {
               class: "figure-title",
               "aria-hidden": "true"
             }, "Храм джунглей", -1)),
             createBaseVNode("img", {
               src: unref(data).images.jungle,
               alt: "Храм джунглей: вид снаружи, разрез, план залов и план лабиринта"
-            }, null, 8, _hoisted_33),
-            _cache[25] || (_cache[25] = createBaseVNode("figcaption", null, "Снаружи · разрез · план залов · лабиринт", -1))
+            }, null, 8, _hoisted_34),
+            _cache[27] || (_cache[27] = createBaseVNode("figcaption", null, "Снаружи · разрез · план залов · лабиринт", -1))
           ]),
-          createBaseVNode("div", _hoisted_34, [
-            createBaseVNode("div", _hoisted_35, [
-              _cache[30] || (_cache[30] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_35, [
+            createBaseVNode("div", _hoisted_36, [
+              _cache[32] || (_cache[32] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Храм джунглей"),
                 createBaseVNode("span", { class: "pill" }, "джунгли")
               ], -1)),
-              createBaseVNode("dl", _hoisted_36, [
-                _cache[29] || (_cache[29] = createStaticVNode("<div><dt>Где</dt><dd>ступенчатая пирамида в джунглях</dd></div><div><dt>Внутри</dt><dd>большой зал, арена и алтарная комната</dd></div><div><dt>Стража</dt><dd>болотники, пещерные пауки, пауки, ведьмы</dd></div><div><dt>Алтарь</dt><dd>испытания, ковка Терра-блейда и эволюция в Энигму, ключи Забытого мира, заточка и пробуждение терра-клинков, третья форма крови предков за Терра-сущность</dd></div>", 4)),
+              createBaseVNode("dl", _hoisted_37, [
+                _cache[31] || (_cache[31] = createStaticVNode("<div><dt>Где</dt><dd>ступенчатая пирамида в джунглях</dd></div><div><dt>Внутри</dt><dd>большой зал, арена и алтарная комната</dd></div><div><dt>Стража</dt><dd>болотники, пещерные пауки, пауки, ведьмы</dd></div><div><dt>Алтарь</dt><dd>испытания, ковка Терра-блейда и эволюция в Энигму, ключи Забытого мира, заточка и пробуждение терра-клинков, третья форма крови предков за Терра-сущность</dd></div>", 4)),
                 createBaseVNode("div", null, [
-                  _cache[28] || (_cache[28] = createBaseVNode("dt", null, "Добыча", -1)),
-                  createBaseVNode("dd", _hoisted_37, [
+                  _cache[30] || (_cache[30] = createBaseVNode("dt", null, "Добыча", -1)),
+                  createBaseVNode("dd", _hoisted_38, [
                     createBaseVNode("img", {
                       src: unref(data).icons.jungle_shard,
                       alt: ""
-                    }, null, 8, _hoisted_38),
-                    _cache[26] || (_cache[26] = createTextVNode("Реликтовые осколки · ", -1)),
+                    }, null, 8, _hoisted_39),
+                    _cache[28] || (_cache[28] = createTextVNode("Реликтовые осколки · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.jungle_heart,
                       alt: ""
-                    }, null, 8, _hoisted_39),
-                    _cache[27] || (_cache[27] = createTextVNode("Сердце джунглей", -1))
+                    }, null, 8, _hoisted_40),
+                    _cache[29] || (_cache[29] = createTextVNode("Сердце джунглей", -1))
                   ])
                 ])
               ])
             ]),
-            createBaseVNode("div", _hoisted_40, [
+            createBaseVNode("div", _hoisted_41, [
               createVNode(_sfc_main$9, {
                 name: "Древний страж джунглей",
                 colour: "green"
               }),
-              _cache[31] || (_cache[31] = createStaticVNode('<div class="boss-stats"><span class="pill">550 здоровья</span><span class="pill">урон 16</span><span class="pill">броня 10</span><span class="pill">разоритель</span></div><ul class="attacks"><li><b>Землетрясение.</b> Подбрасывает всех на земле рядом.</li><li><b>Корни.</b> Под бойцами сжимаются зелёные кольца — выйдите из них, пока из пола не вырвались корни.</li><li><b>Споры.</b> Ядовитое облако вокруг босса — успейте выйти.</li><li><b>Таран.</b> Мчится по зелёной линии — сойдите с неё; врезавшись в стену, уязвим.</li><li><b>Фаза 2 · Цветение (65%).</b> Зовёт обитателей храма. В углах распускаются цветы и лечат стража — постойте на цветке 3 секунды, и он завянет.</li><li><b>Фаза 3 · Гон (30%).</b> Таранит чаще и оставляет стены корней. Таран в стену оглушает стража.</li></ul>', 2))
+              _cache[33] || (_cache[33] = createStaticVNode('<div class="boss-stats"><span class="pill">550 здоровья</span><span class="pill">урон 16</span><span class="pill">броня 10</span><span class="pill">разоритель</span></div><ul class="attacks"><li><b>Землетрясение.</b> Подбрасывает всех на земле рядом.</li><li><b>Корни.</b> Под бойцами сжимаются зелёные кольца — выйдите из них, пока из пола не вырвались корни.</li><li><b>Споры.</b> Ядовитое облако вокруг босса — успейте выйти.</li><li><b>Таран.</b> Мчится по зелёной линии — сойдите с неё; врезавшись в стену, уязвим.</li><li><b>Фаза 2 · Цветение (65%).</b> Зовёт обитателей храма. В углах распускаются цветы и лечат стража — постойте на цветке 3 секунды, и он завянет.</li><li><b>Фаза 3 · Гон (30%).</b> Таранит чаще и оставляет стены корней. Таран в стену оглушает стража.</li></ul>', 2))
             ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_41, [
+        createBaseVNode("article", _hoisted_42, [
+          createBaseVNode("figure", _hoisted_43, [
+            createBaseVNode("img", {
+              src: unref(data).icons.night_seal,
+              alt: "Печать ночи"
+            }, null, 8, _hoisted_44),
+            _cache[34] || (_cache[34] = createBaseVNode("figcaption", null, "Печать ночи", -1))
+          ]),
+          createBaseVNode("div", _hoisted_45, [
+            createBaseVNode("div", _hoisted_46, [
+              _cache[49] || (_cache[49] = createBaseVNode("div", { class: "sanctum-title" }, [
+                createBaseVNode("h3", null, "Небесный Трибунал"),
+                createBaseVNode("span", { class: "pill" }, "отдельный мир")
+              ], -1)),
+              createBaseVNode("dl", _hoisted_47, [
+                createBaseVNode("div", null, [
+                  _cache[38] || (_cache[38] = createBaseVNode("dt", null, "Как попасть", -1)),
+                  createBaseVNode("dd", _hoisted_48, [
+                    createBaseVNode("img", {
+                      src: unref(data).icons.night_seal,
+                      alt: ""
+                    }, null, 8, _hoisted_49),
+                    _cache[35] || (_cache[35] = createTextVNode("сломать Печать ночи (ПКМ дважды) ", -1)),
+                    _cache[36] || (_cache[36] = createBaseVNode("b", null, "в Небесном храме", -1)),
+                    _cache[37] || (_cache[37] = createTextVNode(", небесной кровью 3-й формы. В чат всему серверу — «Барьер был сломан.» и «Неизвестное существо проникло в этот мир.», у каждого голоса — своя реплика", -1))
+                  ])
+                ]),
+                _cache[47] || (_cache[47] = createStaticVNode("<div><dt>Храм</dt><dd>рушится минуту, а в первые секунды с него будто силой мысли срывает крышу: купол, своды, апсиду — камни уходят в небо. Кто в храме, тот его не покинет («Святилище не даёт вам покинуть его»): всех поднимает в воздух и переносит к Трибуналу</dd></div><div><dt>Обвинение</dt><dd>Трибунал смотрит сверху вниз и перечисляет вину: убитые Серафимы, сломанная печать, павший барьер и выпущенный Пустотный Серафим. Пришедших снова встречает «Опять вы.»</dd></div><div><dt>Арена</dt><dd>белая звезда из кварца в пустом небе, круглая площадь под кольцом колонн; над ней — клетка</dd></div><div><dt>Толпа</dt><dd>мирные мобы — овцы, коровы, свиньи, куры, кролики, козы, грибные коровы — идут на подсудимых: у каждого <b>5 здоровья</b>, но их очень много (40 и по 12 на бойца, до 120), и убитых сразу сменяют новые</dd></div><div><dt>Взлетевшим</dt><dd>кто летит, планирует или высоко прыгнул — на того налетают летучие мыши и вексы</dd></div><div><dt>Клетка</dt><dd>погибший возрождается в клетке над ареной со всеми вещами и смотрит на бой</dd></div><div><dt>Поражение</dt><dd>все в клетке — «Приговор исполнен»: вещи подсудимых остаются на суде, кроме привязанных к ним клинков, всех возвращает домой. Новая печать — новый суд</dd></div>", 7)),
+                createBaseVNode("div", null, [
+                  _cache[46] || (_cache[46] = createBaseVNode("dt", null, "Победа", -1)),
+                  createBaseVNode("dd", _hoisted_50, [
+                    _cache[39] || (_cache[39] = createTextVNode("клетка открывается; с Трибунала падают ", -1)),
+                    createBaseVNode("img", {
+                      src: unref(data).icons.verdict,
+                      alt: ""
+                    }, null, 8, _hoisted_51),
+                    _cache[40] || (_cache[40] = createTextVNode("Приговор и 32 ", -1)),
+                    createBaseVNode("img", {
+                      src: unref(data).icons.celestial_shard,
+                      alt: ""
+                    }, null, 8, _hoisted_52),
+                    _cache[41] || (_cache[41] = createTextVNode("небесных осколка. Сломавший печать становится ", -1)),
+                    _cache[42] || (_cache[42] = createBaseVNode("b", null, "ночной небесной кровью", -1)),
+                    _cache[43] || (_cache[43] = createTextVNode(", приходит ночь, и с этого дня может вставать ", -1)),
+                    _cache[44] || (_cache[44] = createBaseVNode("a", { href: "#night" }, "Тёмный храм", -1)),
+                    _cache[45] || (_cache[45] = createTextVNode(". Через минуту всех возвращает домой; неподобранный Приговор получает сломавший печать", -1))
+                  ])
+                ]),
+                _cache[48] || (_cache[48] = createBaseVNode("div", null, [
+                  createBaseVNode("dt", null, "Вышел с сервера"),
+                  createBaseVNode("dd", null, "вернулся, пока суд идёт, — снова на суде; вернулся после — в обычном мире")
+                ], -1))
+              ])
+            ]),
+            createBaseVNode("div", _hoisted_53, [
+              createVNode(_sfc_main$9, {
+                name: "Небесный Трибунал  ◆◆◆◆",
+                colour: "yellow"
+              }),
+              _cache[50] || (_cache[50] = createStaticVNode('<div class="boss-stats"><span class="pill">4 четверти</span><span class="pill">ранит только трезубец</span><span class="pill">иллюзор ×3</span></div><ul class="attacks"><li><b>Полёт.</b> Кружит над площадью, вне досягаемости; оружие его не берёт.</li><li><b>Хранитель трезубца.</b> Среди толпы ходит светящийся железный голем с трезубцем на спине (тоже 5 здоровья). Убейте его — выпадет <b>Трезубец правосудия</b> (модель Приговора, но не он).</li><li><b>Трезубец правосудия.</b> Подберите и метните в Трибунала (зажать ПКМ): брошенный почти в него, он сам доворачивает. Попадание — <b>минус четверть</b>. Промах — поднимите и метните снова; пролежит 30 секунд — придёт новый Хранитель.</li><li><b>Ускорение.</b> С каждой потерянной четвертью толпа бегает быстрее и её больше, а Трибунал летает быстрее.</li><li><b>Кара.</b> «Кара!» — под одним из бойцов загорается золотой круг: через 2 секунды удар света, выйдите из круга.</li></ul>', 2))
+            ])
+          ])
+        ]),
+        createBaseVNode("article", _hoisted_54, [
           createBaseVNode("figure", null, [
-            _cache[32] || (_cache[32] = createBaseVNode("span", {
+            _cache[51] || (_cache[51] = createBaseVNode("span", {
               class: "figure-title",
               "aria-hidden": "true"
             }, "Тёмный храм", -1)),
             createBaseVNode("img", {
               src: unref(data).images.night,
               alt: "Тёмный храм: вид снаружи, разрез и план"
-            }, null, 8, _hoisted_42),
-            _cache[33] || (_cache[33] = createBaseVNode("figcaption", null, "Снаружи · разрез · план", -1))
+            }, null, 8, _hoisted_55),
+            _cache[52] || (_cache[52] = createBaseVNode("figcaption", null, "Снаружи · разрез · план", -1))
           ]),
-          createBaseVNode("div", _hoisted_43, [
-            createBaseVNode("div", _hoisted_44, [
-              _cache[37] || (_cache[37] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_56, [
+            createBaseVNode("div", _hoisted_57, [
+              _cache[56] || (_cache[56] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Тёмный храм"),
                 createBaseVNode("span", { class: "pill" }, "только ночью")
               ], -1)),
-              createBaseVNode("dl", _hoisted_45, [
-                _cache[36] || (_cache[36] = createStaticVNode("<div><dt>Когда</dt><dd>после того как сломали Печать ночи — каждую ночь в новом месте</dd></div><div><dt>Какой</dt><dd>тёмная тень Небесного храма</dd></div><div><dt>Стража</dt><dd>нет: храм пуст, в ротонде — платформа босса</dd></div><div><dt>Алтарь</dt><dd>ночная ковка, заточка и пробуждение; проход к нему закрыт, пока жив Серафим</dd></div>", 4)),
+              createBaseVNode("dl", _hoisted_58, [
+                _cache[55] || (_cache[55] = createStaticVNode('<div><dt>Когда</dt><dd>после первой победы над <a href="#tribunal">Небесным Трибуналом</a> — каждую ночь в новом месте</dd></div><div><dt>Какой</dt><dd>тёмная тень Небесного храма</dd></div><div><dt>Стража</dt><dd>нет: храм пуст, в ротонде — платформа босса</dd></div><div><dt>Алтарь</dt><dd>ночная ковка, заточка и пробуждение; проход к нему закрыт, пока жив Серафим</dd></div>', 4)),
                 createBaseVNode("div", null, [
-                  _cache[35] || (_cache[35] = createBaseVNode("dt", null, "Добыча", -1)),
-                  createBaseVNode("dd", _hoisted_46, [
+                  _cache[54] || (_cache[54] = createBaseVNode("dt", null, "Добыча", -1)),
+                  createBaseVNode("dd", _hoisted_59, [
                     createBaseVNode("img", {
                       src: unref(data).icons.celestial_shard,
                       alt: ""
-                    }, null, 8, _hoisted_47),
-                    _cache[34] || (_cache[34] = createTextVNode("Небесные осколки с Пустотного Серафима", -1))
+                    }, null, 8, _hoisted_60),
+                    _cache[53] || (_cache[53] = createTextVNode("Небесные осколки с Пустотного Серафима", -1))
                   ])
                 ])
               ])
             ]),
-            createBaseVNode("div", _hoisted_48, [
+            createBaseVNode("div", _hoisted_61, [
               createVNode(_sfc_main$9, {
                 name: "Пустотный Серафим",
                 colour: "purple"
               }),
-              _cache[38] || (_cache[38] = createStaticVNode('<div class="boss-stats"><span class="pill">700 здоровья</span><span class="pill">урон 13</span><span class="pill">броня 10</span><span class="pill">эндермен</span></div><ul class="attacks"><li><b>Платформа.</b> Встаньте на неё в ротонде — придёт Серафим. Пока он жив, ночь стоит и рассвета нет. Победа даёт четвёртую форму всей ночной крови третьей формы, что билась с ним; падут все — храм исчезнет до следующей ночи.</li><li><b>Щит ударов.</b> Снимается числом ударов, а не силой.</li><li><b>Головы пустоты.</b> Пока живы головы, Серафим получает меньше урона — фиолетовые нити ведут к ним.</li><li><b>Глиф.</b> Встаньте в круг упавшего маяка, иначе взрыв.</li><li><b>Лучи разбитого сердца.</b> Лучи обходят его кругом — прыгайте.</li><li><b>Шаг сквозь пустоту.</b> Встаёт за спиной — выйдите из кольца.</li><li><b>Фазы.</b> Головы пустоты (70%) — щит и головы. <b>Изнанка</b> (40%) — тень повторяет Глиф и Шаг зеркально через центр зала. <b>Сингулярность</b> (15%) — чёрная дыра тянет к центру, держитесь дальше восьми блоков.</li></ul>', 2))
+              _cache[57] || (_cache[57] = createStaticVNode('<div class="boss-stats"><span class="pill">700 здоровья</span><span class="pill">урон 13</span><span class="pill">броня 10</span><span class="pill">эндермен</span></div><ul class="attacks"><li><b>Платформа.</b> Встаньте на неё в ротонде — придёт Серафим. Пока он жив, ночь стоит и рассвета нет. Победа даёт четвёртую форму всей ночной крови третьей формы, что билась с ним; падут все — храм исчезнет до следующей ночи.</li><li><b>Щит ударов.</b> Снимается числом ударов, а не силой.</li><li><b>Головы пустоты.</b> Пока живы головы, Серафим получает меньше урона — фиолетовые нити ведут к ним.</li><li><b>Глиф.</b> Встаньте в круг упавшего маяка, иначе взрыв.</li><li><b>Лучи разбитого сердца.</b> Лучи обходят его кругом — прыгайте.</li><li><b>Шаг сквозь пустоту.</b> Встаёт за спиной — выйдите из кольца.</li><li><b>Фазы.</b> Головы пустоты (70%) — щит и головы. <b>Изнанка</b> (40%) — тень повторяет Глиф и Шаг зеркально через центр зала. <b>Сингулярность</b> (15%) — чёрная дыра тянет к центру, держитесь дальше восьми блоков.</li></ul>', 2))
             ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_49, [
+        createBaseVNode("article", _hoisted_62, [
           createBaseVNode("figure", null, [
-            _cache[39] || (_cache[39] = createBaseVNode("span", {
+            _cache[58] || (_cache[58] = createBaseVNode("span", {
               class: "figure-title",
               "aria-hidden": "true"
             }, "Древняя фабрика", -1)),
             createBaseVNode("img", {
               src: unref(data).images.factory,
               alt: "Древняя фабрика: пещера без потолка, разрез и план"
-            }, null, 8, _hoisted_50),
-            _cache[40] || (_cache[40] = createBaseVNode("figcaption", null, "Пещера без потолка · разрез · план", -1))
+            }, null, 8, _hoisted_63),
+            _cache[59] || (_cache[59] = createBaseVNode("figcaption", null, "Пещера без потолка · разрез · план", -1))
           ]),
-          createBaseVNode("div", _hoisted_51, [
-            createBaseVNode("div", _hoisted_52, [
-              _cache[45] || (_cache[45] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_64, [
+            createBaseVNode("div", _hoisted_65, [
+              _cache[64] || (_cache[64] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Древняя фабрика"),
                 createBaseVNode("span", { class: "pill" }, "под землёй")
               ], -1)),
-              createBaseVNode("dl", _hoisted_53, [
-                _cache[44] || (_cache[44] = createStaticVNode("<div><dt>Где</dt><dd>глубоко под землёй. Путь укажет Неизвестный компас</dd></div><div><dt>Внутри</dt><dd>огромный цех: погрузочный и сборочный залы, реактор и пульт управления</dd></div><div><dt>Стража</dt><dd>автоматоны и летучие дроны</dd></div><div><dt>Терминал</dt><dd>молчит, пока Предвестник ни разу не пал; рейды с Предвестником в конце, техноорганический вирус, сборка машин</dd></div>", 4)),
+              createBaseVNode("dl", _hoisted_66, [
+                _cache[63] || (_cache[63] = createStaticVNode("<div><dt>Где</dt><dd>глубоко под землёй. Путь укажет Неизвестный компас</dd></div><div><dt>Внутри</dt><dd>огромный цех: погрузочный и сборочный залы, реактор и пульт управления</dd></div><div><dt>Стража</dt><dd>автоматоны и летучие дроны</dd></div><div><dt>Терминал</dt><dd>молчит, пока Предвестник ни разу не пал; рейды с Предвестником в конце, техноорганический вирус, сборка машин</dd></div>", 4)),
                 createBaseVNode("div", null, [
-                  _cache[43] || (_cache[43] = createBaseVNode("dt", null, "Добыча", -1)),
-                  createBaseVNode("dd", _hoisted_54, [
+                  _cache[62] || (_cache[62] = createBaseVNode("dt", null, "Добыча", -1)),
+                  createBaseVNode("dd", _hoisted_67, [
                     createBaseVNode("img", {
                       src: unref(data).icons.ancient_part,
                       alt: ""
-                    }, null, 8, _hoisted_55),
-                    _cache[41] || (_cache[41] = createTextVNode("Древние детали · ", -1)),
+                    }, null, 8, _hoisted_68),
+                    _cache[60] || (_cache[60] = createTextVNode("Древние детали · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.harbinger_core,
                       alt: ""
-                    }, null, 8, _hoisted_56),
-                    _cache[42] || (_cache[42] = createTextVNode("Ядро Предвестника", -1))
+                    }, null, 8, _hoisted_69),
+                    _cache[61] || (_cache[61] = createTextVNode("Ядро Предвестника", -1))
                   ])
                 ])
               ])
             ]),
-            createBaseVNode("div", _hoisted_57, [
+            createBaseVNode("div", _hoisted_70, [
               createVNode(_sfc_main$9, {
                 name: "Предвестник",
                 colour: "blue"
               }),
-              _cache[46] || (_cache[46] = createStaticVNode('<div class="boss-stats"><span class="pill">900 здоровья (с платформы — 765)</span><span class="pill">урон 22 (с платформы — 16,5)</span><span class="pill">броня 18</span><span class="pill">железный голем</span></div><ul class="attacks"><li><b>Запуск.</b> Пока ни разу не пал, его будят с платформы в реакторном зале; потом он встаёт в конце каждого рейда.</li><li><b>Терминал закрыт</b>, пока Предвестник ни разу не пал, — даже когда стража уже перебита.</li><li><b>Павшим вход закрыт</b> до конца боя. Пали все — он уходит в реактор, платформа снова ждёт, терминал молчит до победы.</li><li><b>Луч смерти.</b> Красная линия желтеет и стреляет — сойдите с неё или спрячьтесь за стену.</li><li><b>Ракеты.</b> Падают в оранжевые кольца.</li><li><b>Магнитный импульс.</b> Тянет к себе и разряжается — бегите против тяги, после разряда бейте.</li><li><b>Фаза 2 · Протокол сноса (65%).</b> Зовёт дронов. Сектора пола мигают по очереди, потом взрываются в том же порядке — запомните путь.</li><li><b>Фаза 3 · Перегрузка (30%).</b> Быстрее, бьёт током всех рядом. Лучи греют его; перегревшись, он остывает 4 секунды, и урон по нему двойной.</li></ul>', 2))
+              _cache[65] || (_cache[65] = createStaticVNode('<div class="boss-stats"><span class="pill">900 здоровья (с платформы — 765)</span><span class="pill">урон 22 (с платформы — 16,5)</span><span class="pill">броня 18</span><span class="pill">железный голем</span></div><ul class="attacks"><li><b>Запуск.</b> Пока ни разу не пал, его будят с платформы в реакторном зале; потом он встаёт в конце каждого рейда.</li><li><b>Терминал закрыт</b>, пока Предвестник ни разу не пал, — даже когда стража уже перебита.</li><li><b>Павшим вход закрыт</b> до конца боя. Пали все — он уходит в реактор, платформа снова ждёт, терминал молчит до победы.</li><li><b>Луч смерти.</b> Красная линия желтеет и стреляет — сойдите с неё или спрячьтесь за стену.</li><li><b>Ракеты.</b> Падают в оранжевые кольца.</li><li><b>Магнитный импульс.</b> Тянет к себе и разряжается — бегите против тяги, после разряда бейте.</li><li><b>Фаза 2 · Протокол сноса (65%).</b> Зовёт дронов. Сектора пола мигают по очереди, потом взрываются в том же порядке — запомните путь.</li><li><b>Фаза 3 · Перегрузка (30%).</b> Быстрее, бьёт током всех рядом. Лучи греют его; перегревшись, он остывает 4 секунды, и урон по нему двойной.</li></ul>', 2))
             ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_58, [
+        createBaseVNode("article", _hoisted_71, [
           createBaseVNode("figure", null, [
-            _cache[47] || (_cache[47] = createBaseVNode("span", {
+            _cache[66] || (_cache[66] = createBaseVNode("span", {
               class: "figure-title",
               "aria-hidden": "true"
             }, "Проклятый замок", -1)),
             createBaseVNode("img", {
               src: unref(data).images.castle,
               alt: "Проклятый замок на бедроковой крыше Незера"
-            }, null, 8, _hoisted_59),
-            _cache[48] || (_cache[48] = createBaseVNode("figcaption", null, "Замок на бедроковой крыше Незера", -1))
+            }, null, 8, _hoisted_72),
+            _cache[67] || (_cache[67] = createBaseVNode("figcaption", null, "Замок на бедроковой крыше Незера", -1))
           ]),
-          createBaseVNode("div", _hoisted_60, [
-            createBaseVNode("div", _hoisted_61, [
-              _cache[54] || (_cache[54] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_73, [
+            createBaseVNode("div", _hoisted_74, [
+              _cache[73] || (_cache[73] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Проклятый замок"),
                 createBaseVNode("span", { class: "pill" }, "крыша Незера")
               ], -1)),
-              createBaseVNode("dl", _hoisted_62, [
-                _cache[53] || (_cache[53] = createStaticVNode("<div><dt>Как найти</dt><dd>с любой формой крови: на крыше Незера нажмите ПКМ Душой демона — она полетит к замку, как око Края. Замок встаёт к северу, воротами к вам</dd></div><div><dt>Где</dt><dd>на крыше Незера; один на сервер</dd></div><div><dt>Исчезает</dt><dd>опустевший замок растворяется, следующая душа найдёт новый. Король пробуждается в замке лишь однажды</dd></div><div><dt>Город</dt><dd>дома, рынок и таверна подданных короля</dd></div><div><dt>Жители</dt><dd>пока король жив, в замке появляются пиглины</dd></div><div><dt>Часовая башня</dt><dd>в атриуме висит Адская сущность; её охраняют Стражи пекла. Пока жив хоть один, поле не подпускает. В инвентаре сущность поджигает носителя. Наверху — Зал маятника: люк к нему открывается, только когда сущность взята</dd></div><div><dt>Донжон</dt><dd>большой зал, библиотека, спальня и тронный зал</dd></div><div><dt>Стража</dt><dd>пиглины-громилы и чемпионы: Мечники Бедствия и Берсерки короля</dd></div>", 8)),
+              createBaseVNode("dl", _hoisted_75, [
+                _cache[72] || (_cache[72] = createStaticVNode("<div><dt>Как найти</dt><dd>с любой формой крови: на крыше Незера нажмите ПКМ Душой демона — она полетит к замку, как око Края. Замок встаёт к северу, воротами к вам</dd></div><div><dt>Где</dt><dd>на крыше Незера; один на сервер</dd></div><div><dt>Исчезает</dt><dd>опустевший замок растворяется, следующая душа найдёт новый. Король пробуждается в замке лишь однажды</dd></div><div><dt>Город</dt><dd>дома, рынок и таверна подданных короля</dd></div><div><dt>Жители</dt><dd>пока король жив, в замке появляются пиглины</dd></div><div><dt>Часовая башня</dt><dd>в атриуме висит Адская сущность; её охраняют Стражи пекла. Пока жив хоть один, поле не подпускает. В инвентаре сущность поджигает носителя. Наверху — Зал маятника: люк к нему открывается, только когда сущность взята</dd></div><div><dt>Донжон</dt><dd>большой зал, библиотека, спальня и тронный зал</dd></div><div><dt>Стража</dt><dd>пиглины-громилы и чемпионы: Мечники Бедствия и Берсерки короля</dd></div>", 8)),
                 createBaseVNode("div", null, [
-                  _cache[52] || (_cache[52] = createBaseVNode("dt", null, "Добыча", -1)),
-                  createBaseVNode("dd", _hoisted_63, [
+                  _cache[71] || (_cache[71] = createBaseVNode("dt", null, "Добыча", -1)),
+                  createBaseVNode("dd", _hoisted_76, [
                     createBaseVNode("img", {
                       src: unref(data).icons.black_substance,
                       alt: ""
-                    }, null, 8, _hoisted_64),
-                    _cache[49] || (_cache[49] = createTextVNode("Чёрная душа в рамке над троном · ", -1)),
+                    }, null, 8, _hoisted_77),
+                    _cache[68] || (_cache[68] = createTextVNode("Чёрная душа в рамке над троном · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.hell_essence,
                       alt: ""
-                    }, null, 8, _hoisted_65),
-                    _cache[50] || (_cache[50] = createTextVNode("Адская сущность в часовой башне · Призрачный страж в сокровищнице · ", -1)),
+                    }, null, 8, _hoisted_78),
+                    _cache[69] || (_cache[69] = createTextVNode("Адская сущность в часовой башне · Призрачный страж в сокровищнице · ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.royal_clock,
                       alt: ""
-                    }, null, 8, _hoisted_66),
-                    _cache[51] || (_cache[51] = createTextVNode("Королевские часы и Шестерня вспять с Хронарха · сундуки с сокровищами", -1))
+                    }, null, 8, _hoisted_79),
+                    _cache[70] || (_cache[70] = createTextVNode("Королевские часы и Шестерня вспять с Хронарха · сундуки с сокровищами", -1))
                   ])
                 ])
               ])
             ]),
-            createBaseVNode("div", _hoisted_67, [
+            createBaseVNode("div", _hoisted_80, [
               createVNode(_sfc_main$9, {
                 name: "Проклятый король",
                 colour: "red"
               }),
-              _cache[55] || (_cache[55] = createStaticVNode('<div class="boss-stats"><span class="pill">1200 здоровья</span><span class="pill">урон 10</span><span class="pill">броня 12</span><span class="pill">пиглин-громила</span></div><ul class="attacks"><li><b>Тронный зал.</b> Колонны — укрытие от указа. Пока король жив, Чёрную душу не снять; потом её достаёт любой, встав на трон.</li><li><b>Акт I. Удар короны.</b> Выйдите из золотого веера или зайдите за спину.</li><li><b>Рывок.</b> Несётся по золотой линии, потом уязвим.</li><li><b>Золото.</b> В круги рушится золото.</li><li><b>Указ.</b> Тянет к ногам всех на виду — спасают расстояние и колонны.</li><li><b>Бросок топора.</b> Топор летит по золотой дорожке и возвращается — сойдите с неё.</li><li><b>Поступь.</b> По полу бегут золотые волны — перепрыгивайте.</li><li><b>Акт II. Золотой бастион.</b> Жаровни гаснут. Король на троне под щитом, который считает удары, — бейте часто. С ворот идёт подмога, с трона летят копья.</li><li><b>Акт III. Проклятие короны.</b> Ярость. <b>Проклятие</b> жжёт края зала — бегите в середину. <b>Казнь</b>: прыгает на самого слабого. В центр зала падает <b>люстра-корона</b> и горит огненным кольцом до конца боя.</li><li><b>Рог.</b> В третьем акте весь замок бежит в тронный зал. Когда король падает, его народ теряет волю.</li><li><b>Дань.</b> Подданные в зале лечат короля — бейте сначала их.</li></ul>', 2))
+              _cache[74] || (_cache[74] = createStaticVNode('<div class="boss-stats"><span class="pill">1200 здоровья</span><span class="pill">урон 10</span><span class="pill">броня 12</span><span class="pill">пиглин-громила</span></div><ul class="attacks"><li><b>Тронный зал.</b> Колонны — укрытие от указа. Пока король жив, Чёрную душу не снять; потом её достаёт любой, встав на трон.</li><li><b>Акт I. Удар короны.</b> Выйдите из золотого веера или зайдите за спину.</li><li><b>Рывок.</b> Несётся по золотой линии, потом уязвим.</li><li><b>Золото.</b> В круги рушится золото.</li><li><b>Указ.</b> Тянет к ногам всех на виду — спасают расстояние и колонны.</li><li><b>Бросок топора.</b> Топор летит по золотой дорожке и возвращается — сойдите с неё.</li><li><b>Поступь.</b> По полу бегут золотые волны — перепрыгивайте.</li><li><b>Акт II. Золотой бастион.</b> Жаровни гаснут. Король на троне под щитом, который считает удары, — бейте часто. С ворот идёт подмога, с трона летят копья.</li><li><b>Акт III. Проклятие короны.</b> Ярость. <b>Проклятие</b> жжёт края зала — бегите в середину. <b>Казнь</b>: прыгает на самого слабого. В центр зала падает <b>люстра-корона</b> и горит огненным кольцом до конца боя.</li><li><b>Рог.</b> В третьем акте весь замок бежит в тронный зал. Когда король падает, его народ теряет волю.</li><li><b>Дань.</b> Подданные в зале лечат короля — бейте сначала их.</li></ul>', 2))
             ]),
-            createBaseVNode("div", _hoisted_68, [
+            createBaseVNode("div", _hoisted_81, [
               createVNode(_sfc_main$9, {
                 name: "Хронарх",
                 colour: "yellow"
               }),
-              _cache[61] || (_cache[61] = createStaticVNode('<div class="boss-stats"><span class="pill">1200 здоровья</span><span class="pill">броня 12</span><span class="pill">стрела каждые 0,5 с</span><span class="pill">бродяга с часами вместо головы</span><span class="pill">Зал маятника</span></div>', 1)),
-              createBaseVNode("ul", _hoisted_69, [
-                _cache[60] || (_cache[60] = createStaticVNode("<li><b>Путь.</b> Верх часовой башни. Люк над лестницей откроется, только когда Адская сущность взята.</li><li><b>Застывшее время.</b> На полу открываются три поля: в них вы медленны и не можете прыгать — обходите их.</li><li><b>Стрелки.</b> Две стрелки часов обходят его кругом — перепрыгивайте, но не из поля.</li><li><b>Бой часов.</b> Двенадцать часов на полу бьют по очереди по кругу.</li><li><b>Фаза 2 · Так (60%).</b> <b>Перемотка</b> возвращает всех на золотые метки. <b>Обратный отсчёт</b>: помеченным — под маятник за 8 секунд.</li><li><b>Фаза 3 · Полночь (25%).</b> Время стоит для всех, кроме одного: Хронарх нападает только на него и не трогает застывших. Он уязвим — бейте его; удары застывших его не ранят, а сбежать из полночи жемчугом или Шестернёй нельзя.</li>", 6)),
-                createBaseVNode("li", _hoisted_70, [
-                  _cache[56] || (_cache[56] = createBaseVNode("b", null, "Добыча.", -1)),
-                  _cache[57] || (_cache[57] = createTextVNode()),
+              _cache[80] || (_cache[80] = createStaticVNode('<div class="boss-stats"><span class="pill">1200 здоровья</span><span class="pill">броня 12</span><span class="pill">стрела каждые 0,5 с</span><span class="pill">бродяга с часами вместо головы</span><span class="pill">Зал маятника</span></div>', 1)),
+              createBaseVNode("ul", _hoisted_82, [
+                _cache[79] || (_cache[79] = createStaticVNode("<li><b>Путь.</b> Верх часовой башни. Люк над лестницей откроется, только когда Адская сущность взята.</li><li><b>Застывшее время.</b> На полу открываются три поля: в них вы медленны и не можете прыгать — обходите их.</li><li><b>Стрелки.</b> Две стрелки часов обходят его кругом — перепрыгивайте, но не из поля.</li><li><b>Бой часов.</b> Двенадцать часов на полу бьют по очереди по кругу.</li><li><b>Фаза 2 · Так (60%).</b> <b>Перемотка</b> возвращает всех на золотые метки. <b>Обратный отсчёт</b>: помеченным — под маятник за 8 секунд.</li><li><b>Фаза 3 · Полночь (25%).</b> Время стоит для всех, кроме одного: Хронарх нападает только на него и не трогает застывших. Он уязвим — бейте его; удары застывших его не ранят, а сбежать из полночи жемчугом или Шестернёй нельзя.</li>", 6)),
+                createBaseVNode("li", _hoisted_83, [
+                  _cache[75] || (_cache[75] = createBaseVNode("b", null, "Добыча.", -1)),
+                  _cache[76] || (_cache[76] = createTextVNode()),
                   createBaseVNode("img", {
                     src: unref(data).icons.royal_clock,
                     alt: ""
-                  }, null, 8, _hoisted_71),
-                  _cache[58] || (_cache[58] = createTextVNode("Королевские часы и ", -1)),
+                  }, null, 8, _hoisted_84),
+                  _cache[77] || (_cache[77] = createTextVNode("Королевские часы и ", -1)),
                   createBaseVNode("img", {
                     src: unref(data).icons.rewind_gear,
                     alt: ""
-                  }, null, 8, _hoisted_72),
-                  _cache[59] || (_cache[59] = createTextVNode("Шестерня вспять.", -1))
+                  }, null, 8, _hoisted_85),
+                  _cache[78] || (_cache[78] = createTextVNode("Шестерня вспять.", -1))
                 ])
               ])
             ])
           ])
         ]),
-        createBaseVNode("article", _hoisted_73, [
-          createBaseVNode("figure", _hoisted_74, [
-            createBaseVNode("div", _hoisted_75, [
+        createBaseVNode("article", _hoisted_86, [
+          createBaseVNode("figure", _hoisted_87, [
+            createBaseVNode("div", _hoisted_88, [
               (openBlock(), createElementBlock(Fragment, null, renderList(["green", "blue", "orange", "purple", "red", "gray"], (c) => {
                 return createBaseVNode("img", {
                   key: c,
                   src: unref(data).icons["wanderer_cube_" + c],
                   alt: c
-                }, null, 8, _hoisted_76);
+                }, null, 8, _hoisted_89);
               }), 64))
             ]),
-            _cache[62] || (_cache[62] = createBaseVNode("figcaption", null, "Цвет Тессеракта подсказывает, что он сделает", -1))
+            _cache[81] || (_cache[81] = createBaseVNode("figcaption", null, "Цвет Тессеракта подсказывает, что он сделает", -1))
           ]),
-          createBaseVNode("div", _hoisted_77, [
-            createBaseVNode("div", _hoisted_78, [
-              _cache[68] || (_cache[68] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_90, [
+            createBaseVNode("div", _hoisted_91, [
+              _cache[87] || (_cache[87] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Тессеракт"),
                 createBaseVNode("span", { class: "pill" }, "любая кровь")
               ], -1)),
-              createBaseVNode("dl", _hoisted_79, [
+              createBaseVNode("dl", _hoisted_92, [
                 createBaseVNode("div", null, [
-                  _cache[66] || (_cache[66] = createBaseVNode("dt", null, "Крафт", -1)),
-                  createBaseVNode("dd", _hoisted_80, [
-                    _cache[63] || (_cache[63] = createTextVNode("верстак: ", -1)),
+                  _cache[85] || (_cache[85] = createBaseVNode("dt", null, "Крафт", -1)),
+                  createBaseVNode("dd", _hoisted_93, [
+                    _cache[82] || (_cache[82] = createTextVNode("верстак: ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.terra_essence,
                       alt: ""
-                    }, null, 8, _hoisted_81),
-                    _cache[64] || (_cache[64] = createTextVNode("Терра-сущность, ", -1)),
+                    }, null, 8, _hoisted_94),
+                    _cache[83] || (_cache[83] = createTextVNode("Терра-сущность, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.hell_essence,
                       alt: ""
-                    }, null, 8, _hoisted_82),
-                    _cache[65] || (_cache[65] = createTextVNode("Адская сущность, звезда Незера и плачущий обсидиан", -1))
+                    }, null, 8, _hoisted_95),
+                    _cache[84] || (_cache[84] = createTextVNode("Адская сущность, звезда Незера и плачущий обсидиан", -1))
                   ])
                 ]),
-                _cache[67] || (_cache[67] = createStaticVNode("<div><dt>Как работает</dt><dd>правый клик; что он сделает, видно по цвету</dd></div><div><dt>Красный</dt><dd>вы стоите в чужом куполе — Сделке с дьяволом, Сборочном куполе или Огненном эдикте — либо рядом с тем, кто вытянул чужую Луну: тессеракт развеивает это</dd></div><div><dt>Зелёный</dt><dd>здоровье не полное: лечит вас и своих рядом</dd></div><div><dt>Голубой</dt><dd>полное здоровье, обычный мир: перенос к случайному храму</dd></div><div><dt>Оранжевый</dt><dd>полное здоровье, Незер: перенос к Незеритовой кузне</dd></div><div><dt>Фиолетовый</dt><dd>полное здоровье, Энд: перенос к точке возрождения</dd></div><div><dt>Перенос</dt><dd>забирает всех живых рядом, кроме боссов и осколков Падшего нимба; из арены испытания и из Забытого мира не уводит. Если перенос сорвался, тессеракт не тратится</dd></div>", 7))
+                _cache[86] || (_cache[86] = createStaticVNode("<div><dt>Как работает</dt><dd>правый клик; что он сделает, видно по цвету</dd></div><div><dt>Красный</dt><dd>вы стоите в чужом куполе — Сделке с дьяволом, Сборочном куполе или Огненном эдикте — либо рядом с тем, кто вытянул чужую Луну: тессеракт развеивает это</dd></div><div><dt>Зелёный</dt><dd>здоровье не полное: лечит вас и своих рядом</dd></div><div><dt>Голубой</dt><dd>полное здоровье, обычный мир: перенос к случайному храму</dd></div><div><dt>Оранжевый</dt><dd>полное здоровье, Незер: перенос к Незеритовой кузне</dd></div><div><dt>Фиолетовый</dt><dd>полное здоровье, Энд: перенос к точке возрождения</dd></div><div><dt>Перенос</dt><dd>забирает всех живых рядом, кроме боссов и осколков Падшего нимба; из арены испытания и из Забытого мира не уводит. Если перенос сорвался, тессеракт не тратится</dd></div>", 7))
               ])
             ])
           ])
         ]),
-        _cache[126] || (_cache[126] = createBaseVNode("div", { class: "prose small" }, [
+        _cache[145] || (_cache[145] = createBaseVNode("div", { class: "prose small" }, [
           createBaseVNode("p", null, [
             createBaseVNode("b", null, "Королевские часы"),
             createTextVNode(" работают как тотем бессмертия и, спасая от смерти, ненадолго останавливают время вокруг. "),
@@ -5003,284 +5088,284 @@ const _sfc_main$7 = {
             createTextVNode(" возвращает туда, где вы стояли 5 секунд назад, со здоровьем, какое было тогда; перезарядка 3 минуты.")
           ])
         ], -1)),
-        createBaseVNode("article", _hoisted_83, [
-          createBaseVNode("figure", _hoisted_84, [
+        createBaseVNode("article", _hoisted_96, [
+          createBaseVNode("figure", _hoisted_97, [
             createBaseVNode("img", {
               src: unref(data).icons.terra_essence,
               alt: "Терра-сущность"
-            }, null, 8, _hoisted_85),
-            _cache[69] || (_cache[69] = createBaseVNode("figcaption", null, "Терра-сущность", -1))
+            }, null, 8, _hoisted_98),
+            _cache[88] || (_cache[88] = createBaseVNode("figcaption", null, "Терра-сущность", -1))
           ]),
-          createBaseVNode("div", _hoisted_86, [
-            createBaseVNode("div", _hoisted_87, [
-              _cache[82] || (_cache[82] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_99, [
+            createBaseVNode("div", _hoisted_100, [
+              _cache[101] || (_cache[101] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Терра-подземелье"),
                 createBaseVNode("span", { class: "pill" }, "под землёй")
               ], -1)),
-              createBaseVNode("dl", _hoisted_88, [
+              createBaseVNode("dl", _hoisted_101, [
                 createBaseVNode("div", null, [
-                  _cache[71] || (_cache[71] = createBaseVNode("dt", null, "Как найти", -1)),
-                  createBaseVNode("dd", _hoisted_89, [
+                  _cache[90] || (_cache[90] = createBaseVNode("dt", null, "Как найти", -1)),
+                  createBaseVNode("dd", _hoisted_102, [
                     createBaseVNode("img", {
                       src: unref(data).icons.terra_compass,
                       alt: ""
-                    }, null, 8, _hoisted_90),
-                    _cache[70] || (_cache[70] = createTextVNode("Терра-компас; копайте к шахте, на которую он указывает", -1))
+                    }, null, 8, _hoisted_103),
+                    _cache[89] || (_cache[89] = createTextVNode("Терра-компас; копайте к шахте, на которую он указывает", -1))
                   ])
                 ]),
-                _cache[80] || (_cache[80] = createStaticVNode("<div><dt>Где</dt><dd>верхний мир, глубоко под землёй; одно на сервер</dd></div><div><dt>Исчезает</dt><dd>когда все игроки его покинули; вернётся через 7 игровых суток в другом месте</dd></div><div><dt>Загадки</dt><dd>рычаги, кнопки и ловушки; дальний зал открывается загадками</dd></div><div><dt>Библиотека</dt><dd>лабиринт стеллажей; присмотритесь к рычагам под сводом</dd></div><div><dt>Разбойники</dt><dd>выходят с постов в залах, когда вы подходите</dd></div><div><dt>Всадники апокалипсиса</dt><dd>Война и Смерть в зале свечей; пока жив хоть один, голем спит</dd></div><div><dt>Терра-сущность в зале</dt><dd>появляется, когда голем пал; забрать — подойти к ней</dd></div><div><dt>Пробуждение</dt><dd>когда голем пал и кто-то выходит из лабиринта в библиотеку (взята сущность или нет), из мха лезут болотники — 70 за всё время: 20 в зале голема и 50 в остальных комнатах</dd></div>", 8)),
+                _cache[99] || (_cache[99] = createStaticVNode("<div><dt>Где</dt><dd>верхний мир, глубоко под землёй; одно на сервер</dd></div><div><dt>Исчезает</dt><dd>когда все игроки его покинули; вернётся через 7 игровых суток в другом месте</dd></div><div><dt>Загадки</dt><dd>рычаги, кнопки и ловушки; дальний зал открывается загадками</dd></div><div><dt>Библиотека</dt><dd>лабиринт стеллажей; присмотритесь к рычагам под сводом</dd></div><div><dt>Разбойники</dt><dd>выходят с постов в залах, когда вы подходите</dd></div><div><dt>Всадники апокалипсиса</dt><dd>Война и Смерть в зале свечей; пока жив хоть один, голем спит</dd></div><div><dt>Терра-сущность в зале</dt><dd>появляется, когда голем пал; забрать — подойти к ней</dd></div><div><dt>Пробуждение</dt><dd>когда голем пал и кто-то выходит из лабиринта в библиотеку (взята сущность или нет), из мха лезут болотники — 70 за всё время: 20 в зале голема и 50 в остальных комнатах</dd></div>", 8)),
                 createBaseVNode("div", null, [
-                  _cache[74] || (_cache[74] = createBaseVNode("dt", null, "Путь в Забытый мир", -1)),
-                  createBaseVNode("dd", _hoisted_91, [
-                    _cache[72] || (_cache[72] = createTextVNode("голем пал и сущность взята — поверните в его зале ", -1)),
+                  _cache[93] || (_cache[93] = createBaseVNode("dt", null, "Путь в Забытый мир", -1)),
+                  createBaseVNode("dd", _hoisted_104, [
+                    _cache[91] || (_cache[91] = createTextVNode("голем пал и сущность взята — поверните в его зале ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.forgotten_key_moss,
                       alt: ""
-                    }, null, 8, _hoisted_92),
-                    _cache[73] || (_cache[73] = createTextVNode("ключ Забытого мира (ПКМ): за сущностью ляжет платформа для всех", -1))
+                    }, null, 8, _hoisted_105),
+                    _cache[92] || (_cache[92] = createTextVNode("ключ Забытого мира (ПКМ): за сущностью ляжет платформа для всех", -1))
                   ])
                 ]),
-                _cache[81] || (_cache[81] = createBaseVNode("div", null, [
+                _cache[100] || (_cache[100] = createBaseVNode("div", null, [
                   createBaseVNode("dt", null, "Терра-сущность"),
                   createBaseVNode("dd", null, "в инвентаре отравляет носителя, кроме крови предков и техноорганической")
                 ], -1)),
                 createBaseVNode("div", null, [
-                  _cache[79] || (_cache[79] = createBaseVNode("dt", null, "Бочки", -1)),
-                  createBaseVNode("dd", _hoisted_93, [
-                    _cache[75] || (_cache[75] = createTextVNode("в одной из них — ", -1)),
+                  _cache[98] || (_cache[98] = createBaseVNode("dt", null, "Бочки", -1)),
+                  createBaseVNode("dd", _hoisted_106, [
+                    _cache[94] || (_cache[94] = createTextVNode("в одной из них — ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.ancient,
                       alt: ""
-                    }, null, 8, _hoisted_94),
-                    _cache[76] || (_cache[76] = createTextVNode("Шёпот Древнего Леса; в остальных осколки, ", -1)),
+                    }, null, 8, _hoisted_107),
+                    _cache[95] || (_cache[95] = createTextVNode("Шёпот Древнего Леса; в остальных осколки, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.terra_ingot,
                       alt: ""
-                    }, null, 8, _hoisted_95),
-                    _cache[77] || (_cache[77] = createTextVNode("терра-слитки, ", -1)),
+                    }, null, 8, _hoisted_108),
+                    _cache[96] || (_cache[96] = createTextVNode("терра-слитки, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.demon_soul,
                       alt: ""
-                    }, null, 8, _hoisted_96),
-                    _cache[78] || (_cache[78] = createTextVNode("Душа демона и припасы", -1))
+                    }, null, 8, _hoisted_109),
+                    _cache[97] || (_cache[97] = createTextVNode("Душа демона и припасы", -1))
                   ])
                 ])
               ])
             ]),
-            createBaseVNode("div", _hoisted_97, [
-              createBaseVNode("div", _hoisted_98, [
+            createBaseVNode("div", _hoisted_110, [
+              createBaseVNode("div", _hoisted_111, [
                 createVNode(_sfc_main$9, {
                   name: "Джунглевый голем",
                   colour: "green"
                 }),
-                _cache[83] || (_cache[83] = createStaticVNode('<div class="boss-stats"><span class="pill">900 здоровья</span><span class="pill">7 блоков ростом</span><span class="pill">большой зал</span></div><ul class="attacks"><li><b>Сотрясение.</b> Выйдите из зелёного круга или подпрыгните.</li><li><b>Валун.</b> Уйдите со светящегося диска.</li><li><b>Плеть.</b> Сойдите с линии лоз.</li><li><b>Мох-панцирь (60%).</b> Щит из мха считает удары, а не урон. Когда голем заносит кулаки, его спина открыта: удар сзади снимает сразу три удара щита.</li><li><b>Ярость (30%).</b> Быстрее, оставляет ядовитые споры, валун раскалывается на три осколка.</li><li><b>Награда.</b> Терра-слитки и Терра-сущность.</li></ul>', 2))
+                _cache[102] || (_cache[102] = createStaticVNode('<div class="boss-stats"><span class="pill">900 здоровья</span><span class="pill">7 блоков ростом</span><span class="pill">большой зал</span></div><ul class="attacks"><li><b>Сотрясение.</b> Выйдите из зелёного круга или подпрыгните.</li><li><b>Валун.</b> Уйдите со светящегося диска.</li><li><b>Плеть.</b> Сойдите с линии лоз.</li><li><b>Мох-панцирь (60%).</b> Щит из мха считает удары, а не урон. Когда голем заносит кулаки, его спина открыта: удар сзади снимает сразу три удара щита.</li><li><b>Ярость (30%).</b> Быстрее, оставляет ядовитые споры, валун раскалывается на три осколка.</li><li><b>Награда.</b> Терра-слитки и Терра-сущность.</li></ul>', 2))
               ]),
-              _cache[84] || (_cache[84] = createStaticVNode('<div class="boss"><div class="boss-name">Шёпот Древнего Леса</div><div class="boss-stats"><span class="pill">лук крови предков, вторая форма</span></div><ul class="attacks"><li><b>Ядовитый шип.</b> Любая стрела из лука отравляет.</li><li><b>Сплетение корней.</b> 5 секунд натяжения — зелёный луч связывает врагов: урон по одному получают все.</li><li><b>Где взять.</b> В бочке Терра-подземелья.</li></ul></div>', 1))
+              _cache[103] || (_cache[103] = createStaticVNode('<div class="boss"><div class="boss-name">Шёпот Древнего Леса</div><div class="boss-stats"><span class="pill">лук крови предков, вторая форма</span></div><ul class="attacks"><li><b>Ядовитый шип.</b> Любая стрела из лука отравляет.</li><li><b>Сплетение корней.</b> 5 секунд натяжения — зелёный луч связывает врагов: урон по одному получают все.</li><li><b>Где взять.</b> В бочке Терра-подземелья.</li></ul></div>', 1))
             ])
           ])
         ]),
-        _cache[127] || (_cache[127] = createBaseVNode("div", { class: "prose small" }, [
+        _cache[146] || (_cache[146] = createBaseVNode("div", { class: "prose small" }, [
           createBaseVNode("p", null, "Каждый, кто бился со стражем, получает свою долю добычи. Пали все бойцы — страж уходит.")
         ], -1)),
-        createBaseVNode("article", _hoisted_99, [
-          createBaseVNode("figure", _hoisted_100, [
+        createBaseVNode("article", _hoisted_112, [
+          createBaseVNode("figure", _hoisted_113, [
             createBaseVNode("img", {
               src: unref(data).icons.forgotten_key,
               alt: "Ключ Забытого мира"
-            }, null, 8, _hoisted_101),
-            _cache[85] || (_cache[85] = createBaseVNode("figcaption", null, "Ключ Забытого мира", -1))
+            }, null, 8, _hoisted_114),
+            _cache[104] || (_cache[104] = createBaseVNode("figcaption", null, "Ключ Забытого мира", -1))
           ]),
-          createBaseVNode("div", _hoisted_102, [
-            createBaseVNode("div", _hoisted_103, [
-              _cache[122] || (_cache[122] = createBaseVNode("div", { class: "sanctum-title" }, [
+          createBaseVNode("div", _hoisted_115, [
+            createBaseVNode("div", _hoisted_116, [
+              _cache[141] || (_cache[141] = createBaseVNode("div", { class: "sanctum-title" }, [
                 createBaseVNode("h3", null, "Забытый мир"),
                 createBaseVNode("span", { class: "pill" }, "отдельный мир")
               ], -1)),
-              createBaseVNode("dl", _hoisted_104, [
+              createBaseVNode("dl", _hoisted_117, [
                 createBaseVNode("div", null, [
-                  _cache[89] || (_cache[89] = createBaseVNode("dt", null, "Ключи", -1)),
-                  createBaseVNode("dd", _hoisted_105, [
+                  _cache[108] || (_cache[108] = createBaseVNode("dt", null, "Ключи", -1)),
+                  createBaseVNode("dd", _hoisted_118, [
                     createBaseVNode("img", {
                       src: unref(data).icons.forgotten_key_moss,
                       alt: ""
-                    }, null, 8, _hoisted_106),
-                    _cache[86] || (_cache[86] = createTextVNode("Только кровь предков. Джунглевый — с 3-й формы: 8 терра-слитков и по 16 осколков души, небесных и реликтовых; внизу Истинный Джунглевый голем. ", -1)),
+                    }, null, 8, _hoisted_119),
+                    _cache[105] || (_cache[105] = createTextVNode("Только кровь предков. Джунглевый — с 3-й формы: 8 терра-слитков и по 16 осколков души, небесных и реликтовых; внизу Истинный Джунглевый голем. ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.forgotten_key,
                       alt: ""
-                    }, null, 8, _hoisted_107),
-                    _cache[87] || (_cache[87] = createTextVNode("Целестиальный — с 4-й формы: 16 терра-слитков, по 64 осколка каждого вида и ", -1)),
+                    }, null, 8, _hoisted_120),
+                    _cache[106] || (_cache[106] = createTextVNode("Целестиальный — с 4-й формы: 16 терра-слитков, по 64 осколка каждого вида и ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.jungle_heart,
                       alt: ""
-                    }, null, 8, _hoisted_108),
-                    _cache[88] || (_cache[88] = createTextVNode("Сердце джунглей; внизу Целестиал. Оба куются у алтаря Храма джунглей", -1))
+                    }, null, 8, _hoisted_121),
+                    _cache[107] || (_cache[107] = createTextVNode("Сердце джунглей; внизу Целестиал. Оба куются у алтаря Храма джунглей", -1))
                   ])
                 ]),
-                _cache[120] || (_cache[120] = createStaticVNode("<div><dt>Вход</dt><dd>в Терра-подземелье: когда Джунглевый голем пал и Терра-сущность взята, ключ поворачивают в его зале (ПКМ, ключ тратится) — за Терра-сущностью ложится платформа, её видят все; отсчёт 10 секунд, в мир уходят все, кто на ней стоит</dd></div><div><dt>Отряд</dt><dd>чем больше игроков, тем больше мобов в комнатах, тем они крепче, быстрее и сильнее; боссы — +40% здоровья и +10% урона за каждого игрока сверх первого</dd></div><div><dt>Как в данжах Skyblock</dt><dd>комнаты со звёздными ✯ мобами, Двери Иссушения и Кровавая дверь открываются ключами, которые носят хранители комнат; тайники — сундуки на уступах и летучие мыши под сводами</dd></div><div><dt>Ключи дверей</dt><dd>общие на весь отряд: подобрал один — ключ сразу у каждого в инвентаре, а двери, которые им можно открыть прямо сейчас, подсвечиваются сквозь стены — Двери Иссушения чёрным, Кровавая дверь красным</dd></div><div><dt>Мобы</dt><dd>бьют сильнее и бегают быстрее обычных, не уходят из своей комнаты и не превращаются (зомби в воде не станет утопленником) — ключ с хранителя не теряется</dd></div><div><dt>Без полёта</dt><dd>весь путь, все хранители и тайники проходятся с двойным прыжком; на высокие уступы ведут колонны лиан</dd></div><div><dt>Карта</dt><dd>в 9-м слоте: запертые, открытые и зачищенные комнаты, двери и отряд</dd></div><div><dt>Классы</dt><dd>на входе каждый выбирает класс до конца прохода: <b>Берсерк</b> (удары +20%, убийство лечит), <b>Танк</b> (+4 сердца и брони, мобы бьют его), <b>Лекарь</b> (регенерация рядом, быстро поднимает павших), <b>Маг</b> (способности перезаряжаются быстрее), <b>Лучник</b> (стрелы +40%, скорость)</dd></div><div><dt>Головоломка</dt><dd>одна из двух: «Три чудака» — правду говорит только один, откройте его сундук; или «Викторина Наблюдателя» — три вопроса, нажмите на того из троих, чей ответ верен</dd></div><div><dt>Кровавая комната</dt><dd>в Библиотеке парит Наблюдатель — огромный налитый кровью глаз — и призывает кровавые копии боссов мира, у каждой свой удар; чем быстрее они падают, тем быстрее выходят новые. Красный круг под ногами — взгляд Наблюдателя: уйдите из него. Когда все пали — открывается путь вниз</dd></div><div><dt>Смерть</dt><dd>вы становитесь призраком, а на месте гибели остаётся ваша душа: союзник, простоявший у неё 3 секунды, поднимает вас; иначе вы встаёте сами через 30 секунд. Вещи не теряются; Камень возрождения из тайника возвращает призрака сразу</dd></div><div><dt>Погиб весь отряд</dt><dd>один раз за проход — «второе дыхание»: все встают у входа, оценка ниже. Во второй раз забег провален; каждый возвращается к своей точке возрождения со всеми вещами</dd></div><div><dt>Выход с сервера</dt><dd>как смерть: вышедший — призрак отряда; зашёл, пока забег идёт, — снова в данже призраком, и его можно оживить; после победы над боссом возвращается живым</dd></div><div><dt>Мимик</dt><dd>иногда сундук-тайник оказывается мини-боссом</dd></div><div><dt>Благословения</dt><dd>в тайниках — Силы, Жизни или Камня: на весь отряд до конца прохода</dd></div><div><dt>Оценка</dt><dd>навык, исследование, скорость и бонус — от D до S+; от неё зависят наградные сундуки</dd></div>", 16)),
+                _cache[139] || (_cache[139] = createStaticVNode("<div><dt>Вход</dt><dd>в Терра-подземелье: когда Джунглевый голем пал и Терра-сущность взята, ключ поворачивают в его зале (ПКМ, ключ тратится) — за Терра-сущностью ложится платформа, её видят все; отсчёт 10 секунд, в мир уходят все, кто на ней стоит</dd></div><div><dt>Отряд</dt><dd>чем больше игроков, тем больше мобов в комнатах, тем они крепче, быстрее и сильнее; боссы — +40% здоровья и +10% урона за каждого игрока сверх первого</dd></div><div><dt>Как в данжах Skyblock</dt><dd>комнаты со звёздными ✯ мобами, Двери Иссушения и Кровавая дверь открываются ключами, которые носят хранители комнат; тайники — сундуки на уступах и летучие мыши под сводами</dd></div><div><dt>Ключи дверей</dt><dd>общие на весь отряд: подобрал один — ключ сразу у каждого в инвентаре, а двери, которые им можно открыть прямо сейчас, подсвечиваются сквозь стены — Двери Иссушения чёрным, Кровавая дверь красным</dd></div><div><dt>Мобы</dt><dd>бьют сильнее и бегают быстрее обычных, не уходят из своей комнаты и не превращаются (зомби в воде не станет утопленником) — ключ с хранителя не теряется</dd></div><div><dt>Без полёта</dt><dd>весь путь, все хранители и тайники проходятся с двойным прыжком; на высокие уступы ведут колонны лиан</dd></div><div><dt>Карта</dt><dd>в 9-м слоте: запертые, открытые и зачищенные комнаты, двери и отряд</dd></div><div><dt>Классы</dt><dd>на входе каждый выбирает класс до конца прохода: <b>Берсерк</b> (удары +20%, убийство лечит), <b>Танк</b> (+4 сердца и брони, мобы бьют его), <b>Лекарь</b> (регенерация рядом, быстро поднимает павших), <b>Маг</b> (способности перезаряжаются быстрее), <b>Лучник</b> (стрелы +40%, скорость)</dd></div><div><dt>Головоломка</dt><dd>одна из двух: «Три чудака» — правду говорит только один, откройте его сундук; или «Викторина Наблюдателя» — три вопроса, нажмите на того из троих, чей ответ верен</dd></div><div><dt>Кровавая комната</dt><dd>в Библиотеке парит Наблюдатель — огромный налитый кровью глаз — и призывает кровавые копии боссов мира, у каждой свой удар; чем быстрее они падают, тем быстрее выходят новые. Красный круг под ногами — взгляд Наблюдателя: уйдите из него. Когда все пали — открывается путь вниз</dd></div><div><dt>Смерть</dt><dd>вы становитесь призраком, а на месте гибели остаётся ваша душа: союзник, простоявший у неё 3 секунды, поднимает вас; иначе вы встаёте сами через 30 секунд. Вещи не теряются; Камень возрождения из тайника возвращает призрака сразу</dd></div><div><dt>Погиб весь отряд</dt><dd>один раз за проход — «второе дыхание»: все встают у входа, оценка ниже. Во второй раз забег провален; каждый возвращается к своей точке возрождения со всеми вещами</dd></div><div><dt>Выход с сервера</dt><dd>как смерть: вышедший — призрак отряда; зашёл, пока забег идёт, — снова в данже призраком, и его можно оживить; после победы над боссом возвращается живым</dd></div><div><dt>Мимик</dt><dd>иногда сундук-тайник оказывается мини-боссом</dd></div><div><dt>Благословения</dt><dd>в тайниках — Силы, Жизни или Камня: на весь отряд до конца прохода</dd></div><div><dt>Оценка</dt><dd>навык, исследование, скорость и бонус — от D до S+; от неё зависят наградные сундуки</dd></div>", 16)),
                 createBaseVNode("div", null, [
-                  _cache[96] || (_cache[96] = createBaseVNode("dt", null, "Награда", -1)),
-                  createBaseVNode("dd", _hoisted_109, [
-                    _cache[90] || (_cache[90] = createTextVNode("не меньше трёх сундуков: деревянный бесплатно и один платный на выбор за осколки своей крови (небесная и ночная — ", -1)),
+                  _cache[115] || (_cache[115] = createBaseVNode("dt", null, "Награда", -1)),
+                  createBaseVNode("dd", _hoisted_122, [
+                    _cache[109] || (_cache[109] = createTextVNode("не меньше трёх сундуков: деревянный бесплатно и один платный на выбор за осколки своей крови (небесная и ночная — ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.celestial_shard,
                       alt: ""
-                    }, null, 8, _hoisted_110),
-                    _cache[91] || (_cache[91] = createTextVNode("небесные, пепельная — ", -1)),
+                    }, null, 8, _hoisted_123),
+                    _cache[110] || (_cache[110] = createTextVNode("небесные, пепельная — ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.soul_shard,
                       alt: ""
-                    }, null, 8, _hoisted_111),
-                    _cache[92] || (_cache[92] = createTextVNode("осколки души, остальные — ", -1)),
+                    }, null, 8, _hoisted_124),
+                    _cache[111] || (_cache[111] = createTextVNode("осколки души, остальные — ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.jungle_shard,
                       alt: ""
-                    }, null, 8, _hoisted_112),
-                    _cache[93] || (_cache[93] = createTextVNode("реликтовые), в любом порядке. Внутри осколки всех видов, терра-слитки и призы ", -1)),
-                    _cache[94] || (_cache[94] = createBaseVNode("b", null, "своей крови", -1)),
-                    _cache[95] || (_cache[95] = createTextVNode(" из пула босса, без ограничения числа — чем выше форма, с которой предмет отвечает, тем реже", -1))
+                    }, null, 8, _hoisted_125),
+                    _cache[112] || (_cache[112] = createTextVNode("реликтовые), в любом порядке. Внутри осколки всех видов, терра-слитки и призы ", -1)),
+                    _cache[113] || (_cache[113] = createBaseVNode("b", null, "своей крови", -1)),
+                    _cache[114] || (_cache[114] = createTextVNode(" из пула босса, без ограничения числа — чем выше форма, с которой предмет отвечает, тем реже", -1))
                   ])
                 ]),
                 createBaseVNode("div", null, [
-                  _cache[107] || (_cache[107] = createBaseVNode("dt", null, "Сундуки голема", -1)),
-                  createBaseVNode("dd", _hoisted_113, [
+                  _cache[126] || (_cache[126] = createBaseVNode("dt", null, "Сундуки голема", -1)),
+                  createBaseVNode("dd", _hoisted_126, [
                     createBaseVNode("img", {
                       src: unref(data).icons.bouquet_of_lies,
                       alt: ""
-                    }, null, 8, _hoisted_114),
-                    _cache[97] || (_cache[97] = createTextVNode("Букет лжи, ", -1)),
+                    }, null, 8, _hoisted_127),
+                    _cache[116] || (_cache[116] = createTextVNode("Букет лжи, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.solstice,
                       alt: ""
-                    }, null, 8, _hoisted_115),
-                    _cache[98] || (_cache[98] = createTextVNode("Солнцестояние, ", -1)),
+                    }, null, 8, _hoisted_128),
+                    _cache[117] || (_cache[117] = createTextVNode("Солнцестояние, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.hyperion,
                       alt: ""
-                    }, null, 8, _hoisted_116),
-                    _cache[99] || (_cache[99] = createTextVNode("Hyperion, ", -1)),
+                    }, null, 8, _hoisted_129),
+                    _cache[118] || (_cache[118] = createTextVNode("Hyperion, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.demon_slayer,
                       alt: ""
-                    }, null, 8, _hoisted_117),
-                    _cache[100] || (_cache[100] = createTextVNode("Убийца демонов, ", -1)),
+                    }, null, 8, _hoisted_130),
+                    _cache[119] || (_cache[119] = createTextVNode("Убийца демонов, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.cutter,
                       alt: ""
-                    }, null, 8, _hoisted_118),
-                    _cache[101] || (_cache[101] = createTextVNode("Резак, ", -1)),
+                    }, null, 8, _hoisted_131),
+                    _cache[120] || (_cache[120] = createTextVNode("Резак, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.twilight_axe,
                       alt: ""
-                    }, null, 8, _hoisted_119),
-                    _cache[102] || (_cache[102] = createTextVNode("Сумрачная секира, ", -1)),
+                    }, null, 8, _hoisted_132),
+                    _cache[121] || (_cache[121] = createTextVNode("Сумрачная секира, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.terra_helmet,
                       alt: ""
-                    }, null, 8, _hoisted_120),
-                    _cache[103] || (_cache[103] = createTextVNode("Терра-доспех (чаще обычного); пепельной крови ещё ", -1)),
+                    }, null, 8, _hoisted_133),
+                    _cache[122] || (_cache[122] = createTextVNode("Терра-доспех (чаще обычного); пепельной крови ещё ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.arachnid,
                       alt: ""
-                    }, null, 8, _hoisted_121),
-                    _cache[104] || (_cache[104] = createTextVNode("Арахнид, ", -1)),
+                    }, null, 8, _hoisted_134),
+                    _cache[123] || (_cache[123] = createTextVNode("Арахнид, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.demon_soul,
                       alt: ""
-                    }, null, 8, _hoisted_122),
-                    _cache[105] || (_cache[105] = createTextVNode("Душа демона и ", -1)),
+                    }, null, 8, _hoisted_135),
+                    _cache[124] || (_cache[124] = createTextVNode("Душа демона и ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.crimson,
                       alt: ""
-                    }, null, 8, _hoisted_123),
-                    _cache[106] || (_cache[106] = createTextVNode("Кримсон", -1))
+                    }, null, 8, _hoisted_136),
+                    _cache[125] || (_cache[125] = createTextVNode("Кримсон", -1))
                   ])
                 ]),
                 createBaseVNode("div", null, [
-                  _cache[119] || (_cache[119] = createBaseVNode("dt", null, "Сундуки Целестиала", -1)),
-                  createBaseVNode("dd", _hoisted_124, [
+                  _cache[138] || (_cache[138] = createBaseVNode("dt", null, "Сундуки Целестиала", -1)),
+                  createBaseVNode("dd", _hoisted_137, [
                     createBaseVNode("img", {
                       src: unref(data).icons.bouquet_of_lies,
                       alt: ""
-                    }, null, 8, _hoisted_125),
-                    _cache[108] || (_cache[108] = createTextVNode("Букет лжи, ", -1)),
+                    }, null, 8, _hoisted_138),
+                    _cache[127] || (_cache[127] = createTextVNode("Букет лжи, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.berserker_axe,
                       alt: ""
-                    }, null, 8, _hoisted_126),
-                    _cache[109] || (_cache[109] = createTextVNode("Секира берсерка, ", -1)),
+                    }, null, 8, _hoisted_139),
+                    _cache[128] || (_cache[128] = createTextVNode("Секира берсерка, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.golden_phoenix,
                       alt: ""
-                    }, null, 8, _hoisted_127),
-                    _cache[110] || (_cache[110] = createTextVNode("Золотой феникс, ", -1)),
+                    }, null, 8, _hoisted_140),
+                    _cache[129] || (_cache[129] = createTextVNode("Золотой феникс, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.soul_collector,
                       alt: ""
-                    }, null, 8, _hoisted_128),
-                    _cache[111] || (_cache[111] = createTextVNode("Сборщик душ, ", -1)),
+                    }, null, 8, _hoisted_141),
+                    _cache[130] || (_cache[130] = createTextVNode("Сборщик душ, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.crimson,
                       alt: ""
-                    }, null, 8, _hoisted_129),
-                    _cache[112] || (_cache[112] = createTextVNode("Кримсон, ", -1)),
+                    }, null, 8, _hoisted_142),
+                    _cache[131] || (_cache[131] = createTextVNode("Кримсон, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.phantom_guard,
                       alt: ""
-                    }, null, 8, _hoisted_130),
-                    _cache[113] || (_cache[113] = createTextVNode("Призрачный страж, ", -1)),
+                    }, null, 8, _hoisted_143),
+                    _cache[132] || (_cache[132] = createTextVNode("Призрачный страж, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.night_fury,
                       alt: ""
-                    }, null, 8, _hoisted_131),
-                    _cache[114] || (_cache[114] = createTextVNode("Ночная фурия, ", -1)),
+                    }, null, 8, _hoisted_144),
+                    _cache[133] || (_cache[133] = createTextVNode("Ночная фурия, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.celestial,
                       alt: ""
-                    }, null, 8, _hoisted_132),
-                    _cache[115] || (_cache[115] = createTextVNode("Целестиал, ", -1)),
+                    }, null, 8, _hoisted_145),
+                    _cache[134] || (_cache[134] = createTextVNode("Целестиал, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.architect,
                       alt: ""
-                    }, null, 8, _hoisted_133),
-                    _cache[116] || (_cache[116] = createTextVNode("Архитектор, ", -1)),
+                    }, null, 8, _hoisted_146),
+                    _cache[135] || (_cache[135] = createTextVNode("Архитектор, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.celestial_helmet,
                       alt: ""
-                    }, null, 8, _hoisted_134),
-                    _cache[117] || (_cache[117] = createTextVNode("Целестиальный доспех (чаще обычного), карты таро, ", -1)),
+                    }, null, 8, _hoisted_147),
+                    _cache[136] || (_cache[136] = createTextVNode("Целестиальный доспех (чаще обычного), карты таро, ", -1)),
                     createBaseVNode("img", {
                       src: unref(data).icons.terra_magnet,
                       alt: ""
-                    }, null, 8, _hoisted_135),
-                    _cache[118] || (_cache[118] = createTextVNode("Терра-магнит (чаще обычного)", -1))
+                    }, null, 8, _hoisted_148),
+                    _cache[137] || (_cache[137] = createTextVNode("Терра-магнит (чаще обычного)", -1))
                   ])
                 ]),
-                _cache[121] || (_cache[121] = createBaseVNode("div", null, [
+                _cache[140] || (_cache[140] = createBaseVNode("div", null, [
                   createBaseVNode("dt", null, "Формы предков"),
                   createBaseVNode("dd", null, "проход с Джунглевым ключом на оценку S или S+ поднимает кровь предков с третьей формы до четвёртой, с Целестиальным — с четвёртой до пятой; ниже S форма не растёт")
                 ], -1))
               ])
             ]),
-            createBaseVNode("div", _hoisted_136, [
-              createBaseVNode("div", _hoisted_137, [
+            createBaseVNode("div", _hoisted_149, [
+              createBaseVNode("div", _hoisted_150, [
                 createVNode(_sfc_main$9, {
                   name: "Истинный Джунглевый голем",
                   colour: "green"
                 }),
-                _cache[123] || (_cache[123] = createStaticVNode('<div class="boss-stats"><span class="pill">2400 здоровья</span><span class="pill">≈11–13 блоков ростом</span><span class="pill">за Джунглевым ключом</span></div><ul class="attacks"><li><b>Двойное сотрясение.</b> Два зелёных круга один за другим: уйдите из обоих или будьте в воздухе.</li><li><b>Камнепад.</b> Валун в каждого из трёх бойцов, каждый раскалывается на три.</li><li><b>Плети.</b> Лозы к трём бойцам тянут к голему — сойдите с линии.</li><li><b>Терновое кольцо.</b> Три кольца шипов по полу — перепрыгните каждое.</li><li><b>Корневая темница.</b> Круг под вами: не ушли — три секунды в корнях.</li><li><b>Споровый ливень.</b> Споровые круги: яд и замедление.</li><li><b>Каменный сад (до 66%).</b> Голем спит под мхом и неуязвим. Разбейте его замшелых стражей — статуи просыпаются по нескольку, и каждая павшая откалывает кусок его полосы.</li><li><b>Три исполина (66–33%).</b> По одному встают Камнемёт, Лозохлёст и Тернодел — у каждого один приём голема.</li><li><b>Истинная форма (с 33%).</b> Голем просыпается, растёт и бьёт всеми приёмами сразу. На нём мох-панцирь — щит из ударов; удар в спину во время сотрясения снимает три. Четыре цветка под люстрами лечат его — затопчите их.</li></ul>', 2))
+                _cache[142] || (_cache[142] = createStaticVNode('<div class="boss-stats"><span class="pill">2400 здоровья</span><span class="pill">≈11–13 блоков ростом</span><span class="pill">за Джунглевым ключом</span></div><ul class="attacks"><li><b>Двойное сотрясение.</b> Два зелёных круга один за другим: уйдите из обоих или будьте в воздухе.</li><li><b>Камнепад.</b> Валун в каждого из трёх бойцов, каждый раскалывается на три.</li><li><b>Плети.</b> Лозы к трём бойцам тянут к голему — сойдите с линии.</li><li><b>Терновое кольцо.</b> Три кольца шипов по полу — перепрыгните каждое.</li><li><b>Корневая темница.</b> Круг под вами: не ушли — три секунды в корнях.</li><li><b>Споровый ливень.</b> Споровые круги: яд и замедление.</li><li><b>Каменный сад (до 66%).</b> Голем спит под мхом и неуязвим. Разбейте его замшелых стражей — статуи просыпаются по нескольку, и каждая павшая откалывает кусок его полосы.</li><li><b>Три исполина (66–33%).</b> По одному встают Камнемёт, Лозохлёст и Тернодел — у каждого один приём голема.</li><li><b>Истинная форма (с 33%).</b> Голем просыпается, растёт и бьёт всеми приёмами сразу. На нём мох-панцирь — щит из ударов; удар в спину во время сотрясения снимает три. Четыре цветка под люстрами лечат его — затопчите их.</li></ul>', 2))
               ]),
-              createBaseVNode("div", _hoisted_138, [
+              createBaseVNode("div", _hoisted_151, [
                 createVNode(_sfc_main$9, {
                   name: "Целестиал",
                   colour: "yellow"
                 }),
-                _cache[124] || (_cache[124] = createStaticVNode('<div class="boss-stats"><span class="pill">1100 здоровья</span><span class="pill">≈19 блоков ростом</span><span class="pill">пещера под библиотекой</span></div><ul class="attacks"><li><b>Звёздные нити.</b> Сойдите с красных линий, пока они не вспыхнули.</li><li><b>Небесная паутина.</b> Уйдите из фиолетового круга: внутри сильное замедление.</li><li><b>Взмах крыльев.</b> Волна по полу — перепрыгните её.</li><li><b>Небесный разрез.</b> Красный конус перед ним; после разреза он открыт.</li><li><b>Отражения (65–35%).</b> Он замирает за щитом и выходит из себя цветными отражениями. Настоящее — того же цвета, что его сияние: бейте только его. Ложное взрывается от удара. Каждые 10 секунд они меняются местами и цветами. Сверху падают звёзды — уходите из золотых кругов.</li><li><b>Затмение (35%).</b> Он за щитом: зажгите четыре фиолетовых круга под люстрами, стоя в каждом, — щит падает, урон по нему двойной. Пока круги не зажжены, каждые 3 секунды прилетает вредина.</li><li><b>Ближний бой.</b> Его обычные удары слабее, а способности бьют больно — уворачивайтесь.</li></ul>', 2))
+                _cache[143] || (_cache[143] = createStaticVNode('<div class="boss-stats"><span class="pill">1100 здоровья</span><span class="pill">≈19 блоков ростом</span><span class="pill">пещера под библиотекой</span></div><ul class="attacks"><li><b>Звёздные нити.</b> Сойдите с красных линий, пока они не вспыхнули.</li><li><b>Небесная паутина.</b> Уйдите из фиолетового круга: внутри сильное замедление.</li><li><b>Взмах крыльев.</b> Волна по полу — перепрыгните её.</li><li><b>Небесный разрез.</b> Красный конус перед ним; после разреза он открыт.</li><li><b>Отражения (65–35%).</b> Он замирает за щитом и выходит из себя цветными отражениями. Настоящее — того же цвета, что его сияние: бейте только его. Ложное взрывается от удара. Каждые 10 секунд они меняются местами и цветами. Сверху падают звёзды — уходите из золотых кругов.</li><li><b>Затмение (35%).</b> Он за щитом: зажгите четыре фиолетовых круга под люстрами, стоя в каждом, — щит падает, урон по нему двойной. Пока круги не зажжены, каждые 3 секунды прилетает вредина.</li><li><b>Ближний бой.</b> Его обычные удары слабее, а способности бьют больно — уворачивайтесь.</li></ul>', 2))
               ])
             ])
           ])
         ]),
-        _cache[128] || (_cache[128] = createStaticVNode('<h3>Платформа готовности</h3><div class="prose"><p>Перед испытанием, рейдом, призывом босса или боем с королём, Хронархом и големом там, где встанет босс, на полу появляется <b style="color:#4f9cff;">голубая платформа</b> 4 × 5 блоков. Встаньте на неё: в центре экрана пойдёт отсчёт от 5 до 1, платформа станет <b style="color:#4fe06a;">зелёной</b>. Встал ещё кто-то или кто-то сошёл — отсчёт начинается заново, а платформа на миг вспыхивает <b style="color:#ff3a3a;">красным</b>.</p><p>Бой, за который заплатили, ждёт создателя комнаты — без него отсчёт не начнётся («Ждём создателя комнаты...» над хотбаром). Все, кто стоял на платформе, — бойцы этого боя: кто сбежал из святилища или вышел с сервера, считается погибшим. Неначатая платформа исчезает через 5 минут и возвращает плату.</p></div><h3>Как читать бой</h3><div class="prose"><p>У всех боссов один язык знаков на полу: <b style="color:#ff4d5e;">красный</b> — уйдите, <b style="color:#ffc24a;">жёлтый</b> — прыгайте или двигайтесь, <b style="color:#b77bff;">фиолетовый</b> — встаньте внутрь, <b style="color:#4fe08a;">зелёный</b> — укрытие, <b style="color:#5fd3ff;">голубой</b> — бейте, босс уязвим. Перед каждым ударом звучит сигнал, а над хотбаром видно, что летит и через сколько.</p><p>Между фазами босс две секунды неуязвим, меняет название и цвет полосы и отбрасывает всех рядом. В последней фазе знаки короче. Щит, считающий удары, — белая полоса над здоровьем.</p></div><h3>Награды за чистый бой</h3><div class="tbl"><table><thead><tr><th>Условие</th><th>Награда</th></tr></thead><tbody><tr><th scope="row">Фаза без смертей</th><td>шанс на реликвию удваивается за каждую такую фазу: 10% → 20% → 40% → 80%; у ослабленного стража испытания он меньше</td></tr><tr><th scope="row">Ни разу не задет красным знаком</th><td>+25% осколков босса</td></tr><tr><th scope="row">Победа в одиночку</th><td>босс вычеркнут из «Списка смертников» (страж испытания — с третьего уровня)</td></tr></tbody></table></div><div class="prose small"><p><b>Список смертников</b> — каждого босса нужно победить в одиночку: Горнило, Серафим Падшего Рассвета, Древний страж джунглей, Пустотный Серафим, Предвестник, Джунглевый голем, Проклятый король, Хронарх, Целестиал и ещё один. Весь список — достижение и по реликвии кузни, Небесного храма и Храма джунглей.</p><p>После победы в чате — итог боя: время, чистые фазы и шанс на реликвию.</p></div>', 7))
+        _cache[147] || (_cache[147] = createStaticVNode('<h3>Платформа готовности</h3><div class="prose"><p>Перед испытанием, рейдом, призывом босса или боем с королём, Хронархом и големом там, где встанет босс, на полу появляется <b style="color:#4f9cff;">голубая платформа</b> 4 × 5 блоков. Встаньте на неё: в центре экрана пойдёт отсчёт от 5 до 1, платформа станет <b style="color:#4fe06a;">зелёной</b>. Встал ещё кто-то или кто-то сошёл — отсчёт начинается заново, а платформа на миг вспыхивает <b style="color:#ff3a3a;">красным</b>.</p><p>Бой, за который заплатили, ждёт создателя комнаты — без него отсчёт не начнётся («Ждём создателя комнаты...» над хотбаром). Все, кто стоял на платформе, — бойцы этого боя: кто сбежал из святилища или вышел с сервера, считается погибшим. Неначатая платформа исчезает через 5 минут и возвращает плату.</p></div><h3>Как читать бой</h3><div class="prose"><p>У всех боссов один язык знаков на полу: <b style="color:#ff4d5e;">красный</b> — уйдите, <b style="color:#ffc24a;">жёлтый</b> — прыгайте или двигайтесь, <b style="color:#b77bff;">фиолетовый</b> — встаньте внутрь, <b style="color:#4fe08a;">зелёный</b> — укрытие, <b style="color:#5fd3ff;">голубой</b> — бейте, босс уязвим. Перед каждым ударом звучит сигнал, а над хотбаром видно, что летит и через сколько.</p><p>Между фазами босс две секунды неуязвим, меняет название и цвет полосы и отбрасывает всех рядом. В последней фазе знаки короче. Щит, считающий удары, — белая полоса над здоровьем.</p></div><h3>Награды за чистый бой</h3><div class="tbl"><table><thead><tr><th>Условие</th><th>Награда</th></tr></thead><tbody><tr><th scope="row">Фаза без смертей</th><td>шанс на реликвию удваивается за каждую такую фазу: 10% → 20% → 40% → 80%; у ослабленного стража испытания он меньше</td></tr><tr><th scope="row">Ни разу не задет красным знаком</th><td>+25% осколков босса</td></tr><tr><th scope="row">Победа в одиночку</th><td>босс вычеркнут из «Списка смертников» (страж испытания — с третьего уровня)</td></tr></tbody></table></div><div class="prose small"><p><b>Список смертников</b> — каждого босса нужно победить в одиночку: Горнило, Серафим Падшего Рассвета, Древний страж джунглей, Пустотный Серафим, Предвестник, Джунглевый голем, Проклятый король, Хронарх, Целестиал и ещё один. Весь список — достижение и по реликвии кузни, Небесного храма и Храма джунглей.</p><p>После победы в чате — итог боя: время, чистые фазы и шанс на реликвию.</p></div>', 7))
       ]);
     };
   }
@@ -5754,7 +5839,7 @@ const _sfc_main$4 = {
           name: "Печать ночи · ночная небесная кровь",
           seal: true,
           colour: night.colour,
-          perk: "На третьей форме у алтаря Небесного храма куётся Печать ночи: сломайте её — кровь станет ночной той же формы. " + (night.perks[2] || ""),
+          perk: "На третьей форме у алтаря Небесного храма куётся Печать ночи: сломайте её в храме и победите Небесного Трибунала — кровь станет ночной той же формы. " + (night.perks[2] || ""),
           blades: bladesOf(night, (f) => f < 4)
         });
         steps.push({ n: "IV", name: "Четвёртая форма ночи · корона и дар", perk: night.perks[3] || "", blades: bladesOf(night, (f) => f === 4), crown: true, colour: night.colour });
@@ -5931,13 +6016,13 @@ const _sfc_main$3 = {
         "выбор при первом входе (даром) · или 20 <b>небесных осколков</b> у алтаря храма",
         "победа в испытании <b>I</b> уровня в Небесном храме",
         "победа в испытании <b>III</b> уровня в Небесном храме",
-        "нет. На 3-й форме у алтаря куётся <b>Печать ночи</b> (Душа Иссушителя, 128 небесных осколков, Перо серафима): сломать её — кровь станет <b>ночной</b>",
+        "нет. На 3-й форме у алтаря куётся <b>Печать ночи</b> (Душа Иссушителя, 128 небесных осколков, Перо серафима): сломать её в храме и победить <b>Небесного Трибунала</b> — кровь станет <b>ночной</b>",
         "—"
       ] },
       { id: "night", title: "Ночная небесная", home: "Тёмный храм", cells: [
         "—",
         "—",
-        "сломать <b>Печать ночи</b> небесной кровью 3-й формы (ПКМ дважды) — кровь сразу ночная, 3-й формы",
+        "сломать <b>Печать ночи</b> в Небесном храме небесной кровью 3-й формы (ПКМ дважды) и победить <b>Небесного Трибунала</b> — кровь ночная, 3-й формы",
         "победить <b>Пустотного Серафима</b>: призвать на алтаре Тёмного храма — форму получает призвавший",
         "—"
       ] },
@@ -5991,7 +6076,7 @@ const _sfc_main$3 = {
           ])]),
           _: 1
         }),
-        _cache[8] || (_cache[8] = createStaticVNode("<h3 data-v-6ddd19eb>Клинки крови</h3><p data-v-6ddd19eb>Величайшие клинки привязаны к крови: в чужих руках они не работают. <b data-v-6ddd19eb>Короны</b> — Истинный Экскалибур и Антихрист — отвечают только крови в <b data-v-6ddd19eb>четвёртой форме</b>; корона предков — <b data-v-6ddd19eb>Целестиал</b>, вместе с Архитектором он отвечает только <b data-v-6ddd19eb>пятой</b> форме (Энигма — великий клинок предков с третьей формы, не корона). У пепельной крови <b data-v-6ddd19eb>две короны</b>: <b data-v-6ddd19eb>Империум</b> — с четвёртой формы, <b data-v-6ddd19eb>Люцифер</b> — уже с третьей. Все-Чёрный отвечает только крови бездны.</p>", 2)),
+        _cache[8] || (_cache[8] = createStaticVNode("<h3 data-v-0669a252>Клинки крови</h3><p data-v-0669a252>Величайшие клинки привязаны к крови: в чужих руках они не работают. <b data-v-0669a252>Короны</b> — Истинный Экскалибур и Антихрист — отвечают только крови в <b data-v-0669a252>четвёртой форме</b>; корона предков — <b data-v-0669a252>Целестиал</b>, вместе с Архитектором он отвечает только <b data-v-0669a252>пятой</b> форме (Энигма — великий клинок предков с третьей формы, не корона). У пепельной крови <b data-v-0669a252>две короны</b>: <b data-v-0669a252>Империум</b> — с четвёртой формы, <b data-v-0669a252>Люцифер</b> — уже с третьей. Все-Чёрный отвечает только крови бездны.</p>", 2)),
         createBaseVNode("div", _hoisted_2$3, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(data).blood, (b) => {
             return openBlock(), createElementBlock("article", {
@@ -6081,9 +6166,9 @@ const _sfc_main$3 = {
           ]),
           _cache[6] || (_cache[6] = createBaseVNode("p", { class: "small muted" }, "Сменить кровь (снова с 1-й формы) можно у алтаря святилища новой крови за 20 его осколков — кроме ночной, бездны и техноорганической.", -1))
         ]),
-        _cache[9] || (_cache[9] = createStaticVNode('<p data-v-6ddd19eb><b data-v-6ddd19eb>Огонь не берёт своё.</b> Брошенные в лаву или огонь клинки пепельной крови и адские материалы не сгорают.</p><p data-v-6ddd19eb><b data-v-6ddd19eb>Крылья</b> растут не от формы, а от <b data-v-6ddd19eb>полного комплекта брони</b>: наденьте все четыре части — и за спиной раскроются крылья. Расплавленный доспех — солнечные, доспех паладина — светлые небесные, доспех Короля ночи — небесные, Терра-доспех — зелёные крылья мудреца, Целестиальный доспех — крылья Целестиала: всё это объёмные модели, которые стоят за спиной и поворачиваются вместе с телом. У Демонического доспеха крылья багрово-чёрные, как у элитр. Снимите одну часть — крылья пропадут. Полёт небесной и ночной небесной крови от крыльев не зависит.</p><p data-v-6ddd19eb>С <b data-v-6ddd19eb>третьей формы</b> клинки своей крови бьют сильнее. <b data-v-6ddd19eb>Четвёртая форма</b> открывает корону крови и свой <b data-v-6ddd19eb>дар</b>: он просыпается сам, когда нужен, и потом отдыхает 10 минут. Как дойти до неё — в разделе <a href="#fourth" data-v-6ddd19eb>«Четвёртая форма»</a>.</p><h3 data-v-6ddd19eb>Дерево родословных</h3>', 4)),
+        _cache[9] || (_cache[9] = createStaticVNode('<p data-v-0669a252><b data-v-0669a252>Огонь не берёт своё.</b> Брошенные в лаву или огонь клинки пепельной крови и адские материалы не сгорают.</p><p data-v-0669a252><b data-v-0669a252>Крылья</b> растут не от формы, а от <b data-v-0669a252>полного комплекта брони</b>: наденьте все четыре части — и за спиной раскроются крылья. Расплавленный доспех — солнечные, доспех паладина — светлые небесные, доспех Короля ночи — небесные, Терра-доспех — зелёные крылья мудреца, Целестиальный доспех — крылья Целестиала: всё это объёмные модели, которые стоят за спиной и поворачиваются вместе с телом. У Демонического доспеха крылья багрово-чёрные, как у элитр. Снимите одну часть — крылья пропадут. Полёт небесной и ночной небесной крови от крыльев не зависит.</p><p data-v-0669a252>С <b data-v-0669a252>третьей формы</b> клинки своей крови бьют сильнее. <b data-v-0669a252>Четвёртая форма</b> открывает корону крови и свой <b data-v-0669a252>дар</b>: он просыпается сам, когда нужен, и потом отдыхает 10 минут. Как дойти до неё — в разделе <a href="#fourth" data-v-0669a252>«Четвёртая форма»</a>.</p><h3 data-v-0669a252>Дерево родословных</h3>', 4)),
         createVNode(_sfc_main$4),
-        _cache[10] || (_cache[10] = createStaticVNode('<p class="small muted" data-v-6ddd19eb>Сменить кровь можно у алтаря её святилища — кроме ночной, бездны и техноорганической.</p><p data-v-6ddd19eb><b data-v-6ddd19eb>Кровь бездны</b> не выбирают и не покупают. Её получает тот, кто выковал <b data-v-6ddd19eb>Все-Чёрный</b>: в тот же миг кровь меняется на бездну — навсегда. У бездны нет форм, подвигов и испытаний. Выковать Все-Чёрный можно из <b data-v-6ddd19eb>короны своей крови</b> (у пепельной — из Империума или Люцифера) и <b data-v-6ddd19eb>Чёрной души</b> у алтаря <b data-v-6ddd19eb>своего</b> храма — и храм за это <b data-v-6ddd19eb>гневается</b>.</p><p data-v-6ddd19eb><b data-v-6ddd19eb>Техноорганическую кровь</b> принимают на терминале Древней фабрики. Вместе с ней вы получаете <b data-v-6ddd19eb>Энцефало-меч</b>: он сам растёт вместе с кровью — в <b data-v-6ddd19eb>Энцефало-клинок</b>, а затем в <b data-v-6ddd19eb>Антихрист</b> — и возвращается к вам после смерти.</p><p class="small" data-v-6ddd19eb>Алтарь фабрики собирает своей крови <b data-v-6ddd19eb>призывные машины</b>: медного голема, малого Предвестника и Сборочный купол. В строю одновременно — не больше 10 медных големов и 3 малых Предвестников. Медного голема и малого Предвестника — а когда терминал их откроет, и Улучшенный крикун с Материальным разрушителем — продаёт <b data-v-6ddd19eb>Портативный терминал</b>, где угодно; купол — только на фабрике.</p><p class="small" data-v-6ddd19eb><b data-v-6ddd19eb>Медный шахтёр.</b> Дайте своему купленному медному голему (из Призывного медного голема, не из клинка) кирку (ПКМ киркой), потом покажите, что искать, — любой ресурс шахты: алмаз, сырое железо, уголь, слиток, блок руды, а также камень, глубинный сланец, туф, гранит, кальцит, аметист, обсидиан, гравий, глину, в Незере — кварц, незерак, базальт, чернит. Голем уйдёт под землю на 10 минут. Сквозь камень он не видит: роет наугад ходы высотой в блок, спускаясь к глубине этой руды, и замечает только ту руду, что открылась в стене хода или в пещере, — её и выкапывает вместе с жилой. Слышно его, пока он в 15 блоках от вас. Лаву обходит, построенное игроками не ломает. Потом вернётся к вам с полной сумкой — камень в ней тоже. ПКМ пустой рукой — его сумка и кнопки «Снова за…», «Забрать всё», «Отпустить». Кирка решает, что ему по силам: за алмазами — железная и лучше.</p><p class="small" data-v-6ddd19eb><b data-v-6ddd19eb>Настройки шахтёра</b> — Shift + ПКМ пустой рукой, кнопка «Настройки» в сумке или <b data-v-6ddd19eb>Портативный терминал → «Медные шахтёры»</b> (откуда угодно). <b data-v-6ddd19eb>Один поход или цикл</b>: в цикле он сдаёт добычу и сам уходит на новую смену за той же рудой, пока три смены подряд не окажутся пустыми. <b data-v-6ddd19eb>Добычу — в медный сундук</b>: привяжите любой свой медный сундук — шахтёр подойдёт к нему, откроет крышку и выложит всё, как ванильный медный голем; в режиме «один поход» после этого он ждёт у сундука и в шахту больше не идёт. <b data-v-6ddd19eb>Поиск кирки</b>: сломалась — шахтёр обходит сундуки, которые <i data-v-6ddd19eb>видит</i> (свои, клана и ничьи, без рентгена), открывает каждый, берёт лучшую кирку и оставляет там старую; «Беречь кирку» меняет её ещё до поломки. А ещё: длина смены (5–20 минут), «Брать камень», рация (слышно везде), <b data-v-6ddd19eb>журнал смены</b> (книга с итогами), <b data-v-6ddd19eb>факелы</b> в тёмных ходах каждые 8 шагов, <b data-v-6ddd19eb>медная нить</b> — его последний ход, видимый только вам, и «Ждать здесь».</p><h3 id="titles" data-v-6ddd19eb>Звания</h3><p data-v-6ddd19eb>Кто прошёл свою кровь до конца — <b data-v-6ddd19eb>последняя форма</b>, <b data-v-6ddd19eb>свой доспех целиком</b> и <b data-v-6ddd19eb>корона крови</b> в инвентаре, — получает её звание. Весь сервер видит в чате: <i data-v-6ddd19eb>«ViRuS стал Королём в Чёрном»</i>, а звание навсегда встаёт перед ником префиксом и переливается цветами редкостей короны и доспеха.</p>', 8)),
+        _cache[10] || (_cache[10] = createStaticVNode('<p class="small muted" data-v-0669a252>Сменить кровь можно у алтаря её святилища — кроме ночной, бездны и техноорганической.</p><p data-v-0669a252><b data-v-0669a252>Кровь бездны</b> не выбирают и не покупают. Её получает тот, кто выковал <b data-v-0669a252>Все-Чёрный</b>: в тот же миг кровь меняется на бездну — навсегда. У бездны нет форм, подвигов и испытаний. Выковать Все-Чёрный можно из <b data-v-0669a252>короны своей крови</b> (у пепельной — из Империума или Люцифера) и <b data-v-0669a252>Чёрной души</b> у алтаря <b data-v-0669a252>своего</b> храма — и храм за это <b data-v-0669a252>гневается</b>.</p><p data-v-0669a252><b data-v-0669a252>Техноорганическую кровь</b> принимают на терминале Древней фабрики. Вместе с ней вы получаете <b data-v-0669a252>Энцефало-меч</b>: он сам растёт вместе с кровью — в <b data-v-0669a252>Энцефало-клинок</b>, а затем в <b data-v-0669a252>Антихрист</b> — и возвращается к вам после смерти.</p><p class="small" data-v-0669a252>Алтарь фабрики собирает своей крови <b data-v-0669a252>призывные машины</b>: медного голема, малого Предвестника и Сборочный купол. В строю одновременно — не больше 10 медных големов и 3 малых Предвестников. Медного голема и малого Предвестника — а когда терминал их откроет, и Улучшенный крикун с Материальным разрушителем — продаёт <b data-v-0669a252>Портативный терминал</b>, где угодно; купол — только на фабрике.</p><p class="small" data-v-0669a252><b data-v-0669a252>Медный шахтёр.</b> Дайте своему купленному медному голему (из Призывного медного голема, не из клинка) кирку (ПКМ киркой), потом покажите, что искать, — любой ресурс шахты: алмаз, сырое железо, уголь, слиток, блок руды, а также камень, глубинный сланец, туф, гранит, кальцит, аметист, обсидиан, гравий, глину, в Незере — кварц, незерак, базальт, чернит. Голем уйдёт под землю на 10 минут. Сквозь камень он не видит: роет наугад ходы высотой в блок, спускаясь к глубине этой руды, и замечает только ту руду, что открылась в стене хода или в пещере, — её и выкапывает вместе с жилой. Слышно его, пока он в 15 блоках от вас. Лаву обходит, построенное игроками не ломает. Потом вернётся к вам с полной сумкой — камень в ней тоже. ПКМ пустой рукой — его сумка и кнопки «Снова за…», «Забрать всё», «Отпустить». Кирка решает, что ему по силам: за алмазами — железная и лучше.</p><p class="small" data-v-0669a252><b data-v-0669a252>Настройки шахтёра</b> — Shift + ПКМ пустой рукой, кнопка «Настройки» в сумке или <b data-v-0669a252>Портативный терминал → «Медные шахтёры»</b> (откуда угодно). <b data-v-0669a252>Один поход или цикл</b>: в цикле он сдаёт добычу и сам уходит на новую смену за той же рудой, пока три смены подряд не окажутся пустыми. <b data-v-0669a252>Добычу — в медный сундук</b>: привяжите любой свой медный сундук — шахтёр подойдёт к нему, откроет крышку и выложит всё, как ванильный медный голем; в режиме «один поход» после этого он ждёт у сундука и в шахту больше не идёт. <b data-v-0669a252>Поиск кирки</b>: сломалась — шахтёр обходит сундуки, которые <i data-v-0669a252>видит</i> (свои, клана и ничьи, без рентгена), открывает каждый, берёт лучшую кирку и оставляет там старую; «Беречь кирку» меняет её ещё до поломки. А ещё: длина смены (5–20 минут), «Брать камень», рация (слышно везде), <b data-v-0669a252>журнал смены</b> (книга с итогами), <b data-v-0669a252>факелы</b> в тёмных ходах каждые 8 шагов, <b data-v-0669a252>медная нить</b> — его последний ход, видимый только вам, и «Ждать здесь».</p><h3 id="titles" data-v-0669a252>Звания</h3><p data-v-0669a252>Кто прошёл свою кровь до конца — <b data-v-0669a252>последняя форма</b>, <b data-v-0669a252>свой доспех целиком</b> и <b data-v-0669a252>корона крови</b> в инвентаре, — получает её звание. Весь сервер видит в чате: <i data-v-0669a252>«ViRuS стал Королём в Чёрном»</i>, а звание навсегда встаёт перед ником префиксом и переливается цветами редкостей короны и доспеха.</p>', 8)),
         createBaseVNode("div", _hoisted_15, [
           createBaseVNode("table", null, [
             _cache[7] || (_cache[7] = createBaseVNode("thead", null, [
@@ -6126,12 +6211,12 @@ const _sfc_main$3 = {
             ])
           ])
         ]),
-        _cache[11] || (_cache[11] = createStaticVNode('<p class="small muted" data-v-6ddd19eb>Последняя форма бездны — сама кровь бездны: форм у неё нет, и доспех ей не нужен — хватает Все-Чёрного. Техноорганической крови тоже хватает формы и Антихриста.</p><h3 data-v-6ddd19eb>Путеводитель</h3><p data-v-6ddd19eb>Сразу после крови выбирается голос, что будет с вами в пути: он даёт советы, рассказывает легенды и отзывается на то, что с вами происходит. Каждая реплика звучит один раз.</p><div class="tbl" data-v-6ddd19eb><table data-v-6ddd19eb><thead data-v-6ddd19eb><tr data-v-6ddd19eb><th data-v-6ddd19eb>Голос</th><th data-v-6ddd19eb>Какой</th><th data-v-6ddd19eb>Что знает</th></tr></thead><tbody data-v-6ddd19eb><tr data-v-6ddd19eb><td data-v-6ddd19eb>Путеводитель</td><td data-v-6ddd19eb>старый хранитель знаний о клинках: тёплый, насмешливый, говорит загадками</td><td data-v-6ddd19eb>все секреты пепельной, небесной и ночной крови и крови предков; о технокрови — ничего; бездну считает злом и пути к ней не назовёт</td></tr><tr data-v-6ddd19eb><td data-v-6ddd19eb>ZorahM-GPT</td><td data-v-6ddd19eb>разум Древней фабрики: обидчивый, язвительный, драматичный, с комплексом бога; презирает органику и не скрывает своих целей</td><td data-v-6ddd19eb>путь технокрови — точно; формы других кровей — догадками; о бездне наслышан, но считает её слабой</td></tr><tr data-v-6ddd19eb><td data-v-6ddd19eb>Наблюдатель</td><td data-v-6ddd19eb>древний свидетель: торжественный и печальный, рассказывает легенды о Все-Чёрном</td><td data-v-6ddd19eb>о начальных кровях и технокрови — почти ничего; единственный знает путь к крови бездны и все её особенности</td></tr></tbody></table></div><p class="small muted" data-v-6ddd19eb>Кровь бездны всегда слышит Наблюдателя, техноорганическая — ZorahM-GPT: их выбор голоса не касается. Дороги ко всем постройкам — от кузни и храмов до Проклятого замка, Терра-подземелья и Забытого мира — знают все трое и подскажут, пока вы там не побывали.</p><h3 data-v-6ddd19eb>Книги</h3><p data-v-6ddd19eb>Выбрав кровь, игрок получает <b data-v-6ddd19eb>книгу своей крови</b>; сразу за обложкой — «Первые шаги»: чем найти святилище, что даёт первое испытание и какой клинок добыть первым. Оператор сервера получает ещё и <b data-v-6ddd19eb>книгу хранителя</b> — её первые страницы стали панелью с кнопками.</p>', 7))
+        _cache[11] || (_cache[11] = createStaticVNode('<p class="small muted" data-v-0669a252>Последняя форма бездны — сама кровь бездны: форм у неё нет, и доспех ей не нужен — хватает Все-Чёрного. Техноорганической крови тоже хватает формы и Антихриста.</p><h3 data-v-0669a252>Путеводитель</h3><p data-v-0669a252>Сразу после крови выбирается голос, что будет с вами в пути: он даёт советы, рассказывает легенды и отзывается на то, что с вами происходит. Каждая реплика звучит один раз.</p><div class="tbl" data-v-0669a252><table data-v-0669a252><thead data-v-0669a252><tr data-v-0669a252><th data-v-0669a252>Голос</th><th data-v-0669a252>Какой</th><th data-v-0669a252>Что знает</th></tr></thead><tbody data-v-0669a252><tr data-v-0669a252><td data-v-0669a252>Путеводитель</td><td data-v-0669a252>старый хранитель знаний о клинках: тёплый, насмешливый, говорит загадками</td><td data-v-0669a252>все секреты пепельной, небесной и ночной крови и крови предков; о технокрови — ничего; бездну считает злом и пути к ней не назовёт</td></tr><tr data-v-0669a252><td data-v-0669a252>ZorahM-GPT</td><td data-v-0669a252>разум Древней фабрики: обидчивый, язвительный, драматичный, с комплексом бога; презирает органику и не скрывает своих целей</td><td data-v-0669a252>путь технокрови — точно; формы других кровей — догадками; о бездне наслышан, но считает её слабой</td></tr><tr data-v-0669a252><td data-v-0669a252>Наблюдатель</td><td data-v-0669a252>древний свидетель: торжественный и печальный, рассказывает легенды о Все-Чёрном</td><td data-v-0669a252>о начальных кровях и технокрови — почти ничего; единственный знает путь к крови бездны и все её особенности</td></tr></tbody></table></div><p class="small muted" data-v-0669a252>Кровь бездны всегда слышит Наблюдателя, техноорганическая — ZorahM-GPT: их выбор голоса не касается. Дороги ко всем постройкам — от кузни и храмов до Проклятого замка, Терра-подземелья и Забытого мира — знают все трое и подскажут, пока вы там не побывали.</p><h3 data-v-0669a252>Книги</h3><p data-v-0669a252>Выбрав кровь, игрок получает <b data-v-0669a252>книгу своей крови</b>; сразу за обложкой — «Первые шаги»: чем найти святилище, что даёт первое испытание и какой клинок добыть первым. Оператор сервера получает ещё и <b data-v-0669a252>книгу хранителя</b> — её первые страницы стали панелью с кнопками.</p>', 7))
       ]);
     };
   }
 };
-const BloodSection = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-6ddd19eb"]]);
+const BloodSection = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0669a252"]]);
 const _hoisted_1$2 = { id: "trophies" };
 const _hoisted_2$2 = {
   class: "filters",

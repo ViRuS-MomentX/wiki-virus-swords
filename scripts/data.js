@@ -3,7 +3,7 @@ const counts = {
   materials: 40,
   trophies: 51
 };
-const built = "2026-11-23";
+const built = "2026-11-24";
 const words = {
   weapons: "клинка",
   materials: "материалов",
@@ -45,7 +45,22 @@ const icons = {
   night_king_helmet: "images/icons/night_king_helmet.png",
   terra_helmet: "images/icons/terra_helmet.png",
   demon_helmet: "images/icons/demon_helmet.png",
-  lord_soul: "images/icons/lord_soul.png"
+  lord_soul: "images/icons/lord_soul.png",
+  arachnid: "images/icons/arachnid.png",
+  berserker_axe: "images/icons/berserker_axe.png",
+  bouquet_of_lies: "images/icons/bouquet_of_lies.png",
+  crimson: "images/icons/crimson.png",
+  cutter: "images/icons/cutter.png",
+  demon_slayer: "images/icons/demon_slayer.png",
+  golden_phoenix: "images/icons/golden_phoenix.png",
+  hyperion: "images/icons/hyperion.png",
+  night_fury: "images/icons/night_fury.png",
+  phantom_guard: "images/icons/phantom_guard.png",
+  solstice: "images/icons/solstice.png",
+  soul_collector: "images/icons/soul_collector.png",
+  terra_magnet: "images/icons/terra_magnet.png",
+  twilight_axe: "images/icons/twilight_axe.png",
+  verdict: "images/icons/verdict.png"
 };
 const guideIcons = {
   diamond: "images/guide/diamond.png",
@@ -614,7 +629,7 @@ const items = [
     stats: "Урон 5 · Скорость 1",
     damage: 5,
     speed: 1,
-    icon: "images/other/9adf817a26.png",
+    icon: "images/icons/cutter.png",
     obtain: "Сундуки древнего города · сундуки Истинного голема в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
@@ -725,7 +740,7 @@ const items = [
     stats: "Урон 8 · Скорость 1.6",
     damage: 8,
     speed: 1.6,
-    icon: "images/other/dee02b9d7c.png",
+    icon: "images/icons/arachnid.png",
     obtain: "Сундуки заброшенной шахты · сундуки Истинного голема в Забытом мире (только пепельной крови)",
     method: "loot",
     methodLabel: "Находка",
@@ -764,7 +779,7 @@ const items = [
     stats: "Урон 10 · Скорость 1.6",
     damage: 10,
     speed: 1.6,
-    icon: "images/other/a9a5eb8961.png",
+    icon: "images/icons/demon_slayer.png",
     obtain: "Эволюция Арахнида в Незеритовой кузне · сундуки Истинного голема в Забытом мире",
     blood: "ember",
     form: 1,
@@ -817,7 +832,7 @@ const items = [
     stats: "Урон 11 · Скорость 1.6",
     damage: 11,
     speed: 1.6,
-    icon: "images/other/441a54f11e.png",
+    icon: "images/icons/soul_collector.png",
     obtain: "Эволюция Убийцы демонов в Незеритовой кузне · сундуки Целестиала в Забытом мире",
     blood: "ember",
     form: 2,
@@ -900,7 +915,7 @@ const items = [
     stats: "Урон 10 · Скорость 1",
     damage: 10,
     speed: 1,
-    icon: "images/other/7ad0b3ffe6.png",
+    icon: "images/icons/twilight_axe.png",
     obtain: "Сундуки крепости Незера · сундуки Истинного голема в Забытом мире",
     method: "loot",
     methodLabel: "Находка",
@@ -939,7 +954,7 @@ const items = [
     stats: "Урон 13 · Скорость 1",
     damage: 13,
     speed: 1,
-    icon: "images/other/5c43b2d9a6.png",
+    icon: "images/icons/berserker_axe.png",
     obtain: "Сумрачная секира меняется сама в испытании Незеритовой кузни · сундуки Целестиала в Забытом мире",
     blood: "ember",
     form: 1,
@@ -1021,7 +1036,7 @@ const items = [
     stats: "Урон 12 · Скорость 1.6",
     damage: 12,
     speed: 1.6,
-    icon: "images/other/9873dd086a.png",
+    icon: "images/icons/crimson.png",
     obtain: "Только сундуки Забытого мира (Истинный голем и Целестиал); пепельная кровь с 3-й формы",
     blood: "ember",
     form: 3,
@@ -1062,7 +1077,7 @@ const items = [
     stats: "Урон 14 · Скорость 1",
     damage: 14,
     speed: 1,
-    icon: "images/other/0d5be3d64d.png",
+    icon: "images/icons/golden_phoenix.png",
     obtain: "Сумрачная секира меняется сама в испытании Небесного храма · сундуки Целестиала в Забытом мире",
     blood: "sky",
     form: 1,
@@ -1103,7 +1118,7 @@ const items = [
     stats: "Урон 13 · Скорость 1.6",
     damage: 13,
     speed: 1.6,
-    icon: "images/other/ad3ddc78bb.png",
+    icon: "images/icons/solstice.png",
     obtain: "Сокровищница бастиона, редко · сундуки Истинного голема в Забытом мире",
     blood: "sky",
     form: 2,
@@ -1149,7 +1164,7 @@ const items = [
     stats: "Урон 13 · Скорость 1.6",
     damage: 13,
     speed: 1.6,
-    icon: "images/other/e04bd0277f.png",
+    icon: "images/icons/night_fury.png",
     obtain: "Ковка в Тёмном храме или эволюция Солнцестояния · сундуки Целестиала в Забытом мире",
     blood: "night",
     form: 1,
@@ -1190,7 +1205,7 @@ const items = [
     stats: "Урон 12 · Скорость 1.6",
     damage: 12,
     speed: 1.6,
-    icon: "images/other/e43fff931c.png",
+    icon: "images/icons/phantom_guard.png",
     obtain: "Сокровищница Проклятого замка · сундуки Целестиала в Забытом мире",
     blood: "sky",
     form: 2,
@@ -1554,8 +1569,8 @@ const items = [
     stats: "Урон 11 · Скорость 1.1",
     damage: 11,
     speed: 1.1,
-    icon: "images/other/f7b983f89b.png",
-    obtain: "Наградные сундуки Забытого мира (голем и Целестиал), как Кримсон, любой крови",
+    icon: "images/icons/verdict.png",
+    obtain: "Наградные сундуки Забытого мира (голем и Целестиал), как Кримсон, любой крови; падает с Небесного Трибунала",
     method: "place",
     methodLabel: "Святилище",
     recipe: false,
@@ -1593,7 +1608,7 @@ const items = [
     stats: "Урон 13 · Скорость 1.6",
     damage: 13,
     speed: 1.6,
-    icon: "images/other/69640228e3.png",
+    icon: "images/icons/bouquet_of_lies.png",
     obtain: "Только наградные сундуки Забытого мира (голем и Целестиал)",
     blood: "steel",
     form: 3,
@@ -1807,7 +1822,7 @@ const items = [
         trigger: "Зажать ПКМ",
         kind: "hold",
         rest: "45 с. Падение не ранит",
-        text: "<span>Пока держите, до 6 секунд, вы медленно</span> <span>возноситесь в нимбе красных молний: каждые</span> <span>полсекунды разряд бьёт трёх ближайших врагов</span> <span>в 10 блоках, по 6 урона, и копит «Нет предела</span> <span>совершенству». Отпустите — удар о землю в</span> <span>5 блоках: 12 урона и +2 за каждый блок</span> <span>подъёма, до 20, и отброс.</span>"
+        text: "<span>Пока держите, до 6 секунд, вы медленно</span> <span>возноситесь в нимбе красных молний: каждые</span> <span>полсекунды разряд бьёт трёх ближайших врагов</span> <span>в 10 блоках, по 15 урона, и копит «Нет предела</span> <span>совершенству». Отпустите — удар о землю в</span> <span>5 блоках: 12 урона и +2 за каждый блок</span> <span>подъёма, до 20, и отброс.</span>"
       },
       {
         name: "Лазерный луч",
@@ -1854,7 +1869,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/3baac2e917.png",
+    icon: "images/icons/hyperion.png",
     obtain: "Ковка в Небесном храме · сундуки Истинного голема в Забытом мире",
     blood: "sky",
     form: 3,
@@ -2111,12 +2126,14 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Куётся у алтаря Небесного храма небесной</span>',
       '<span style="color:#AAAAAA">кровью третьей формы.</span>',
-      '<span style="color:#AAAAAA">Правый клик: небесная кровь третьей формы</span>',
-      '<span style="color:#AAAAAA">станет ночной, а Небесный храм рухнет.</span>'
+      '<span style="color:#AAAAAA">Правый клик в Небесном храме: барьер падёт,</span>',
+      '<span style="color:#AAAAAA">храм рухнет, а всех в нём призовут на суд</span>',
+      '<span style="color:#AAAAAA">Небесного Трибунала. Победите судью — и</span>',
+      '<span style="color:#AAAAAA">небесная кровь третьей формы станет ночной.</span>'
     ],
     abilities: [],
     stats: "",
-    obtain: "Ковка у алтаря Небесного храма, небесная кровь 3-й формы: Душа Иссушителя, 128 небесных осколков, Перо серафима",
+    obtain: "Ковка у алтаря Небесного храма, небесная кровь 3-й формы: Душа Иссушителя, 128 небесных осколков, Перо серафима. Ломается в самом храме и призывает Небесного Трибунала",
     icon: "images/icons/night_seal.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -2422,7 +2439,7 @@ const items = [
     ],
     stats: "",
     obtain: "Ковка у алтаря Храма джунглей: 16 терра-слитков, 64 реликтовых осколка; кровь предков с 3-й формы · сундуки Целестиала в Забытом мире",
-    icon: "images/other/639969fbea.png",
+    icon: "images/icons/terra_magnet.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
     recipe: false,
@@ -4039,7 +4056,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Получить Резак",
-        icon: "images/other/9adf817a26.png",
+        icon: "images/icons/cutter.png",
         caption: "Резак"
       },
       {
@@ -4139,7 +4156,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Получить Арахнид",
-        icon: "images/other/dee02b9d7c.png",
+        icon: "images/icons/arachnid.png",
         caption: "Арахнид"
       },
       {
@@ -4149,7 +4166,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Создать Убийцу демонов",
-        icon: "images/other/a9a5eb8961.png",
+        icon: "images/icons/demon_slayer.png",
         caption: "Убийца демонов"
       },
       {
@@ -4169,7 +4186,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Первый раз совершить Странствие с Hyperion",
-        icon: "images/other/3baac2e917.png",
+        icon: "images/icons/hyperion.png",
         caption: "Hyperion"
       },
       {
@@ -4265,10 +4282,10 @@ const achievements = [
       {
         key: "night_let_in",
         title: "Ночь впущена",
-        description: "Ты сломал печать, и небо рухнуло.",
+        description: "Ты сломал печать и низверг Небесного Трибунала.",
         frame: "goal",
         frameLabel: "Цель",
-        condition: "Сломать Печать ночи",
+        condition: "Сломать Печать ночи и низвергнуть Небесного Трибунала",
         icon: "images/icons/night_seal.png",
         caption: "Печать ночи"
       },
@@ -4409,7 +4426,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Получить Букет лжи",
-        icon: "images/other/69640228e3.png",
+        icon: "images/icons/bouquet_of_lies.png",
         caption: "Букет лжи"
       },
       {
@@ -4419,7 +4436,7 @@ const achievements = [
         frame: "task",
         frameLabel: "Задача",
         condition: "Получить Сборщик душ",
-        icon: "images/other/441a54f11e.png",
+        icon: "images/icons/soul_collector.png",
         caption: "Сборщик душ"
       },
       {
@@ -4496,7 +4513,7 @@ const blood = [
       {
         id: "crimson",
         name: "Кримсон",
-        icon: "images/other/9873dd086a.png",
+        icon: "images/icons/crimson.png",
         form: 3,
         crown: false
       },
@@ -4517,21 +4534,21 @@ const blood = [
       {
         id: "demon_slayer",
         name: "Убийца демонов",
-        icon: "images/other/a9a5eb8961.png",
+        icon: "images/icons/demon_slayer.png",
         form: 1,
         crown: false
       },
       {
         id: "soul_collector",
         name: "Сборщик душ",
-        icon: "images/other/441a54f11e.png",
+        icon: "images/icons/soul_collector.png",
         form: 2,
         crown: false
       },
       {
         id: "berserker_axe",
         name: "Секира берсерка",
-        icon: "images/other/5c43b2d9a6.png",
+        icon: "images/icons/berserker_axe.png",
         form: 1,
         crown: false
       }
@@ -4555,28 +4572,28 @@ const blood = [
       {
         id: "hyperion",
         name: "Hyperion",
-        icon: "images/other/3baac2e917.png",
+        icon: "images/icons/hyperion.png",
         form: 3,
         crown: false
       },
       {
         id: "solstice",
         name: "Солнцестояние",
-        icon: "images/other/ad3ddc78bb.png",
+        icon: "images/icons/solstice.png",
         form: 2,
         crown: false
       },
       {
         id: "golden_phoenix",
         name: "Золотой феникс",
-        icon: "images/other/0d5be3d64d.png",
+        icon: "images/icons/golden_phoenix.png",
         form: 1,
         crown: false
       },
       {
         id: "phantom_guard",
         name: "Призрачный страж",
-        icon: "images/other/e43fff931c.png",
+        icon: "images/icons/phantom_guard.png",
         form: 2,
         crown: false
       }
@@ -4622,7 +4639,7 @@ const blood = [
       {
         id: "night_fury",
         name: "Ночная фурия",
-        icon: "images/other/e04bd0277f.png",
+        icon: "images/icons/night_fury.png",
         form: 1,
         crown: false
       }
@@ -4692,7 +4709,7 @@ const blood = [
       {
         id: "bouquet_of_lies",
         name: "Букет лжи",
-        icon: "images/other/69640228e3.png",
+        icon: "images/icons/bouquet_of_lies.png",
         form: 3,
         crown: false
       },
