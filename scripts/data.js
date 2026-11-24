@@ -4006,7 +4006,7 @@ const achievements = [
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Отразить рейд пиглинов",
-        icon: "",
+        icon: "images/guide/crying_obsidian.png",
         caption: "minecraft:crying_obsidian"
       },
       {
@@ -4336,7 +4336,7 @@ const achievements = [
         frame: "challenge",
         frameLabel: "Испытание",
         condition: "Победить Пустотного Серафима",
-        icon: "",
+        icon: "images/icons/night_king_helmet.png",
         caption: ""
       },
       {
