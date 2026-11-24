@@ -1,27 +1,27 @@
 
-.forms-table td[data-v-a4d3750c] { font-size: .88em; line-height: 1.35; vertical-align: top; min-width: 9em;
+.forms-table td[data-v-336404db] { font-size: .88em; line-height: 1.35; vertical-align: top; min-width: 9em;
 }
-.forms-table td.none[data-v-a4d3750c] { opacity: .45; text-align: center;
+.forms-table td.none[data-v-336404db] { opacity: .45; text-align: center;
 }
-.forms-table th[scope=row][data-v-a4d3750c] { white-space: nowrap; vertical-align: top;
+.forms-table th[scope=row][data-v-336404db] { white-space: nowrap; vertical-align: top;
 }
-.forms-home[data-v-a4d3750c] { display: block; font-weight: normal; margin-top: .15em;
+.forms-home[data-v-336404db] { display: block; font-weight: normal; margin-top: .15em;
 }
 /* A phone: each blood a card of its own, its forms one under another, each with its number. */
 @media (max-width: 720px) {
-.forms-table table[data-v-a4d3750c], .forms-table tbody[data-v-a4d3750c], .forms-table tr[data-v-a4d3750c], .forms-table td[data-v-a4d3750c], .forms-table th[scope=row][data-v-a4d3750c] { display: block; width: auto;
+.forms-table table[data-v-336404db], .forms-table tbody[data-v-336404db], .forms-table tr[data-v-336404db], .forms-table td[data-v-336404db], .forms-table th[scope=row][data-v-336404db] { display: block; width: auto;
 }
-.forms-table thead[data-v-a4d3750c] { display: none;
+.forms-table thead[data-v-336404db] { display: none;
 }
-.forms-table tr[data-v-a4d3750c] { padding: .6em .2em .8em; border-bottom: 1px solid rgba(255,255,255,.08);
+.forms-table tr[data-v-336404db] { padding: .6em .2em .8em; border-bottom: 1px solid rgba(255,255,255,.08);
 }
-.forms-table th[scope=row][data-v-a4d3750c] { white-space: normal; padding-bottom: .3em;
+.forms-table th[scope=row][data-v-336404db] { white-space: normal; padding-bottom: .3em;
 }
-.forms-table td[data-v-a4d3750c] { min-width: 0; padding: .3em 0 .3em 6.2em; position: relative;
+.forms-table td[data-v-336404db] { min-width: 0; padding: .3em 0 .3em 6.2em; position: relative;
 }
-.forms-table td[data-v-a4d3750c]::before { content: attr(data-label); position: absolute; left: 0; top: .3em; width: 5.8em; opacity: .6; font-size: .85em;
+.forms-table td[data-v-336404db]::before { content: attr(data-label); position: absolute; left: 0; top: .3em; width: 5.8em; opacity: .6; font-size: .85em;
 }
-.forms-table td.none[data-v-a4d3750c] { display: none;
+.forms-table td.none[data-v-336404db] { display: none;
 }
 }
 /*
