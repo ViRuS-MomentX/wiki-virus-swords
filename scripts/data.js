@@ -1239,7 +1239,7 @@ const items = [
     damage: 13,
     speed: 1.6,
     icon: "images/other/d94c8a111d.png",
-    obtain: "Ковка в Тёмном храме, в полнолуние",
+    obtain: "Ковка в Тёмном храме",
     blood: "night",
     form: 1,
     method: "forge",
@@ -1902,7 +1902,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/28d8899b90.png",
+    icon: "images/other/4250306ab2.png",
     obtain: "Эволюция Призрачного стража в Тёмном храме",
     blood: "night",
     form: 1,
@@ -3295,7 +3295,7 @@ const altar = [
     kind: "forge",
     result: "stars_edge",
     at: "Тёмный храм",
-    time: "только в полнолуние, ночью",
+    time: "",
     blood: "",
     form: 0,
     costs: [
@@ -4186,7 +4186,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "",
-        icon: "images/other/28d8899b90.png",
+        icon: "images/other/4250306ab2.png",
         caption: "Страж безлунья"
       },
       {
@@ -4716,7 +4716,7 @@ const blood = [
       {
         id: "moonless_guard",
         name: "Страж безлунья",
-        icon: "images/other/28d8899b90.png",
+        icon: "images/other/4250306ab2.png",
         form: 1,
         crown: false
       }
