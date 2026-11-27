@@ -1,13 +1,13 @@
 const counts = {
-  weapons: 34,
+  weapons: 35,
   materials: 40,
-  trophies: 51
+  trophies: 52
 };
 const built = "2026-11-27";
 const words = {
-  weapons: "клинка",
+  weapons: "клинков",
   materials: "материалов",
-  trophies: "достижение"
+  trophies: "достижения"
 };
 const icons = {
   forge_heart: "images/icons/forge_heart.png",
@@ -71,7 +71,6 @@ const guideIcons = {
   wind_charge: "images/guide/wind_charge.png",
   nether_brick: "images/guide/nether_brick.png",
   compass: "images/guide/compass.png",
-  map: "images/guide/map.png",
   lapis_block: "images/guide/lapis_block.png",
   diamond_block: "images/guide/diamond_block.png",
   gold_block: "images/guide/gold_block.png",
@@ -98,7 +97,7 @@ const guideIcons = {
   night_compass: "images/guide/compass.png",
   unknown_compass: "images/guide/compass.png",
   forge_compass: "images/guide/compass.png",
-  jungle_map: "images/guide/jungle_map.png",
+  jungle_compass: "images/guide/compass.png",
   "minecraft:spyglass": "images/guide/minecraft:spyglass.png",
   "minecraft:wither_skeleton_skull": "images/guide/minecraft:wither_skeleton_skull.png",
   "minecraft:totem_of_undying": "images/guide/totem_of_undying.png",
@@ -314,6 +313,7 @@ const rarities = [
       "Звёздная грань",
       "Реквием девятого неба",
       "Истинный Экскалибур",
+      "Страж безлунья",
       "Печать ночи"
     ]
   },
@@ -1871,6 +1871,47 @@ const items = [
     model3d: true
   },
   {
+    kind: "weapon",
+    id: "moonless_guard",
+    name: "Страж безлунья",
+    rarity: "CELESTIAL_NIGHT",
+    rarityLabel: "Небесная",
+    line: "night",
+    lore: [
+      '<span style="color:#808080"><em>Стража, которая не спит в ночь без луны.</em></span>',
+      '<span style="color:#808080"><em>Ей не нужно видеть цель: хватит твоего взгляда.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Бесплотность",
+        colour: "#7F8BFF",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Каждый четвёртый удар проходит насквозь.</span> <span>Фантомы не трогают владельца.</span>"
+      },
+      {
+        name: "Ночной дозор",
+        colour: "#7F8BFF",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "20 с",
+        text: "<span>Семь фантомов 12 секунд кружат вокруг вас</span> <span>и режут задетых врагов: 4 урона.</span> <span>Повторный правый клик — стая по одному</span> <span>пикирует со всех сторон на цель под взглядом:</span> <span>6 урона за каждого фантома.</span>"
+      }
+    ],
+    stats: "Урон 14 · Скорость 1.6",
+    damage: 14,
+    speed: 1.6,
+    icon: "images/other/28d8899b90.png",
+    obtain: "Эволюция Призрачного стража в Тёмном храме",
+    blood: "night",
+    form: 1,
+    method: "evolve",
+    methodLabel: "Эволюция у алтаря",
+    recipe: false,
+    model3d: true
+  },
+  {
     kind: "material",
     id: "demon_soul",
     name: "Душа демона",
@@ -3114,6 +3155,25 @@ const altar = [
   },
   {
     kind: "evolve",
+    result: "moonless_guard",
+    from: "phantom_guard",
+    at: "Тёмный храм",
+    time: "",
+    blood: "",
+    form: 0,
+    costs: [
+      {
+        key: "celestial_shard",
+        n: 32
+      },
+      {
+        key: "v:phantom_membrane",
+        n: 16
+      }
+    ]
+  },
+  {
+    kind: "evolve",
     result: "all_black",
     from: "imperium",
     at: "Незеритовая кузня",
@@ -3838,6 +3898,14 @@ const chains = [
       {
         id: "true_excalibur",
         sep: "→"
+      },
+      {
+        id: "phantom_guard",
+        sep: "·"
+      },
+      {
+        id: "moonless_guard",
+        sep: "→"
       }
     ]
   },
@@ -4110,6 +4178,16 @@ const achievements = [
         condition: "Получить Реквием девятого неба",
         icon: "images/other/6131db9961.png",
         caption: "Реквием девятого неба"
+      },
+      {
+        key: "sleepless",
+        title: "Бессонница",
+        description: "Фантомы приходят к тем, кто не спит. Теперь — по твоему взгляду.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "",
+        icon: "images/other/28d8899b90.png",
+        caption: "Страж безлунья"
       },
       {
         key: "worthy",
@@ -4553,7 +4631,7 @@ const blood = [
     motto: "Кровь тех, кто первым поднялся к облакам. Земля ей тесна.",
     perks: [
       "Падения ранят вдвое слабее, снаряды — на 30% слабее.",
-      "Двойной прыжок: ещё раз в воздухе, падение после него не ранит. Днём под открытым небом — скорость. Разбег: бег по земле разгоняет до 1,75× скорости.",
+      "Двойной прыжок: ещё раз в воздухе, падение после него не ранит. Днём под открытым небом — скорость. Разбег по земле — до 1,75× скорости.",
       "Полёт: прыжок в воздухе и удержание — полёт рывками. Заряд полёта восстанавливается всегда, кроме мгновений, когда тратится."
     ],
     formless: false,
@@ -4599,7 +4677,7 @@ const blood = [
     perks: [
       "Падения ранят вдвое слабее, снаряды — на 30% слабее.",
       "Двойной прыжок: ещё раз в воздухе, падение после него не ранит. Разбег: бег по земле разгоняет до 1,75× скорости.",
-      "Полёт, как у небесной крови; ночью под открытым небом — ночное зрение. Восходящий поток: смертельный удар подбрасывает в небо с тремя сердцами, раз в 10 минут.",
+      "Полёт, как у небесной крови; ночью под небом — ночное зрение. Восходящий поток: смертельный удар подбрасывает в небо с тремя сердцами, раз в 10 минут.",
       "Восходящий поток пробуждён: смертельный удар не убивает — 30 с полёта без счёта, регенерация и три падших серафима. Раз в 10 минут."
     ],
     formless: false,
@@ -4632,6 +4710,13 @@ const blood = [
         id: "night_fury",
         name: "Ночная фурия",
         icon: "images/icons/night_fury.png",
+        form: 1,
+        crown: false
+      },
+      {
+        id: "moonless_guard",
+        name: "Страж безлунья",
+        icon: "images/other/28d8899b90.png",
         form: 1,
         crown: false
       }
@@ -4903,7 +4988,7 @@ const recipes = [
       "v:nether_brick",
       null,
       "v:nether_brick",
-      "v:map",
+      "v:compass",
       "v:nether_brick",
       null,
       "v:nether_brick",
@@ -4911,13 +4996,13 @@ const recipes = [
     ]
   },
   {
-    result: "g:jungle_map",
+    result: "g:jungle_compass",
     grid: [
       null,
       "v:emerald",
       null,
       "v:emerald",
-      "v:map",
+      "v:compass",
       "v:emerald",
       null,
       "v:emerald",
@@ -4947,7 +5032,6 @@ const vanillaNames = {
   nether_star: "Звезда Незера",
   compass: "Компас",
   wind_charge: "Заряд ветра",
-  map: "Пустая карта",
   nether_brick: "Незерский кирпич",
   emerald: "Изумруд",
   lapis_block: "Лазуритовый блок",
@@ -4976,7 +5060,7 @@ const vanillaNames = {
 const guideNames = {
   air_compass: "Компас воздуха",
   forge_compass: "Компас кузни",
-  jungle_map: "Карта джунглей",
+  jungle_compass: "Компас джунглей",
   night_compass: "Ночной компас"
 };
 const data = {

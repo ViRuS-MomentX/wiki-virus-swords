@@ -3694,7 +3694,7 @@ const _sfc_main$c = {
             }, null, 8, ["recipe"]);
           }), 128))
         ]),
-        _cache[0] || (_cache[0] = createStaticVNode('<div class="callout"><b>Клинки пепельной крови на верстаке не делаются.</b> Бедствие, Воля Демона, Империум, Убийца демонов, Сборщик душ и Магморос — только эволюция у алтаря Незеритовой кузни. </div><div class="callout"><b>Команда <code>/crafts</code></b> — меню всего, что можно скрафтить из того, что у вас в инвентаре: вкладка предметов VirusSwords и вкладка обычных предметов игры. ЛКМ по предмету — скрафтить один раз, Shift+ЛКМ — сколько хватит ресурсов. Кнопка внизу показывает и недоступные рецепты — с тем, чего не хватает. Работает по тем же правилам, что верстак. </div><div class="callout"><b>Компас воздуха, Компас кузни и Карта джунглей</b> крафтятся всегда — даже пока святилище ещё не появилось в мире. Компас тогда крутится, карта — чистый пергамент; возьмите их в руку, когда святилище встанет, — они сами найдут дорогу. </div><div class="callout"><b>Если результат не появляется</b> — проверьте, что предметы плагина настоящие: обычный меч вместо Погибели рецепт не примет. </div><h3 id="craft-other">Не на верстаке</h3>', 5)),
+        _cache[0] || (_cache[0] = createStaticVNode('<div class="callout"><b>Клинки пепельной крови на верстаке не делаются.</b> Бедствие, Воля Демона, Империум, Убийца демонов, Сборщик душ и Магморос — только эволюция у алтаря Незеритовой кузни. </div><div class="callout"><b>Команда <code>/crafts</code></b> — меню всего, что можно скрафтить из того, что у вас в инвентаре: вкладка предметов VirusSwords и вкладка обычных предметов игры. ЛКМ по предмету — скрафтить один раз, Shift+ЛКМ — сколько хватит ресурсов. Кнопка внизу показывает и недоступные рецепты — с тем, чего не хватает. Работает по тем же правилам, что верстак. </div><div class="callout"><b>Компас воздуха, Компас кузни и Компас джунглей</b> крафтятся всегда — даже пока святилище ещё не появилось в мире: в центр рецепта кладут обычный компас. Пока святилища нет, стрелка кружится; возьмите компас в руку, когда святилище встанет, — он сам найдёт дорогу. </div><div class="callout"><b>Если результат не появляется</b> — проверьте, что предметы плагина настоящие: обычный меч вместо Погибели рецепт не примет. </div><h3 id="craft-other">Не на верстаке</h3>', 5)),
         createBaseVNode("div", _hoisted_4$9, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(groups.value, (g) => {
             return openBlock(), createElementBlock("article", {
@@ -3970,7 +3970,9 @@ const _sfc_main$a = {
         _cache[17] || (_cache[17] = createBaseVNode("p", null, [
           createTextVNode("Синие клинки куют в "),
           createBaseVNode("b", null, "Тёмном храме"),
-          createTextVNode("; они признают только ночную небесную кровь.")
+          createTextVNode("; они признают только ночную небесную кровь. Там же Призрачный страж становится "),
+          createBaseVNode("b", null, "Стражем безлунья"),
+          createTextVNode(": его стая кружит рядом, пока вы не укажете ей цель взглядом.")
         ], -1)),
         createBaseVNode("div", _hoisted_28$2, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(forgedAt("Тёмный храм"), (e, i) => {
@@ -4578,7 +4580,7 @@ const _sfc_main$7 = {
           _: 1
         }),
         createVNode(_sfc_main$8),
-        _cache[144] || (_cache[144] = createStaticVNode('<div class="flow" aria-label="Путь через святилище"><div class="step"><b>Вход</b><span>туннель, ступени или ворота</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Три комнаты</b><span>в каждой стража; с неё падают осколки</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Алтарь</b><span>откроется, когда падёт вся стража: эволюция, заточка, испытания</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Арена</b><span>испытание: пять волн, в пятой — страж</span></div></div><h3>Пять святилищ коротко</h3><div class="tbl"><table><thead><tr><th>Святилище</th><th>Где</th><th>Чем искать</th><th>Страж</th><th>Кочует</th><th>Кровь</th></tr></thead><tbody><tr><th scope="row"><a href="#forge">Незеритовая кузня</a></th><td>Незер, в толще незерака</td><td>Компас кузни</td><td>Горнило</td><td>да</td><td>пепельная</td></tr><tr><th scope="row"><a href="#temple">Небесный храм</a></th><td>верхний мир, остров на высоте 200</td><td>Компас воздуха</td><td>Серафим Падшего Рассвета</td><td>да, и рушится от Печати ночи</td><td>небесная</td></tr><tr><th scope="row"><a href="#jungle">Храм джунглей</a></th><td>джунгли</td><td>Карта джунглей</td><td>Древний страж джунглей</td><td>да</td><td>предков</td></tr><tr><th scope="row"><a href="#night">Тёмный храм</a></th><td>верхний мир, только ночью</td><td>Ночной компас</td><td>Пустотный Серафим (платформа)</td><td>каждую ночь на новом месте</td><td>ночная небесная</td></tr><tr><th scope="row"><a href="#factory">Древняя фабрика</a></th><td>глубоко под землёй</td><td>Неизвестный компас</td><td>Предвестник</td><td>нет</td><td>техноорганическая</td></tr></tbody></table></div><h3>Как найти святилище</h3><p>Каждое святилище ищется своим предметом. Компас ведёт к храму, где бы тот ни стоял; карта показывает место, где святилище стояло, когда её сделали.</p>', 5)),
+        _cache[144] || (_cache[144] = createStaticVNode('<div class="flow" aria-label="Путь через святилище"><div class="step"><b>Вход</b><span>туннель, ступени или ворота</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Три комнаты</b><span>в каждой стража; с неё падают осколки</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Алтарь</b><span>откроется, когда падёт вся стража: эволюция, заточка, испытания</span></div><span class="to" aria-hidden="true">→</span><div class="step"><b>Арена</b><span>испытание: пять волн, в пятой — страж</span></div></div><h3>Пять святилищ коротко</h3><div class="tbl"><table><thead><tr><th>Святилище</th><th>Где</th><th>Чем искать</th><th>Страж</th><th>Кочует</th><th>Кровь</th></tr></thead><tbody><tr><th scope="row"><a href="#forge">Незеритовая кузня</a></th><td>Незер, в толще незерака</td><td>Компас кузни</td><td>Горнило</td><td>да</td><td>пепельная</td></tr><tr><th scope="row"><a href="#temple">Небесный храм</a></th><td>верхний мир, остров на высоте 200</td><td>Компас воздуха</td><td>Серафим Падшего Рассвета</td><td>да, и рушится от Печати ночи</td><td>небесная</td></tr><tr><th scope="row"><a href="#jungle">Храм джунглей</a></th><td>джунгли</td><td>Компас джунглей</td><td>Древний страж джунглей</td><td>да</td><td>предков</td></tr><tr><th scope="row"><a href="#night">Тёмный храм</a></th><td>верхний мир, только ночью</td><td>Ночной компас</td><td>Пустотный Серафим (платформа)</td><td>каждую ночь на новом месте</td><td>ночная небесная</td></tr><tr><th scope="row"><a href="#factory">Древняя фабрика</a></th><td>глубоко под землёй</td><td>Неизвестный компас</td><td>Предвестник</td><td>нет</td><td>техноорганическая</td></tr></tbody></table></div><h3>Как найти святилище</h3><p>Каждое святилище ищется своим компасом. Компас ведёт к святилищу, где бы то ни стояло, и поворачивается за ним, когда оно переезжает. Пока святилища нет — или ночной компас днём, — стрелка кружится. Прежние Карта кузни и Карта джунглей стали компасами: старые карты превращаются в них сами, стоит взять их в руку.</p>', 5)),
         createBaseVNode("div", _hoisted_2$7, [
           createBaseVNode("div", _hoisted_3$6, [
             createVNode(_sfc_main$v, {
@@ -4602,12 +4604,12 @@ const _sfc_main$7 = {
           ]),
           createBaseVNode("div", _hoisted_5$6, [
             createVNode(_sfc_main$v, {
-              recipe: recipe("g:jungle_map"),
+              recipe: recipe("g:jungle_compass"),
               small: ""
             }, null, 8, ["recipe"]),
             _cache[3] || (_cache[3] = createBaseVNode("div", null, [
-              createBaseVNode("h4", null, "Карта джунглей"),
-              createBaseVNode("p", { class: "small muted" }, "Отмечает Храм джунглей.")
+              createBaseVNode("h4", null, "Компас джунглей"),
+              createBaseVNode("p", { class: "small muted" }, "Указывает на Храм джунглей; работает в верхнем мире.")
             ], -1))
           ]),
           createBaseVNode("div", _hoisted_6$6, [
