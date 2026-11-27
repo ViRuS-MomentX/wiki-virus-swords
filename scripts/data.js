@@ -1,7 +1,7 @@
 const counts = {
-  weapons: 35,
+  weapons: 36,
   materials: 40,
-  trophies: 52
+  trophies: 53
 };
 const built = "2026-11-27";
 const words = {
@@ -347,6 +347,7 @@ const rarities = [
       "Энцефало-меч",
       "Энцефало-клинок",
       "Антихрист",
+      "X-Calibre",
       "Древняя деталь",
       "Ядро Предвестника",
       "Призывной медный голем",
@@ -1814,7 +1815,7 @@ const items = [
         trigger: "Зажать ПКМ",
         kind: "hold",
         rest: "45 с. Падение не ранит",
-        text: "<span>Пока держите, до 6 секунд, вы медленно</span> <span>возноситесь в нимбе красных молний: каждые</span> <span>полсекунды разряд бьёт трёх ближайших врагов</span> <span>в 10 блоках, по 15 урона, и копит «Нет предела</span> <span>совершенству». Отпустите — удар о землю в</span> <span>5 блоках: 12 урона и +2 за каждый блок</span> <span>подъёма, до 20, и отброс.</span>"
+        text: "<span>Пока держите, до 6 секунд, вы медленно</span> <span>возноситесь в нимбе красных молний: каждые</span> <span>полсекунды разряд бьёт трёх ближайших врагов</span> <span>в 10 блоках, по 12 урона, и копит «Нет предела</span> <span>совершенству». Отпустите — удар о землю в</span> <span>5 блоках: 10 урона и +1,5 за каждый блок</span> <span>подъёма, до 20, и отброс.</span>"
       },
       {
         name: "Лазерный луч",
@@ -1822,7 +1823,7 @@ const items = [
         trigger: "Shift + удерживать правый клик",
         kind: "other",
         rest: null,
-        text: "<span>Луч до стены, до 48 блоков: 3 урона всем</span> <span>на линии дважды в секунду. Без перезарядки.</span>"
+        text: "<span>Луч до стены, до 48 блоков: 3 урона всем</span> <span>на линии 4 раза в секунду. Без перезарядки.</span>"
       }
     ],
     stats: "Урон 14 · Скорость 1.6",
@@ -1908,6 +1909,55 @@ const items = [
     form: 1,
     method: "evolve",
     methodLabel: "Эволюция у алтаря",
+    recipe: false,
+    model3d: true
+  },
+  {
+    kind: "weapon",
+    id: "x_calibre",
+    name: "X-Calibre",
+    rarity: "TECHNO",
+    rarityLabel: "Техно",
+    line: "techno",
+    lore: [
+      '<span style="color:#808080"><em>Экскалибур, каким его выковала бы машина.</em></span>',
+      '<span style="color:#808080"><em>Из камня его вынет только тот, в ком ток.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Биозамок",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Слушается только технокровь четвёртой</span> <span>формы. В руке чужой крови бьёт током:</span> <span>полсердца в секунду.</span>"
+      },
+      {
+        name: "Икс-волна",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "10 с",
+        text: "<span>Плазменный X в три блока летит на 20</span> <span>блоков: 12 урона и огонь каждому на пути.</span> <span>Врезавшись в стену, впечатывается в неё</span> <span>и 3 секунды горит.</span>"
+      },
+      {
+        name: "Расстыковка",
+        colour: "#FFAA00",
+        trigger: "Shift + правый клик",
+        kind: "other",
+        rest: "45 с",
+        text: "<span>Четыре луча гарды улетают дронами:</span> <span>каждый берёт врага, на цель под взглядом —</span> <span>двое. 8 секунд режут лазером: 2 урона</span> <span>4 раза в секунду, убитого меняют на</span> <span>ближайшего. Потом возвращаются в гарду.</span>"
+      }
+    ],
+    stats: "Урон 15 · Скорость 1.6",
+    damage: 15,
+    speed: 1.6,
+    icon: "images/other/22b558c507.png",
+    obtain: "Дар Древней фабрики на четвёртой форме техноорганической крови",
+    blood: "techno",
+    form: 4,
+    method: "gift",
+    methodLabel: "Дар святилища",
     recipe: false,
     model3d: true
   },
@@ -3970,6 +4020,10 @@ const chains = [
       {
         id: "antichrist",
         sep: "→"
+      },
+      {
+        id: "x_calibre",
+        sep: "·"
       }
     ]
   },
@@ -4450,6 +4504,16 @@ const achievements = [
         caption: "Антихрист"
       },
       {
+        key: "x_marks",
+        title: "Икс отмечает место",
+        description: "Меч из камня, что слушается только своих. Чужих он бьёт током.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "",
+        icon: "images/other/22b558c507.png",
+        caption: "X-Calibre"
+      },
+      {
         key: "sharp_mind",
         title: "Острый ум",
         description: "Мысль режет глубже стали. Теперь у мысли есть рукоять.",
@@ -4840,6 +4904,13 @@ const blood = [
         icon: "images/other/9c859cd09e.png",
         form: 4,
         crown: true
+      },
+      {
+        id: "x_calibre",
+        name: "X-Calibre",
+        icon: "images/other/22b558c507.png",
+        form: 4,
+        crown: false
       },
       {
         id: "encephalo_blade",
