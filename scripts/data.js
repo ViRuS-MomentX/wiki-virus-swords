@@ -1,12 +1,12 @@
 const counts = {
-  weapons: 36,
-  materials: 40,
-  trophies: 53
+  weapons: 37,
+  materials: 43,
+  trophies: 54
 };
-const built = "2026-11-27";
+const built = "2026-11-28";
 const words = {
   weapons: "клинков",
-  materials: "материалов",
+  materials: "материала",
   trophies: "достижения"
 };
 const icons = {
@@ -181,7 +181,9 @@ const rarities = [
       "Душа демона",
       "Осколок души",
       "Дымовой гриб",
-      "Огненный мешочек"
+      "Огненный мешочек",
+      "Рукоять Мятежника",
+      "Гарда Мятежника"
     ]
   },
   {
@@ -199,12 +201,14 @@ const rarities = [
       "Люцифер",
       "Магморос",
       "Кримсон",
+      "Мятежник",
       "Душа Иссушителя",
       "Адская сущность",
       "Королевские часы",
       "Шестерня вспять",
       "Тайник пепла",
-      "Душа лорда"
+      "Душа лорда",
+      "Лезвие Мятежника"
     ]
   },
   {
@@ -1199,7 +1203,7 @@ const items = [
     damage: 12,
     speed: 1.6,
     icon: "images/icons/phantom_guard.png",
-    obtain: "Сокровищница Проклятого замка · сундуки Целестиала в Забытом мире",
+    obtain: "Сокровищница Проклятого замка, 50% (где нет лезвия Мятежника) · сундуки Целестиала в Забытом мире",
     blood: "sky",
     form: 2,
     method: "loot",
@@ -1515,7 +1519,7 @@ const items = [
     damage: 15,
     speed: 1.6,
     icon: "images/other/5e5218c8bc.png",
-    obtain: "Эволюция Терра-блейда в Храме джунглей, 3-я форма крови предков",
+    obtain: "Эволюция Терра-блейда в Храме джунглей, 3-я форма Терра крови",
     blood: "steel",
     form: 3,
     method: "evolve",
@@ -1635,7 +1639,7 @@ const items = [
     damage: 16,
     speed: 1.6,
     icon: "images/icons/celestial.png",
-    obtain: "Не куётся: только сундуки Целестиала в Забытом мире; кровь предков 5-й формы",
+    obtain: "Не куётся: только сундуки Целестиала в Забытом мире; Терра кровь 5-й формы",
     blood: "steel",
     form: 5,
     method: "loot",
@@ -1667,7 +1671,7 @@ const items = [
     damage: 15,
     speed: 1.4,
     icon: "images/icons/architect.png",
-    obtain: "Не куётся: только сундуки Целестиала в Забытом мире; кровь предков 5-й формы",
+    obtain: "Не куётся: только сундуки Целестиала в Забытом мире; Терра кровь 5-й формы",
     blood: "steel",
     form: 5,
     method: "loot",
@@ -1953,11 +1957,60 @@ const items = [
     damage: 15,
     speed: 1.6,
     icon: "images/other/22b558c507.png",
-    obtain: "Дар Древней фабрики на четвёртой форме техноорганической крови",
+    obtain: "Сборка у алтаря Древней фабрики, технокровь 4-й формы: 64 древние детали, звезда Незера и лезвие Мятежника",
     blood: "techno",
     form: 4,
-    method: "gift",
-    methodLabel: "Дар святилища",
+    method: "assemble",
+    methodLabel: "Сборка у алтаря",
+    recipe: false,
+    model3d: true
+  },
+  {
+    kind: "weapon",
+    id: "rebellion",
+    name: "Мятежник",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "rebellion",
+    lore: [
+      '<span style="color:#808080"><em>Меч сына легендарного демона. Говорят,</em></span>',
+      '<span style="color:#808080"><em>рукоять до сих пор пахнет пиццей.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Стиль",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Удары поднимают ранг: D, C, B, A, S, SS, SSS —</span> <span>+5% урона за каждый. Пропущенный удар</span> <span>роняет ранг, без драки он гаснет.</span>"
+      },
+      {
+        name: "Стингер",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "5 с",
+        text: "<span>Выпад на 8 блоков: первый враг на пути —</span> <span>14 урона и отброс, враги рядом с ним — 6.</span>"
+      },
+      {
+        name: "Триггер демона",
+        colour: "#FFAA00",
+        trigger: "Shift + правый клик",
+        kind: "other",
+        rest: "60 с",
+        text: "<span>С ранга S: 12 секунд демона — урон +30%,</span> <span>скорость II, регенерация II, сопротивление,</span> <span>и ранг не гаснет.</span>"
+      }
+    ],
+    stats: "Урон 14 · Скорость 1.6",
+    damage: 14,
+    speed: 1.6,
+    icon: "images/other/2842c9ddc2.png",
+    obtain: "Сборка у алтаря Незеритовой кузни, пепельная кровь 3-й формы: гарда, рукоять и лезвие Мятежника",
+    blood: "ember",
+    form: 3,
+    method: "assemble",
+    methodLabel: "Сборка у алтаря",
     recipe: false,
     model3d: true
   },
@@ -2261,7 +2314,7 @@ const items = [
       '<span style="color:#AAAAAA">Улучшает алтарь Храма джунглей: открывает</span>',
       '<span style="color:#AAAAAA">третье испытание. Часть Тессеракта.</span>',
       "",
-      '<span style="color:#00AA00">Отравляет носящего — кроме крови предков и техноорганической.</span>'
+      '<span style="color:#00AA00">Отравляет носящего — кроме Терра крови и техноорганической.</span>'
     ],
     abilities: [],
     stats: "",
@@ -2308,11 +2361,11 @@ const items = [
       '<span style="color:#808080"><em>Стрелку тянет вниз, под корни, к зелёному сердцу.</em></span>',
       "",
       '<span style="color:#AAAAAA">Указывает путь к Терра-подземелью.</span>',
-      '<span style="color:#808080">Собирает кровь предков у алтаря Храма джунглей.</span>'
+      '<span style="color:#808080">Собирает Терра кровь у алтаря Храма джунглей.</span>'
     ],
     abilities: [],
     stats: "",
-    obtain: "Сборка кровью предков у алтаря Храма джунглей",
+    obtain: "Сборка Терра кровью у алтаря Храма джунглей",
     icon: "images/icons/terra_compass.png",
     method: "assemble",
     methodLabel: "Сборка у алтаря",
@@ -2362,7 +2415,7 @@ const items = [
     ],
     abilities: [],
     stats: "",
-    obtain: "Ковка у алтаря Храма джунглей кровью предков с 3-й формы: 8 терра-слитков и по 16 осколков души, небесных и реликтовых",
+    obtain: "Ковка у алтаря Храма джунглей Терра кровью с 3-й формы: 8 терра-слитков и по 16 осколков души, небесных и реликтовых",
     icon: "images/icons/forgotten_key_moss.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -2389,7 +2442,7 @@ const items = [
     ],
     abilities: [],
     stats: "",
-    obtain: "Ковка у алтаря Храма джунглей кровью предков с 4-й формы: 16 терра-слитков, по 64 осколка каждого вида и Сердце джунглей",
+    obtain: "Ковка у алтаря Храма джунглей Терра кровью с 4-й формы: 16 терра-слитков, по 64 осколка каждого вида и Сердце джунглей",
     icon: "images/icons/forgotten_key.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -2517,11 +2570,11 @@ const items = [
         trigger: "ПКМ",
         kind: "rmb",
         rest: "1 с",
-        text: "<span>Тянет к вам существо или лежащий предмет, пока</span> <span>магнит в руке. Повторный клик отпускает.</span> <span>Кровь предков, со второй формы.</span> <span>Только из сундуков Забытого мира.</span>"
+        text: "<span>Тянет к вам существо или лежащий предмет, пока</span> <span>магнит в руке. Повторный клик отпускает.</span> <span>Терра кровь, со второй формы.</span> <span>Только из сундуков Забытого мира.</span>"
       }
     ],
     stats: "",
-    obtain: "Ковка у алтаря Храма джунглей: 16 терра-слитков, 64 реликтовых осколка; кровь предков с 3-й формы · сундуки Целестиала в Забытом мире",
+    obtain: "Ковка у алтаря Храма джунглей: 16 терра-слитков, 64 реликтовых осколка; Терра кровь с 3-й формы · сундуки Целестиала в Забытом мире",
     icon: "images/icons/terra_magnet.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -2545,11 +2598,11 @@ const items = [
         trigger: "ПКМ",
         kind: "rmb",
         rest: "4 мин",
-        text: "<span>Три болотника на минуту бьются за вас, а ведьма</span> <span>держится рядом и бросает в вас зелья исцеления,</span> <span>когда вы ранены. Только кровь предков.</span>"
+        text: "<span>Три болотника на минуту бьются за вас, а ведьма</span> <span>держится рядом и бросает в вас зелья исцеления,</span> <span>когда вы ранены. Только Терра кровь.</span>"
       }
     ],
     stats: "",
-    obtain: "Ковка у алтаря Храма джунглей: 128 реликтовых осколков, кровь предков",
+    obtain: "Ковка у алтаря Храма джунглей: 128 реликтовых осколков, Терра кровь",
     icon: "images/other/0096309d78.png",
     method: "forge",
     methodLabel: "Ковка у алтаря",
@@ -2998,6 +3051,80 @@ const items = [
     methodLabel: "Сборка у алтаря",
     recipe: false,
     model3d: false
+  },
+  {
+    kind: "material",
+    id: "rebellion_hilt",
+    name: "Рукоять Мятежника",
+    rarity: "HELLISH",
+    rarityLabel: "Адская",
+    line: "material",
+    lore: [
+      '<span style="color:#808080"><em>Кожа на ней стёрта чужой рукой. Чьей — не скажет.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Одна из трёх частей Мятежника. Лежит в сундуках</span>',
+      '<span style="color:#AAAAAA">бастионов, и найти её может лишь пепельная кровь —</span>',
+      '<span style="color:#AAAAAA">один раз за жизнь. Потерял — выменивай у своих.</span>',
+      '<span style="color:#AAAAAA">Гарда, рукоять и лезвие соединяются у алтаря</span>',
+      '<span style="color:#AAAAAA">Незеритовой кузни, с третьей формы.</span>'
+    ],
+    abilities: [],
+    stats: "",
+    obtain: "Сундуки любого бастиона, 10%: только пепельная кровь, один раз за жизнь",
+    icon: "images/other/d1e75b98ee.png",
+    method: "loot",
+    methodLabel: "Находка",
+    recipe: false,
+    model3d: true
+  },
+  {
+    kind: "material",
+    id: "rebellion_guard",
+    name: "Гарда Мятежника",
+    rarity: "HELLISH",
+    rarityLabel: "Адская",
+    line: "material",
+    lore: [
+      '<span style="color:#808080"><em>Череп демона. Глаза ещё следят за тобой.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Одна из трёх частей Мятежника. Лежит в сундуках</span>',
+      '<span style="color:#AAAAAA">крепостей Незера, и найти её может лишь пепельная</span>',
+      '<span style="color:#AAAAAA">кровь — один раз за жизнь. Потерял — выменивай.</span>',
+      '<span style="color:#AAAAAA">Гарда, рукоять и лезвие соединяются у алтаря</span>',
+      '<span style="color:#AAAAAA">Незеритовой кузни, с третьей формы.</span>'
+    ],
+    abilities: [],
+    stats: "",
+    obtain: "Сундуки крепости Незера, 10%: только пепельная кровь, один раз за жизнь",
+    icon: "images/other/5a1432431c.png",
+    method: "loot",
+    methodLabel: "Находка",
+    recipe: false,
+    model3d: true
+  },
+  {
+    kind: "material",
+    id: "rebellion_blade",
+    name: "Лезвие Мятежника",
+    rarity: "SUPER_HELLISH",
+    rarityLabel: "Супер-адская",
+    line: "material",
+    lore: [
+      '<span style="color:#808080"><em>Стали в нём хватило бы на двоих.</em></span>',
+      "",
+      '<span style="color:#AAAAAA">Лежит в сокровищнице Проклятого замка — для</span>',
+      '<span style="color:#AAAAAA">любой крови, но каждому лишь один раз за жизнь.</span>',
+      '<span style="color:#AAAAAA">Пепельной крови — третья часть Мятежника,</span>',
+      '<span style="color:#AAAAAA">технокрови четвёртой формы — сердце X-Calibre.</span>'
+    ],
+    abilities: [],
+    stats: "",
+    obtain: "Сокровищница Проклятого замка, 50%: любая кровь, один раз за жизнь (в других замках там Призрачный страж)",
+    icon: "images/other/44296b9fba.png",
+    method: "loot",
+    methodLabel: "Находка",
+    recipe: false,
+    model3d: true
   }
 ];
 const altar = [
@@ -3148,7 +3275,7 @@ const altar = [
     from: "terra_blade",
     at: "Храм джунглей",
     time: "",
-    blood: "Кровь предков",
+    blood: "Терра кровь",
     form: 3,
     costs: [
       {
@@ -3273,7 +3400,7 @@ const altar = [
     from: "celestial",
     at: "Храм джунглей",
     time: "",
-    blood: "Кровь предков",
+    blood: "Терра кровь",
     form: 4,
     costs: [
       {
@@ -3422,6 +3549,28 @@ const altar = [
       {
         key: "soul_shard",
         n: 32
+      }
+    ]
+  },
+  {
+    kind: "forge",
+    result: "rebellion",
+    at: "Незеритовая кузня",
+    time: "",
+    blood: "Пепельная кровь",
+    form: 3,
+    costs: [
+      {
+        key: "rebellion_guard",
+        n: 1
+      },
+      {
+        key: "rebellion_hilt",
+        n: 1
+      },
+      {
+        key: "rebellion_blade",
+        n: 1
       }
     ]
   },
@@ -3608,7 +3757,7 @@ const altar = [
     result: "jungle_box",
     at: "Храм джунглей",
     time: "",
-    blood: "Кровь предков",
+    blood: "Терра кровь",
     form: 1,
     costs: [
       {
@@ -3723,10 +3872,32 @@ const altar = [
   },
   {
     kind: "forge",
+    result: "x_calibre",
+    at: "Древняя фабрика",
+    time: "",
+    blood: "Техноорганическая кровь",
+    form: 4,
+    costs: [
+      {
+        key: "ancient_part",
+        n: 64
+      },
+      {
+        key: "v:nether_star",
+        n: 1
+      },
+      {
+        key: "rebellion_blade",
+        n: 1
+      }
+    ]
+  },
+  {
+    kind: "forge",
     result: "terra_blade",
     at: "Храм джунглей",
     time: "",
-    blood: "Кровь предков",
+    blood: "Терра кровь",
     form: 2,
     costs: [
       {
@@ -3748,7 +3919,7 @@ const altar = [
     result: "terra_compass",
     at: "Храм джунглей",
     time: "",
-    blood: "Кровь предков",
+    blood: "Терра кровь",
     form: 1,
     costs: [
       {
@@ -3766,7 +3937,7 @@ const altar = [
     result: "forgotten_key_moss",
     at: "Храм джунглей",
     time: "",
-    blood: "Кровь предков",
+    blood: "Терра кровь",
     form: 3,
     costs: [
       {
@@ -3792,7 +3963,7 @@ const altar = [
     result: "forgotten_key",
     at: "Храм джунглей",
     time: "",
-    blood: "Кровь предков",
+    blood: "Терра кровь",
     form: 4,
     costs: [
       {
@@ -4002,6 +4173,16 @@ const chains = [
       {
         id: "architect",
         sep: "·"
+      }
+    ]
+  },
+  {
+    key: "rebellion",
+    title: "Мятежник: гарда, рукоять и лезвие",
+    entries: [
+      {
+        id: "rebellion",
+        sep: ""
       }
     ]
   },
@@ -4504,6 +4685,16 @@ const achievements = [
         caption: "Антихрист"
       },
       {
+        key: "son_of_sparda",
+        title: "Сын Спарды",
+        description: "Гарда, рукоять и лезвие снова вместе. Осталось найти красный плащ.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "",
+        icon: "images/other/2842c9ddc2.png",
+        caption: "Мятежник"
+      },
+      {
         key: "x_marks",
         title: "Икс отмечает место",
         description: "Меч из камня, что слушается только своих. Чужих он бьёт током.",
@@ -4636,6 +4827,13 @@ const blood = [
         icon: "images/other/08c5999cab.png",
         form: 3,
         crown: true
+      },
+      {
+        id: "rebellion",
+        name: "Мятежник",
+        icon: "images/other/2842c9ddc2.png",
+        form: 3,
+        crown: false
       },
       {
         id: "demon_will",
@@ -4811,9 +5009,9 @@ const blood = [
   },
   {
     id: "steel",
-    title: "Кровь предков",
-    colour: "#C9CFD6",
-    motto: "Кровь тех, кто стоял в строю до последнего. Её не сдвинуть.",
+    title: "Терра кровь",
+    colour: "#8EE83B",
+    motto: "Кровь самой земли: зелёная, как первый лес. Её не сдвинуть.",
     perks: [
       "Не отбрасывается; яд и иссушение не действуют.",
       "+6 к броне; полсердца каждые 10 секунд.",
