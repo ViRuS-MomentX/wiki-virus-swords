@@ -1,13 +1,13 @@
 const counts = {
-  weapons: 37,
+  weapons: 38,
   materials: 43,
-  trophies: 54
+  trophies: 55
 };
 const built = "2026-11-28";
 const words = {
   weapons: "клинков",
   materials: "материала",
-  trophies: "достижения"
+  trophies: "достижений"
 };
 const icons = {
   forge_heart: "images/icons/forge_heart.png",
@@ -160,7 +160,8 @@ const rarities = [
     period: 0,
     motion: "неподвижная",
     used: [
-      "Демонический резак"
+      "Демонический резак",
+      "Мятежник"
     ]
   },
   {
@@ -182,8 +183,8 @@ const rarities = [
       "Осколок души",
       "Дымовой гриб",
       "Огненный мешочек",
-      "Рукоять Мятежника",
-      "Гарда Мятежника"
+      "Рукоять Спарды",
+      "Гарда Спарды"
     ]
   },
   {
@@ -201,14 +202,14 @@ const rarities = [
       "Люцифер",
       "Магморос",
       "Кримсон",
-      "Мятежник",
+      "Спарда",
       "Душа Иссушителя",
       "Адская сущность",
       "Королевские часы",
       "Шестерня вспять",
       "Тайник пепла",
       "Душа лорда",
-      "Лезвие Мятежника"
+      "Лезвие Спарды"
     ]
   },
   {
@@ -1203,7 +1204,7 @@ const items = [
     damage: 12,
     speed: 1.6,
     icon: "images/icons/phantom_guard.png",
-    obtain: "Сокровищница Проклятого замка, 50% (где нет лезвия Мятежника) · сундуки Целестиала в Забытом мире",
+    obtain: "Сокровищница Проклятого замка, 50% (где нет лезвия Спарды) · сундуки Целестиала в Забытом мире",
     blood: "sky",
     form: 2,
     method: "loot",
@@ -1957,7 +1958,7 @@ const items = [
     damage: 15,
     speed: 1.6,
     icon: "images/other/22b558c507.png",
-    obtain: "Сборка у алтаря Древней фабрики, технокровь 4-й формы: 64 древние детали, звезда Незера и лезвие Мятежника",
+    obtain: "Сборка у алтаря Древней фабрики, технокровь 4-й формы: 64 древние детали, звезда Незера и лезвие Спарды",
     blood: "techno",
     form: 4,
     method: "assemble",
@@ -1967,14 +1968,68 @@ const items = [
   },
   {
     kind: "weapon",
-    id: "rebellion",
-    name: "Мятежник",
+    id: "sparda",
+    name: "Спарда",
     rarity: "SUPER_HELLISH",
     rarityLabel: "Супер-адская",
-    line: "rebellion",
+    line: "sparda",
     lore: [
-      '<span style="color:#808080"><em>Меч сына легендарного демона. Говорят,</em></span>',
-      '<span style="color:#808080"><em>рукоять до сих пор пахнет пиццей.</em></span>'
+      '<span style="color:#808080"><em>Меч легендарного демона, что восстал</em></span>',
+      '<span style="color:#808080"><em>против своих. В его хребте ещё бьётся жизнь.</em></span>'
+    ],
+    abilities: [
+      {
+        name: "Хай-тайм и Хелм-брейкер",
+        colour: "#FF5555",
+        trigger: "Пассивно",
+        kind: "passive",
+        rest: null,
+        text: "<span>Удар с Shift подбрасывает врага в воздух.</span> <span>Удар в падении — сверху вниз: урон +60%,</span> <span>и враги вокруг получают 40% от него.</span>"
+      },
+      {
+        name: "Раунд-трип",
+        colour: "#FF5555",
+        trigger: "ПКМ",
+        kind: "rmb",
+        rest: "8 с",
+        text: "<span>Бросок: меч вращается у первого врага</span> <span>2 секунды, режет всех рядом по 3 урона</span> <span>четыре раза в секунду и возвращается.</span>"
+      },
+      {
+        name: "Проп и Шреддер",
+        colour: "#FFAA00",
+        trigger: "Shift + правый клик",
+        kind: "other",
+        rest: "12 с",
+        text: "<span>Лезвие становится косой: вихрь вокруг</span> <span>подбрасывает врагов (3 удара по 3,5), потом</span> <span>рывок на 4 блока — 9 урона всем на пути.</span>"
+      }
+    ],
+    stats: "Урон 14 · Скорость 1.6",
+    damage: 14,
+    speed: 1.6,
+    icon: "images/other/18411fd5af.png",
+    obtain: "Сборка у алтаря Незеритовой кузни, пепельная кровь 3-й формы: гарда, рукоять и лезвие Спарды",
+    blood: "ember",
+    form: 3,
+    method: "assemble",
+    methodLabel: "Сборка у алтаря",
+    recipe: false,
+    model3d: true
+  },
+  {
+    kind: "weapon",
+    id: "rebel",
+    name: "Мятежник",
+    rarity: "EPIC",
+    rarityLabel: "Эпическая",
+    line: "rebel",
+    lore: [
+      '<span style="color:#808080"><em>Погибель взбунтовалась: холодная сталь</em></span>',
+      '<span style="color:#808080"><em>сама выбрала, кого ей защищать.</em></span>',
+      "",
+      "",
+      "",
+      "",
+      '<span style="color:#808080">Не служит технокрови и крови бездны.</span>'
     ],
     abilities: [
       {
@@ -1991,7 +2046,7 @@ const items = [
         trigger: "ПКМ",
         kind: "rmb",
         rest: "5 с",
-        text: "<span>Выпад на 8 блоков: первый враг на пути —</span> <span>14 урона и отброс, враги рядом с ним — 6.</span>"
+        text: "<span>Выпад на 8 блоков: первый враг на пути —</span> <span>10 урона и отброс, враги рядом с ним — 4.</span>"
       },
       {
         name: "Триггер демона",
@@ -2002,15 +2057,13 @@ const items = [
         text: "<span>С ранга S: 12 секунд демона — урон +30%,</span> <span>скорость II, регенерация II, сопротивление,</span> <span>и ранг не гаснет.</span>"
       }
     ],
-    stats: "Урон 14 · Скорость 1.6",
-    damage: 14,
+    stats: "Урон 9 · Скорость 1.6",
+    damage: 9,
     speed: 1.6,
-    icon: "images/other/18411fd5af.png",
-    obtain: "Сборка у алтаря Незеритовой кузни, пепельная кровь 3-й формы: гарда, рукоять и лезвие Мятежника",
-    blood: "ember",
-    form: 3,
-    method: "assemble",
-    methodLabel: "Сборка у алтаря",
+    icon: "images/other/2a46e61749.png",
+    obtain: "??? В Погибели что-то спит. Что ей нужно, знает только Путеводитель. Не для технокрови и крови бездны",
+    method: "secret",
+    methodLabel: "Секрет",
     recipe: false,
     model3d: true
   },
@@ -3054,15 +3107,15 @@ const items = [
   },
   {
     kind: "material",
-    id: "rebellion_hilt",
-    name: "Рукоять Мятежника",
+    id: "sparda_hilt",
+    name: "Рукоять Спарды",
     rarity: "HELLISH",
     rarityLabel: "Адская",
     line: "material",
     lore: [
       '<span style="color:#808080"><em>Свита, как жила. Чья рука её стёрла — не скажет.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Одна из трёх частей Мятежника. Лежит в сундуках</span>',
+      '<span style="color:#AAAAAA">Одна из трёх частей Спарды. Лежит в сундуках</span>',
       '<span style="color:#AAAAAA">бастионов, и найти её может лишь пепельная кровь —</span>',
       '<span style="color:#AAAAAA">один раз за жизнь. Потерял — выменивай у своих.</span>',
       '<span style="color:#AAAAAA">Гарда, рукоять и лезвие соединяются у алтаря</span>',
@@ -3079,15 +3132,15 @@ const items = [
   },
   {
     kind: "material",
-    id: "rebellion_guard",
-    name: "Гарда Мятежника",
+    id: "sparda_guard",
+    name: "Гарда Спарды",
     rarity: "HELLISH",
     rarityLabel: "Адская",
     line: "material",
     lore: [
       '<span style="color:#808080"><em>Голова демона. Красный глаз ещё следит за тобой.</em></span>',
       "",
-      '<span style="color:#AAAAAA">Одна из трёх частей Мятежника. Лежит в сундуках</span>',
+      '<span style="color:#AAAAAA">Одна из трёх частей Спарды. Лежит в сундуках</span>',
       '<span style="color:#AAAAAA">крепостей Незера, и найти её может лишь пепельная</span>',
       '<span style="color:#AAAAAA">кровь — один раз за жизнь. Потерял — выменивай.</span>',
       '<span style="color:#AAAAAA">Гарда, рукоять и лезвие соединяются у алтаря</span>',
@@ -3104,8 +3157,8 @@ const items = [
   },
   {
     kind: "material",
-    id: "rebellion_blade",
-    name: "Лезвие Мятежника",
+    id: "sparda_blade",
+    name: "Лезвие Спарды",
     rarity: "SUPER_HELLISH",
     rarityLabel: "Супер-адская",
     line: "material",
@@ -3114,7 +3167,7 @@ const items = [
       "",
       '<span style="color:#AAAAAA">Лежит в сокровищнице Проклятого замка — для</span>',
       '<span style="color:#AAAAAA">любой крови, но каждому лишь один раз за жизнь.</span>',
-      '<span style="color:#AAAAAA">Пепельной крови — третья часть Мятежника,</span>',
+      '<span style="color:#AAAAAA">Пепельной крови — третья часть Спарды,</span>',
       '<span style="color:#AAAAAA">технокрови четвёртой формы — сердце X-Calibre.</span>'
     ],
     abilities: [],
@@ -3554,22 +3607,22 @@ const altar = [
   },
   {
     kind: "forge",
-    result: "rebellion",
+    result: "sparda",
     at: "Незеритовая кузня",
     time: "",
     blood: "Пепельная кровь",
     form: 3,
     costs: [
       {
-        key: "rebellion_guard",
+        key: "sparda_guard",
         n: 1
       },
       {
-        key: "rebellion_hilt",
+        key: "sparda_hilt",
         n: 1
       },
       {
-        key: "rebellion_blade",
+        key: "sparda_blade",
         n: 1
       }
     ]
@@ -3887,7 +3940,7 @@ const altar = [
         n: 1
       },
       {
-        key: "rebellion_blade",
+        key: "sparda_blade",
         n: 1
       }
     ]
@@ -4177,12 +4230,26 @@ const chains = [
     ]
   },
   {
-    key: "rebellion",
-    title: "Мятежник: гарда, рукоять и лезвие",
+    key: "sparda",
+    title: "Спарда: гарда, рукоять и лезвие",
     entries: [
       {
-        id: "rebellion",
+        id: "sparda",
         sep: ""
+      }
+    ]
+  },
+  {
+    key: "rebel",
+    title: "Мятежник: Погибель просыпается",
+    entries: [
+      {
+        id: "doom",
+        sep: ""
+      },
+      {
+        id: "rebel",
+        sep: "→"
       }
     ]
   },
@@ -4687,11 +4754,21 @@ const achievements = [
       {
         key: "son_of_sparda",
         title: "Сын Спарды",
-        description: "Гарда, рукоять и лезвие снова вместе. Осталось найти красный плащ.",
+        description: "Гарда, рукоять и лезвие отцовского меча снова вместе. Осталось найти красный плащ.",
         frame: "goal",
         frameLabel: "Цель",
         condition: "",
         icon: "images/other/18411fd5af.png",
+        caption: "Спарда"
+      },
+      {
+        key: "rebel_spirit",
+        title: "Мятежный дух",
+        description: "Не знаю, как ты это сделал. Эта сталь со мной не разговаривает — и, кажется, презирает.",
+        frame: "goal",
+        frameLabel: "Цель",
+        condition: "Получить Мятежник",
+        icon: "images/other/2a46e61749.png",
         caption: "Мятежник"
       },
       {
@@ -4829,8 +4906,8 @@ const blood = [
         crown: true
       },
       {
-        id: "rebellion",
-        name: "Мятежник",
+        id: "sparda",
+        name: "Спарда",
         icon: "images/other/18411fd5af.png",
         form: 3,
         crown: false
