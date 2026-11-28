@@ -2005,7 +2005,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/bb617a73dd.png",
+    icon: "images/other/18411fd5af.png",
     obtain: "Сборка у алтаря Незеритовой кузни, пепельная кровь 3-й формы: гарда, рукоять и лезвие Мятежника",
     blood: "ember",
     form: 3,
@@ -3071,7 +3071,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сундуки любого бастиона, 10%: только пепельная кровь, один раз за жизнь",
-    icon: "images/other/763c0889d3.png",
+    icon: "images/other/e18932d23b.png",
     method: "loot",
     methodLabel: "Находка",
     recipe: false,
@@ -3096,7 +3096,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сундуки крепости Незера, 10%: только пепельная кровь, один раз за жизнь",
-    icon: "images/other/c24e652a14.png",
+    icon: "images/other/611f3f82eb.png",
     method: "loot",
     methodLabel: "Находка",
     recipe: false,
@@ -3120,7 +3120,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сокровищница Проклятого замка, 50%: любая кровь, один раз за жизнь (в других замках там Призрачный страж)",
-    icon: "images/other/373619f6cd.png",
+    icon: "images/other/fd8ae68cc4.png",
     method: "loot",
     methodLabel: "Находка",
     recipe: false,
@@ -4691,7 +4691,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "",
-        icon: "images/other/bb617a73dd.png",
+        icon: "images/other/18411fd5af.png",
         caption: "Мятежник"
       },
       {
@@ -4831,7 +4831,7 @@ const blood = [
       {
         id: "rebellion",
         name: "Мятежник",
-        icon: "images/other/bb617a73dd.png",
+        icon: "images/other/18411fd5af.png",
         form: 3,
         crown: false
       },
