@@ -2005,7 +2005,7 @@ const items = [
     stats: "Урон 14 · Скорость 1.6",
     damage: 14,
     speed: 1.6,
-    icon: "images/other/2842c9ddc2.png",
+    icon: "images/other/bb617a73dd.png",
     obtain: "Сборка у алтаря Незеритовой кузни, пепельная кровь 3-й формы: гарда, рукоять и лезвие Мятежника",
     blood: "ember",
     form: 3,
@@ -3060,7 +3060,7 @@ const items = [
     rarityLabel: "Адская",
     line: "material",
     lore: [
-      '<span style="color:#808080"><em>Кожа на ней стёрта чужой рукой. Чьей — не скажет.</em></span>',
+      '<span style="color:#808080"><em>Свита, как жила. Чья рука её стёрла — не скажет.</em></span>',
       "",
       '<span style="color:#AAAAAA">Одна из трёх частей Мятежника. Лежит в сундуках</span>',
       '<span style="color:#AAAAAA">бастионов, и найти её может лишь пепельная кровь —</span>',
@@ -3071,7 +3071,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сундуки любого бастиона, 10%: только пепельная кровь, один раз за жизнь",
-    icon: "images/other/d1e75b98ee.png",
+    icon: "images/other/763c0889d3.png",
     method: "loot",
     methodLabel: "Находка",
     recipe: false,
@@ -3085,7 +3085,7 @@ const items = [
     rarityLabel: "Адская",
     line: "material",
     lore: [
-      '<span style="color:#808080"><em>Череп демона. Глаза ещё следят за тобой.</em></span>',
+      '<span style="color:#808080"><em>Голова демона. Красный глаз ещё следит за тобой.</em></span>',
       "",
       '<span style="color:#AAAAAA">Одна из трёх частей Мятежника. Лежит в сундуках</span>',
       '<span style="color:#AAAAAA">крепостей Незера, и найти её может лишь пепельная</span>',
@@ -3096,7 +3096,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сундуки крепости Незера, 10%: только пепельная кровь, один раз за жизнь",
-    icon: "images/other/5a1432431c.png",
+    icon: "images/other/c24e652a14.png",
     method: "loot",
     methodLabel: "Находка",
     recipe: false,
@@ -3110,7 +3110,7 @@ const items = [
     rarityLabel: "Супер-адская",
     line: "material",
     lore: [
-      '<span style="color:#808080"><em>Стали в нём хватило бы на двоих.</em></span>',
+      '<span style="color:#808080"><em>Сталь полумесяцем, а по хребту ещё бежит кровь.</em></span>',
       "",
       '<span style="color:#AAAAAA">Лежит в сокровищнице Проклятого замка — для</span>',
       '<span style="color:#AAAAAA">любой крови, но каждому лишь один раз за жизнь.</span>',
@@ -3120,7 +3120,7 @@ const items = [
     abilities: [],
     stats: "",
     obtain: "Сокровищница Проклятого замка, 50%: любая кровь, один раз за жизнь (в других замках там Призрачный страж)",
-    icon: "images/other/44296b9fba.png",
+    icon: "images/other/373619f6cd.png",
     method: "loot",
     methodLabel: "Находка",
     recipe: false,
@@ -4691,7 +4691,7 @@ const achievements = [
         frame: "goal",
         frameLabel: "Цель",
         condition: "",
-        icon: "images/other/2842c9ddc2.png",
+        icon: "images/other/bb617a73dd.png",
         caption: "Мятежник"
       },
       {
@@ -4831,7 +4831,7 @@ const blood = [
       {
         id: "rebellion",
         name: "Мятежник",
-        icon: "images/other/2842c9ddc2.png",
+        icon: "images/other/bb617a73dd.png",
         form: 3,
         crown: false
       },
